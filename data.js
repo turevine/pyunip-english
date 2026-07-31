@@ -1,0 +1,741 @@
+/* =========================================================
+   콘텐츠 데이터 — 공부하면서 여기만 채우면 앱이 커집니다.
+   (이 파일만 고치면 됨. 로직/디자인은 건드릴 필요 없음)
+   ========================================================= */
+
+/* ---------- 단어카드 ---------- */
+const WORDS = [
+  { word: "camaraderie",    pos: "n.",    meaning: "동료애, 우정",              example: "the camaraderie of a team" },
+  { word: "colonist",       pos: "n.",    meaning: "식민지 개척자",            example: "European colonists brought the game." },
+  { word: "discrimination", pos: "n.",    meaning: "차별",                     example: "They faced discrimination for years." },
+  { word: "unify",          pos: "v.",    meaning: "통합하다, 하나로 만들다",   example: "Soccer unifies us." },
+  { word: "universal",      pos: "a.",    meaning: "보편적인, 전세계의",        example: "its universal appeal" },
+  { word: "originate",      pos: "v.",    meaning: "비롯되다, 기원하다",        example: "The sport originated in Britain." },
+  { word: "Britain",        pos: "n.",    meaning: "영국 (그레이트브리튼)",     example: "The modern game originated in Britain." },
+  { word: "association",    pos: "n.",    meaning: "협회, 연합",               example: "England's Football Association established the rules." },
+  { word: "establish",      pos: "v.",    meaning: "제정하다, 설립하다",        example: "They established a set of rules." },
+  { word: "a set of rules", pos: "phr.",  meaning: "일련의 규칙, 한 벌의 규칙",   example: "The FA established a set of rules." },
+  { word: "million",          pos: "n.",   meaning: "100만 (숫자 앞이면 s 안 붙임)", example: "more than 200 million players" },
+  { word: "all over the globe", pos: "phr.", meaning: "전 세계에서, 전 세계의",      example: "players all over the globe" },
+  { word: "participate in",   pos: "phr.", meaning: "~에 참여하다",                example: "They participate in the game." },
+  { word: "truly",            pos: "ad.",  meaning: "정말로, 진정으로",            example: "truly making soccer the world's sport" },
+  { word: "quality",          pos: "n.",   meaning: "특성, 성격 (≠품질); 질",       example: "the game's international quality" },
+  { word: "a number of",      pos: "phr.", meaning: "다수의, 많은 (+복수명사→복수취급)", example: "A number of players come from poor families." },
+  { word: "including",        pos: "prep.", meaning: "~을 포함하여",                example: "many players, including Neymar" },
+  { word: "the reason for",   pos: "phr.", meaning: "~에 대한 이유, ~의 이유",      example: "the main reason for its popularity" },
+];
+
+/* ---------- 지문 8개 ----------
+   sentences = 본문(문장 단위)  /  extra = 보충자료(선택)
+   빈 지문은 sentences: [] 로 두면 '아직 비어있음'으로 표시됩니다. */
+const PASSAGES = [
+  {
+    id: 1,
+    title: "The world's game",
+    meta: "주제: 축구와 사회 · 난이도 ★★☆",
+    sentences: [
+      "Throughout history, humans have played some kind of kicking game.",
+      "What the world now calls football—or soccer in the United States—began as far back as 2500 B.C.E. with the Chinese game of cuju.",
+      "However, the sport we know today originated in Britain.",
+      "In the 1840s, England's Football Association established a set of rules, and the modern game was born.",
+      "Today, more than 200 million players all over the globe participate in the game, truly making soccer the world's sport.",
+      "So, why is soccer so popular?",
+      "Maybe it's the game's camaraderie: the feeling that the team on the field is your team; their win is your victory, and their loss is your defeat.",
+      "Or maybe it's the game's international quality.",
+      "In countries like France, England, Spain, and Brazil, major teams have players from many different nations, and these clubs now have fans all over the world.",
+      "Or perhaps it's the promise of great wealth.",
+      "A number of professional soccer players, including Brazil's Neymar and Nigeria's Victor Moses, come from poor families.",
+      "Today, both of these players make millions of euros every year.",
+      "Soccer is popular for all of these reasons, but ultimately, the main reason for its universal appeal may be this: It's a simple game.",
+      "It can be played anywhere with anything—a ball, a can, or even some bags tied together.",
+      "And anyone can play it.",
+      "\"You don't need to be rich ... to play soccer,\" says historian Peter Alegi. \"You just need a flat space and a ball.\"",
+      "It is this unique simplicity that makes soccer the most popular sport in Africa.",
+      "Here, even in rural areas far from the bright lights and big stadiums, children and adults play the game, often with handmade balls.",
+      "The story of soccer in Africa is a long one.",
+      "In the 19th century, European colonists brought the game to Africa.",
+      "Early matches were first played in the South African cities of Cape Town and Port Elizabeth in 1862.",
+      "In time, the sport spread across the continent.",
+      "Today, several of the game's best players come from African nations, including Senegal, Ivory Coast, Ghana, and Nigeria.",
+      "All over the continent, thousands of soccer academies now recruit boys from poorer cities and towns to play the game.",
+      "Many learn to play in their bare feet, and they are tough, creative competitors.",
+      "Their dream is to play for the national team or to join one of the big clubs in Europe someday.",
+      "For some, the dream comes true.",
+      "But the chance to make money with a professional team is probably not the main reason for soccer's popularity in Africa.",
+      "\"Soccer is the passion of everyone here,\" says Abubakari Abdul-Ganiyu, a teacher who works with youth clubs in Tamale, Ghana. \"It unifies us.\"",
+      "In fact, more than once, the game has helped to bring people together.",
+      "In Ivory Coast, for example, immigrants and Muslims faced discrimination for years.",
+      "Yet many of the country's best soccer players are from Muslim and immigrant families.",
+      "As a result, the national team has become a symbol of unity and has helped to promote peace throughout the country.",
+      "All over Africa, soccer is popular with parents and teachers for another reason: It keeps young people—especially boys—in school and out of trouble.",
+      "\"Most clubs in Tamale, Ghana, don't allow boys to play if they don't go to school,\" explains Abubakari.",
+      "\"We're trying our best to help young people and to make them responsible in society.",
+      "Soccer helps us do this.",
+      "For us, soccer is also a tool for hope.\""
+    ],
+    extra: {
+      title: "보충자료 · Soccer without borders",
+      sentences: [
+        "More than 200 national teams from six regions competed to get a place in 2018 FIFA World Cup in Russia.",
+        "Thirty-two soccer teams qualified for the final tournament.",
+        "Although each team represents a country, it doesn't mean all its players were born there.",
+        "Family relations and dual citizenship (having two nationalities) influence which country a player plays for.",
+        "Of the 32 teams competing for the World Cup (shown here), 25 had at least one foreign-born player.",
+        "In total, 97 foreign-born players competed in the 2018 World Cup."
+      ]
+    }
+  },
+  { id: 2, title: "지문 2 — 제목을 입력하세요", meta: "공부하면서 채우기", sentences: [] },
+  { id: 3, title: "지문 3 — 제목을 입력하세요", meta: "공부하면서 채우기", sentences: [] },
+  { id: 4, title: "지문 4 — 제목을 입력하세요", meta: "공부하면서 채우기", sentences: [] },
+  { id: 5, title: "지문 5 — 제목을 입력하세요", meta: "공부하면서 채우기", sentences: [] },
+  { id: 6, title: "지문 6 — 제목을 입력하세요", meta: "공부하면서 채우기", sentences: [] },
+  { id: 7, title: "지문 7 — 제목을 입력하세요", meta: "공부하면서 채우기", sentences: [] },
+  { id: 8, title: "지문 8 — 제목을 입력하세요", meta: "공부하면서 채우기", sentences: [] },
+];
+
+/* ---------- 문장 분석 (공부 후 채우기) ----------
+   키 형식: "지문id-문장index" (index는 0부터, extra 문장은 본문 뒤에 이어짐)
+   예)
+   const ANALYSIS = {
+     "1-0": {
+       chips: [["주어","humans"], ["동사","have played"]],
+       structure: "주어 humans + 현재완료 have played ... 3형식 문장.",
+       trans: "역사 전체에 걸쳐, 인간은 일종의 공 차는 게임을 해왔다."
+     }
+   };
+   지금은 비어 있음 → 앱에는 '분석 채워넣기' 자리로 표시됩니다. */
+const ANALYSIS = {
+  // 지문 1 · 1번째 문장: Throughout history, humans have played some kind of kicking game.
+  "1-0": {
+    form: "3형식 (S + V + O)",
+    tense: "현재완료 (계속 용법)",
+    chips: [
+      ["수식어(M)", "Throughout history"],
+      ["주어(S)", "humans"],
+      ["동사(V)", "have played"],
+      ["목적어(O)", "some kind of kicking game"],
+    ],
+    structure:
+      `뼈대: <b>humans(S) + have played(V) + some kind of kicking game(O)</b> 의 3형식. 나머지는 수식어.<br><br>` +
+      `① <b>Throughout history</b> (시간 부사구·수식어): 강조하려고 맨 앞에 왔을 뿐, 맨 뒤로 보내도 뜻이 같음. 특정 역사가 아니라 '인류 역사 전체(추상 개념)'라서 <b>the history가 아니라 관사를 생략</b>.<br>` +
+      `② <b>humans</b> (주어) — 왜 human도, the human도 아닌 <b>humans</b>인가?<br>` +
+      `&nbsp;&nbsp;• 특정 한 사람이 아니라 <b>'인류라는 종 전체 / 일반적인 사람들'</b>을 가리킴. 일반적인 사실·진리를 말할 땐 <b>무관사 복수(총칭 복수)</b>를 씀.<br>` +
+      `&nbsp;&nbsp;• human(단수)만 쓰면 셀 수 있는 명사라 <b>a human / the human</b> 처럼 관사가 필요해 문법상 홀로 못 섬. the humans라고 하면 '(앞서 언급된) 특정한 그 사람들'로 범위가 좁아져 뜻이 달라짐.<br>` +
+      `③ <b>have played</b> (현재완료·계속 용법) — 왜 단순과거 played가 아닌가?<br>` +
+      `&nbsp;&nbsp;• 'Throughout history'가 <b>과거부터 지금까지 쭉 이어지는 시간</b>이라, "지금도 하고 있다"는 현재완료와 완벽히 짝. played로 쓰면 '과거에 (지금은 안 함)' 느낌이라 어색해짐.<br>` +
+      `④ <b>some kind of</b> ('~의 일종 / 어떤 종류의'): 이름이 명확히 정의된 게 아닌 '공 차는 형태의 게임들'을 포괄적으로 묶어줌.<br>` +
+      `⑤ <b>kicking game</b> — 왜 kicking <u>the</u> game / kicking <u>a</u> game이 아닌가? (핵심!)<br>` +
+      `&nbsp;&nbsp;• 여기 <b>kicking은 동사가 아니라 game을 앞에서 꾸미는 분사(형용사 역할)</b>. 'kicking + game' = '공 차는 성격의 게임'이라는 한 덩어리 명사.<br>` +
+      `&nbsp;&nbsp;• 만약 the/a를 넣어 <b>kicking the game</b>이 되면 kicking이 <b>동사</b>로 바뀌어 '그 게임을 (발로) 차다'라는 엉뚱한 뜻이 됨.<br>` +
+      `&nbsp;&nbsp;• 게다가 이 명사 덩어리는 이미 앞의 <b>some kind of</b>가 한정하고 있어서, game 앞에 a/the가 <b>또 붙지 않음</b>.`,
+    trans: "역사를 통틀어 인류는 일종의 공차기 게임을 해왔다.",
+  },
+
+  // 지문 1 · 2번째 문장: What the world now calls football—or soccer in the United States—began as far back as 2500 B.C.E. with the Chinese game of cuju.
+  "1-1": {
+    form: "1형식 (S + V + M)",
+    tense: "단순 과거",
+    chips: [
+      ["주어(S)·명사절", "What the world now calls football"],
+      ["삽입구", "—or soccer in the United States—"],
+      ["동사(V)", "began"],
+      ["수식어(M)", "as far back as 2500 B.C.E. …"],
+    ],
+    structure:
+      `<b>1형식 (S + V + M)</b> — 수식어 거품을 걷어내면 "무엇이(What절) + 시작되었다(began)"만 남는 문장.<br><br>` +
+      `① <b>What</b> (관계대명사, "~하는 것") — 주어 자리에 통째로 들어간 <b>명사절</b>.<br>` +
+      `&nbsp;&nbsp;• who/which/that과 달리 <b>what은 선행사(꾸밈받는 명사)를 자기 안에 이미 포함</b>('the thing which')해서, 앞에 명사가 없어도 홀로 서고 절 전체가 <b>주어(명사)</b> 역할.<br>` +
+      `&nbsp;&nbsp;• 이 what절은 <b>불완전한 절</b>: the world now calls __ football 에서 <b>calls의 목적어 자리가 비어</b> 있고, 그 빈자리를 what이 대신 채움 (the world=주어, calls=동사, football=목적격보어). 뜻은 "세상이 (무엇을) 풋볼이라 부르는 그것".<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('relative-pronoun','rp-what')">📐 관계대명사 what 자세히 보기 →</span><br>` +
+      `② <b>— … —</b> (엠 대시 삽입구): 앞뒤 짝으로 들어가 "혹은 미국에서는 사커"라는 부연을 강조하며 끼워 넣음. 대시 사이는 문장 성분 계산에서 빠지니 괄호 친 셈 치고 읽으면 구조가 보임.<br>` +
+      `③ <b>began</b> (단순 과거·자동사): 기원전 2500년이라는 명확한 과거 시점의 사실이라 과거형. 목적어 없는 자동사라 1형식.<br>` +
+      `④ <b>as far back as + 시점</b>: "무려 ~까지 아득히 거슬러 올라가" — 기원이 엄청나게 오래됨을 강조. (B.C.E. = Before Common Era, 기원전 B.C.와 같은 뜻)<br>` +
+      `⑤ <b>of</b> (동격의 of): the Chinese game of cuju = "축국(cuju)이라는 이름의 중국 게임".<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('of-types','of-apposition')">🧬 of의 종류(동격의 of) 자세히 →</span>`,
+    trans: "오늘날 전 세계가 풋볼—미국에서는 사커—이라 부르는 스포츠는, 멀게는 기원전 2500년 중국의 '축국(cuju)'이라는 게임에서 시작되었다.",
+  },
+
+  // 지문 1 · 3번째 문장: However, the sport we know today originated in Britain.
+  "1-2": {
+    form: "1형식 (S + V + M)",
+    tense: "단순 과거",
+    chips: [
+      ["접속부사", "However"],
+      ["주어(S)", "the sport (which/that) we know today"],
+      ["동사(V)", "originated"],
+      ["수식어(M)", "in Britain"],
+    ],
+    structure:
+      `뼈대: <b>the sport(S) + originated(V) + in Britain(M)</b> 의 1형식. (originate는 자동사라 목적어 없이 전치사구가 옴)<br><br>` +
+      `① <b>However</b> (접속부사): 앞 문장과 <b>대조</b>("그러나"). 콤마로 분리되며 문장 성분(S·V·O) 계산엔 안 들어가는 수식어.<br>` +
+      `② <b>the sport (which/that) we know today</b> (주어) — 핵심: <b>목적격 관계대명사가 생략된</b> 명사구.<br>` +
+      `&nbsp;&nbsp;• the sport(선행사) 뒤에 곧바로 [we(주어) know(동사)]가 와서, 그 사이에 <b>목적격 관계대명사 which/that이 생략</b>됨.<br>` +
+      `&nbsp;&nbsp;• we know <u>__</u> today 에서 <b>know의 목적어 자리가 비어</b> 있고, 그 자리가 the sport를 가리킴 = "우리가 오늘날 아는 그 스포츠".<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('relative-pronoun','rp-object-omit')">✂️ 목적격 관계대명사 that·생략 자세히 →</span><br>` +
+      `③ <b>originated</b> (동사·자동사, 단순 과거): "비롯되다/기원하다". 뒤에 목적어 없이 in Britain(전치사구)만 오므로 <b>1형식</b>.<br>` +
+      `④ <b>in Britain</b> (수식어): "영국에서".`,
+    trans: "하지만 오늘날 우리가 아는 그 스포츠는 영국에서 비롯되었다.",
+  },
+
+  // 지문 1 · 4번째 문장: In the 1840s, England's Football Association established a set of rules, and the modern game was born.
+  "1-3": {
+    form: "3형식 + 1형식 (and로 연결된 중문)",
+    tense: "단순 과거",
+    chips: [
+      ["수식어(M)", "In the 1840s"],
+      ["주어1(S1)", "England's Football Association"],
+      ["동사1(V1)", "established"],
+      ["목적어1(O1)", "a set of rules"],
+      ["접속사", "and"],
+      ["주어2(S2)", "the modern game"],
+      ["동사2(V2)·수동태", "was born"],
+    ],
+    structure:
+      `뼈대: 등위접속사 <b>and</b>로 두 개의 완전한 절이 연결된 <b>중문</b>. 앞절 = <b>3형식</b>(S+V+O), 뒷절 = <b>1형식 수동태</b>.<br><br>` +
+      `① <b>In the 1840s</b> (시간 부사구·수식어): "1840년대에". 연도 뒤 <b>-s</b>는 '그 10년간'을 뜻함 (the 1840s = 1840~1849년).<br>` +
+      `② <b>England's Football Association(S1)</b> + <b>established(V1·단순과거)</b> + <b>a set of rules(O1)</b>: "영국 축구협회가 일련의 규칙을 제정했다". <b>a set of ~</b> = '일련의 / 한 벌의 ~'.<br>` +
+      `③ <b>and</b> (등위접속사): 앞·뒤 두 절을 대등하게 연결.<br>` +
+      `④ <b>the modern game(S2)</b> + <b>was born(V2)</b>: <b>be + p.p. 수동태</b>. born은 <b>bear(낳다)</b>의 과거분사. 게임이 스스로 태어난 게 아니라 '탄생된' 것이라 수동태. 뒤에 목적어 없이 끝나므로 이 절은 <b>1형식</b>.<br><br>` +
+      `<b>🤔 왜 so(그래서)가 아니라 and일까?</b><br>` +
+      `&nbsp;&nbsp;• 영어의 <b>and</b>에는 이미 '그리고 그 결과 / ~해서 ~되다'라는 <b>시간의 흐름·자연스러운 인과</b>가 들어있음. (He dropped the glass <b>and</b> it broke. = 떨어뜨렸고 [그 결과] 깨졌다)<br>` +
+      `&nbsp;&nbsp;• <b>and</b>: 두 역사적 사건을 <b>물 흐르듯 나열</b>하는 세련된 다큐멘터리식 서사 → 글쓴이의 선택.<br>` +
+      `&nbsp;&nbsp;• <b>so</b>: '그래서(그 이유로)' 원인-결과를 <b>논리적으로 못박는</b> 느낌이라 역사 서술에선 다소 딱딱해짐 (틀린 건 아님).`,
+    trans: "1840년대에 영국 축구협회가 일련의 규칙을 제정했고, (그렇게 해서) 현대적인 축구가 탄생했다.",
+  },
+
+  // 지문 1 · 5번째 문장: Today, more than 200 million players all over the globe participate in the game, truly making soccer the world's sport.
+  "1-4": {
+    form: "1형식 (+ 분사구문)",
+    tense: "단순 현재",
+    chips: [
+      ["수식어(M)", "Today"],
+      ["주어(S)", "more than 200 million players"],
+      ["주어 수식", "all over the globe"],
+      ["동사(V)", "participate (in)"],
+      ["수식어(M)", "in the game"],
+      ["분사구문", "truly making soccer the world's sport"],
+    ],
+    structure:
+      `뼈대: <b>players(S) + participate(V) + in the game(M)</b> 의 1형식. 뒤에 <b>분사구문</b>이 붙어 '결과'를 덧붙임.<br><br>` +
+      `① <b>Today</b> (시간 수식어): "오늘날".<br>` +
+      `② <b>more than 200 million players</b> (주어): "2억 명이 넘는 선수들". <b>more than</b> = ~이상, <b>200 million</b> = 2억. million은 앞에 숫자가 오면 <b>복수 s를 붙이지 않음</b> (200 million ⭕ / 200 millions ❌).<br>` +
+      `③ <b>all over the globe</b> (주어 수식): "전 세계의 / 전 세계에서". 앞의 players를 꾸며줌.<br>` +
+      `④ <b>participate in</b> (동사): "~에 참여하다". participate는 <b>자동사</b>라 목적어를 바로 못 받고 전치사 <b>in</b>이 필요 → in the game까지 합쳐 <b>1형식</b>.<br>` +
+      `⑤ <b>truly making soccer the world's sport</b> (분사구문): 앞 내용의 <b>결과</b>를 덧붙임 = "그래서 정말로 축구를 세계의 스포츠로 만든다".<br>` +
+      `&nbsp;&nbsp;• 원래 문장: <u>and it truly makes soccer the world's sport</u> → 접속사·주어 빼고 makes → making 으로 축약.<br>` +
+      `&nbsp;&nbsp;• 속 구조: <b>make + O + OC (5형식)</b> → making + soccer(목적어) + the world's sport(목적격보어).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('participle-construction','pc-make')">🧩 분사구문 만드는 법 자세히 →</span>`,
+    trans: "오늘날 전 세계 2억 명이 넘는 선수들이 이 게임에 참여하며, 그야말로 축구를 세계의 스포츠로 만들고 있다.",
+  },
+
+  // 지문 1 · 6번째 문장: So, why is soccer so popular?
+  "1-5": {
+    form: "2형식 (의문문, S + V + C)",
+    tense: "단순 현재",
+    chips: [
+      ["담화표지", "So,"],
+      ["의문사", "why"],
+      ["동사(V)", "is"],
+      ["주어(S)", "soccer"],
+      ["보어(C)", "so popular"],
+    ],
+    structure:
+      `평서문으로 풀면 <b>Soccer(S) is(V) so popular(C)</b> 의 <b>2형식</b>. 여기에 의문사 why가 붙어 의문문이 됨. (be동사 is가 주어 soccer 앞으로 도치)<br><br>` +
+      `⭐ 이 문장엔 <b>so가 두 번</b> 나오는데, 역할이 완전히 다름!<br><br>` +
+      `① <b>So,</b> (문두·담화표지) — 여기 so는 <b>‘그래서(결과)’ 접속사가 아님!</b> 앞 내용(축구가 세계의 스포츠)을 받아 "자, 그렇다면"으로 <b>다음 질문으로 넘어가는 신호</b>. 문장 성분 계산엔 안 들어감.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('so-roles','so-discourse')">🗣️ 담화표지 So, 자세히 →</span><br>` +
+      `② <b>why</b> (의문부사): 이유를 묻는 의문사 "왜".<br>` +
+      `③ <b>is soccer</b> (동사+주어): 의문문이라 be동사 <b>is</b>가 주어 <b>soccer</b> 앞으로 도치됨.<br>` +
+      `④ <b>so popular</b> (보어) — 여기 so는 <b>정도 부사 "그토록/그렇게"</b>. 형용사 popular를 꾸며 "그토록 인기 있는".<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('so-roles','so-adverb')">📏 정도 부사 so 자세히 →</span><br><br>` +
+      `👉 정리: 같은 so지만 <b>①은 화제전환(자/그렇다면), ④는 정도강조(그토록)</b>. 지난번 얘기한 '결과의 so(그래서)'는 여기 <b>둘 다 아님!</b>`,
+    trans: "그렇다면, 축구는 왜 그토록 인기가 많을까?",
+  },
+
+  // 지문 1 · 7번째 문장: Maybe it's the game's camaraderie: the feeling that the team on the field is your team; their win is your victory, and their loss is your defeat.
+  "1-6": {
+    form: "2형식 (콜론·세미콜론으로 이어진 복합 구조)",
+    tense: "단순 현재",
+    chips: [
+      ["수식어(M)", "Maybe"],
+      ["주어(S)", "it"],
+      ["동사(V)", "is"],
+      ["보어(C)", "the game's camaraderie"],
+      ["콜론 :", "뒤에 설명(동격)"],
+      ["동격 that절", "the feeling that ..."],
+      ["세미콜론 ;", "완전한 문장 연결"],
+    ],
+    structure:
+      `전체 뼈대: <b>it(S) is(V) the game's camaraderie(C)</b> 의 <b>2형식</b>. 콜론(:) 뒤로 그 camaraderie가 무엇인지 <b>풀어 설명</b>하고, 세미콜론(;)으로 밀접한 문장을 이어 붙인 복합 구조.<br><br>` +
+      `① <b>Maybe</b> (부사·수식어): "아마도". 문장 전체를 꾸밈.<br>` +
+      `② <b>it's the game's camaraderie</b> (주절·2형식): it(주어, 앞 질문의 '축구가 인기인 이유'를 가리킴) + is(동사) + the game's camaraderie(보어) = "그것은 그 게임의 동료애다".<br>` +
+      `③ <b>:</b> (콜론) — 앞의 <b>camaraderie가 뭔지 구체적으로 공개</b>. 앞 = 뒤 등호 관계 ("동료애, 그게 뭐냐면 →").<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('punctuation','pn-colon')">🎁 콜론 : 자세히 →</span><br>` +
+      `④ <b>the feeling that the team on the field is your team</b> (콜론 뒤·동격 명사구): the feeling(느낌) + <b>that절</b>.<br>` +
+      `&nbsp;&nbsp;• ⚠️ 이 that은 <b>관계대명사가 아니라 ‘동격의 that’("~라는")</b>! 판별: that 뒤 절이 the team(S)+is(V)+your team(C)로 <b>빠진 자리 없이 완전</b>하면 동격, 빠진 자리가 있으면 관계대명사. 여기선 완전하므로 동격.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('appositive-that','at-vs-relative')">🔖 동격의 that 자세히 →</span><br>` +
+      `&nbsp;&nbsp;• on the field는 the team을 꾸미는 전치사구.<br>` +
+      `&nbsp;&nbsp;📝 <b>해석: "필드 위의 (그) 팀이 곧 네 팀이라는 느낌(= 일체감)".</b><br>` +
+      `⑤ <b>;</b> (세미콜론) — 접속사 없이 <b>밀접하게 연관된 완전한 문장</b>을 이어 붙임. 여기선 앞의 <b>'그 느낌(camaraderie)'을 계속 풀어 설명</b>하는 역할.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('punctuation','pn-semicolon')">🔗 세미콜론 ; 자세히 →</span><br>` +
+      `⑥ <b>their win is your victory, and their loss is your defeat</b>: 2형식 문장 두 개를 <b>and</b>로 연결.<br>` +
+      `&nbsp;&nbsp;📝 <b>해석: "그들의 승리가 곧 너의 승리이고, 그들의 패배가 곧 너의 패배다".</b><br><br>` +
+      `🤔 <b>"feeling이 세미콜론 뒤까지 영향을 주나?" → 의미상 YES!</b><br>` +
+      `&nbsp;&nbsp;• 문법적으로 that절에 <b>딱 묶이는 건 ④ 하나</b>뿐, 세미콜론 뒤 ⑥은 <b>형식상 독립된 완전한 문장</b>.<br>` +
+      `&nbsp;&nbsp;• 하지만 세미콜론이 '밀접한 연결'을 뜻하므로 ⑥도 <b>같은 camaraderie(일체감)를 이어서 구체화</b> → 의미상 feeling이 끝까지 관통함. (당신 해석이 맞음! 👍)<br>` +
+      `👉 대구(對句): win↔loss, victory↔defeat 를 나란히 놓아 '내 팀과 하나됨'을 리듬감 있게 강조.`,
+    trans: "아마도 그것은 그 게임의 동료애일 것이다: 필드 위의 팀이 곧 내 팀이며, 그들의 승리가 내 승리이고 그들의 패배가 내 패배라는 그런 느낌 말이다.",
+  },
+
+  // 지문 1 · 8번째 문장: Or maybe it's the game's international quality.
+  "1-7": {
+    form: "2형식 (S + V + C)",
+    tense: "단순 현재",
+    chips: [
+      ["접속사", "Or"],
+      ["수식어(M)", "maybe"],
+      ["주어(S)", "it"],
+      ["동사(V)", "is"],
+      ["보어(C)", "the game's international quality"],
+    ],
+    structure:
+      `뼈대: <b>it(S) is(V) the game's international quality(C)</b> 의 <b>2형식</b>. 앞 문장(camaraderie)과 같은 틀을 반복하며 '또 다른 이유'를 제시.<br><br>` +
+      `① <b>Or</b> (등위접속사): 앞 문장 "Maybe it's the game's camaraderie"에 대한 <b>또 다른 가능성</b>을 나란히 제시 = "아니면 / 혹은".<br>` +
+      `② <b>maybe</b> (부사·수식어): "아마도". 단정하지 않고 여러 이유 중 하나로 조심스럽게 제시.<br>` +
+      `③ <b>it's</b> (주절): it(주어, 앞의 '축구가 인기인 이유'를 가리킴) + is(동사).<br>` +
+      `④ <b>the game's international quality</b> (보어): <b>the game's</b>(소유격, 그 게임의) + <b>international</b>(형용사, 국제적인) + <b>quality</b>(명사, 특성·성격) = "그 게임의 국제적인 특성".<br>` +
+      `&nbsp;&nbsp;• ⚠️ 어휘 포인트: 여기 <b>quality</b>는 '품질'이 아니라 <b>'특성·성격(a characteristic)'</b>의 뜻! "국제적인 성격을 띤다"는 의미.<br>` +
+      `&nbsp;&nbsp;📝 <b>해석: "그 게임의 국제적인 특성".</b>`,
+    trans: "아니면 아마도 그것은 그 게임이 지닌 국제적인 특성(때문)일지도 모른다.",
+  },
+
+  // 지문 1 · 9번째 문장: In countries like France, England, Spain, and Brazil, major teams have players from many different nations, and these clubs now have fans all over the world.
+  "1-8": {
+    form: "3형식 + 3형식 (and로 연결된 중문)",
+    tense: "단순 현재",
+    chips: [
+      ["수식어(M)", "In countries like …"],
+      ["주어1(S1)", "major teams"],
+      ["동사1(V1)", "have"],
+      ["목적어1(O1)", "players (from …)"],
+      ["접속사", "and"],
+      ["주어2(S2)", "these clubs"],
+      ["동사2(V2)", "have"],
+      ["목적어2(O2)", "fans (all over the world)"],
+    ],
+    structure:
+      `뼈대: 등위접속사 <b>and</b>로 두 개의 <b>3형식</b> 절이 연결된 중문.<br><br>` +
+      `① <b>In countries like France, England, Spain, and Brazil</b> (수식어·전치사구): "프랑스, 영국, 스페인, 브라질 <b>같은</b> 나라들에서".<br>` +
+      `&nbsp;&nbsp;• ⚠️ 여기 <b>like</b>는 '좋아하다'(동사)가 아니라 <b>전치사 "~같은/~처럼"</b> = <b>such as</b>(예시 나열)와 같은 뜻.<br>` +
+      `② <b>major teams(S1) + have(V1) + players(O1)</b>: "주요 팀들은 선수들을 보유한다" → <b>3형식</b>.<br>` +
+      `&nbsp;&nbsp;• <b>from many different nations</b>: players를 꾸미는 전치사구 = "여러 다른 나라 출신의".<br>` +
+      `③ <b>and</b> (등위접속사): 앞·뒤 두 절을 대등하게 연결.<br>` +
+      `④ <b>these clubs(S2) + now(부사) + have(V2) + fans(O2)</b>: "이 클럽들은 이제 팬을 보유한다" → <b>3형식</b>.<br>` +
+      `&nbsp;&nbsp;• <b>all over the world</b>: fans를 꾸미는 수식어 = "전 세계의".<br><br>` +
+      `📝 <b>해석:</b> "프랑스, 영국, 스페인, 브라질 같은 나라들에서는 주요 팀들이 여러 다른 나라 출신 선수들을 보유하고 있고, 이 클럽들은 이제 전 세계에 팬을 두고 있다."`,
+    trans: "프랑스, 영국, 스페인, 브라질 같은 나라들에서는 주요 팀들이 여러 다른 나라 출신의 선수들을 보유하고 있고, 이 클럽들은 이제 전 세계에 팬을 두고 있다.",
+  },
+
+  // 지문 1 · 10번째 문장: Or perhaps it's the promise of great wealth.
+  "1-9": {
+    form: "2형식 (S + V + C)",
+    tense: "단순 현재",
+    chips: [
+      ["접속사", "Or"],
+      ["수식어(M)", "perhaps"],
+      ["주어(S)", "it"],
+      ["동사(V)", "is"],
+      ["보어(C)", "the promise of great wealth"],
+    ],
+    structure:
+      `뼈대: <b>it(S) is(V) the promise of great wealth(C)</b> 의 <b>2형식</b>. 앞 문장들(camaraderie, international quality)에 이은 '또 다른 이유'.<br><br>` +
+      `① <b>Or</b> (등위접속사): "아니면 / 혹은" — 또 다른 가능성 제시.<br>` +
+      `② <b>perhaps</b> (부사·수식어): "아마도". maybe와 같은 뜻, 조금 더 격식.<br>` +
+      `③ <b>it's</b> (주절): it(축구가 인기인 이유) + is(동사).<br>` +
+      `④ <b>the promise of great wealth</b> (보어): the promise(약속·보장) + <b>of great wealth</b>.<br>` +
+      `&nbsp;&nbsp;• ⚠️ 이 <b>of</b>는 <b>소유의 of(~의)도, 동격의 of(A라는 B)도 아닌 '내용의 of'</b>! promise·hope·chance·dream 같은 <b>추상명사 뒤에서 그 알맹이(내용)를 채워줌</b>.<br>` +
+      `&nbsp;&nbsp;• the promise of great wealth = "막대한 부(를 얻을 수 있다는) 약속" → <b>"엄청난 부를 가져다준다는 기대·가능성"</b>.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('of-types','of-content')">🧬 of의 종류(내용의 of) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;📝 <b>해석: "막대한 부를 얻을 수 있다는 기대(보장)".</b><br><br>` +
+      `👉 본문 의미: "축구를 잘하면 엄청난 부귀영화를 누릴 수 있다는 기대감 때문에 축구가 인기 있는 걸지도 몰라."`,
+    trans: "아니면 아마도 그것은 막대한 부를 얻을 수 있다는 기대(약속) 때문일지도 모른다.",
+  },
+
+  // 지문 1 · 11번째 문장: A number of professional soccer players, including Brazil's Neymar and Nigeria's Victor Moses, come from poor families.
+  "1-10": {
+    form: "1형식 (삽입구 포함)",
+    tense: "단순 현재",
+    chips: [
+      ["주어(S)", "A number of … players"],
+      ["삽입구", "including Neymar and Victor Moses"],
+      ["동사(V)", "come (from)"],
+      ["수식어(M)", "from poor families"],
+    ],
+    structure:
+      `뼈대: <b>A number of … players(S) + come(V) + from poor families(M)</b> 의 1형식. 주어와 동사 사이에 콤마 삽입구가 끼어 문장이 길어 보이는 것.<br><br>` +
+      `① <b>A number of professional soccer players</b> (주어): "다수의 프로 축구 선수들".<br>` +
+      `&nbsp;&nbsp;• ⚠️ <b>a number of + 복수명사</b> = "많은 ~" → <b>복수 취급</b>! 그래서 동사가 comes가 아니라 <b>come</b>. (cf. <b>the number of ~</b> = "~의 수"는 단수 취급 → is/comes)<br>` +
+      `② <b>, including Brazil's Neymar and Nigeria's Victor Moses,</b> (삽입구): 콤마 두 개 사이에 끼워 넣은 예시. <b>including</b> = "~을 포함하여" (전치사처럼 쓰이는 분사). 문장 성분(S·V·O) 계산에선 빠지니 괄호 친 셈 치고 읽으면 뼈대가 보임.<br>` +
+      `③ <b>come from poor families</b> (동사): come(자동사) + from poor families(전치사구) → <b>1형식</b>. <b>come from ~</b> = "~ 출신이다".<br><br>` +
+      `📝 <b>해석:</b> "브라질의 네이마르와 나이지리아의 빅터 모지스를 포함한 많은 프로 축구 선수들이 가난한 집안 출신이다."`,
+    trans: "브라질의 네이마르와 나이지리아의 빅터 모지스를 포함한 많은 프로 축구 선수들이 가난한 집안 출신이다.",
+  },
+
+  // 지문 1 · 12번째 문장: Today, both of these players make millions of euros every year.
+  "1-11": {
+    form: "3형식 (S + V + O)",
+    tense: "단순 현재",
+    chips: [
+      ["수식어(M)", "Today"],
+      ["주어(S)", "both of these players"],
+      ["동사(V)", "make"],
+      ["목적어(O)", "millions of euros"],
+      ["수식어(M)", "every year"],
+    ],
+    structure:
+      `뼈대: <b>both of these players(S) + make(V) + millions of euros(O)</b> 의 <b>3형식</b>.<br><br>` +
+      `① <b>Today</b> (시간 수식어): "오늘날".<br>` +
+      `② <b>both of these players</b> (주어): "이 선수들 둘 다". <b>both of + 복수명사</b> → <b>복수 취급</b>이라 동사가 makes가 아니라 <b>make</b>.<br>` +
+      `&nbsp;&nbsp;• 💡 여기 of는 <b>빼도 문법상 맞음</b>(Both these players …). 시험 함정으로 자주 나옴!<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('both-usage','both-optional-of')">🔀 both의 of 규칙(함정) 자세히 →</span><br>` +
+      `③ <b>make</b> (동사): 여기선 "(돈을) 벌다".<br>` +
+      `④ <b>millions of euros</b> (목적어): "수백만 유로".<br>` +
+      `&nbsp;&nbsp;• ⚠️ 5번째 문장 <b>200 million</b>과 비교! 앞에 <b>구체적 숫자가 없으면</b> million/thousand에 <b>s를 붙이고 of</b>를 씀 → <b>millions of ~</b>(막연한 수백만). 반대로 구체적 숫자가 오면 s 없이: 200 million ⭕ (200 millions ❌).<br>` +
+      `⑤ <b>every year</b> (수식어): "매년" (빈도).<br><br>` +
+      `📝 <b>해석:</b> "오늘날 이 두 선수는 모두 매년 수백만 유로를 벌어들인다."`,
+    trans: "오늘날 이 두 선수는 모두 매년 수백만 유로를 벌어들인다.",
+  },
+
+  // 지문 1 · 13번째 문장: Soccer is popular for all of these reasons, but ultimately, the main reason for its universal appeal may be this: It's a simple game.
+  "1-12": {
+    form: "2형식 + 2형식 (but 연결, 콜론 포함)",
+    tense: "단순 현재 (+ 조동사 may)",
+    chips: [
+      ["주어1(S1)", "Soccer"],
+      ["동사1(V1)", "is"],
+      ["보어1(C1)", "popular"],
+      ["접속사", "but"],
+      ["주어2(S2)", "the main reason for …"],
+      ["동사2(V2)", "may be"],
+      ["보어2(C2)", "this"],
+      ["콜론 :", "this의 내용 공개"],
+    ],
+    structure:
+      `뼈대: <b>but</b>으로 두 절 연결. 앞절 = Soccer is popular (2형식), 뒷절 = the main reason … may be this (2형식). 콜론(:)으로 this가 뭔지 공개.<br><br>` +
+      `① <b>Soccer(S1) + is(V1) + popular(C1)</b>: "축구는 인기 있다" (2형식). + <b>for all of these reasons</b>(수식) = "이 모든 이유들 때문에". 여기 for는 '이유'.<br>` +
+      `② <b>but</b> (등위접속사): 앞 내용과 <b>대조</b> "하지만".<br>` +
+      `③ <b>ultimately</b> (부사·수식어): "궁극적으로 / 결국".<br>` +
+      `④ <b>the main reason for its universal appeal</b> (주어2): the main reason(주된 이유) + <b>for its universal appeal</b>(전치사구 수식) = "그것의 보편적 매력에 대한 주된 이유". <b>the reason for ~</b> = "~에 대한 이유"(숙어).<br>` +
+      `⑤ <b>may be</b> (동사2): 조동사 <b>may</b>("~일지도 모른다", 추측) + be.<br>` +
+      `⑥ <b>this</b> (보어2): 대명사. <b>콜론 뒤 내용을 미리 가리킴</b> (this = "It's a simple game").<br>` +
+      `⑦ <b>:</b> (콜론) — this의 정체를 <b>공개</b> ("바로 이거야 → 짜잔").<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('punctuation','pn-colon')">🎁 콜론 : 자세히 →</span><br>` +
+      `⑧ <b>It's a simple game</b>: 콜론 뒤 설명 = "그것은 단순한 게임이다" (2형식).<br><br>` +
+      `📝 <b>해석:</b> "축구는 이 모든 이유들로 인해 인기 있지만, 궁극적으로 그 보편적 매력의 주된 이유는 이것일지도 모른다: 바로 단순한 게임이라는 점이다."`,
+    trans: "축구는 이 모든 이유들로 인해 인기 있지만, 궁극적으로 그 보편적 매력의 주된 이유는 이것일지도 모른다: 바로 단순한 게임이라는 점이다.",
+  },
+
+  // 지문 1 · 14번째 문장: It can be played anywhere with anything—a ball, a can, or even some bags tied together.
+  "1-13": {
+    form: "1형식 (수동태)",
+    tense: "단순 현재 (+ 조동사 can)",
+    chips: [
+      ["주어(S)", "It"],
+      ["동사(V)·수동태", "can be played"],
+      ["수식어(M)", "anywhere"],
+      ["수식어(M)", "with anything"],
+      ["대시 부연", "a ball, a can, or some bags …"],
+      ["과거분사 후치수식", "some bags tied together"],
+    ],
+    structure:
+      `뼈대: <b>It(S) + can be played(V)</b>. play는 타동사지만 여기선 <b>수동태</b>라 목적어 없이 → 1형식(수동태).<br><br>` +
+      `① <b>It</b> (주어): 앞의 the game(soccer)을 가리킴.<br>` +
+      `② <b>can be played</b> (동사·수동태): 조동사 <b>can</b> + <b>be played</b>(be + p.p.) = "행해질 수 있다".<br>` +
+      `③ <b>anywhere</b> (부사·수식어): "어디서든".<br>` +
+      `④ <b>with anything</b> (전치사구·수식어): "무엇을 가지고도".<br>` +
+      `⑤ <b>—</b> (엠 대시): 앞의 <b>anything</b>이 구체적으로 뭔지 예시를 <b>극적으로 부연</b> (a ball, a can, or even some bags tied together).<br>` +
+      `⑥ <b>some bags tied together</b> (⭐ 과거분사 후치수식):<br>` +
+      `&nbsp;&nbsp;• 원래: some bags <b>(which are)</b> tied together → <b>주격 관계대명사 which + be동사 are 생략</b>.<br>` +
+      `&nbsp;&nbsp;• 남은 <b>과거분사 tied</b>가 앞의 명사 bags를 <b>뒤에서 수식(후치수식)</b> = "함께 묶인 가방들".<br>` +
+      `&nbsp;&nbsp;• 왜 과거분사(tied)? 가방은 '묶는' 게 아니라 '묶이는' 대상이라 <b>수동 의미 → 과거분사</b>. (현재분사 tying이면 '묶고 있는'이 되어 틀림)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('participle-postmod','pp-omit')">✂️ 후치수식 & (which are) 생략 자세히 →</span><br><br>` +
+      `📝 <b>해석:</b> "그것(축구)은 어디서든 무엇으로든 할 수 있다 — 공, 깡통, 심지어 함께 묶은 가방 몇 개로도."`,
+    trans: "그것(축구)은 어디서든 무엇으로든 할 수 있다 — 공, 깡통, 심지어 함께 묶은 가방 몇 개로도.",
+  },
+
+  // 지문 1 · 15번째 문장: And anyone can play it.
+  "1-14": {
+    form: "3형식 (S + V + O)",
+    tense: "단순 현재 (+ 조동사 can)",
+    chips: [
+      ["접속사", "And"],
+      ["주어(S)", "anyone"],
+      ["동사(V)", "can play"],
+      ["목적어(O)", "it"],
+    ],
+    structure:
+      `뼈대: <b>anyone(S) + can play(V) + it(O)</b> 의 <b>3형식</b>.<br><br>` +
+      `① <b>And</b> (문두 등위접속사): 앞 문장(어디서든 뭐로든 할 수 있다)에 <b>이어 붙여 강조</b> "게다가/그리고". 원래 접속사는 문장 중간용이지만, 강조·구어체에선 문두 And를 흔히 씀.<br>` +
+      `② <b>anyone</b> (주어): "누구나". any+one이라 <b>단수 취급</b>. 긍정문에서 "아무나/누구든".<br>` +
+      `③ <b>can play</b> (동사): 조동사 <b>can</b>("~할 수 있다") + play(동사원형).<br>` +
+      `④ <b>it</b> (목적어): 앞의 the game(soccer)을 가리킴.<br><br>` +
+      `📝 <b>해석:</b> "그리고 누구나 그것(축구)을 할 수 있다."`,
+    trans: "그리고 누구나 그것(축구)을 할 수 있다.",
+  },
+};
+
+/* ---------- 문법 정리 (공부한 내용 채우기) ----------
+   공부한 문법을 항목으로 추가하세요. 형식:
+   {
+     title: "관계대명사 who / which / that",
+     tag: "핵심",                       // 기초 / 핵심 / 심화 등 자유
+     body: "선행사를 뒤 문장이 꾸며줄 때 사용...",
+     eg: [
+       ["주격", "the man who lives here", "여기 사는 그 남자"],
+       ["목적격", "the book which I read", "내가 읽은 그 책"]
+     ]
+   }
+   지금은 비어 있음 → 앱에는 '문법 채워넣기' 안내가 표시됩니다. */
+const GRAMMAR = [
+  {
+    id: "relative-pronoun",
+    title: "관계대명사 (who / which / that / what)",
+    tag: "핵심 · 자주 나옴",
+    body:
+      `관계대명사는 <b>접속사 + 대명사</b> 역할을 동시에 함. 앞의 명사(<b>선행사</b>)를 뒤 문장이 꾸며주는데, 이때 뒤 문장은 주어나 목적어가 하나 빠진 <b>‘불완전한 절’</b>이 됨.<br>` +
+      `<div id="rp-incomplete" class="g-sub">` +
+      `<b>❓ 왜 ‘불완전한 절’인가?</b><br>` +
+      `관계대명사 자신이 그 <b>빠진 자리(주어·목적어)를 대신</b>하기 때문. 원래 두 문장을 하나로 합치면서 겹치는 명사를 관계대명사로 바꿔 앞으로 빼냈기 때문에, 뒤에는 그 자리가 <b>빈 채로</b> 남음.<br>` +
+      `예) the book <u>which I read __</u> → read의 <b>목적어 자리가 비어</b> 있고, which가 그 자리를 대신함.` +
+      `</div>` +
+      `<div id="rp-what" class="g-sub">` +
+      `<b>⭐ 관계대명사 what = the thing(s) which/that (“~하는 것”)</b><br>` +
+      `who·which·that은 <b>앞에 선행사가 꼭 필요</b>하지만, <b>what은 선행사를 자기 안에 이미 포함</b>('the thing which'). 그래서 앞에 꾸밀 명사가 없어도 홀로 서고, <b>what절 전체가 통째로 명사 역할</b>(주어·목적어·보어)을 함.<br><br>` +
+      `<b>🤔 “the world now calls football, 주어·동사·목적어 다 있는데 왜 불완전해?”</b><br>` +
+      `얼핏 the world(주어)+calls(동사)+football(목적어)처럼 보이지만, 함정은 동사 <b>call의 형식</b>에 있음.<br><br>` +
+      `<b>① call은 5형식 동사: “A를 B라고 부르다” = call + A(목적어) + B(목적격보어)</b><br>` +
+      `완전한 문장이면 동사 뒤에 명사가 <b>두 개</b> 와야 함.<br>` +
+      `예) The world now calls <u>this game</u> <u>football</u>. = 세상은 <b>이 게임을(A·목적어)</b> <b>풋볼이라고(B·목적격보어)</b> 부른다.<br><br>` +
+      `<b>② 그런데 이 절은 목적어(A) 자리가 텅 비어 있음 🚨</b><br>` +
+      `What the world now calls __ football<br>` +
+      `· the world = 주어　· now calls = 동사　· <u>__ (비어 있음)</u> = 목적어(A, “~를”)　· football = <b>목적격보어(B, “~라고”)</b><br>` +
+      `👉 <b>핵심 반전:</b> football은 목적어가 아니라 <b>목적격보어(“~라고”)</b>! 정작 “무엇을(A)”에 해당하는 <b>목적어 자리가 비어서</b> 불완전한 것.<br><br>` +
+      `<b>③ 그 빈 목적어 자리를 what이 채움</b><br>` +
+      `What the world now calls football = The thing <u>which</u> the world now calls __ football = “세상이 현재 <b>(그것을)</b> 풋볼이라 부르는 <b>그것</b>”.<br>` +
+      `what은 <b>빠진 목적어 역할 + 선행사(명사)까지 스스로 품기</b> 때문에 문법적으로 100% 맞음.` +
+      `</div>` +
+      `<div id="rp-object-omit" class="g-sub">` +
+      `<b>✂️ 목적격 관계대명사(which·whom·that)는 생략 가능!</b><br>` +
+      `관계대명사가 뒤 절에서 <b>목적어 역할</b>이면 <b>that으로 바꾸거나 아예 생략</b>할 수 있음. (단, <b>주격은 생략 불가!</b>)<br><br>` +
+      `<b>예) the sport we know today</b><br>` +
+      `· 원래: the sport <u>(which/that)</u> we know today ← <b>목적격 관계대명사가 생략</b>됨<br>` +
+      `· we know <u>__</u> today 에서 <b>know의 목적어 자리가 비어</b> 있고, 그 자리가 the sport(선행사)를 가리킴 = “우리가 오늘날 아는 그 스포츠”.<br><br>` +
+      `<b>🔎 생략됐는지 판별법:</b> 명사 뒤에 곧바로 <b>[주어 + 동사]</b>가 나오면, 그 사이에 목적격 관계대명사가 생략된 것!<br>` +
+      `the sport <u>we know</u> = 명사 + (주어 we + 동사 know) → 사이에 which/that 생략.<br><br>` +
+      `<b>주격 vs 목적격 한눈에:</b><br>` +
+      `· 주격(뒤에 바로 동사): the man <u>who</u> lives here → <b>생략 불가</b><br>` +
+      `· 목적격(뒤에 주어+동사): the book <u>(which)</u> I read → <b>생략/​that 가능</b>` +
+      `</div>` +
+      `<div id="rp-object-full" class="g-sub">` +
+      `<b>⭕ 목적격 관계대명사 → 100% 생략 가능!</b><br>` +
+      `목적격(who/whom/which/that) 뒤엔 [주어+동사]가 옴. 관계사를 지워도 <b>[명사 + 주어 + 동사]</b>가 부딪히며 "아, 뒤에서 앞 명사를 꾸미는구나"를 0.1초에 눈치챌 수 있어 원어민은 99% 생략함.<br>` +
+      `· This is the guitar <u>(which/that)</u> I bought. = This is the guitar I bought. (⭕)<br>` +
+      `· She is the girl <u>(who/whom)</u> I like. = She is the girl I like. (⭕)<br>` +
+      `💡 독해 꿀팁: 접속사도 없이 <b>[명사]+[주어]+[동사]</b>가 연달아 나오면 → 가운데 목적격 관계대명사 생략! 뒤에서 앞 명사 꾸며 읽기.` +
+      `</div>` +
+      `<div id="rp-subject-omit" class="g-sub">` +
+      `<b>🚨 주격 관계대명사는 혼자서 생략 불가!</b><br>` +
+      `주격(who/which/that) 뒤엔 주어 없이 <b>바로 동사</b>가 옴. 접착제를 지우면 한 문장에 동사 두 개가 충돌해 난장판이 됨.<br>` +
+      `· I know a boy <u>who</u> likes soccer. (⭕)<br>` +
+      `· I know a boy likes soccer. (❌ know와 likes 충돌!)<br><br>` +
+      `<b>⭐ 유일한 예외: [주격 관계대명사 + be동사]는 통째로 생략!</b><br>` +
+      `주격 뒤에 be(is/are/was/were) + <b>분사/형용사</b>가 올 때, [주격 + be]를 세트로 날림.<br>` +
+      `· some bags <u>(which are)</u> tied together → some bags tied together (⭕)<br>` +
+      `· the boy <u>(who is)</u> playing soccer → the boy playing soccer (⭕)<br>` +
+      `👉 이게 바로 '분사의 후치수식'과 이어짐. <span class="wikilink" onclick="gotoGrammar('participle-postmod','pp-omit')">✂️ 후치수식 자세히 →</span>` +
+      `</div>`,
+    eg: [
+      ["주격 who (사람)", "the man who lives here", "여기 사는 그 남자"],
+      ["목적격 which (사물)", "the book which I read", "내가 읽은 그 책"],
+      ["what (선행사 포함)", "What he said is true.", "그가 말한 것은 사실이다."],
+    ],
+  },
+  {
+    id: "participle-construction",
+    title: "분사구문 (Participial Construction)",
+    tag: "핵심 · 자주 나옴",
+    body:
+      `분사구문 = <b>[접속사 + 주어 + 동사]로 된 부사절을, -ing(분사) 하나로 짧게 줄인 것</b>. 문장을 간결하고 세련되게 만듦. 뜻은 문맥에 따라 <b>시간·이유·조건·동시동작·결과</b> 등으로 해석.<br>` +
+      `<div id="pc-make" class="g-sub">` +
+      `<b>🛠️ 만드는 3단계 (원래 문장 → 분사구문)</b><br>` +
+      `이 지문의 예: 원래 문장은 <u>and it truly makes soccer the world's sport</u> 였음.<br>` +
+      `① <b>접속사 삭제</b>: and 를 지움<br>` +
+      `② <b>주어 삭제</b>: 주절과 (의미상) 주어가 같으면 주어(it)를 지움<br>` +
+      `③ <b>동사 → -ing</b>: makes → <b>making</b><br>` +
+      `= <b>truly making soccer the world's sport</b> ✅` +
+      `</div>` +
+      `<div id="pc-meaning" class="g-sub">` +
+      `<b>이 문장에서의 의미 = ‘결과(그래서 ~하다)’</b><br>` +
+      `“…, 그리고 그것이 축구를 세계의 스포츠로 만든다” → 앞 내용의 <b>결과</b>를 덧붙이는 분사구문.<br>` +
+      `속 구조까지 뜯으면 <b>make + O + OC (5형식)</b>: making(분사) + soccer(목적어) + the world's sport(목적격보어) = ‘축구를 세계의 스포츠로 만들다’.` +
+      `</div>`,
+    eg: [
+      ["원래 부사절", "As she smiled, she waved at me.", "그녀는 웃으면서 나에게 손을 흔들었다."],
+      ["분사구문으로 축약", "Smiling, she waved at me.", "(웃으며) 나에게 손을 흔들었다."],
+    ],
+  },
+  {
+    id: "so-roles",
+    title: "so의 세 가지 얼굴 (접속사·부사·담화표지)",
+    tag: "핵심",
+    body:
+      `같은 <b>so</b>라도 놓이는 자리에 따라 역할이 완전히 달라짐. 헷갈리지 않게 셋으로 구분!<br>` +
+      `<div id="so-conjunction" class="g-sub">` +
+      `<b>① 등위접속사 so = ‘그래서 (결과·인과)’</b><br>` +
+      `[완전한 문장] , so [완전한 문장] → 앞이 원인, 뒤가 결과.<br>` +
+      `예) It rained, <b>so</b> we stayed home. (비가 왔다, 그래서 집에 있었다.)<br>` +
+      `※ 지난 문장(and 편)에서 봤듯, 역사 서술에선 이 so 대신 <b>and</b>로 결과를 부드럽게 흘리기도 함. so는 인과를 <b>논리적으로 못박는</b> 느낌.` +
+      `</div>` +
+      `<div id="so-adverb" class="g-sub">` +
+      `<b>② 정도 부사 so = ‘그토록 / 그렇게 / 매우’</b><br>` +
+      `so + <b>형용사/부사</b> → 정도를 강조. 예) soccer is <b>so</b> popular (축구는 <b>그토록</b> 인기 있다).<br>` +
+      `cf. <b>so ~ that …</b> (너무 ~해서 …하다) 구문으로도 확장됨.` +
+      `</div>` +
+      `<div id="so-discourse" class="g-sub">` +
+      `<b>③ 담화표지(문두) So, = ‘자 / 그렇다면 / 그럼’</b><br>` +
+      `문장 맨 앞 + 콤마. 앞 내용을 받아 <b>다음 화제·질문으로 자연스럽게 넘어가는 신호</b>. 문장 성분(S·V·O) 계산엔 안 들어감.<br>` +
+      `예) <b>So,</b> why is soccer so popular? (자, 그렇다면 축구는 왜 그토록 인기일까?)` +
+      `</div>`,
+    eg: [
+      ["① 결과 접속사", "I was tired, so I slept.", "피곤해서 (그래서) 잤다."],
+      ["② 정도 부사", "It's so cold today.", "오늘 너무 춥다."],
+      ["③ 담화표지(문두)", "So, what's next?", "자, 다음은 뭐야?"],
+    ],
+  },
+  {
+    id: "appositive-that",
+    title: "동격의 that (~라는)",
+    tag: "핵심 · 자주 나옴",
+    body:
+      `추상명사 뒤의 that절이 그 명사의 <b>내용을 그대로 설명</b>할 때 = <b>동격의 that("~라는")</b>. [명사] = [that절] 관계.<br>` +
+      `자주 함께 쓰는 명사: <b>the fact / the feeling / the idea / the news / the belief / the hope</b> 등.<br>` +
+      `<div id="at-vs-relative" class="g-sub">` +
+      `<b>⚔️ 동격 that vs 관계대명사 that — 한 방에 구별!</b><br>` +
+      `that 뒤 문장이 <b>완전하면 동격</b>, <b>불완전(주어·목적어가 빠짐)하면 관계대명사</b>.<br><br>` +
+      `· <b>동격 that</b>: the feeling <u>that the team is your team</u> → 뒤 절이 S+V+C 다 갖춘 <b>완전한 문장</b> = "~라는 느낌"<br>` +
+      `· <b>관계대명사 that</b>: the book <u>that I read __</u> → read의 <b>목적어가 빠진 불완전한 절</b> = "내가 읽은 책"` +
+      `</div>`,
+    eg: [
+      ["동격 that (~라는)", "the fact that he lied", "그가 거짓말했다는 사실"],
+      ["동격 that (~라는)", "the news that we won", "우리가 이겼다는 소식"],
+      ["cf. 관계대명사 that", "the man that I met __", "내가 만난 그 남자 (목적어 빠짐)"],
+    ],
+  },
+  {
+    id: "of-types",
+    title: "of의 여러 종류 (소유 · 동격 · 내용)",
+    tag: "핵심",
+    body:
+      `of는 그냥 '~의'가 아님. 크게 3가지로 구분하면 해석이 정확해짐.<br>` +
+      `<div id="of-possess" class="g-sub">` +
+      `<b>① 소유·소속의 of ('~의')</b><br>` +
+      `가장 기본. A of B = 'B의 A'. 예) the leg of the table (탁자의 다리).` +
+      `</div>` +
+      `<div id="of-apposition" class="g-sub">` +
+      `<b>② 동격의 of ('A라는 B', 앞 = 뒤)</b><br>` +
+      `앞 명사 = of 뒤 명사. 예) the city of Seoul (서울이라는 도시), the Chinese game of cuju (축국이라는 중국 게임).` +
+      `</div>` +
+      `<div id="of-content" class="g-sub">` +
+      `<b>③ 내용의 of ('~에 대한 / ~라는 내용의')</b><br>` +
+      `promise·hope·chance·dream·fear 같은 <b>추상명사 뒤</b>에서 그 명사의 <b>알맹이(내용)</b>를 채움.<br>` +
+      `예) <b>the promise of great wealth</b> = '막대한 부를 얻을 수 있다는 기대·보장'.<br>` +
+      `the dream <b>of</b> success (성공하겠다는 꿈) / the chance <b>of</b> winning (이길 가능성) / the fear <b>of</b> failure (실패에 대한 두려움).<br>` +
+      `💡 꿀팁: <b>the promise of ~</b> 는 '손가락 건 약속'이 아니라 <b>'~을 얻을 수 있다는 기대·가능성'</b>으로 의역하면 원어민 뉘앙스 100%.` +
+      `</div>`,
+    eg: [
+      ["① 소유의 of", "the leg of the table", "탁자의 다리"],
+      ["② 동격의 of", "the city of Seoul", "서울이라는 도시"],
+      ["③ 내용의 of", "the promise of great wealth", "막대한 부를 얻는다는 기대"],
+    ],
+  },
+  {
+    id: "both-usage",
+    title: "both의 3가지 용법 (of를 쓸까 말까)",
+    tag: "핵심 · 함정 주의",
+    body:
+      `both 뒤에 <b>of를 언제 쓰고 언제 빼는지</b>가 함정으로 자주 나옴!<br>` +
+      `<div id="both-must-of" class="g-sub">` +
+      `<b>① 대명사(us/you/them) 앞 → of 필수! 🚨</b><br>` +
+      `Both <b>of</b> them are players. (⭕) / Both them are players. (❌ 삐!)<br>` +
+      `Both of us / Both of you 처럼 <b>both of + 대명사</b>는 무조건 세트.` +
+      `</div>` +
+      `<div id="both-optional-of" class="g-sub">` +
+      `<b>② the / these / my + 명사 앞 → of 있어도 없어도 OK ⚖️ (뜻 100% 동일)</b><br>` +
+      `Both <b>of</b> these players … (⭕ 본문) = Both these players … (⭕ of 빼도 완벽!)<br>` +
+      `⚠️ <b>함정 주의:</b> 시험에서 'Both these players'처럼 <b>of를 뺀 문장</b>을 주고 "틀린 것 고르라"고 해도 <b>이건 문법적으로 맞음!</b> 낚이지 말 것.<br>` +
+      `뉘앙스: 회화에선 of 빼는 게 더 흔하고, 격식 있는 글에선 of를 넣는 편.` +
+      `</div>` +
+      `<div id="both-no-of" class="g-sub">` +
+      `<b>③ of를 쓰면 안 되는 경우 ❌</b><br>` +
+      `· 일반명사 바로 앞: Both <b>players</b> are amazing. (Both of players ❌ — of 쓰려면 the/these 필요)<br>` +
+      `· 부사처럼 뒤에: They <b>both</b> like soccer. / I want <b>both</b>.<br>` +
+      `· <b>Both A and B</b>: Both Neymar and Moses came from poor families.` +
+      `</div>`,
+    eg: [
+      ["대명사 → of 필수", "Both of them are players.", "그들 둘 다 선수다."],
+      ["the/these → of 자유", "Both (of) these players earn a lot.", "이 두 선수 모두 많이 번다."],
+      ["Both A and B", "Both Neymar and Moses were poor.", "네이마르와 모지스 둘 다 가난했다."],
+    ],
+  },
+  {
+    id: "participle-postmod",
+    title: "분사의 후치수식 & (관계대명사+be) 생략",
+    tag: "핵심 · 자주 나옴",
+    body:
+      `명사 뒤에 분사(-ing / p.p.)가 붙어 그 명사를 <b>뒤에서 꾸미는 것</b> = 후치수식. 대개 <b>[주격 관계대명사 + be동사]가 생략</b>된 형태.<br>` +
+      `<div id="pp-omit" class="g-sub">` +
+      `<b>✂️ (which/who + be) 생략 원리</b><br>` +
+      `some bags <u>which are</u> tied together → 주격 관계사 which + be(are) 생략 → <b>some bags tied together</b>.<br>` +
+      `관계사절이 <b>[주격 관계사 + be + 분사/형용사]</b>일 때만 통째로 생략 가능.` +
+      `</div>` +
+      `<div id="pp-active-passive" class="g-sub">` +
+      `<b>🔑 현재분사(-ing) vs 과거분사(p.p.) 고르기</b><br>` +
+      `· 명사가 동작을 <b>하는</b> 주체(능동) → <b>현재분사 -ing</b>: the man <u>running</u> (뛰고 있는 남자)<br>` +
+      `· 명사가 동작을 <b>당하는</b> 대상(수동) → <b>과거분사 p.p.</b>: some bags <u>tied</u> together (묶여 있는 가방들)<br>` +
+      `👉 가방은 스스로 묶는 게 아니라 '묶이는' 대상이라 <b>tied(과거분사)</b>! (tying이면 '묶고 있는'이라 틀림)` +
+      `</div>`,
+    eg: [
+      ["과거분사(수동)", "a language spoken in Korea", "한국에서 쓰이는 언어"],
+      ["현재분사(능동)", "the boy playing soccer", "축구하고 있는 소년"],
+      ["(which is) 생략", "the book (which is) written by her", "그녀가 쓴 책"],
+    ],
+  },
+  {
+    id: "punctuation",
+    title: "문장 부호 5대장 — 강조와 연결의 도구",
+    tag: "핵심",
+    body:
+      `이 5가지는 단순히 문법을 나누는 선이 아니라, <b>“이 정보가 얼마나 중요한가(강조 세기)”</b> 와 <b>“앞뒤를 어떻게 연결할까(호흡·흐름)”</b> 를 조절하는 장치.<br><br>` +
+      `<b>① 부연설명 트리오 (중간에 끼워넣기)</b> — 강조 세기가 다름.<br>` +
+      `&nbsp;&nbsp;대시 <b>—</b> (확성기·확 튐) &gt; 쉼표 <b>,</b> (기본·자연스러움) &gt; 괄호 <b>( )</b> (귓속말·빼도 됨).<br><br>` +
+      `<b>② 연결 듀오 (앞뒤 잇기)</b> — 연결 방식이 다름.<br>` +
+      `<div id="pn-colon" class="g-sub">` +
+      `<b>🎁 콜론 : — 앞 내용의 구체적 설명·정답·목록을 공개</b><br>` +
+      `앞 = 뒤 <b>등호(=)</b> 관계. "…, 그게 뭐냐면 → (짜잔)". 콜론 앞은 보통 완전한 문장.<br>` +
+      `예) We need three things<b>:</b> guitar, cable, and amplifier.` +
+      `</div>` +
+      `<div id="pn-semicolon" class="g-sub">` +
+      `<b>🔗 세미콜론 ; — 접속사 없이 밀접한 두 완전한 문장을 연결</b><br>` +
+      `and/but 같은 접속사 대신 씀. 마침표(.)보다 약하고 쉼표(,)보다 강함. <b>양쪽 모두 완전한 문장</b>이어야 함.<br>` +
+      `예) I practiced all night<b>;</b> my fingers hurt so much.` +
+      `</div>`,
+    eg: [
+      ["엠 대시 —  ·  확성기 (강조·반전)", "My best friend —the one who hates sports— came to my match.", "내 베프가 —참고로 걔 스포츠 극혐인데— 내 경기에 왔어."],
+      ["쉼표 ,  ·  기본 숨고르기 (자연스러운 보충)", "My best friend, Kim, came to my match.", "내 베프인 Kim이 내 경기에 왔어."],
+      ["괄호 ( )  ·  귓속말 (사소한 참고 정보)", "Football (also known as soccer in the US) is a global sport.", "풋볼은 (미국에선 사커로도 알려졌지만) 세계적인 스포츠다."],
+      ["콜론 :  ·  짜잔 (앞내용 = 뒤 설명·목록)", "We need three things: guitar, cable, and amplifier.", "우린 세 가지가 필요해: 기타, 케이블, 그리고 앰프."],
+      ["세미콜론 ;  ·  접속사 대체 (밀접한 두 문장 연결)", "I practiced all night; my fingers hurt so much.", "밤새 기타를 연습했다; (그 결과) 손가락이 너무 아프다."],
+    ],
+  },
+];

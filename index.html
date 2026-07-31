@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="theme-color" content="#0f1115" />
+<title>2027 총신 편입영어</title>
+<link rel="icon" type="image/svg+xml" href="logo.svg" />
+<link rel="apple-touch-icon" href="logo.svg" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <img class="app-logo" src="logo.svg" alt="앱 로고" width="48" height="48" />
+    <div>
+      <h1>2027 총신 편입영어</h1>
+      <p>하나씩 쌓아 올려서 100점 만들기</p>
+    </div>
+  </div>
+  <span class="goal">🔥 목표: 100점</span>
+</header>
+
+<main>
+  <!-- ===== 단어카드 ===== -->
+  <section class="screen active" id="screen-words">
+    <h2 class="section-title">단어카드</h2>
+    <div class="flashcard-wrap">
+      <div class="flashcard" id="flashcard" onclick="flipCard()">
+        <div class="face front">
+          <div class="word" id="fc-word">—</div>
+          <div class="pos" id="fc-pos"></div>
+          <div class="tap-hint">탭하면 뜻 보기</div>
+        </div>
+        <div class="face back">
+          <div class="meaning" id="fc-meaning">—</div>
+          <div class="example" id="fc-example"></div>
+          <div class="tap-hint">탭하면 단어로 돌아가기</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-progress"><span id="fc-count">1 / 5</span><span></span></div>
+    <div class="nav-btns">
+      <button onclick="prevCard()">← 이전</button>
+      <button class="primary" onclick="nextCard()">다음 →</button>
+    </div>
+    <button class="reshuffle" onclick="shuffleWords()">🔀 카드 섞기</button>
+  </section>
+
+  <!-- ===== 지문 ===== -->
+  <section class="screen" id="screen-passages">
+    <h2 class="section-title">영어 지문 8개</h2>
+    <div id="passage-list"></div>
+    <div id="passage-reader" class="hidden">
+      <button class="back-link" onclick="closePassage()">← 목록으로</button>
+      <div class="card">
+        <div class="p-title" id="pr-title" style="margin-bottom:12px"></div>
+        <div class="passage-text" id="pr-text"></div>
+        <div class="extra-box hidden" id="pr-extra">
+          <span class="extra-label" id="pr-extra-label"></span>
+          <div class="passage-text" id="pr-extra-text"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 문장분석 ===== -->
+  <section class="screen" id="screen-analyze">
+    <h2 class="section-title">문장 분석</h2>
+
+    <div id="an-select">
+      <button class="mode-btn" onclick="startShuffle()">🔀 셔플 모드 · 시험대비</button>
+      <div id="an-passage-list"></div>
+    </div>
+
+    <div id="an-viewer" class="hidden">
+      <button class="back-link" onclick="closeAnalyze()">← 지문 선택으로</button>
+      <div class="card">
+        <div class="an-label">
+          <span class="tag" id="an-source"></span>
+          <span class="tag" id="an-count"></span>
+        </div>
+        <div id="an-badges" class="an-badges hidden"></div>
+        <div class="analyze-en" id="an-en">—</div>
+        <div id="an-detail" class="hidden"></div>
+        <button class="reveal-btn" id="an-reveal" onclick="toggleAnalyze()">분석 · 해석 보기</button>
+      </div>
+      <div class="nav-btns">
+        <button onclick="prevSentence()">← 이전</button>
+        <button class="primary" onclick="nextSentence()">다음 →</button>
+      </div>
+      <button class="reshuffle hidden" id="an-reshuffle" onclick="startShuffle()">🔀 다시 섞기</button>
+    </div>
+  </section>
+
+  <!-- ===== 문법 ===== -->
+  <section class="screen" id="screen-grammar">
+    <h2 class="section-title">문법 체계 정리</h2>
+    <div id="grammar-list"></div>
+  </section>
+</main>
+
+<nav class="tabbar">
+  <button class="active" data-screen="words" onclick="switchTab('words')"><span class="ico">🃏</span>단어카드</button>
+  <button data-screen="passages" onclick="switchTab('passages')"><span class="ico">📖</span>지문</button>
+  <button data-screen="analyze" onclick="switchTab('analyze')"><span class="ico">🔍</span>문장분석</button>
+  <button data-screen="grammar" onclick="switchTab('grammar')"><span class="ico">📐</span>문법</button>
+</nav>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <clipPath id="app-icon-shape">
+      <rect x="0" y="0" width="512" height="512" rx="115" ry="115"></rect>
+    </clipPath>
+
+    <path id="star" d="M 0 -10 L 2.24 -3.09 L 9.51 -3.09 L 3.63 1.18 L 5.87 8.09 L 0 3.82 L -5.87 8.09 L -3.63 1.18 L -9.51 -3.09 L -2.24 -3.09 Z" fill="#FFFFFF" transform="scale(1.4)"></path>
+
+    <linearGradient id="glass-base" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.3"></stop>
+      <stop offset="30%" stop-color="#ffffff" stop-opacity="0.1"></stop>
+      <stop offset="70%" stop-color="#000000" stop-opacity="0.1"></stop>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.4"></stop>
+    </linearGradient>
+
+    <linearGradient id="glass-highlight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.6"></stop>
+      <stop offset="20%" stop-color="#ffffff" stop-opacity="0.1"></stop>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"></stop>
+    </linearGradient>
+
+    <linearGradient id="glass-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.7"></stop>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.1"></stop>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.4"></stop>
+    </linearGradient>
+
+    <filter id="blur-shadow">
+      <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#000" flood-opacity="0.5"></feDropShadow>
+    </filter>
+  </defs>
+
+  <g clip-path="url(#app-icon-shape)">
+    <rect width="512" height="512" fill="#B22234"></rect>
+
+    <rect x="0" y="39.38" width="512" height="39.38" fill="#FFFFFF"></rect>
+    <rect x="0" y="118.15" width="512" height="39.38" fill="#FFFFFF"></rect>
+    <rect x="0" y="196.92" width="512" height="39.38" fill="#FFFFFF"></rect>
+    <rect x="0" y="275.69" width="512" height="39.38" fill="#FFFFFF"></rect>
+    <rect x="0" y="354.46" width="512" height="39.38" fill="#FFFFFF"></rect>
+    <rect x="0" y="433.23" width="512" height="39.38" fill="#FFFFFF"></rect>
+
+    <rect x="0" y="0" width="389" height="275.69" fill="#3C3B6E"></rect>
+
+    <use href="#star" x="32.41" y="27.57"></use>
+    <use href="#star" x="97.25" y="27.57"></use>
+    <use href="#star" x="162.08" y="27.57"></use>
+    <use href="#star" x="226.91" y="27.57"></use>
+    <use href="#star" x="291.75" y="27.57"></use>
+    <use href="#star" x="356.58" y="27.57"></use>
+
+    <use href="#star" x="32.41" y="82.71"></use>
+    <use href="#star" x="97.25" y="82.71"></use>
+    <use href="#star" x="162.08" y="82.71"></use>
+    <use href="#star" x="226.91" y="82.71"></use>
+    <use href="#star" x="291.75" y="82.71"></use>
+    <use href="#star" x="356.58" y="82.71"></use>
+
+    <use href="#star" x="32.41" y="137.85"></use>
+    <use href="#star" x="97.25" y="137.85"></use>
+    <use href="#star" x="162.08" y="137.85"></use>
+    <use href="#star" x="226.91" y="137.85"></use>
+    <use href="#star" x="291.75" y="137.85"></use>
+    <use href="#star" x="356.58" y="137.85"></use>
+
+    <use href="#star" x="32.41" y="192.99"></use>
+    <use href="#star" x="97.25" y="192.99"></use>
+    <use href="#star" x="162.08" y="192.99"></use>
+    <use href="#star" x="226.91" y="192.99"></use>
+    <use href="#star" x="291.75" y="192.99"></use>
+    <use href="#star" x="356.58" y="192.99"></use>
+
+    <use href="#star" x="32.41" y="248.13"></use>
+    <use href="#star" x="97.25" y="248.13"></use>
+    <use href="#star" x="162.08" y="248.13"></use>
+    <use href="#star" x="226.91" y="248.13"></use>
+    <use href="#star" x="291.75" y="248.13"></use>
+    <use href="#star" x="356.58" y="248.13"></use>
+
+    <use href="#star" x="64.83" y="55.14"></use>
+    <use href="#star" x="129.66" y="55.14"></use>
+    <use href="#star" x="194.50" y="55.14"></use>
+    <use href="#star" x="259.33" y="55.14"></use>
+    <use href="#star" x="324.16" y="55.14"></use>
+
+    <use href="#star" x="64.83" y="110.28"></use>
+    <use href="#star" x="129.66" y="110.28"></use>
+    <use href="#star" x="194.50" y="110.28"></use>
+    <use href="#star" x="259.33" y="110.28"></use>
+    <use href="#star" x="324.16" y="110.28"></use>
+
+    <use href="#star" x="64.83" y="165.42"></use>
+    <use href="#star" x="129.66" y="165.42"></use>
+    <use href="#star" x="194.50" y="165.42"></use>
+    <use href="#star" x="259.33" y="165.42"></use>
+    <use href="#star" x="324.16" y="165.42"></use>
+
+    <use href="#star" x="64.83" y="220.56"></use>
+    <use href="#star" x="129.66" y="220.56"></use>
+    <use href="#star" x="194.50" y="220.56"></use>
+    <use href="#star" x="259.33" y="220.56"></use>
+    <use href="#star" x="324.16" y="220.56"></use>
+
+    <rect x="0" y="0" width="512" height="512" fill="url(#glass-base)"></rect>
+
+    <path d="M 0 0 L 512 0 L 512 250 C 350 200 150 280 0 450 Z" fill="url(#glass-highlight)" opacity="0.8"></path>
+
+    <circle cx="150" cy="50" r="250" fill="#ffffff" opacity="0.15" filter="url(#blur-shadow)"></circle>
+
+    <rect x="3" y="3" width="506" height="506" rx="112" ry="112" fill="none" stroke="url(#glass-border)" stroke-width="6" opacity="0.9"></rect>
+    <rect x="1" y="1" width="510" height="510" rx="114" ry="114" fill="none" stroke="#000000" stroke-width="2" opacity="0.3"></rect>
+  </g>
+</svg>

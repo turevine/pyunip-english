@@ -1,0 +1,8 @@
+# macOS
+.DS_Store
+
+# 로컬 개발용 (Claude Code 미리보기 서버 등)
+.claude/
+
+# 로그/임시
+*.log
