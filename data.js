@@ -23,6 +23,9 @@ const WORDS = [
   { word: "a number of",      pos: "phr.", meaning: "다수의, 많은 (+복수명사→복수취급)", example: "A number of players come from poor families." },
   { word: "including",        pos: "prep.", meaning: "~을 포함하여",                example: "many players, including Neymar" },
   { word: "the reason for",   pos: "phr.", meaning: "~에 대한 이유, ~의 이유",      example: "the main reason for its popularity" },
+  { word: "unique",           pos: "a.",   meaning: "독특한, 유일무이한",           example: "this unique simplicity" },
+  { word: "simplicity",       pos: "n.",   meaning: "단순함, 간단함 (↔complexity)",  example: "It's the game's simplicity." },
+  { word: "rural",            pos: "a.",   meaning: "시골의, 농촌의 (↔urban 도시의)", example: "even in rural areas" },
 ];
 
 /* ---------- 지문 8개 ----------
