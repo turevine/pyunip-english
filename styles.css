@@ -12,6 +12,7 @@
   --radius:16px;
 }
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{touch-action:pan-x pan-y;-ms-touch-action:pan-x pan-y;-webkit-text-size-adjust:100%;text-size-adjust:100%}
 html,body{margin:0;padding:0;background:var(--bg);color:var(--text);
   font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard",system-ui,sans-serif;
   -webkit-font-smoothing:antialiased}
