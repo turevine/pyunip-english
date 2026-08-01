@@ -882,16 +882,22 @@ const GRAMMAR = [
       `<div id="of-partitive" class="g-sub">` +
       `<b>④ 부분의 of ('~ 중에서', 전체 속의 일부)</b><br>` +
       `<b>수량표현 + of + the(특정) 명사</b> 꼴. "<b>정해진 전체</b> 중 일부"를 콕 집음.<br>` +
-      `&nbsp;&nbsp;some / many / most / several / all / each / one / none <b>of the</b> ~<br>` +
+      `&nbsp;&nbsp;some / many / most / several / all / <b>both</b> / each / one / none <b>of the</b> ~<br>` +
       `예) <b>several of the players</b> = "그 선수들 <b>중 몇몇</b>". / most of the money (그 돈의 대부분).<br>` +
       `⭐ <b>of 뒤엔 반드시 the·소유격·this 같은 '한정어'</b>가 붙은 특정 명사 (several of <s>players</s> ✗ → several of <b>the</b> players ✓, several players ✓).<br>` +
-      `⚡ <b>수일치 함정:</b> 동사는 <b>of 뒤 명사</b>에 맞춤. some of the <u>money</u> <b>is</b> (단수) / some of the <u>players</u> <b>are</b> (복수).` +
+      `⚡ <b>수일치 함정:</b> 동사는 <b>of 뒤 명사</b>에 맞춤. some of the <u>money</u> <b>is</b> (단수) / some of the <u>players</u> <b>are</b> (복수).<br><br>` +
+      `<b>🔷 both of the ~ ('그 둘 다') — 특히 함정 많음</b><br>` +
+      `&nbsp;&nbsp;• <b>both은 '둘'</b>이라 <b>항상 복수 취급</b> → 동사도 복수: both of the players <b>are</b> ✓.<br>` +
+      `&nbsp;&nbsp;• ⭐ <b>both 뒤 of는 생략 가능</b>: both <b>(of)</b> the players = both the players. (다른 수량어는 of 못 뺌: most <b>of</b> the ~ ✓ / most the ~ ✗)<br>` +
+      `&nbsp;&nbsp;• 대명사 앞에선 of <b>필수</b>: both <b>of</b> them ✓ (both them ✗).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('both-usage','both-optional-of')">🔀 both의 of 생략 규칙 자세히 →</span>` +
       `</div>`,
     eg: [
       ["① 소유의 of", "the leg of the table", "탁자의 다리"],
       ["② 동격의 of", "the city of Seoul", "서울이라는 도시"],
       ["③ 내용의 of", "the promise of great wealth", "막대한 부를 얻는다는 기대"],
       ["④ 부분의 of", "several of the best players", "최고 선수들 중 몇몇"],
+      ["④ 부분의 of · both", "both of the players are ~", "그 선수들 둘 다 ~ (항상 복수)"],
     ],
   },
   {
