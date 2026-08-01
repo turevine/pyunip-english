@@ -709,6 +709,34 @@ const ANALYSIS = {
       `📝 <b>해석:</b> "오늘날, 그 게임(축구)의 최고 선수들 중 몇몇은 세네갈, 코트디부아르, 가나, 나이지리아를 포함한 아프리카 국가들 출신이다."`,
     trans: "오늘날, 축구의 최고 선수들 중 몇몇은 세네갈, 코트디부아르, 가나, 나이지리아를 포함한 아프리카 국가들 출신이다.",
   },
+
+  // 지문 1 · 24번째 문장: All over the continent, thousands of soccer academies now recruit boys from poorer cities and towns to play the game.
+  "1-23": {
+    form: "3형식 (S + V + O)",
+    tense: "단순 현재 (recruit)",
+    chips: [
+      ["수식어(M)·장소", "All over the continent"],
+      ["주어(S)·막연한 다수", "thousands of soccer academies"],
+      ["수식어(M)", "now"],
+      ["동사(V)", "recruit"],
+      ["목적어(O)", "boys (from poorer cities and towns)"],
+      ["부사적 용법(목적)", "to play the game"],
+    ],
+    structure:
+      `뼈대: <b>thousands of soccer academies</b>(S) + <b>recruit</b>(V) + <b>boys</b>(O) 의 <b>3형식</b>. 나머지는 수식어.<br><br>` +
+      `① <b>All over the continent,</b> (장소 부사구·수식어): "대륙 전역에서". <b>the continent</b> = 아프리카 대륙(재등장 the).<br>` +
+      `② <b>thousands of soccer academies</b> (⭐ 주어 · 막연한 다수 표현):<br>` +
+      `&nbsp;&nbsp;• <b>thousands of ~</b> = "수천의 ~". 막연히 많은 수. of 뒤는 <b>무관사 복수</b>(soccer academies).<br>` +
+      `&nbsp;&nbsp;• ⭐ <b>구별:</b> 막연한 다수는 <b>thousands of</b>(s + of), <b>구체적 숫자</b> 뒤엔 s·of 둘 다 없음 → <b>two thousand</b> academies. (hundreds / thousands / millions <b>of</b> ~ 세트로 암기)<br>` +
+      `&nbsp;&nbsp;• (앞서 배운 <b>부분의 of</b>와 달리 여기엔 <b>the가 없음</b> → '그 중 일부'가 아니라 '<b>막연한 전체 수</b>'.)<br>` +
+      `③ <b>now</b> (부사·수식어): "이제, 현재".<br>` +
+      `④ <b>recruit</b> (동사): "모집하다 / 채용하다".<br>` +
+      `⑤ <b>boys from poorer cities and towns</b> (목적어 + 수식어): "더 가난한 도시와 마을 출신의 소년들을". <b>poorer</b> = poor의 <b>비교급</b>("더 가난한"). <b>from ~</b>이 boys를 뒤에서 꾸밈.<br>` +
+      `⑥ <b>to play the game</b> (⭐ to부정사 부사적 용법·목적): "그 게임(축구)을 <b>하도록 / 하게 하려고</b>". 왜 소년들을 모집하나? → 축구를 시키려고 (목적).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-adverb')">📐 to부정사 부사적 용법(목적) 자세히 →</span><br><br>` +
+      `📝 <b>해석:</b> "대륙 전역에서, 이제 수천 개의 축구 아카데미가 더 가난한 도시와 마을의 소년들을 축구를 시키려고 모집한다."`,
+    trans: "대륙 전역에서, 이제 수천 개의 축구 아카데미가 더 가난한 도시와 마을 출신 소년들을 축구를 하도록 모집한다.",
+  },
 };
 
 /* ---------- 문법 정리 (공부한 내용 채우기) ----------
