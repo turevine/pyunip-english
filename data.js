@@ -483,6 +483,38 @@ const ANALYSIS = {
       `📝 <b>해석:</b> "그리고 누구나 그것(축구)을 할 수 있다."`,
     trans: "그리고 누구나 그것(축구)을 할 수 있다.",
   },
+
+  // 지문 1 · 16번째 문장: "You don't need to be rich ... to play soccer," says historian Peter Alegi. "You just need a flat space and a ball."
+  "1-15": {
+    form: "3형식 · 인용문 + 도치",
+    tense: "단순 현재 (don't need / just need / says)",
+    chips: [
+      ["인용 도치 (V+S)", "says historian Peter Alegi"],
+      ["주어(S)", "You"],
+      ["동사(V)", "don't need"],
+      ["목적어(O)·to부정사", "to be rich"],
+      ["부사적 용법(목적)", "to play soccer"],
+      ["2번째 문장(3형식)", "You just need a flat space and a ball"],
+    ],
+    structure:
+      `전체는 역사학자 Peter Alegi의 <b>말을 인용</b>한 것. 인용부호 안에 <b>완전한 문장 2개</b>가 들어있고, 중간에 <b>화자를 밝히는 도치 구문</b>이 끼어 있음.<br><br>` +
+      `① <b>says historian Peter Alegi</b> (⭐ 인용문 도치): 원래 어순은 <b>historian Peter Alegi(S) says(V)</b>. 인용문 뒤에 화자를 붙일 때 <b>동사(says)를 주어 앞으로 도치</b>하는 게 자연스러운 영어. = "역사학자 Peter Alegi가 말한다".<br>` +
+      `&nbsp;&nbsp;• 주의: <b>says</b>가 앞에 나와도 문장의 진짜 주어는 <b>Peter Alegi</b>. (동사가 3인칭 단수 <b>-s</b>인 이유)<br>` +
+      `② <b>You don't need to be rich</b> (첫 번째 인용 문장):<br>` +
+      `&nbsp;&nbsp;• <b>You(S) + don't need(V) + to be rich(O)</b> 의 3형식.<br>` +
+      `&nbsp;&nbsp;• <b>need to + 동사원형</b> = "~할 필요가 있다" → 부정 <b>don't need to</b> = "~할 필요가 <b>없다</b>".<br>` +
+      `&nbsp;&nbsp;• <b>to be rich</b> = to부정사의 <b>명사적 용법</b>(need의 목적어) = "부유한 것 / 부자인 것".<br>` +
+      `③ <b>…</b> (말줄임표): 원문 인용 중 <b>일부를 생략</b>했다는 표시. (교재가 문장 일부를 잘라 인용)<br>` +
+      `④ <b>to play soccer</b> (⭐ to부정사 부사적 용법·목적): "축구를 하기 <b>위해서는</b>". 앞의 "부자일 필요 없다"를 꾸며, <b>무엇을 위해 필요 없는지</b> 목적을 밝힘 = "축구를 하려고 부자일 필요는 없다".<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-noun')">📐 to부정사 3용법(명사·부사) 자세히 →</span><br>` +
+      `⑤ <b>You just need a flat space and a ball</b> (두 번째 인용 문장):<br>` +
+      `&nbsp;&nbsp;• <b>You(S) + need(V) + a flat space and a ball(O)</b> 의 3형식.<br>` +
+      `&nbsp;&nbsp;• <b>just</b> (부사·수식어) = "단지 / 그저". 필요한 게 이것뿐임을 강조.<br>` +
+      `&nbsp;&nbsp;• 목적어는 <b>a flat space</b>(평평한 공간) <b>and</b> <b>a ball</b>(공) 두 개를 <b>and로 등위 연결</b>.<br><br>` +
+      `📝 <b>해석:</b> "축구를 하는 데 부자일 필요는 없어요," 역사학자 Peter Alegi는 말한다. "그저 평평한 공간과 공 하나만 있으면 됩니다."`,
+    trans:
+      "\"축구를 하는 데 부자일 필요는 없어요,\" 역사학자 Peter Alegi는 말한다. \"그저 평평한 공간과 공 하나만 있으면 됩니다.\"",
+  },
 };
 
 /* ---------- 문법 정리 (공부한 내용 채우기) ----------
@@ -736,6 +768,33 @@ const GRAMMAR = [
       ["괄호 ( )  ·  귓속말 (사소한 참고 정보)", "Football (also known as soccer in the US) is a global sport.", "풋볼은 (미국에선 사커로도 알려졌지만) 세계적인 스포츠다."],
       ["콜론 :  ·  짜잔 (앞내용 = 뒤 설명·목록)", "We need three things: guitar, cable, and amplifier.", "우린 세 가지가 필요해: 기타, 케이블, 그리고 앰프."],
       ["세미콜론 ;  ·  접속사 대체 (밀접한 두 문장 연결)", "I practiced all night; my fingers hurt so much.", "밤새 기타를 연습했다; (그 결과) 손가락이 너무 아프다."],
+    ],
+  },
+  {
+    id: "to-infinitive",
+    title: "to부정사 3용법 — 명사·형용사·부사",
+    tag: "핵심",
+    body:
+      `<b>to + 동사원형</b> 은 동사를 잠깐 다른 품사로 <b>변신</b>시키는 만능 장치. 문장에서 <b>어떤 자리에 있느냐</b>로 용법이 갈림. "왜 여기 to부정사가 왔지?"를 자리로 판단하는 게 핵심.<br><br>` +
+      `<div id="ti-noun" class="g-sub">` +
+      `<b>① 명사적 용법 — 명사 자리(주어·목적어·보어)에서 "~하는 것"</b><br>` +
+      `동사의 <b>목적어</b> 자리에 오면 "~하기/~하는 것". want / need / hope / decide / plan 등이 자주 데려옴.<br>` +
+      `예) You don't need <b>to be</b> rich. = 부유<b>할 (것을)</b> 필요는 없다.<br>` +
+      `예) I want <b>to play</b> soccer. = 나는 축구<b>하기를</b> 원한다.` +
+      `</div>` +
+      `<div id="ti-adverb" class="g-sub">` +
+      `<b>② 부사적 용법 — 문장을 꾸밈. 대표 뜻 "~하기 위해(목적)"</b><br>` +
+      `없어도 문장이 성립하는 <b>수식어</b>. "왜?/무엇을 위해?"에 답하면 <b>목적</b>. (그 밖에 감정의 원인·결과 등도 있음)<br>` +
+      `예) ... <b>to play</b> soccer = 축구를 하기 <b>위해</b>. (= in order to play)<br>` +
+      `예) I came here <b>to see</b> you. = 너를 보<b>려고</b> 여기 왔다.` +
+      `</div>` +
+      `<b>③ 형용사적 용법 — 앞의 명사를 뒤에서 꾸밈 "~할/~하는"</b><br>` +
+      `명사 뒤에 붙어 후치수식. 예) something <b>to eat</b>(먹을 것), a chance <b>to win</b>(이길 기회).<br><br>` +
+      `⭐ <b>구분 요령:</b> 동사 <b>바로 뒤 목적어 자리</b>면 → 명사적. 이미 완전한 문장에 <b>덤으로 붙어</b> "왜?"에 답하면 → 부사적(목적). <b>명사 뒤</b>에 붙으면 → 형용사적.`,
+    eg: [
+      ["명사적 (목적어) · ~하는 것", "You don't need to be rich to play soccer.", "축구를 하려고 부자일 필요는 없다. (to be = need의 목적어)"],
+      ["부사적 (목적) · ~하기 위해", "You just need a ball to play.", "(경기)하기 위해 공 하나만 있으면 된다."],
+      ["형용사적 · ~할 (명사 수식)", "We have a game to win.", "우리에겐 이겨야 할 경기가 있다."],
     ],
   },
 ];
