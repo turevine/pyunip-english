@@ -26,6 +26,7 @@ const WORDS = [
   { word: "unique",           pos: "a.",   meaning: "독특한, 유일무이한",           example: "this unique simplicity" },
   { word: "simplicity",       pos: "n.",   meaning: "단순함, 간단함 (↔complexity)",  example: "It's the game's simplicity." },
   { word: "rural",            pos: "a.",   meaning: "시골의, 농촌의 (↔urban 도시의)", example: "even in rural areas" },
+  { word: "early",            pos: "a./ad.", meaning: "초기의, 이른; 일찍 (↔late)",   example: "Early matches were played in 1862." },
 ];
 
 /* ---------- 지문 8개 ----------
@@ -629,6 +630,33 @@ const ANALYSIS = {
       `📝 <b>해석:</b> "19세기에, 유럽 식민지 개척자들이 그 게임(축구)을 아프리카로 가져왔다(전했다)."`,
     trans: "19세기에, 유럽 식민지 개척자들이 그 게임(축구)을 아프리카에 전했다.",
   },
+
+  // 지문 1 · 21번째 문장: Early matches were first played in the South African cities of Cape Town and Port Elizabeth in 1862.
+  "1-20": {
+    form: "1형식 (수동태)",
+    tense: "단순 과거 (수동태 were played)",
+    chips: [
+      ["주어(S)", "Early matches"],
+      ["동사(V)·수동태", "were (first) played"],
+      ["수식어(M)·장소", "in the South African cities …"],
+      ["동격의 of", "of Cape Town and Port Elizabeth"],
+      ["수식어(M)·시간", "in 1862"],
+    ],
+    structure:
+      `뼈대: <b>Early matches</b>(S) + <b>were played</b>(V·수동태). play는 타동사지만 <b>수동태</b>라 목적어 없이 → <b>1형식(수동태)</b>. "초기 경기들이 (누군가에 의해) <b>치러졌다</b>".<br><br>` +
+      `① <b>Early matches</b> (주어): "초기 경기들". <b>Early</b>(형용사) + <b>matches</b>(복수 명사).<br>` +
+      `② <b>were first played</b> (⭐ 수동태 + 부사 삽입):<br>` +
+      `&nbsp;&nbsp;• <b>were played</b> = <b>be(were) + 과거분사(played)</b> = 과거 수동태 "치러졌다 / 열렸다". 경기는 스스로 하는 게 아니라 '치러지는' 대상이라 수동.<br>` +
+      `&nbsp;&nbsp;• <b>first</b> (부사) = "처음으로". <b>be동사와 과거분사 사이</b>에 끼워 넣음 (were <u>first</u> played).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('passive-voice','pv-form')">📐 수동태 be + p.p. 자세히 →</span><br>` +
+      `③ <b>in the South African cities of Cape Town and Port Elizabeth</b> (장소 전치사구):<br>` +
+      `&nbsp;&nbsp;• <b>the South African cities</b> = "그 남아프리카 도시들". <b>South African</b>은 고유형용사(대문자).<br>` +
+      `&nbsp;&nbsp;• ⭐ <b>of Cape Town and Port Elizabeth</b> = <b>동격의 of</b>! "케이프타운과 포트엘리자베스<b>라는</b> (도시들)". 여기 <b>of</b>는 '~의'가 아니라 '<b>즉/라는</b>'. (the city <b>of</b> Seoul = 서울이라는 도시)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('of-types','of-apposition')">🧬 of의 종류(동격의 of) 자세히 →</span><br>` +
+      `④ <b>in 1862</b> (시간 전치사구): "1862년에".<br><br>` +
+      `📝 <b>해석:</b> "초기 경기들은 1862년에 남아프리카의 도시 케이프타운과 포트엘리자베스에서 처음으로 열렸다."`,
+    trans: "초기 경기들은 1862년 남아프리카의 도시 케이프타운과 포트엘리자베스에서 처음으로 열렸다.",
+  },
 };
 
 /* ---------- 문법 정리 (공부한 내용 채우기) ----------
@@ -1010,6 +1038,31 @@ const GRAMMAR = [
       ["the · 최상급", "the most popular sport in Africa", "아프리카에서 가장 인기 있는 스포츠 (최상급 → the)"],
       ["무관사 · 추상명사 총칭", "Throughout history, humans played games.", "역사 전체에 걸쳐, 인간은 게임을 해왔다. (history 총칭 → 무관사)"],
       ["무관사 · 복수 총칭 + 운동", "Anyone can play soccer.", "누구나 축구를 할 수 있다. (운동 soccer → 무관사)"],
+    ],
+  },
+  {
+    id: "passive-voice",
+    title: "수동태 be + p.p. — '~되다 / 당하다'",
+    tag: "핵심",
+    body:
+      `주어가 행동을 <b>직접 하면</b> 능동태, 행동을 <b>당하거나 받으면</b> 수동태. "누가 했느냐"보다 "<b>무엇이 어떻게 되었느냐</b>"가 중요할 때 씀.<br><br>` +
+      `<div id="pv-form" class="g-sub">` +
+      `<b>🔧 공식: be동사 + 과거분사(p.p.)</b> — 시제·수는 <b>be동사</b>가 담당, 의미는 p.p.가 담당.<br>` +
+      `&nbsp;&nbsp;• 현재: is/are <b>played</b> · 과거: was/were <b>played</b><br>` +
+      `&nbsp;&nbsp;• 완료: has been <b>played</b> · 조동사: can be <b>played</b><br>` +
+      `행위자를 밝히려면 <b>by + 행위자</b> (모르거나 뻔하면 자주 생략).<br>` +
+      `부사는 <b>be와 p.p. 사이</b>: were <u>first</u> played, is <u>always</u> played.` +
+      `</div>` +
+      `<div id="pv-when" class="g-sub">` +
+      `<b>🔄 능동 → 수동 3단계</b><br>` +
+      `&nbsp;&nbsp;1️⃣ 목적어 → 주어로 &nbsp; 2️⃣ 동사 → <b>be + p.p.</b> &nbsp; 3️⃣ 주어 → <b>by + 목적격</b><br>` +
+      `예) People play soccer. → <b>Soccer is played</b> (by people).<br>` +
+      `⚠️ <b>목적어가 있는 타동사만</b> 수동태 가능. <b>자동사</b>(happen, occur, appear, arrive…)는 <b>수동태 불가</b> (was happened ✗).` +
+      `</div>`,
+    eg: [
+      ["과거 수동태", "Early matches were played in 1862.", "초기 경기들은 1862년에 열렸다. (경기 = 치러지는 대상)"],
+      ["조동사 + be p.p.", "Soccer can be played anywhere.", "축구는 어디서든 행해질 수 있다."],
+      ["by 행위자", "The rules were made by the FA.", "그 규칙들은 축구협회에 의해 만들어졌다."],
     ],
   },
 ];
