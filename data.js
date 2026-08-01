@@ -682,6 +682,33 @@ const ANALYSIS = {
       `📝 <b>해석:</b> "이윽고(시간이 지나면서), 그 스포츠(축구)는 대륙 전역으로 퍼져 나갔다."`,
     trans: "이윽고, 그 스포츠(축구)는 대륙 전역으로 퍼져 나갔다.",
   },
+
+  // 지문 1 · 23번째 문장: Today, several of the game's best players come from African nations, including Senegal, Ivory Coast, Ghana, and Nigeria.
+  "1-22": {
+    form: "1형식 (S + V)",
+    tense: "단순 현재 (come)",
+    chips: [
+      ["수식어(M)·시간", "Today"],
+      ["주어(S)·부분의 of", "several of the game's best players"],
+      ["동사(V)", "come (from)"],
+      ["수식어(M)·출신", "from African nations"],
+      ["분사→전치사", "including …"],
+    ],
+    structure:
+      `뼈대: <b>several …</b>(S) + <b>come</b>(V) 의 <b>1형식</b> (come from = 자동사구). 나머지는 수식어.<br><br>` +
+      `① <b>Today,</b> (시간 부사·수식어): "오늘날".<br>` +
+      `② <b>several of the game's best players</b> (⭐ 주어 · 부분의 of):<br>` +
+      `&nbsp;&nbsp;• <b>several of the ~</b> = "그 ~ <b>중 몇몇</b>". <b>수량표현 + of + the(특정) 명사</b> = <b>부분의 of</b>.<br>` +
+      `&nbsp;&nbsp;• <b>the game's best players</b> = "그 게임(축구)의 최고 선수들". <b>the game's</b>(소유격) + <b>best</b>(최상급) + players.<br>` +
+      `&nbsp;&nbsp;• ⚡ 수일치: 동사는 <b>of 뒤 명사(players·복수)</b>에 맞춰 <b>come</b>(복수형). "several of the players comes" ✗<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('of-types','of-partitive')">🧬 부분의 of & 수일치 자세히 →</span><br>` +
+      `③ <b>come from African nations</b> (동사+출신 수식어): <b>come from ~</b> = "~ 출신이다 / ~에서 오다". <b>African nations</b> = 아프리카 국가들 (불특정 복수 → 무관사).<br>` +
+      `④ <b>including Senegal, Ivory Coast, Ghana, and Nigeria</b> (⭐ 분사 → 전치사 including):<br>` +
+      `&nbsp;&nbsp;• <b>including</b> = "~을 포함하여". 원래 include(포함하다)의 분사가 <b>전치사처럼 굳어진 것</b>. 뒤에 예시를 나열.<br>` +
+      `&nbsp;&nbsp;• 콤마로 분리된 <b>부연 설명</b>이라, 없어도 문장은 완전 (앞의 African nations의 구체적 예).<br><br>` +
+      `📝 <b>해석:</b> "오늘날, 그 게임(축구)의 최고 선수들 중 몇몇은 세네갈, 코트디부아르, 가나, 나이지리아를 포함한 아프리카 국가들 출신이다."`,
+    trans: "오늘날, 축구의 최고 선수들 중 몇몇은 세네갈, 코트디부아르, 가나, 나이지리아를 포함한 아프리카 국가들 출신이다.",
+  },
 };
 
 /* ---------- 문법 정리 (공부한 내용 채우기) ----------
@@ -833,10 +860,10 @@ const GRAMMAR = [
   },
   {
     id: "of-types",
-    title: "of의 여러 종류 (소유 · 동격 · 내용)",
+    title: "of의 여러 종류 (소유 · 동격 · 내용 · 부분)",
     tag: "핵심",
     body:
-      `of는 그냥 '~의'가 아님. 크게 3가지로 구분하면 해석이 정확해짐.<br>` +
+      `of는 그냥 '~의'가 아님. 크게 4가지로 구분하면 해석이 정확해짐.<br>` +
       `<div id="of-possess" class="g-sub">` +
       `<b>① 소유·소속의 of ('~의')</b><br>` +
       `가장 기본. A of B = 'B의 A'. 예) the leg of the table (탁자의 다리).` +
@@ -851,11 +878,20 @@ const GRAMMAR = [
       `예) <b>the promise of great wealth</b> = '막대한 부를 얻을 수 있다는 기대·보장'.<br>` +
       `the dream <b>of</b> success (성공하겠다는 꿈) / the chance <b>of</b> winning (이길 가능성) / the fear <b>of</b> failure (실패에 대한 두려움).<br>` +
       `💡 꿀팁: <b>the promise of ~</b> 는 '손가락 건 약속'이 아니라 <b>'~을 얻을 수 있다는 기대·가능성'</b>으로 의역하면 원어민 뉘앙스 100%.` +
+      `</div>` +
+      `<div id="of-partitive" class="g-sub">` +
+      `<b>④ 부분의 of ('~ 중에서', 전체 속의 일부)</b><br>` +
+      `<b>수량표현 + of + the(특정) 명사</b> 꼴. "<b>정해진 전체</b> 중 일부"를 콕 집음.<br>` +
+      `&nbsp;&nbsp;some / many / most / several / all / each / one / none <b>of the</b> ~<br>` +
+      `예) <b>several of the players</b> = "그 선수들 <b>중 몇몇</b>". / most of the money (그 돈의 대부분).<br>` +
+      `⭐ <b>of 뒤엔 반드시 the·소유격·this 같은 '한정어'</b>가 붙은 특정 명사 (several of <s>players</s> ✗ → several of <b>the</b> players ✓, several players ✓).<br>` +
+      `⚡ <b>수일치 함정:</b> 동사는 <b>of 뒤 명사</b>에 맞춤. some of the <u>money</u> <b>is</b> (단수) / some of the <u>players</u> <b>are</b> (복수).` +
       `</div>`,
     eg: [
       ["① 소유의 of", "the leg of the table", "탁자의 다리"],
       ["② 동격의 of", "the city of Seoul", "서울이라는 도시"],
       ["③ 내용의 of", "the promise of great wealth", "막대한 부를 얻는다는 기대"],
+      ["④ 부분의 of", "several of the best players", "최고 선수들 중 몇몇"],
     ],
   },
   {
