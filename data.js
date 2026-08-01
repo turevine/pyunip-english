@@ -603,6 +603,32 @@ const ANALYSIS = {
       `📝 <b>해석:</b> "아프리카에서 축구의 역사는 긴 것(긴 이야기)이다."`,
     trans: "아프리카에서 축구의 역사는 긴 것(긴 이야기)이다.",
   },
+
+  // 지문 1 · 20번째 문장: In the 19th century, European colonists brought the game to Africa.
+  "1-19": {
+    form: "3형식 (S + V + O)",
+    tense: "단순 과거 (brought)",
+    chips: [
+      ["수식어(M)·시간", "In the 19th century"],
+      ["주어(S)", "European colonists"],
+      ["동사(V)·과거", "brought"],
+      ["목적어(O)", "the game"],
+      ["수식어(M)·방향", "to Africa"],
+    ],
+    structure:
+      `뼈대: <b>European colonists</b>(S) + <b>brought</b>(V) + <b>the game</b>(O) 의 <b>3형식</b>. 앞뒤는 수식어.<br><br>` +
+      `① <b>In the 19th century,</b> (시간 부사구·수식어): "19세기에". ⭐ <b>서수(19th)</b> 앞이라 <b>the</b>가 붙음. (서수·최상급엔 the)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('articles','ar-the')">📐 관사 the가 붙는 경우 자세히 →</span><br>` +
+      `② <b>European colonists</b> (주어): "유럽 (출신) 식민지 개척자들". <b>European</b>은 형용사, <b>colonists</b>는 복수 명사. 특정 관사 없이 쓴 <b>불특정 복수</b>.<br>` +
+      `③ <b>brought</b> (동사): ⭐ <b>bring의 불규칙 과거</b>. <b>bring – brought – brought</b>. "가져왔다 / 전했다".<br>` +
+      `④ <b>the game</b> (목적어): "그 게임" = 앞서 계속 나온 <b>soccer</b>. 서로 아는 것이라 <b>the</b>.<br>` +
+      `⑤ <b>to Africa</b> (방향 전치사구·수식어): "아프리카로".<br>` +
+      `&nbsp;&nbsp;• ⭐ <b>bring A to B</b> = "A를 B로 가져오다". 여기 B(Africa)가 <b>장소</b>라 <b>to+장소</b> 방향 부사구 → <b>3형식</b>.<br>` +
+      `&nbsp;&nbsp;• (참고) B가 <b>사람</b>이면 <b>bring B A</b>(4형식)로도 씀: bring <u>me</u> the ball = bring the ball <u>to me</u>.<br>` +
+      `&nbsp;&nbsp;• <b>Africa</b>는 고유명사 → <b>무관사</b>.<br><br>` +
+      `📝 <b>해석:</b> "19세기에, 유럽 식민지 개척자들이 그 게임(축구)을 아프리카로 가져왔다(전했다)."`,
+    trans: "19세기에, 유럽 식민지 개척자들이 그 게임(축구)을 아프리카에 전했다.",
+  },
 };
 
 /* ---------- 문법 정리 (공부한 내용 채우기) ----------
