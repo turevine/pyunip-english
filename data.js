@@ -27,6 +27,7 @@ const WORDS = [
   { word: "simplicity",       pos: "n.",   meaning: "단순함, 간단함 (↔complexity)",  example: "It's the game's simplicity." },
   { word: "rural",            pos: "a.",   meaning: "시골의, 농촌의 (↔urban 도시의)", example: "even in rural areas" },
   { word: "early",            pos: "a./ad.", meaning: "초기의, 이른; 일찍 (↔late)",   example: "Early matches were played in 1862." },
+  { word: "in time",          pos: "phr.", meaning: "이윽고, 시간이 지나면서; 늦지 않게 (↔on time 정각에)", example: "In time, the sport spread across the continent." },
 ];
 
 /* ---------- 지문 8개 ----------
@@ -656,6 +657,30 @@ const ANALYSIS = {
       `④ <b>in 1862</b> (시간 전치사구): "1862년에".<br><br>` +
       `📝 <b>해석:</b> "초기 경기들은 1862년에 남아프리카의 도시 케이프타운과 포트엘리자베스에서 처음으로 열렸다."`,
     trans: "초기 경기들은 1862년 남아프리카의 도시 케이프타운과 포트엘리자베스에서 처음으로 열렸다.",
+  },
+
+  // 지문 1 · 22번째 문장: In time, the sport spread across the continent.
+  "1-21": {
+    form: "1형식 (S + V)",
+    tense: "단순 과거 (spread)",
+    chips: [
+      ["수식어(M)·시간(숙어)", "In time"],
+      ["주어(S)", "the sport"],
+      ["동사(V)·과거", "spread"],
+      ["수식어(M)·장소", "across the continent"],
+    ],
+    structure:
+      `뼈대: <b>the sport</b>(S) + <b>spread</b>(V) 의 <b>1형식</b> (주어 + 자동사). 앞뒤는 수식어.<br><br>` +
+      `① <b>In time,</b> (⭐ 시간 부사구·숙어·수식어): "이윽고 / 시간이 지나면서 / 마침내".<br>` +
+      `&nbsp;&nbsp;• ⚠️ <b>함정: in time ≠ on time!</b><br>` +
+      `&nbsp;&nbsp;&nbsp;&nbsp;- <b>in time</b> = 시간이 흘러 <b>이윽고</b> (또는 '늦지 않게').<br>` +
+      `&nbsp;&nbsp;&nbsp;&nbsp;- <b>on time</b> = <b>정각에</b> / 시간 딱 맞춰.<br>` +
+      `② <b>the sport</b> (주어): "그 스포츠" = 축구. 앞에 계속 나온 것이라 <b>the</b>.<br>` +
+      `③ <b>spread</b> (동사): ⭐ <b>불규칙 무변화 동사</b> — 원형·과거·과거분사가 모두 같음 (<b>spread – spread – spread</b>). 여기선 문맥상 <b>과거</b> "퍼졌다". 자동사로 "퍼지다".<br>` +
+      `&nbsp;&nbsp;• 같은 무변화 동사: <b>cut, put, hit, set, let, cost</b> (read는 철자만 같고 발음이 달라짐).<br>` +
+      `④ <b>across the continent</b> (장소 전치사구·수식어): "대륙 전역에 걸쳐". <b>across</b> = 가로질러/전역. <b>the continent</b> = 앞서 나온 <b>Africa(아프리카 대륙)</b>, 재등장이라 the.<br><br>` +
+      `📝 <b>해석:</b> "이윽고(시간이 지나면서), 그 스포츠(축구)는 대륙 전역으로 퍼져 나갔다."`,
+    trans: "이윽고, 그 스포츠(축구)는 대륙 전역으로 퍼져 나갔다.",
   },
 };
 
