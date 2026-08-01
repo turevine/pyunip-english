@@ -544,6 +544,37 @@ const ANALYSIS = {
     trans:
       "축구를 아프리카에서 가장 인기 있는 스포츠로 만드는 것은 바로 이 독특한 단순함이다.",
   },
+
+  // 지문 1 · 18번째 문장: Here, even in rural areas far from the bright lights and big stadiums, children and adults play the game, often with handmade balls.
+  "1-17": {
+    form: "3형식 (S + V + O)",
+    tense: "단순 현재",
+    chips: [
+      ["수식어(M)·장소", "Here"],
+      ["긴 삽입 수식어", "even in rural areas far from … stadiums"],
+      ["주어(S)", "children and adults"],
+      ["동사(V)", "play"],
+      ["목적어(O)", "the game"],
+      ["수식어(M)", "often with handmade balls"],
+    ],
+    structure:
+      `수식어(거품)가 잔뜩 껴서 길어 보이지만, <b>거품을 걷어내면</b> 뼈대는 아주 단순함:<br>` +
+      `&nbsp;&nbsp;<b>children and adults</b>(S) <b>play</b>(V) <b>the game</b>(O) 의 <b>3형식</b>. 나머지는 전부 수식어.<br><br>` +
+      `① <b>Here,</b> (문두 부사·수식어): "이곳에서" = 앞 문장의 <b>Africa(아프리카)</b>를 받음.<br>` +
+      `② <b>even in rural areas far from the bright lights and big stadiums,</b> (⭐ 긴 삽입 수식어) — 주어 앞에 끼어들어 문장을 길어 보이게 하는 주범. 통째로 <b>괄호 친 셈</b> 치고 건너뛰면 구조가 보임:<br>` +
+      `&nbsp;&nbsp;• <b>even</b> (부사): "심지어" — 강조.<br>` +
+      `&nbsp;&nbsp;• <b>in rural areas</b> (전치사구): "시골 지역에서".<br>` +
+      `&nbsp;&nbsp;• <b>far from the bright lights and big stadiums</b> (형용사구·후치수식): 앞의 <b>rural areas</b>를 뒤에서 꾸밈 = "밝은 조명과 큰 경기장에서 <b>멀리 떨어진</b>".<br>` +
+      `&nbsp;&nbsp;&nbsp;&nbsp;- 원래: rural areas <b>(which are)</b> far from … → <b>주격 관계대명사 + be동사 생략</b>.<br>` +
+      `&nbsp;&nbsp;&nbsp;&nbsp;- <b>far from ~</b> = "~에서 멀리 떨어진". <b>the bright lights and big stadiums</b>는 and로 등위 연결.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('participle-postmod','pp-omit')">✂️ (which are) 생략 & 후치수식 자세히 →</span><br>` +
+      `③ <b>children and adults</b> (주어): "아이들과 어른들". <b>and</b>로 등위 연결된 복수 주어.<br>` +
+      `④ <b>play the game</b> (동사+목적어): "그 게임(축구)을 하다". the game = 앞서 나온 soccer.<br>` +
+      `⑤ <b>often with handmade balls</b> (수식어): <b>often</b>(자주) + <b>with handmade balls</b>(손으로 만든 공으로). <b>handmade</b> = hand + made(과거분사)의 합성 형용사 = "손으로 만든".<br><br>` +
+      `📝 <b>해석:</b> "이곳에서는, 밝은 조명과 큰 경기장에서 멀리 떨어진 시골 지역에서조차, 아이들과 어른들이 종종 손으로 만든 공으로 그 게임(축구)을 한다."`,
+    trans:
+      "이곳에서는, 밝은 조명과 큰 경기장에서 멀리 떨어진 시골 지역에서조차, 아이들과 어른들이 종종 손으로 만든 공으로 축구를 한다.",
+  },
 };
 
 /* ---------- 문법 정리 (공부한 내용 채우기) ----------
