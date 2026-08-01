@@ -515,6 +515,35 @@ const ANALYSIS = {
     trans:
       "\"축구를 하는 데 부자일 필요는 없어요,\" 역사학자 Peter Alegi는 말한다. \"그저 평평한 공간과 공 하나만 있으면 됩니다.\"",
   },
+
+  // 지문 1 · 17번째 문장: It is this unique simplicity that makes soccer the most popular sport in Africa.
+  "1-16": {
+    form: "It ~ that 강조구문 (원문은 5형식)",
+    tense: "단순 현재 (is / makes)",
+    chips: [
+      ["강조 틀", "It is ~ that …"],
+      ["강조 대상(원래 주어)", "this unique simplicity"],
+      ["동사(V)", "makes"],
+      ["목적어(O)", "soccer"],
+      ["목적격보어(OC)·최상급", "the most popular sport"],
+      ["수식어(M)", "in Africa"],
+    ],
+    structure:
+      `이 문장은 <b>It is A that B</b> 형태의 <b>강조구문</b>. 강조 장치를 걷어낸 원래 문장은:<br>` +
+      `&nbsp;&nbsp;<b>This unique simplicity</b>(S) <b>makes</b>(V) <b>soccer</b>(O) <b>the most popular sport</b>(OC) in Africa. = <b>5형식</b>.<br>` +
+      `강조하고 싶은 <b>주어(this unique simplicity)</b>를 <b>It is ~ that</b> 사이에 끼워 "다름 아닌 ~이 …하는 것이다"로 부각한 것.<br><br>` +
+      `① <b>It is ~ that</b> (⭐ 강조구문 틀): 여기 <b>It은 '그것'으로 해석하지 않음</b>. 뜻 없는 <b>강조 장치</b>일 뿐. "바로 ~이다"로 옮김.<br>` +
+      `② <b>this unique simplicity</b> (강조받는 원래 주어): "바로 이 독특한 단순함". 앞 문장의 simple(단순한)을 명사로 받음.<br>` +
+      `③ <b>that</b> (강조구문 연결어): 강조 대상이 사물이라 that. (사람이면 who도 가능) 관계대명사 that과 형태만 같음.<br>` +
+      `④ <b>makes soccer the most popular sport</b> (⭐ make + O + OC · 5형식): "축구를(O) 가장 인기 있는 스포츠로(OC) <b>만든다</b>". O와 OC가 <b>soccer = the most popular sport</b> 관계.<br>` +
+      `⑤ <b>the most popular</b> (최상급): "가장 인기 있는". popular는 <b>3음절 이상</b>이라 -est가 아니라 <b>most</b>를 붙이고, 최상급엔 <b>the</b>.<br>` +
+      `⑥ <b>in Africa</b> (전치사구·수식어): "아프리카에서". 장소.<br><br>` +
+      `⭐ <b>구분 팁 (강조구문 vs 가주어 It ~ that):</b> <b>It is</b>와 <b>that</b>을 빼고, 강조 대상을 제자리에 넣었을 때 <b>완전한 문장</b>이 되면 → <b>강조구문</b>. (여기선 "This unique simplicity makes …"로 완전 → 강조구문 확정)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('cleft-sentence','cs-test')">📐 It ~ that 강조구문 자세히 →</span><br><br>` +
+      `📝 <b>해석:</b> "축구를 아프리카에서 가장 인기 있는 스포츠로 만드는 것은 바로 이 독특한 단순함이다."`,
+    trans:
+      "축구를 아프리카에서 가장 인기 있는 스포츠로 만드는 것은 바로 이 독특한 단순함이다.",
+  },
 };
 
 /* ---------- 문법 정리 (공부한 내용 채우기) ----------
@@ -795,6 +824,33 @@ const GRAMMAR = [
       ["명사적 (목적어) · ~하는 것", "You don't need to be rich to play soccer.", "축구를 하려고 부자일 필요는 없다. (to be = need의 목적어)"],
       ["부사적 (목적) · ~하기 위해", "You just need a ball to play.", "(경기)하기 위해 공 하나만 있으면 된다."],
       ["형용사적 · ~할 (명사 수식)", "We have a game to win.", "우리에겐 이겨야 할 경기가 있다."],
+    ],
+  },
+  {
+    id: "cleft-sentence",
+    title: "It ~ that 강조구문 — '바로 ~이다'",
+    tag: "핵심",
+    body:
+      `문장에서 <b>딱 한 부분</b>을 골라 "<b>다름 아닌 바로 이것</b>!"이라고 확성기를 대는 장치. 강조하고 싶은 말을 <b>It is</b> 와 <b>that</b> 사이에 끼워 넣음.<br><br>` +
+      `<b>기본 공식:</b> <b>It is</b> + [강조할 것] + <b>that</b> + [나머지].<br>` +
+      `&nbsp;&nbsp;원문: <u>This simplicity</u> makes soccer popular. (이 단순함이 축구를 인기있게 만든다)<br>` +
+      `&nbsp;&nbsp;→ 강조: <b>It is</b> <u>this simplicity</u> <b>that</b> makes soccer popular. (축구를 인기있게 만드는 건 <b>바로 이 단순함</b>이다)<br><br>` +
+      `<b>포인트</b><br>` +
+      `• 여기 <b>It</b>은 '그것'이 <b>아님</b> — 뜻 없는 강조 장치. 해석 안 함.<br>` +
+      `• 강조 대상이 <b>사람</b>이면 that 대신 <b>who</b>, <b>사물</b>이면 that/which, <b>시간·장소</b>면 when/where도 가능.<br>` +
+      `• <b>주어·목적어·부사구</b>는 강조 가능하지만, <b>동사</b>는 이 틀로 강조 못 함.<br><br>` +
+      `<div id="cs-test" class="g-sub">` +
+      `<b>🔍 강조구문 vs 가주어 It ~ that 구별법 (시험 단골!)</b><br>` +
+      `<b>It is</b> 와 <b>that</b>을 <b>지우고</b>, 강조 대상을 원래 자리에 넣어 봐라.<br>` +
+      `&nbsp;&nbsp;• <b>완전한 문장</b>이 되면 → <b>강조구문</b> (that 이하가 주어/목적어 하나가 빠진 불완전).<br>` +
+      `&nbsp;&nbsp;• 넣을 자리가 없고 that절이 <b>이미 완전</b>하면 → <b>가주어-진주어</b> (It = 뒤 that절).<br>` +
+      `예) It is <u>this simplicity</u> that makes soccer popular. → 지우면 "This simplicity makes soccer popular"(완전) = <b>강조구문</b> ✅<br>` +
+      `예) It is <u>true</u> that he left. → true를 넣을 자리 없음, "he left"는 이미 완전 = <b>가주어</b> (그가 떠난 건 사실이다)` +
+      `</div>`,
+    eg: [
+      ["주어 강조", "It is this simplicity that makes soccer popular.", "축구를 인기있게 만드는 건 바로 이 단순함이다."],
+      ["목적어 강조", "It was soccer that they loved most.", "그들이 가장 사랑한 건 바로 축구였다."],
+      ["부사구(장소) 강조", "It was in Africa that the sport spread fast.", "그 스포츠가 빠르게 퍼진 건 바로 아프리카에서였다."],
     ],
   },
 ];
