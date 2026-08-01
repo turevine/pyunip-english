@@ -28,6 +28,7 @@ const WORDS = [
   { word: "rural",            pos: "a.",   meaning: "시골의, 농촌의 (↔urban 도시의)", example: "even in rural areas" },
   { word: "early",            pos: "a./ad.", meaning: "초기의, 이른; 일찍 (↔late)",   example: "Early matches were played in 1862." },
   { word: "in time",          pos: "phr.", meaning: "이윽고, 시간이 지나면서; 늦지 않게 (↔on time 정각에)", example: "In time, the sport spread across the continent." },
+  { word: "recruit",          pos: "v./n.", meaning: "모집하다, 채용하다; 신입", example: "Academies recruit boys to play the game." },
 ];
 
 /* ---------- 지문 8개 ----------
