@@ -578,6 +578,31 @@ const ANALYSIS = {
     trans:
       "이곳에서는, 밝은 조명과 큰 경기장에서 멀리 떨어진 시골 지역에서조차, 아이들과 어른들이 종종 손으로 만든 공으로 축구를 한다.",
   },
+
+  // 지문 1 · 19번째 문장: The story of soccer in Africa is a long one.
+  "1-18": {
+    form: "2형식 (S + V + C)",
+    tense: "단순 현재",
+    chips: [
+      ["주어(S)·핵심명사", "The story"],
+      ["수식어(of구)", "of soccer in Africa"],
+      ["동사(V)", "is"],
+      ["주격보어(C)", "a long one"],
+      ["부정대명사", "one = story"],
+    ],
+    structure:
+      `뼈대: <b>The story …</b>(S) + <b>is</b>(V) + <b>a long one</b>(C) 의 <b>2형식</b> (주어 = 보어).<br><br>` +
+      `① <b>The story of soccer in Africa</b> (주어): 핵심 명사는 <b>The story</b>, 뒤는 전치사구 수식.<br>` +
+      `&nbsp;&nbsp;• <b>of soccer</b> (전치사구): "축구의" — story를 꾸밈.<br>` +
+      `&nbsp;&nbsp;• <b>in Africa</b> (전치사구): "아프리카에서의" — 역시 story를 꾸밈. → 합치면 "<b>아프리카 축구의 역사</b>".<br>` +
+      `② <b>is</b> (동사): 2형식 be동사. 주어와 보어를 <b>등호(=)</b>로 이어줌.<br>` +
+      `③ <b>a long one</b> (⭐ 주격보어 · 부정대명사 one):<br>` +
+      `&nbsp;&nbsp;• <b>one</b> = 앞에 나온 <b>단수 가산명사 story</b>의 반복을 피하려고 쓴 <b>부정대명사</b>. 즉 <b>a long one = a long story</b>.<br>` +
+      `&nbsp;&nbsp;• 왜 <b>it</b>이 아니라 <b>one</b>? → <b>it</b>은 "바로 그 story(특정)", <b>one</b>은 "(같은 종류의) 이야기 하나". 여기선 형용사 <b>long</b>이 붙어 '긴 <b>하나의</b> 역사'라는 새 정보를 주므로 <b>one</b>. (형용사가 붙어 관사 <b>a</b>와 함께 씀)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('pronoun-one','po-vs-it')">📐 부정대명사 one vs it 자세히 →</span><br><br>` +
+      `📝 <b>해석:</b> "아프리카에서 축구의 역사는 긴 것(긴 이야기)이다."`,
+    trans: "아프리카에서 축구의 역사는 긴 것(긴 이야기)이다.",
+  },
 };
 
 /* ---------- 문법 정리 (공부한 내용 채우기) ----------
@@ -885,6 +910,29 @@ const GRAMMAR = [
       ["주어 강조", "It is this simplicity that makes soccer popular.", "축구를 인기있게 만드는 건 바로 이 단순함이다."],
       ["목적어 강조", "It was soccer that they loved most.", "그들이 가장 사랑한 건 바로 축구였다."],
       ["부사구(장소) 강조", "It was in Africa that the sport spread fast.", "그 스포츠가 빠르게 퍼진 건 바로 아프리카에서였다."],
+    ],
+  },
+  {
+    id: "pronoun-one",
+    title: "부정대명사 one — 같은 종류의 '하나' (≠ it)",
+    tag: "핵심",
+    body:
+      `<b>one</b> 은 앞에 나온 <b>단수 가산명사</b>의 반복을 피하려고 쓰는 대명사. 단, "<b>바로 그것</b>"이 아니라 "<b>같은 종류의 (불특정한) 하나</b>"를 가리킴.<br><br>` +
+      `<div id="po-vs-it" class="g-sub">` +
+      `<b>🔍 one vs it — 시험 최다 함정</b><br>` +
+      `• <b>it</b> = 앞에 나온 <b>바로 그것</b> (특정 · the + 명사).<br>` +
+      `• <b>one</b> = 같은 <b>종류</b> 중 <b>아무거나 하나</b> (a + 명사).<br>` +
+      `예) I lost my pen. I need to buy <b>one</b>. → <b>one = a pen</b> (아무 펜이나 새로)<br>` +
+      `예) I lost my pen. Where is <b>it</b>? → <b>it = the pen</b> (잃어버린 바로 그 펜)` +
+      `</div>` +
+      `<b>포인트</b><br>` +
+      `• 형용사가 붙으면 <b>a long one</b>, <b>the red one</b> 처럼 관사와 함께.<br>` +
+      `• 복수는 <b>ones</b>. 예) the red <b>ones</b> (빨간 것들).<br>` +
+      `• <b>불가산명사</b>는 one으로 못 받음 (예: water → one ✗). 이땐 반복 생략하거나 some/it 사용.`,
+    eg: [
+      ["one = a + 명사 (같은 종류)", "The story is a long one.", "그 이야기는 긴 것(긴 이야기)이다. (one = story)"],
+      ["one vs it", "I lost my ball; I'll buy one. Where is it?", "공을 잃었다; 하나 살게(아무 공). 그건 어딨지?(그 공)"],
+      ["복수 ones", "I like the red ones.", "난 빨간 것들이 좋다."],
     ],
   },
 ];
