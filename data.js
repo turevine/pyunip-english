@@ -935,4 +935,55 @@ const GRAMMAR = [
       ["복수 ones", "I like the red ones.", "난 빨간 것들이 좋다."],
     ],
   },
+  {
+    id: "articles",
+    title: "관사 a / an / the / 무관사 — 3갈래로 끝내기",
+    tag: "핵심",
+    body:
+      `명사를 쓸 때마다 딱 <b>3가지 중 하나</b>를 고르는 게임. "이걸 왜 여기서 안 썼지?"의 답은 대부분 <b>③ 무관사</b>에 있음.<br><br>` +
+      `<b>🚦 판단 순서 (이 순서로 자문):</b><br>` +
+      `&nbsp;&nbsp;1️⃣ 화자·청자가 <b>'바로 그거!'</b>로 아는 특정한 것? → <b>the</b><br>` +
+      `&nbsp;&nbsp;2️⃣ 아니면, <b>셀 수 있는 단수</b>가 <b>불특정 하나</b>? → <b>a / an</b><br>` +
+      `&nbsp;&nbsp;3️⃣ 둘 다 아니면 (복수·불가산의 <b>일반론</b>, 추상·고유명사 등) → <b>무관사</b><br><br>` +
+
+      `<div id="ar-a" class="g-sub">` +
+      `<b>① a / an — 셀 수 있는 단수 · 불특정 '하나' (처음 등장)</b><br>` +
+      `• "여럿 중 아무거나 하나 / 이제 처음 꺼내는 것"에 붙임.<br>` +
+      `• <b>a vs an은 '소리' 기준</b> (철자 아님!): <b>자음 소리</b> 앞 <b>a</b>, <b>모음 소리</b> 앞 <b>an</b>.<br>` +
+      `&nbsp;&nbsp;예) <b>a</b> university (유~ 소리=자음), <b>an</b> hour (아워, h묵음=모음), <b>an</b> honest man<br>` +
+      `• <b>복수·불가산엔 a/an 못 붙임</b> (a waters ✗, a rules ✗).` +
+      `</div>` +
+
+      `<div id="ar-the" class="g-sub">` +
+      `<b>② the — 서로 아는 '바로 그거!' (특정)</b><br>` +
+      `언제 특정이 되나? 대표 5가지:<br>` +
+      `&nbsp;&nbsp;㉠ <b>앞에 이미 나온 것</b> 재등장: a ball … kick <b>the</b> ball.<br>` +
+      `&nbsp;&nbsp;㉡ <b>세상에 하나뿐</b>: <b>the</b> sun, <b>the</b> world, <b>the</b> globe.<br>` +
+      `&nbsp;&nbsp;㉢ <b>뒤 수식어로 콕 집힘</b>: <b>the</b> story <u>of soccer</u>, <b>the</b> sport <u>we know today</u>.<br>` +
+      `&nbsp;&nbsp;㉣ <b>최상급·서수·only</b>: <b>the</b> most popular, <b>the</b> first, <b>the</b> only way.<br>` +
+      `&nbsp;&nbsp;㉤ <b>연주 악기</b>: play <b>the</b> piano.` +
+      `</div>` +
+
+      `<div id="ar-zero" class="g-sub">` +
+      `<b>③ 무관사 (관사 없음) — ⭐가장 헷갈리는 자리⭐</b><br>` +
+      `"왜 the/a가 없지?" 싶으면 십중팔구 아래 중 하나:<br>` +
+      `&nbsp;&nbsp;• <b>복수/불가산의 '일반적·총칭'</b>: <u>Humans</u> play <u>games</u>. / <u>Water</u> is life. ("인간이란/물이란 원래")<br>` +
+      `&nbsp;&nbsp;• <b>추상명사 총칭</b>: throughout <u>history</u>, promote <u>peace</u>, <u>love</u> is blind.<br>` +
+      `&nbsp;&nbsp;• <b>운동·식사·과목·언어</b>: play <u>soccer</u>, have <u>lunch</u>, study <u>English</u>.<br>` +
+      `&nbsp;&nbsp;• <b>고유명사(대부분)</b>: <u>Africa</u>, <u>Britain</u>, <u>Peter</u>. (단, <b>the</b> United States, <b>the</b> Netherlands처럼 예외 존재)<br>` +
+      `&nbsp;&nbsp;• <b>관용표현</b>: by <u>bus</u>, at <u>school</u>, go <u>home</u>, at <u>night</u>.` +
+      `</div>` +
+
+      `<b>⚡ 헷갈림 킬러 — 같은 명사, 관사 하나로 뜻이 갈림</b><br>` +
+      `• <u>History</u> is important. (역사<b>라는 것 전체</b>·총칭 → 무관사) vs <b>The</b> history <u>of soccer</u> is long. (축구의 역사 = 콕 집힘 → the)<br>` +
+      `• He plays <u>soccer</u>. (운동 → 무관사) vs He plays <b>the</b> piano. (악기 → the)<br>` +
+      `• I need <b>a</b> pen. (아무 펜 하나) vs Give me <b>the</b> pen. (우리 둘 다 아는 그 펜)`,
+    eg: [
+      ["a/an · 불특정 하나(처음 등장)", "England's FA established a set of rules.", "잉글랜드 축구협회가 일련의 규칙을 제정했다. (처음 언급 → a)"],
+      ["the · 뒤 수식어로 특정", "the sport we know today", "우리가 오늘날 아는 그 스포츠 (we know today가 콕 집음 → the)"],
+      ["the · 최상급", "the most popular sport in Africa", "아프리카에서 가장 인기 있는 스포츠 (최상급 → the)"],
+      ["무관사 · 추상명사 총칭", "Throughout history, humans played games.", "역사 전체에 걸쳐, 인간은 게임을 해왔다. (history 총칭 → 무관사)"],
+      ["무관사 · 복수 총칭 + 운동", "Anyone can play soccer.", "누구나 축구를 할 수 있다. (운동 soccer → 무관사)"],
+    ],
+  },
 ];
