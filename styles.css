@@ -103,6 +103,11 @@ h2.section-title{font-size:15px;color:var(--muted);font-weight:600;margin:6px 4p
   background:transparent;color:var(--accent);font-size:15px;font-weight:600;cursor:pointer}
 .an-label{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
 .an-label .tag{font-size:12px;color:var(--muted);font-weight:600}
+.an-jump{border:1px solid var(--muted);border-radius:8px;background:transparent;color:var(--muted);
+  padding:4px 24px 4px 10px;cursor:pointer;-webkit-appearance:none;appearance:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%23888' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 8px center}
+.an-jump:focus{outline:none;border-color:var(--accent,#5b8def)}
 .reshuffle{margin-top:10px;width:100%;padding:12px;border-radius:12px;border:1px solid var(--line);
   background:var(--surface);color:var(--muted);font-size:14px;font-weight:600;cursor:pointer}
 

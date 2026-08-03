@@ -108,8 +108,14 @@ function openAnalyzeViewer(){
   document.getElementById('an-select').classList.add('hidden');
   document.getElementById('an-viewer').classList.remove('hidden');
   document.getElementById('an-reshuffle').classList.toggle('hidden', !anShuffle);
+  buildJumpOptions();
   renderSentence(); window.scrollTo(0,0);
 }
+function buildJumpOptions(){
+  document.getElementById('an-jump').innerHTML =
+    anPool.map((_,i)=>`<option value="${i}">${i+1} / ${anPool.length}</option>`).join('');
+}
+function goToSentence(i){ anIdx=+i; renderSentence(); window.scrollTo(0,0); }
 function closeAnalyze(){
   document.getElementById('an-viewer').classList.add('hidden');
   document.getElementById('an-select').classList.remove('hidden');
@@ -117,7 +123,7 @@ function closeAnalyze(){
 function renderSentence(){
   const item = anPool[anIdx];
   document.getElementById('an-source').textContent = anShuffle ? '🔀 셔플 · '+item.source : item.source;
-  document.getElementById('an-count').textContent = `${anIdx+1} / ${anPool.length}`;
+  document.getElementById('an-jump').value = anIdx;
   document.getElementById('an-en').textContent = item.en;
   anRevealed = false; applyReveal();
 }

@@ -29,6 +29,10 @@ const WORDS = [
   { word: "early",            pos: "a./ad.", meaning: "초기의, 이른; 일찍 (↔late)",   example: "Early matches were played in 1862." },
   { word: "in time",          pos: "phr.", meaning: "이윽고, 시간이 지나면서; 늦지 않게 (↔on time 정각에)", example: "In time, the sport spread across the continent." },
   { word: "recruit",          pos: "v./n.", meaning: "모집하다, 채용하다; 신입", example: "Academies recruit boys to play the game." },
+  { word: "bare",             pos: "a.",    meaning: "벌거벗은, 맨-",             example: "learn to play in their bare feet (맨발로)" },
+  { word: "immigrant",        pos: "n.",    meaning: "(들어온) 이민자, 이주민",   example: "immigrants and Muslims faced discrimination" },
+  { word: "promote",          pos: "v.",    meaning: "증진하다, 촉진하다; 홍보/승진시키다", example: "has helped to promote peace (평화를 증진하다)" },
+  { word: "especially",       pos: "ad.",   meaning: "특히, 특별히",              example: "young people—especially boys—in school" },
 ];
 
 /* ---------- 지문 8개 ----------
@@ -738,6 +742,325 @@ const ANALYSIS = {
       `📝 <b>해석:</b> "대륙 전역에서, 이제 수천 개의 축구 아카데미가 더 가난한 도시와 마을의 소년들을 축구를 시키려고 모집한다."`,
     trans: "대륙 전역에서, 이제 수천 개의 축구 아카데미가 더 가난한 도시와 마을 출신 소년들을 축구를 하도록 모집한다.",
   },
+
+  "1-24": {
+    form: "중문 (절 A + and + 절 B) · A=3형식 / B=2형식",
+    tense: "단순 현재 (learn / are)",
+    chips: [
+      ["주어(S)·A절", "Many"],
+      ["동사(V)·A절", "learn"],
+      ["목적어(O)·명사적 to부정사", "to play"],
+      ["수식어(M)", "in their bare feet"],
+      ["등위접속사", "and"],
+      ["주어(S)·B절", "they"],
+      ["동사(V)·B절", "are"],
+      ["보어(C)·B절", "tough, creative competitors"],
+    ],
+    structure:
+      `뼈대: <b>등위접속사 and</b>가 <b>대등한 두 문장</b>을 이어 붙인 <b>중문</b>. 각 절의 형식이 다름.<br><br>` +
+      `<b>[A절] Many learn to play in their bare feet</b> → <b>3형식</b> (S+V+O)<br>` +
+      `① <b>Many</b> (⭐ 주어 · 대명사): "많은 이들 / 많은 소년들". 앞 문장에서 모집된 <b>boys</b>를 받는 <b>대명사 Many</b>(= many boys). 뒤에 명사 없이 <b>홀로 주어</b>로 쓰임.<br>` +
+      `② <b>learn</b> (동사): "배우다".<br>` +
+      `③ <b>to play</b> (⭐ to부정사 <b>명사적 용법</b> · learn의 <b>목적어</b>): "(축구) <b>하는 것을</b>". learn 바로 뒤 목적어 자리 → 명사적.<br>` +
+      `&nbsp;&nbsp;• ⭐ <b>24번과 비교:</b> 앞 문장 <b>to play the game</b>은 완전한 문장에 덤으로 붙어 '왜?'에 답한 <b>부사적(목적)</b>. 여기 <b>learn to play</b>는 <b>동사 바로 뒤 목적어</b> 자리라 <b>명사적</b>. 같은 to play, 자리가 용법을 가른다!<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-noun')">📐 to부정사 명사·부사 용법 구분 자세히 →</span><br>` +
+      `④ <b>in their bare feet</b> (전치사구·수식어): "<b>맨발로</b>". <b>bare</b> = 맨-/벌거벗은. 발이 둘이라 <b>feet</b>(foot의 복수).<br><br>` +
+      `<b>[B절] they are tough, creative competitors</b> → <b>2형식</b> (S+V+C)<br>` +
+      `⑤ <b>they</b> (주어) = 그 소년들.<br>` +
+      `⑥ <b>are</b> (be동사): 2형식에서 "S=C"를 이어줌.<br>` +
+      `⑦ <b>tough, creative competitors</b> (⭐ 주격보어 · 명사): "<b>강인하고 창의적인 선수들</b>". <b>tough</b>(강인한)와 <b>creative</b>(창의적인) 두 형용사가 <b>competitors</b>(경쟁자·선수)를 앞에서 꾸밈. they = competitors 관계라 <b>보어</b>.<br><br>` +
+      `📝 <b>해석:</b> "많은 이들이 맨발로 (축구) 하는 것을 배우며, 그들은 강인하고 창의적인 선수들이다."`,
+    trans: "많은 이들이 맨발로 축구를 배우며, 그들은 강인하고 창의적인 선수들이다.",
+  },
+
+  "1-25": {
+    form: "2형식 (S + V + C)",
+    tense: "단순 현재 (is)",
+    chips: [
+      ["주어(S)", "Their dream"],
+      ["동사(V)·be", "is"],
+      ["보어(C)·명사적 to부정사 A", "to play for the national team"],
+      ["등위접속사", "or"],
+      ["보어(C)·명사적 to부정사 B", "to join one of the big clubs ..."],
+      ["부분의 of", "one of the big clubs"],
+      ["수식어(M)", "in Europe / someday"],
+    ],
+    structure:
+      `뼈대: <b>Their dream</b>(S) + <b>is</b>(V) + <b>to play ... or to join ...</b>(C) 의 <b>2형식</b>. "그들의 꿈 = ~하는 것".<br><br>` +
+      `① <b>Their dream</b> (주어): "그들의 꿈". their = 앞의 소년들.<br>` +
+      `② <b>is</b> (be동사): 2형식에서 <b>S = C</b>를 이어줌.<br>` +
+      `③ <b>보어(C)</b>는 <b>to부정사 명사적 용법</b>("~하는 것") <b>두 개</b>가 <b>등위접속사 or</b>로 병렬 연결됨:<br>` +
+      `&nbsp;&nbsp;• <b>A: to play for the national team</b> = "국가대표팀에서 <b>뛰는 것</b>". <b>play for + 팀</b> = "~팀 소속으로 뛰다".<br>` +
+      `&nbsp;&nbsp;• <b>B: to join one of the big clubs in Europe someday</b> = "언젠가 유럽의 큰 클럽들 중 <b>하나에 들어가는 것</b>".<br>` +
+      `&nbsp;&nbsp;• ⭐ <b>병렬(parallelism):</b> or 앞뒤가 <b>to부정사 vs to부정사</b>로 <b>급을 맞춤</b>. 둘 다 is의 보어 = "꿈은 A 또는 B".<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-noun')">📐 to부정사 명사적 용법(보어) 자세히 →</span><br>` +
+      `④ <b>one of the big clubs</b> (⭐ 부분의 of): "그 큰 클럽들 <b>중 하나</b>". <b>one of + the(특정) 복수명사</b> = 부분의 of. 여러 클럽 중 하나를 콕 집음.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('of-types','of-partitive')">🧬 부분의 of 자세히 →</span><br>` +
+      `⑤ <b>in Europe</b> (전치사구·수식어): the big clubs를 꾸밈 = "유럽의 큰 클럽들". <b>someday</b> (부사): "언젠가".<br><br>` +
+      `📝 <b>해석:</b> "그들의 꿈은 국가대표팀에서 뛰거나 언젠가 유럽의 큰 클럽들 중 하나에 들어가는 것이다."`,
+    trans: "그들의 꿈은 국가대표팀에서 뛰거나 언젠가 유럽의 큰 클럽 중 하나에 들어가는 것이다.",
+  },
+
+  "1-26": {
+    form: "2형식 (S + V + C)",
+    tense: "단순 현재 (comes)",
+    chips: [
+      ["수식어(M)·전치사구", "For some"],
+      ["주어(S)", "the dream"],
+      ["동사(V)·불완전자동사", "comes"],
+      ["보어(C)·형용사", "true"],
+    ],
+    structure:
+      `뼈대: <b>the dream</b>(S) + <b>comes</b>(V) + <b>true</b>(C) 의 <b>2형식</b>. <b>For some</b>은 수식어.<br><br>` +
+      `① <b>For some,</b> (전치사구·수식어): "<b>일부에게는</b>". <b>some</b> = <b>대명사</b>("일부 사람들") = 앞의 소년들 중 몇몇. 뒤에 명사 없이 홀로 쓰인 대명사.<br>` +
+      `② <b>the dream</b> (주어): "(그) 꿈". 앞 문장에 나온 그 꿈 → <b>재등장 the</b>.<br>` +
+      `③ <b>comes true</b> (⭐ 2형식 · come + 형용사보어): "<b>이루어진다</b>".<br>` +
+      `&nbsp;&nbsp;• <b>come true</b> = "실현되다 / 이루어지다". 여기서 <b>come</b>은 "오다"가 아니라 "<b>~한 상태가 되다</b>"(≒ become)의 <b>불완전자동사</b>.<br>` +
+      `&nbsp;&nbsp;• ⭐ <b>왜 truly(부사)가 아니라 true(형용사)?</b> 보어는 <b>주어(the dream)를 설명</b>하는 자리라 <b>형용사</b>가 옴. "꿈 = 진실인 상태". 동사를 꾸미는 게 아니므로 부사 truly는 <b>틀림</b>. (get ready, become rich 처럼 '자동사+형용사보어' 세트로 암기)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('linking-become','lb-trap')">📐 상태변화 자동사+형용사보어 (go bad·fall asleep) 자세히 →</span><br><br>` +
+      `📝 <b>해석:</b> "일부에게는, 그 꿈이 이루어진다."`,
+    trans: "일부에게는, 그 꿈이 이루어진다.",
+  },
+
+  "1-27": {
+    form: "2형식 (S + V + C) · 부정",
+    tense: "단순 현재 (is)",
+    chips: [
+      ["등위접속사", "But"],
+      ["주어(S)", "the chance"],
+      ["형용사적 to부정사", "to make money (with ~)"],
+      ["동사(V)·be", "is"],
+      ["수식어(M)·부사", "probably"],
+      ["부정", "not"],
+      ["보어(C)", "the main reason (for ~)"],
+    ],
+    structure:
+      `뼈대: <b>the chance ...</b>(S) + <b>is</b>(V) + (probably) not + <b>the main reason ...</b>(C) 의 <b>2형식 부정</b>. "그 기회 ≠ 주된 이유".<br><br>` +
+      `① <b>But</b> (등위접속사): 앞 문장(꿈이 이루어진다)과 <b>대조</b> — "하지만".<br>` +
+      `② <b>the chance to make money with a professional team</b> (주어부):<br>` +
+      `&nbsp;&nbsp;• 핵심 주어 = <b>the chance</b>("(그) 기회").<br>` +
+      `&nbsp;&nbsp;• ⭐ <b>to make money</b> (<b>to부정사 형용사적 용법</b>): 앞의 명사 <b>chance를 뒤에서 꾸밈</b> = "돈을 <b>벌</b> 기회". <b>chance/way/time/reason + to부정사</b>는 형용사적 후치수식 단골.<br>` +
+      `&nbsp;&nbsp;• <b>make money</b> = "돈을 벌다". <b>with a professional team</b> = "프로팀에서(소속으로)".<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive')">📐 to부정사 형용사적 용법 자세히 →</span><br>` +
+      `③ <b>is</b> (be동사): 2형식에서 <b>S = C</b>를 이어줌.<br>` +
+      `④ <b>probably not</b> (⭐ 부사 + 부정): "<b>아마 ~아닐 것이다</b>". <b>probably</b>(부사·수식어)는 확신 낮춤. 위치는 <b>be동사 뒤, not 앞</b> → is probably not.<br>` +
+      `⑤ <b>the main reason for soccer's popularity in Africa</b> (보어):<br>` +
+      `&nbsp;&nbsp;• <b>the main reason</b> = "주된 이유". the chance = the reason 관계라 <b>주격보어</b>.<br>` +
+      `&nbsp;&nbsp;• <b>reason for ~</b> = "~의 이유" (이유엔 전치사 <b>for</b>). <b>soccer's popularity</b> = "축구의 인기"(소유격 's). <b>in Africa</b> = 아프리카에서의.<br><br>` +
+      `📝 <b>해석:</b> "하지만 프로팀에서 돈을 벌 기회가 아프리카에서 축구가 인기 있는 주된 이유는 아마 아닐 것이다."`,
+    trans: "하지만 프로팀에서 돈을 벌 기회가 아프리카에서의 축구 인기의 주된 이유는 아마 아닐 것이다.",
+  },
+
+  "1-28": {
+    form: "직접화법 · 인용문 + says + 주어(도치)",
+    tense: "단순 현재 (is / says / unifies)",
+    chips: [
+      ["인용문①·2형식", "\"Soccer is the passion of everyone here\""],
+      ["전달동사", "says"],
+      ["주어(S)·도치", "Abubakari Abdul-Ganiyu"],
+      ["동격(=주어)", "a teacher"],
+      ["관계대명사·주격", "who works with youth clubs ..."],
+      ["인용문②·3형식", "\"It unifies us.\""],
+    ],
+    structure:
+      `전체 뼈대: <b>"인용문①"</b> + <b>says</b> + <b>주어(사람)</b> ... 그리고 <b>"인용문②"</b>. 큰따옴표 안이 실제 한 말(<b>직접화법</b>).<br><br>` +
+      `① <b>"Soccer is the passion of everyone here"</b> (인용문① · <b>2형식</b>):<br>` +
+      `&nbsp;&nbsp;• <b>Soccer</b>(S) + <b>is</b>(V) + <b>the passion of everyone here</b>(C).<br>` +
+      `&nbsp;&nbsp;• <b>the passion of everyone</b> = "모두<b>의</b> 열정" (<b>소유의 of</b> ≒ everyone's passion). <b>here</b>(부사) = 이곳의.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('of-types','of-possess')">🧬 소유의 of 자세히 →</span><br>` +
+      `② <b>says Abubakari Abdul-Ganiyu</b> (⭐ <b>인용문 뒤 도치</b>):<br>` +
+      `&nbsp;&nbsp;• 원래 <b>주어 + says</b>인데, 인용문이 앞에 나오면 <b>동사 says + 주어</b>로 <b>도치</b>됨 = "~라고 <b>아부바카리가 말한다</b>". (주어가 대명사면 도치 안 함: "..." he says)<br>` +
+      `③ <b>a teacher who works with youth clubs in Tamale, Ghana</b> (주어의 <b>동격</b>):<br>` +
+      `&nbsp;&nbsp;• <b>콤마(,) 동격</b>: 앞의 사람(Abubakari) = <b>a teacher</b>. "아부바카리, <b>즉 한 교사</b>"라고 <b>다시 설명</b>.<br>` +
+      `&nbsp;&nbsp;• ⭐ <b>who works with youth clubs</b> (<b>관계대명사 주격</b>): 선행사 <b>a teacher</b>(사람)를 꾸밈. who가 뒤 절의 <b>주어 자리</b>를 대신 → 뒤가 주어 없는 불완전절(works…). 3인칭 단수라 work<b>s</b>.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('relative-pronoun')">📐 관계대명사 자세히 →</span><br>` +
+      `④ <b>"It unifies us."</b> (인용문② · <b>3형식</b>): <b>It</b>(S, =Soccer) + <b>unifies</b>(V, 통합하다) + <b>us</b>(O). "그것(축구)이 우리를 하나로 만든다".<br><br>` +
+      `📝 <b>해석:</b> "'축구는 이곳 <b>모두의 열정</b>입니다'라고, 가나 타말레의 청소년 클럽에서 일하는 교사 아부바카리 압둘가니유는 말한다. '그것은 우리를 하나로 묶어줍니다.'"`,
+    trans: "\"축구는 이곳 모두의 열정입니다\"라고, 가나 타말레에서 청소년 클럽과 함께 일하는 교사인 아부바카리 압둘가니유는 말한다. \"그것은 우리를 하나로 만듭니다.\"",
+  },
+
+  "1-29": {
+    form: "3형식 (S + V + O)",
+    tense: "현재완료 (has helped)",
+    chips: [
+      ["수식어(M)·접속부사", "In fact"],
+      ["수식어(M)·빈도", "more than once"],
+      ["주어(S)", "the game"],
+      ["동사(V)·현재완료", "has helped"],
+      ["목적어(O)·to부정사", "to bring people together"],
+    ],
+    structure:
+      `뼈대: <b>the game</b>(S) + <b>has helped</b>(V) + <b>to bring people together</b>(O) 의 <b>3형식</b>. 앞의 두 콤마 덩어리는 수식어.<br><br>` +
+      `① <b>In fact,</b> (접속부사·수식어): "<b>사실은</b>". 앞 내용을 <b>강조·부연</b>하며 이어줌.<br>` +
+      `② <b>more than once,</b> (⭐ 빈도 수식어): "<b>한 번 이상</b> = 여러 번". <b>once</b>는 "한 번"이란 <b>부사</b>. <b>more than ~</b>("~보다 많이")가 붙어 "한두 번이 아니라 여러 차례"라는 뉘앙스.<br>` +
+      `③ <b>the game</b> (주어): "그 경기(축구)". 앞서 나온 축구 → 재등장 the.<br>` +
+      `④ <b>has helped</b> (⭐ <b>현재완료</b> · have/has + p.p.):<br>` +
+      `&nbsp;&nbsp;• 형태: <b>has</b>(주어 the game 3인칭 단수) + <b>helped</b>(help의 p.p.).<br>` +
+      `&nbsp;&nbsp;• 뜻: 단순 과거가 "그때 도왔다(끝)"라면, 현재완료는 <b>과거~현재를 잇는</b> "<b>(지금까지 여러 번) 도와왔다</b>"(경험·계속). 그래서 more than once("여러 번")와 잘 어울림.<br>` +
+      `⑤ <b>to bring people together</b> (⭐ 목적어 · <b>help + to부정사</b>):<br>` +
+      `&nbsp;&nbsp;• <b>help</b>는 목적어로 <b>to부정사</b>와 <b>원형부정사</b>를 <b>둘 다</b> 취함 → help <b>to</b> bring = help bring (뜻 같음).<br>` +
+      `&nbsp;&nbsp;• <b>bring people together</b> = "사람들을 <b>하나로 모으다 / 화합시키다</b>" (bring + 목적어 + together).<br><br>` +
+      `📝 <b>해석:</b> "사실, 한 번 이상(여러 번) 그 경기(축구)는 사람들을 하나로 모으는 데 도움을 주어 왔다."`,
+    trans: "사실, 여러 번 그 경기(축구)는 사람들을 하나로 모으는 데 도움을 주어 왔다.",
+  },
+
+  "1-30": {
+    form: "3형식 (S + V + O)",
+    tense: "단순 과거 (faced)",
+    chips: [
+      ["수식어(M)·장소", "In Ivory Coast"],
+      ["수식어(M)·접속부사", "for example"],
+      ["주어(S)·and 병렬", "immigrants and Muslims"],
+      ["동사(V)", "faced"],
+      ["목적어(O)", "discrimination"],
+      ["수식어(M)·기간", "for years"],
+    ],
+    structure:
+      `뼈대: <b>immigrants and Muslims</b>(S) + <b>faced</b>(V) + <b>discrimination</b>(O) 의 <b>3형식</b>. 나머지는 수식어.<br><br>` +
+      `① <b>In Ivory Coast,</b> (장소 수식어): "<b>코트디부아르에서</b>". Ivory Coast = 서아프리카 나라 이름.<br>` +
+      `② <b>for example,</b> (접속부사·수식어): "예를 들어". 앞 문장(축구가 사람들을 모아왔다)의 <b>구체적 예</b>를 든다는 신호.<br>` +
+      `③ <b>immigrants and Muslims</b> (⭐ 주어 · <b>and 병렬</b>): "이민자들과 무슬림들". <b>등위접속사 and</b>가 <b>두 명사(복수)</b>를 묶어 <b>복수 주어</b>를 만듦 → 동사도 복수 취급.<br>` +
+      `④ <b>faced</b> (동사 · 단순 과거): <b>face</b>("직면하다·맞닥뜨리다")의 과거. <b>face discrimination</b> = "차별을 <b>겪다/당하다</b>".<br>` +
+      `⑤ <b>discrimination</b> (목적어): "차별".<br>` +
+      `⑥ <b>for years</b> (⭐ 기간 수식어): "<b>수년간</b>". <b>for + 기간</b> = "~동안". (참고: 30번의 현재완료와 달리 여기선 <b>과거 시제</b>라 과거의 한 기간을 가리킴.)<br><br>` +
+      `📝 <b>해석:</b> "예를 들어 코트디부아르에서, 이민자들과 무슬림들은 수년간 차별을 겪었다."`,
+    trans: "예를 들어 코트디부아르에서, 이민자들과 무슬림들은 수년간 차별을 겪었다.",
+  },
+
+  "1-31": {
+    form: "2형식 (S + V + C)",
+    tense: "단순 현재 (are)",
+    chips: [
+      ["접속부사·대조", "Yet"],
+      ["주어(S)·부분의 of", "many of the country's best soccer players"],
+      ["동사(V)·be", "are"],
+      ["보어(C)·전치사구", "from Muslim and immigrant families"],
+    ],
+    structure:
+      `뼈대: <b>many of ...players</b>(S) + <b>are</b>(V) + <b>from ... families</b>(C) 의 <b>2형식</b>. be from = "~출신이다".<br><br>` +
+      `① <b>⭐⭐ Yet</b> (접속부사·<b>반전/대조</b>) — <b style="color:#ff6b6b">★ 꼭 기억!</b>:<br>` +
+      `&nbsp;&nbsp;• <b>Yet</b>은 문장 앞에서 "<b>그러나 / 그럼에도 불구하고</b>"라는 뜻으로, <b>앞 문장과 이어져 정반대 내용</b>을 끌고 오는 <b>반전 신호탄</b>. 혼자 보면 안 되고 <b>앞 문장과 묶어서</b> 읽어야 뜻이 살아남!<br>` +
+      `&nbsp;&nbsp;• 🔗 <b>흐름:</b> (31번) 이민자·무슬림이 <b>차별을 겪었다</b> 😞 &nbsp;<b>↔ Yet ↔</b>&nbsp; (32번) <b>그런데도</b> 최고 선수 다수가 바로 그 무슬림·이민자 출신이다 ⚽ → "차별받던 이들이 오히려 축구 영웅"이라는 <b>반전</b>.<br>` +
+      `&nbsp;&nbsp;• 💡 같은 반전 연결어: <b>but / however / nevertheless / still</b>. 독해에서 Yet·However가 보이면 "<b>앞뒤가 뒤집힌다</b>"고 표시해두기!<br>` +
+      `② <b>many of the country's best soccer players</b> (⭐ 주어 · <b>부분의 of</b>):<br>` +
+      `&nbsp;&nbsp;• <b>many of the ~</b> = "그 ~ <b>중 다수</b>". <b>수량표현(many) + of + the(특정) 복수명사</b> = 부분의 of. (23번 several of, 26번 one of 와 같은 계열)<br>` +
+      `&nbsp;&nbsp;• <b>the country's</b> = "그 나라<b>의</b>" (소유격 's, = 코트디부아르). <b>best</b> = good의 <b>최상급</b>("최고의").<br>` +
+      `&nbsp;&nbsp;• ⭐ <b>수일치:</b> 부분의 of는 <b>of 뒤 명사</b>에 동사를 맞춤 → players(복수)라서 <b>are</b>.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('of-types','of-partitive')">🧬 부분의 of & 수일치 자세히 →</span><br>` +
+      `③ <b>are</b> (be동사): 2형식에서 <b>S = C</b>를 이어줌.<br>` +
+      `④ <b>from Muslim and immigrant families</b> (⭐ 전치사구 <b>보어</b>): "<b>무슬림·이민자 가정 출신</b>". <b>be from ~</b> = "~ 출신이다"에서 <b>from구 전체가 보어</b>. <b>Muslim·immigrant</b>가 families를 꾸미는 형용사, <b>and</b>로 병렬.<br><br>` +
+      `📝 <b>해석:</b> "그러나 그 나라 최고 축구선수들 중 다수는 무슬림·이민자 가정 출신이다."`,
+    trans: "그러나 그 나라 최고의 축구선수들 중 다수는 무슬림과 이민자 가정 출신이다.",
+  },
+
+  "1-32": {
+    form: "현재완료 동사구 2개 병렬 · ①2형식 + ②3형식",
+    tense: "현재완료 (has become / has helped)",
+    chips: [
+      ["수식어(M)·접속부사", "As a result"],
+      ["주어(S)", "the national team"],
+      ["동사구①·2형식", "has become a symbol of unity"],
+      ["등위접속사", "and"],
+      ["동사구②·3형식", "has helped to promote peace"],
+      ["수식어(M)·장소", "throughout the country"],
+    ],
+    structure:
+      `뼈대: <b>the national team</b>(S) <b>하나</b>에 <b>현재완료 동사구 두 개</b>가 <b>and</b>로 병렬 연결됨.<br><br>` +
+      `① <b>As a result,</b> (접속부사·수식어): "<b>그 결과</b>". 앞 문장(무슬림·이민자 선수가 대표팀 주축)의 <b>결과</b>를 이어줌 (인과).<br>` +
+      `② <b>the national team</b> (주어): "그 국가대표팀".<br>` +
+      `③ ⭐ <b>병렬 구조:</b> 주어 하나에 <b>has become ~</b> <b>and</b> <b>has helped ~</b> — <b>현재완료 동사구 2개</b>가 급을 맞춰 나란히. (앞뒤 <b>has</b> 반복이 병렬 신호)<br>` +
+      `&nbsp;&nbsp;<b>[동사구①] has become a symbol of unity</b> → <b>2형식</b> (현재완료):<br>` +
+      `&nbsp;&nbsp;&nbsp;&nbsp;• <b>has become</b> = become("~이 되다")의 <b>현재완료</b> → "(지금까지) <b>~이 되어 왔다/되었다</b>". become은 <b>보어</b>를 데려오는 2형식 동사.<br>` +
+      `&nbsp;&nbsp;&nbsp;&nbsp;• <b>a symbol of unity</b> (보어) = "<b>통합의 상징</b>". of = 무엇을 상징하는지 밝힘("통합이라는 상징").<br>` +
+      `&nbsp;&nbsp;&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('of-types','of-apposition')">🧬 of의 종류(동격의 of) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<b>[동사구②] has helped to promote peace throughout the country</b> → <b>3형식</b> (현재완료):<br>` +
+      `&nbsp;&nbsp;&nbsp;&nbsp;• <b>has helped</b> = help의 현재완료. <b>help + to부정사</b>(30번과 동일) → <b>to promote peace</b>가 목적어. "평화를 <b>증진하는 것을</b> 도와왔다".<br>` +
+      `&nbsp;&nbsp;&nbsp;&nbsp;• <b>promote peace</b> = "평화를 증진하다". <b>throughout the country</b> = "<b>전국에 걸쳐</b>" (throughout = ~전역에).<br><br>` +
+      `📝 <b>해석:</b> "그 결과, 국가대표팀은 통합의 상징이 되었고 전국에 걸쳐 평화를 증진하는 데 도움을 주어 왔다."`,
+    trans: "그 결과, 국가대표팀은 통합의 상징이 되었고 전국에 걸쳐 평화를 증진하는 데 기여해 왔다.",
+  },
+
+  "1-33": {
+    form: "2형식 + 콜론(:) 부연 [뒷문장: keep+O+전치사구]",
+    tense: "단순 현재 (is / keeps)",
+    chips: [
+      ["수식어(M)·장소", "All over Africa"],
+      ["주어(S)", "soccer"],
+      ["동사(V)·be", "is"],
+      ["보어(C)·형용사", "popular (with ~)"],
+      ["수식어(M)·이유", "for another reason"],
+      ["콜론 :", "이유의 구체적 설명"],
+      ["뒷문장 S·V·O", "It / keeps / young people"],
+      ["삽입 — —", "especially boys"],
+      ["보어·전치사구 병렬", "in school and out of trouble"],
+    ],
+    structure:
+      `앞부분 뼈대: <b>soccer</b>(S) + <b>is</b>(V) + <b>popular</b>(C) 의 <b>2형식</b>. 콜론(:) 뒤가 그 이유를 풀어 설명.<br><br>` +
+      `① <b>All over Africa,</b> (장소 수식어): "아프리카 전역에서".<br>` +
+      `② <b>soccer is popular</b> (2형식): "축구는 인기 있다". <b>be popular with ~</b> = "<b>~에게 인기 있다</b>" → <b>with parents and teachers</b>(부모와 교사들에게).<br>` +
+      `③ <b>for another reason</b> (이유 수식어): "<b>또 다른 이유로</b>". 앞에서 여러 이유가 나왔기에 <b>another</b>("또 하나의").<br>` +
+      `④ ⭐ <b>:</b> (콜론) — 바로 앞 <b>another reason이 뭔지 뒤에서 공개</b>. "그 이유란 → (짜잔)". 앞 = 뒤 등호 관계.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('punctuation','pn-colon')">🎁 콜론 : 자세히 →</span><br>` +
+      `⑤ <b>It keeps young people ... in school and out of trouble</b> (콜론 뒤 문장):<br>` +
+      `&nbsp;&nbsp;• <b>It</b>(S, =soccer) + <b>keeps</b>(V) + <b>young people</b>(O) + <b>in school ... out of trouble</b>(전치사구 보어).<br>` +
+      `&nbsp;&nbsp;• ⭐ <b>keep + 목적어 + 전치사구</b> = "O를 <b>~한 상태로 유지하다</b>". "젊은이들을 <b>학교 안에</b>, 그리고 <b>말썽에서 벗어난</b> 상태로 붙잡아 둔다".<br>` +
+      `&nbsp;&nbsp;• <b>in school</b> = 학교에 다니는(재학) 상태 ↔ <b>out of trouble</b> = 말썽/문제에서 벗어난 상태. <b>and</b>로 두 전치사구 병렬.<br>` +
+      `⑥ ⭐ <b>—especially boys—</b> (대시 삽입구): <b>young people을 부연</b>("특히 소년들"). <b>대시 — — 사이는 문장 성분 계산에서 빼고</b> 괄호 친 셈 치고 읽으면 뼈대가 보임.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('punctuation')">🎁 대시 — 삽입 자세히 →</span><br><br>` +
+      `📝 <b>해석:</b> "아프리카 전역에서, 축구는 또 다른 이유로 부모와 교사들에게 인기 있다: 그것은 젊은이들—특히 소년들—을 학교에 다니고 말썽에서 벗어난 상태로 있게 해준다."`,
+    trans: "아프리카 전역에서, 축구는 또 다른 이유로 부모와 교사들에게 인기 있다: 축구는 젊은이들—특히 소년들—을 학교에 남게 하고 말썽에서 벗어나 있게 해준다.",
+  },
+
+  "1-34": {
+    form: "5형식 (allow + O + to부정사) · 인용문 도치",
+    tense: "단순 현재 (don't allow / explains)",
+    chips: [
+      ["주어(S)·인용문", "Most clubs in Tamale, Ghana"],
+      ["동사(V)·부정", "don't allow"],
+      ["목적어(O)", "boys"],
+      ["목적격보어(OC)·to부정사", "to play"],
+      ["조건 부사절", "if they don't go to school"],
+      ["전달동사", "explains"],
+      ["주어(S)·도치", "Abubakari"],
+    ],
+    structure:
+      `전체 뼈대: <b>"인용문"</b> + <b>explains</b> + <b>주어</b>. 인용문 속이 <b>5형식</b>.<br><br>` +
+      `① <b>Most clubs in Tamale, Ghana,</b> (인용문 주어): "가나 타말레의 <b>대부분의 클럽들</b>". <b>most + 복수명사</b>(무관사) = "대부분의 ~". <b>in Tamale, Ghana</b>은 장소 수식어(콤마로 지명 병기).<br>` +
+      `② ⭐ <b>don't allow boys to play</b> (핵심 · <b>5형식</b>: allow + O + to부정사):<br>` +
+      `&nbsp;&nbsp;• <b>allow + 목적어 + to부정사</b> = "<b>O가 ~하도록 허락하다</b>". 여기선 <b>don't</b>로 부정 → "소년들이 (축구)<b>하는 걸 허락하지 않는다</b>".<br>` +
+      `&nbsp;&nbsp;• <b>boys</b> = 목적어(O), <b>to play</b> = <b>목적격보어(OC)</b>. 목적어 boys가 <b>play의 의미상 주어</b>(소년들이 뛰는 것).<br>` +
+      `&nbsp;&nbsp;• 💡 같은 5형식(O + to부정사) 동사: <b>want / tell / ask / expect / allow</b> + 목적어 + <b>to V</b>. 세트로 암기!<br>` +
+      `③ ⭐ <b>if they don't go to school</b> (조건 부사절): "<b>그들이 학교에 다니지 않으면</b>". <b>if</b> = "~라면"(조건). <b>they</b> = boys. 앞의 '허락 안 함'이 <b>어떤 조건에서</b>인지 밝힘.<br>` +
+      `④ ⭐ <b>explains Abubakari</b> (<b>인용문 뒤 도치</b>): 인용문이 앞에 오면 <b>동사(explains) + 주어(Abubakari)</b>로 도치 (<b>29번 says Abubakari</b>와 같은 패턴). "~라고 아부바카리가 설명한다".<br><br>` +
+      `📝 <b>해석:</b> "'가나 타말레의 대부분의 클럽은 소년들이 학교에 다니지 않으면 (축구를) 하도록 허락하지 않습니다'라고 아부바카리는 설명한다."`,
+    trans: "\"가나 타말레의 대부분의 클럽은 소년들이 학교에 다니지 않으면 (축구를) 하도록 허락하지 않습니다\"라고 아부바카리는 설명한다.",
+  },
+
+  "1-35": {
+    form: "3형식(try our best) + 목적 to부정사 2개 병렬 [②=5형식 make]",
+    tense: "현재진행 (are trying)",
+    chips: [
+      ["주어(S)", "We"],
+      ["동사(V)·현재진행", "'re trying"],
+      ["목적어(O)", "our best"],
+      ["부사적 to부정사①·목적", "to help young people"],
+      ["등위접속사", "and"],
+      ["부사적 to부정사②·5형식 make", "to make them responsible"],
+      ["수식어(M)", "in society"],
+    ],
+    structure:
+      `뼈대: <b>We</b>(S) + <b>'re trying</b>(V) + <b>our best</b>(O). 그 뒤 <b>to부정사 두 개(목적)</b>가 and로 병렬.<br><br>` +
+      `① <b>We're trying</b> (⭐ <b>현재진행</b> · be + -ing): "우리는 <b>노력하고 있다</b>". 지금 진행 중인 동작. <b>We're</b> = We are.<br>` +
+      `② <b>our best</b> (목적어): <b>try one's best</b> = "<b>최선을 다하다</b>". our best = "우리의 최선을".<br>` +
+      `③ ⭐ <b>to help ... and to make ...</b> (<b>to부정사 부사적 용법·목적</b> 2개 병렬): "무엇을 위해 최선을 다하나?" → 이 두 가지. <b>and</b>로 연결, <b>to</b>를 반복해 급을 맞춤.<br>` +
+      `&nbsp;&nbsp;<b>[①] to help young people</b> = "젊은이들을 <b>돕기 (위해)</b>". help + young people.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-adverb')">📐 to부정사 부사적(목적) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<b>[②] to make them responsible</b> = ⭐ <b>5형식 make</b> (make + O + <b>형용사</b> 목적격보어): "그들을 <b>책임감 있게 만들기 (위해)</b>". <b>them</b>(=young people)=목적어, <b>responsible</b>(형용사)=목적격보어. "them = responsible한 상태".<br>` +
+      `&nbsp;&nbsp;• 💡 <b>35번 대비:</b> allow는 <b>O + to부정사</b>(to play), <b>make</b>는 <b>O + 형용사/원형</b>(responsible) — 목적격보어 형태가 동사마다 다름!<br>` +
+      `④ <b>in society</b> (수식어): "사회에서". responsible을 보충 → "사회에서 책임감 있는".<br><br>` +
+      `📝 <b>해석:</b> "우리는 젊은이들을 돕고 그들을 사회에서 책임감 있는 사람으로 만들기 위해 최선을 다하고 있습니다."`,
+    trans: "우리는 젊은이들을 돕고 그들을 사회에서 책임감 있는 사람으로 만들기 위해 최선을 다하고 있습니다.",
+  },
 };
 
 /* ---------- 문법 정리 (공부한 내용 채우기) ----------
@@ -1159,6 +1482,31 @@ const GRAMMAR = [
       ["과거 수동태", "Early matches were played in 1862.", "초기 경기들은 1862년에 열렸다. (경기 = 치러지는 대상)"],
       ["조동사 + be p.p.", "Soccer can be played anywhere.", "축구는 어디서든 행해질 수 있다."],
       ["by 행위자", "The rules were made by the FA.", "그 규칙들은 축구협회에 의해 만들어졌다."],
+    ],
+  },
+  {
+    id: "linking-become",
+    title: "상태변화 자동사 + 형용사보어 — '~한 상태가 되다'",
+    tag: "핵심 · 함정",
+    body:
+      `2형식 동사 중에는 <b>원래 뜻(오다·가다·떨어지다…)이 사라지고</b> "<b>~한 상태가 되다</b>"(≒ become)로 해석되는 무리가 있음. 뒤에 <b>형용사 보어</b>를 데려와 <b>주어의 상태 변화</b>를 나타냄.<br><br>` +
+      `<div id="lb-why-adj" class="g-sub">` +
+      `<b>⭐ 왜 부사가 아니라 형용사?</b><br>` +
+      `보어는 <b>동사가 아니라 주어를 설명</b>하는 자리. "무엇이 <b>어떤 상태</b>가 되었나"를 말하므로 <b>형용사</b>가 옴. 동사를 꾸미는 부사(-ly)를 쓰면 <b>틀림</b>.<br>` +
+      `&nbsp;&nbsp;• The milk went <b>bad</b>. (O) ↔ went <b>badly</b> (✗ — 우유가 '나쁘게 간' 게 아니라 '상한 상태'가 됨)` +
+      `</div>` +
+      `<div id="lb-trap" class="g-sub">` +
+      `<b>🚨 직역 함정 (뜻을 통째로 외워라)</b><br>` +
+      `&nbsp;&nbsp;• <b>go bad</b>: '나쁘게 가다' (✗) ➜ <b>상하게 되다 / 상하다</b> (O) — 음식이 썩음.<br>` +
+      `&nbsp;&nbsp;• <b>fall asleep</b>: '잠으로 떨어지다' (✗) ➜ <b>잠들게 되다 / 잠들다</b> (O) — asleep은 형용사(자고 있는).<br>` +
+      `&nbsp;&nbsp;• <b>come true</b>: '진실로 오다' (✗) ➜ <b>이루어지다 / 실현되다</b> (O) — 꿈이 진짜가 됨.<br>` +
+      `👉 동사를 <b>직역하지 말고</b> "동사+형용사"를 <b>한 덩어리 상태변화</b>로 해석하는 게 핵심.` +
+      `</div>` +
+      `<b>💡 자주 나오는 세트</b> (모두 뒤에 형용사): go bad/wrong, fall asleep/ill, come true, get ready/tired, grow old, turn red, run dry.`,
+    eg: [
+      ["go + 형용사 · 상하다", "The milk went bad.", "그 우유는 상했다. (나쁘게 간 게 X → 상한 상태가 됨)"],
+      ["fall + 형용사 · 잠들다", "He fell asleep during class.", "그는 수업 중에 잠들었다. (잠으로 떨어진 게 X → 잠든 상태가 됨)"],
+      ["come + 형용사 · 이루어지다", "For some, the dream comes true.", "일부에게는 그 꿈이 이루어진다. (진실로 온 게 X → 실현됨)"],
     ],
   },
 ];
