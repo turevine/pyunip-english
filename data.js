@@ -33,6 +33,12 @@ const WORDS = [
   { word: "immigrant",        pos: "n.",    meaning: "(들어온) 이민자, 이주민",   example: "immigrants and Muslims faced discrimination" },
   { word: "promote",          pos: "v.",    meaning: "증진하다, 촉진하다; 홍보/승진시키다", example: "has helped to promote peace (평화를 증진하다)" },
   { word: "especially",       pos: "ad.",   meaning: "특히, 특별히",              example: "young people—especially boys—in school" },
+  { word: "compete",          pos: "v.",    meaning: "경쟁하다, 겨루다 (자동사: compete with/against ~와, for ~을 두고)", example: "200 teams competed to get a place." },
+  { word: "region",           pos: "n.",    meaning: "지역, 지방, 권역",            example: "national teams from six regions" },
+  { word: "represent",        pos: "v.",    meaning: "대표하다, 나타내다",          example: "each team represents a country" },
+  { word: "although",         pos: "conj.", meaning: "비록 ~이지만 (양보 접속사, 뒤에 완전한 문장; = though)", example: "Although each team represents a country, ..." },
+  { word: "citizenship",      pos: "n.",    meaning: "시민권, 국적 (dual citizenship 이중국적)", example: "dual citizenship (having two nationalities)" },
+  { word: "influence",        pos: "v./n.", meaning: "영향을 미치다(타동사, 바로 목적어); 영향 (명사는 influence on ~)", example: "It influences which country a player plays for." },
 ];
 
 /* ---------- 지문 8개 ----------
@@ -1060,6 +1066,194 @@ const ANALYSIS = {
       `④ <b>in society</b> (수식어): "사회에서". responsible을 보충 → "사회에서 책임감 있는".<br><br>` +
       `📝 <b>해석:</b> "우리는 젊은이들을 돕고 그들을 사회에서 책임감 있는 사람으로 만들기 위해 최선을 다하고 있습니다."`,
     trans: "우리는 젊은이들을 돕고 그들을 사회에서 책임감 있는 사람으로 만들기 위해 최선을 다하고 있습니다.",
+  },
+
+  // 지문 1 · 37번째 문장: Soccer helps us do this.
+  "1-36": {
+    form: "5형식 (S + help + O + 원형부정사)",
+    tense: "단순 현재",
+    chips: [
+      ["주어(S)", "Soccer"],
+      ["동사(V)", "helps"],
+      ["목적어(O)", "us"],
+      ["목적격보어(OC)·원형부정사", "do this"],
+    ],
+    structure:
+      `뼈대: <b>Soccer</b>(S) + <b>helps</b>(V) + <b>us</b>(O) + <b>do this</b>(OC) 의 <b>5형식</b>. 짧지만 목적어 뒤에 보어가 하나 더 붙는 5형식 문장.<br><br>` +
+      `① <b>Soccer</b> (주어): "축구는". 3인칭 단수라 동사에 <b>-s</b>가 붙어 helps.<br>` +
+      `② ⭐ <b>help + O + (to) 동사원형</b> — 핵심! <b>help</b>는 목적격보어로 <b>to부정사와 원형부정사(동사원형)를 둘 다</b> 쓸 수 있는 특별한 동사. 요즘 영어(특히 미국식)는 <b>to를 생략한 원형</b>을 더 즐겨 씀.<br>` +
+      `&nbsp;&nbsp;• 📛 <b>정식 명칭: 준사역동사(準使役動詞, semi-causative verb)</b>. 진짜 사역동사(make·have·let)는 목적격보어에 <b>반드시 원형</b>만 쓰지만, <b>help</b>는 원형·to부정사 <b>둘 다</b> 허용해서 '준(準)' 사역동사라 부름.<br>` +
+      `&nbsp;&nbsp;• help us <b>do</b> this ⭕ = help us <b>to do</b> this ⭕ (뜻 같음)<br>` +
+      `&nbsp;&nbsp;• 그래서 do 앞에 to가 없다고 당황하지 말 것 — <b>help가 허락한 원형부정사</b>임.<br>` +
+      `③ <b>us</b> (목적어): "우리가". 이어지는 do의 <b>의미상 주어</b>이기도 함 → "우리가 do this 하도록 돕는다".<br>` +
+      `④ <b>do this</b> (목적격보어·원형부정사): "이것을 하도록". <b>this</b>는 앞 문장 내용(젊은이들을 돕고 사회에서 책임감 있는 사람으로 만드는 것)을 통째로 가리키는 지시대명사.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-adverb')">📐 to부정사 자세히 →</span><br><br>` +
+      `📝 <b>해석:</b> "축구는 우리가 이것을 하도록 돕는다" → 자연스럽게 "축구가 우리를 도와 이 일을 해낼 수 있게 해줍니다."`,
+    trans: "축구는 우리가 이것을 해내도록 도와줍니다.",
+  },
+
+  // 지문 1 · 38번째 문장: For us, soccer is also a tool for hope.
+  "1-37": {
+    form: "2형식 (S + V + C)",
+    tense: "단순 현재",
+    chips: [
+      ["수식어(M)·전치사구", "For us"],
+      ["주어(S)", "soccer"],
+      ["동사(V)·be동사", "is"],
+      ["부사", "also"],
+      ["보어(C)", "a tool for hope"],
+    ],
+    structure:
+      `뼈대: <b>soccer</b>(S) + <b>is</b>(V) + <b>a tool for hope</b>(C) 의 <b>2형식</b>. be동사가 주어와 보어를 등호(=)로 이어줌 ("축구 = 희망의 도구").<br><br>` +
+      `① <b>For us</b> (전치사구·수식어): "우리에게(는) / 우리 입장에서는". 문장 맨 앞으로 나와 <b>강조</b>. 콤마로 분리되며 문장 성분(S·V·C) 계산엔 안 들어감.<br>` +
+      `&nbsp;&nbsp;• 💡 <b>for 해석 팁 (처음 보는 형태일 때):</b> <b>for</b>는 <b>일단 "~을 위해"로 넣어보고</b>, 문장이 어색하면 <b>"~에게는 / ~ 입장에서는"</b>으로 바꿔 해석. 여기선 "우리를 위해 축구는~"이 어색하니 → <b>"우리에게(는) 축구는~"</b>이 자연스러움.<br>` +
+      `② <b>soccer</b> (주어): "축구는". 종목·개념을 총칭하므로 <b>무관사</b> (a/the 없이 씀).<br>` +
+      `③ <b>is</b> (be동사·2형식): 주어와 보어를 이어주는 연결동사. "~이다".<br>` +
+      `④ <b>also</b> (부사): "또한/역시". 앞 문장들(축구가 젊은이를 돕는다 등)에 <b>더해</b> 하나를 추가하는 느낌. be동사 뒤·보어 앞에 위치.<br>` +
+      `⑤ <b>a tool for hope</b> (보어·명사구): "희망을 위한 하나의 도구". <b>a tool</b>(도구) + <b>for hope</b>(전치사구, tool을 뒤에서 꾸밈).<br>` +
+      `&nbsp;&nbsp;• <b>for</b> = "~을 위한/~용(用)". a tool <b>for</b> hope = "희망을 위한 도구" (도구의 <b>목적·용도</b>를 나타냄).<br>` +
+      `&nbsp;&nbsp;• <b>hope</b>는 추상 불가산명사라 관사 없이 씀. tool은 셀 수 있는 명사라 앞에 <b>a</b>가 붙음.<br><br>` +
+      `📝 <b>해석:</b> "우리에게 축구는 <b>희망을 주는(희망을 위한)</b> 도구이기도 합니다." — 지문 전체를 마무리하는 감동적인 마지막 문장.`,
+    trans: "우리에게 축구는 또한 희망의 도구이기도 합니다.",
+  },
+
+  // 지문 1 · 39번째 문장(보충자료 1): More than 200 national teams from six regions competed to get a place in 2018 FIFA World Cup in Russia.
+  "1-38": {
+    form: "1형식 (S + V) + 부사적 to부정사(목적)",
+    tense: "단순 과거",
+    chips: [
+      ["주어(S)", "More than 200 national teams"],
+      ["주어 수식·전치사구", "from six regions"],
+      ["동사(V)·자동사", "competed"],
+      ["부사적 to부정사·목적", "to get a place"],
+      ["수식어(M)", "in 2018 FIFA World Cup in Russia"],
+    ],
+    structure:
+      `뼈대: <b>teams</b>(S) + <b>competed</b>(V) 의 <b>1형식</b>. competed는 목적어 없는 자동사라, 뒤는 전부 수식어(전치사구·to부정사).<br><br>` +
+      `① <b>More than 200 national teams</b> (주어): "200개가 넘는 대표팀들". <b>more than</b> = ~이상/~넘는. <b>national team</b> = 국가대표팀.<br>` +
+      `② <b>from six regions</b> (전치사구·주어 수식): "여섯 개 지역(대륙 연맹)에서 온". 앞의 teams를 뒤에서 꾸며줌. (FIFA는 세계를 6개 대륙 연맹으로 나눔)<br>` +
+      `③ <b>competed</b> (동사·자동사, 단순 과거): "경쟁했다". compete는 목적어를 바로 못 받는 <b>자동사</b>라 뒤에 전치사구/to부정사가 옴 → <b>1형식</b>. (경쟁 상대를 쓰려면 compete <b>with/against</b>, ~을 두고 겨루려면 compete <b>for</b>)<br>` +
+      `④ ⭐ <b>to get a place</b> (<b>to부정사 부사적 용법·목적</b>): "자리(진출권)를 얻기 <b>위해</b>". "무엇 때문에 경쟁했나?"에 대한 답 → 목적. <b>get a place in ~</b> = "~에서 (한) 자리를 따내다" = 본선 <b>진출권을 얻다</b>.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-adverb')">📐 to부정사 부사적(목적) 자세히 →</span><br>` +
+      `⑤ <b>in 2018 FIFA World Cup in Russia</b> (수식어): "러시아에서 열린 2018 FIFA 월드컵에(서)". <b>in</b>이 두 번 — 앞 in은 '월드컵이라는 대회 안에서(자리)', 뒤 in Russia는 '러시아라는 장소에서'.<br><br>` +
+      `📝 <b>해석:</b> "여섯 개 대륙의 200개가 넘는 대표팀들이 <b>러시아에서 열린 2018 FIFA 월드컵 본선 진출권을 얻기 위해</b> 경쟁했다."`,
+    trans: "여섯 개 지역(대륙)에서 온 200개가 넘는 대표팀들이 2018년 러시아 FIFA 월드컵 본선 진출권을 얻기 위해 경쟁했다.",
+  },
+
+  // 지문 1 · 40번째 문장(보충자료 2): Thirty-two soccer teams qualified for the final tournament.
+  "1-39": {
+    form: "1형식 (S + V + M)",
+    tense: "단순 과거",
+    chips: [
+      ["주어(S)", "Thirty-two soccer teams"],
+      ["동사(V)·자동사", "qualified"],
+      ["수식어(M)·전치사구", "for the final tournament"],
+    ],
+    structure:
+      `뼈대: <b>teams</b>(S) + <b>qualified</b>(V) 의 <b>1형식</b>. qualified는 목적어 없는 자동사라, 뒤 전치사구는 수식어.<br><br>` +
+      `① <b>Thirty-two soccer teams</b> (주어): "32개의 축구팀(대표팀)". 숫자 <b>21~99</b>를 영어로 쓸 땐 <b>하이픈(-)</b>으로 이음 (thirty-two, forty-five …).<br>` +
+      `② <b>qualified</b> (동사·자동사, 단순 과거): "(자격을 얻어) 진출했다". qualify는 목적어를 바로 못 받는 <b>자동사</b>라 뒤에 전치사가 필요 → <b>1형식</b>.<br>` +
+      `&nbsp;&nbsp;• ⭐ <b>qualify for ~</b> = "~에 진출하다 / ~의 자격을 얻다". 스포츠에서 <b>본선·다음 라운드 진출</b>을 말할 때 딱 쓰는 표현.<br>` +
+      `&nbsp;&nbsp;• 💡 <b>39번과 연결:</b> 앞 문장은 "200개 팀이 진출하려 <b>경쟁했다(competed)</b>", 이 문장은 그중 "32개 팀이 <b>진출에 성공했다(qualified)</b>" — 경쟁의 <b>결과</b>.<br>` +
+      `③ <b>for the final tournament</b> (전치사구·수식어): "본선(최종 토너먼트)에". <b>the final tournament</b> = (예선을 거친 뒤의) 최종 본선 대회 = 월드컵 본선.<br><br>` +
+      `📝 <b>해석:</b> "32개의 축구팀이 본선에 진출했다."`,
+    trans: "32개의 축구팀이 본선(최종 토너먼트)에 진출했다.",
+  },
+
+  // 지문 1 · 41번째 문장(보충자료 3): Although each team represents a country, it doesn't mean all its players were born there.
+  "1-40": {
+    form: "복문 (양보 부사절 + 주절 3형식, 주절 목적어=명사절)",
+    tense: "단순 현재 (+ 종속절 단순 과거)",
+    chips: [
+      ["양보 접속사", "Although"],
+      ["부사절 S", "each team"],
+      ["부사절 V", "represents"],
+      ["부사절 O", "a country"],
+      ["주절 S", "it"],
+      ["주절 V", "doesn't mean"],
+      ["주절 O·명사절", "(that) all its players were born there"],
+    ],
+    structure:
+      `뼈대: <b>Although ~</b>(양보 부사절) + <b>it doesn't mean ~</b>(주절). 주절은 <b>it</b>(S) + <b>doesn't mean</b>(V) + <b>명사절</b>(O)의 3형식.<br><br>` +
+      `① ⭐ <b>Although</b> (양보 접속사): "비록 ~이지만/~라고 해서". 뒤 내용을 <b>인정</b>하면서 주절에서 <b>반전</b>을 줌. <b>Although = Though</b> (though가 조금 더 구어적). ⚠️ <b>although 뒤엔 '완전한 문장(주어+동사)'</b>이 옴 (전치사 despite/in spite of 뒤엔 명사가 오는 것과 구별!).<br>` +
+      `② <b>each team represents a country</b> (양보 부사절·3형식): "각 팀은 한 나라를 대표한다". <b>each + 단수명사 + 단수동사</b> → each team(단수)이라 represent<b>s</b>. represent = 대표하다.<br>` +
+      `③ <b>it</b> (주절 주어): 여기 it은 앞 부사절 내용("각 팀이 한 나라를 대표한다는 것")을 받는 <b>가리키는 it</b>. "그것이(그렇다고 해서)".<br>` +
+      `④ <b>doesn't mean</b> (주절 동사): "~을 의미하지는 않는다". 3인칭 단수 it이라 does. <b>A doesn't mean B</b> = "A라고 해서 B인 것은 아니다"(부분 부정 뉘앙스).<br>` +
+      `⑤ <b>(that) all its players were born there</b> (mean의 목적어·<b>명사절</b>): 접속사 <b>that이 생략</b>됨. 절 전체가 mean의 목적어(명사) 역할.<br>` +
+      `&nbsp;&nbsp;• <b>all its players</b>(그 팀의 모든 선수들) + <b>were born</b>(태어났다) + <b>there</b>(거기서=그 나라에서).<br>` +
+      `&nbsp;&nbsp;• ⭐ <b>be born</b> = "태어나다" — bear(낳다)의 수동태. '태어나다'는 <b>항상 수동태(be + born)</b>로 씀 (I <b>was born</b> in 2000 ⭕ / I born ❌).<br>` +
+      `&nbsp;&nbsp;• <b>its</b> = each team의 소유격 "그 팀의". (it's = it is 와 혼동 금지!)<br><br>` +
+      `📝 <b>해석:</b> "각 팀이 한 나라를 대표하긴 하지만, 그렇다고 그 팀의 <b>모든 선수가 그 나라에서 태어났다는 뜻은 아니다</b>."`,
+    trans: "각 팀이 한 나라를 대표하긴 하지만, 그렇다고 해서 그 팀의 모든 선수가 그 나라에서 태어났다는 뜻은 아니다.",
+  },
+
+  // 지문 1 · 42번째 문장(보충자료 4): Family relations and dual citizenship (having two nationalities) influence which country a player plays for.
+  "1-41": {
+    form: "3형식 (S + V + O), 목적어=의문사 명사절",
+    tense: "단순 현재",
+    chips: [
+      ["주어(S)·A and B", "Family relations and dual citizenship"],
+      ["삽입·부연", "(having two nationalities)"],
+      ["동사(V)", "influence"],
+      ["목적어(O)·명사절", "which country a player plays for"],
+    ],
+    structure:
+      `뼈대: <b>주어(A and B)</b> + <b>influence</b>(V) + <b>명사절</b>(O) 의 <b>3형식</b>.<br><br>` +
+      `① <b>Family relations and dual citizenship</b> (주어): "가족 관계와 이중 국적". <b>A and B</b>로 두 개가 묶인 <b>복수 주어</b> → 동사도 복수형 <b>influence</b>(s가 안 붙음!).<br>` +
+      `&nbsp;&nbsp;• <b>dual</b> = 이중의/둘의, <b>citizenship</b> = 시민권/국적.<br>` +
+      `② <b>(having two nationalities)</b> (괄호·부연 설명): 앞의 <b>dual citizenship이 뭔지</b> 풀어줌 = "두 개의 국적을 가지는 것". 괄호 안이라 문장 성분 계산엔 안 들어감. having은 <b>동명사</b>("가지는 것").<br>` +
+      `③ <b>influence</b> (동사): "~에 영향을 미치다". ⭐ 타동사라 <b>목적어를 바로</b> 받음 → influence <u>on</u>/to ❌, influence + 목적어 ⭕. (명사 influence <b>on</b>과 헷갈리지 말 것)<br>` +
+      `④ ⭐ <b>which country a player plays for</b> (influence의 목적어·<b>의문사 명사절 = 간접의문문</b>): "어느 나라를 위해 (한) 선수가 뛰는지".<br>` +
+      `&nbsp;&nbsp;• 어순 주의! 간접의문문은 <b>의문사 + 주어 + 동사</b> 순 (의문문 도치 ❌). which country(의문사구) + a player(S) + plays for(V).<br>` +
+      `&nbsp;&nbsp;• <b>play for + 나라/팀</b> = "~ 소속으로/~을 위해 뛰다". 끝의 <b>for</b>의 목적어가 앞으로 빠져나가 <b>which country</b>가 됨 (a player plays for <u>which country</u> → which country a player plays for).<br><br>` +
+      `📝 <b>해석:</b> "가족 관계와 (두 국적을 가지는) 이중 국적은 <b>선수가 어느 나라를 위해 뛰는지에</b> 영향을 미친다."`,
+    trans: "가족 관계와 이중 국적(두 개의 국적을 가지는 것)은 한 선수가 어느 나라를 위해 뛰는지에 영향을 미친다.",
+  },
+
+  // 지문 1 · 43번째 문장(보충자료 5): Of the 32 teams competing for the World Cup (shown here), 25 had at least one foreign-born player.
+  "1-42": {
+    form: "3형식 (S + V + O)",
+    tense: "단순 과거",
+    chips: [
+      ["수식어(M)·부분의 of", "Of the 32 teams"],
+      ["현재분사구·teams 수식", "competing for the World Cup"],
+      ["삽입·부연", "(shown here)"],
+      ["주어(S)", "25"],
+      ["동사(V)", "had"],
+      ["목적어(O)", "at least one foreign-born player"],
+    ],
+    structure:
+      `뼈대: <b>25</b>(S) + <b>had</b>(V) + <b>one ... player</b>(O) 의 <b>3형식</b>. 맨 앞 <b>Of ~</b> 덩어리는 "그 32팀 중에서"라는 <b>범위 수식어</b>.<br><br>` +
+      `① ⭐ <b>Of the 32 teams ...</b> (<b>부분의 of</b>·수식어): "그 32개 팀 <b>중에서</b>". 전체집합을 앞에 내세우고, 뒤에서 그중 일부(25)를 말하는 구조. <b>Of + 전체, 숫자 + 동사</b> 패턴.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('of-types','of-partitive')">🧬 부분의 of 자세히 →</span><br>` +
+      `② <b>competing for the World Cup</b> (현재분사구·<b>teams 수식</b>): "월드컵을 두고 겨루는(출전하는)" 32팀. <b>the 32 teams (which were) competing</b>에서 <b>관계대명사+be가 생략</b>된 형태. teams가 스스로 겨루므로 <b>능동 → -ing(현재분사)</b>. compete <b>for</b> = ~을 두고 경쟁하다.<br>` +
+      `③ <b>(shown here)</b> (과거분사구·삽입): "여기 (그림에) 보이는". <b>(which are) shown here</b>의 축약. teams가 <b>보여지는</b> 대상이라 <b>수동 → p.p.(과거분사)</b>. ②와 대비: <b>competing(능동·-ing) ↔ shown(수동·p.p.)</b>.<br>` +
+      `④ <b>25</b> (주어): "25개 (팀)". 앞의 teams를 받아 <b>숫자만으로 주어</b>. = 25 (of them/teams).<br>` +
+      `⑤ <b>had</b> (동사·단순과거): "가지고 있었다". have의 과거.<br>` +
+      `⑥ <b>at least one foreign-born player</b> (목적어): "적어도 한 명의 외국 태생 선수를". <b>at least</b> = 적어도/최소한. <b>foreign-born</b> = "외국에서 태어난"(형용사, foreign + born을 하이픈으로 묶은 복합형용사).<br><br>` +
+      `📝 <b>해석:</b> "(여기 보이는) 월드컵에 출전한 32개 팀 <b>중 25개 팀은</b> 외국 태생 선수를 <b>적어도 한 명</b> 보유하고 있었다."`,
+    trans: "월드컵에 출전한 32개 팀(여기 표시됨) 중 25개 팀은 적어도 한 명의 외국 태생 선수를 보유하고 있었다.",
+  },
+
+  // 지문 1 · 44번째 문장(보충자료 6·마지막): In total, 97 foreign-born players competed in the 2018 World Cup.
+  "1-43": {
+    form: "1형식 (S + V + M)",
+    tense: "단순 과거",
+    chips: [
+      ["수식어(M)·부사구", "In total"],
+      ["주어(S)", "97 foreign-born players"],
+      ["동사(V)·자동사", "competed"],
+      ["수식어(M)·전치사구", "in the 2018 World Cup"],
+    ],
+    structure:
+      `뼈대: <b>players</b>(S) + <b>competed</b>(V) 의 <b>1형식</b>. competed는 자동사라 뒤 전치사구는 수식어.<br><br>` +
+      `① <b>In total</b> (부사구·수식어): "총(합해서) / 전부 해서". 앞 문장들에서 나눠 말한 숫자를 <b>한데 합산</b>하는 마무리 표현. 콤마로 분리되고 문장 성분 계산엔 안 들어감.<br>` +
+      `② <b>97 foreign-born players</b> (주어): "97명의 외국 태생 선수들". <b>foreign-born</b>(외국에서 태어난)은 43번에도 나온 복합형용사 → players를 앞에서 꾸밈.<br>` +
+      `③ <b>competed</b> (동사·자동사, 단순 과거): "출전했다/경쟁했다". 39번 competed와 같은 자동사 → 목적어 없이 전치사구가 옴 → <b>1형식</b>.<br>` +
+      `&nbsp;&nbsp;• 💡 <b>39번과 수미상관:</b> 이 보충자료는 competed로 시작(200팀 경쟁)해서 competed로 끝맺음(97명 출전) — 깔끔한 마무리.<br>` +
+      `④ <b>in the 2018 World Cup</b> (전치사구·수식어): "2018 월드컵에(서)". 특정 대회라 <b>the</b>가 붙음 (the 2018 World Cup).<br><br>` +
+      `📝 <b>해석:</b> "<b>총</b> 97명의 외국 태생 선수가 2018 월드컵에 출전했다." — 통계를 합산하며 글을 마무리.`,
+    trans: "총 97명의 외국 태생 선수가 2018 월드컵에 출전했다.",
   },
 };
 
