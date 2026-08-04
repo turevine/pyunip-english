@@ -13,20 +13,50 @@ function switchTab(name){
 
 // ---- 단어카드 ----
 let wIdx = 0;
-let wDeck = WORDS.slice();   // 현재 카드 순서 (섞기 대상)
+let wFilter = 'all';              // 'all' 또는 지문번호(1~8)
+let wDeck = WORDS.slice();        // 현재 카드 순서 (섞기 대상)
+
+function wordsOf(filter){
+  return filter==='all' ? WORDS.slice() : WORDS.filter(w=>w.p===filter);
+}
+function renderWordFilter(){
+  const chips = [{ k:'all', label:'전체', n:WORDS.length }];
+  for(let i=1;i<=PASSAGES.length;i++) chips.push({ k:i, label:'지문 '+i, n:wordsOf(i).length });
+  document.getElementById('word-filter').innerHTML = chips.map(c=>{
+    const arg = c.k==='all' ? "'all'" : c.k;
+    return `<button class="wf-chip ${wFilter===c.k?'on':''}" onclick="selectWordFilter(${arg})">${c.label}<span class="wf-n">${c.n}</span></button>`;
+  }).join('');
+}
+function selectWordFilter(f){
+  wFilter = f;
+  wDeck = wordsOf(f);
+  wIdx = 0;
+  renderWordFilter();
+  renderCard();
+}
 function renderCard(){
+  const card = document.getElementById('flashcard');
+  card.classList.remove('flipped');
+  if(wDeck.length===0){
+    document.getElementById('fc-word').textContent = '단어 없음';
+    document.getElementById('fc-pos').textContent = '';
+    document.getElementById('fc-meaning').textContent = '이 지문엔 아직 단어카드가 없어요.';
+    document.getElementById('fc-example').textContent = 'data.js 의 WORDS_BY_PASSAGE 에 추가해 주세요.';
+    document.getElementById('fc-count').textContent = '0 / 0';
+    return;
+  }
   const w = wDeck[wIdx];
-  document.getElementById('flashcard').classList.remove('flipped');
   document.getElementById('fc-word').textContent = w.word;
   document.getElementById('fc-pos').textContent = w.pos;
   document.getElementById('fc-meaning').textContent = w.meaning;
   document.getElementById('fc-example').textContent = w.example;
   document.getElementById('fc-count').textContent = `${wIdx+1} / ${wDeck.length}`;
 }
-function flipCard(){ document.getElementById('flashcard').classList.toggle('flipped'); }
-function nextCard(){ wIdx=(wIdx+1)%wDeck.length; renderCard(); }
-function prevCard(){ wIdx=(wIdx-1+wDeck.length)%wDeck.length; renderCard(); }
+function flipCard(){ if(wDeck.length) document.getElementById('flashcard').classList.toggle('flipped'); }
+function nextCard(){ if(!wDeck.length) return; wIdx=(wIdx+1)%wDeck.length; renderCard(); }
+function prevCard(){ if(!wDeck.length) return; wIdx=(wIdx-1+wDeck.length)%wDeck.length; renderCard(); }
 function shuffleWords(){
+  if(!wDeck.length) return;
   for(let i=wDeck.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [wDeck[i],wDeck[j]]=[wDeck[j],wDeck[i]]; }
   wIdx=0; renderCard();
 }
@@ -47,8 +77,13 @@ function renderPassageList(){
   document.getElementById('passage-list').innerHTML =
     PASSAGES.map(p=>passageItemHTML(p, `openPassage(${p.id})`)).join('');
 }
+const SUBHEAD = '(소제목)';
+function isSubhead(s){ return typeof s==='string' && s.startsWith(SUBHEAD); }
 function sentSpans(arr){
-  return arr.map(s=>`<span class="sent" onclick="this.classList.toggle('on')">${s}</span>`).join(' ');
+  return arr.map(s=>{
+    if(isSubhead(s)) return `<div class="sub-head">${s.slice(SUBHEAD.length).trim()}</div>`;
+    return `<span class="sent" onclick="this.classList.toggle('on')">${s}</span>`;
+  }).join(' ');
 }
 function openPassage(id){
   const p = PASSAGES.find(x=>x.id===id);
@@ -81,9 +116,10 @@ let anIdx = 0, anRevealed = false, anShuffle = false;
 
 function passagePool(p){
   const out = [];
-  p.sentences.forEach((en,i)=>out.push({ key:`${p.id}-${i}`, en, source:`지문 ${p.id}` }));
-  if(p.extra) p.extra.sentences.forEach((en,i)=>
-    out.push({ key:`${p.id}-${p.sentences.length+i}`, en, source:`지문 ${p.id} · 보충` }));
+  p.sentences.forEach((en,i)=>{ if(!isSubhead(en)) out.push({ key:`${p.id}-${i}`, en, source:`지문 ${p.id}` }); });
+  if(p.extra) p.extra.sentences.forEach((en,i)=>{
+    if(!isSubhead(en)) out.push({ key:`${p.id}-${p.sentences.length+i}`, en, source:`지문 ${p.id} · 보충` });
+  });
   return out;
 }
 function renderAnPassageList(){
@@ -220,6 +256,7 @@ document.addEventListener('touchend', e => {
 }, false);
 
 // ---- 초기화 ----
+renderWordFilter();
 renderCard();
 renderPassageList();
 renderAnPassageList();
