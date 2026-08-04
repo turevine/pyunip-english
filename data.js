@@ -2185,6 +2185,103 @@ const ANALYSIS = {
       `📝 <b>해석:</b> "<b>총</b> 97명의 외국 태생 선수가 2018 월드컵에 출전했다." — 통계를 합산하며 글을 마무리.`,
     trans: "총 97명의 외국 태생 선수가 2018 월드컵에 출전했다.",
   },
+
+  // 지문 2 · 1번째 문장: How does a person become an Olympic champion—someone capable of winning the gold?
+  "2-0": {
+    form: "2형식 (S + V + C) · How 의문문",
+    tense: "현재 (일반적 사실)",
+    chips: [
+      ["의문부사", "How"],
+      ["조동사", "does"],
+      ["주어(S)", "a person"],
+      ["동사(V)", "become"],
+      ["보어(C)", "an Olympic champion"],
+      ["동격", "—someone capable of winning the gold"],
+    ],
+    structure:
+      `뼈대: <b>a person(S) + become(V) + an Olympic champion(C)</b> 의 <b>2형식</b>을 <b>How ~ ?</b> 의문문으로 바꾼 문장.<br><br>` +
+      `① <b>How does + 주어 + 동사원형 ~?</b> ("어떻게 ~하는가?") — do/does로 만드는 의문문이라 뒤 동사는 반드시 <b>원형 become</b>. 왜 becomes가 아닌가? → 의문·부정을 담당하는 <b>does가 이미 3인칭·현재를 표시</b>했으니, 본동사는 원형으로 돌아감 (does becomes ❌).<br>` +
+      `② <b>a person</b> (주어) — 왜 the person도, persons도 아닌 <b>a person</b>인가?<br>` +
+      `&nbsp;&nbsp;• 특정 누군가가 아니라 <b>'아무나 한 사람 (사람이라면 누구든)'</b>을 뜻하는 <b>총칭의 a</b>. "한 사람이 어떻게 하면 ~이 되는가"라는 일반론이라 부정관사 a가 딱 맞음.<br>` +
+      `③ <b>become</b> (2형식 동사·불완전자동사): "~이 되다". 뒤에 <b>보어</b>가 와서 주어(a person)와 등호(=) 관계 → a person = an Olympic champion. 목적어가 아니라 보어라서 2형식.<br>` +
+      `④ <b>an Olympic champion</b> (주격보어) — 왜 <b>an</b>인가? Olympic의 <b>첫소리가 모음 [o]</b>라서 a가 아니라 an. (철자가 아니라 <b>소리</b> 기준!)<br>` +
+      `⑤ <b>— … </b> (엠 대시): 앞의 <b>an Olympic champion을 다시 풀어 설명하는 동격</b>. "즉, 다시 말해"로 이어 읽으면 됨. 대시 뒤는 문장 필수 성분이 아니라 부연.<br>` +
+      `⑥ <b>someone capable of winning the gold</b> (핵심 중의 핵심!) — 겉보기엔 형용사구가 명사를 <b>뒤에서</b> 꾸미는 후치 수식이지만, 그 밑바탕은 <b>주격 관계대명사 + be동사가 생략</b>된 구조.<br>` +
+      `&nbsp;&nbsp;• 완전한 형태로 복원하면: <b>someone <u>who is</u> capable of winning the gold</b> ("금메달을 딸 능력이 있는 사람"). 여기서 <b>주격 관계대명사 who + be동사 is가 통째로 생략</b>된 것.<br>` +
+      `&nbsp;&nbsp;• 왜 생략 가능한가? → <b>「주격 관계대명사(who/which/that) + be동사」는 한 세트로 함께 생략</b>할 수 있음. 생략하고 나면 뒤에 남는 게 <b>형용사(구)·분사·전치사구</b>일 때 이렇게 명사 뒤에 바로 붙는 형태가 됨.<br>` +
+      `&nbsp;&nbsp;&nbsp;&nbsp;- someone (who is) <b>capable</b> ... → 형용사가 남은 경우 (지금 이 문장)<br>` +
+      `&nbsp;&nbsp;&nbsp;&nbsp;- the man (who is) <b>running</b> → 현재분사가 남으면 '진행'<br>` +
+      `&nbsp;&nbsp;&nbsp;&nbsp;- a letter (which was) <b>written</b> in English → 과거분사가 남으면 '수동'<br>` +
+      `&nbsp;&nbsp;• 왜 who는 생략돼도 되고 whose·목적격과 다른가? → <b>주격 관계대명사는 단독으론 생략 불가</b>지만, <b>바로 뒤에 be동사가 따라올 때만</b> be동사와 <b>한 묶음으로</b> 생략됨. 그래서 who is 둘 다 사라진 것.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('relative-pronoun','rp-subject-omit')">✂️ 주격 관계대명사 + be동사 생략 자세히 →</span><br>` +
+      `&nbsp;&nbsp;• <b>someone</b>(-one으로 끝나는 대명사)은 형용사가 <b>앞이 아니라 뒤에서</b> 꾸미는 게 원칙 → who is를 다시 넣지 않는 한 capable이 someone 뒤에 붙음 (capable someone ❌).<br>` +
+      `&nbsp;&nbsp;• <b>be capable of + (동)명사</b>: "~할 능력이 있는". of 다음엔 반드시 <b>동명사(-ing)</b>! → capable of <b>winning</b> (capable to win ❌). ← 이 <b>be</b>가 바로 생략된 <b>is</b>임을 알면 왜 of/-ing가 오는지 더 확실히 보임.<br>` +
+      `&nbsp;&nbsp;• <b>the gold</b> = the gold medal(금메달)에서 medal이 생략된 표현. 올림픽에서 딸 그 '금'이라 특정되므로 <b>the</b>.<br><br>` +
+      `📝 <b>해석:</b> "어떻게 하면 한 사람이 올림픽 챔피언, 즉 금메달을 딸 능력을 갖춘 사람이 될까?" — 글 전체의 <b>문제 제기(도입 질문)</b>. 바로 다음 문장이 그 답(생물학적·환경적·심리적 요인 + 훈련)을 제시.`,
+    trans: "어떻게 하면 한 사람이 올림픽 챔피언—즉 금메달을 딸 수 있는 사람—이 되는 걸까?",
+  },
+
+  // 지문 2 · 2번째 문장: In reality, a combination of biological, environmental, and psychological factors, as well as training and practice, all go into making a super athlete.
+  "2-1": {
+    form: "1형식 (S + V + M)",
+    tense: "현재 (일반적 사실·진리)",
+    chips: [
+      ["수식어(M)·부사구", "In reality"],
+      ["주어(S)·핵심명사", "a combination of ... factors"],
+      ["삽입구", "as well as training and practice"],
+      ["동격 부사", "all"],
+      ["동사(V)·자동사", "go"],
+      ["수식어(M)·전치사구", "into making a super athlete"],
+    ],
+    structure:
+      `뼈대: <b>a combination(S) + go(V)</b> 의 <b>1형식</b>. go는 자동사라 뒤 into구는 전부 수식어. 주어와 동사 사이에 수식어·삽입구가 잔뜩 끼어 <b>주-동이 멀리 떨어진</b> 문장이라 뼈대부터 잡는 게 핵심.<br><br>` +
+      `① <b>In reality</b> (부사구·수식어): "실제로(는) / 사실은". 앞 문장의 질문(2-0)에 대해 "현실을 말하자면"으로 답을 여는 <b>담화표지</b>. 콤마로 분리되고 문장 성분 계산엔 안 들어감.<br>` +
+      `② <b>a combination of ... factors</b> (주어) — 핵심명사(head)는 <b>a combination</b>(단수). "~들의 조합/결합".<br>` +
+      `&nbsp;&nbsp;• <b>of</b>는 "무엇으로 이루어졌나"를 밝히는 <b>부분·구성의 of</b>: a combination <u>of</u> factors = "여러 요인들로 이루어진 하나의 조합".<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('of-types','of-partitive')">🧬 부분의 of & 수일치 자세히 →</span><br>` +
+      `&nbsp;&nbsp;• 왜 <b>a</b> combination인가? → 여러 요인을 묶은 <b>하나의</b> 덩어리라서 부정관사 a. <span class="wikilink" onclick="gotoGrammar('articles','ar-a')">📐 부정관사 a/an(하나·총칭) 자세히 →</span><br>` +
+      `③ <b>biological, environmental, and psychological</b> (병렬) — <b>A, B, and C</b> 형태로 형용사 셋을 대등하게 나열해 factors를 꾸밈. 마지막 항목 앞에만 and, 품사·형태(-al 형용사)를 맞춘 게 <b>병렬구조</b>의 핵심.<br>` +
+      `④ <b>factors</b> (무관사 복수) — 특정 요인들이 아니라 '일반적으로 그런 요인들'이라 관사 없이 복수. <span class="wikilink" onclick="gotoGrammar('articles','ar-zero')">📐 무관사(총칭 복수) 자세히 →</span><br>` +
+      `⑤ <b>, as well as training and practice,</b> (삽입구) — "훈련과 연습<b>뿐만 아니라</b> (~도)". <b>B as well as A</b> = "A뿐 아니라 B도"인데, 여기선 앞뒤 콤마로 <b>삽입</b>되어 주어를 보충 설명.<br>` +
+      `&nbsp;&nbsp;• 🚨 <b>수일치 함정:</b> as well as로 이어진 부분은 <b>진짜 주어가 아님</b>. 동사는 <b>앞의 핵심명사(a combination)</b>에 맞춤 → 이 삽입구가 아무리 복수(training and practice)라도 동사 수를 좌우하지 못함. (「A as well as B」에서 동사는 <b>A</b>에 일치)<br>` +
+      `⑥ <b>all go</b> (핵심!) — 왜 단수 goes가 아니라 <b>복수 go</b>인가?<br>` +
+      `&nbsp;&nbsp;• 문법상 핵심주어 a combination은 단수라 원칙대로면 goes지만, 글쓴이는 <b>'여러 요인들 + all(모두)'</b>을 <b>내용상 복수</b>로 느껴 <b>go</b>로 씀 → <b>의미(내용) 일치</b>.<br>` +
+      `&nbsp;&nbsp;• 바로 앞의 <b>all</b>(동격 부사, "이 모든 것이")이 복수 감각을 굳혀 go를 이끎. all은 주어를 받아 "그것들 모두"라고 힘줘 반복하는 장치.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('of-types','of-partitive')">🧬 of + 수일치(내용 일치) 자세히 →</span><br>` +
+      `⑦ <b>go into + -ing</b> ("~하는 데 들어가다/투입되다·기여하다"): into는 전치사라 뒤에 <b>동명사 making</b>. → "슈퍼 선수를 만드는 데 (전부) 투입된다". (go into to make ❌)<br>` +
+      `⑧ <b>a super athlete</b> — 특정인이 아닌 '(어떤) 뛰어난 운동선수 한 명'이라 <b>총칭의 a</b>. athlete가 자음 소리로 시작해 an이 아니라 a.<br><br>` +
+      `📝 <b>해석:</b> "실제로, 생물학적·환경적·심리적 요인들의 조합이, 훈련과 연습과 더불어, 이 모든 것이 슈퍼 선수를 만드는 데 들어간다." — 2-0의 질문에 대한 <b>총괄 답(요인 나열의 예고편)</b>.`,
+    trans: "실제로, 생물학적·환경적·심리적 요인들의 조합이 훈련·연습과 더불어 모두 어우러져 슈퍼 운동선수를 만들어 낸다.",
+  },
+
+  // 지문 2 · 3번째 문장: Perhaps the most important factor involved in becoming an elite athlete is genetic.
+  "2-2": {
+    form: "2형식 (S + V + C)",
+    tense: "현재 (일반적 사실)",
+    chips: [
+      ["문장부사", "Perhaps"],
+      ["주어(S)·핵심명사", "the most important factor"],
+      ["후치수식·과거분사구", "involved in becoming an elite athlete"],
+      ["동사(V)·be", "is"],
+      ["보어(C)·형용사", "genetic"],
+    ],
+    structure:
+      `뼈대: <b>the most important factor(S) + is(V) + genetic(C)</b> 의 <b>2형식</b>. 주어와 동사 is 사이에 <b>과거분사 후치수식(involved ...)</b>이 끼어 주-동이 벌어진 문장 → involved를 동사로 착각하면 구조가 무너짐.<br><br>` +
+      `① <b>Perhaps</b> (문장부사): "아마도". 문장 전체를 꾸며 <b>단정을 살짝 누그러뜨리는</b> 장치(hedge). 성분 계산엔 안 들어감.<br>` +
+      `② <b>the most important factor</b> (주어) — <b>the + 최상급(most important) + 명사</b>. 왜 <b>the</b>인가? → 최상급은 '(그중) 가장 ~한 <b>바로 그것</b>'으로 대상이 <b>딱 하나로 특정</b>되므로 <b>the</b>가 원칙.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('articles','ar-the')">📐 정관사 the(최상급·유일) 자세히 →</span><br>` +
+      `③ <b>involved in becoming ...</b> (과거분사구·후치수식) — 핵심 중의 핵심! <b>factor를 뒤에서 꾸미는</b> 분사구.<br>` +
+      `&nbsp;&nbsp;• 원래 <b>the factor <u>(which is)</u> involved ...</b> 에서 <b>[주격 관계대명사 which + be동사 is]가 생략</b>된 형태.<br>` +
+      `&nbsp;&nbsp;• 왜 involving이 아니라 <b>involved(과거분사)</b>인가? → factor는 스스로 관여하는 게 아니라 '<b>관여되는</b> 대상'(수동) → <b>과거분사 p.p.</b>. (involving이면 '무언가를 관련시키는'이라 어색)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('participle-postmod','pp-omit')">✂️ (관계사+be) 생략 후치수식 자세히 →</span> <span class="wikilink" onclick="gotoGrammar('participle-postmod','pp-active-passive')">🔑 현재분사 vs 과거분사 자세히 →</span><br>` +
+      `&nbsp;&nbsp;• <b>be involved in + (동)명사</b>: "~에 관여/연관되다". in은 전치사라 뒤에 <b>동명사 becoming</b> (involved to become ❌).<br>` +
+      `④ <b>becoming an elite athlete</b> — in의 목적어인 <b>동명사</b>. <b>an</b> elite athlete: elite의 첫소리가 모음 [ɪ]라서 a가 아니라 <b>an</b> (소리 기준!).<br>` +
+      `⑤ <b>is</b> (진짜 동사·be, 2형식) — 🚨 <b>함정:</b> 앞의 involved에 홀려 그걸 동사로 보면 안 됨. involved는 분사(수식어)일 뿐, <b>문장의 본동사는 저 멀리 있는 is</b>. "가장 중요한 요인 <b>은</b> ~<b>이다</b>"의 뼈대를 잡아야 함.<br>` +
+      `⑥ <b>genetic</b> (주격보어·형용사) — 왜 부사 genetically가 아닌가? → 보어는 <b>동사가 아니라 주어(factor)를 설명</b>하는 자리 → <b>형용사</b>. "그 요인은 = 유전적인 것"이라는 등호 관계 (is genetically ❌).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('linking-become','lb-why-adj')">📐 보어는 부사 아닌 형용사 자세히 →</span><br><br>` +
+      `📝 <b>해석:</b> "아마도 뛰어난 운동선수가 되는 데 관여하는 가장 중요한 요인은 <b>유전(적인 것)</b>이다." — 앞 문장(2-1)에서 나열한 요인들 중 <b>'유전'을 첫 번째 주제로 콕 집어</b> 이후 문단을 여는 <b>주제문</b>.`,
+    trans: "아마도 뛰어난 운동선수가 되는 데 관여하는 가장 중요한 요인은 유전적인 것이다.",
+  },
 };
 
 /* ---------- 문법 정리 (공부한 내용 채우기) ----------
