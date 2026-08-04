@@ -46,7 +46,7 @@ const WORDS_BY_PASSAGE = {
 
   /* ----- 지문 2: What makes an Olympic champion ----- */
   2: [
-  { word: "capable of",       pos: "phr.", meaning: "~을 할 수 있는 (be capable of + 명사/동명사)", example: "someone capable of winning the gold" },
+  { word: "capable of",       pos: "phr.", meaning: "~을 할 수 있는 (be capable of + 명사/동명사) — ①자질·역량 ②(나쁜 짓까지) 극단적 성향, 둘 다 표현 가능", example: "She is capable of leading the whole team. (역량) · He is capable of doing anything for money. (극단적 성향)" },
   { word: "combination",      pos: "n.",   meaning: "조합, 결합 (a combination of A, B, C)", example: "a combination of biological and psychological factors" },
   { word: "biological",       pos: "a.",   meaning: "생물학적인",                  example: "biological factors" },
   { word: "environmental",    pos: "a.",   meaning: "환경의, 환경적인",            example: "environmental factors" },
