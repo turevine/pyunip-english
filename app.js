@@ -36,7 +36,11 @@ function selectWordFilter(f){
 }
 function renderCard(){
   const card = document.getElementById('flashcard');
+  // 카드를 넘길 때는 애니메이션 없이 즉시 앞면으로 (다음 카드 해석이 잠깐 보이는 문제 방지)
+  card.classList.add('no-anim');
   card.classList.remove('flipped');
+  void card.offsetWidth;      // 리플로우로 위치 확정 후 애니메이션 재활성화
+  card.classList.remove('no-anim');
   if(wDeck.length===0){
     document.getElementById('fc-word').textContent = '단어 없음';
     document.getElementById('fc-pos').textContent = '';
