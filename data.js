@@ -601,7 +601,7 @@ const PASSAGES = [
   {
     id: 1,
     title: "The world's game",
-    meta: "주제: 축구와 사회 · 난이도 ★★☆",
+    meta: "주제: 축구와 사회 · 난이도 ★★☆ (서사+가벼운 논증)",
     sentences: [
       "Throughout history, humans have played some kind of kicking game.",
       "What the world now calls football—or soccer in the United States—began as far back as 2500 B.C.E. with the Chinese game of cuju.",
@@ -657,7 +657,7 @@ const PASSAGES = [
   {
     id: 2,
     title: "What makes an Olympic champion",
-    meta: "주제: 올림픽 챔피언을 만드는 요인 · 난이도 ★★☆",
+    meta: "주제: 올림픽 챔피언을 만드는 요인 · 난이도 ★★☆ (과학 서사·병렬 구문)",
     sentences: [
       "How does a person become an Olympic champion—someone capable of winning the gold?",
       "In reality, a combination of biological, environmental, and psychological factors, as well as training and practice, all go into making a super athlete.",
@@ -703,7 +703,7 @@ const PASSAGES = [
   {
     id: 3,
     title: "What is Beauty?",
-    meta: "주제: 아름다움의 정의와 문화 · 난이도 ★★☆",
+    meta: "주제: 아름다움의 정의와 문화 · 난이도 ★★★ (추상 논증·어휘 밀도 상)",
     sentences: [
       "The search for beauty spans centuries and continents.",
       "Paintings of Egyptians dating back over 4,000 years show both men and women painting their nails and wearing makeup.",
@@ -750,7 +750,7 @@ const PASSAGES = [
   {
     id: 4,
     title: "Skin: The body's canvas",
-    meta: "주제: 피부와 신체 표현(문신·흉터·헤나) · 난이도 ★★☆",
+    meta: "주제: 피부와 신체 표현(문신·흉터·헤나) · 난이도 ★★★ (상관·도치 구문·정보량 상)",
     sentences: [
       "If you could take off your skin and lay it flat, it would cover an area of about 1.9 square meters.",
       "Skin is, by far, the body's largest organ.",
@@ -795,7 +795,7 @@ const PASSAGES = [
   {
     id: 5,
     title: "Racing to rescue koalas",
-    meta: "주제: 코알라 구조와 서식지 보존 · 난이도 ★★☆",
+    meta: "주제: 코알라 구조와 서식지 보존 · 난이도 ★☆☆ (평이한 서사·단순 구문)",
     sentences: [
       "It's two in the morning, and a koala is caught on a fence, like a prisoner trying to escape.",
       "A phone rings in the home of Megan Aitken in a suburb of Brisbane, on the east coast of Australia.",
@@ -867,7 +867,7 @@ const PASSAGES = [
   {
     id: 6,
     title: "Tracking the snow leopard",
-    meta: "주제: 눈표범 보호와 지역 경제 · 난이도 ★★☆",
+    meta: "주제: 눈표범 보호와 지역 경제 · 난이도 ★★☆ (보존 논리·삽입 구문)",
     sentences: [
       "\"When a snow leopard stalks its prey among the mountain walls, it moves... softly, slowly,\" explains Indian biologist Raghunandan Singh Chundawat, who has studied the animal for years.",
       "\"If it knocks a stone loose, it will reach out a foot to stop it from falling and making noise.\"",
@@ -913,7 +913,7 @@ const PASSAGES = [
   {
     id: 7,
     title: "Sacred summits",
-    meta: "주제: 화산(후지산·포포카테페틀)과 신앙 · 난이도 ★★☆",
+    meta: "주제: 화산(후지산·포포카테페틀)과 신앙 · 난이도 ★★☆ (서사+정보·고유명사 다수)",
     sentences: [
       "Volcanoes are creators and destroyers.",
       "They can shape lands and cultures, but can also cause great destruction and loss of life.",
@@ -967,7 +967,7 @@ const PASSAGES = [
   {
     id: 8,
     title: "Is prediction possible?",
-    meta: "주제: 지진 예측 연구 · 난이도 ★★☆",
+    meta: "주제: 지진 예측 연구 · 난이도 ★★★ (도치 구문·추상 논증 상)",
     sentences: [
       "Never before have so many people been packed into cities—places such as Los Angeles, Istanbul, Tokyo, and Lima—that are regularly affected by earthquakes.",
       "Located near the edge of Earth's huge, shifting plates, these cities face the risk of serious damage and economic disaster from large quakes as well as the tsunamis, fires, and other kinds of destruction they often cause.",
