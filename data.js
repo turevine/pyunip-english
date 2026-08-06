@@ -52,6 +52,7 @@ const WORDS_BY_PASSAGE = {
   { word: "environmental",    pos: "a.",   meaning: "환경의, 환경적인",            example: "environmental factors" },
   { word: "psychological",    pos: "a.",   meaning: "심리적인, 정신적인",          example: "psychological factors" },
   { word: "factor",           pos: "n.",   meaning: "요인, 요소",                  example: "the most important factor" },
+  { word: "involve",          pos: "v.",   meaning: "관련시키다, 수반하다; (be involved in) ~에 관여/연관되다 (be involved in + (동)명사)", example: "the most important factor involved in becoming an elite athlete (엘리트 선수가 되는 데 관련된 가장 중요한 요인)" },
   { word: "as well as",       pos: "phr.", meaning: "~뿐만 아니라, ~도 역시 (A as well as B → A에 초점)", example: "training and practice, as well as genes" },
   { word: "go into",          pos: "phr.", meaning: "~에 들어가다; ~에 (많이) 쓰이다/투입되다", example: "Many factors go into making a super athlete." },
   { word: "athlete",          pos: "n.",   meaning: "운동선수",                    example: "a super athlete" },
@@ -59,9 +60,11 @@ const WORDS_BY_PASSAGE = {
   { word: "genetic",          pos: "a.",   meaning: "유전의, 유전적인 (n. gene 유전자)", example: "The factor is genetic." },
   { word: "competitor",       pos: "n.",   meaning: "경쟁자; (대회) 참가 선수 (v. compete)", example: "Olympic competitors" },
   { word: "be equipped with", pos: "phr.", meaning: "~을 갖추고 있다, ~이 장착되어 있다", example: "athletes equipped with certain characteristics" },
+  { word: "certain",          pos: "a.",   meaning: "①어떤, 특정한 (a certain ~) ②확실한, 틀림없는 (be certain of/that)", example: "certain physical characteristics (어떤 특정한 신체적 특성들)" },
   { word: "characteristic",   pos: "n./a.", meaning: "특징, 특성; 특유의",         example: "certain physical characteristics" },
   { word: "differentiate",    pos: "v.",   meaning: "구별하다, 구분 짓다 (differentiate A from B: A를 B와 구분(구별)하다)", example: "characteristics that differentiate them from others" },
   { word: "average",          pos: "a./n.", meaning: "평균의, 보통의; 평균",       example: "the average person" },
+  { word: "take A for example", pos: "phr.", meaning: "A를 예로 들다, 예를 들어 A를 보자 (명령문으로 예시를 꺼내는 표현 = for example)", example: "Take an elite athlete's muscles, for example. (엘리트 선수의 근육을 예로 들어보자.)" },
   { word: "skeletal muscle",  pos: "n.",   meaning: "골격근 (뼈를 움직이는 근육)",  example: "human skeletal muscles" },
   { word: "fiber",            pos: "n.",   meaning: "섬유, 섬유질 (근섬유 muscle fiber)", example: "fast-twitch fibers" },
   { word: "twitch",           pos: "v./n.", meaning: "씰룩거리다, 경련하다; 씰룩임 (fast-twitch 속근 / slow-twitch 지근)", example: "fast-twitch and slow-twitch fibers" },
@@ -2281,6 +2284,142 @@ const ANALYSIS = {
       `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('linking-become','lb-why-adj')">📐 보어는 부사 아닌 형용사 자세히 →</span><br><br>` +
       `📝 <b>해석:</b> "아마도 뛰어난 운동선수가 되는 데 관여하는 가장 중요한 요인은 <b>유전(적인 것)</b>이다." — 앞 문장(2-1)에서 나열한 요인들 중 <b>'유전'을 첫 번째 주제로 콕 집어</b> 이후 문단을 여는 <b>주제문</b>.`,
     trans: "아마도 뛰어난 운동선수가 되는 데 관여하는 가장 중요한 요인은 유전적인 것이다.",
+  },
+
+  // 지문 2 · 4번째 문장: Most Olympic competitors are equipped with certain physical characteristics that differentiate them from the average person.
+  "2-3": {
+    form: "3형식의 수동태 (S + be p.p. + with ~) · 주격 관계대명사절 포함",
+    tense: "현재 (일반적 사실)",
+    chips: [
+      ["주어(S)", "Most Olympic competitors"],
+      ["동사(V)·수동태(be p.p.)", "are equipped with"],
+      ["대상·명사구", "certain physical characteristics"],
+      ["주격 관계대명사", "that"],
+      ["관계절 동사(V)", "differentiate"],
+      ["목적어(O)", "them"],
+      ["수식어(M)·전치사구", "from the average person"],
+    ],
+    structure:
+      `뼈대: <b>Most Olympic competitors(S) + are equipped with(V·수동태) + certain physical characteristics(대상)</b>. 그 뒤 <b>that절</b>이 characteristics를 꾸미는 <b>주격 관계대명사절</b>.<br><br>` +
+      `① <b>Most</b> (무관사 + 복수명사): "대부분의 ~". <b>the 없이 Most + 복수명사</b> = '(일반적으로) 대부분의'라는 총칭.<br>` +
+      `&nbsp;&nbsp;• 🚨 <b>함정:</b> 앞 문장의 <b>the most important</b>(최상급 '가장')와 헷갈리지 말 것! 여기 <b>Most</b>는 '가장'이 아니라 <b>'대부분(의)'</b> → the도 없음. (the most competitors ❌)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('articles','ar-zero')">📐 무관사(총칭 복수) 자세히 →</span><br>` +
+      `② <b>are equipped with</b> (핵심 중의 핵심 · 수동태) — 능동태는 <b>equip A with B</b>("A에게 B를 갖춰 주다"). 선수는 특성을 스스로 갖춘 게 아니라 '<b>갖추어진/지니게 된</b>' 대상(수동) → <b>be동사(are) + 과거분사(equipped)</b>.<br>` +
+      `&nbsp;&nbsp;• 왜 equipping(현재분사)이 아니라 <b>equipped(과거분사)</b>인가? → 수동태의 짝은 언제나 <b>과거분사 p.p.</b>. (are equipping ❌ → 그건 능동·진행)<br>` +
+      `&nbsp;&nbsp;• <b>with</b>는 equip과 한 세트로 붙어 다니는 전치사 → 수동태로 바뀌어도 <b>with는 그대로</b> 뒤에 남아 "무엇을 갖췄는지(B)"를 이끎.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('passive-voice','pv-form')">🔄 수동태 be + p.p. 형태 자세히 →</span><br>` +
+      `③ <b>certain physical characteristics</b> — certain: "어떤·특정한 (몇몇)". 무관사 복수라 '특정 부류의 신체적 특성들'을 총칭.<br>` +
+      `④ <b>that differentiate ...</b> (핵심 함정!) — <b>주격 관계대명사 that</b>이 이끄는 절이 <b>characteristics를 뒤에서 수식</b>. that이 관계절 안에서 <b>주어 역할</b>을 하므로 뒤는 주어가 빠진 <b>불완전한 절</b>.<br>` +
+      `&nbsp;&nbsp;• 🚨 <b>수일치 함정:</b> that의 선행사는 <b>복수 characteristics</b> → 관계절 동사도 <b>복수 differentiate</b>. 바로 뒤의 단수 <b>them·person</b>에 홀려 differentiates로 쓰면 안 됨! (동사 수는 <b>선행사</b>에 맞춤)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('relative-pronoun','rp-incomplete')">🔗 주격 관계대명사(불완전절) 자세히 →</span><br>` +
+      `⑤ <b>differentiate A from B</b>: "A를 B와 구별 짓다". 여기서 A=<b>them</b>(=Most Olympic competitors), B=<b>the average person</b> → "그들을 <b>보통 사람과</b> 구별 짓는" 특성.<br>` +
+      `⑥ <b>the average person</b> — the + average person: 특정 개인이 아니라 '<b>보통 사람이라는 부류 전체</b>'를 대표로 가리키는 <b>총칭의 the</b>.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('articles','ar-the')">📐 정관사 the(총칭·유일) 자세히 →</span><br><br>` +
+      `📝 <b>해석:</b> "대부분의 올림픽 출전 선수들은 자신을 보통 사람과 구별 짓는 특정한 신체적 특성을 갖추고 있다." — 앞 문장(2-2, 유전이 핵심)을 이어받아, 선수들이 <b>보통 사람과 다른 '신체적 특성'</b>을 지녔다고 구체화 → 뒤에 이어질 <b>근육(속근·지근) 설명의 도입 주제문</b>.`,
+    trans: "대부분의 올림픽 출전 선수들은 자신을 보통 사람과 구별 짓는 특정한 신체적 특성을 갖추고 있다.",
+  },
+
+  // 지문 2 · 5번째 문장: Take an elite athlete's muscles, for example.
+  "2-4": {
+    form: "명령문 (동사원형 시작 · 주어 You 생략) · 3형식",
+    tense: "현재 (명령·권유)",
+    chips: [
+      ["동사(V)·명령문", "Take"],
+      ["소유격", "an elite athlete's"],
+      ["목적어(O)", "muscles"],
+      ["삽입·부사구", ", for example"],
+    ],
+    structure:
+      `뼈대: <b>(You) + Take(V) + an elite athlete's muscles(O)</b> 의 <b>3형식 명령문</b>. 짧지만 <b>Take ~ for example</b>("~을 예로 들어보자")가 한 덩어리로 예시를 꺼내는 표현.<br><br>` +
+      `① <b>Take</b> (명령문 동사) — 문장이 <b>동사원형</b>으로 시작 → <b>명령문</b>. 주어 <b>You(독자)가 생략</b>된 것. 여기 take는 '가져가다'가 아니라 '<b>(예로) 취하다·들다</b>'의 뜻.<br>` +
+      `&nbsp;&nbsp;• <b>Take A for example</b> = "A를 예로 들어보자" → 바로 앞 문장(2-3, '보통 사람과 다른 신체적 특성')의 <b>구체적 예시(근육)를 꺼내는 신호</b>. for example과 짝을 이룸.<br>` +
+      `② <b>an elite athlete's</b> (소유격) — <b>'s</b>는 "~의"라는 <b>소유격</b> → "엘리트 선수<b>의</b> (근육)". 뒤 명사 muscles를 꾸밈.<br>` +
+      `&nbsp;&nbsp;• 왜 <b>an</b> elite인가? → elite의 첫소리가 <b>모음 [ɪ]</b>라서 a가 아니라 <b>an</b> (철자가 아니라 <b>소리</b> 기준! 2-2의 an elite athlete와 동일).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('articles','ar-a')">📐 부정관사 a/an(소리 기준) 자세히 →</span><br>` +
+      `③ <b>muscles</b> (목적어·복수) — Take의 목적어. 근육은 여러 개라 <b>복수 muscles</b>.<br>` +
+      `④ <b>, for example</b> (삽입 부사구) — "예를 들어". 콤마로 분리된 <b>삽입어구</b>라 문장 필수 성분은 아님. 문장 앞·중간·끝 어디든 올 수 있는데 여기선 <b>맨 뒤에서 예시임을 마무리</b> 지음.<br><br>` +
+      `📝 <b>해석:</b> "예를 들어, 엘리트 운동선수의 근육을 살펴보자." — 앞 문장의 '신체적 특성'을 <b>'근육'이라는 구체적 사례로 좁혀</b> 이후 속근·지근(fast/slow-twitch) 설명으로 넘어가는 <b>전환·예시 문장</b>.`,
+    trans: "예를 들어, 엘리트 운동선수의 근육을 살펴보자.",
+  },
+
+  // 지문 2 · 6번째 문장: In most human skeletal muscles (the ones that make your body move), there are fast-twitch fibers and slow-twitch fibers.
+  "2-5": {
+    form: "there + be + 진주어 (유도부사 there 구문 · 주어-동사 도치)",
+    tense: "현재 (일반적 사실)",
+    chips: [
+      ["수식어(M)·전치사구", "In most human skeletal muscles"],
+      ["삽입·동격(괄호)", "(the ones that make your body move)"],
+      ["유도부사", "there"],
+      ["동사(V)·be", "are"],
+      ["진주어(S)·복수", "fast-twitch fibers and slow-twitch fibers"],
+    ],
+    structure:
+      `뼈대: <b>there are + fast-twitch fibers and slow-twitch fibers</b> 의 <b>there be 구문</b>. "~이 있다"라는 뜻으로, <b>진짜 주어는 be동사 뒤</b>에 있고 앞의 In~구는 전부 <b>장소 수식어</b>.<br><br>` +
+      `① <b>In most human skeletal muscles</b> (전치사구·장소 부사) — "대부분의 사람 골격근 안에(는)". <b>most</b>는 여기서도 '가장'이 아니라 <b>'대부분의'</b>(무관사 복수, 2-3와 동일). <span class="wikilink" onclick="gotoGrammar('articles','ar-zero')">📐 무관사(총칭 복수) 자세히 →</span><br>` +
+      `② <b>(the ones that make your body move)</b> (괄호 삽입·부연) — 괄호는 <b>'귓속말'</b>처럼 빼도 되는 보충 설명. 앞의 <b>skeletal muscles가 뭔지 쉬운 말로 다시 풀어줌</b>(동격).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('punctuation','pn-colon')">✏️ 문장부호(괄호·쉼표·대시) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;• <b>the ones</b> = the muscles. skeletal <b>muscles</b>(복수)의 반복을 피하려 <b>복수 대명사 ones</b>로 받음. <span class="wikilink" onclick="gotoGrammar('pronoun-one','po-vs-it')">🔁 부정대명사 one/ones 자세히 →</span><br>` +
+      `&nbsp;&nbsp;• <b>that make</b> — <b>주격 관계대명사 that</b>이 the ones를 수식. 선행사가 <b>복수 the ones</b>라 동사도 <b>복수 make</b>(makes ❌). 뒤는 주어 빠진 불완전절. <span class="wikilink" onclick="gotoGrammar('relative-pronoun','rp-incomplete')">🔗 주격 관계대명사(불완전절) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;• <b>make your body move</b> (핵심 문법!) — <b>사역동사 make + 목적어(your body) + 원형부정사(move)</b> = "몸을 움직이게 하다". 🚨 왜 to move가 아닌 <b>원형 move</b>인가? → <b>make/have/let(사역동사)</b>은 목적격보어로 <b>동사원형</b>을 씀 (make ... to move ❌, make ... moving ❌).<br>` +
+      `③ <b>there are</b> (핵심 중의 핵심!) — 문장을 여는 <b>there는 '유도부사(허사)'</b>로 <b>해석하지 않음</b>('거기'가 아님!). 진짜 주어를 be동사 뒤로 미룬 <b>도치 구문</b>이라 "~이 있다"로 품.<br>` +
+      `&nbsp;&nbsp;• 🚨 <b>수일치 함정:</b> there be의 동사 수는 <b>뒤에 오는 진주어</b>에 맞춤. 여기 진주어가 <b>A and B(복수)</b>라 <b>are</b> (there is ❌).<br>` +
+      `④ <b>fast-twitch fibers and slow-twitch fibers</b> (진주어) — <b>A and B</b> 병렬로 두 종류를 나열 → 복수. fast-twitch=속근, slow-twitch=지근(뒤 문장들에서 대조될 두 주인공).<br><br>` +
+      `📝 <b>해석:</b> "대부분의 사람 골격근(몸을 움직이게 하는 근육) 안에는 속근 섬유와 지근 섬유가 있다." — 앞 문장(2-4, '근육을 예로')을 이어받아 <b>근육 속 두 종류의 섬유(속근·지근)를 소개</b> → 이후 둘을 대조 설명하는 <b>발판 문장</b>.`,
+    trans: "대부분의 사람 골격근(몸을 움직이게 하는 근육) 안에는 속근 섬유와 지근 섬유가 있다.",
+  },
+
+  // 지문 2 · 7번째 문장: Fast-twitch fibers help us move quickly.
+  "2-6": {
+    form: "5형식 (S + V + O + C) · help + O + (to)원형부정사",
+    tense: "현재 (일반적 사실)",
+    chips: [
+      ["주어(S)·복수", "Fast-twitch fibers"],
+      ["동사(V)·준사역", "help"],
+      ["목적어(O)", "us"],
+      ["목적격보어(C)·원형부정사", "move"],
+      ["수식어(M)·부사", "quickly"],
+    ],
+    structure:
+      `뼈대: <b>Fast-twitch fibers(S) + help(V) + us(O) + move(C)</b> 의 <b>5형식</b>. help는 목적어 뒤에 <b>원형부정사</b>를 목적격보어로 데려오는 <b>준사역동사</b>.<br><br>` +
+      `① <b>Fast-twitch fibers</b> (주어·복수) — '속근 섬유'. 무관사 복수라 '속근 섬유란 것들 전반'을 총칭. 앞 2-5에서 소개한 두 섬유 중 <b>속근을 주어로 콕 집어</b> 설명 시작. <span class="wikilink" onclick="gotoGrammar('articles','ar-zero')">📐 무관사(총칭 복수) 자세히 →</span><br>` +
+      `② <b>help</b> (준사역동사) — <b>help + 목적어 + (to)동사원형</b> = "~가 …하도록 돕다". help는 진짜 사역동사(make/have/let)는 아니지만, <b>사역동사처럼 목적격보어에 원형부정사</b>를 쓸 수 있음.<br>` +
+      `③ <b>us</b> (목적어) — help의 목적어 '우리(사람)'. 이 us가 뒤 move의 <b>의미상 주어</b>이기도 함("우리가 움직이는" 것).<br>` +
+      `④ <b>move</b> (목적격보어·원형부정사) — 핵심! 🚨 왜 moves·to move가 아니라 <b>원형 move</b>인가? → help는 목적보어로 <b>원형부정사 또는 to부정사</b>가 <b>둘 다 가능</b>한데, 현대 영어(특히 미국식)에선 <b>to 없는 원형</b>이 더 흔함. help us <b>(to)</b> move에서 to가 생략된 것 (help us moves ❌).<br>` +
+      `⑤ <b>quickly</b> (부사·수식어) — 🚨 왜 형용사 quick이 아니라 <b>부사 quickly</b>인가? → '어떻게 움직이는지', 즉 <b>동사 move를 꾸미는</b> 자리라 <b>부사</b>가 맞음. (2-2의 보어 자리 genetic이 '형용사'였던 것과 반대 — 여기선 동사를 꾸미므로 부사!)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('linking-become','lb-why-adj')">📐 형용사 vs 부사(무엇을 꾸미나) 자세히 →</span><br><br>` +
+      `📝 <b>해석:</b> "속근 섬유는 우리가 빠르게 움직이도록 돕는다." — 앞 문장(2-5)에서 소개한 속근·지근 중 <b>속근의 기능(빠른 움직임)</b>을 먼저 설명 → 다음 문장에서 <b>역도 선수 예시</b>로 이어짐.`,
+    trans: "속근 섬유는 우리가 빠르게 움직이도록 돕는다.",
+  },
+
+  // 지문 2 · 8번째 문장: Olympic weightlifters, for example, have a large number of fast-twitch fibers in their muscles—many more than the average person.
+  "2-7": {
+    form: "3형식 (S + V + O) · 대시(—) 뒤 비교 부연",
+    tense: "현재 (일반적 사실)",
+    chips: [
+      ["주어(S)·복수", "Olympic weightlifters"],
+      ["삽입·부사구", ", for example,"],
+      ["동사(V)", "have"],
+      ["목적어(O)", "a large number of fast-twitch fibers"],
+      ["수식어(M)·전치사구", "in their muscles"],
+      ["부연·비교(대시)", "—many more than the average person"],
+    ],
+    structure:
+      `뼈대: <b>Olympic weightlifters(S) + have(V) + a large number of fast-twitch fibers(O)</b> 의 <b>3형식</b>. 뒤의 in~구와 대시(—) 이하는 전부 <b>수식·부연</b>.<br><br>` +
+      `① <b>Olympic weightlifters</b> (주어·복수) — '올림픽 역도 선수들'. 무관사 복수 총칭. 2-6의 <b>속근 설명을 잇는 구체적 예</b>. <span class="wikilink" onclick="gotoGrammar('articles','ar-zero')">📐 무관사(총칭 복수) 자세히 →</span><br>` +
+      `② <b>, for example,</b> (삽입 부사구) — "예를 들어". 앞뒤 콤마로 <b>삽입</b>(2-4의 for example과 짝) → 속근이 많은 대표 예로 역도 선수를 듦.<br>` +
+      `③ <b>have</b> (동사) — '지니다'. 🚨 주어가 <b>복수(weightlifters)</b>라 <b>have</b> (has ❌). 콤마 삽입구에 홀려 수를 놓치지 말 것.<br>` +
+      `④ <b>a large number of fast-twitch fibers</b> (목적어) — 핵심 중의 핵심!<br>` +
+      `&nbsp;&nbsp;• <b>a number of + 복수명사</b> = "많은 수의 ~"(= many). 여기에 large가 껴 "아주 많은 수의".<br>` +
+      `&nbsp;&nbsp;• 🚨 <b>함정 ①:</b> <b>a number of</b>(많은 · 복수 취급) ↔ <b>the number of</b>("~의 수" · 단수 취급) 구별! 뜻과 수일치가 완전히 다름.<br>` +
+      `&nbsp;&nbsp;• 🚨 <b>함정 ②:</b> fibers는 <b>셀 수 있는</b> 명사라 <b>number</b>(수)를 씀. 셀 수 없는 것이면 amount(양) → (a large amount of fibers ❌).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('of-types','of-partitive')">🧬 부분·수량의 of (a number of) 자세히 →</span><br>` +
+      `⑤ <b>in their muscles</b> (전치사구·장소) — "그들의 근육 안에". their = weightlifters'(역도 선수들의).<br>` +
+      `⑥ <b>—many more than the average person</b> (대시 부연·비교) — 대시(—)는 '<b>확성기</b>'처럼 확 튀게 덧붙이는 부호. <span class="wikilink" onclick="gotoGrammar('punctuation','pn-colon')">✏️ 문장부호(대시·괄호) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;• <b>many more</b> = 비교급 more를 <b>many가 강조</b>해 "훨씬 더 많은". 🚨 왜 much more가 아니라 <b>many more</b>인가? → 세는 <b>fibers(가산 복수)</b>를 비교하니 <b>many</b> (much는 불가산용 → much more ❌).<br>` +
+      `&nbsp;&nbsp;• <b>than the average person</b> — 비교 대상. 뒤에 반복될 <b>has (many more fibers)</b>가 <b>생략</b>됨(비교문에서 겹치는 부분 생략).<br>` +
+      `&nbsp;&nbsp;• <b>the average person</b> = '보통 사람이라는 부류'를 대표로 가리키는 <b>총칭의 the</b>(2-3과 동일). <span class="wikilink" onclick="gotoGrammar('articles','ar-the')">📐 정관사 the(총칭) 자세히 →</span><br><br>` +
+      `📝 <b>해석:</b> "예를 들어, 올림픽 역도 선수들은 근육에 많은 수의 속근 섬유를 지니고 있다—보통 사람보다 훨씬 더 많이." — 앞 문장(2-6)의 '속근=빠른 힘'을 이어, <b>속근이 유독 많은 예로 역도 선수</b>를 들어 다음 문장(무거운 것을 번쩍 드는 능력)으로 연결.`,
+    trans: "예를 들어, 올림픽 역도 선수들은 근육에 많은 수의 속근 섬유를 지니고 있다—보통 사람보다 훨씬 더 많이.",
   },
 };
 
