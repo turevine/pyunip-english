@@ -69,6 +69,7 @@ const WORDS_BY_PASSAGE = {
   { word: "fiber",            pos: "n.",   meaning: "섬유, 섬유질 (근섬유 muscle fiber)", example: "fast-twitch fibers" },
   { word: "twitch",           pos: "v./n.", meaning: "씰룩거리다, 경련하다; 씰룩임 (fast-twitch 속근 / slow-twitch 지근)", example: "fast-twitch and slow-twitch fibers" },
   { word: "weightlifter",     pos: "n.",   meaning: "역도 선수 (weightlifting 역도)", example: "Olympic weightlifters" },
+  { word: "allow",            pos: "v.",   meaning: "허락하다; ~할 수 있게 해주다 (5형식: allow + O + to부정사 = O가 ~하도록 허락하다/~할 수 있게 하다)", example: "These allow them to lift hundreds of kilos. (이것들이 그들이 수백 kg을 들 수 있게 해준다.)" },
   { word: "muscular",         pos: "a.",   meaning: "근육질의, 근육의",            example: "a large, muscular body" },
   { word: "requirement",      pos: "n.",   meaning: "요건, 필요조건 (v. require 요구하다)", example: "the main requirement to do well" },
   { word: "on the other hand", pos: "phr.", meaning: "반면에, 다른 한편으로는",     example: "The marathon runner, on the other hand, ..." },
@@ -78,6 +79,7 @@ const WORDS_BY_PASSAGE = {
   { word: "efficiently",      pos: "ad.",  meaning: "효율적으로 (a. efficient)",     example: "generate energy efficiently" },
   { word: "enable",           pos: "v.",   meaning: "~을 할 수 있게 하다 (enable A to V)", example: "enable an athlete to control fatigue" },
   { word: "fatigue",          pos: "n.",   meaning: "피로, 피곤 (= tiredness)",      example: "control fatigue" },
+  { word: "period",           pos: "n.",   meaning: "기간, 시기; (한) 시대; 마침표 (a period of time 얼마간의 시간 / for a long period 오랫동안)", example: "keep moving for a longer period of time (더 오랜 시간 동안 계속 움직이다)" },
   { word: "substance",        pos: "n.",   meaning: "물질",                        example: "a substance called lactate" },
   { word: "lactate",          pos: "n.",   meaning: "젖산 (운동 시 근육에 쌓이는 물질)", example: "The muscles produce lactate." },
   { word: "remove",           pos: "v.",   meaning: "제거하다, 없애다, 치우다",      example: "can't remove it quickly enough" },
@@ -2420,6 +2422,167 @@ const ANALYSIS = {
       `&nbsp;&nbsp;• <b>the average person</b> = '보통 사람이라는 부류'를 대표로 가리키는 <b>총칭의 the</b>(2-3과 동일). <span class="wikilink" onclick="gotoGrammar('articles','ar-the')">📐 정관사 the(총칭) 자세히 →</span><br><br>` +
       `📝 <b>해석:</b> "예를 들어, 올림픽 역도 선수들은 근육에 많은 수의 속근 섬유를 지니고 있다—보통 사람보다 훨씬 더 많이." — 앞 문장(2-6)의 '속근=빠른 힘'을 이어, <b>속근이 유독 많은 예로 역도 선수</b>를 들어 다음 문장(무거운 것을 번쩍 드는 능력)으로 연결.`,
     trans: "예를 들어, 올림픽 역도 선수들은 근육에 많은 수의 속근 섬유를 지니고 있다—보통 사람보다 훨씬 더 많이.",
+  },
+
+  // 지문 2 · 9번째 문장: These allow them to lift hundreds of kilos from the ground and over their heads in seconds.
+  "2-8": {
+    form: "5형식 (S + V + O + OC) · allow + O + to부정사",
+    tense: "현재 (일반적 사실)",
+    chips: [
+      ["주어(S)·대명사", "These"],
+      ["동사(V)", "allow"],
+      ["목적어(O)", "them"],
+      ["목적격보어(OC)·to부정사", "to lift hundreds of kilos"],
+      ["수식어(M)·전치사구 병렬", "from the ground and over their heads"],
+      ["수식어(M)·부사구", "in seconds"],
+    ],
+    structure:
+      `뼈대: <b>These(S) + allow(V) + them(O) + to lift ...(OC)</b> 의 <b>5형식</b>. allow는 목적어 뒤에 <b>to부정사</b>를 목적격보어로 데려오는 대표 동사.<br><br>` +
+      `① <b>These</b> (주어·지시대명사) — 앞 문장(2-7)의 <b>a large number of fast-twitch fibers</b>(많은 속근 섬유)를 통째로 받는 <b>These</b>. 🚨 왜 This가 아니라 <b>These</b>인가? → 가리키는 것이 <b>복수(fibers)</b>라 복수 지시대명사 These, 그래서 동사도 <b>allow</b>(-s 없음).<br>` +
+      `② ⭐ <b>allow them to lift ...</b> (핵심 · <b>5형식</b>: allow + O + to부정사):<br>` +
+      `&nbsp;&nbsp;• <b>allow + 목적어 + to부정사</b> = "<b>O가 ~하도록 허락하다 / O가 ~할 수 있게 해주다</b>". 여기선 사물(속근)이 주어라 "~<b>할 수 있게 해준다</b>"로 매끄럽게 해석.<br>` +
+      `&nbsp;&nbsp;• <b>them</b> = 목적어(O · = weightlifters), <b>to lift</b> = <b>목적격보어(OC)</b>. them이 <b>lift의 의미상 주어</b>(역도 선수들이 드는 것).<br>` +
+      `&nbsp;&nbsp;• 🚨 왜 <b>to lift</b>(to부정사)인가? → allow는 목적격보어로 <b>반드시 to부정사</b>를 씀(원형 ❌). 💡 같은 5형식(O + <b>to</b>V) 동사: <b>allow / want / tell / ask / expect / enable</b> — 세트 암기! (2-12의 <b>enable A to V</b>와 형제 구문)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-noun')">📐 to부정사(명사적·목적격보어) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;• ⭐ <b>왜 make가 아니라 allow(≈enable)인가? — 시험 단골 함정!</b><br>` +
+      `&nbsp;&nbsp;&nbsp;&nbsp;◦ <b>뜻(문맥) 차이:</b> <b>make</b>는 사역동사로 "<b>강제로 ~하게 시키다</b>"(마지못해 억지로)의 어감. 하지만 여기서 속근 섬유는 선수에게 무게를 들라고 <b>강요하는 게 아니라</b>, 들 수 있는 <b>능력을 부여·가능하게 해주는 것</b> → "~할 수 있게 해주다"의 <b>allow / enable</b>이 문맥에 딱 맞음. (make them lift = "억지로 들게 만든다" ❌ 어색)<br>` +
+      `&nbsp;&nbsp;&nbsp;&nbsp;◦ <b>형태(문법) 차이:</b> 설령 뜻이 통해도 <b>목적격보어 꼴</b>이 다름 — <b>make</b>는 <b>원형부정사</b>(make them <b>lift</b>), <b>allow</b>는 <b>to부정사</b>(allow them <b>to lift</b>). 즉 allow를 쓰는 이 문장에선 <b>to lift</b>가 필수. (allow them lift ❌ / make them to lift ❌)<br>` +
+      `③ <b>hundreds of kilos</b> (to lift의 목적어) — "수백 kg". <b>hundreds of + 복수명사</b> = "수백의 ~"(막연한 큰 수). 🚨 <b>-s + of</b> 꼴(hundreds/thousands of)일 땐 '수백/수천'의 <b>막연한 다수</b>, 반대로 <b>two hundred</b>처럼 숫자가 붙으면 <b>-s 없이</b> 씀(two hundreds ❌).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('of-types','of-partitive')">🧬 부분·수량의 of (hundreds of) 자세히 →</span><br>` +
+      `④ <b>from the ground and over their heads</b> (전치사구 <b>병렬</b>) — lift의 <b>이동 경로</b>를 두 전치사구가 <b>and로 병렬</b>: <b>from the ground</b>(바닥<b>에서</b>) → <b>over their heads</b>(머리 <b>위로</b>). 들어 올리는 동작의 시작점·도착점을 한 쌍으로 묶음.<br>` +
+      `⑤ <b>in seconds</b> (부사구·시간) — "몇 초 만에". 여기서 <b>in + 시간</b>은 "~ 후에/~ 만에"(짧은 시간 안에 해치움)를 뜻해 역도의 순발력을 강조.<br><br>` +
+      `📝 <b>해석:</b> "이것들(속근 섬유)은 그들이 수백 kg을 바닥에서 머리 위로 몇 초 만에 들어 올릴 수 있게 해준다." — 앞 문장(2-7)의 '역도 선수에게 속근이 많다'를 이어, <b>그 속근이 실제로 어떤 능력(순간적 괴력)을 주는지</b> 설명.`,
+    trans: "이것들(속근 섬유)은 그들이 수백 kg을 바닥에서 머리 위로 몇 초 만에 들어 올릴 수 있게 해준다.",
+  },
+
+  // 지문 2 · 10번째 문장: Surprisingly, a large, muscular body is not the main requirement to do well in this sport.
+  "2-9": {
+    form: "2형식 (S + V + C) · be동사 부정 · to부정사 형용사적 수식",
+    tense: "현재 (일반적 사실)",
+    chips: [
+      ["문두 부사(문장부사)", "Surprisingly,"],
+      ["주어(S)·단수", "a large, muscular body"],
+      ["동사(V)·be부정", "is not"],
+      ["보어(C)·명사", "the main requirement"],
+      ["형용사적 to부정사", "to do well"],
+      ["수식어(M)·전치사구", "in this sport"],
+    ],
+    structure:
+      `뼈대: <b>a large, muscular body(S) + is not(V) + the main requirement(C)</b> 의 <b>2형식</b>. be동사가 <b>주어 = 보어</b>를 이어주되 <b>not</b>으로 부정.<br><br>` +
+      `① <b>Surprisingly,</b> (문장부사) — 문장 <b>전체</b>를 꾸미는 부사(문두 + 콤마). "놀랍게도". 바로 앞 흐름('역도엔 속근이 많다')과 달리 <b>큰 몸집이 핵심은 아니라는 반전</b>을 미리 예고하는 신호.<br>` +
+      `② <b>a large, muscular body</b> (주어·단수) — "크고 근육질인 몸". <b>large</b>와 <b>muscular</b> 두 형용사가 <b>콤마로 대등</b>하게 body를 꾸밈(등위 형용사, and 대신 콤마). <b>a</b>는 '그런 몸이라는 것 하나'를 총칭. <span class="wikilink" onclick="gotoGrammar('articles','ar-a')">📐 부정관사 a(총칭) 자세히 →</span><br>` +
+      `③ <b>is not</b> (be동사 · 2형식 부정) — '~이 아니다'. 🚨 주어가 <b>단수(body)</b>라 <b>is</b>(are ❌). be동사는 <b>주어와 보어를 등호(=)</b>로 잇는데, 여기선 <b>not</b>으로 "주어 ≠ 보어"라고 부정.<br>` +
+      `④ <b>the main requirement</b> (보어·명사) — "주된 요건". be동사 뒤 <b>명사 보어</b>라 주어와 동격(A=B 관계)인데 not이 붙어 "큰 몸 ≠ 주된 요건". <b>the main</b> = '바로 그 핵심적인'. requirement의 동사형은 <b>require</b>(요구하다).<br>` +
+      `⑤ ⭐ <b>to do well (in this sport)</b> (<b>to부정사 형용사적 용법</b>) — 앞의 명사 <b>requirement를 뒤에서 수식</b>: "이 스포츠에서 <b>잘하기 위한</b> (요건)". <b>requirement + to V</b> = "~할/하기 위한 요건". 🚨 부사적(목적)으로 착각 말 것 — 여기선 <b>바로 앞 명사를 꾸미는</b> 형용사적!<br>` +
+      `&nbsp;&nbsp;• <b>do well</b> = "잘 해내다, 좋은 성적을 내다". <b>in this sport</b> = "이 종목(역도)에서" (do well을 보충하는 장소·범위 수식어).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive')">📐 to부정사 형용사적 용법(앞 명사 수식) 자세히 →</span><br><br>` +
+      `📝 <b>해석:</b> "놀랍게도, 크고 근육질인 몸이 이 종목에서 잘하기 위한 주된 요건은 아니다." — 역도 하면 '덩치'를 떠올리지만, 실제 핵심은 몸집이 아니라(반전) 다음 문장(2-10)에서 밝힐 <b>속근 섬유의 수</b>임을 대조로 예고.`,
+    trans: "놀랍게도, 크고 근육질인 몸이 이 종목에서 잘하기 위한 주된 요건은 아니다.",
+  },
+
+  // 지문 2 · 11번째 문장: It is more important to have a large number of fast-twitch fibers in the muscles.
+  "2-10": {
+    form: "2형식 · 가주어 It ~ 진주어 to부정사 · 비교급",
+    tense: "현재 (일반적 사실)",
+    chips: [
+      ["가주어(형식상 S)", "It"],
+      ["동사(V)·be", "is"],
+      ["보어(C)·비교급", "more important"],
+      ["진주어(진짜 S)·to부정사", "to have a large number of fast-twitch fibers"],
+      ["수식어(M)·전치사구", "in the muscles"],
+    ],
+    structure:
+      `뼈대: <b>It(가주어) + is(V) + more important(C)</b> … <b>to have ~(진주어)</b> 의 <b>2형식</b>. It은 뜻 없는 <b>형식주어</b>, 진짜 주어는 뒤의 <b>to부정사구</b>.<br><br>` +
+      `① ⭐ <b>It</b> (가주어·형식주어) — 🚨 <b>'그것'이라고 해석하지 않음!</b> 진짜 주어인 <b>to have ~</b>가 너무 길어서 <b>뒤로 보내고</b>, 빈 주어 자리에 대신 세운 <b>가주어 It</b>. (= 뒤의 to부정사구를 미리 가리키는 '바람잡이')<br>` +
+      `② <b>is more important</b> (be동사 + 비교급 보어) — "더 중요하다". important는 긴 형용사라 <b>-er 대신 more</b>를 붙여 비교급(importanter ❌). 🚨 <b>무엇보다</b> 더? → 앞 문장(2-9)의 <b>'큰 몸집'보다</b> 더. 비교 대상 <b>than ~</b>은 문맥상 뻔해 <b>생략</b>됨.<br>` +
+      `③ ⭐ <b>to have a large number of fast-twitch fibers</b> (<b>진주어 · to부정사 명사적 용법</b>) — 문장의 <b>진짜 주어</b>: "많은 수의 속근 섬유를 <b>갖는 것이</b>". 앞 It 자리에 이걸 넣으면 "To have ~ is more important"와 같은 뜻.<br>` +
+      `&nbsp;&nbsp;• <b>a large number of + 복수명사</b> = "아주 많은 수의 ~"(2-7 반복). 🚨 셀 수 있는 <b>fibers</b>라 <b>number</b>(수) — amount(양) ❌.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-noun')">📐 to부정사 명사적 용법(주어) 자세히 →</span> · <span class="wikilink" onclick="gotoGrammar('of-types','of-partitive')">🧬 수량의 of (a number of) 자세히 →</span><br>` +
+      `④ <b>in the muscles</b> (전치사구·장소) — "근육 안에". have의 대상이 어디 있는지 보충.<br><br>` +
+      `💡 <b>가주어–진주어 공식:</b> <b>It is + 형용사 + to V</b> = "<b>~하는 것은 …하다</b>". 주어가 to부정사구(또는 that절)로 길 때 <b>It</b>을 앞세우고 진짜 주어를 뒤로 미는 영어의 단골 패턴.<br><br>` +
+      `📝 <b>해석:</b> "많은 수의 속근 섬유를 근육에 지니고 있는 것이 (그보다) 더 중요하다." — 앞 문장(2-9) '큰 몸집이 핵심 아님'을 이어받아, <b>진짜 중요한 요건(속근 섬유의 수)</b>을 콕 집어 대비시킴.`,
+    trans: "많은 수의 속근 섬유를 근육에 지니고 있는 것이 (그보다) 더 중요하다.",
+  },
+
+  // 지문 2 · 12번째 문장: The legs of an elite marathon runner, on the other hand, might contain up to 90 percent slow-twitch muscle fibers.
+  "2-11": {
+    form: "3형식 (S + V + O) · 삽입 부사구 · 조동사 might(추측)",
+    tense: "현재 (약한 추측)",
+    chips: [
+      ["주어(S)·핵심명사", "The legs"],
+      ["수식어(M)·of구", "of an elite marathon runner"],
+      ["삽입·부사구", ", on the other hand,"],
+      ["동사(V)·조동사", "might contain"],
+      ["목적어(O)", "up to 90 percent slow-twitch muscle fibers"],
+    ],
+    structure:
+      `뼈대: <b>The legs(S) + might contain(V) + ... fibers(O)</b> 의 <b>3형식</b>. of구와 콤마 삽입구는 전부 <b>수식·삽입</b>.<br><br>` +
+      `① <b>The legs of an elite marathon runner</b> (주어) — 핵심명사는 <b>The legs</b>(복수), 뒤의 <b>of an elite marathon runner</b>가 그것을 수식: "엘리트 마라톤 선수<b>의</b> 다리". 🚨 <b>수일치 함정:</b> 진짜 주어는 <b>legs(복수)</b>지 바로 앞 runner(단수)가 아님 — of구에 홀려 동사 수를 틀리지 말 것(여기선 조동사 might라 수 영향은 없지만 원리는 기억!).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('of-types','of-possess')">🧬 소유·소속의 of (A of B = B의 A) 자세히 →</span><br>` +
+      `② ⭐ <b>, on the other hand,</b> (삽입 부사구·대조) — "반면에". 앞뒤 콤마로 <b>삽입</b>. 🚨 <b>대조 신호등!</b> 앞(2-8~2-10, <b>역도=속근</b>)과 정반대로 <b>마라톤=지근</b>임을 예고. (2-9 on the other hand와 같은 짝)<br>` +
+      `③ <b>might contain</b> (조동사 might + 동사원형) — "~을 포함할 <b>수도 있다</b>". <b>might</b> = 단정이 아닌 <b>약한 추측·가능성</b>("~일지도"). 그래서 <b>단순 현재 contains가 아니라 might contain</b> — '보통 그렇다'는 조심스러운 진술. contain = '포함하다, 들어 있다'(단어카드 75행).<br>` +
+      `④ <b>up to 90 percent slow-twitch muscle fibers</b> (목적어) — "최대 90퍼센트<b>까지의</b> 지근 섬유".<br>` +
+      `&nbsp;&nbsp;• <b>up to</b> = "~까지(최대)"(단어카드 76행) → 90%가 상한선.<br>` +
+      `&nbsp;&nbsp;• <b>slow-twitch</b>(지근) — 2-5에서 소개한 <b>fast-twitch(속근)와 대조</b>되는 나머지 한 종류. 마라톤처럼 오래 버티는 운동에 특화.<br><br>` +
+      `🔁 <b>글 전체 대조 구조:</b> 2-8~2-10 <b>역도 선수 = 속근(순간 괴력)</b> ↔ 이 문장부터 <b>마라톤 선수 = 지근(지구력)</b>. <b>on the other hand</b>가 그 전환점.<br><br>` +
+      `📝 <b>해석:</b> "반면에, 엘리트 마라톤 선수의 다리는 최대 90퍼센트까지 지근 섬유를 포함하고 있을 수도 있다." — 역도(속근) 이야기를 끝내고 <b>정반대 성격의 마라톤(지근)</b>으로 화제를 트는 문장.`,
+    trans: "반면에, 엘리트 마라톤 선수의 다리는 최대 90퍼센트까지 지근 섬유를 포함하고 있을 수도 있다.",
+  },
+
+  // 지문 2 · 13번째 문장: These generate energy efficiently and enable an athlete to control fatigue and keep moving for a longer period of time.
+  "2-12": {
+    form: "3형식 + 5형식 (and 병렬 술어) · enable + O + to부정사",
+    tense: "현재 (일반적 사실)",
+    chips: [
+      ["주어(S)·지시대명사", "These"],
+      ["동사①(V)·3형식", "generate"],
+      ["목적어①(O)", "energy"],
+      ["수식어(M)·부사", "efficiently"],
+      ["등위접속사", "and"],
+      ["동사②(V)·5형식", "enable"],
+      ["목적어②(O)", "an athlete"],
+      ["목적격보어(OC)·to부정사 병렬", "to control fatigue and keep moving"],
+      ["수식어(M)·기간", "for a longer period of time"],
+    ],
+    structure:
+      `뼈대: <b>These(S)</b>가 술어 <b>두 개</b>를 <b>and로 병렬</b> — [<b>generate energy</b>(3형식)] + [<b>enable an athlete to ...</b>(5형식)]. 주어 These를 둘이 공유.<br><br>` +
+      `① <b>These</b> (주어·지시대명사) — 앞 문장(2-11)의 <b>slow-twitch muscle fibers</b>(지근 섬유)를 받는 <b>복수</b> 지시대명사 → 동사 <b>generate·enable</b>(-s 없음). (2-8의 These와 같은 용법)<br>` +
+      `② <b>generate energy efficiently</b> (술어①·3형식) — "에너지를 효율적으로 만들어낸다". <b>generate</b>(만들어내다) + <b>energy</b>(O) + <b>efficiently</b>(M). 🚨 왜 형용사 efficient가 아니라 <b>부사 efficiently</b>? → <b>동사 generate를 꾸미므로</b> 부사가 맞음(2-6 quickly와 동일 논리).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('linking-become','lb-why-adj')">📐 형용사 vs 부사(무엇을 꾸미나) 자세히 →</span><br>` +
+      `③ <b>and</b> (등위접속사) — 앞 <b>generate</b>와 뒤 <b>enable</b>, <b>두 술어</b>를 대등하게 연결(주어 These 공유). 🚨 이 and를 뒤쪽 control~keep의 and와 헷갈리지 말 것(층위가 다름!).<br>` +
+      `④ ⭐ <b>enable an athlete to control ...</b> (술어②·<b>5형식</b>: enable + O + to부정사) — 핵심!<br>` +
+      `&nbsp;&nbsp;• <b>enable + 목적어 + to부정사</b> = "O가 ~<b>할 수 있게 하다</b>"(단어카드 79행). <b>an athlete</b>=목적어(O), <b>to control~</b>=목적격보어(OC). an athlete가 control의 <b>의미상 주어</b>.<br>` +
+      `&nbsp;&nbsp;• 💡 <b>2-8의 allow와 형제 구문</b> — allow/enable 둘 다 <b>O + to부정사</b>를 취함. (make처럼 원형 ❌)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-noun')">📐 to부정사(목적격보어) 자세히 →</span><br>` +
+      `⑤ ⭐ <b>to control fatigue and keep moving</b> (목적격보어·<b>to부정사 병렬</b>) — 목적격보어가 <b>두 동작</b>: <b>to control fatigue</b>("피로를 조절하다") <b>and</b> <b>keep moving</b>("계속 움직이다"). 🚨 왜 뒤엔 to가 없나? → 앞의 <b>to가 두 동사에 함께 걸림</b>(to control ... and <b>(to)</b> keep) — 반복 to 생략.<br>` +
+      `&nbsp;&nbsp;• <b>keep + -ing</b>(동명사) = "<b>계속 ~하다</b>"(keep to move ❌). <b>fatigue</b> = 피로(단어카드 80행).<br>` +
+      `⑥ <b>for a longer period of time</b> (수식어·기간) — "<b>더 오랜 시간 동안</b>". <b>for + 기간</b>. <b>longer</b>는 long의 비교급('(보통 사람)보다 더 오래'). a period of time = '얼마간의 시간'.<br><br>` +
+      `📝 <b>해석:</b> "이것들(지근 섬유)은 에너지를 효율적으로 만들어내고, 운동선수가 피로를 조절하며 더 오랜 시간 동안 계속 움직일 수 있게 해준다." — 앞 문장(2-11)에서 꺼낸 <b>지근 섬유의 두 가지 기능</b>(효율적 에너지 생성 + 지구력)을 구체적으로 풀어줌.`,
+    trans: "이것들(지근 섬유)은 에너지를 효율적으로 만들어내고, 운동선수가 피로를 조절하며 더 오랜 시간 동안 계속 움직일 수 있게 해준다.",
+  },
+
+  // 지문 2 · 14번째 문장: When we exercise long or hard, it's common to experience tiredness, muscle pain, and difficulty breathing.
+  "2-13": {
+    form: "2형식 · 가주어 it ~ 진주어 to부정사 · 시간 부사절(when)",
+    tense: "현재 (일반적 사실)",
+    chips: [
+      ["시간 부사절(when)", "When we exercise long or hard"],
+      ["가주어(형식상 S)", "it"],
+      ["동사(V)·be", "'s (is)"],
+      ["보어(C)·형용사", "common"],
+      ["진주어(진짜 S)·to부정사", "to experience tiredness, muscle pain, and difficulty breathing"],
+    ],
+    structure:
+      `뼈대: [<b>When ~</b> 부사절], <b>it('s)(가주어) + common(C)</b> … <b>to experience ~(진주어)</b>. 주절은 또 <b>가주어–진주어 2형식</b>.<br><br>` +
+      `① <b>When we exercise long or hard</b> (시간·조건 부사절) — "우리가 <b>오래 또는 힘들게 운동할 때</b>". <b>when</b> = "~할 때". <b>we exercise</b>(자동사). 🚨 <b>long / hard</b>는 형용사가 아니라 <b>부사</b>(형태가 형용사와 같은 부사!) → 동사 exercise를 꾸며 '오래·세게'. <b>or</b>로 두 부사 병렬.<br>` +
+      `② <b>it's common</b> (가주어 it + 형용사 보어) — "~하는 것은 <b>흔하다</b>". 🚨 <b>it</b>은 '그것'이 아니라 뒤 to부정사구를 가리키는 <b>가주어</b>(2-10과 동일 원리). <b>common</b> = '흔한'(형용사 보어).<br>` +
+      `③ ⭐ <b>to experience tiredness, muscle pain, and difficulty breathing</b> (<b>진주어 · to부정사 명사적</b>) — 문장의 진짜 주어. "피로·근육통·호흡 곤란을 <b>겪는 것은</b>". experience(겪다)의 <b>목적어 3개가 A, B, and C로 병렬</b>:<br>` +
+      `&nbsp;&nbsp;• <b>tiredness</b>(피로) / <b>muscle pain</b>(근육통) / <b>difficulty breathing</b>(호흡 곤란).<br>` +
+      `&nbsp;&nbsp;• 🚨 <b>difficulty (in) breathing</b> = "숨쉬는 데(있어서의) 어려움" — <b>have difficulty (in) -ing</b>("~하는 데 애를 먹다") 구문의 흔적. difficulty 뒤엔 <b>동명사(-ing)</b>.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-noun')">📐 to부정사 명사적 용법(진주어) 자세히 →</span><br>` +
+      `💡 <b>가주어–진주어 공식(2-10과 동일):</b> <b>It is + 형용사 + to V</b> = "~하는 것은 …하다". 진짜 주어(to부정사)가 길어 뒤로 빼고 <b>it</b>을 앞세움.<br><br>` +
+      `📝 <b>해석:</b> "오래 또는 힘들게 운동할 때, 피로와 근육통, 그리고 호흡 곤란을 겪는 것은 흔하다." — 지구력(지근) 이야기에 이어, <b>격한 운동 뒤 나타나는 흔한 증상들</b>을 나열하며 다음 문장(그 원인=젖산)으로 넘어가는 도입.`,
+    trans: "오래 또는 힘들게 운동할 때, 피로와 근육통, 그리고 호흡 곤란을 겪는 것은 흔하다.",
   },
 };
 
