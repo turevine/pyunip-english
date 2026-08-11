@@ -80,6 +80,7 @@ const WORDS_BY_PASSAGE = {
   { word: "enable",           pos: "v.",   meaning: "~을 할 수 있게 하다 (enable A to V)", example: "enable an athlete to control fatigue" },
   { word: "fatigue",          pos: "n.",   meaning: "피로, 피곤 (= tiredness)",      example: "control fatigue" },
   { word: "period",           pos: "n.",   meaning: "기간, 시기; (한) 시대; 마침표 (a period of time 얼마간의 시간 / for a long period 오랫동안)", example: "keep moving for a longer period of time (더 오랜 시간 동안 계속 움직이다)" },
+  { word: "common",           pos: "a.",   meaning: "①흔한, 자주 있는 (빈도) — It's common to V: ~하는 것은 흔하다/자주 있는 일이다 ②보통의, 평범한, 일반의 (the common people 보통 사람들 / common sense 상식) ③공통의, 공동의 (have A in common: A라는 공통점이 있다 / common ground 공통점)", example: "It's common to experience tiredness. (피로를 겪는 것은 흔한 일이다.) · common sense (상식) · have much in common (공통점이 많다)" },
   { word: "substance",        pos: "n.",   meaning: "물질",                        example: "a substance called lactate" },
   { word: "lactate",          pos: "n.",   meaning: "젖산 (운동 시 근육에 쌓이는 물질)", example: "The muscles produce lactate." },
   { word: "remove",           pos: "v.",   meaning: "제거하다, 없애다, 치우다",      example: "can't remove it quickly enough" },
@@ -2583,6 +2584,41 @@ const ANALYSIS = {
       `💡 <b>가주어–진주어 공식(2-10과 동일):</b> <b>It is + 형용사 + to V</b> = "~하는 것은 …하다". 진짜 주어(to부정사)가 길어 뒤로 빼고 <b>it</b>을 앞세움.<br><br>` +
       `📝 <b>해석:</b> "오래 또는 힘들게 운동할 때, 피로와 근육통, 그리고 호흡 곤란을 겪는 것은 흔하다." — 지구력(지근) 이야기에 이어, <b>격한 운동 뒤 나타나는 흔한 증상들</b>을 나열하며 다음 문장(그 원인=젖산)으로 넘어가는 도입.`,
     trans: "오래 또는 힘들게 운동할 때, 피로와 근육통, 그리고 호흡 곤란을 겪는 것은 흔하다.",
+  },
+
+  // 지문 2 · 15번째 문장: These feelings are caused when the muscles produce high amounts of a substance called lactate and can't remove it quickly enough.
+  "2-14": {
+    form: "3형식→수동태(be+p.p.) · 시간·원인 부사절(when) · and 병렬 술어 · 과거분사 후치수식",
+    tense: "현재 (일반적 사실·인과)",
+    chips: [
+      ["주어(S)·지시대명사", "These feelings"],
+      ["동사(V)·수동태(be+p.p.)", "are caused"],
+      ["접속사(when)·시간·원인", "when"],
+      ["부사절 주어(S′)", "the muscles"],
+      ["동사①(V′)·3형식", "produce"],
+      ["목적어①(O′)·분사 후치수식", "high amounts of a substance called lactate"],
+      ["등위접속사", "and"],
+      ["동사②(V′)·can't", "can't remove"],
+      ["목적어②(O′)·대명사", "it"],
+      ["수식어(M)·부사+enough", "quickly enough"],
+    ],
+    structure:
+      `뼈대: <b>These feelings(S) + are caused(V·수동태)</b> [주절] + <b>when</b> [the muscles(S′)가 <b>produce ~ and can't remove ~</b>] (시간·원인 부사절). 부사절 안은 주어 the muscles가 술어 <b>둘</b>을 and로 병렬.<br><br>` +
+      `① <b>These feelings</b> (주어·지시대명사) — 앞 문장(2-13)의 <b>tiredness, muscle pain, difficulty breathing</b>(피로·근육통·호흡 곤란) 세 가지를 통째로 받는 <b>복수</b> 지시 → 동사도 복수 <b>are</b>. "이런 느낌들(증상들)".<br>` +
+      `② ⭐ <b>are caused</b> (동사·<b>수동태 be+p.p.</b>) — "야기된다 / 생긴다". These feelings가 스스로 일으키는 게 아니라 <b>무언가에 의해 유발되는 대상</b>이라 수동태(cause '유발하다'의 p.p. caused). 🚨 여기선 <b>by(행위자)</b> 대신 <b>when절</b>이 "언제·어떻게 생기는지(원인)"를 대신 밝힘.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('passive-voice','pv-form')">📐 수동태 be+p.p. 자세히 →</span><br>` +
+      `③ <b>when the muscles produce ... enough</b> (시간·원인 부사절) — "근육이 ~할 때(하면)". 🚨 여기 <b>when</b>은 단순 시점보다 <b>"~하면(그 결과로)"</b>의 <b>원인·조건</b> 뉘앙스. 부사절 주어 = <b>the muscles</b>.<br>` +
+      `④ <b>produce high amounts of a substance called lactate</b> (부사절 술어①·3형식) — "<b>젖산이라 불리는 물질을</b> 다량 만들어낸다".<br>` +
+      `&nbsp;&nbsp;• <b>high amounts of ~</b> = "많은 양의 ~"(수량 표현) → produce의 목적어 덩어리.<br>` +
+      `&nbsp;&nbsp;• ⭐ <b>a substance called lactate</b> — <b>과거분사 called의 후치수식</b>! a substance <u>(which is)</u> <b>called</b> lactate("젖산이라고 <b>불리는</b> 물질")에서 <b>[관계대명사+be] which is 생략</b>. 물질은 스스로 부르는 게 아니라 '불리는' 대상이라 <b>수동 → 과거분사 called</b>(calling ❌). (단어카드: substance 물질 / lactate 젖산)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('participle-postmod','pp-active-passive')">📐 분사 후치수식(과거분사·which is 생략) 자세히 →</span><br>` +
+      `⑤ <b>and can't remove it quickly enough</b> (부사절 술어②) — <b>and</b>가 앞 <b>produce</b>와 뒤 <b>can't remove</b> 두 술어를 병렬(주어 the muscles 공유). "그리고 그것을 <b>충분히 빨리 제거하지 못한다</b>".<br>` +
+      `&nbsp;&nbsp;• 🚨 <b>it = a substance(=lactate)</b> — 앞의 젖산을 받는 대명사(단수 → it).<br>` +
+      `&nbsp;&nbsp;• ⭐ <b>quickly enough</b> 어순 주의! <b>enough</b>가 형용사·부사를 꾸밀 땐 <b>뒤에서</b> 수식 → <b>부사 quickly + enough</b>("충분히 빨리"). enough quickly ❌. (cf. 명사 수식은 앞: enough time '충분한 시간')<br>` +
+      `&nbsp;&nbsp;• <b>remove</b> = 제거하다(단어카드). <b>can't</b> = 능력·가능의 부정("~하지 못한다").<br>` +
+      `💡 <b>인과 핵심:</b> 근육이 젖산을 <b>많이 만들고 + 빨리 못 치울 때</b> → 그 결과 <b>These feelings(피로·통증·호흡곤란)가 caused(유발)</b>. 즉 <b>수동태 주절(결과) + when 부사절(원인)</b> 구조.<br><br>` +
+      `📝 <b>해석:</b> "이런 느낌들(증상들)은 근육이 젖산이라 불리는 물질을 다량 만들어내고 그것을 충분히 빨리 제거하지 못할 때 생긴다." — 앞 문장(2-13)에서 나열한 운동 후 증상들의 <b>원인이 젖산(lactate)</b>임을 밝히고, 다음 문장(지근 섬유가 젖산을 빨리 치운다)으로 이어주는 다리.`,
+    trans: "이런 느낌들(피로·근육통·호흡 곤란)은 근육이 젖산이라 불리는 물질을 다량 만들어내고 그것을 충분히 빨리 제거하지 못할 때 생긴다.",
   },
 };
 
