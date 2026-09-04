@@ -85,8 +85,39 @@ const WORDS_BY_PASSAGE = {
   { word: "lactate",          pos: "n.",   meaning: "젖산 (운동 시 근육에 쌓이는 물질)", example: "The muscles produce lactate." },
   { word: "remove",           pos: "v.",   meaning: "제거하다, 없애다, 치우다",      example: "can't remove it quickly enough" },
   { word: "clear",            pos: "v.",   meaning: "없애다, 제거하다; 치우다 (clear A from B: B에서 A를 치우다/제거하다)", example: "clear the lactate from their muscles" },
+  { word: "seem",             pos: "v.",   meaning: "~인 것 같다, ~인 듯하다, ~처럼 보이다 (seem to V / It seems that ~) — 단정 않고 완화하는 추측", example: "Athletes seem to clear lactate faster. (선수들은 젖산을 더 빨리 치우는 것 같다.)" },
+  { word: "be able to",       pos: "phr.", meaning: "~할 수 있다 (= can). can과 달리 to부정사·미래(will be able to)로 변형 가능", example: "seem to be able to clear the lactate (젖산을 치울 수 있는 것 같다)" },
   { word: "discomfort",       pos: "n.",   meaning: "불편함, (가벼운) 통증 (↔comfort 편안함)", example: "start to feel discomfort" },
   { word: "halfway",          pos: "ad.",  meaning: "중간에, 도중에 (halfway into ~ 의 중간쯤에)", example: "halfway into a race" },
+  { word: "until",            pos: "prep./conj.", meaning: "~까지 (그때까지 죽 계속). not ~ until …: …이 되어서야 비로소 ~하다 (cf. by ~까지 완료)", example: "might not feel pain until much later (훨씬 나중이 되어서야 통증을 느끼다)" },
+  { word: "size",             pos: "n.",   meaning: "크기, 치수; 체격, 몸집",       example: "For some competitors, size is important. (일부 선수에겐 체격이 중요하다.)" },
+  { word: "champion",         pos: "n./a.", meaning: "우승자, 챔피언; 최고의, 우승한", example: "male champion swimmers (남자 챔피언 수영선수들)" },
+  { word: "reach",            pos: "v./n.", meaning: "(팔·손을) 뻗다; ~에 닿다, 도달하다; 범위", example: "reach longer (팔을 더 멀리[길게] 뻗다)" },
+  { word: "be likely to",     pos: "phr.", meaning: "~할 가능성이 있다, ~할 것 같다 (less likely to: ~할 가능성이 더 적다)", example: "less likely to suffer damage (손상을 입을 가능성이 더 적다)" },
+  { word: "damage",           pos: "n./v.", meaning: "손상, 피해; 손상시키다", example: "suffer damage when landing (착지할 때 부상을 입다)" },
+  { word: "land",             pos: "v./n.", meaning: "착지하다, 내려앉다; 상륙하다; 땅, 육지", example: "when landing on the floor (바닥에 착지할 때)" },
+  { word: "though",           pos: "ad./conj.", meaning: "(부사, 문장 중간·끝) 하지만, 그렇지만 (= however); (접속사) 비록 ~이지만 (= although)", example: "A smaller size, though, helps gymnasts. (하지만 더 작은 체격은 체조선수에게 도움이 된다.)" },
+  { word: "such as",          pos: "phr.", meaning: "~와 같은, 예를 들어 ~ (예시를 나열)", example: "countries such as Kenya, Ethiopia, and Morocco (케냐, 에티오피아, 모로코 같은 나라들)" },
+  { word: "be rich in",       pos: "phr.", meaning: "~이 풍부하다, ~이 많이 들어 있다", example: "blood that is rich in hemoglobin (헤모글로빈이 풍부한 피)" },
+  { word: "amount(s) of",     pos: "phr.", meaning: "~의 양; a large/small amount of + 불가산명사 = 많은/적은 양의 ~ (🚨 가산 복수엔 the number of). large amounts of ~ 처럼 복수형이면 동사도 복수 수일치", example: "Large amounts of hemoglobin carry oxygen. (많은 양의 헤모글로빈이 산소를 나른다.)" },
+  { word: "do well",          pos: "phr.", meaning: "잘하다, 좋은 성과를 내다 (do well at/in ~에서 잘하다)", example: "help some athletes do well at certain sports (일부 선수가 특정 종목에서 잘하도록 돕다)" },
+  { word: "several",          pos: "a.",   meaning: "몇몇의, 여러 (few보다 많고 many보다 적음)", example: "has won several marathons (여러 마라톤에서 우승했다)" },
+  { word: "success",          pos: "n.",   meaning: "성공, 성과 (a. successful 성공적인, v. succeed 성공하다)", example: "some of her success (그녀의 성공의 일부)" },
+  { word: "background",       pos: "n.",   meaning: "배경 (성장·문화·경력 배경); (그림·장면의) 배경", example: "her cultural background (그녀의 문화적 배경)" },
+  { word: "have to",          pos: "phr.", meaning: "~해야 한다 (의무 = must). 🚨 과거는 had to (must는 과거형이 없음), 미래는 will have to", example: "As a child, she had to run 10 km to school. (어릴 때 그녀는 학교까지 10km를 달려야 했다.)" },
+  { word: "as",               pos: "conj./prep.", meaning: "①~할 때·~하면서(시간) ②~때문에(이유) ③~함에 따라·~할수록(비례) ④~처럼·~대로(양태) ⑤~로서(자격) — 문맥으로 결정하는 다의어", example: "As a child (어릴 때) · Do as I say (내가 말한 대로) · work as a coach (코치로서 일하다)" },
+  { word: "although",         pos: "conj.", meaning: "(비록) ~이지만, ~일지라도 (양보 접속사 = though). 🚨 접속사라 절+절을 이음 (부사 however와 다름)", example: "Although genes play a part, training is needed. (유전이 한몫하지만, 훈련이 필요하다.)" },
+  { word: "even",             pos: "ad.",  meaning: "심지어 ~도, ~조차 (강조); (비교급 앞) 훨씬", example: "genes, environment, and even culture (유전, 환경, 심지어 문화까지도)" },
+  { word: "keep -ing",        pos: "phr.", meaning: "계속 ~하다 (keep + 동명사). cf. keep O -ing: O가 계속 ~하게 하다", example: "keep moving for long periods (오랫동안 계속 움직이다)" },
+  { word: "maintain",         pos: "v.",   meaning: "유지하다; (주장을) 고수하다 (n. maintenance)", example: "reach and maintain their goals (목표에 도달하고 유지하다)" },
+  { word: "again and again",  pos: "phr.", meaning: "몇 번이고, 반복해서 (= repeatedly, over and over)", example: "repeating the same motions again and again (같은 동작을 몇 번이고 반복하면서)" },
+  { word: "less than",        pos: "phr.", meaning: "~보다 적은, ~ 미만 (↔ more than ~보다 많은)", example: "less than three seconds (3초도 안 되는)" },
+  { word: "hundreds of",      pos: "phr.", meaning: "수백의 (thousands of 수천의). 🚨 복수형 hundreds + of + 복수명사", example: "repeat the dives hundreds of times (다이빙을 수백 번 반복하다)" },
+  { word: "require",          pos: "v.",   meaning: "요구하다, 필요로 하다 (require O to V: O가 ~하도록 요구하다) (n. requirement 요건)", example: "requires an athlete to be fit (선수가 건강할 것을 요구한다)" },
+  { word: "not only A but (also) B", pos: "phr.", meaning: "A뿐만 아니라 B도 (초점은 B). 같은 뜻 응용형 → ①not only A but also B ②not only A but B as well (also 자리에 as well) ③B as well as A. 🚨 상관접속사 — A·B는 같은 품사로 병렬, 동사는 B에 수일치", example: "not only physically fit but (also) psychologically healthy = not only physically fit but psychologically healthy as well (육체적으로뿐 아니라 정신적으로도 건강한)" },
+  { word: "fit",              pos: "a./v.", meaning: "(몸이) 건강한, 탄탄한; 적합한; (크기가) 맞다", example: "physically fit (육체적으로 건강한)" },
+  { word: "psychologist",     pos: "n.",   meaning: "심리학자 (psychology 심리학, psychological 심리적인)", example: "a sports psychologist (스포츠 심리학자)" },
+  { word: "otherwise",        pos: "ad.",  meaning: "①그렇지 않으면 (= if not) ②그 외에는, 그 점을 빼면 ③다르게", example: "Otherwise, they couldn't handle the loads. (그렇지 않으면 그 부하를 감당 못 할 것이다.)" },
   { word: "enhance",          pos: "v.",   meaning: "향상시키다, 높이다 (= improve)", example: "abilities enhanced by their environment" },
   { word: "raise",            pos: "v.",   meaning: "기르다, 양육하다; 올리다 (be raised 자라다)", example: "those raised at high altitudes" },
   { word: "altitude",         pos: "n.",   meaning: "고도, 해발 높이 (high altitude 고지대)", example: "raised at high altitudes" },
@@ -2620,6 +2651,515 @@ const ANALYSIS = {
       `📝 <b>해석:</b> "이런 느낌들(증상들)은 근육이 젖산이라 불리는 물질을 다량 만들어내고 그것을 충분히 빨리 제거하지 못할 때 생긴다." — 앞 문장(2-13)에서 나열한 운동 후 증상들의 <b>원인이 젖산(lactate)</b>임을 밝히고, 다음 문장(지근 섬유가 젖산을 빨리 치운다)으로 이어주는 다리.`,
     trans: "이런 느낌들(피로·근육통·호흡 곤란)은 근육이 젖산이라 불리는 물질을 다량 만들어내고 그것을 충분히 빨리 제거하지 못할 때 생긴다.",
   },
+
+  // 지문 2 · 16번째 문장: Athletes with many slow-twitch muscle fibers seem to be able to clear the lactate from their muscles faster as they move.
+  "2-15": {
+    form: "2형식(seem+to부정사) · be able to(=can) · clear A from B(3형식) · 비교급 부사 · as 부사절(동시동작) · 전치사구 후치수식",
+    tense: "현재 (일반적 사실·경향)",
+    chips: [
+      ["주어(S)·복수명사", "Athletes"],
+      ["수식어(M)·전치사구 후치수식", "with many slow-twitch muscle fibers"],
+      ["동사(V)·2형식(seem+to)", "seem"],
+      ["보어(C)·to부정사", "to be able to clear"],
+      ["목적어(O)·clear A", "the lactate"],
+      ["수식어(M)·from B", "from their muscles"],
+      ["수식어(M)·비교급 부사", "faster"],
+      ["접속사(as)·동시동작", "as"],
+      ["부사절 주어(S′)+동사(V′)", "they move"],
+    ],
+    structure:
+      `뼈대: <b>Athletes(S)</b> [with ~ fibers] <b>+ seem(V) + to be able to clear ~(보어)</b> ... <b>as they move</b>(부사절). "지근 섬유가 많은 선수들은 ~ 치울 수 있는 <b>것 같다</b>, 움직이면서".<br><br>` +
+      `① <b>Athletes</b> (주어·복수명사) — 복수라 동사도 복수 <b>seem</b>(seems ❌).<br>` +
+      `② ⭐ <b>with many slow-twitch muscle fibers</b> (전치사구·주어 후치수식) — 바로 앞 <b>Athletes</b>를 뒤에서 꾸밈. "어떤 선수? → <b>지근(slow-twitch) 근섬유가 많은</b> 선수". 🚨 <b>with를 동사로 착각 금지</b> — 이건 주어를 꾸미는 <b>수식 덩어리</b>일 뿐, 진짜 동사는 뒤의 <b>seem</b>. (즉 [명사 Athletes + 전치사구]가 통째로 큰 주어)<br>` +
+      `③ ⭐ <b>seem</b> (동사·2형식) — "<b>~인 것 같다 / ~인 듯하다</b>". 단정하지 않고 한 발 물러선 <b>추측·판단</b>. 뒤에 <b>to부정사</b>를 보어로 데려옴(seem + to V).<br>` +
+      `&nbsp;&nbsp;• 전환: <b>It seems that</b> athletes ... <b>are able to</b> clear ~ &nbsp;=&nbsp; Athletes ... <b>seem to be able to</b> clear ~ (that절 주어를 문장 앞으로 끌어올린 같은 뜻).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('seem-appear','sa-transform')">📐 seem+to부정사 / It seems that 전환 자세히 →</span><br>` +
+      `④ ⭐ <b>to be able to clear</b> (seem의 보어·to부정사) — "치울 수 있는 (것)". 🚨 여기 핵심 함정: "~할 수 있다"의 <b>can은 to부정사가 될 수 없어서</b>, 같은 뜻 <b>be able to</b>를 빌려 <b>to be able to</b>로 씀 (<s>to can</s> ❌).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('seem-appear','sa-be-able')">📐 to be able to = can 인 이유 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-noun')">📐 to부정사(명사적·보어 자리) 자세히 →</span><br>` +
+      `⑤ ⭐ <b>clear the lactate from their muscles</b> (3형식·clear A from B) — "근육<b>에서</b> 젖산<b>을</b> 치우다/제거하다". clear(V) + the lactate(목적어 A) + from their muscles(수식어 from B). (단어카드: clear A from B / lactate 젖산)<br>` +
+      `⑥ <b>faster</b> (수식어·비교급 부사) — fast의 비교급. 동사 clear를 꾸며 "<b>더 빨리</b> 치운다". 🚨 앞 문장(2-14)의 "젖산을 <b>빨리 제거 못 하는</b>(can't remove it quickly enough) 일반 근육"과 <b>대비</b> → "(그들보다) 더 빨리"(than ~ 생략된 비교).<br>` +
+      `⑦ ⭐ <b>as they move</b> (부사절·접속사 as) — 여기 <b>as</b>는 "<b>~하면서 / ~할 때</b>"(동시동작·시간). "그들이 <b>움직이는 동안(계속)</b>". (as는 ~때문에·~함에 따라·~처럼 등 뜻 많은 다의어 → 문맥으로 결정)<br>` +
+      `💡 <b>흐름:</b> 앞 문장(2-14) "일반 근육은 젖산을 빨리 못 치워 통증이 생긴다" → 이 문장 "<b>지근 섬유 많은 선수는 움직이며 젖산을 더 빨리 치우는 것 같다</b>" → 다음 문장(2-16) "그래서 <b>일반</b> 주자는 경기 중반에 벌써 불편함을 느낀다"로 <b>대비</b> 연결.<br><br>` +
+      `📝 <b>해석:</b> "지근(느린 연축) 근섬유가 많은 선수들은 움직이면서 근육에서 젖산을 더 빨리 제거할 수 있는 것처럼 보인다."`,
+    trans: "지근(느린 연축) 근섬유가 많은 선수들은 움직이면서 근육에서 젖산을 더 빨리 제거할 수 있는 것처럼 보인다.",
+  },
+
+  // 지문 2 · 17번째 문장: Thus, the average runner might start to feel discomfort halfway into a race.
+  "2-16": {
+    form: "접속부사 Thus(결과) · 추측 조동사 might · start to V(=start V-ing) · feel+명사(3형식) · 부사구 halfway into",
+    tense: "현재 (일반적 사실·추측)",
+    chips: [
+      ["접속부사(M)·결과", "Thus"],
+      ["주어(S)·총칭 the", "the average runner"],
+      ["조동사·추측", "might"],
+      ["동사(V)·start to V", "start to feel"],
+      ["목적어(O)·명사", "discomfort"],
+      ["수식어(M)·부사구", "halfway into a race"],
+    ],
+    structure:
+      `뼈대: <b>Thus</b>(연결어), <b>the average runner(S) + might start to feel(V) + discomfort(O)</b> + halfway into a race(부사구). "따라서 보통 주자는 ~ 불편함을 느끼기 시작할 수도 있다".<br><br>` +
+      `① ⭐ <b>Thus,</b> (접속부사·결과) — "<b>따라서 / 그러므로</b>". 앞 문장(2-15)을 받아 그 <b>결과·귀결</b>을 잇는 연결어. 등위접속사 <b>so(그래서)</b>의 <b>부사(격식체)</b> 버전. 🚨 접속사가 아니라 <b>부사</b>라서 문장 성분(S·V·O) 계산엔 안 들어가고 콤마로 떨어져 있음.<br>` +
+      `&nbsp;&nbsp;• <b>흐름:</b> 2-15 "지근 섬유 많은 <b>선수</b>는 젖산을 빨리 치운다" ↔ 이 문장 "그렇지 못한 <b>보통(average)</b> 주자는 그래서(Thus) 중반에 벌써 힘들어한다"는 <b>대비적 귀결</b>.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('so-roles','so-conjunction')">📐 결과 연결어 so / thus 자세히 →</span><br>` +
+      `② <b>the average runner</b> (주어·총칭 the) — "<b>보통의(평범한) 주자</b>". 여기 <b>the + 단수</b>는 특정 한 명이 아니라 그 <b>부류 전체를 대표</b>하는 <b>총칭 용법</b>("보통 주자라면 누구나"). average = 평균의 → 보통의. (단어카드: average)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('articles','ar-the')">📐 관사 the 정리 →</span><br>` +
+      `③ ⭐ <b>might</b> (조동사·추측) — "<b>~할 수도 있다</b>". 단정이 아니라 <b>약한 가능성·추측</b>(may보다 조금 더 불확실). 🚨 might는 may의 과거뿐 아니라 <b>현재의 추측</b>으로도 자주 씀 (여기선 과거 아님!).<br>` +
+      `④ ⭐ <b>start to feel</b> (동사·start + to부정사) — "<b>느끼기 시작하다</b>". start 뒤 <b>to부정사(to feel)가 목적어</b>(명사적 용법). 🚨 <b>start to V = start V-ing</b> (start feeling과 같은 뜻, 둘 다 가능).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-noun')">📐 to부정사(명사적·목적어) 자세히 →</span><br>` +
+      `⑤ <b>feel discomfort</b> (feel + 명사 = 3형식) — 여기 <b>feel은 "~을 느끼다"(타동사)</b>라 뒤에 <b>명사 목적어</b>(discomfort)가 옴. 🚨 <b>feel + 형용사</b>(feel happy '행복하게 느끼다' = 2형식)와 구분! discomfort는 <b>명사</b>(불편함·가벼운 통증)라 3형식. (단어카드: discomfort)<br>` +
+      `⑥ <b>halfway into a race</b> (수식어·부사구) — "<b>경주(race) 중반쯤에</b>". halfway = 중간에·도중에, into a race = 경주 (진행) 속으로 → "경주의 절반 지점에서". (단어카드: halfway into ~)<br>` +
+      `💡 <b>핵심:</b> 젖산을 빨리 못 치우는 <b>보통 주자</b> → <b>Thus(그래서)</b> 아직 경기 <b>중반(halfway)</b>인데도 벌써 <b>불편함을 느끼기 시작</b>. 다음 문장(2-17)의 "훈련된 올림픽 선수는 <b>훨씬 나중까지</b> 안 아프다(however)"와 <b>대조</b>됨.<br><br>` +
+      `📝 <b>해석:</b> "따라서 보통의 주자는 경주 중반쯤에 (벌써) 불편함을 느끼기 시작할 수도 있다."`,
+    trans: "따라서 보통의(평범한) 주자는 경주 중반쯤에 불편함(가벼운 통증)을 느끼기 시작할 수도 있다.",
+  },
+
+  // 지문 2 · 18번째 문장: A trained Olympic athlete, however, might not feel pain until much later in the competition.
+  "2-17": {
+    form: "과거분사 전치수식(trained) · 접속부사 however(대조·삽입) · 추측 부정 might not · not ~ until(~이 되어서야) · feel+명사(3형식) · 비교급 강조 much",
+    tense: "현재 (일반적 사실·추측)",
+    chips: [
+      ["주어(S)·A+과거분사 수식", "A trained Olympic athlete"],
+      ["접속부사(M)·대조 삽입", "however"],
+      ["조동사·추측 부정", "might not"],
+      ["동사(V)·feel+명사", "feel"],
+      ["목적어(O)·명사", "pain"],
+      ["수식어(M)·not ~ until", "until much later in the competition"],
+    ],
+    structure:
+      `뼈대: <b>A trained Olympic athlete(S)</b>, <b>however</b>(삽입), <b>might not feel(V) + pain(O)</b> + until much later ~(부사구). "훈련된 선수는, 그러나, 훨씬 나중이 되어서야 통증을 느낄 수도".<br><br>` +
+      `① <b>A trained Olympic athlete</b> (주어) — "<b>훈련된(잘 단련된) 올림픽 선수</b>". <b>A</b>는 특정 한 명이 아니라 그 부류 대표(총칭적). ⭐ <b>trained</b>는 <b>과거분사가 형용사로 명사 앞에서 전치수식</b> — 선수가 스스로 훈련하는 게 아니라 <b>훈련을 받은</b> 대상이라 <b>수동·완료 → 과거분사</b>(training ❌). "훈련시켜진 = 잘 단련된".<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('participle-postmod','pp-active-passive')">📐 과거분사(수동)의 의미 자세히 →</span><br>` +
+      `② ⭐ <b>, however,</b> (접속부사·대조·문중 삽입) — "<b>그러나</b>". 앞 문장(2-16)의 "보통(average) 주자는 중반에 벌써 힘듦"과 <b>정반대 대조</b>. 🚨 접속사가 아니라 <b>부사</b>라 성분 계산에서 빠지고, 주어 뒤에 <b>콤마로 감싸</b> 삽입됨(앞뒤 콤마를 걷으면 뼈대가 그대로 보임).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('conjunctive-adverb','ca-insert')">📐 접속부사(however·thus)와 삽입 자세히 →</span><br>` +
+      `③ <b>might not feel</b> (조동사·추측 부정) — "<b>느끼지 않을 수도 있다</b>". might(추측 '~할 수도') + not(부정). (2-16의 might과 짝 — 보통 주자는 might feel, 훈련된 선수는 might not feel로 대비)<br>` +
+      `④ ⭐ <b>feel pain</b> (feel + 명사 = 3형식) — "<b>고통을 느끼다</b>". 2-16의 <b>feel discomfort</b>와 완전히 평행한 구조(feel + 명사 목적어). feel + 형용사(2형식)와 구분.<br>` +
+      `⑤ ⭐⭐ <b>not ... until much later</b> (핵심 구문!) — 직역 "훨씬 나중<b>까지</b> ~하지 <b>않다</b>" = 자연스럽게 "<b>훨씬 나중이 되어서야 (비로소) ~한다</b>". 🚨 <b>not A until B</b> = "B가 되어서야 비로소 A한다"! → "훨씬 나중이 되어서야 비로소 통증을 느낄 수도".<br>` +
+      `&nbsp;&nbsp;• <b>until</b> = "~까지(그때까지 죽 계속)". (cf. <b>by</b> = ~까지 <b>완료</b>) (단어카드: until)<br>` +
+      `&nbsp;&nbsp;• ⭐ <b>much later</b> — <b>much + 비교급(later)</b> = "<b>훨씬</b> 나중". 🚨 비교급 강조는 <b>much / far / even / a lot</b> (<b>very는 불가!</b>). later = late의 비교급.<br>` +
+      `&nbsp;&nbsp;• <b>in the competition</b> = "경기(대회)에서".<br>` +
+      `💡 <b>대조 핵심:</b> 2-16 "보통 주자 → 중반(halfway)에 벌써 통증 <b>시작</b>" ↔ 이 문장 "훈련된 선수 → <b>however</b>, 훨씬 <b>나중(much later)</b>이 되어서야 통증". 훈련(training)이 만드는 차이를 대비로 강조 → 뒤의 '훈련·연습의 중요성' 흐름으로 연결.<br><br>` +
+      `📝 <b>해석:</b> "그러나 훈련된 올림픽 선수는 경기에서 훨씬 나중이 되어서야 비로소 통증을 느낄 수도 있다(= 훨씬 나중까지는 통증을 느끼지 않을 수도 있다)."`,
+    trans: "그러나 훈련된 올림픽 선수는 경기에서 훨씬 나중이 되어서야 (비로소) 고통을 느낄 수도 있다. (= 훨씬 나중까지는 고통을 느끼지 않을 수도 있다)",
+  },
+
+  // 지문 2 · 19번째 문장: For some Olympic competitors, size is important.
+  "2-18": {
+    form: "문두 부사구(For~)+콤마 · 2형식 be+형용사보어 · 무관사 총칭 size",
+    tense: "현재 (일반적 사실)",
+    chips: [
+      ["수식어(M)·문두 부사구", "For some Olympic competitors"],
+      ["주어(S)·무관사", "size"],
+      ["동사(V)·be(2형식)", "is"],
+      ["보어(C)·형용사", "important"],
+    ],
+    structure:
+      `뼈대: [For some ~ competitors](부사구), <b>size(S) + is(V) + important(C)</b>. "일부 선수에겐 — 체격이 중요하다". 전형적 <b>2형식 SVC</b>.<br><br>` +
+      `① <b>For some Olympic competitors,</b> (문두 부사구·수식어) — "<b>일부 올림픽 (참가) 선수들에게는</b>". 여기 <b>for</b>는 "<b>~에게 (있어서)</b>"라는 <b>관점·대상</b>. 문두에 온 부사구라 <b>콤마</b>로 주절과 분리(빼도 성립: "Size is important").<br>` +
+      `&nbsp;&nbsp;• <b>some</b> = "일부의, 어떤"(전부는 아님) → 뒤에서 '체격이 중요한 종목 vs 아닌 종목'으로 갈라짐.<br>` +
+      `② <b>size</b> (주어·<b>무관사</b>) — "<b>체격/몸집</b>". 🚨 관사 없이 쓴 건 특정 크기가 아니라 <b>'체격이라는 것' 일반(불가산 총칭)</b>을 말하기 때문(a/the 없이 추상·총칭 → 무관사). (단어카드: size)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('articles','ar-zero')">📐 무관사(총칭·추상) 자세히 →</span><br>` +
+      `③ <b>is important</b> (동사+보어·2형식) — <b>be동사 + 형용사보어</b>. important(형용사)가 <b>주어 size의 상태</b>를 설명(주격보어). "중요하다".<br>` +
+      `💡 <b>흐름:</b> 근육·젖산 이야기(2-14~17)를 맺고, 이제 <b>체격(size)</b>이라는 새 요인으로 넘어가는 <b>화제 도입</b> 문장. "For some(일부에겐)"으로 단서를 달아, 뒤의 수영선수(2-19)·체조선수 예시로 이어짐.<br><br>` +
+      `📝 <b>해석:</b> "일부 올림픽 (참가) 선수들에게는 체격이 중요하다."`,
+    trans: "일부 올림픽 (참가) 선수들에게는 체격(몸집)이 중요하다.",
+  },
+
+  // 지문 2 · 20번째 문장: Most male champion swimmers are 180 cm or taller, allowing them to reach longer and swim faster.
+  "2-19": {
+    form: "주어 명사수식(Most/male champion) · 2형식 be+보어(or 병렬·비교급 taller) · 분사구문 allowing(결과) · allow+O+to V(5형식) · to부정사 병렬(and)",
+    tense: "현재 (일반적 사실)",
+    chips: [
+      ["주어(S)·Most+복합명사", "Most male champion swimmers"],
+      ["동사(V)·be(2형식)", "are"],
+      ["보어(C)·or 병렬·비교급", "180 cm or taller"],
+      ["분사구문(M)·결과", "allowing"],
+      ["allow의 목적어(5형식)", "them"],
+      ["목적격보어·to부정사 병렬", "to reach longer and swim faster"],
+    ],
+    structure:
+      `뼈대: <b>Most ~ swimmers(S) + are(V) + 180 cm or taller(C)</b>, <b>allowing them to reach ~ and swim ~</b>(분사구문). "대부분의 남자 챔피언 수영선수는 180cm 이상이라, 그 덕에 더 멀리 뻗고 더 빨리 수영할 수 있다".<br><br>` +
+      `① <b>Most male champion swimmers</b> (주어·복수) — "<b>대부분의 남자 챔피언 수영선수들</b>". <b>Most</b>(대부분의) + <b>male</b>(형용사) + <b>champion</b>(명사가 명사 수식='챔피언급의') + <b>swimmers</b>(핵심명사·복수) → 동사도 복수 <b>are</b>. (단어카드: champion)<br>` +
+      `② <b>are 180 cm or taller</b> (동사+보어·2형식) — "<b>180cm이거나 그보다 더 크다</b>" = <b>180cm 이상</b>. 보어 자리에 <b>[180 cm] or [taller]</b>가 <b>or로 병렬</b>. ⭐ <b>taller</b> = tall의 <b>비교급</b>("(180cm보다) 더 큰").<br>` +
+      `③ ⭐⭐ <b>, allowing them to ...</b> (분사구문·결과) — 현재분사 <b>allowing</b>이 이끄는 <b>분사구문</b>. 앞 주절 전체(키가 크다는 사실)를 받아 그 <b>결과·부대상황</b>을 덧붙임 = "<b>그리고 그것이(그 덕분에) ~할 수 있게 해준다</b>".<br>` +
+      `&nbsp;&nbsp;• 복원: ~ 180 cm or taller, <b>and this allows</b> them to ... → 접속사·주어 지우고 allows→<b>allowing</b>.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('participle-construction','pc-make')">📐 분사구문 만드는 법·의미 자세히 →</span><br>` +
+      `④ ⭐ <b>allow them to reach ... and swim ...</b> (allow + O + to V·<b>5형식</b>) — "them(그들)이 ~<b>할 수 있게 하다</b>". <b>them</b> = Most ~ swimmers. 목적격보어로 <b>to부정사</b>가 옴. (단어카드: allow)<br>` +
+      `⑤ <b>to reach longer and (to) swim faster</b> (to부정사 병렬) — <b>and</b>가 두 to부정사를 병렬, 두 번째 <b>to는 생략</b>(반복 회피). <b>reach longer</b>="(팔을) 더 멀리[길게] 뻗다", <b>swim faster</b>="더 빨리 수영하다". longer/faster = 비교급 부사. (단어카드: reach)<br>` +
+      `💡 <b>핵심:</b> 2-18 "일부 종목엔 <b>체격(size)</b>이 중요" → 이 문장이 그 <b>첫 예시(수영)</b>: <b>큰 키 → (분사구문) 더 멀리 뻗고 더 빨리 수영</b>. 다음 문장(체조선수는 <b>반대로</b> 작은 게 유리)과 대비됨.<br><br>` +
+      `📝 <b>해석:</b> "대부분의 남자 챔피언 수영선수는 키가 180cm 이상이며, 그 덕분에 (팔을) 더 멀리 뻗고 더 빨리 수영할 수 있다."`,
+    trans: "대부분의 남자 챔피언 수영선수는 키가 180cm 이상이어서, 그 덕분에 (팔을) 더 멀리 뻗고 더 빨리 수영할 수 있다.",
+  },
+
+  // 지문 2 · 21번째 문장: For both male and female gymnasts, though, a smaller size and body weight mean they can move with greater ease, and are less likely to suffer damage when landing on the floor from a height of up to 4.5 meters.
+  "2-20": {
+    form: "both A and B(상관접속사) · 접속부사 though(대조·삽입) · 등위주어→복수 수일치 mean · mean+(that)절 · 비교급 다수(smaller/greater/less) · that절 내 술어 병렬(and) · be less likely to · when+분사(부사절 축약)",
+    tense: "현재 (일반적 사실)",
+    chips: [
+      ["수식어(M)·both A and B", "For both male and female gymnasts"],
+      ["접속부사(M)·대조 삽입", "though"],
+      ["주어(S)·등위(A and B)→복수", "a smaller size and body weight"],
+      ["동사(V)·3형식(복수 mean)", "mean"],
+      ["목적어(O)·(that) 생략 명사절", "they can move with greater ease"],
+      ["병렬(and)·they의 술어②", "are less likely to suffer damage"],
+      ["시간(M)·when+분사 축약", "when landing ... 4.5 meters"],
+    ],
+    structure:
+      `뼈대: [For both ~ gymnasts](부사구), <b>though</b>(삽입), <b>a smaller size and body weight(S) + mean(V) + [(that) they can move ~, and are less likely ~](O·명사절)</b>. "남녀 체조선수에겐 — 하지만 — 더 작은 체격·체중이 '~하다는 것'을 뜻한다".<br><br>` +
+      `① <b>For both male and female gymnasts</b> (문두 부사구) — "<b>남녀 체조선수 <u>모두</u>에게는</b>". ⭐ <b>both A and B</b>(상관접속사) = "A와 B <b>둘 다</b>"(both male and female). 2-19(수영=큰 게 유리)와 대비되는 <b>대상 전환</b>.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('both-usage','both-no-of')">📐 both A and B / both 용법 자세히 →</span><br>` +
+      `② ⭐ <b>, though,</b> (접속부사·대조·삽입) — "<b>하지만/그렇지만</b>". 앞 문장(2-19 수영선수는 커야 유리)과 <b>정반대 대조</b>. 🚨 여기 though는 <b>접속사(although)가 아니라 부사</b>(문중 콤마 삽입 = however). 걷어내도 뼈대 온전.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('conjunctive-adverb','ca-insert')">📐 접속부사(though·however) 자세히 →</span><br>` +
+      `③ ⭐⭐ <b>a smaller size and body weight</b> (주어·<b>등위 A and B</b>) — "<b>더 작은 체격과 체중</b>". <b>smaller</b>=small의 비교급. 🚨 <b>and로 묶인 두 개(size + body weight) → 복수 주어</b>라서 동사도 <b>복수 mean</b>(means ❌)! 수일치 함정.<br>` +
+      `④ <b>mean (that) they can move ~</b> (동사·3형식 + 목적어 명사절) — "~라는 것을 <b>뜻한다</b>". mean 뒤 <b>접속사 that 생략</b>된 명사절이 목적어. <b>they</b>=gymnasts, <b>can move</b>=움직일 수 있다.<br>` +
+      `&nbsp;&nbsp;• <b>with greater ease</b> = "<b>더 수월하게</b>"(= more easily). with ease(수월하게)에 greater(great 비교급)로 정도를 키움. (단어카드: with ease)<br>` +
+      `⑤ ⭐ <b>, and are less likely to suffer damage</b> (병렬 함정!) — 🚨 이 <b>and</b>는 mean과 병렬이 아니라, <b>that절 안 they의 두 번째 술어</b>! "they [can move ~], and [are less likely to ~]". (체격이 손상을 입는 게 아니라 <b>선수(they)</b>가 입는 것 → 주어는 they).<br>` +
+      `&nbsp;&nbsp;• <b>be less likely to V</b> = "~할 <b>가능성이 더 적다</b>"(be likely to + less 비교급). <b>suffer damage</b>=손상을 입다. (단어카드: be likely to / damage / suffer)<br>` +
+      `⑥ ⭐ <b>when landing on the floor from a height of up to 4.5 meters</b> (시간 부사절·분사 축약) — "<b>최대 4.5m 높이에서 바닥에 착지할 때</b>". <b>when (they are) landing</b>에서 <b>주어+be 생략</b>된 분사 축약. <b>up to</b>=최대 ~까지. (단어카드: land / up to)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('participle-construction','pc-make')">📐 부사절 → 분사 축약 자세히 →</span><br>` +
+      `💡 <b>대조 핵심:</b> 2-19 "수영 → <b>클수록</b> 유리" ↔ 이 문장 "체조 → <b>though</b>, <b>작을수록</b> 유리": 작은 체격·체중이 (ⓐ 더 수월한 동작 + ⓑ 착지 시 부상 위험↓)을 뜻함. 종목마다 유리한 체격이 다름을 보여줌.<br><br>` +
+      `📝 <b>해석:</b> "하지만 남녀 체조선수 모두에게는, 더 작은 체격과 체중이 곧 그들이 더 수월하게 움직일 수 있고 최대 4.5미터 높이에서 바닥에 착지할 때 부상을 입을 가능성이 더 적다는 것을 뜻한다."`,
+    trans: "하지만 남녀 체조선수 모두에게는, 더 작은 체격과 체중이 (곧) 그들이 더 수월하게 움직일 수 있고 최대 4.5m 높이에서 바닥에 착지할 때 부상을 입을 가능성이 더 적다는 것을 의미한다.",
+  },
+
+  // 지문 2 · 22번째 문장: Some athletes' abilities are naturally enhanced by their environment.
+  "2-21": {
+    form: "복수 소유격(athletes') · 수동태(be+p.p.) + by 행위자 · 부사 naturally 삽입 위치",
+    tense: "현재 (일반적 사실·수동)",
+    chips: [
+      ["주어(S)·복수 소유격", "Some athletes' abilities"],
+      ["동사(V)·수동태(be+p.p.)", "are ... enhanced"],
+      ["수식어(M)·부사", "naturally"],
+      ["수식어(M)·by 행위자", "by their environment"],
+    ],
+    structure:
+      `뼈대: <b>Some athletes' abilities(S) + are (naturally) enhanced(V·수동태) + by their environment</b>. "일부 선수의 능력은 환경에 의해 (자연스럽게) 향상된다".<br><br>` +
+      `① ⭐ <b>Some athletes' abilities</b> (주어·<b>복수 소유격</b>) — "<b>일부 선수들의 능력</b>". 🚨 <b>athletes'</b> — 복수명사(athletes)의 소유격은 <b>-s 뒤에 아포스트로피(')만</b> 붙임(athletes's ❌). abilities는 복수 → 동사도 복수 <b>are</b>.<br>` +
+      `② ⭐ <b>are ... enhanced</b> (동사·<b>수동태 be+p.p.</b>) — "<b>향상된다/높아진다</b>". 능력이 스스로 높이는 게 아니라 <b>환경에 의해 높여지는 대상</b>이라 수동태(enhance '향상시키다'의 p.p. enhanced). (단어카드: enhance)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('passive-voice','pv-form')">📐 수동태 be+p.p. 자세히 →</span><br>` +
+      `③ <b>naturally</b> (부사·삽입 위치) — "<b>자연스럽게/선천적으로</b>". 🚨 부사는 <b>be동사와 과거분사 사이</b>(are <u>naturally</u> enhanced)에 들어가 동사를 꾸밈.<br>` +
+      `④ <b>by their environment</b> (수식어·<b>by 행위자</b>) — 수동태에서 "<b>~에 의해</b>"라는 <b>행위 주체</b>. "그들의 환경에 의해". (능동 복원: Their environment naturally enhances some athletes' abilities.)<br>` +
+      `💡 <b>흐름:</b> 요인 전환 — 유전(genetic)·체격(size)에 이어 이제 <b>환경(environment)</b> 요인 도입. "일부(some) 선수"로 단서를 달고, 바로 뒤(2-22 고지대에서 자란 선수)로 구체 예시가 이어짐.<br><br>` +
+      `📝 <b>해석:</b> "일부 선수들의 능력은 그들의 환경에 의해 자연스럽게(선천적으로) 향상된다."`,
+    trans: "일부 선수들의 능력은 그들의 환경에 의해 자연스럽게(선천적으로) 향상된다(높아진다).",
+  },
+
+  // 지문 2 · 23번째 문장: Those raised at high altitudes in countries such as Kenya, Ethiopia, and Morocco have blood that is rich in hemoglobin.
+  "2-22": {
+    form: "Those(=사람들) + 과거분사 후치수식(raised) · such as 예시 나열 · 3형식 have+O · 주격 관계대명사 that · be rich in",
+    tense: "현재 (일반적 사실)",
+    chips: [
+      ["주어(S)·Those(~하는 사람들)", "Those"],
+      ["주어 후치수식·과거분사", "raised at high altitudes in countries such as ..."],
+      ["동사(V)·3형식", "have"],
+      ["목적어(O)·명사", "blood"],
+      ["형용사절·주격 관계대명사", "that is rich in hemoglobin"],
+    ],
+    structure:
+      `뼈대: <b>Those [raised ~](S) + have(V) + blood(O) [that is rich in hemoglobin]</b>. "고지대에서 자란 사람들은 — 헤모글로빈이 풍부한 피를 가지고 있다".<br><br>` +
+      `① ⭐ <b>Those</b> (주어·지시대명사 = <b>사람들</b>) — 여기 <b>Those = "(~한) 사람들"</b>(= those <u>who are</u> ~ / people). 뒤 수식어를 받는 <b>큰 주어의 핵</b>. 복수 → 동사 <b>have</b>.<br>` +
+      `② ⭐⭐ <b>raised at high altitudes in countries such as ~</b> (주어 후치수식·<b>과거분사</b>) — "<b>고지대에서 자란</b>". Those <u>(who are)</u> <b>raised</b>에서 <b>[관계대명사+be] who are 생략</b> → 과거분사. 사람은 스스로 기르는 게 아니라 <b>길러지는(자라는)</b> 대상이라 <b>수동 → 과거분사 raised</b>(raising ❌). (단어카드: raise / altitude)<br>` +
+      `&nbsp;&nbsp;• <b>such as</b> = "<b>~와 같은</b>"(예시). Kenya, Ethiopia, <b>and</b> Morocco → A, B, and C 나열. (단어카드: such as)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('participle-postmod','pp-omit')">📐 과거분사 후치수식(who are 생략) 자세히 →</span><br>` +
+      `③ <b>have blood</b> (동사+목적어·3형식) — "<b>피(혈액)를 가지고 있다</b>".<br>` +
+      `④ ⭐ <b>that is rich in hemoglobin</b> (형용사절·<b>주격 관계대명사</b>) — 선행사 <b>blood</b>를 뒤에서 꾸미는 관계대명사절. <b>that</b>=주격 관계대명사(뒤에 바로 동사 is → 주어 자리를 that이 대신하는 <b>불완전절</b>). <b>be rich in ~</b>="~이 풍부하다" → "헤모글로빈이 풍부한 (피)". (단어카드: be rich in / hemoglobin)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('relative-pronoun','rp-incomplete')">📐 주격 관계대명사(불완전절) 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 2-21 "환경이 능력을 높인다"의 <b>구체 예시</b> — 케냐·에티오피아·모로코 같은 <b>고지대(high altitude)</b>에서 자란 사람들은 산소 운반 물질 <b>헤모글로빈이 풍부한 피</b>를 가짐 → 다음 문장(그 피가 산소를 빨리 날라 더 잘 달림)으로 인과가 이어짐.<br><br>` +
+      `📝 <b>해석:</b> "케냐, 에티오피아, 모로코와 같은 나라의 고지대에서 자란 사람들은 헤모글로빈이 풍부한 피를 가지고 있다."`,
+    trans: "케냐, 에티오피아, 모로코 같은 나라의 고지대에서 자란 사람들은 헤모글로빈이 풍부한 피(혈액)를 가지고 있다.",
+  },
+
+  // 지문 2 · 24번째 문장: Large amounts of hemoglobin carry oxygen around the body faster, enabling these athletes to run better.
+  "2-23": {
+    form: "amount(s) of 수일치(복수 carry) · 3형식 carry+O · 부사구 around ~ · 비교급 부사 faster · 분사구문 enabling(결과) · enable+O+to V(5형식)",
+    tense: "현재 (일반적 사실)",
+    chips: [
+      ["주어(S)·amounts of(복수)", "Large amounts of hemoglobin"],
+      ["동사(V)·3형식(복수 carry)", "carry"],
+      ["목적어(O)·명사", "oxygen"],
+      ["수식어(M)·부사구+비교급", "around the body faster"],
+      ["분사구문(M)·결과", "enabling"],
+      ["enable+O+to V(5형식)", "these athletes to run better"],
+    ],
+    structure:
+      `뼈대: <b>Large amounts of hemoglobin(S) + carry(V) + oxygen(O)</b> around the body faster, <b>enabling these athletes to run better</b>(분사구문). "많은 양의 헤모글로빈이 산소를 더 빨리 나르고, 그 덕에 이 선수들이 더 잘 달릴 수 있게 해준다".<br><br>` +
+      `① ⭐ <b>Large amounts of hemoglobin</b> (주어) — "<b>많은 양의 헤모글로빈</b>". <b>amounts of + 불가산명사</b>(hemoglobin). 🚨 수일치는 of 앞 <b>amounts</b>(복수)에 맞춤 → 동사도 <b>복수 carry</b>(carries ❌). (단어카드: amount(s) of)<br>` +
+      `② <b>carry oxygen</b> (동사+목적어·3형식) — "<b>산소를 나르다/운반하다</b>". (단어카드: oxygen)<br>` +
+      `③ <b>around the body faster</b> (수식어) — "<b>온몸으로 더 빨리</b>". around the body(부사구·몸 곳곳으로) + <b>faster</b>(fast 비교급 부사·'더 빨리').<br>` +
+      `④ ⭐⭐ <b>, enabling these athletes to run better</b> (분사구문·결과) — 현재분사 <b>enabling</b>이 이끄는 분사구문. 앞 주절(헤모글로빈이 산소를 빨리 나름)을 받아 <b>결과</b>를 덧붙임 = "<b>그리고 그것이 ~할 수 있게 해준다</b>". (복원: ~, <b>and this enables</b> these athletes to run better)<br>` +
+      `&nbsp;&nbsp;• <b>enable + O + to V</b>(5형식) = "O가 ~할 수 있게 하다". these athletes(목적어) + <b>to run better</b>(목적격보어). <b>better</b>=well의 비교급('더 잘'). (단어카드: enable)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('participle-construction','pc-make')">📐 분사구문(결과) 만드는 법 자세히 →</span><br>` +
+      `💡 <b>구조 쌍둥이:</b> 2-19 "~ taller, <b>allowing</b> them to reach ~ and swim ~"과 <b>같은 틀</b> — [주절], <b>분사구문(-ing)</b> + [enable/allow + O + to V + 비교급]. 2-22(고지대→헤모글로빈 풍부한 피)의 <b>결과</b>를 잇는 문장.<br><br>` +
+      `📝 <b>해석:</b> "많은 양의 헤모글로빈이 산소를 온몸으로 더 빨리 날라, 이 선수들이 더 잘 달릴 수 있게 해준다."`,
+    trans: "많은 양의 헤모글로빈이 산소를 온몸으로 더 빨리 운반해, 이 선수들이 더 잘 달릴 수 있게 해준다.",
+  },
+
+  // 지문 2 · 25번째 문장: Cultural factors also help some athletes do well at certain sports.
+  "2-24": {
+    form: "help + O + 원형부정사(do) · 부사 also · do well · at 분야(certain sports)",
+    tense: "현재 (일반적 사실)",
+    chips: [
+      ["주어(S)·복수명사", "Cultural factors"],
+      ["부사(M)·또한", "also"],
+      ["동사(V)·help(5형식)", "help"],
+      ["목적어(O)", "some athletes"],
+      ["목적격보어·원형부정사", "do well"],
+      ["수식어(M)·at 분야", "at certain sports"],
+    ],
+    structure:
+      `뼈대: <b>Cultural factors(S) + (also) help(V) + some athletes(O) + do well(원형부정사 보어)</b> at certain sports. "문화적 요인도 일부 선수가 특정 종목에서 잘하도록 돕는다".<br><br>` +
+      `① <b>Cultural factors</b> (주어·복수) — "<b>문화적 요인들</b>". 복수 → 동사 help(3인칭 -s 없음).<br>` +
+      `② <b>also</b> (부사) — "<b>또한/역시</b>". 앞서 나온 <b>유전·체격·환경</b> 요인에 <b>더해</b> 문화 요인'도' 작용함을 이어줌. (보통 일반동사 <b>앞</b>에 위치)<br>` +
+      `③ ⭐⭐ <b>help some athletes do well</b> (help + O + <b>원형부정사</b>) — "일부 선수가 <b>잘하도록 돕다</b>". 🚨 <b>help</b>는 목적격보어로 <b>to부정사·원형부정사 둘 다</b> 가능 → 여기선 <b>to 없는 원형 do</b>(help them <u>to</u> do well 도 맞음). some athletes(목적어) + <b>do well</b>(보어).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('bare-infinitive','bi-help')">📐 help + (to)원형 / 사역·지각동사 원형 자세히 →</span><br>` +
+      `④ <b>do well at certain sports</b> — <b>do well</b>="잘하다, 좋은 성과를 내다". <b>at certain sports</b>="특정 종목에서"(at=분야, certain=특정한). (단어카드: do well / certain)<br>` +
+      `💡 <b>흐름:</b> 요인 나열의 <b>마무리 추가</b> — 유전·체격·환경에 이어 <b>문화(cultural)</b> 요인'도(also)' 성과에 기여. 바로 뒤(2-25 케냐의 마라토너 Tegla Loroupe 사례)로 구체 예시가 이어짐.<br><br>` +
+      `📝 <b>해석:</b> "문화적 요인들도 일부 선수가 특정 종목에서 잘하도록 돕는다."`,
+    trans: "문화적 요인들도 일부 선수가 특정 (종목의) 스포츠에서 잘하도록(좋은 성과를 내도록) 돕는다.",
+  },
+
+  // 지문 2 · 26번째 문장: Tegla Loroupe, a young woman from northern Kenya, has won several marathons.
+  "2-25": {
+    form: "동격 명사구(콤마 삽입) · 전치사구 후치수식(from~) · 현재완료 has won(경험) · several+복수명사",
+    tense: "현재완료 (경험·결과)",
+    chips: [
+      ["주어(S)·고유명사", "Tegla Loroupe"],
+      ["동격(삽입)·주어 재설명", "a young woman from northern Kenya"],
+      ["동사(V)·현재완료(has+p.p.)", "has won"],
+      ["목적어(O)·several+복수", "several marathons"],
+    ],
+    structure:
+      `뼈대: <b>Tegla Loroupe(S)</b>, [a young woman ~](동격 삽입), <b>has won(V·현재완료) + several marathons(O)</b>. "테글라 로루페는 — 케냐 북부 출신 젊은 여성인데 — 여러 마라톤에서 우승했다".<br><br>` +
+      `① <b>Tegla Loroupe</b> (주어·고유명사=인명) — 문장의 진짜 주어. 3인칭 단수 → 완료조동사 <b>has</b>.<br>` +
+      `② ⭐ <b>, a young woman from northern Kenya,</b> (동격·콤마 삽입) — 주어 <b>Tegla Loroupe = a young woman ~</b>를 다시 설명하는 <b>동격 명사구</b>. 🚨 콤마로 감싸 삽입되며, 걷어내도 문장 뼈대(Tegla Loroupe has won ~)가 온전. <b>from northern Kenya</b>는 woman을 뒤에서 꾸미는 전치사구(후치수식) = "케냐 북부 출신의".<br>` +
+      `③ ⭐ <b>has won</b> (동사·<b>현재완료 has+p.p.</b>) — win-won-won. 단순 과거가 아니라 "<b>(지금까지) 우승해 온/우승한 적 있는</b>" <b>경험·결과</b>. 🚨 과거 시점 부사(yesterday, ago 등) 없이 '지금까지'의 성취를 말하므로 현재완료.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('present-perfect','pf-uses')">📐 현재완료 4용법·vs 과거 자세히 →</span><br>` +
+      `④ <b>several marathons</b> (목적어) — "<b>여러 (번의) 마라톤</b>". several = 몇몇의/여러(가산 복수 수식). (단어카드: several)<br>` +
+      `💡 <b>흐름:</b> 2-24 "문화 요인도 성과를 돕는다"의 <b>구체 사례 인물 소개</b> — 케냐 출신 마라토너 Tegla Loroupe. 다음 문장(2-26)에서 본인이 성공 요인을 '고도 + 문화 배경'으로 밝힘.<br><br>` +
+      `📝 <b>해석:</b> "케냐 북부 출신의 젊은 여성인 테글라 로루페는 여러 마라톤 대회에서 우승했다."`,
+    trans: "케냐 북부 출신의 젊은 여성인 테글라 로루페는 여러 마라톤 (대회)에서 우승한 적이 있다.",
+  },
+
+  // 지문 2 · 27번째 문장: She says some of her success is due to her country's altitude (she trains at about 2,400 meters) and some to her cultural background.
+  "2-26": {
+    form: "say (that) 목적어절(that 생략) · some of ~(부분의 of) · be due to · 괄호 삽입절 · 병렬+생략(and some (is due) to ~)",
+    tense: "현재 (일반적 진술)",
+    chips: [
+      ["주절 S+V", "She says"],
+      ["목적어절(that 생략)·부분주어", "some of her success"],
+      ["동사·be due to(~때문이다)", "is due to"],
+      ["원인①", "her country's altitude"],
+      ["삽입절(괄호)·부연", "(she trains at about 2,400 meters)"],
+      ["병렬+생략(and some (is due))", "and some to her cultural background"],
+    ],
+    structure:
+      `뼈대: <b>She says</b> [(that) <b>some of her success is due to</b> A <b>and some (is due) to</b> B]. "그녀는 성공의 일부는 A 때문이고, 일부는 B 때문이라고 말한다".<br><br>` +
+      `① <b>She says (that) ~</b> (주절 + 목적어 명사절) — says 뒤 <b>접속사 that 생략</b>된 명사절이 목적어. "그녀는 ~라고 말한다".<br>` +
+      `② ⭐ <b>some of her success</b> (부분 주어·<b>부분의 of</b>) — "<b>그녀 성공의 일부</b>". some of + 명사 = ~의 일부. (단어카드: success)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('of-types','of-partitive')">📐 부분의 of (some of ~) 자세히 →</span><br>` +
+      `③ <b>is due to her country's altitude</b> (be due to + 명사) — "<b>~ 때문이다/~에 기인하다</b>". her country's(소유격) altitude = 그녀 나라의 고도. (단어카드: be due to / altitude)<br>` +
+      `④ <b>(she trains at about 2,400 meters)</b> (괄호 삽입절) — 앞의 altitude(고도)를 <b>부연</b>: "그녀는 약 2,400m에서 훈련한다". 괄호라 뼈대와 분리.<br>` +
+      `⑤ ⭐⭐ <b>and some to her cultural background</b> (병렬 + <b>생략</b>!) — 🚨 반복을 피해 <b>생략된 부분</b>이 있음: and some <u>(of her success)</u> <u>(is due)</u> to her cultural background. 앞의 <b>of her success · is due</b>를 되풀이하지 않고 뭉갬 → "그리고 일부(의 성공)는 그녀의 <b>문화적 배경</b> 때문(이다)". (단어카드: background)<br>` +
+      `💡 <b>핵심:</b> 성공 요인을 <b>둘로 병렬</b> — ⓐ 나라의 <b>고도(altitude)</b>(2-23~24의 고지대·헤모글로빈과 연결) + ⓑ <b>문화적 배경</b>(2-24 문화 요인과 연결). 다음 문장(어릴 때 매일 10km 등교)이 '문화 배경'의 구체 예시.<br><br>` +
+      `📝 <b>해석:</b> "그녀는 자신의 성공의 일부는 나라의 고도(그녀는 약 2,400m에서 훈련한다) 덕분이고, 일부는 자신의 문화적 배경 덕분이라고 말한다."`,
+    trans: "그녀는 자신의 성공의 일부는 나라의 (높은) 고도 덕분이고(그녀는 약 2,400m에서 훈련한다), 일부는 자신의 문화적 배경 덕분이라고 말한다.",
+  },
+
+  // 지문 2 · 28번째 문장: As a child, she had to run 10 kilometers to school every day.
+  "2-27": {
+    form: "As + 명사(~였을 때) · had to(must의 과거·의무) · run + 거리(부사적) · to school 무관사 · every day",
+    tense: "과거 (had to)",
+    chips: [
+      ["수식어(M)·As 명사(~였을 때)", "As a child"],
+      ["주어(S)", "she"],
+      ["동사(V)·had to(과거 의무)", "had to run"],
+      ["수식어(M)·거리(부사적)", "10 kilometers"],
+      ["수식어(M)·방향", "to school"],
+      ["수식어(M)·빈도", "every day"],
+    ],
+    structure:
+      `뼈대: [As a child](부사구), <b>she(S) + had to run(V) + 10 kilometers to school every day</b>. "어릴 때, 그녀는 매일 학교까지 10km를 달려야 했다".<br><br>` +
+      `① ⭐ <b>As a child,</b> (문두 부사구·<b>as = ~였을 때</b>) — "<b>어릴 때(는)</b>" = <b>When she was a child</b>. 🚨 as는 다의어지만 여기 <b>as + 명사</b>는 "~였을 때/어릴 적"의 <b>시간</b> 뜻. (걷어내도 뼈대 온전)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('as-roles','as-time')">📐 as의 5가지 뜻 자세히 →</span><br>` +
+      `② ⭐⭐ <b>had to run</b> (동사·<b>had to = must의 과거</b>) — "<b>달려야 했다</b>"(과거의 의무). 🚨 <b>must는 과거형이 없어서</b> 과거의 의무는 <b>had to</b>로 씀(must → had to). (단어카드: have to)<br>` +
+      `③ <b>10 kilometers</b> (거리·부사적 목적격) — run은 여기서 자동사, <b>10 kilometers</b>는 "10km<b>를</b>(만큼)"이라는 <b>거리</b>를 나타내는 부사적 명사구(진짜 목적어라기보다 거리 부사).<br>` +
+      `④ <b>to school / every day</b> (수식어) — <b>to school</b>="학교로/학교까지"(🚨 무관사 — '등교'라는 관용). <b>every day</b>="매일"(빈도 부사구).<br>` +
+      `💡 <b>흐름:</b> 2-26에서 말한 '<b>문화적 배경</b>' 요인의 <b>구체 예시</b> — 어릴 때부터 매일 10km를 뛰어 등교한 환경이 마라토너로 성장하는 밑바탕이 됐다는 이야기.<br><br>` +
+      `📝 <b>해석:</b> "어릴 때 그녀는 매일 학교까지 10킬로미터를 달려야 했다."`,
+    trans: "어릴 때(아이였을 적에) 그녀는 매일 학교까지 10킬로미터를 달려야 했다.",
+  },
+
+  // 지문 2 · 29번째 문장: "I'd be punished if I was late," she says.
+  "2-28": {
+    form: "직접화법(인용 \" \") · I'd = I would · be punished(수동태) · would(과거의 습관 '~하곤 했다') · if + 과거(직설법 실제 조건)",
+    tense: "과거 회상 (would + 과거 조건)",
+    chips: [
+      ["인용문(직접화법)", "\"I'd be punished if I was late,\""],
+      ["결과·I'd(=I would)+수동태", "I'd be punished"],
+      ["조건절(if+과거)", "if I was late"],
+      ["전달 주절", "she says"],
+    ],
+    structure:
+      `뼈대: <b>"I'd be punished if I was late,"</b>(인용문) <b>she says</b>(전달). "'늦으면 벌을 받곤 했다'고 그녀는 말한다".<br><br>` +
+      `① <b>직접화법</b> — 큰따옴표 <b>" "</b> 안에 그녀가 한 말을 그대로 옮기고, 뒤에 <b>she says</b>(전달동사)를 붙임.<br>` +
+      `② ⭐ <b>I'd = I would</b> (축약) — 🚨 I'd는 <b>I would</b>(또는 I had)의 축약인데, 뒤에 <b>동사원형 be</b>가 오므로 여기선 <b>would</b>. would는 "<b>~하곤 했다</b>"(<b>과거의 반복·습관</b>) + 조건의 결과 뉘앙스.<br>` +
+      `③ ⭐ <b>be punished</b> (수동태) — "<b>벌을 받다</b>". 그녀가 스스로 벌하는 게 아니라 <b>벌을 받는 대상</b>이라 수동태(punish '벌하다'의 p.p. punished). (단어카드: punish)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('passive-voice','pv-form')">📐 수동태 be+p.p. 자세히 →</span><br>` +
+      `④ ⭐⭐ <b>if I was late</b> (조건절·<b>직설법 과거</b>) — "<b>(내가) 늦으면/늦었을 때</b>". 🚨 <b>가정법(if I <u>were</u>)이 아니라 was</b>! 실제로 있었던 <b>과거의 반복 상황</b>(늦을 때마다)을 말하는 <b>직설법 조건</b>이라 was. (가정법이면 '만약 ~라면'의 비현실 → were)<br>` +
+      `💡 <b>핵심:</b> 2-27(매일 10km 등교)에 이어, "<b>늦으면 벌을 받곤 했다</b>"는 회상으로 <b>엄격했던 성장 환경(문화적 배경)</b>을 생생히 전달. would + 과거 조건 = "~하면 …하곤 했다"의 과거 습관.<br><br>` +
+      `📝 <b>해석:</b> "'늦으면 (전) 벌을 받곤 했어요'라고 그녀는 말한다."`,
+    trans: "\"늦으면 저는 벌을 받곤 했어요\"라고 그녀는 말한다.",
+  },
+
+  // 지문 2 · 30번째 문장: Although genes, environment, and even culture play a part in becoming an elite athlete, training and practice are needed to succeed.
+  "2-29": {
+    form: "Although 양보절(vs 부사 though) · A, B, and even C 나열 · play a part in ~ing(전치사+동명사) · 복수주어(A and B) are · 수동태 are needed · to부정사(목적) to succeed",
+    tense: "현재 (일반적 사실)",
+    chips: [
+      ["양보 부사절(Although)", "Although genes, environment, and even culture play a part ..."],
+      ["부사절 주어·A,B,and even C", "genes, environment, and even culture"],
+      ["부사절 술어·play a part in ~ing", "play a part in becoming an elite athlete"],
+      ["주절 주어(A and B)→복수", "training and practice"],
+      ["주절 동사·수동태", "are needed"],
+      ["수식어·to부정사(목적)", "to succeed"],
+    ],
+    structure:
+      `뼈대: <b>Although</b> [genes ~ culture play a part ~](양보절), <b>training and practice(S) + are needed(V·수동태) + to succeed</b>(주절). "유전·환경·문화가 한몫하<b>지만</b>, 성공하려면 훈련과 연습이 필요하다".<br><br>` +
+      `① ⭐⭐ <b>Although</b> (양보 접속사) — "<b>비록 ~이지만/~일지라도</b>". 🚨 <b>although는 순수 접속사</b>(절+절을 직접 연결) — 28번의 <b>though(부사·콤마 삽입)</b>·however와 달리 <b>접속사</b>라 뒤 절을 이끎(종속 양보절 → 뒤 주절과 대조). (단어카드: although)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('conjunctive-adverb','ca-vs-conjunction')">📐 접속사(although) vs 접속부사(however·though) 자세히 →</span><br>` +
+      `② <b>genes, environment, and even culture</b> (양보절 주어·나열) — "<b>유전, 환경, 그리고 심지어 문화까지</b>". A, B, <b>and even C</b> — <b>even</b>(심지어·~조차)으로 마지막 항목을 강조. (단어카드: even)<br>` +
+      `③ ⭐ <b>play a part in becoming an elite athlete</b> (부사절 술어) — "<b>엘리트 선수가 되는 데 한몫하다</b>". <b>play a part in ~</b>="~에 한몫하다/역할을 하다". 🚨 <b>전치사 in 뒤라 동명사 becoming</b>(to become ❌ — 전치사 뒤엔 동명사!). becoming an elite athlete(become+명사보어). (단어카드: play a part)<br>` +
+      `④ ⭐ <b>training and practice are needed</b> (주절·복수주어+수동태) — 🚨 <b>training and practice</b>(A and B) → <b>복수 주어</b>라 <b>are</b>. <b>are needed</b>=수동태 "<b>필요하다/요구된다</b>"(need '필요로 하다'의 p.p. needed — 훈련·연습이 '필요되는' 대상).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('passive-voice','pv-form')">📐 수동태 be+p.p. 자세히 →</span><br>` +
+      `⑤ <b>to succeed</b> (부사적 to부정사·목적) — "<b>성공하기 위해/성공하려면</b>". are needed를 꾸미는 목적의 to부정사.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-adverb')">📐 to부정사(부사적·목적) 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 지금까지 나열한 요인들(유전·환경·문화)을 <b>Although로 인정하면서도</b>, 글의 <b>결론 = 훈련과 연습이 필수</b>임을 <b>대조·강조</b>하며 마무리 단락으로 전환. 다음 문장들이 '훈련의 중요성'을 구체화.<br><br>` +
+      `📝 <b>해석:</b> "유전, 환경, 심지어 문화까지 엘리트 선수가 되는 데 한몫하지만, 성공하려면 훈련과 연습이 필요하다."`,
+    trans: "유전, 환경, 그리고 심지어 문화까지 엘리트 선수가 되는 데 한몫하지만, 성공하려면 훈련과 연습이 필요하다.",
+  },
+
+  // 지문 2 · 31번째 문장: Marathon runners may be able to control fatigue and keep moving for long periods of time, but they must train to reach and maintain their goals.
+  "2-30": {
+    form: "may + be able to(may can ❌) · keep+-ing(계속) · 동사 병렬(and) · but 대조 등위절 · must 의무 · to부정사(목적)+동사 병렬 to reach and maintain",
+    tense: "현재 (일반적 사실·may 추측)",
+    chips: [
+      ["주어(S)·복수", "Marathon runners"],
+      ["조동사·may+be able to", "may be able to"],
+      ["병렬 동사①·control O", "control fatigue"],
+      ["병렬 동사②·keep+-ing", "keep moving for long periods of time"],
+      ["대조 등위접속사", "but"],
+      ["주절2·must+동사원형", "they must train"],
+      ["수식어·to부정사(목적)+병렬", "to reach and maintain their goals"],
+    ],
+    structure:
+      `뼈대: <b>Marathon runners(S) + may be able to [control fatigue] and [keep moving] ~</b>, <b>but they must train to reach and maintain their goals</b>. "마라토너는 피로를 조절하고 오래 계속 움직일 수 있을지 몰라도, 목표 달성·유지를 위해선 반드시 훈련해야 한다".<br><br>` +
+      `① ⭐ <b>may be able to</b> (조동사·추측+가능) — "<b>~할 수 있을지도 모른다</b>". <b>may</b>(추측 '~할 수도') + <b>be able to</b>(=can). 🚨 <b>may can ❌</b> — 조동사는 둘을 연달아 못 쓰므로 can 대신 <b>be able to</b>(16번 seem to be able to와 같은 원리).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('seem-appear','sa-be-able')">📐 be able to = can (조동사 뒤 can 불가) 자세히 →</span><br>` +
+      `② <b>control fatigue and keep moving</b> (병렬·may be able to의 두 동작) — <b>and</b>가 두 동사구를 병렬(둘 다 be able to에 걸림). <b>control fatigue</b>=피로를 조절하다. ⭐ <b>keep moving</b>=<b>계속 움직이다</b>(<b>keep + 동명사</b> = 계속 ~하다). <b>for long periods of time</b>=오랜 시간 동안. (단어카드: keep -ing / fatigue / period)<br>` +
+      `③ <b>, but</b> (대조 등위접속사) — 앞 절(오래 버틸 수 있음)과 뒤 절(그래도 훈련 필수)을 <b>대조</b>로 연결.<br>` +
+      `④ <b>they must train</b> (주절2·must 의무) — "<b>반드시 훈련해야 한다</b>". they = Marathon runners. must = 강한 의무.<br>` +
+      `⑤ ⭐ <b>to reach and maintain their goals</b> (부사적 to부정사·목적) — "<b>목표에 도달하고 유지하기 위해</b>". <b>to</b> [reach] <b>and</b> [maintain] — to부정사 안에서 <b>두 동사원형이 병렬</b>(두 번째 to 생략, their goals를 공동 목적어로). (단어카드: reach / maintain)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-adverb')">📐 to부정사(부사적·목적) 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 2-29 "훈련·연습이 필요"의 <b>구체화</b> — 타고난 지구력(피로 조절·장시간 이동)이 있어도(may be able to), <b>but</b> 목표 달성엔 훈련이 필수(must train)라는 <b>양보→대조</b> 논리.<br><br>` +
+      `📝 <b>해석:</b> "마라톤 주자들은 피로를 조절하고 오랫동안 계속 움직일 수 있을지 모르지만, 목표에 도달하고 그것을 유지하려면 반드시 훈련해야 한다."`,
+    trans: "마라톤 주자들은 피로를 조절하고 오랜 시간 계속 움직일 수 있을지 모르지만, 자신의 목표에 도달하고 그것을 유지하려면 반드시 훈련해야 한다.",
+  },
+
+  // 지문 2 · 32번째 문장: Weightlifters and gymnasts perfect their skills by repeating the same motions again and again until they become automatic.
+  "2-31": {
+    form: "복수주어(A and B) · perfect=동사(완성하다) · by+동명사(수단) · again and again · until 시간절 · become+형용사(2형식)",
+    tense: "현재 (일반적 사실)",
+    chips: [
+      ["주어(S)·A and B(복수)", "Weightlifters and gymnasts"],
+      ["동사(V)·perfect=완성하다(3형식)", "perfect"],
+      ["목적어(O)", "their skills"],
+      ["수식어·by+동명사(수단)", "by repeating the same motions again and again"],
+      ["시간절·until+S+V", "until they become automatic"],
+    ],
+    structure:
+      `뼈대: <b>Weightlifters and gymnasts(S) + perfect(V) + their skills(O)</b> by repeating ~ until ~. "역도·체조 선수는 같은 동작을 몇 번이고 반복함으로써 기술을 완성한다 — 그것이 자동화될 때까지".<br><br>` +
+      `① <b>Weightlifters and gymnasts</b> (주어·A and B) — "<b>역도 선수와 체조 선수(들)</b>". and로 묶여 <b>복수</b> → 동사 perfect(3인칭 -s 없음). (단어카드: weightlifter / gymnast)<br>` +
+      `② ⭐⭐ <b>perfect</b> (동사·<b>완성하다/숙달하다</b>) — 🚨 <b>품사 함정!</b> 여기 perfect는 형용사 '완벽한'이 아니라 <b>동사</b> "<b>완벽하게 하다·완성하다</b>"(동사일 땐 강세도 뒤로 perféct). their skills(목적어)를 데려온 <b>3형식 타동사</b>. (단어카드: perfect)<br>` +
+      `③ ⭐ <b>by repeating the same motions again and again</b> (수단·<b>by+동명사</b>) — "<b>같은 동작을 몇 번이고 반복함<u>으로써</u></b>". <b>by + 동명사</b>(repeating) = "~함으로써"(수단·방법). 🚨 전치사 by 뒤라 <b>동명사</b>(to repeat ❌). the same motions=repeating의 목적어, again and again=반복 강조. (단어카드: motion / again and again)<br>` +
+      `④ <b>until they become automatic</b> (시간 부사절) — "<b>그것들이 자동화(무의식화)될 때까지</b>". until="~까지(계속)", they=the motions/skills. ⭐ <b>become + 형용사(automatic)</b> = "~한 상태가 되다"(2형식·상태변화). (단어카드: until / automatic)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('linking-become','lb-why-adj')">📐 become + 형용사보어(상태변화) 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 2-30 "훈련·연습 필수"의 <b>구체 방법 제시</b> — 역도·체조 선수는 <b>같은 동작을 자동화될 때까지 반복</b>. 다음(2-32 다이빙 Louganis)이 같은 원리("반사가 될 때까지 반복")의 사례.<br><br>` +
+      `📝 <b>해석:</b> "역도 선수와 체조 선수는 같은 동작이 자동적(무의식적)이 될 때까지 몇 번이고 반복함으로써 자신의 기술을 완성한다."`,
+    trans: "역도 선수와 체조 선수는 같은 동작이 (몸에 밴) 자동적인 것이 될 때까지 몇 번이고 반복함으로써 자신의 기술을 완성한다.",
+  },
+
+  // 지문 2 · 33번째 문장: Greg Louganis, winner of four Olympic diving gold medals, says divers must train the same way to be successful: "You have less than three seconds from takeoff until you hit the water, so it has to be reflex. You have to repeat the dives hundreds, maybe thousands, of times."
+  "2-32": {
+    form: "동격 명사구(winner of ~) · say (that) 목적어절 · the same way(부사적 대격) · to be successful(목적) · 콜론(:) 구체 인용 · from A until B · so(결과) · have to · hundreds of",
+    tense: "현재 (진술·인용)",
+    chips: [
+      ["주어(S)·고유명사", "Greg Louganis"],
+      ["동격(삽입)·주어 재설명", "winner of four Olympic diving gold medals"],
+      ["동사(V)·전달", "says"],
+      ["목적어절(that 생략)", "divers must train the same way to be successful"],
+      ["콜론(:)·구체 인용 도입", ":"],
+      ["인용①·so(결과)", "You have less than three seconds ... so it has to be reflex."],
+      ["인용②·have to+hundreds of", "You have to repeat the dives hundreds ... of times."],
+    ],
+    structure:
+      `뼈대: <b>Greg Louganis(S)</b>, [winner of ~](동격), <b>says</b> [(that) divers must train the same way to be successful](목적어절)<b>:</b> "…"(구체 인용). "루가니스는 — 금메달 4개 획득자인데 — 다이버는 성공하려면 같은 식으로 훈련해야 한다고 말한다: …".<br><br>` +
+      `① <b>Greg Louganis</b> (주어·인명) + ⭐ <b>, winner of four Olympic diving gold medals,</b> (동격·콤마 삽입) — 26번처럼 주어를 <b>동격 명사구</b>로 재설명: "올림픽 다이빙 <b>금메달 4개의 획득자</b>". winner of ~=~의 승자/획득자. (걷어내도 뼈대 Greg Louganis says ~ 온전)<br>` +
+      `② <b>says (that) divers must train the same way to be successful</b> (동사+목적어절) — says 뒤 <b>that 생략</b> 명사절. divers must train="다이버는 훈련해야 한다". ⭐ <b>the same way</b>=부사적 대격 "<b>같은 방식으로</b>"(in the same way의 in 생략). <b>to be successful</b>=목적의 to부정사("성공하려면").<br>` +
+      `③ ⭐ <b>:</b> (콜론) — 앞 내용(같은 식으로 훈련)을 <b>구체적으로 풀어 인용</b>. 콜론은 "즉/다음과 같이"처럼 <b>부연·예시·인용</b>을 끌어옴.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('punctuation','pn-colon')">📐 콜론(:)의 쓰임 자세히 →</span><br>` +
+      `④ <b>"You have less than three seconds from takeoff until you hit the water, so it has to be reflex."</b> (인용①) — "<b>도약부터 입수까지 3초도 안 되니, (다이빙은) 반사여야 한다</b>". <b>less than</b>=~미만, <b>from takeoff until you hit ~</b>=도약부터 물에 닿을 때까지, <b>so</b>=그래서(결과), <b>has to be</b>=~여야 한다, reflex=반사. (단어카드: less than / takeoff / reflex / have to)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('so-roles','so-conjunction')">📐 결과 접속사 so 자세히 →</span><br>` +
+      `⑤ <b>"You have to repeat the dives hundreds, maybe thousands, of times."</b> (인용②) — "<b>다이빙을 수백, 어쩌면 수천 번 반복해야 한다</b>". <b>have to</b>=해야 한다, <b>hundreds ... of times</b>=수백 번(hundreds/thousands of times). (단어카드: hundreds of)<br>` +
+      `💡 <b>흐름:</b> 2-31(역도·체조는 자동화될 때까지 반복)과 <b>같은 원리를 다이빙 사례로</b> — Louganis 왈 "3초 안에 끝나니 <b>반사(reflex)</b>가 되도록 <b>수천 번 반복</b>". 반복 훈련의 중요성을 권위자 인용으로 뒷받침.<br><br>` +
+      `📝 <b>해석:</b> "올림픽 다이빙 금메달 4관왕인 그레그 루가니스는 다이버도 성공하려면 같은 방식으로 훈련해야 한다고 말한다: '도약부터 입수까지 3초도 안 되므로 그것은 반사(신경)여야 한다. 다이빙을 수백, 어쩌면 수천 번 반복해야 한다.'"`,
+    trans: "올림픽 다이빙 금메달 4관왕인 그레그 루가니스는 다이버도 성공하려면 같은 방식으로 훈련해야 한다고 말한다: \"도약부터 입수까지 3초도 안 되므로 그것은 반사(신경)여야 한다. 다이빙을 수백 번, 어쩌면 수천 번 반복해야 한다.\"",
+  },
+
+  // 지문 2 · 34번째 문장: Training this way requires an athlete to be not only physically fit but psychologically healthy as well.
+  "2-33": {
+    form: "동명사 주어(Training)→단수 requires · require+O+to V(5형식) · not only A but B as well(상관접속사) · A·B 형용사구 병렬 · this way(부사적 대격)",
+    tense: "현재 (일반적 사실)",
+    chips: [
+      ["주어(S)·동명사구→단수", "Training this way"],
+      ["동사(V)·require+O+to V(5형식)", "requires"],
+      ["목적어(O)", "an athlete"],
+      ["목적격보어·to be", "to be ..."],
+      ["보어①·not only A", "physically fit"],
+      ["보어②·but B as well", "psychologically healthy (as well)"],
+    ],
+    structure:
+      `뼈대: <b>Training this way(S) + requires(V) + an athlete(O) + to be [not only A but B as well]</b>(목적격보어). "이런 식의 훈련은 선수가 육체적으로뿐 아니라 정신적으로도 건강할 것을 요구한다".<br><br>` +
+      `① ⭐ <b>Training this way</b> (주어·<b>동명사구</b>) — "<b>이런 식으로 훈련하는 것(은)</b>". <b>Training</b>=동명사(주어), this way=부사적 대격(이런 방식으로). 🚨 <b>동명사 주어는 단수</b> 취급 → 동사 <b>requires</b>(require ❌).<br>` +
+      `② <b>requires an athlete to be ~</b> (동사·<b>require+O+to V, 5형식</b>) — "선수가 ~하도록/할 것을 <b>요구한다</b>". an athlete(목적어) + <b>to be ~</b>(목적격보어, to부정사). (단어카드: require)<br>` +
+      `③ ⭐⭐ <b>not only physically fit but psychologically healthy as well</b> (상관접속사) — "<b>육체적으로 건강할 뿐 아니라 정신적으로도 건강한</b>". <b>not only A but B as well</b> = not only A but also B("A뿐 아니라 B도", 초점은 B). <b>as well</b>=also.<br>` +
+      `&nbsp;&nbsp;• ⭐ <b>병렬:</b> A=<b>physically fit</b>, B=<b>psychologically healthy</b> — 둘 다 <b>[부사+형용사] 형용사구</b>로 모양이 같음(physically/psychologically=부사, fit/healthy=형용사). (단어카드: not only A but also B / fit)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">📐 상관접속사 병렬·수일치 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 2-32(반복 훈련)에 이어, 그런 훈련이 요구하는 <b>조건</b> — <b>몸(physically)뿐 아니라 마음(psychologically)</b>도 건강해야 함. 다음(2-34 심리학자 인용)이 이 '정신적 건강'을 부연.<br><br>` +
+      `📝 <b>해석:</b> "이런 방식의 훈련은 선수에게 육체적으로 건강할 뿐만 아니라 정신적으로도 건강할 것을 요구한다."`,
+    trans: "이런 방식으로 훈련하는 것은 선수가 육체적으로 건강할 뿐만 아니라 정신적으로도 건강할 것을 요구한다.",
+  },
+
+  // 지문 2 · 35번째 문장: "They have to be," says Sean McCann, a sports psychologist at the Olympic Training Center in the United States.
+  "2-34": {
+    form: "직접화법 · 인용 뒤 도치(says + 주어) · have to be(보어 생략) · 동격 명사구 · the United States(국가명 the)",
+    tense: "현재 (진술·인용)",
+    chips: [
+      ["인용문(직접화법)", "\"They have to be,\""],
+      ["전달동사(도치)·says+S", "says Sean McCann"],
+      ["동격(삽입)·주어 재설명", "a sports psychologist ..."],
+      ["수식어·전치사구", "at the Olympic Training Center in the United States"],
+    ],
+    structure:
+      `뼈대: <b>"They have to be,"</b>(인용) <b>says Sean McCann</b>(도치: V+S), [a sports psychologist ~](동격). "'그들은 (정신적으로도 건강)해야 합니다'라고 숀 매캔이 말한다".<br><br>` +
+      `① <b>"They have to be,"</b> (인용문·직접화법) — 앞 문장(2-33 정신적으로도 건강해야)을 받아 "<b>그들은 그래야 한다</b>". 🚨 <b>have to be 뒤 보어 생략</b> — be (psychologically healthy)에서 <b>healthy 생략</b>(앞에 이미 나옴). They=athletes.<br>` +
+      `② ⭐⭐ <b>says Sean McCann</b> (<b>도치</b>: 전달동사+주어) — 🚨 인용문 뒤 전달절에서 <b>동사(says) + 주어(Sean McCann)</b> 어순으로 <b>도치</b>됨! 정상 어순은 Sean McCann says. (인용문 뒤에서 자주 일어나는 도치)<br>` +
+      `③ ⭐ <b>, a sports psychologist at the Olympic Training Center in the United States</b> (동격 명사구) — 주어 <b>Sean McCann = a sports psychologist ~</b>를 재설명(26·33번과 같은 콤마 동격). at ~ Center=근무지(전치사구 후치수식). (단어카드: psychologist)<br>` +
+      `&nbsp;&nbsp;• ⭐ <b>the United States</b> — 🚨 국가명인데 <b>the</b>가 붙는 예외! (복수형·연합체 국가: the United States, the Netherlands, the Philippines …)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('articles','ar-zero')">📐 고유명사와 관사(the United States 예외) 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 2-33의 '정신적 건강도 필요'를 <b>전문가(스포츠 심리학자) 인용</b>으로 뒷받침 — "그들은 (그래야) 한다"며 짧게 못박음. 다음 문장에서 그 이유를 설명.<br><br>` +
+      `📝 <b>해석:</b> "'그들은 (반드시) 그래야 합니다'라고 미국 올림픽 트레이닝 센터의 스포츠 심리학자 숀 매캔은 말한다."`,
+    trans: "\"그들은 (반드시) 그래야 합니다\"라고 미국 올림픽 트레이닝 센터의 스포츠 심리학자 숀 매캔이 말한다.",
+  },
 };
 
 /* ---------- 문법 정리 (공부한 내용 채우기) ----------
@@ -3066,6 +3606,186 @@ const GRAMMAR = [
       ["go + 형용사 · 상하다", "The milk went bad.", "그 우유는 상했다. (나쁘게 간 게 X → 상한 상태가 됨)"],
       ["fall + 형용사 · 잠들다", "He fell asleep during class.", "그는 수업 중에 잠들었다. (잠으로 떨어진 게 X → 잠든 상태가 됨)"],
       ["come + 형용사 · 이루어지다", "For some, the dream comes true.", "일부에게는 그 꿈이 이루어진다. (진실로 온 게 X → 실현됨)"],
+    ],
+  },
+  {
+    id: "seem-appear",
+    title: "seem / appear + to부정사 — 'S가 ~인 것 같다'",
+    tag: "핵심 · 자주 나옴",
+    body:
+      `<b>seem</b>(=appear)은 2형식 자동사로, 뒤에 <b>to부정사</b>를 보어로 데려와 "<b>S가 ~인 것 같다 / ~인 듯하다</b>"라는 <b>추측·판단</b>을 나타냄. 말하는 이가 단정하지 않고 <b>한 발 물러서서</b> "그렇게 보인다"고 완화하는 장치.<br><br>` +
+      `<b>기본 형태:</b> <b>S + seem(s) + to + 동사원형 ~</b><br>` +
+      `&nbsp;&nbsp;예) She <b>seems to know</b> the answer. = 그녀는 답을 <b>아는 것 같다</b>.<br>` +
+      `&nbsp;&nbsp;예) They <b>seem to be able to clear</b> it faster. = 그들은 그것을 더 빨리 치울 수 <b>있는 것 같다</b>.<br><br>` +
+      `<div id="sa-transform" class="g-sub">` +
+      `<b>⭐ It seems that ~ ↔ S seems to V (시험 단골 전환!)</b><br>` +
+      `"~인 것 같다"는 <b>두 가지 방식</b>으로 쓸 수 있고, 서로 <b>바꿔 쓸 수 있음</b>.<br>` +
+      `&nbsp;&nbsp;• <b>It seems that</b> she <u>knows</u> the answer. (가주어 It + that절)<br>` +
+      `&nbsp;&nbsp;• = She <b>seems to</b> <u>know</u> the answer. (that절 주어를 앞으로, 동사는 to부정사로)<br>` +
+      `👉 <b>규칙:</b> that절의 <b>주어(she)를 문장 맨 앞으로</b> 올리고, that절 동사(knows)를 <b>to부정사(to know)</b>로 바꾸면 끝.` +
+      `</div>` +
+      `<div id="sa-be-able" class="g-sub">` +
+      `<b>🔧 to be able to = to can? — can은 to부정사가 안 됨!</b><br>` +
+      `<b>can</b>(조동사)은 to부정사·미래형 등으로 <b>변신이 불가능</b>. 그래서 "~할 수 있다"를 <b>to부정사 자리</b>에 넣어야 할 땐 같은 뜻의 <b>be able to</b>를 빌려 씀.<br>` +
+      `&nbsp;&nbsp;• seem to <s>can</s> clear (✗) → seem to <b>be able to</b> clear (⭕) = "치울 수 있는 것 같다"<br>` +
+      `&nbsp;&nbsp;• be able to = <b>can</b>(현재). 나아가 will be able to(미래)·to be able to(부정사)까지 자유롭게 변형 가능.` +
+      `</div>` +
+      `<b>💡 함께 쓰는 자동사:</b> seem·appear(~인 것 같다), happen(우연히 ~하다), prove·turn out(~인 것으로 드러나다)도 뒤에 to부정사를 데려옴.`,
+    eg: [
+      ["S seem to V · ~인 것 같다", "She seems to know the answer.", "그녀는 답을 아는 것 같다."],
+      ["It seems that ~ 전환", "It seems that she knows the answer.", "그녀가 답을 아는 것 같다. (= She seems to know ~)"],
+      ["seem to be able to (=can)", "They seem to be able to clear it faster.", "그들은 그것을 더 빨리 치울 수 있는 것 같다."],
+    ],
+  },
+  {
+    id: "conjunctive-adverb",
+    title: "접속부사 (however · thus · therefore) — 뜻만 잇는 '부사'",
+    tag: "핵심 · 함정",
+    body:
+      `<b>however, thus, therefore, moreover, nevertheless</b> 같은 말은 앞뒤 내용을 <b>의미상 연결</b>하지만 품사는 <b>부사</b>임. 진짜 <b>접속사(and·but·so)가 아니라서</b> 두 문장을 <b>문법적으로 붙이지는 못함</b>. 그래서 문장 성분(S·V·O) 계산에선 <b>빠지고</b>, 보통 <b>콤마</b>로 떨어져 삽입됨.<br><br>` +
+      `<b>대표 뜻</b><br>` +
+      `&nbsp;&nbsp;• 대조: <b>however</b>(그러나), nevertheless(그럼에도), <b>though</b>(그러나 — 🚨 접속사 although와 달리 <b>문장 중간·끝</b>에 콤마로 오면 <b>부사</b> = however)<br>` +
+      `&nbsp;&nbsp;• 결과: <b>thus·therefore</b>·hence(따라서·그러므로)<br>` +
+      `&nbsp;&nbsp;• 첨가: moreover·furthermore(게다가)<br>` +
+      `<div id="ca-vs-conjunction" class="g-sub">` +
+      `<b>🚨 접속사 vs 접속부사 (편입 단골!)</b><br>` +
+      `두 <b>완전한 문장</b>을 이을 때 문장부호가 다름.<br>` +
+      `&nbsp;&nbsp;• 접속사(but): It rained<b>, but</b> we played. (콤마+접속사 ⭕)<br>` +
+      `&nbsp;&nbsp;• 접속부사(however): It rained<b>; however,</b> we played. (앞에 <b>세미콜론(;)</b> 또는 <b>마침표</b> 필요 ⭕)<br>` +
+      `&nbsp;&nbsp;• ❌ It rained<b>, however,</b> we played. — 콤마만으로 두 문장 잇기 <b>불가</b>(comma splice)!<br>` +
+      `👉 however는 <b>부사</b>라 접속사처럼 콤마 하나로 문장을 못 붙임. 이으려면 <b>;</b> 또는 <b>.</b>` +
+      `</div>` +
+      `<div id="ca-insert" class="g-sub">` +
+      `<b>💡 문중 삽입 (콤마로 감싸기)</b><br>` +
+      `접속부사는 문두뿐 아니라 <b>주어 뒤</b>에 콤마로 감싸 삽입되기도 함. 이때 앞뒤 콤마를 걷어내면 문장 뼈대가 그대로 보임.<br>` +
+      `예) A trained athlete<b>, however,</b> might not feel pain. → (however 제거) A trained athlete might not feel pain. (뼈대 온전)` +
+      `</div>`,
+    eg: [
+      ["대조 however (그러나)", "It rained; however, we played.", "비가 왔다; 그러나 우리는 (경기)했다."],
+      ["결과 thus (따라서)", "He trained hard; thus, he won.", "그는 열심히 훈련했다; 따라서 이겼다."],
+      ["문중 삽입", "The runner, however, felt fine.", "그러나 그 주자는 괜찮았다."],
+    ],
+  },
+  {
+    id: "bare-infinitive",
+    title: "원형부정사 (사역·지각동사 · help) — to 없는 동사원형",
+    tag: "핵심 · 자주 나옴",
+    body:
+      `보통 목적격보어엔 <b>to부정사</b>가 오지만, 특정 동사들은 <b>to를 뗀 동사원형(원형부정사)</b>을 데려옴. 어떤 동사가 원형을 부르는지 <b>외워두면</b> 시험에서 바로 잡힘.<br><br>` +
+      `<div id="bi-causative" class="g-sub">` +
+      `<b>① 사역동사 make · have · let + O + 원형부정사</b><br>` +
+      `"O가 ~하게 하다(시키다/허락하다)". 목적격보어에 <b>to 없는 동사원형</b>.<br>` +
+      `예) She <b>made</b> him <b>go</b>. (to go ❌) · Let me <b>know</b>. · I had him <b>fix</b> it.<br>` +
+      `🚨 단, <b>get</b>은 사역 뜻이어도 <b>get + O + to V</b>(to 필요!) — get him <b>to</b> go.` +
+      `</div>` +
+      `<div id="bi-help" class="g-sub">` +
+      `<b>② help + O + (to) 원형 — to 있어도 없어도 OK ⚖️</b><br>` +
+      `help는 목적격보어로 <b>원형·to부정사 둘 다</b> 가능(뜻 동일). 현대 영어·회화에선 <b>to 생략</b>이 더 흔함.<br>` +
+      `예) help some athletes <b>do</b> well (⭕ 본문) = help them <b>to do</b> well (⭕)<br>` +
+      `※ 목적어 없이 help <b>(to) V</b>도 가능: This helps <b>(to) improve</b> ~.` +
+      `</div>` +
+      `<div id="bi-perception" class="g-sub">` +
+      `<b>③ 지각동사 see·hear·watch·feel + O + 원형 / -ing</b><br>` +
+      `"O가 ~하는 것을 보다/듣다/느끼다". <b>원형</b>(처음~끝 전체) 또는 <b>-ing</b>(진행 중인 장면).<br>` +
+      `예) I <b>saw</b> her <b>enter</b>. (들어가는 걸 봤다) · I <b>heard</b> them <b>singing</b>. (노래하고 있는 걸 들었다)<br>` +
+      `🚨 이들도 <b>수동태로 바뀌면 to가 되살아남</b>: She was seen <b>to enter</b>.` +
+      `</div>`,
+    eg: [
+      ["사역 make + 원형", "The coach made them train hard.", "코치는 그들을 열심히 훈련시켰다."],
+      ["help + (to) 원형", "Culture helps athletes do well.", "문화는 선수가 잘하도록 돕는다."],
+      ["지각 see + 원형", "We saw him win the race.", "우리는 그가 경주에서 이기는 걸 봤다."],
+    ],
+  },
+  {
+    id: "present-perfect",
+    title: "현재완료 have/has + p.p. — 과거가 지금까지 이어짐",
+    tag: "핵심 · 시험 최다",
+    body:
+      `<b>have/has + 과거분사(p.p.)</b>. 단순히 '과거에 했다'가 아니라, 과거의 일이 <b>지금(현재)과 연결</b>됨을 나타냄. "지금 시점에서 보니 ~한 경험/상태/결과"가 핵심.<br>` +
+      `<div id="pf-uses" class="g-sub">` +
+      `<b>4가지 용법 (문맥으로 구분)</b><br>` +
+      `&nbsp;&nbsp;• <b>경험</b> "~해 본 적 있다": She <b>has won</b> several marathons. (여러 번 우승해 봤다) · ever/never/before와 잘 감<br>` +
+      `&nbsp;&nbsp;• <b>완료</b> "막 ~했다": I <b>have</b> just <b>finished</b>. · just/already/yet<br>` +
+      `&nbsp;&nbsp;• <b>계속</b> "쭉 ~해 왔다": She <b>has lived</b> here <b>for</b> 10 years. · for/since<br>` +
+      `&nbsp;&nbsp;• <b>결과</b> "~해서 지금 …한 상태": He <b>has gone</b> to Kenya. (가서 지금 여기 없다)` +
+      `</div>` +
+      `<div id="pf-vs-past" class="g-sub">` +
+      `<b>🚨 현재완료 vs 과거 — 시험 최다 함정!</b><br>` +
+      `현재완료는 <b>'명백한 과거 시점' 부사와 함께 못 씀</b>. yesterday, ago, last~, 「in+연도」, when? 등이 오면 <b>반드시 과거시제</b>.<br>` +
+      `&nbsp;&nbsp;• I <b>have seen</b> him yesterday. (❌) → I <b>saw</b> him yesterday. (⭕)<br>` +
+      `&nbsp;&nbsp;• <b>When</b> did you arrive? (⭕) / When have you arrived? (❌)<br>` +
+      `👉 "지금까지"의 느낌이면 현재완료, "그때 딱"이면 과거.` +
+      `</div>`,
+    eg: [
+      ["경험 (~한 적 있다)", "She has won several marathons.", "그녀는 여러 마라톤에서 우승한 적이 있다."],
+      ["계속 (쭉 ~해 왔다)", "They have trained since 2010.", "그들은 2010년부터 쭉 훈련해 왔다."],
+      ["과거로 정정 (yesterday)", "I saw him yesterday.", "어제 그를 봤다. (have seen ❌)"],
+    ],
+  },
+  {
+    id: "as-roles",
+    title: "as의 여러 얼굴 (때·이유·비례·양태·자격)",
+    tag: "핵심 · 다의어",
+    body:
+      `<b>as</b>는 영어에서 가장 뜻이 많은 단어 중 하나. 같은 as라도 문맥에 따라 <b>5가지</b>로 갈림 — 자리와 뜻을 함께 익혀야 함.<br>` +
+      `<div id="as-time" class="g-sub">` +
+      `<b>① (접속사) ~할 때 / ~하면서 [시간·동시동작]</b><br>` +
+      `예) <b>As</b> she smiled, she waved. (웃으면서) · Athletes clear lactate <b>as</b> they move. (움직이면서)<br>` +
+      `🔸 <b>as + 명사 = "~였을 때"</b>도 자주: <b>As a child</b>, she ran to school. (= When she was a child, 어릴 때).` +
+      `</div>` +
+      `<div id="as-cause" class="g-sub">` +
+      `<b>② (접속사) ~때문에 [이유] (= because / since)</b><br>` +
+      `예) <b>As</b> it was raining, we stayed home. (비가 왔기 때문에)` +
+      `</div>` +
+      `<div id="as-proportion" class="g-sub">` +
+      `<b>③ (접속사) ~함에 따라 / ~할수록 [비례]</b><br>` +
+      `예) <b>As</b> time goes by, ... (시간이 흐름에 따라) · <b>As</b> you grow older, ... (나이 들수록)` +
+      `</div>` +
+      `<div id="as-manner" class="g-sub">` +
+      `<b>④ ~처럼 / ~대로 [양태]</b><br>` +
+      `예) Do <b>as</b> I say. (내가 말한 대로) · <b>as</b> usual (평소처럼)` +
+      `</div>` +
+      `<div id="as-role" class="g-sub">` +
+      `<b>⑤ (전치사) ~로서 [자격·기능]</b><br>` +
+      `예) work <b>as</b> a coach (코치로서 일하다) · use it <b>as</b> a tool (도구로 쓰다)<br>` +
+      `🔸 그 밖에: <b>as ~ as</b>(원급 비교), <b>such as</b>(~같은), <b>as if/though</b>(마치 ~처럼).` +
+      `</div>`,
+    eg: [
+      ["① 때·동시 (~하면서)", "As they move, they clear lactate.", "그들은 움직이면서 젖산을 제거한다."],
+      ["② 이유 (~때문에)", "As it rained, we stopped.", "비가 왔기 때문에 멈췄다."],
+      ["⑤ 자격 (~로서)", "She works as a coach.", "그녀는 코치로서 일한다."],
+    ],
+  },
+  {
+    id: "correlative",
+    title: "상관접속사 (both A and B · not only A but also B · either/neither)",
+    tag: "핵심 · 자주 나옴",
+    body:
+      `두 요소를 <b>짝을 이루어</b> 잇는 접속사. 짝이 정해져 있어 <b>한쪽만 보면 나머지가 예측</b>됨. A와 B는 <b>같은 품사·형태로 병렬</b>해야 함.<br>` +
+      `<div id="cc-list" class="g-sub">` +
+      `<b>대표 짝</b><br>` +
+      `&nbsp;&nbsp;• <b>both A and B</b> — A와 B 둘 다<br>` +
+      `&nbsp;&nbsp;• <b>not only A but (also) B</b> = <b>B as well</b> — A뿐 아니라 B도 (초점은 B)<br>` +
+      `&nbsp;&nbsp;• <b>either A or B</b> — A 또는 B 둘 중 하나<br>` +
+      `&nbsp;&nbsp;• <b>neither A nor B</b> — A도 B도 아닌<br>` +
+      `&nbsp;&nbsp;• <b>B as well as A</b> — A뿐 아니라 B도 (초점은 <b>앞의 B</b>! 순서 주의)` +
+      `</div>` +
+      `<div id="cc-parallel" class="g-sub">` +
+      `<b>⭐ 병렬 규칙 — A와 B는 같은 급</b><br>` +
+      `형용사면 형용사, 명사면 명사, to부정사면 to부정사로 <b>모양을 맞춤</b>.<br>` +
+      `예) not only <u>physically fit</u> but <u>psychologically healthy</u> (형용사구 ↔ 형용사구 ⭕)<br>` +
+      `🚨 not only <u>to run</u> but <u>swimming</u> (❌ to부정사 ↔ 동명사 불일치)` +
+      `</div>` +
+      `<div id="cc-agreement" class="g-sub">` +
+      `<b>🚨 수일치 — 동사는 어디에 맞추나 (시험 단골!)</b><br>` +
+      `&nbsp;&nbsp;• <b>both A and B</b> → 무조건 <b>복수</b><br>` +
+      `&nbsp;&nbsp;• <b>not only A but also B</b> / <b>either A or B</b> / <b>neither A nor B</b> / <b>B as well as A</b> → 동사는 <b>가까운 쪽(B)</b>에 맞춤!<br>` +
+      `예) Not only you but also <b>he is</b> right. (he에 맞춰 is) · Either you or <b>they are</b> ~ (they에 맞춰 are)` +
+      `</div>`,
+    eg: [
+      ["not only A but also B", "She is not only smart but also kind.", "그녀는 똑똑할 뿐 아니라 친절하기도 하다."],
+      ["neither A nor B (동사=B)", "Neither he nor they were late.", "그도 그들도 늦지 않았다. (they에 맞춰 were)"],
+      ["both A and B (복수)", "Both speed and power are needed.", "속도와 힘 둘 다 필요하다."],
     ],
   },
 ];
