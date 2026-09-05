@@ -158,6 +158,7 @@ const WORDS_BY_PASSAGE = {
   { word: "wealthy",          pos: "a.",   meaning: "부유한, 재산이 많은 (= rich, n. wealth)", example: "wealthy noblemen" },
   { word: "nobleman",         pos: "n.",   meaning: "귀족 (noble 고귀한/귀족의)",      example: "wealthy noblemen wore wigs" },
   { word: "wig",              pos: "n.",   meaning: "가발",                          example: "large wigs of white hair" },
+  { word: "wear",             pos: "v.",   meaning: "(옷·가발·화장 등을) 입다·쓰다·착용하다 · 과거형 wore, 과거분사 worn (wear-wore-worn, 불규칙!)", example: "noblemen wore large wigs" },
   { word: "attractive",       pos: "a.",   meaning: "매력적인, 마음을 끄는 (v. attract 끌다)", example: "to make themselves attractive" },
   { word: "throughout",       pos: "prep.", meaning: "~의 전역에 걸쳐; ~내내",         example: "in cultures throughout the world" },
   { word: "go to extreme lengths", pos: "phr.", meaning: "극단적인 노력을 하다, 무슨 짓이든 하다", example: "People have gone to extreme lengths to achieve beauty." },
@@ -3159,6 +3160,440 @@ const ANALYSIS = {
       `💡 <b>흐름:</b> 2-33의 '정신적 건강도 필요'를 <b>전문가(스포츠 심리학자) 인용</b>으로 뒷받침 — "그들은 (그래야) 한다"며 짧게 못박음. 다음 문장에서 그 이유를 설명.<br><br>` +
       `📝 <b>해석:</b> "'그들은 (반드시) 그래야 합니다'라고 미국 올림픽 트레이닝 센터의 스포츠 심리학자 숀 매캔은 말한다."`,
     trans: "\"그들은 (반드시) 그래야 합니다\"라고 미국 올림픽 트레이닝 센터의 스포츠 심리학자 숀 매캔이 말한다.",
+  },
+
+  // 지문 3 · 1번째 문장: The search for beauty spans centuries and continents.
+  "3-0": {
+    form: "3형식 (S + V + O)",
+    tense: "현재 (일반적 사실·진리)",
+    chips: [
+      ["주어(S)·핵심명사", "The search"],
+      ["후치수식·전치사구", "for beauty"],
+      ["동사(V)·타동사", "spans"],
+      ["목적어(O)·병렬", "centuries and continents"],
+    ],
+    structure:
+      `뼈대: <b>The search(S) + spans(V) + centuries and continents(O)</b> 의 <b>3형식</b>. 주어의 핵심명사는 <b>search</b>(단수)이고 for beauty는 그 뒤를 꾸미는 수식어일 뿐 → 수일치·해석의 기준을 <b>search</b>로 잡는 게 포인트.<br><br>` +
+      `① <b>The search</b> (주어·핵심명사) — 왜 <b>the</b>인가? → 막연한 아무 탐구가 아니라 <b>뒤의 for beauty로 "아름다움을 향한 <u>바로 그</u> 탐구"</b>로 대상이 한정되므로 <b>정관사 the</b>. <span class="wikilink" onclick="gotoGrammar('articles','ar-the')">📐 정관사 the(한정·특정) 자세히 →</span><br>` +
+      `② <b>for beauty</b> (전치사구·후치수식) — <b>search와 짝을 이루는 for</b>: <b>search for ~</b> = "~을 찾다·추구하다". 여기서 for는 <b>대상·목표를 가리키는 for</b>("~을 향한"). 이 전치사구가 <b>The search를 뒤에서 수식</b>(후치수식)해 "아름다움을 향한 추구".<br>` +
+      `&nbsp;&nbsp;• 🚨 <b>함정:</b> for의 목적어 <b>beauty</b>가 주어처럼 보여도 <b>진짜 주어(head)는 search</b>. 동사 수일치는 beauty가 아니라 <b>search</b>에 맞춤.<br>` +
+      `③ <b>spans</b> (동사·타동사) — 왜 span이 아니라 <b>spans(-s)</b>인가? → 핵심주어 <b>The search가 3인칭 단수</b>라 현재형에 <b>-s</b>. <b>span</b>은 "~에 걸치다·아우르다"라는 <b>타동사</b>라서 바로 뒤에 <b>목적어</b>가 옴 → 그래서 3형식. (span over ❌ — 전치사 없이 바로 목적어)<br>` +
+      `④ <b>centuries and continents</b> (목적어·병렬) — <b>A and B</b>로 명사 둘을 대등하게 나열(둘 다 <b>무관사 복수</b>). <b>centuries</b>(세기=시간)와 <b>continents</b>(대륙=공간)를 나란히 놓아 "<b>시간과 공간을 통틀어</b>"라는 뜻을 완성. 특정 세기·대륙이 아니라 '일반적으로 여러 ~'이라 무관사 복수(총칭).<br>` +
+      `&nbsp;&nbsp;• 💡 <b>c-c</b>로 소리를 맞춘 두운(<b>c</b>enturies and <b>c</b>ontinents)까지 있어 리듬감 있게 읽히는 문장.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('articles','ar-zero')">📐 무관사(총칭 복수) 자세히 →</span> <span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">🔗 A and B 병렬(같은 급) 자세히 →</span><br><br>` +
+      `📝 <b>해석:</b> "아름다움을 향한 추구는 <b>여러 세기와 여러 대륙에 걸쳐 있다</b>." — 글 전체의 <b>도입 선언문</b>: 아름다움 추구가 <b>시대·지역을 가리지 않는 보편적 현상</b>임을 못박고, 이어질 역사·문화별 사례(이집트·마야·프랑스…)의 문을 엶.`,
+    trans: "아름다움을 향한 추구는 여러 세기와 여러 대륙에 걸쳐 있다.",
+  },
+
+  // 지문 3 · 2번째 문장: Paintings of Egyptians dating back over 4,000 years show both men and women painting their nails and wearing makeup.
+  "3-1": {
+    form: "3형식 (S + V + O) · 현재분사 후치수식 · show + O + 현재분사(~하는 모습을 보여주다) · both A and B",
+    tense: "현재 (일반적 사실)",
+    chips: [
+      ["주어(S)·핵심명사", "Paintings"],
+      ["후치수식·전치사구", "of Egyptians"],
+      ["후치수식·현재분사구", "dating back over 4,000 years"],
+      ["동사(V)·타동사", "show"],
+      ["목적어(O)·상관접속사", "both men and women"],
+      ["목적격보어·현재분사구(병렬)", "painting their nails and wearing makeup"],
+    ],
+    structure:
+      `뼈대: <b>Paintings(S) + show(V) + both men and women(O)</b> (+ 그들이 ~하는 모습 painting~). 주어 <b>Paintings</b>와 동사 <b>show</b> 사이에 <b>of구 + 분사구</b>가 잔뜩 끼어 주-동이 멀리 벌어진 문장 → <b>dating을 동사로 착각하면</b> 구조가 무너짐.<br><br>` +
+      `① <b>Paintings of Egyptians</b> (주어) — 핵심명사는 <b>Paintings</b>(복수). <b>of Egyptians</b>는 "<b>이집트인을 그린</b> 그림들"로, 그림에 <b>담긴 대상</b>을 밝히는 <b>내용·대상의 of</b>. <span class="wikilink" onclick="gotoGrammar('of-types','of-content')">🧬 내용의 of(~을 담은) 자세히 →</span><br>` +
+      `② <b>dating back over 4,000 years</b> (현재분사구·후치수식) — 핵심! <b>Paintings를 뒤에서 꾸미는</b> 분사구.<br>` +
+      `&nbsp;&nbsp;• 원래 <b>Paintings <u>which date back</u> over 4,000 years</b>에서 <b>[관계대명사 which + 동사]를 현재분사로 축약</b>한 형태. (date는 be동사가 아니라 일반동사라 which를 빼고 <b>date→dating</b>으로 바꿈)<br>` +
+      `&nbsp;&nbsp;• 왜 dated가 아니라 <b>dating(현재분사)</b>인가? → 그림이 스스로 '<b>거슬러 올라가는</b>' <b>능동</b>이라 현재분사. <b>date back (to) ~</b> = "~까지 거슬러 올라가다". <b>over 4,000 years</b> = "4천 년도 <b>더</b> 전으로"(over=이상).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('participle-postmod','pp-omit')">✂️ (관계사+동사)→분사 축약 자세히 →</span> <span class="wikilink" onclick="gotoGrammar('participle-postmod','pp-active-passive')">🔑 현재분사 vs 과거분사 자세히 →</span><br>` +
+      `③ <b>show</b> (동사·타동사) — 🚨 왜 shows가 아니라 <b>show</b>인가? → 핵심주어 <b>Paintings가 복수</b>라 동사도 <b>-s 없이 show</b>. 바로 앞의 years·분사(dating)에 홀리지 말고 <b>멀리 있는 head명사 Paintings</b>에 수일치. 또한 <b>dating이 아니라 show가 진짜 본동사</b>임을 잡아야 함.<br>` +
+      `④ <b>both men and women</b> (목적어·상관접속사) — <b>both A and B</b> = "A와 B <b>둘 다</b>". men·women을 같은 급(복수명사)으로 병렬해 show의 목적어가 됨. <span class="wikilink" onclick="gotoGrammar('correlative','cc-list')">🔗 both A and B(상관접속사) 자세히 →</span><br>` +
+      `⑤ <b>painting their nails and wearing makeup</b> (현재분사구·목적어 보충) — <b>men and women을 꾸며</b> "그들이 <b>~하고 있는 (모습)</b>"을 나타냄. <b>show + 목적어 + 현재분사</b> = "…가 ~하는 것을 보여주다"(지각동사류의 5형식과 같은 꼴).<br>` +
+      `&nbsp;&nbsp;• 왜 현재분사(-ing)인가? → 남녀가 <b>직접 칠하고 화장하는 능동</b> 동작이라 현재분사. <b>painting ~ and wearing ~</b> 두 현재분사를 <b>A and B로 병렬</b>. <b>their</b>=men and women, <b>makeup</b>은 불가산이라 무관사.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('participle-postmod','pp-active-passive')">🔑 능동이라 현재분사 자세히 →</span> <span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">🔗 A and B 병렬(같은 급) 자세히 →</span><br><br>` +
+      `📝 <b>해석:</b> "4,000년도 더 전으로 거슬러 올라가는 <b>이집트인들의 그림들은</b> 남자와 여자 <b>모두가</b> 손톱을 칠하고 화장을 하는 <b>모습을 보여준다</b>." — 1번 문장의 '보편성' 주장을 뒷받침하는 <b>첫 번째 역사적 증거</b>: 이미 <b>고대 이집트</b>에서 남녀 공통으로 몸을 꾸몄음을 그림이 증언.`,
+    trans: "4,000년도 더 전으로 거슬러 올라가는 이집트인들의 그림은 남자와 여자 모두가 손톱을 칠하고 화장을 하는 모습을 보여준다.",
+  },
+
+  // 지문 3 · 3번째 문장: On the other side of the globe, the ancient Maya of Central America considered crossed eyes "beautiful," and hung little balls between children's eyes to develop this look.
+  "3-2": {
+    form: "5형식(consider A B) + 3형식(hung ~)의 병렬 · 한 주어에 동사 둘(V₁ and V₂)",
+    tense: "과거 (역사적 사실)",
+    chips: [
+      ["수식어(M)·부사구", "On the other side of the globe"],
+      ["주어(S)", "the ancient Maya of Central America"],
+      ["동사①(V)·5형식", "considered"],
+      ["목적어(O)·과거분사수식", "crossed eyes"],
+      ["목적격보어(OC)·형용사", "\"beautiful\""],
+      ["접속·병렬", "and"],
+      ["동사②(V)·타동사", "hung"],
+      ["목적어(O)", "little balls"],
+      ["수식어(M)·전치사구", "between children's eyes"],
+      ["수식어(M)·to부정사(목적)", "to develop this look"],
+    ],
+    structure:
+      `뼈대: <b>the Maya(S)</b> + [<b>considered</b> crossed eyes "beautiful"](5형식) <b>and</b> [<b>hung</b> little balls ~](3형식). <b>한 주어가 과거동사 둘(considered / hung)을 and로 병렬</b>한 문장 → 동사가 두 개임을 놓치면 구조가 꼬임.<br><br>` +
+      `① <b>On the other side of the globe</b> (부사구·도입) — "지구 반대편에서는". 앞 문장(3-1, 이집트)과 <b>지리적으로 대조</b>하며 화제를 마야로 옮기는 <b>담화표지</b>. 콤마로 분리된 수식어라 성분 계산 제외.<br>` +
+      `② <b>the ancient Maya of Central America</b> (주어) — <b>the + 형용사 ancient + 민족명 Maya</b>. 특정 민족이라 <b>the</b>. <b>of Central America</b>는 "중앙아메리카의(에 살던)" <b>소속·출신의 of</b>가 Maya를 뒤에서 수식. Maya는 <b>민족 집합명사</b>라 복수 취급(과거동사라 수는 안 드러남). <span class="wikilink" onclick="gotoGrammar('articles','ar-the')">📐 정관사 the(민족·한정) 자세히 →</span> <span class="wikilink" onclick="gotoGrammar('of-types','of-possess')">🧬 소속·소유의 of 자세히 →</span><br>` +
+      `③ <b>considered crossed eyes "beautiful"</b> (핵심 · <b>5형식 SVOC</b>) — <b>consider A B</b> = "A를 B라고 여기다". <b>A=crossed eyes</b>(목적어), <b>B="beautiful"</b>(목적격보어·형용사) → "사시(안으로 몰린 눈)를 <b>아름답다고</b> 여겼다". 앞서 배운 <b>call A B</b>와 똑같은 5형식 구조.<br>` +
+      `&nbsp;&nbsp;• 왜 부사 beautifully가 아니라 <b>beautiful(형용사)</b>인가? → B는 <b>목적어(eyes)를 설명</b>하는 보어 자리라 <b>형용사</b>. (eyes = beautiful 등호 관계)<br>` +
+      `&nbsp;&nbsp;• <b>crossed eyes</b> — cross(교차시키다)의 <b>과거분사 crossed</b>가 형용사로 eyes를 앞에서 수식 → "안으로 몰린·교차된 눈"(눈이 '몰려진' <b>수동</b>이라 p.p.). <span class="wikilink" onclick="gotoGrammar('relative-pronoun','rp-what')">🔑 5형식(call/consider A B) 자세히 →</span> <span class="wikilink" onclick="gotoGrammar('participle-postmod','pp-active-passive')">🔑 과거분사=수동 자세히 →</span><br>` +
+      `④ <b>and hung little balls</b> (두 번째 동사·3형식·병렬) — <b>considered</b>와 <b>hung</b> 둘 다 <b>과거</b>라 and로 대등 <b>병렬</b>. <b>hung</b> = hang(매달다)의 과거(<b>hung-hung</b>). little balls(작은 공들)가 목적어, <b>between children's eyes</b>(두 눈 사이에)는 전치사구 수식.<br>` +
+      `&nbsp;&nbsp;• 🚨 <b>hang 과거형 주의:</b> "매달다"는 <b>hung</b>, "(사람을) 교수형에 처하다"는 <b>hanged</b> → 여기선 공을 '매단' 것이라 <b>hung</b>이 정답. <span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">🔗 and 병렬(같은 급) 자세히 →</span><br>` +
+      `⑤ <b>to develop this look</b> (to부정사·부사적 목적) — "<b>이런 모습을 만들어 내기 위해</b>". develop = (특징을) 발달시키다·만들어 내다. <b>this look</b> = 앞의 '사시' 모습. 없어도 문장이 성립하는 <b>수식어</b>('왜 매달았나?'에 답 → 목적). <span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-adverb')">🎯 to부정사 부사적 용법(목적) 자세히 →</span><br><br>` +
+      `📝 <b>해석:</b> "지구 반대편에서는, 중앙아메리카의 고대 마야인들이 <b>사시(안으로 몰린 눈)를 '아름답다'고 여겨</b>, 이런 모습을 만들려고 아이들의 두 눈 사이에 작은 공을 매달아 놓았다." — 이집트(3-1)에 이은 <b>두 번째 사례</b>: 미의 기준이 문화마다 <b>극단적으로 다름</b>을 보여주는 증거.`,
+    trans: "지구 반대편에서는, 중앙아메리카의 고대 마야인들이 사시(안으로 몰린 눈)를 '아름답다'고 여겨, 이런 모습을 만들려고 아이들의 두 눈 사이에 작은 공을 매달아 놓았다.",
+  },
+
+  // 지문 3 · 4번째 문장: In 18th-century France, wealthy noblemen wore large wigs of long white hair to make themselves attractive.
+  "3-3": {
+    form: "3형식 (S + V + O) · to부정사(목적) + make A B(5형식)",
+    tense: "과거 (역사적 사실)",
+    chips: [
+      ["수식어(M)·부사구", "In 18th-century France"],
+      ["주어(S)", "wealthy noblemen"],
+      ["동사(V)·타동사", "wore"],
+      ["목적어(O)·핵심명사", "large wigs"],
+      ["후치수식·전치사구", "of long white hair"],
+      ["수식어(M)·to부정사(목적)", "to make themselves attractive"],
+    ],
+    structure:
+      `뼈대: <b>wealthy noblemen(S) + wore(V) + large wigs(O)</b> 의 <b>3형식</b>. 뒤의 <b>to make ~</b>는 "왜 썼는지" 목적을 더하는 수식어.<br><br>` +
+      `① <b>In 18th-century France</b> (부사구·도입) — "18세기 프랑스에서(는)". 3-1(이집트)·3-2(마야)에 이은 <b>세 번째 시대·지역 사례</b>.<br>` +
+      `&nbsp;&nbsp;• 🚨 왜 18th-<b>centuries</b>가 아니라 18th-<b>century</b>인가? → <b>하이픈으로 묶인 복합형용사</b>(18th-century)가 France를 꾸밀 때, 그 속 명사는 <b>단수 유지</b>. (a <u>five-year</u>-old boy처럼 hyphen 안 명사는 복수 -s를 안 붙임)<br>` +
+      `② <b>wealthy noblemen</b> (주어) — wealthy(부유한)가 noblemen을 수식. <b>noblemen</b>은 nobleman의 <b>복수</b>(man→men, 불규칙). 무관사 복수 = 총칭("(당시) 부유한 귀족들").<br>` +
+      `③ <b>wore</b> (동사·과거) — 핵심! <b>wear(입다·쓰다·착용하다)의 과거형은 wore</b> (<b>wear-wore-worn</b>, 불규칙!). weared ❌. "가발을 <b>썼다</b>". (단어카드: wear)<br>` +
+      `④ <b>large wigs of long white hair</b> (목적어) — 핵심명사 <b>wigs</b>. <b>of long white hair</b> = "<b>긴 백발로 된</b>" <b>재료·구성의 of</b>가 wigs를 뒤에서 수식. long·white 두 형용사가 hair를 수식(어순: 길이 <b>long</b> → 색 <b>white</b>). <span class="wikilink" onclick="gotoGrammar('of-types','of-content')">🧬 구성·내용의 of(~로 된) 자세히 →</span><br>` +
+      `⑤ <b>to make themselves attractive</b> (to부정사·부사적 목적 + <b>make 5형식</b>) — "<b>스스로를 매력적으로 만들기 위해</b>".<br>` +
+      `&nbsp;&nbsp;• <b>to make</b>: 부사적 용법(<b>목적</b>, "~하기 위해"). '왜 가발을 썼나?'에 답. <span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-adverb')">🎯 to부정사 부사적 용법(목적) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;• <b>make + O + 형용사 = 5형식 사역</b>("O를 ~한 상태로 만들다"): make <b>themselves</b>(O) <b>attractive</b>(형용사 보어). 부사 attractively ❌ (보어는 형용사).<br>` +
+      `&nbsp;&nbsp;• 🚨 왜 them이 아니라 <b>themselves</b>(재귀대명사)인가? → 매력적으로 만드는 <b>대상이 주어(noblemen) 자신</b>이라, 목적어를 <b>재귀대명사</b>로. (make them attractive면 '<b>남을</b> 매력적으로'가 되어 뜻이 달라짐)<br><br>` +
+      `📝 <b>해석:</b> "18세기 프랑스에서는, 부유한 귀족들이 <b>스스로를 매력적으로 보이게 하려고</b> 긴 백발로 된 커다란 가발을 썼다." — 세 번째 사례로 "<b>미의 추구는 시대·지역을 가리지 않는다</b>"(3-0)는 주제를 거듭 강화 → 다음 문장에서 "오늘날에도"로 이어짐.`,
+    trans: "18세기 프랑스에서는, 부유한 귀족들이 스스로를 매력적으로 보이게 하려고 긴 백발로 된 커다란 가발을 썼다.",
+  },
+
+  // 지문 3 · 5번째 문장: In cultures throughout the world, people have gone to extreme lengths to achieve beauty.
+  "3-4": {
+    form: "1형식 (S + V + M) · 현재완료 · go to extreme lengths(관용구)",
+    tense: "현재완료 (계속·경험: 지금까지 죽 ~해 왔다)",
+    chips: [
+      ["수식어(M)·부사구", "In cultures throughout the world"],
+      ["주어(S)", "people"],
+      ["동사(V)·현재완료", "have gone"],
+      ["수식어(M)·관용구", "to extreme lengths"],
+      ["수식어(M)·to부정사(목적)", "to achieve beauty"],
+    ],
+    structure:
+      `뼈대: <b>people(S) + have gone(V)</b> 의 <b>1형식</b>. go는 자동사라 뒤의 to구는 <b>전부 수식어</b> → 뼈대는 "사람들은 (~해) 왔다"뿐.<br><br>` +
+      `① <b>In cultures throughout the world</b> (부사구·도입) — "전 세계 문화권에서(는)". <b>throughout the world</b>(전 세계에 걸쳐)가 cultures를 뒤에서 수식(후치). 앞의 개별 사례(이집트·마야·프랑스)를 "<b>어디서나</b>"로 일반화하는 도입.<br>` +
+      `② <b>people</b> (주어·무관사 복수) — 특정인이 아니라 '(일반적으로) 사람들'이라 무관사 복수(총칭). <span class="wikilink" onclick="gotoGrammar('articles','ar-zero')">📐 무관사(총칭 복수) 자세히 →</span><br>` +
+      `③ <b>have gone</b> (핵심 · <b>현재완료</b>) — <b>have + 과거분사(gone)</b>. 왜 과거 went가 아니라 <b>have gone</b>인가? → 특정 시점의 한 사건이 아니라 <b>역사적으로 지금까지 죽 그래 왔다</b>는 <b>지속·누적(계속·경험)</b>을 나타내려 현재완료. go-went-<b>gone</b>(불규칙). 주어 people(복수)라 has가 아니라 <b>have</b>. <span class="wikilink" onclick="gotoGrammar('present-perfect','pf-uses')">⏳ 현재완료 용법(계속·경험) 자세히 →</span><br>` +
+      `④ <b>to extreme lengths</b> (관용구) — <b>go to (great/extreme) lengths (to do)</b> = "~하려고 <b>극단적인 노력을 하다</b>, 무슨 짓이든 하다". 여기서 <b>lengths</b>(복수)는 '(노력의) 정도·범위', to는 도달의 전치사. (단어카드: go to extreme lengths)<br>` +
+      `⑤ <b>to achieve beauty</b> (to부정사·부사적 목적) — "<b>아름다움을 이루기 위해</b>". '왜 그런 극단적 노력을?'에 답 → <b>목적</b>. <span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-adverb')">🎯 to부정사 부사적 용법(목적) 자세히 →</span><br><br>` +
+      `📝 <b>해석:</b> "전 세계 문화권에서, 사람들은 <b>아름다움을 이루기 위해 극단적인 노력도 마다하지 않아 왔다</b>." — 앞의 세 사례(이집트·마야·프랑스)를 "<b>전 세계·모든 문화</b>"로 묶어 <b>일반화·요약</b>하는 문장.`,
+    trans: "전 세계 문화권에서, 사람들은 아름다움을 이루기 위해 극단적인 노력도 마다하지 않아 왔다.",
+  },
+
+  // 지문 3 · 6번째 문장: Today, people continue to devote a lot of time and money to their appearance.
+  "3-5": {
+    form: "3형식 (S + V + O) · continue to do(to부정사 목적어) · devote A to B",
+    tense: "현재 (Today · 오늘날의 지속)",
+    chips: [
+      ["수식어(M)·부사", "Today"],
+      ["주어(S)", "people"],
+      ["동사(V)", "continue"],
+      ["목적어(O)·to부정사", "to devote"],
+      ["devote의 목적어(A)·병렬", "a lot of time and money"],
+      ["전치사 to + 명사(B)", "to their appearance"],
+    ],
+    structure:
+      `뼈대: <b>people(S) + continue(V) + to devote ~(O)</b>. <b>continue to do</b> = "계속 ~하다".<br><br>` +
+      `① <b>Today</b> (부사·도입) — "오늘날(에는)". 앞 문장(3-4)의 <b>현재완료(과거~지금까지)</b>를 이어받아 '<b>지금도 여전히</b>'로 <b>현재</b>에 초점을 옮김(시제가 현재로 넘어옴).<br>` +
+      `② <b>people continue</b> (주어 + 동사) — continue: "계속 ~하다". 왜 continues가 아니라 <b>continue</b>인가? → 주어 <b>people(복수)</b>라 -s 없음.<br>` +
+      `③ <b>to devote</b> (continue의 목적어 · to부정사 명사적 용법) — <b>continue to + 동사원형</b>: "계속 ~하다". to devote는 continue의 <b>목적어</b>(명사 자리라 명사적 용법). <span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-noun')">🎯 to부정사 명사적 용법(목적어) 자세히 →</span><br>` +
+      `④ <b>devote a lot of time and money</b> (devote A) — <b>devote A to B</b> = "A를 B에 <b>바치다·쏟다</b>". A(바치는 것) = a lot of time and money. <b>a lot of</b>는 <b>불가산·가산 모두</b> 수식 → time(불가산)·money(불가산)를 함께 받음. <b>time and money</b>는 A and B 병렬. <span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">🔗 A and B 병렬(같은 급) 자세히 →</span><br>` +
+      `⑤ ⭐⭐ <b>to their appearance</b> (핵심 함정 · <b>전치사 to</b>) — 🚨 여기 <b>to는 to부정사가 아니라 전치사!</b> <b>devote A <u>to</u> B</b>의 to라서 뒤에 <b>명사(their appearance)</b>가 옴. <b>한 문장에 to가 두 종류</b>: to devote(to<b>부정사</b>) ↔ to their appearance(<b>전치사</b>)! → devote to <b>appear</b> ❌(동사원형 불가), devote to <b>명사/-ing</b> ⭕. (같은 부류: look forward <u>to</u> -ing, be used <u>to</u> -ing) their=people.<br><br>` +
+      `📝 <b>해석:</b> "오늘날, 사람들은 자신의 외모에 <b>여전히 많은 시간과 돈을 쏟는다</b>." — 과거의 사례들(3-4 현재완료)이 <b>오늘날까지 이어짐</b>을 못박고, 다음 문장에서 이를 <b>구체적 통계</b>로 뒷받침.`,
+    trans: "오늘날, 사람들은 자신의 외모에 여전히 많은 시간과 돈을 쏟는다.",
+  },
+
+  // 지문 3 · 7번째 문장: According to a recent report, one out of three consumers globally say they are spending more money on beauty and health-care products than ever before.
+  "3-6": {
+    form: "3형식 (S + V + O절) · 수일치(one out of three ~ say) · say (that) 목적어절 · 현재진행 · 비교급(more ~ than ever before)",
+    tense: "현재 (say) · 현재진행 (are spending)",
+    chips: [
+      ["수식어(M)·부사구(출처)", "According to a recent report"],
+      ["주어(S)·부분표현", "one out of three consumers"],
+      ["부사", "globally"],
+      ["동사(V)·복수", "say"],
+      ["목적어(O)·that절(that 생략)", "(that) they are spending ..."],
+      ["현재진행", "are spending"],
+      ["비교급", "more money ... than ever before"],
+    ],
+    structure:
+      `뼈대: <b>one out of three consumers(S) + say(V) + [they are spending ~](O절)</b>. say 뒤에 <b>접속사 that이 생략된 명사절</b>이 목적어로 통째로 들어감.<br><br>` +
+      `① <b>According to a recent report</b> (부사구·출처) — "최근 한 보고서에 따르면". 정보의 <b>출처</b>를 밝히는 도입 수식어. 처음 언급이라 <b>a</b> recent report.<br>` +
+      `② <b>one out of three consumers</b> (주어·부분표현) — "소비자 <b>3명 중 1명</b>". <b>one out of three</b> = "셋 중 하나"(비율). <b>globally</b>(전 세계적으로)가 붙어 범위를 넓힘.<br>` +
+      `③ ⭐⭐ <b>say</b> (핵심 · <b>수일치</b>) — 🚨 왜 단수 says가 아니라 <b>복수 say</b>인가? → 표면상 head는 <b>one</b>(단수)이지만, 실제로 말하는 주체는 <b>'그 소비자들'(three consumers, 복수)</b> → 글쓴이가 <b>내용상 복수</b>에 맞춰 say를 씀(<b>내용 일치</b>). ('one out of three ~'류는 뒤 복수명사에 맞춰 복수 동사를 자주 씀) <span class="wikilink" onclick="gotoGrammar('of-types','of-partitive')">🧬 부분표현 + 수일치(내용 일치) 자세히 →</span><br>` +
+      `④ <b>(that) they are spending ...</b> (say의 목적어절) — say 뒤에 <b>접속사 that이 생략</b>된 명사절이 목적어. they = one out of three consumers.<br>` +
+      `&nbsp;&nbsp;• <b>are spending</b> (현재진행) — be + -ing = "요즘 ~하고 있다". 왜 단순현재 spend가 아니라 진행형? → '<b>요즘 점점 더</b> 쓰고 있다'는 <b>진행 중인 변화</b>를 강조하려고.<br>` +
+      `⑤ <b>more money ... than ever before</b> (비교급) — <b>more A than B</b> 비교급. <b>than ever before</b> = "<b>그 어느 때보다도</b> (더)". <b>spend money on ~</b> = "~에 돈을 쓰다"(on=대상). beauty and health-care products = 미용·건강관리 제품(병렬). <span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">🔗 A and B 병렬(같은 급) 자세히 →</span><br><br>` +
+      `📝 <b>해석:</b> "최근 한 보고서에 따르면, 전 세계 소비자 <b>3명 중 1명</b>은 미용·건강관리 제품에 <b>그 어느 때보다 더</b> 많은 돈을 쓰고 있다고 말한다." — 3-5의 '외모에 시간·돈을 쏟는다'를 <b>구체적 통계</b>로 뒷받침.`,
+    trans: "최근 한 보고서에 따르면, 전 세계 소비자 3명 중 1명은 미용·건강관리 제품에 그 어느 때보다 더 많은 돈을 쓰고 있다고 말한다.",
+  },
+
+  // 지문 3 · 8번째 문장: Worldwide, sales of makeup, dieting, hair- and skin-care products—as well as gym memberships and cosmetic surgery—generate billions of dollars every year.
+  "3-7": {
+    form: "3형식 (S + V + O) · 대시(—…—) 삽입(as well as) · 주-동 원거리 · 수일치(head=sales)",
+    tense: "현재 (일반적 사실·통계)",
+    chips: [
+      ["수식어(M)·부사", "Worldwide"],
+      ["주어(S)·핵심명사", "sales"],
+      ["후치수식·전치사구(나열)", "of makeup, dieting, hair- and skin-care products"],
+      ["삽입구(대시)·as well as", "—as well as gym memberships and cosmetic surgery—"],
+      ["동사(V)·복수", "generate"],
+      ["목적어(O)", "billions of dollars"],
+      ["수식어(M)·부사구", "every year"],
+    ],
+    structure:
+      `뼈대: <b>sales(S) + generate(V) + billions of dollars(O)</b> 의 <b>3형식</b>. 주어 head <b>sales</b>와 동사 <b>generate</b> 사이에 <b>of 나열 + 대시 삽입구</b>가 잔뜩 끼어 <b>주-동이 멀리 벌어진</b> 문장 → 뼈대부터 잡는 게 핵심.<br><br>` +
+      `① <b>Worldwide</b> (부사·도입) — "전 세계적으로". 문장 전체를 꾸미는 부사.<br>` +
+      `② <b>sales of makeup, dieting, hair- and skin-care products</b> (주어) — 핵심명사 <b>sales</b>(복수). <b>of ~</b> = "~<b>의</b> 판매(매출)". of 뒤에 makeup·dieting·hair-care·skin-care products를 <b>콤마로 나열</b>.<br>` +
+      `&nbsp;&nbsp;• ⭐ <b>hair- and skin-care</b> (매달린 하이픈) — 🚨 원래 <b>hair-care and skin-care</b>인데, 반복되는 <b>-care를 앞쪽에서 생략</b>하고 하이픈만 남긴 <b>suspended hyphen(매달린 하이픈)</b>. "모발 및 피부 관리 제품"을 짧게 쓴 것.<br>` +
+      `③ ⭐ <b>—as well as gym memberships and cosmetic surgery—</b> (대시 삽입구) — <b>대시 —…—</b>로 확 튀게 끼워 넣은 부연. <b>B as well as A</b> = "A뿐 아니라 B도" → "(위 제품들)<b>뿐 아니라</b> 헬스장 회원권·성형수술<b>도</b>".<br>` +
+      `&nbsp;&nbsp;• 🚨 <b>수일치 함정:</b> 대시로 <b>삽입된 as well as 부분은 진짜 주어가 아님</b> → 동사는 <b>핵심주어 sales(복수)</b>에 맞춤. (삽입구가 아무리 단수여도 동사 수를 좌우 못 함) <span class="wikilink" onclick="gotoGrammar('correlative','cc-list')">🔗 B as well as A(상관접속사) 자세히 →</span> <span class="wikilink" onclick="gotoGrammar('punctuation')">✒️ 대시(—…—) 삽입 자세히 →</span><br>` +
+      `④ <b>generate</b> (동사·복수) — 🚨 왜 generates가 아니라 <b>generate</b>인가? → 멀리 있는 head <b>sales가 복수</b>라 -s 없음. 바로 앞의 단수(surgery)에 홀리지 말 것! generate = "(수익을) 창출하다·벌어들이다".<br>` +
+      `⑤ <b>billions of dollars every year</b> (목적어 + 부사구) — <b>billions of</b> = "수십억의". <b>every year</b> = 매년(부사구, "해마다").<br><br>` +
+      `📝 <b>해석:</b> "전 세계적으로, 화장품·다이어트·모발 및 피부 관리 제품의 판매는—헬스장 회원권과 성형수술은 말할 것도 없고—<b>매년 수십억 달러를 벌어들인다</b>." — 3-6의 통계에 이어 <b>시장 규모(연 수십억 달러)</b>로 미용 산업이 거대함을 못박아, 다음 'Beauty is power' 논의로 넘어가는 발판.`,
+    trans: "전 세계적으로, 화장품·다이어트·모발 및 피부 관리 제품의 판매는—헬스장 회원권과 성형수술은 말할 것도 없고—매년 수십억 달러를 벌어들인다.",
+  },
+
+  // 지문 3 · 9번째 문장: And there is at least one good reason for the desire to be attractive: Beauty is power.
+  "3-8": {
+    form: "There is 구문(유도부사 there) + 콜론(:) 설명 · 콜론 뒤: 2형식(Beauty is power)",
+    tense: "현재 (일반적 사실·진리)",
+    chips: [
+      ["접속사", "And"],
+      ["유도부사 there + be", "there is"],
+      ["진주어(S)·핵심명사", "at least one good reason"],
+      ["후치수식·전치사구", "for the desire"],
+      ["to부정사·형용사적(desire 수식)", "to be attractive"],
+      ["콜론(:)·설명 공개", ":"],
+      ["보충문(2형식)", "Beauty is power"],
+    ],
+    structure:
+      `뼈대: <b>there is + one good reason</b>(There is 구문) <b>:</b> <b>Beauty(S) + is(V) + power(C)</b>(2형식). 콜론 앞은 "이유가 하나 있다", 콜론 뒤는 "그게 뭐냐면 → 아름다움은 힘이다".<br><br>` +
+      `① <b>And</b> (문두 접속사) — 앞 문장(미용 산업 규모)에 이어 "그리고(게다가)". 글의 흐름을 잇는 연결어.<br>` +
+      `② <b>there is</b> (There is 구문 · <b>유도부사 there</b>) — 🚨 여기 there는 "거기"라는 <b>장소 뜻이 아님</b>! 진짜 주어를 <b>뒤로 미루는</b> <b>유도부사</b>로 "~이 있다". <b>be동사는 뒤의 진주어에 수일치</b> → 진주어 one good reason(단수)라 <b>is</b>. (진주어가 복수면 there are)<br>` +
+      `③ <b>at least one good reason</b> (진주어) — 유도부사 there 뒤에 온 <b>진짜 주어</b>. <b>at least</b> = "적어도". one good reason = "하나의 그럴 만한 이유".<br>` +
+      `④ <b>for the desire</b> (전치사구·후치수식) — <b>reason for ~</b> = "~에 대한 이유". for가 reason을 뒤에서 수식. <b>the</b> desire: 뒤 to be attractive로 한정돼 정관사. <span class="wikilink" onclick="gotoGrammar('articles','ar-the')">📐 정관사 the(한정) 자세히 →</span><br>` +
+      `⑤ <b>to be attractive</b> (to부정사·형용사적 용법) — <b>the desire를 뒤에서 수식</b>. <b>desire to do</b> = "~하고자 하는 욕구". 명사 뒤에 붙어 꾸미니 <b>형용사적 용법</b>. <span class="wikilink" onclick="gotoGrammar('to-infinitive')">🎯 to부정사 형용사적 용법(명사 수식) 자세히 →</span><br>` +
+      `⑥ ⭐ <b>:</b> (콜론) — 앞 내용의 <b>정답·구체적 설명을 공개</b>. "그 이유가 뭐냐면 → (짜잔)". 콜론 <b>앞=뒤 등호(=)</b> 관계. <span class="wikilink" onclick="gotoGrammar('punctuation','pn-colon')">✒️ 콜론(:) 자세히 →</span><br>` +
+      `⑦ <b>Beauty is power</b> (2형식·은유) — <b>Beauty(S) + is(V) + power(C)</b>. 둘 다 <b>추상명사라 무관사</b>. "아름다움 = 힘"이라는 <b>은유</b>로 짧고 강하게 단정. <span class="wikilink" onclick="gotoGrammar('articles','ar-zero')">📐 추상명사 무관사 자세히 →</span><br><br>` +
+      `📝 <b>해석:</b> "그리고 매력적이고자 하는 그 욕구에는 <b>적어도 한 가지 그럴 만한 이유가 있다: 아름다움은 곧 힘이다</b>." — 지금까지의 '사람들이 미에 집착한다'를 받아, 그 <b>근본 이유("아름다움은 힘")를 콜론으로 선언</b> → 이후 그 근거(돈·주목·호감)를 나열.`,
+    trans: "그리고 매력적이고자 하는 그 욕구에는 적어도 한 가지 그럴 만한 이유가 있다: 아름다움은 곧 힘이다.",
+  },
+
+  // 지문 3 · 10번째 문장: Studies suggest that good-looking people make more money, get called on more often in class, and are perceived as friendlier.
+  "3-9": {
+    form: "3형식 (S + V + that절) · that절 안 동사 3개 병렬(능동+get수동+be수동) · 비교급",
+    tense: "현재 (일반적 사실·연구 결과)",
+    chips: [
+      ["주어(S)", "Studies"],
+      ["동사(V)", "suggest"],
+      ["목적어(O)·that절", "that good-looking people ..."],
+      ["that절 주어(S)", "good-looking people"],
+      ["병렬 동사①·능동", "make more money"],
+      ["병렬 동사②·get 수동태", "get called on more often in class"],
+      ["병렬 동사③·be 수동태", "are perceived as friendlier"],
+    ],
+    structure:
+      `뼈대: <b>Studies(S) + suggest(V) + [that ~](O절)</b>. that절 안에서 <b>good-looking people(S)</b>이 동사 <b>셋(make / get called on / are perceived)</b>을 <b>A, B, and C로 병렬</b>.<br><br>` +
+      `① <b>Studies suggest that ~</b> — <b>suggest that + 절</b> = "~임을 시사하다·보여주다". 주어 Studies(복수)라 -s 없이 suggest. that은 <b>명사절 접속사</b>(suggest의 목적어절을 이끎).<br>` +
+      `② <b>good-looking people</b> (that절의 주어) — <b>good-looking</b>: good + looking(현재분사형)을 하이픈으로 묶은 <b>복합형용사</b> "잘생긴·외모가 좋은"(3-3의 18th-century 하이픈과 같은 원리). people(복수)라 뒤 동사도 복수형.<br>` +
+      `③ ⭐ <b>세 동사(구)의 병렬</b> (A, B, and C) — 핵심! good-looking people이 하는(받는) 일 셋을 대등하게 나열:<br>` +
+      `&nbsp;&nbsp;ⓐ <b>make more money</b> (능동) — "돈을 더 많이 번다". more money = 비교급.<br>` +
+      `&nbsp;&nbsp;ⓑ <b>get called on more often in class</b> (<b>get 수동태</b>) — "수업에서 더 자주 <b>지목받는다</b>". <b>get + 과거분사(called on)</b> = 수동("~당하다/되다"), be동사 대신 <b>get을 쓴 구어적 수동태</b>. call on(지목하다)의 수동 → get called on(지목받다). more often = 비교급 부사.<br>` +
+      `&nbsp;&nbsp;ⓒ <b>are perceived as friendlier</b> (<b>be 수동태</b>) — "더 친근하게 <b>여겨진다</b>". <b>be perceived as ~</b> = "~로 인식되다"(perceive A as B의 수동). friendlier = friendly의 비교급(형용사).<br>` +
+      `&nbsp;&nbsp;• 🚨 능동(make) + 수동(get/are) 형태는 달라도 모두 '<b>동사구</b>'로서 대등 병렬. <span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">🔗 A, B, and C 병렬 자세히 →</span> <span class="wikilink" onclick="gotoGrammar('passive-voice','pv-form')">🔄 수동태 be/get + p.p. 자세히 →</span><br><br>` +
+      `📝 <b>해석:</b> "여러 연구는 <b>외모가 좋은 사람들이 돈을 더 많이 벌고, 수업에서 더 자주 지목받으며, 더 친근한 사람으로 여겨진다</b>는 것을 시사한다." — 3-8의 "Beauty is power"를 <b>세 가지 구체적 근거(돈↑·주목↑·호감↑)</b>로 뒷받침.`,
+    trans: "여러 연구는 외모가 좋은 사람들이 돈을 더 많이 벌고, 수업에서 더 자주 지목받으며, 더 친근한 사람으로 여겨진다는 것을 시사한다.",
+  },
+
+  // 지문 3 · 11번째 문장: But what exactly is beauty?
+  "3-10": {
+    form: "2형식 의문문 (의문사 what=보어 + be + 주어) · 도치",
+    tense: "현재",
+    chips: [
+      ["접속사", "But"],
+      ["의문사·보어(C)", "what"],
+      ["강조 부사", "exactly"],
+      ["동사(V)·be", "is"],
+      ["주어(S)", "beauty"],
+    ],
+    structure:
+      `뼈대: 평서문 <b>Beauty(S) + is(V) + what(C)</b>를 의문문으로 바꾼 것 → 의문사 <b>what(보어)</b>이 문두로 나가며 <b>be + 주어</b> 어순(도치): <b>What is beauty?</b><br><br>` +
+      `① <b>But</b> (문두 접속사) — 앞(아름다움이 힘이고 이득이 된다)과 <b>대조</b>: "그런데 (정작) ~". 화제를 '<b>아름다움의 정의</b>'로 전환하는 신호.<br>` +
+      `② ⭐ <b>what</b> (의문사·보어) — 🚨 핵심: 여기 what은 <b>주어가 아니라 보어(C)</b>! "아름다움은 <b>무엇</b>인가?"에서 '무엇'이 <b>Beauty를 설명하는 보어</b> 자리. 평서문으로 풀면 Beauty is <b>what</b> → 의문사라 맨 앞으로.<br>` +
+      `③ <b>exactly</b> (강조 부사) — "정확히 (도대체)". what을 강조해 "그래서 정확히 뭐냐?"라며 <b>본질을 추궁</b>하는 어감.<br>` +
+      `④ <b>is beauty</b> (도치: be동사 + 주어) — 의문사가 앞으로 빠지면서 <b>is(V) + beauty(S)</b>로 도치. <b>진짜 주어는 beauty</b>(추상명사·무관사).<br><br>` +
+      `📝 <b>해석:</b> "하지만 아름다움이란 <b>정확히 무엇일까?</b>" — 앞에서 '아름다움은 힘'이라 해놓고, 정작 "<b>그 아름다움이 정확히 무엇인가?</b>"라는 핵심 질문을 던지는 <b>전환점</b> → 다음 문장부터 '정의하기 어렵다'로 이어짐.`,
+    trans: "하지만 아름다움이란 정확히 무엇일까?",
+  },
+
+  // 지문 3 · 12번째 문장: Trying to define it is difficult, and yet we know it when we see it—or so we think.
+  "3-11": {
+    form: "동명사 주어(2형식) + and yet(역접) + 주절(3형식) + when 시간부사절 · 대시(—) 삽입",
+    tense: "현재",
+    chips: [
+      ["주어(S)·동명사구", "Trying to define it"],
+      ["동사(V)·be", "is"],
+      ["보어(C)·형용사", "difficult"],
+      ["접속(역접)", "and yet"],
+      ["주절(S+V+O)", "we know it"],
+      ["시간 부사절", "when we see it"],
+      ["대시 삽입·단서 달기", "—or so we think"],
+    ],
+    structure:
+      `뼈대: [<b>Trying to define it</b>](S·동명사) + <b>is</b>(V) + <b>difficult</b>(C) 의 2형식, <b>and yet</b> [we know it](주절) [when we see it](부사절). 마지막에 <b>대시로 살짝 뒤집는 단서</b>를 붙임.<br><br>` +
+      `① <b>Trying to define it</b> (주어·동명사구) — <b>동명사 Trying</b>이 이끄는 구가 통째로 주어. <b>try to do</b> = "~하려고 애쓰다", define it = "그것(=아름다움)을 정의하다". 🚨 <b>동명사 주어는 단수 취급</b> → 동사 <b>is</b> (are ❌).<br>` +
+      `② <b>is difficult</b> (2형식) — 동명사주어 + be + <b>형용사 보어</b>. "정의하려는 일은 어렵다".<br>` +
+      `③ <b>and yet</b> (역접) — "그런데도·그럼에도". and(접속) + <b>yet(역접)</b>으로 앞뒤를 <b>반전</b>: '어렵다면서도 → 그래도 안다'. <span class="wikilink" onclick="gotoGrammar('conjunctive-adverb')">🔀 역접 연결어(yet/however) 자세히 →</span><br>` +
+      `④ <b>we know it</b> (주절·3형식) — "우리는 그것을 안다". it = beauty.<br>` +
+      `⑤ <b>when we see it</b> (시간 부사절) — <b>when + 주어 + 동사</b> = "~할 때". "우리가 그것을 볼 때(보면)". 유명한 표현 <b>"I know it when I see it(보면 안다)"</b>과 같은 틀.<br>` +
+      `⑥ ⭐ <b>—or so we think</b> (대시 삽입·단서 달기) — <b>대시 —</b>로 확 끼워 넣어 앞말을 살짝 뒤집는 단서. <b>or so we think</b> = "혹은 (적어도) 우리가 <b>그렇게 생각할 뿐</b>이지만". 여기 <b>so는 앞 절(we know it ~)을 통째로 받는 대용어</b>(we think <b>so</b> = 그렇게 생각한다)로 think의 목적어 자리를 대신함 → "안다고 여기지만 사실은 아닐 수도"라는 <b>여운</b>. <span class="wikilink" onclick="gotoGrammar('punctuation')">✒️ 대시(—) 삽입 자세히 →</span><br><br>` +
+      `📝 <b>해석:</b> "그것을 정의하기란 어렵다, <b>그런데도 우리는 그것을 보면 안다—혹은 우리가 그렇게 생각할 뿐이지만</b>." — '아름다움은 정의하기 어렵다(어렵다면서도 보면 안다)—사실은 착각일지도'라며 <b>본질의 모호함</b>을 던짐 → 이후 학자들의 다양한 정의로 이어짐.`,
+    trans: "그것을 정의하기란 어렵다, 그런데도 우리는 그것을 보면 안다—혹은 우리가 그렇게 생각할 뿐이지만.",
+  },
+
+  // 지문 3 · 13번째 문장: "Beauty is health," says one psychologist. "It's a billboard saying, I'm healthy. I can pass on your genes!"
+  "3-12": {
+    form: "직접화법 · 인용 뒤 도치(says + 주어) · 2형식(은유) · 현재분사 후치수식(saying)",
+    tense: "현재 (진술·인용)",
+    chips: [
+      ["인용문①(직접화법)·2형식", "\"Beauty is health,\""],
+      ["전달동사(도치)·says+S", "says one psychologist"],
+      ["인용문②·2형식(은유)", "It's a billboard"],
+      ["현재분사구·후치수식", "saying, ..."],
+      ["광고판의 말(직접 인용)", "I'm healthy. I can pass on your genes!"],
+    ],
+    structure:
+      `뼈대: ["Beauty is health,"](인용·2형식) <b>says one psychologist</b>(도치 V+S). 이어 두 번째 인용 ["It's a billboard saying ~"]. 심리학자의 말을 <b>직접 인용</b>한 문장.<br><br>` +
+      `① <b>"Beauty is health,"</b> (인용문①·2형식·은유) — Beauty(S) + is(V) + health(C). "아름다움 = 건강"이라는 <b>은유</b>. 3-8의 "Beauty is power"와 같은 짧은 단정(추상명사 무관사). <span class="wikilink" onclick="gotoGrammar('articles','ar-zero')">📐 추상명사 무관사 자세히 →</span><br>` +
+      `② ⭐ <b>says one psychologist</b> (<b>도치</b>: 전달동사 + 주어) — 🚨 인용문 뒤 전달절에서 <b>동사(says) + 주어(one psychologist)</b> 어순으로 <b>도치</b>됨! 정상 어순은 one psychologist says. (인용 뒤에 자주 일어나는 도치 — 2-34와 같은 패턴)<br>` +
+      `③ <b>It's a billboard</b> (인용문②·2형식·은유) — It(=Beauty) + is + a billboard. 또 하나의 <b>은유</b>: "아름다움은 <b>광고판</b>이다". It's = It is.<br>` +
+      `④ ⭐ <b>saying, ...</b> (현재분사구·후치수식) — <b>a billboard를 뒤에서 꾸미는</b> 분사구. 원래 <b>a billboard <u>(which is)</u> saying ~</b>에서 [주격 관계사 + be] 생략. 광고판이 '말하고 있는'(능동) → 현재분사 saying. <span class="wikilink" onclick="gotoGrammar('participle-postmod','pp-omit')">✂️ (관계사+be) 생략 후치수식 자세히 →</span><br>` +
+      `⑤ <b>"I'm healthy. I can pass on your genes!"</b> (광고판의 말·직접 인용) — 광고판(=아름다움)이 외치는 내용. <b>can pass on</b> = 조동사 can + 구동사 <b>pass on</b>("(유전자를) 물려주다·전달하다"). 즉 "나는 건강하다 → (짝을 맺으면) 당신의 유전자를 (자손에게) 물려줄 수 있다"는 <b>번식 신호</b>.<br><br>` +
+      `📝 <b>해석:</b> "\"아름다움은 건강입니다\"라고 한 심리학자는 말한다. \"그것은 '나는 건강해요, 당신의 유전자를 (자손에게) 물려줄 수 있어요!'라고 외치는 광고판인 셈이죠.\"" — 전문가 인용으로 <b>"아름다움 = 건강·번식력의 신호"</b>라는 진화심리학 관점을 제시 → 왜 인간이 미를 본능적으로 선호하는지 설명.`,
+    trans: "\"아름다움은 건강입니다\"라고 한 심리학자는 말한다. \"그것은 '나는 건강해요, 당신의 유전자를 (자손에게) 물려줄 수 있어요!'라고 외치는 광고판인 셈이죠.\"",
+  },
+
+  // 지문 3 · 14번째 문장: And our awareness of it may start at a very early age.
+  "3-13": {
+    form: "1형식 (S + V + M) · 조동사 may(추측)",
+    tense: "현재 (may + 동사원형 · 추측)",
+    chips: [
+      ["접속사", "And"],
+      ["주어(S)·핵심명사", "our awareness"],
+      ["후치수식·전치사구", "of it"],
+      ["조동사+동사(V)", "may start"],
+      ["수식어(M)·전치사구", "at a very early age"],
+    ],
+    structure:
+      `뼈대: <b>our awareness(S) + may start(V)</b> 의 <b>1형식</b>. start는 자동사라 뒤 at구는 수식어.<br><br>` +
+      `① <b>And</b> (문두 접속사) — 앞(아름다움을 알아본다)에 이어 "그리고".<br>` +
+      `② <b>our awareness of it</b> (주어) — 핵심명사 <b>awareness</b>(인식). our 소유격. <b>of it</b> = "그것(=아름다움)<b>에 대한</b>" 대상의 of가 awareness를 뒤에서 수식. <span class="wikilink" onclick="gotoGrammar('of-types','of-content')">🧬 대상·내용의 of 자세히 →</span><br>` +
+      `③ <b>may start</b> (조동사 may + 동사원형) — <b>may</b> = "~일지도 모른다"(가능성·추측). 조동사 뒤는 반드시 <b>동사원형 start</b> (may starts ❌ — 조동사 뒤엔 3인칭 -s를 안 붙임). "시작될지도 모른다".<br>` +
+      `④ <b>at a very early age</b> (부사구) — "아주 어린 나이에". <b>at + 나이</b>. very(부사)가 early(형용사)를 강조 → "아주 이른".<br><br>` +
+      `📝 <b>해석:</b> "그리고 그것(아름다움)을 알아보는 우리의 인식은 <b>아주 어린 나이에 시작될지도 모른다</b>." — 미를 알아보는 감각이 <b>아주 어릴 때부터</b> 생길 수 있음을 제시 → 다음 문장부터 '생후 6개월 아기 실험'으로 증명.`,
+    trans: "그리고 그것(아름다움)을 알아보는 우리의 인식은 아주 어린 나이에 시작될지도 모른다.",
+  },
+
+  // 지문 3 · 15번째 문장: In one set of studies, six-month-old babies were shown a series of photographs.
+  "3-14": {
+    form: "4형식의 수동태 (S + be p.p. + 직접목적어) · 복합형용사(six-month-old)",
+    tense: "과거 (were shown · 수동)",
+    chips: [
+      ["수식어(M)·부사구", "In one set of studies"],
+      ["주어(S)", "six-month-old babies"],
+      ["동사(V)·수동태(be p.p.)", "were shown"],
+      ["직접목적어(잔류)", "a series of photographs"],
+    ],
+    structure:
+      `뼈대: <b>six-month-old babies(S) + were shown(V·수동태) + a series of photographs(직접목적어)</b>. <b>4형식 능동을 수동으로 바꾸면서 직접목적어가 동사 뒤에 남은</b> 문장.<br><br>` +
+      `① <b>In one set of studies</b> (부사구·도입) — "한 실험(연구) 세트에서". one set of studies = "일련의 연구 한 묶음". of = 구성.<br>` +
+      `② <b>six-month-old babies</b> (주어) — <b>six-month-old</b>: six + month + old를 하이픈으로 묶은 <b>복합형용사</b> "생후 6개월 된". 🚨 <b>month가 복수 months가 아님</b>! (하이픈 복합형용사 안 명사는 단수 유지 — 3-3의 18th-century와 같은 원리).<br>` +
+      `③ ⭐ <b>were shown a series of photographs</b> (핵심 · <b>4형식 수동태</b>) — 능동은 <b>show A B</b>("A에게 B를 보여주다", 4형식). 이를 <b>A(babies)를 주어로 수동태</b>로 바꾸면: babies <b>were shown</b> a series of photographs. 🚨 <b>직접목적어(a series of photographs)가 동사 뒤에 그대로 남음</b>! (4형식 수동태의 특징). show-showed-<b>shown</b>. <span class="wikilink" onclick="gotoGrammar('passive-voice','pv-form')">🔄 수동태 be + p.p. 자세히 →</span><br>` +
+      `&nbsp;&nbsp;• <b>a series of ~</b> = "일련의 ~". (series는 단·복수 동형)<br><br>` +
+      `📝 <b>해석:</b> "한 실험에서, <b>생후 6개월 된 아기들에게 일련의 사진들을 보여 주었다</b>." — 3-13의 '아주 어릴 때부터'를 <b>생후 6개월 아기 실험</b>으로 구체화(실험 설정).`,
+    trans: "한 실험에서, 생후 6개월 된 아기들에게 일련의 사진들을 보여 주었다.",
+  },
+
+  // 지문 3 · 16번째 문장: The faces in the pictures had been rated for attractiveness by a group of college students.
+  "3-15": {
+    form: "과거완료 수동태 (S + had been p.p. + by 행위자) · rate A for B",
+    tense: "과거완료 수동태 (had been rated · 대과거 + 수동)",
+    chips: [
+      ["주어(S)·핵심명사", "The faces"],
+      ["후치수식·전치사구", "in the pictures"],
+      ["동사(V)·과거완료 수동태", "had been rated"],
+      ["기준·전치사구", "for attractiveness"],
+      ["행위자·by구", "by a group of college students"],
+    ],
+    structure:
+      `뼈대: <b>The faces(S) + had been rated(V·과거완료 수동태) + [for ~][by ~]</b>. 🚨 <b>과거완료 + 수동태가 겹친</b> 고난도 동사구.<br><br>` +
+      `① <b>The faces in the pictures</b> (주어) — 핵심명사 faces(복수). <b>the</b>: 앞 실험의 '그 사진들 속' 특정 얼굴이라 정관사. <b>in the pictures</b>가 faces를 뒤에서 수식(후치). <span class="wikilink" onclick="gotoGrammar('articles','ar-the')">📐 정관사 the(한정) 자세히 →</span><br>` +
+      `② ⭐⭐ <b>had been rated</b> (핵심 · <b>과거완료 수동태</b>) — 두 문법이 겹침:<br>` +
+      `&nbsp;&nbsp;• <b>과거완료(had + p.p.)</b> = 대과거: 어떤 과거 시점보다 <b>더 이전</b>.<br>` +
+      `&nbsp;&nbsp;• <b>수동태(be + p.p.)</b> = "평가<b>받다</b>". → 둘을 합쳐 <b>had been + rated</b> (had + been(be의 p.p.) + rated).<br>` +
+      `&nbsp;&nbsp;• 🚨 왜 과거완료인가? → 아기에게 사진을 보여준 시점(3-14, 과거)보다 <b>먼저</b> 대학생들이 그 얼굴들을 <b>미리 평가해 둔</b> 것이라 대과거. 시간 순서: [대학생 평가(과거완료)] ⟶ [아기 실험(과거)]. <span class="wikilink" onclick="gotoGrammar('passive-voice','pv-form')">🔄 수동태 be + p.p. 자세히 →</span><br>` +
+      `③ <b>for attractiveness</b> (기준) — <b>rate A for B</b> = "A를 B에 대해 평가하다". for = 평가 기준("매력도에 대해").<br>` +
+      `④ <b>by a group of college students</b> (행위자·by구) — 수동태의 <b>by + 행위자</b>: "대학생 한 무리<b>에 의해</b>". a group of ~ = "~의 무리·집단".<br><br>` +
+      `📝 <b>해석:</b> "그 사진 속 얼굴들은 (미리) <b>대학생 한 무리에 의해 매력도가 평가되어 있었다</b>." — 아기 실험(3-14)의 <b>사전 준비</b> 설명: 그 얼굴들은 실험 전에 대학생들이 매력도를 미리 매겨 둔 것 → 과거완료로 <b>실험보다 앞선 일</b>임을 표시.`,
+    trans: "그 사진 속 얼굴들은 (미리) 대학생 한 무리에 의해 매력도가 평가되어 있었다.",
+  },
+
+  // 지문 3 · 17번째 문장: In the studies, the babies spent more time looking at the attractive faces than the unattractive ones.
+  "3-16": {
+    form: "3형식 (S + V + O) · spend time -ing · 비교급(more ~ than) · 부정대명사 ones",
+    tense: "과거 (spent)",
+    chips: [
+      ["수식어(M)·부사구", "In the studies"],
+      ["주어(S)", "the babies"],
+      ["동사(V)", "spent"],
+      ["목적어(O)·비교급", "more time"],
+      ["분사구(spend time -ing)", "looking at the attractive faces"],
+      ["비교 대상·than", "than the unattractive ones"],
+    ],
+    structure:
+      `뼈대: <b>the babies(S) + spent(V) + more time(O)</b> + looking ~(분사구). <b>spend + 시간 + -ing</b> = "~하는 데 시간을 쓰다".<br><br>` +
+      `① <b>In the studies</b> (부사구·도입) — "그 실험(들)에서". <b>the</b>: 앞서 말한 그 실험.<br>` +
+      `② <b>the babies spent</b> (주어 + 동사) — spent = spend의 과거(spend-spent-spent, 불규칙).<br>` +
+      `③ ⭐ <b>spent more time looking at ~</b> (spend time -ing + 비교급) — <b>spend + 시간 + (in) -ing</b> = "~하는 데 (시간을) 보내다". 시간 자리에 <b>more time</b>(비교급) → "더 많은 시간을". looking at = "~을 바라보며". (spend to look ❌ — spend는 <b>-ing</b>과 어울림)<br>` +
+      `④ ⭐ <b>than the unattractive ones</b> (비교 · <b>부정대명사 ones</b>) — <b>more A than B</b> 비교급. 비교 대상: the attractive faces ↔ the unattractive <b>ones</b>. 🚨 <b>ones = faces</b>! 앞에 나온 <b>faces의 반복을 피하려고 부정대명사 ones로 대신</b>(the unattractive ones = the unattractive faces). <span class="wikilink" onclick="gotoGrammar('pronoun-one','po-vs-it')">🔁 부정대명사 one/ones(≠it) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;• <b>un-</b>: attractive(매력적인) ↔ <b>un</b>attractive(매력 없는), 반의 접두사.<br><br>` +
+      `📝 <b>해석:</b> "그 실험에서, 아기들은 <b>매력 없는 얼굴들보다 매력적인 얼굴들을 바라보는 데 더 많은 시간을 썼다</b>." — 아기 실험의 <b>결과</b>: 아기가 예쁜 얼굴을 더 오래 응시 → "미를 알아보는 감각은 어릴 때부터 타고난다"(3-13)를 <b>실험으로 입증</b>.`,
+    trans: "그 실험에서, 아기들은 매력 없는 얼굴들보다 매력적인 얼굴들을 바라보는 데 더 많은 시간을 썼다.",
+  },
+
+  // 지문 3 · 18번째 문장: The idea that even babies judge appearance makes perfect sense to many researchers.
+  "3-17": {
+    form: "3형식 (S + V + O) · 동격의 that(The idea that ~) · make sense(숙어) · 수일치(head=The idea)",
+    tense: "현재 (일반적 사실)",
+    chips: [
+      ["주어(S)·핵심명사", "The idea"],
+      ["동격의 that절(idea 내용)", "that even babies judge appearance"],
+      ["동사(V)·단수", "makes"],
+      ["목적어(O)·숙어", "perfect sense"],
+      ["수식어(M)·전치사구", "to many researchers"],
+    ],
+    structure:
+      `뼈대: <b>The idea(S) ... makes(V) perfect sense(O)</b>. 주어 head <b>The idea</b>와 동사 <b>makes</b> 사이에 <b>동격 that절</b>이 길게 끼어 주-동이 벌어진 문장.<br><br>` +
+      `① ⭐ <b>The idea that even babies judge appearance</b> (주어 · <b>동격의 that</b>) — 핵심! <b>The idea = that절 내용</b>. "심지어 아기들<b>조차 외모를 판단한다</b>는 생각". <b>that 뒤가 완전한 문장</b>(babies(S) judge(V) appearance(O))이고, 그게 The idea의 <b>내용을 그대로 풀어 설명</b> → <b>동격의 that</b>(~라는). (관계대명사 that과 달리 뒤 문장에 <b>빠진 자리가 없음</b>!) <span class="wikilink" onclick="gotoGrammar('appositive-that','at-vs-relative')">🔑 동격의 that vs 관계대명사 that 자세히 →</span><br>` +
+      `&nbsp;&nbsp;• <b>even</b>(부사) = "심지어 ~조차" — babies를 강조.<br>` +
+      `② ⭐ <b>makes</b> (동사·단수 · <b>수일치</b>) — 🚨 왜 make가 아니라 <b>makes(-s)</b>인가? → 핵심주어 <b>The idea가 단수</b>라 3인칭 단수 -s. 바로 앞의 <b>appearance·babies에 홀리지 말고</b> 저 멀리 head인 <b>The idea</b>에 수일치. (긴 동격절 뒤라 주어를 놓치기 쉬운 함정)<br>` +
+      `③ <b>makes perfect sense</b> (숙어) — <b>make sense</b> = "말이 되다·이해가 되다·일리가 있다". <b>perfect</b>가 sense를 수식 → "완벽히 이해가 된다". (여기 make는 '만들다'가 아니라 관용표현)<br>` +
+      `④ <b>to many researchers</b> (전치사구) — <b>make sense to 사람</b> = "~에게 말이 되다". "많은 연구자들<b>에게는</b> (당연히) 이해가 된다".<br><br>` +
+      `📝 <b>해석:</b> "심지어 아기들조차 외모를 판단한다는 생각은 <b>많은 연구자들에게 완벽히 이해가 된다(일리가 있다)</b>." — 앞의 아기 실험 결과(3-16)를 받아, 그 발상이 연구자들에게 충분히 납득된다고 정리 → 미적 감각이 <b>본능</b>임을 뒷받침, 다음에 구체적 남녀 선호 연구로 이어짐.`,
+    trans: "심지어 아기들조차 외모를 판단한다는 생각은 많은 연구자들에게 완벽히 이해가 된다(일리가 있다).",
   },
 };
 
