@@ -189,6 +189,9 @@ const WORDS_BY_PASSAGE = {
   { word: "preference",       pos: "n.",   meaning: "선호, 더 좋아함 (show a preference for ~을 선호하다, v. prefer)", example: "men showed a preference for women with certain features" },
   { word: "feature",          pos: "n.",   meaning: "특징; (pl.) 이목구비, 용모",      example: "women with certain features" },
   { word: "waist",            pos: "n.",   meaning: "허리 (≠waste 낭비하다)",          example: "large shoulders and a narrow waist" },
+  { word: "suggest",          pos: "v.",   meaning: "시사하다, 암시하다; 제안하다 (suggest that+절, n. suggestion)", example: "Another study suggests that women prefer ~" },
+  { word: "shoulder",         pos: "n.",   meaning: "어깨",                          example: "men with large shoulders" },
+  { word: "narrow",           pos: "a.",   meaning: "좁은, 잘록한 (↔wide/broad)",     example: "a narrow waist" },
   { word: "unconsciously",    pos: "ad.",  meaning: "무의식적으로 (↔consciously, conscious 의식하는)", example: "the mind unconsciously tells us" },
   { word: "trait",            pos: "n.",   meaning: "특성, 특징 (= characteristic)",   example: "these traits equal health" },
   { word: "equal",            pos: "v.",   meaning: "~와 같다, ~에 해당하다; 동등한",   example: "these traits equal health" },
@@ -203,6 +206,8 @@ const WORDS_BY_PASSAGE = {
   { word: "all sorts of",     pos: "phr.", meaning: "온갖 종류의, 갖가지의 (= all kinds of)", example: "all sorts of expectations" },
   { word: "expectation",      pos: "n.",   meaning: "기대, 예상 (v. expect)",         example: "altered by cultural expectations" },
   { word: "predominantly",    pos: "ad.",  meaning: "주로, 대개 (= mainly)",           example: "expectations—predominantly cultural" },
+  { word: "agree",            pos: "v.",   meaning: "동의하다 (agree with 사람·의견 / agree to 제안, n. agreement)", example: "Not everyone agrees with this notion." },
+  { word: "cultural",         pos: "a.",   meaning: "문화의, 문화적인 (n. culture)",   example: "predominantly cultural expectations" },
   { word: "anthropologist",   pos: "n.",   meaning: "인류학자 (anthropology 인류학)",  example: "an anthropologist at the University of Michigan" },
   { word: "thin",             pos: "a.",   meaning: "마른, 여윈; 얇은 (↔thick 두꺼운)", example: "the women on the pages are thin" },
   { word: "biologist",        pos: "n.",   meaning: "생물학자 (biology 생물학)",       example: "a biologist from Great Britain" },
@@ -3595,6 +3600,140 @@ const ANALYSIS = {
       `📝 <b>해석:</b> "심지어 아기들조차 외모를 판단한다는 생각은 <b>많은 연구자들에게 완벽히 이해가 된다(일리가 있다)</b>." — 앞의 아기 실험 결과(3-16)를 받아, 그 발상이 연구자들에게 충분히 납득된다고 정리 → 미적 감각이 <b>본능</b>임을 뒷받침, 다음에 구체적 남녀 선호 연구로 이어짐.`,
     trans: "심지어 아기들조차 외모를 판단한다는 생각은 많은 연구자들에게 완벽히 이해가 된다(일리가 있다).",
   },
+
+  // 지문 3 · 19번째 문장: In studies done by psychologists such as Victor Johnston at New Mexico State University and David Perrett at the University of St. Andrews in Scotland, men regularly showed a preference for women with certain features: larger eyes, clear skin, fuller lips, and a smaller nose and chin.
+  "3-18": {
+    form: "3형식 (S + V + O) · 과거분사 후치수식(studies done by ~) · such as(예시 열거) · show a preference for(숙어) · 콜론(:) 부연·나열",
+    tense: "과거 (showed)",
+    chips: [
+      ["수식어(M)·전치사구", "In studies done by psychologists"],
+      ["예시·such as", "such as Victor Johnston at New Mexico State University and David Perrett at the University of St. Andrews in Scotland"],
+      ["주어(S)", "men"],
+      ["부사(빈도)", "regularly"],
+      ["동사(V)", "showed"],
+      ["목적어(O)·숙어", "a preference for women"],
+      ["후치수식·전치사구", "with certain features"],
+      ["콜론(:)·구체적 나열", "larger eyes, clear skin, fuller lips, and a smaller nose and chin"],
+    ],
+    structure:
+      `뼈대: <b>men(S) + showed(V) + a preference(O)</b>. 문장 앞의 <b>긴 전치사구(In studies ~ in Scotland)</b>는 통째로 부사구(어디서 나온 결과인지 출처)라 <b>일단 건너뛰고</b> <b>men</b>을 주어로 잡는 게 독해 포인트.<br><br>` +
+      `① ⭐ <b>In studies done by psychologists</b> (전치사구 + <b>과거분사 후치수식</b>) — "심리학자들에 의해 <b>행해진</b> 연구들에서". <b>done</b>이 studies를 뒤에서 꾸밈 = <b>studies (which were) done</b>에서 <b>which were 생략</b>. studies는 '행하는' 게 아니라 '<b>행해지는</b>' 대상이라 <b>과거분사(수동)</b>. <span class="wikilink" onclick="gotoGrammar('participle-postmod','pp-omit')">✂️ (which are) 생략 후치수식 자세히 →</span> <span class="wikilink" onclick="gotoGrammar('participle-postmod','pp-active-passive')">🔑 현재분사 vs 과거분사(수동) 자세히 →</span><br>` +
+      `② <b>such as Victor Johnston ~ and David Perrett ~</b> (예시 · <b>such as</b>) — <b>such as</b> = "~ 같은, 예를 들어". psychologists의 <b>구체적 예 두 명</b>을 and로 나열. 각 인물 뒤 <b>at + 대학</b>은 소속(at New Mexico State University / at the University of St. Andrews in Scotland).<br>` +
+      `&nbsp;&nbsp;• <b>the University of St. Andrews</b> — 세상에 하나뿐인 <b>고유한 기관명</b>이라 <b>the</b>. (the + 명사 + of + 이름 꼴의 유일 대상) <span class="wikilink" onclick="gotoGrammar('articles','ar-the')">📐 정관사 the(유일·고유) 자세히 →</span><br>` +
+      `③ ⭐ <b>men regularly showed a preference for ~</b> (주절 · <b>숙어</b>) — <b>show a preference for</b> = "~에 대한 <b>선호를 보이다</b>, ~을 (더) 좋아하다". <b>regularly</b>(빈도부사) = "일관되게, 번번이" → 여러 연구에서 <b>반복적으로</b> 같은 결과가 나왔음을 강조. <b>a</b> preference: '하나의 선호 경향'이라 부정관사. <span class="wikilink" onclick="gotoGrammar('articles','ar-a')">📐 부정관사 a(하나) 자세히 →</span><br>` +
+      `④ <b>women with certain features</b> (<b>전치사구 후치수식</b>) — <b>with ~</b>가 women을 뒤에서 수식 → "<b>특정 이목구비를 가진</b> 여성". 🚨 <b>certain</b> = "<b>특정한</b>(= particular)"! 여기선 '확실한'이 아니다(빈출 함정). <b>features</b> = (얼굴의) 이목구비·용모.<br>` +
+      `⑤ ⭐ <b>: larger eyes, clear skin, fuller lips, and a smaller nose and chin</b> (<b>콜론(:) 부연</b> · 비교급) — 콜론은 앞의 <b>certain features가 구체적으로 뭔지 펼쳐</b> 보여주는 부호(= 동격·나열). <b>larger·fuller·smaller</b>는 than 없이 쓰인 <b>비교급</b>("(보통보다) 더 큰/도톰한/작은"). 끝의 <b>a smaller nose and chin</b>은 관사 <b>a</b>가 nose and chin을 <b>한 묶음</b>으로 받음. <span class="wikilink" onclick="gotoGrammar('punctuation','pn-colon')">🎁 콜론 :(구체화·나열) 자세히 →</span><br><br>` +
+      `📝 <b>해석:</b> "Victor Johnston(뉴멕시코 주립대)과 David Perrett(스코틀랜드 세인트앤드루스대) 같은 심리학자들이 <b>행한 연구들에서</b>, 남성들은 <b>일관되게</b> 특정 이목구비 — 더 큰 눈, 맑은 피부, 더 도톰한 입술, 더 작은 코와 턱 — 를 가진 여성을 <b>선호하는 경향을 보였다</b>." — 앞 3-17의 "미적 감각은 본능"을 <b>구체적 '남성의 선호' 연구로 입증</b>. 다음 3-19에서 '여성의 남성 선호'로 대칭 전개.`,
+    trans: "Victor Johnston(뉴멕시코 주립대)과 David Perrett(스코틀랜드 세인트앤드루스대) 같은 심리학자들이 행한 연구들에서, 남성들은 일관되게 특정 이목구비 — 더 큰 눈, 맑은 피부, 더 도톰한 입술, 더 작은 코와 턱 — 를 가진 여성을 선호하는 경향을 보였다.",
+  },
+
+  // 지문 3 · 20번째 문장: Another study suggests that women prefer men with large shoulders and a narrow waist.
+  "3-19": {
+    form: "3형식 (S + V + O) · 명사절 접속사 that(목적어절) · Another + 단수명사 · 전치사구 후치수식(with ~)",
+    tense: "현재 (suggests / prefer · 일반적 사실)",
+    chips: [
+      ["주어(S)", "Another study"],
+      ["동사(V)", "suggests"],
+      ["목적어(O)·명사절 that", "that women prefer men"],
+      ["후치수식·전치사구", "with large shoulders and a narrow waist"],
+    ],
+    structure:
+      `뼈대: <b>Another study(S) + suggests(V) + that절(O)</b>. that 이하가 통째로 suggests의 <b>목적어(명사절)</b>인 3형식.<br><br>` +
+      `① <b>Another study</b> (주어 · <b>another + 단수</b>) — "또 다른 (하나의) 연구". <b>another</b>는 어원이 <b>an + other</b>라 반드시 <b>단수명사</b>와 짝. 앞 3-18의 '남성 선호 연구'에 이어 <b>여성 선호를 다룬 별개의 연구</b>를 하나 더 제시.<br>` +
+      `② ⭐ <b>suggests that women prefer ~</b> (<b>명사절 접속사 that</b>) — 핵심! <b>suggest that + 완전한 절</b> = "~라는 것을 시사하다". that 뒤가 <b>women(S) prefer(V) men(O)</b>로 성분이 다 갖춰진 <b>완전한 문장</b> → 이 that은 <b>명사절 접속사</b>("~라는 것", 생략 가능). 뒤 절에 빠진 자리가 없으니 관계대명사 ❌. <span class="wikilink" onclick="gotoGrammar('noun-clause-that','nc-object')">📐 명사절 접속사 that(목적어절) 자세히 →</span> <span class="wikilink" onclick="gotoGrammar('noun-clause-that','nc-vs')">⚔️ that 삼형제 구별 →</span><br>` +
+      `&nbsp;&nbsp;• <b>suggests</b>에 -s: 단수주어 Another study라 3인칭 단수. 반면 명사절 속 동사 <b>prefer</b>는 복수주어 women이라 원형.<br>` +
+      `③ <b>men with large shoulders and a narrow waist</b> (전치사구 후치수식) — <b>with ~</b>가 men을 뒤에서 수식 → "<b>넓은 어깨와 잘록한 허리를 가진</b> 남자". <b>a narrow waist</b>: 관사 a(하나) · 🚨 <b>waist(허리) ≠ waste(낭비)</b> 스펠링 함정. <span class="wikilink" onclick="gotoGrammar('articles','ar-a')">📐 부정관사 a 자세히 →</span><br><br>` +
+      `📝 <b>해석:</b> "<b>또 다른 연구는</b> 여성들이 <b>넓은 어깨와 잘록한 허리를 가진 남성을 선호한다는 것을</b> 시사한다." — 3-18(남성의 여성 선호)과 <b>짝을 이뤄 여성의 남성 선호</b>를 제시. 남녀 모두 특정 신체 특징에 끌린다는 흐름.`,
+    trans: "또 다른 연구는 여성들이 넓은 어깨와 잘록한 허리를 가진 남성을 선호한다는 것을 시사한다.",
+  },
+
+  // 지문 3 · 21번째 문장: According to scientists, the mind unconsciously tells men and women that these traits—the full lips, clear skin, strong shoulders—equal health and genetic well-being.
+  "3-20": {
+    form: "4형식 (S + V + IO + DO) · 명사절 접속사 that(직접목적어) · 대시(—) 삽입·동격 · equal=타동사(수일치 함정)",
+    tense: "현재 (tells / equal · 일반적 사실)",
+    chips: [
+      ["수식어(M)·전치사구", "According to scientists"],
+      ["주어(S)", "the mind"],
+      ["부사", "unconsciously"],
+      ["동사(V)·4형식", "tells"],
+      ["간접목적어(IO)", "men and women"],
+      ["직접목적어(DO)·명사절 that", "that these traits ... equal health and genetic well-being"],
+      ["삽입(—)·동격 나열", "the full lips, clear skin, strong shoulders"],
+    ],
+    structure:
+      `뼈대: <b>the mind(S) + tells(V) + men and women(IO) + that절(DO)</b> → 전형적 <b>4형식(tell + 사람 + that절)</b>. that 이하가 '무엇을' 말하는지(직접목적어).<br><br>` +
+      `① <b>According to scientists</b> (전치사구·도입) — "과학자들에 따르면". 정보의 출처를 밝히는 부사구.<br>` +
+      `② <b>the mind unconsciously tells men and women that ~</b> (<b>4형식 · 명사절 that</b>) — <b>tell + 사람(men and women) + that절</b> = "…에게 ~라고 말해주다". that절이 <b>직접목적어(DO)</b>. <b>unconsciously</b>(무의식적으로)가 tells를 수식. <span class="wikilink" onclick="gotoGrammar('noun-clause-that','nc-4th')">📐 4형식 tell + that절(직접목적어) 자세히 →</span><br>` +
+      `③ ⭐ <b>that these traits—the full lips, clear skin, strong shoulders—equal ~</b> (that절 속 <b>주어+동사</b> · <b>대시 삽입</b>) — that명사절의 주어는 <b>these traits</b>, 동사는 <b>equal</b>. 두 대시(—) 사이는 <b>traits가 구체적으로 뭔지 끼워 넣은 삽입·동격</b>(도톰한 입술·맑은 피부·강한 어깨). 삽입구는 <b>괄호처럼 빼고</b> 읽으면 뼈대가 보임: these traits equal ~. <span class="wikilink" onclick="gotoGrammar('punctuation','pn-colon')">✏️ 문장부호(대시 — 삽입) 자세히 →</span><br>` +
+      `④ 🚨 <b>equal</b> (여기선 <b>동사</b>! 수일치 함정) — equal을 형용사("동등한")로 착각하기 쉽지만 여기선 <b>타동사 "~와 같다·~에 해당하다"</b>. 주어가 복수 <b>these traits</b>라 동사도 복수형 <b>equal</b>(equals ❌). "이 특징들 = 건강"이라는 뜻.<br>` +
+      `&nbsp;&nbsp;• <b>health and genetic well-being</b>(equal의 목적어) = "건강과 유전적 안녕(양호함)". genetic = 유전(자)의.<br><br>` +
+      `📝 <b>해석:</b> "과학자들에 따르면, 우리 <b>마음(뇌)은 무의식적으로</b> 남녀에게 <b>이런 특징들 — 도톰한 입술, 맑은 피부, 강한 어깨 — 이 건강과 유전적 우수함을 의미한다고</b> 말해준다." — 앞의 선호(3-18·3-19)가 <b>왜</b> 생기는지 이유를 설명: 그 특징들이 곧 '건강 신호'라 본능적으로 끌린다는 것.`,
+    trans: "과학자들에 따르면, 마음(뇌)은 무의식적으로 남녀에게 이런 특징들 — 도톰한 입술, 맑은 피부, 강한 어깨 — 이 건강과 유전적 우수함을 의미한다고 말해준다.",
+  },
+
+  // 지문 3 · 22번째 문장: In other words, it's a fundamental part of human nature to look for these qualities in a mate.
+  "3-21": {
+    form: "2형식 (S + V + C) · 가주어 it ~ 진주어 to부정사 · look for(숙어) · A part of B(of)",
+    tense: "현재 (일반적 사실)",
+    chips: [
+      ["담화표지", "In other words"],
+      ["가주어(S)", "it"],
+      ["동사(V)", "'s (is)"],
+      ["보어(C)", "a fundamental part of human nature"],
+      ["진주어·to부정사", "to look for these qualities in a mate"],
+    ],
+    structure:
+      `뼈대: <b>it(가주어) + is + a fundamental part ~(보어) + to look for ~(진주어)</b>. 머리 무거운 <b>to부정사 주어를 뒤로 빼고</b> 앞엔 <b>가주어 it</b>을 세운 <b>가주어-진주어</b> 구문.<br><br>` +
+      `① <b>In other words</b> (담화표지) — "다시 말해, 즉". 앞 내용(3-20)을 <b>쉽게 바꿔 정리</b>할 때 쓰는 연결어.<br>` +
+      `② ⭐ <b>it ... to look for these qualities in a mate</b> (<b>가주어-진주어</b>) — 핵심! 문장 맨 앞 <b>it은 해석하지 않는 가주어</b>. 진짜 주어는 뒤의 <b>to look for ~</b>(to부정사). 원래는 "To look for these qualities in a mate is a fundamental part ~"인데, 주어가 길어 <b>it</b>으로 자리만 채우고 진주어를 문미로 보냄. <span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-formal-it')">📐 가주어 It ~ 진주어 to부정사 자세히 →</span> <span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-noun')">📐 to부정사 명사적 용법 자세히 →</span><br>` +
+      `③ <b>a fundamental part of human nature</b> (보어 · <b>A of B = B의 A</b>) — "인간 본성<b>의</b> 근본적인 한 부분". <b>part of human nature</b>의 of는 <b>소속</b>(B의 A). <b>fundamental</b> = 근본적인·기본적인. <span class="wikilink" onclick="gotoGrammar('of-types','of-possess')">🧬 소유·소속의 of (A of B) 자세히 →</span><br>` +
+      `④ <b>look for these qualities in a mate</b> (진주어 내부) — <b>look for</b> = "~을 찾다". <b>these qualities</b>(이런 자질들) = 앞서 말한 그 신체 특징들. <b>in a mate</b> = "짝(배우자)에게서".<br><br>` +
+      `📝 <b>해석:</b> "<b>다시 말해</b>, 짝에게서 이런 자질들을 찾는 것은 <b>인간 본성의 근본적인 한 부분</b>이다." — 3-20까지의 '건강 신호에 끌린다'를 한 문장으로 요약: 아름다움 추구는 <b>배우자 선택의 본능</b>이라는 결론.`,
+    trans: "다시 말해, 짝에게서 이런 자질들을 찾는 것은 인간 본성의 근본적인 한 부분이다.",
+  },
+
+  // 지문 3 · 23번째 문장: Not everyone agrees with this notion, however.
+  "3-22": {
+    form: "1형식 (S + V + M) · 부분부정(Not everyone) · agree with(자동사+전치사) · 접속부사 however(문미) · everyone 단수취급",
+    tense: "현재 (일반적 의견)",
+    chips: [
+      ["주어(S)·부분부정", "Not everyone"],
+      ["동사(V)·단수", "agrees"],
+      ["수식어(M)·전치사구", "with this notion"],
+      ["접속부사", "however"],
+    ],
+    structure:
+      `뼈대: <b>Not everyone(S) + agrees(V) + with this notion(M)</b>. 짧지만 <b>부분부정</b> 하나로 뜻이 확 갈리는 문장.<br><br>` +
+      `① ⭐ <b>Not everyone</b> (주어 · <b>부분부정</b>) — 핵심! <b>not + everyone(전체어)</b> = "<b>모두가 ~인 것은 아니다</b>"(일부는 동의, 일부는 반대). '아무도 동의 안 한다'(전체부정)로 읽으면 <b>정반대 오역</b>! 🚨 <b>everyone은 단수</b>라 동사도 <b>agrees</b>(-s). <span class="wikilink" onclick="gotoGrammar('partial-negation','pn-partial')">📐 부분부정(not+all/every) 자세히 →</span> <span class="wikilink" onclick="gotoGrammar('partial-negation','pn-total')">⚔️ 전체부정과 구별 →</span><br>` +
+      `② <b>agrees with this notion</b> (자동사 + 전치사) — <b>agree with + 사람·의견</b> = "~에 동의하다". agree는 자동사라 <b>전치사 with</b>가 꼭 필요(agree it ❌). <b>this notion</b> = 앞서 말한 그 견해(미의 선호가 본능이라는 생각, 3-21).<br>` +
+      `③ <b>however</b> (접속부사 · 문미) — "그러나". 문장 <b>끝에 콤마와 함께</b> 온 접속부사로, 앞 문단(본능론)과의 <b>반대·전환</b>을 표시. 접속사가 아니라 앞 문장과는 마침표로 끊는 부사. <span class="wikilink" onclick="gotoGrammar('conjunctive-adverb','ca-vs-conjunction')">📐 접속부사 vs 접속사 자세히 →</span> <span class="wikilink" onclick="gotoGrammar('conjunctive-adverb','ca-insert')">📐 however 위치·삽입 자세히 →</span><br><br>` +
+      `📝 <b>해석:</b> "<b>하지만, 모두가 이 견해에 동의하는 것은 아니다</b>." — 앞의 '미적 선호 = 본능' 주장에 <b>반론이 있음을 예고</b>하는 전환 문장. 다음 3-23에서 반대 학자의 인용이 이어짐.`,
+    trans: "하지만, 모두가 이 견해에 동의하는 것은 아니다.",
+  },
+
+  // 지문 3 · 24번째 문장: "Our hardwiredness can be altered by all sorts of expectations—predominantly cultural," says C. Loring Brace, an anthropologist at the University of Michigan.
+  "3-23": {
+    form: "인용문 도치(\"...\" says + 주어) · 조동사 수동태(can be altered) · by 행위자 · 대시(—) 부연 · 콤마 동격",
+    tense: "현재 (says) · 조동사 can + 수동",
+    chips: [
+      ["인용문·주어", "Our hardwiredness"],
+      ["인용문·조동사 수동태(V)", "can be altered"],
+      ["인용문·by 행위자", "by all sorts of expectations"],
+      ["인용문·대시(—) 부연", "predominantly cultural"],
+      ["전달동사·도치(V)", "says"],
+      ["주어(S)·도치", "C. Loring Brace"],
+      ["동격(,)", "an anthropologist at the University of Michigan"],
+    ],
+    structure:
+      `뼈대(바깥): <b>"[인용문]," + says(V) + C. Loring Brace(S)</b> → 인용문을 앞세워 <b>동사+주어로 도치</b>. 바깥 문장의 진짜 주어는 저 뒤의 <b>C. Loring Brace</b>.<br><br>` +
+      `① ⭐ <b>"...," says C. Loring Brace</b> (<b>인용문 도치</b>) — 인용문이 앞으로 나가면서 <b>says + 주어</b>로 뒤집힘(원래 C. Loring Brace says "..."). 전달동사(say)에서 자주 나오는 도치. <span class="wikilink" onclick="gotoGrammar('quotation-inversion','qi-order')">📐 인용문 도치(says + 주어) 자세히 →</span><br>` +
+      `② <b>C. Loring Brace, an anthropologist at the University of Michigan</b> (<b>콤마 동격</b>) — 콤마(,)로 <b>사람 = 신분</b>을 나란히: "미시간대 인류학자<b>인</b> C. Loring Brace". <b>the University of Michigan</b>은 고유 기관명이라 the. <span class="wikilink" onclick="gotoGrammar('quotation-inversion','qi-appos')">📐 콤마 동격(A, B) 자세히 →</span> <span class="wikilink" onclick="gotoGrammar('articles','ar-the')">📐 정관사 the(고유) 자세히 →</span><br>` +
+      `③ ⭐ <b>Our hardwiredness can be altered</b> (인용문 속 · <b>조동사 수동태</b>) — <b>can + be + altered(p.p.)</b> = "바뀔 수 있다". 주어 hardwiredness가 '바꾸는' 게 아니라 '<b>바뀌는</b>' 대상이라 <b>수동태</b>. 조동사가 있으면 <b>조동사 + be + p.p.</b> 꼴. <span class="wikilink" onclick="gotoGrammar('passive-voice','pv-form')">📐 수동태 be+p.p.(조동사 포함) 자세히 →</span> <span class="wikilink" onclick="gotoGrammar('passive-voice','pv-when')">📐 언제 수동태를 쓰나 →</span><br>` +
+      `&nbsp;&nbsp;• <b>hardwiredness</b> = 타고난 성질(hardwired 타고난). '본능은 고정'이라는 앞 주장을 정면으로 받는 핵심어.<br>` +
+      `④ <b>by all sorts of expectations—predominantly cultural</b> (<b>by 행위자</b> + <b>대시 부연</b>) — 수동태의 행위자 <b>by ~</b> = "온갖 기대<b>에 의해</b>". <b>all sorts of</b> = 온갖 종류의. 대시(—) 뒤 <b>predominantly cultural</b>은 그 기대가 "<b>주로 문화적인</b> 것"이라고 콕 집어 <b>부연</b>. <span class="wikilink" onclick="gotoGrammar('punctuation','pn-colon')">✏️ 문장부호(대시 — 부연) 자세히 →</span><br><br>` +
+      `📝 <b>해석:</b> "'우리의 타고난 성향은 온갖 기대 — 주로 문화적인 기대 — 에 의해 바뀔 수 있다'고, 미시간대 인류학자 C. Loring Brace는 말한다." — 3-22의 반론을 <b>구체화</b>: 미의 기준은 본능이 아니라 <b>문화가 바꾼다</b>는 반대 입장. 이후 문화별 사례로 이어짐.`,
+    trans: "\"우리의 타고난 성향은 온갖 기대 — 주로 문화적인 기대 — 에 의해 바뀔 수 있다\"고, 미시간대 인류학자 C. Loring Brace는 말한다.",
+  },
 };
 
 /* ---------- 문법 정리 (공부한 내용 채우기) ----------
@@ -3745,6 +3884,36 @@ const GRAMMAR = [
     ],
   },
   {
+    id: "noun-clause-that",
+    title: "명사절 접속사 that (~라는 것/~라고)",
+    tag: "핵심 · 자주 나옴",
+    body:
+      `<b>that + 완전한 문장</b>이 통째로 <b>하나의 명사 덩어리</b>가 되어 문장에서 <b>주어·목적어·보어</b> 역할을 하면 = <b>명사절 접속사 that</b>. 뜻은 "<b>~라는 것/~라고</b>". 이때 that 자체는 <b>뜻 없는 접속사</b>일 뿐(뒤 절에서 아무 성분도 아님).<br>` +
+      `자주 데려오는 동사(생각·전달): <b>think / know / believe / suggest / show / say / tell / find</b> 등.<br>` +
+      `<div id="nc-object" class="g-sub">` +
+      `<b>① 목적어 자리 — 가장 흔함 (V + that절)</b><br>` +
+      `타동사 뒤 목적어로 that절이 옴. 이때 <b>that은 생략 가능</b>.<br>` +
+      `예) I think <u>(that) she is right</u>. = 나는 그녀가 옳다<b>고</b> 생각한다.<br>` +
+      `예) The study suggests <u>that women prefer tall men</u>. = 그 연구는 여성이 키 큰 남자를 선호한다<b>는 것을</b> 시사한다.` +
+      `</div>` +
+      `<div id="nc-4th" class="g-sub">` +
+      `<b>② 4형식의 직접목적어 자리 — tell/show + 사람 + that절</b><br>` +
+      `<b>tell/show/teach + 사람(간접목적어) + that절(직접목적어)</b> = "…에게 ~라고 말하다/보여주다".<br>` +
+      `예) He told me <u>that he was tired</u>. = 그는 나에게 피곤하다<b>고</b> 말했다.` +
+      `</div>` +
+      `<div id="nc-vs" class="g-sub">` +
+      `<b>⚔️ that 삼형제 — 뒤 절의 완전/불완전으로 한 방에!</b><br>` +
+      `· <b>명사절 that</b>: 뒤 절 <b>완전</b> + 자기가 <b>명사(주·목·보) 역할</b> → "~라는 것" (I know <u>that he left</u>)<br>` +
+      `· <b>동격 that</b>: 뒤 절 <b>완전</b> + 앞 <b>추상명사</b>를 풀어 설명 → "~라는" (the fact <u>that he left</u>)<br>` +
+      `· <b>관계대명사 that</b>: 뒤 절 <b>불완전</b>(주·목 빠짐) + 앞 명사 수식 → "~한" (the book <u>that I read __</u>)` +
+      `</div>`,
+    eg: [
+      ["명사절 that (목적어) · ~라는 것", "The study suggests that women prefer tall men.", "그 연구는 여성이 키 큰 남자를 선호한다는 것을 시사한다."],
+      ["4형식 직접목적어 · ~라고", "Scientists tell us that beauty equals health.", "과학자들은 우리에게 아름다움이 건강과 같다고 말한다."],
+      ["cf. 동격 that (~라는)", "the idea that beauty is power", "아름다움이 곧 힘이라는 생각 (명사=that절)"],
+    ],
+  },
+  {
     id: "of-types",
     title: "of의 여러 종류 (소유 · 동격 · 내용 · 부분)",
     tag: "핵심",
@@ -3876,6 +4045,12 @@ const GRAMMAR = [
       `동사의 <b>목적어</b> 자리에 오면 "~하기/~하는 것". want / need / hope / decide / plan 등이 자주 데려옴.<br>` +
       `예) You don't need <b>to be</b> rich. = 부유<b>할 (것을)</b> 필요는 없다.<br>` +
       `예) I want <b>to play</b> soccer. = 나는 축구<b>하기를</b> 원한다.` +
+      `</div>` +
+      `<div id="ti-formal-it" class="g-sub">` +
+      `<b>➊ 가주어-진주어 (It ~ to부정사)</b><br>` +
+      `to부정사(구)가 <b>주어</b>면 머리가 무거워, 뒤로 빼고 빈 주어 자리에 <b>가주어 it</b>을 세움. 이 <b>it은 해석하지 않고</b>, 진짜 주어는 <b>뒤의 to부정사</b>.<br>` +
+      `예) <b>It</b> is hard <u>to learn English</u>. = 영어를 배우는 것은 어렵다. (It = to learn English)<br>` +
+      `예) <b>It</b>'s a part of human nature <u>to look for beauty</u>. = 아름다움을 찾는 것은 인간 본성의 일부다.` +
       `</div>` +
       `<div id="ti-adverb" class="g-sub">` +
       `<b>② 부사적 용법 — 문장을 꾸밈. 대표 뜻 "~하기 위해(목적)"</b><br>` +
@@ -4221,6 +4396,51 @@ const GRAMMAR = [
       ["not only A but also B", "She is not only smart but also kind.", "그녀는 똑똑할 뿐 아니라 친절하기도 하다."],
       ["neither A nor B (동사=B)", "Neither he nor they were late.", "그도 그들도 늦지 않았다. (they에 맞춰 were)"],
       ["both A and B (복수)", "Both speed and power are needed.", "속도와 힘 둘 다 필요하다."],
+    ],
+  },
+  {
+    id: "partial-negation",
+    title: "부분부정 — not + all/every/both (모두 ~인 건 아니다)",
+    tag: "핵심 · 함정 빈출",
+    body:
+      `<b>전체를 뜻하는 말(all·every·everyone·both·always·completely)</b>이 <b>not</b>과 만나면 → "<b>전부 ~인 것은 아니다</b>"라는 <b>부분부정</b>. '전혀 아니다(전체부정)'로 오해하면 정반대로 읽는 대표 함정.<br>` +
+      `<div id="pn-partial" class="g-sub">` +
+      `<b>부분부정: not + 전체어 = "다/항상 ~인 건 아니다"</b><br>` +
+      `&nbsp;&nbsp;• <b>Not everyone</b> agrees. = <b>모두가</b> 동의하는 <b>것은 아니다</b>. (일부는 동의, 일부는 반대)<br>` +
+      `&nbsp;&nbsp;• <b>Not all</b> birds can fly. = 모든 새가 나는 건 아니다.<br>` +
+      `&nbsp;&nbsp;• He is <b>not always</b> right. = 그가 늘 옳은 건 아니다.` +
+      `</div>` +
+      `<div id="pn-total" class="g-sub">` +
+      `<b>⚔️ 전체부정과 구별</b><br>` +
+      `전체부정은 <b>no·none·neither·not any</b>로 "<b>하나도/아무도 ~아니다</b>".<br>` +
+      `&nbsp;&nbsp;• <b>No one</b> agrees. = 아무도 동의하지 않는다. (전원 반대) ↔ Not everyone agrees. (일부만 반대)<br>` +
+      `&nbsp;&nbsp;• 🚨 <b>everyone은 단수 취급</b>: Not <b>everyone agrees</b>(-s). (agree ❌)` +
+      `</div>`,
+    eg: [
+      ["부분부정 · ~인 건 아니다", "Not everyone agrees with this notion.", "모두가 이 견해에 동의하는 것은 아니다. (일부만 반대)"],
+      ["부분부정 · 늘 ~인 건 아니다", "The rich are not always happy.", "부자가 항상 행복한 것은 아니다."],
+      ["cf. 전체부정 · 아무도 아니다", "No one agrees with it.", "아무도 그것에 동의하지 않는다."],
+    ],
+  },
+  {
+    id: "quotation-inversion",
+    title: "인용문 도치 — \"...,\" says + 주어",
+    tag: "심화 · 독해",
+    body:
+      `직접 인용문(\"...\")을 <b>문장 앞</b>에 내놓고 뒤에 전달동사를 쓰면, <b>동사 + 주어</b>로 <b>도치</b>되는 경우가 많음. say·ask·reply 등 전달동사에서 잘 일어남. 뜻은 그대로 "~라고 …가 말하다".<br>` +
+      `<div id="qi-order" class="g-sub">` +
+      `<b>원래 어순 ↔ 도치</b><br>` +
+      `&nbsp;&nbsp;• 기본: <b>Brace says</b>, "...". (주어 + 동사)<br>` +
+      `&nbsp;&nbsp;• 도치: "...," <b>says Brace</b>. (동사 + 주어) ← 인용문이 앞으로 나가며 뒤집힘<br>` +
+      `읽을 때는 <b>says의 진짜 주어를 뒤에서</b> 찾으면 됨.` +
+      `</div>` +
+      `<div id="qi-appos" class="g-sub">` +
+      `<b>주어 뒤 콤마 동격(,)</b><br>` +
+      `<b>C. Loring Brace<u>,</u> an anthropologist at ~</b> = "~의 인류학자<b>인</b> C. Loring Brace" — 콤마로 <b>사람 = 신분</b>을 나란히 놓는 <b>동격</b>. 앞 명사를 다시 설명(A, B에서 A=B).` +
+      `</div>`,
+    eg: [
+      ["인용 도치 · says + 주어", "\"It can change,\" says the expert.", "\"그것은 바뀔 수 있다\"고 그 전문가는 말한다. (says + the expert)"],
+      ["콤마 동격 · A, B (A=B)", "C. Loring Brace, an anthropologist", "인류학자인 C. Loring Brace"],
     ],
   },
 ];
