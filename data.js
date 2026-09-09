@@ -3734,6 +3734,138 @@ const ANALYSIS = {
       `📝 <b>해석:</b> "'우리의 타고난 성향은 온갖 기대 — 주로 문화적인 기대 — 에 의해 바뀔 수 있다'고, 미시간대 인류학자 C. Loring Brace는 말한다." — 3-22의 반론을 <b>구체화</b>: 미의 기준은 본능이 아니라 <b>문화가 바꾼다</b>는 반대 입장. 이후 문화별 사례로 이어짐.`,
     trans: "\"우리의 타고난 성향은 온갖 기대 — 주로 문화적인 기대 — 에 의해 바뀔 수 있다\"고, 미시간대 인류학자 C. Loring Brace는 말한다.",
   },
+
+  // 지문 3 · 25번째 문장: What is considered attractive in one culture might not be in another.
+  "3-24": {
+    form: "관계대명사 what 주어절 · 수동태 be considered + C(5형식 수동) · 조동사 might not + be · 반복어(attractive·culture) 생략 · one ~ another 대구",
+    tense: "현재 (일반적 사실) · 조동사 might",
+    chips: [
+      ["주어(S)·what절", "What is considered attractive in one culture"],
+      ["절 속 동사(수동)", "is considered"],
+      ["보어(C)", "attractive"],
+      ["동사(V)·조동사", "might not be"],
+      ["수식어(M)", "in another (culture)"],
+    ],
+    structure:
+      `뼈대: <b>[What ~ one culture](주어절) + might not be (attractive)(V+C) + in another(M)</b>. 주어가 <b>what 명사절</b> 통째이고, 반복되는 보어 attractive는 <b>생략</b>된 2형식.<br><br>` +
+      `① ⭐ <b>What is considered attractive in one culture</b> (주어 · <b>관계대명사 what 명사절</b>) — 핵심! <b>what = the thing which</b>(~하는 것)로 선행사를 스스로 품어 <b>절 전체가 주어</b>. "한 문화에서 매력적이라고 여겨지는 것". <span class="wikilink" onclick="gotoGrammar('relative-pronoun','rp-what')">📐 관계대명사 what(선행사 포함) 자세히 →</span><br>` +
+      `② ⭐ <b>is considered attractive</b> (주어절 속 · <b>수동태 · 5형식 수동</b>) — 능동 <b>consider A B</b>(A를 B로 여기다)에서 A가 주어로 빠져나가 <b>be동사 + considered(p.p.) + 보어(attractive)</b>로 수동. "매력적이라고 여겨지다". <span class="wikilink" onclick="gotoGrammar('passive-voice','pv-form')">📐 수동태 be+p.p. 자세히 →</span> <span class="wikilink" onclick="gotoGrammar('passive-voice','pv-when')">📐 언제 수동태를 쓰나 →</span><br>` +
+      `③ <b>might not be (attractive)</b> (조동사 + <b>반복어 생략</b>) — 조동사 might(~일 수도 있다) + not. be동사 뒤 <b>attractive가 생략</b>됨(앞에 이미 나와 반복 회피). "매력적이지 <b>않을 수도</b> 있다".<br>` +
+      `④ <b>in one culture ... in another (culture)</b> (<b>one ~ another 대구</b>) — "어떤 한 문화에서 ~ / 다른 문화에서는 ~". <b>another 뒤에도 culture가 생략</b>(= another culture). one과 another를 짝지어 두 문화를 <b>대조</b>.<br><br>` +
+      `📝 <b>해석:</b> "한 문화에서 매력적이라고 <b>여겨지는 것</b>이 다른 문화에서는 <b>그렇지 않을 수도 있다</b>." — 3-23(문화가 미의 기준을 바꾼다)을 <b>일반 명제</b>로 정리. 이 뒤로 잡지·부족 등 문화별 사례가 이어짐.`,
+    trans: "한 문화에서 매력적이라고 여겨지는 것이 다른 문화에서는 그렇지 않을 수도 있다.",
+  },
+
+  // 지문 3 · 26번째 문장: Look in most Western fashion magazines, for example, and the women on the pages are thin.
+  "3-25": {
+    form: "명령문 + and(~해보라, 그러면 ~) · 명령문(동사원형 Look) · for example 삽입 · 전치사구 후치수식(on the pages) · 2형식 be+형용사",
+    tense: "명령문(현재) + 현재 (일반적 사실)",
+    chips: [
+      ["명령문(동사원형)", "Look in most Western fashion magazines"],
+      ["삽입·담화표지", "for example"],
+      ["등위접속사", "and"],
+      ["주어(S)", "the women on the pages"],
+      ["동사(V)", "are"],
+      ["보어(C)", "thin"],
+    ],
+    structure:
+      `뼈대: <b>Look ~(명령문) + and + the women ~ are thin(S+V+C)</b>. 앞의 <b>명령문이 조건(If ~)처럼</b> 쓰여 "~해보면 ~이다"로 읽히는 문장.<br><br>` +
+      `① ⭐ <b>Look ~, and the women ~ are thin</b> (<b>명령문 + and</b>) — 핵심! 명령문 뒤 <b>and</b> = "<b>~해라, 그러면 ~</b>"(= If you look ~, ...). 여기선 "잡지를 들여다<b>보면</b> (거기) 여자들이 (다) 말랐다"라는 <b>예시 제시</b>. <span class="wikilink" onclick="gotoGrammar('imperative-and-or','ia-and')">📐 명령문 + and(~하면) 자세히 →</span> <span class="wikilink" onclick="gotoGrammar('imperative-and-or','ia-or')">⚔️ 명령문 + or과 비교 →</span><br>` +
+      `② <b>Look in most Western fashion magazines</b> (명령문 · 동사원형) — 주어 없이 <b>동사원형 Look</b>으로 시작 = 명령문. <b>look in ~</b> = "~ 안을 들여다보다".<br>` +
+      `③ <b>for example</b> (<b>삽입 담화표지</b>) — 콤마로 앞뒤를 끊고 <b>삽입</b>된 "예를 들어". 문장 성분(S·V) 계산에는 안 들어감.<br>` +
+      `④ <b>the women on the pages</b> (주어 · <b>전치사구 후치수식</b>) — <b>on the pages</b>(그 지면에 있는)가 앞 명사 the women을 <b>뒤에서 수식</b>. "(잡지) 지면 속 여자들". <b>are thin</b> = 2형식(be + 형용사) "말랐다".<br><br>` +
+      `📝 <b>해석:</b> "<b>예를 들어</b>, 대부분의 서양 패션 잡지를 들여다<b>보라, 그러면</b> 지면 속 여자들은 (다) 말라 있다." — 3-24의 '문화마다 다르다'를 뒷받침하는 <b>구체적 예시(서양 = 마른 몸 선호)</b>. 다음 3-26에서 "그럼 이게 전 세계 기준일까?"로 반문.`,
+    trans: "예를 들어, 대부분의 서양 패션 잡지를 들여다보라, 그러면 지면 속 여자들은 (다) 말라 있다.",
+  },
+
+  // 지문 3 · 27번째 문장: But is this the "perfect" body type for women worldwide?
+  "3-26": {
+    form: "Yes/No 의문문(be동사 도치) · But(반전) · 명사구 the \"perfect\" body type + for women worldwide(수식)",
+    tense: "현재 (의문)",
+    chips: [
+      ["접속·반전", "But"],
+      ["동사(V)·도치", "is"],
+      ["주어(S)", "this"],
+      ["보어(C)", "the \"perfect\" body type for women worldwide"],
+    ],
+    structure:
+      `뼈대: <b>But + is(V) + this(S) + the "perfect" body type ~(C)?</b> — <b>be동사를 주어 앞으로</b> 보낸 Yes/No 의문문.<br><br>` +
+      `① ⭐ <b>is this ~?</b> (<b>be동사 의문문 도치</b>) — 평서문 "This is ~"에서 <b>be동사 is를 주어 this 앞으로</b> 옮겨 의문문으로. "이것이 ~인가?". 물음표로 끝남.<br>` +
+      `② <b>But</b> (반전) — 앞 문장(서양 잡지 = 마른 몸)을 받아 <b>"하지만 정말 그럴까?"</b>로 뒤집는 신호.<br>` +
+      `③ <b>the "perfect" body type for women worldwide</b> (보어 · 명사구) — 따옴표를 친 <b>"perfect"</b>는 "이른바 '완벽한'"이라는 <b>거리두기·의심</b>의 뉘앙스. <b>for women worldwide</b>(전 세계 여성에게)가 body type을 뒤에서 수식. <b>worldwide</b> = 전 세계적인/전 세계에서.<br><br>` +
+      `📝 <b>해석:</b> "<b>하지만</b> 이것이 전 세계 여성에게 '완벽한' 체형일까?" — 3-25의 서양 기준을 <b>전 세계로 일반화할 수 있냐고 반문</b>하며, 이어질 학자들의 '아니다' 답변(3-27)을 끌어옴.`,
+    trans: "하지만 이것이 전 세계 여성에게 '완벽한' 체형일까?",
+  },
+
+  // 지문 3 · 28번째 문장: Douglas Yu, a biologist from Great Britain, and Glenn Shepard, an anthropologist at the University of California at Berkeley, say no.
+  "3-27": {
+    form: "콤마 동격 2개(A, B) · A and B 복수 주어 → 복수동사 say · say no(부정 답변) · 고유 기관명 the University of California",
+    tense: "현재 (일반적 의견)",
+    chips: [
+      ["주어1(S)", "Douglas Yu"],
+      ["동격(,)", "a biologist from Great Britain"],
+      ["등위접속사", "and"],
+      ["주어2(S)", "Glenn Shepard"],
+      ["동격(,)", "an anthropologist at the University of California at Berkeley"],
+      ["동사(V)·복수", "say"],
+      ["목적어(O)", "no"],
+    ],
+    structure:
+      `뼈대: <b>[Douglas Yu ~] and [Glenn Shepard ~](복수 주어) + say(V) + no(O)</b>. 주어 둘이 각각 <b>콤마 동격</b>을 달고, and로 묶여 <b>복수동사 say</b>를 받음.<br><br>` +
+      `① ⭐ <b>Douglas Yu, a biologist from Great Britain</b> / <b>Glenn Shepard, an anthropologist at ~</b> (<b>콤마 동격 A, B</b>) — 콤마로 <b>사람 = 신분</b>을 나란히: "영국 출신 생물학자<b>인</b> Douglas Yu", "버클리대 인류학자<b>인</b> Glenn Shepard". 동격 두 개가 각 주어를 부연. <span class="wikilink" onclick="gotoGrammar('quotation-inversion','qi-appos')">📐 콤마 동격(A, B) 자세히 →</span><br>` +
+      `② ⭐ <b>Yu ... and Shepard ... say</b> (<b>A and B 복수 주어 → 복수동사</b>) — 사람 둘을 and로 묶으면 <b>복수</b>라 동사는 <b>-s 없는 say</b>. 중간의 긴 동격에 속아 <b>says로 쓰면 오류</b>! <span class="wikilink" onclick="gotoGrammar('correlative','cc-agreement')">📐 A and B 수일치(복수) 자세히 →</span><br>` +
+      `③ <b>say no</b> (동사 + 목적어) — "아니라고 (대답)하다". 앞 3-26의 질문("전 세계 기준인가?")에 대한 <b>부정 답변</b>.<br>` +
+      `④ <b>the University of California at Berkeley</b> (<b>고유 기관명 the</b>) — 대학·기관 고유명 앞의 the. <span class="wikilink" onclick="gotoGrammar('articles','ar-the')">📐 정관사 the(고유) 자세히 →</span><br><br>` +
+      `📝 <b>해석:</b> "영국 출신 생물학자 Douglas Yu와 버클리대 인류학자 Glenn Shepard는 <b>아니라고 말한다</b>." — 3-26의 반문에 <b>전문가 두 명이 '아니다'로 답</b>하며, 미의 기준이 보편적이지 않다는 근거(3-28~)를 제시할 참.`,
+    trans: "영국 출신 생물학자 Douglas Yu와 버클리대 인류학자 Glenn Shepard는 아니라고 말한다.",
+  },
+
+  // 지문 3 · 29번째 문장: For them, what is considered beautiful is subjective and varies around the world.
+  "3-28": {
+    form: "관계대명사 what 주어절 · 수동태 be considered + C · 동사 병렬(is ~ and varies ~) · For them(전치사구 부사)",
+    tense: "현재 (일반적 사실)",
+    chips: [
+      ["수식어(M)", "For them"],
+      ["주어(S)·what절", "what is considered beautiful"],
+      ["동사1(V)", "is"],
+      ["보어(C)", "subjective"],
+      ["등위접속사", "and"],
+      ["동사2(V)", "varies"],
+      ["수식어(M)", "around the world"],
+    ],
+    structure:
+      `뼈대: <b>For them(M), [what is considered beautiful](주어절) + is subjective(V+C) + and + varies around the world(V+M)</b>. 하나의 <b>what 주어절</b>이 <b>동사 두 개(is, varies)</b>를 병렬로 받음.<br><br>` +
+      `① <b>For them</b> (전치사구 부사) — "<b>그들이 보기엔</b>(그들에게는)". 앞 문장의 두 학자(Yu·Shepard)를 them으로 받음.<br>` +
+      `② ⭐ <b>what is considered beautiful</b> (주어 · <b>관계대명사 what 명사절 + 수동태</b>) — 3-24와 똑같은 구조! <b>what</b>(~하는 것)이 절 전체를 주어로 만들고, 속은 <b>be considered + 보어(beautiful)</b>(아름답다고 여겨지다) 수동. "아름답다고 여겨지는 것". <span class="wikilink" onclick="gotoGrammar('relative-pronoun','rp-what')">📐 관계대명사 what 자세히 →</span> <span class="wikilink" onclick="gotoGrammar('passive-voice','pv-form')">📐 수동태 be+p.p. 자세히 →</span><br>` +
+      `③ ⭐ <b>is subjective and varies around the world</b> (<b>동사 병렬</b>) — 등위접속사 and가 <b>is(be동사) ~</b>와 <b>varies(일반동사) ~</b> 두 술어를 나란히 연결. 주어(what절)는 하나. "주관적<b>이고</b>, 세계적으로 <b>다르다</b>". <span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">📐 and 병렬구조(같은 급) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;• <b>subjective</b> = 주관적인(↔objective 객관적). <b>vary</b> = 다르다·다양하다.<br><br>` +
+      `📝 <b>해석:</b> "<b>그들이 보기엔</b>, 아름답다고 여겨지는 것은 <b>주관적이며 세계마다 다르다</b>." — 3-27의 '아니다'를 학자 입장으로 <b>구체화</b>: 미(美)는 보편 기준이 아니라 문화·지역마다 달라지는 <b>주관적</b> 개념. 다음 3-29에서 실제 연구 사례로 증명.`,
+    trans: "그들이 보기엔, 아름답다고 여겨지는 것은 주관적이며 세계마다 다르다.",
+  },
+
+  // 지문 3 · 30번째 문장: Yu and Shepard found in one study, for example, that native peoples in southeast Peru preferred shapes regarded as overweight in Western cultures.
+  "3-29": {
+    form: "find that + 명사절(목적어) · 삽입구(in one study, for example) · 과거분사 후치수식(shapes regarded as ~) · regard A as B 수동 · A and B 복수주어",
+    tense: "과거 (found, preferred) — 연구 결과 서술",
+    chips: [
+      ["주어(S)·복수", "Yu and Shepard"],
+      ["동사(V)", "found"],
+      ["삽입구", "in one study, for example"],
+      ["목적어(O)·that절", "that native peoples ... preferred shapes ..."],
+      ["that절 주어", "native peoples in southeast Peru"],
+      ["that절 동사", "preferred"],
+      ["that절 목적어", "shapes regarded as overweight in Western cultures"],
+    ],
+    structure:
+      `뼈대: <b>Yu and Shepard(S) + found(V) + [in one study, for example](삽입) + that ~(목적어절)</b>. found의 목적어가 <b>that 명사절</b> 통째인데, 사이에 <b>삽입구</b>가 끼어 떨어져 있음.<br><br>` +
+      `① ⭐ <b>found ... that native peoples ... preferred ~</b> (<b>find that + 명사절 목적어</b>) — 핵심! 타동사 <b>found</b>의 목적어가 <b>that + 완전한 절</b>("~라는 것을 발견했다"). 여기 that은 <b>뜻 없는 접속사</b>. <span class="wikilink" onclick="gotoGrammar('noun-clause-that','nc-object')">📐 명사절 that(목적어) 자세히 →</span> <span class="wikilink" onclick="gotoGrammar('noun-clause-that','nc-vs')">⚔️ that 삼형제 구별 →</span><br>` +
+      `② <b>in one study, for example</b> (<b>삽입구</b>) — found와 that절 <b>사이에 끼어든</b> 부사구(한 연구에서) + 담화표지(예를 들어). 이걸 걷어내면 <b>found that ~</b>가 바로 보임. 삽입에 속아 구조를 놓치지 말 것.<br>` +
+      `③ ⭐ <b>shapes regarded as overweight in Western cultures</b> (<b>과거분사 후치수식</b>) — <b>shapes (which are) regarded ~</b>에서 [관계사 + be]가 생략된 꼴. shapes는 스스로 '여기는' 게 아니라 '<b>여겨지는</b>' 대상이라 <b>과거분사 regarded</b>(수동). "서양 문화에서 과체중으로 <b>여겨지는</b> 몸매". <span class="wikilink" onclick="gotoGrammar('participle-postmod','pp-omit')">✂️ 후치수식 & (which are) 생략 자세히 →</span> <span class="wikilink" onclick="gotoGrammar('participle-postmod','pp-active-passive')">🔑 현재분사 vs 과거분사 고르기 →</span><br>` +
+      `④ <b>regarded as overweight</b> (<b>regard A as B의 수동</b>) — 능동 <b>regard A as B</b>(A를 B로 여기다)의 수동형. 여기 <b>as</b> = "~로/~라고". <span class="wikilink" onclick="gotoGrammar('as-roles','as-role')">📐 as(~로서·자격) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;• <b>native peoples</b> = 원주민들(peoples 복수 = 여러 민족). <b>preferred</b> = 선호했다. <b>overweight</b> = 과체중의.<br><br>` +
+      `📝 <b>해석:</b> "<b>예를 들어</b>, Yu와 Shepard는 한 연구에서 페루 남동부 원주민들이 <b>서양 문화에서는 과체중으로 여겨지는</b> 몸매를 <b>선호했다는 것을 발견했다</b>." — 3-28의 '미는 주관적'을 <b>실제 연구로 입증</b>: 서양에선 뚱뚱하다 여길 몸을 다른 문화는 아름답다고 선호 → 미의 기준은 문화마다 다름.`,
+    trans: "예를 들어, Yu와 Shepard는 한 연구에서 페루 남동부 원주민들이 서양 문화에서는 과체중으로 여겨지는 몸매를 선호했다는 것을 발견했다.",
+  },
 };
 
 /* ---------- 문법 정리 (공부한 내용 채우기) ----------
@@ -4441,6 +4573,30 @@ const GRAMMAR = [
     eg: [
       ["인용 도치 · says + 주어", "\"It can change,\" says the expert.", "\"그것은 바뀔 수 있다\"고 그 전문가는 말한다. (says + the expert)"],
       ["콤마 동격 · A, B (A=B)", "C. Loring Brace, an anthropologist", "인류학자인 C. Loring Brace"],
+    ],
+  },
+  {
+    id: "imperative-and-or",
+    title: "명령문 + and / or (~해라, 그러면 / 그렇지 않으면)",
+    tag: "핵심 · 독해",
+    body:
+      `문장 맨 앞의 <b>동사원형(명령문)</b> 뒤에 <b>and</b>나 <b>or</b>가 오면, 그 명령문이 <b>조건(If ~)</b>처럼 해석됨. "~해라"라는 명령의 힘이 약해지고 <b>"~하면"</b>이라는 가정으로 바뀜.<br>` +
+      `<div id="ia-and" class="g-sub">` +
+      `<b>① 명령문 + and = "~해라, 그러면 ~" (= If you ~, )</b><br>` +
+      `앞의 행동을 하면 <b>and 뒤의 결과가 따라온다</b>는 뜻.<br>` +
+      `예) <b>Hurry up, and</b> you'll catch the bus. = 서둘러라, <b>그러면</b> 버스를 탈 것이다. (= If you hurry up, ...)<br>` +
+      `🔸 이 지문처럼 <b>"~해보면 ~이다"</b> 식 <b>예시 제시</b>로도 자주 씀: <b>Look in the magazines, and</b> the women are thin. = 잡지를 들여다<b>보면</b> (거기) 여자들은 말랐다.` +
+      `</div>` +
+      `<div id="ia-or" class="g-sub">` +
+      `<b>② 명령문 + or = "~해라, 그렇지 않으면 ~" (= If you don't ~, / Unless ~)</b><br>` +
+      `and와 <b>정반대!</b> 앞의 행동을 <b>안 하면</b> or 뒤의 (대개 안 좋은) 결과가 온다는 경고.<br>` +
+      `예) <b>Hurry up, or</b> you'll miss the bus. = 서둘러라, <b>그렇지 않으면</b> 버스를 놓칠 것이다.<br>` +
+      `🚨 시험 포인트: 빈칸에 and/or 고르기 — 뒤 결과가 <b>좋으면 and</b>, <b>나쁘면(경고) or</b>.` +
+      `</div>`,
+    eg: [
+      ["명령문 + and (~하면)", "Study hard, and you will pass.", "열심히 공부해라, 그러면 합격할 것이다."],
+      ["명령문 + or (~안 하면)", "Study hard, or you will fail.", "열심히 공부해라, 그렇지 않으면 떨어질 것이다."],
+      ["예시 제시용 and", "Look around, and you'll see it.", "둘러보라, 그러면 그것이 보일 것이다."],
     ],
   },
 ];
