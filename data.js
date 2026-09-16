@@ -216,21 +216,34 @@ const WORDS_BY_PASSAGE = {
   { word: "native",           pos: "a./n.", meaning: "원주민의, 토박이의; 원주민 (native peoples 원주민)", example: "native peoples in southeast Peru" },
   { word: "regard",           pos: "v.",   meaning: "~로 여기다/간주하다 (regard A as B); 존중", example: "shapes regarded as overweight" },
   { word: "overweight",       pos: "a.",   meaning: "과체중의, 비만의 (↔underweight)",  example: "regarded as overweight" },
+  { word: "hairstyle",        pos: "n.",   meaning: "머리 모양, 헤어스타일",           example: "one's hairstyle sends a clear message" },
+  { word: "send a message",   pos: "phr.", meaning: "메시지를 전하다, 신호를 보내다 (send-sent-sent)", example: "sends a clear message" },
   { word: "symbol",           pos: "n.",   meaning: "상징, 표상 (v. symbolize)",       example: "a symbol of health and strength" },
   { word: "strength",         pos: "n.",   meaning: "힘, 강함, 강점 (a. strong, v. strengthen)", example: "a symbol of strength" },
+  { word: "grow one's hair long", pos: "phr.", meaning: "머리를 길게 기르다 (grow-grew-grown · 5형식: grow + O + long)", example: "men grow their hair long" },
+  { word: "teenage",          pos: "a.",   meaning: "십대의 (n. teenager 십대)",         example: "teenage boys" },
+  { word: "from a young age", pos: "phr.", meaning: "어릴 때부터",                     example: "learn from a young age to ~" },
+  { word: "style",            pos: "v./n.", meaning: "(머리를) 손질하다, 스타일링하다; 스타일", example: "style and decorate their hair" },
   { word: "decorate",         pos: "v.",   meaning: "장식하다, 꾸미다 (n. decoration)", example: "style and decorate their hair" },
   { word: "be associated with", pos: "phr.", meaning: "~와 연관되다, 관련되다 (associate A with B)", example: "a behavior associated with the opposite gender" },
   { word: "opposite",         pos: "a./n.", meaning: "반대의, 맞은편의; 정반대",        example: "the opposite gender" },
+  { word: "gender",           pos: "n.",   meaning: "성별, 성(性)",                    example: "the opposite gender" },
   { word: "object",           pos: "n.",   meaning: "대상, 물체; 목적 (objects of beauty 미의 대상)", example: "the objects of beauty" },
+  { word: "festival",         pos: "n.",   meaning: "축제, 축전",                     example: "certain festivals and celebrations" },
   { word: "celebration",      pos: "n.",   meaning: "기념행사, 축하 (v. celebrate)",   example: "festivals and celebrations" },
   { word: "dress up",         pos: "phr.", meaning: "잘 차려입다, 정장하다; 분장하다",  example: "men dress up and paint their faces" },
+  { word: "colorful",         pos: "a.",   meaning: "색채가 풍부한, 화려한 (n. color)", example: "The more colorful a man is, ..." },
   { word: "masculine",        pos: "a.",   meaning: "남성적인, 남자다운 (↔feminine 여성스러운)", example: "the more masculine he is considered" },
   { word: "for better or worse", pos: "phr.", meaning: "좋든 나쁘든, 좋으나 궂으나",    example: "For better or worse, beauty plays a role." },
+  { word: "play a role in",   pos: "phr.", meaning: "~에서 역할을 하다, 한몫하다 (= play a part in)", example: "beauty plays a role in our lives" },
+  { word: "extremely",        pos: "ad.",  meaning: "극도로, 매우 (a. extreme)",        example: "extremely difficult" },
+  { word: "physical",         pos: "a.",   meaning: "신체의, 육체의; 물리적인 (↔mental)", example: "certain physical traits" },
   { word: "universally",      pos: "ad.",  meaning: "보편적으로, 누구에게나 (a. universal)", example: "traits considered universally appealing" },
   { word: "appealing",        pos: "a.",   meaning: "매력적인, 마음을 끄는 (v. appeal 호소하다)", example: "universally appealing" },
   { word: "conform to",       pos: "phr.", meaning: "~에 따르다, 순응하다, 부합하다",   example: "beauty does not conform to a single standard" },
   { word: "uniform",          pos: "a./n.", meaning: "획일적인, 일정한; 제복",         example: "a single, uniform standard" },
   { word: "standard",         pos: "n.",   meaning: "기준, 표준, 수준",               example: "a uniform standard" },
+  { word: "in the end",       pos: "phr.", meaning: "결국, 마침내 (= finally, eventually)", example: "In the end, beauty really is ..." },
   { word: "in the eye of the beholder", pos: "phr.", meaning: "보는 사람의 눈에 달려 있는 (제 눈에 안경; beholder 보는 사람)", example: "Beauty is in the eye of the beholder." },
   { word: "as the saying goes", pos: "phr.", meaning: "속담처럼, 흔히 말하듯이",        example: "as the saying goes" },
   ],
@@ -3866,6 +3879,237 @@ const ANALYSIS = {
       `📝 <b>해석:</b> "<b>예를 들어</b>, Yu와 Shepard는 한 연구에서 페루 남동부 원주민들이 <b>서양 문화에서는 과체중으로 여겨지는</b> 몸매를 <b>선호했다는 것을 발견했다</b>." — 3-28의 '미는 주관적'을 <b>실제 연구로 입증</b>: 서양에선 뚱뚱하다 여길 몸을 다른 문화는 아름답다고 선호 → 미의 기준은 문화마다 다름.`,
     trans: "예를 들어, Yu와 Shepard는 한 연구에서 페루 남동부 원주민들이 서양 문화에서는 과체중으로 여겨지는 몸매를 선호했다는 것을 발견했다.",
   },
+  // 지문 3 · 31번째 문장: Take another example: In every culture, one's hairstyle sends a clear message.
+  "3-30": {
+    form: "명령문 도입(Take ~) + 콜론(:) → 예시 공개 · 3형식 (S + V + O) · 일반인 one's(소유격) · every + 단수명사",
+    tense: "현재 (일반적 사실 · 명령문은 동사원형)",
+    chips: [
+      ["명령문(도입)", "Take another example"],
+      ["콜론(:)", ": (→ 예시 내용 공개)"],
+      ["수식어(M)", "In every culture"],
+      ["주어(S)", "one's hairstyle"],
+      ["동사(V)", "sends"],
+      ["목적어(O)", "a clear message"],
+    ],
+    structure:
+      `뼈대: <b>Take another example(명령문·도입) : [In every culture(M), one's hairstyle(S) + sends(V) + a clear message(O)]</b>. 콜론 앞은 "예를 하나 더 들어보자"는 <b>안내 문구</b>, 콜론 뒤가 <b>진짜 예시(3형식 문장)</b>.<br><br>` +
+      `① ⭐ <b>Take another example</b> (<b>명령문</b> · 담화 도입) — 주어 you를 생략하고 <b>동사원형 Take</b>로 시작. "또 다른 예를 들어보자". 3-25의 <b>Look in ~, and ~</b>와 같은 '명령문으로 예시 꺼내기' 수법인데, 거기선 <b>and</b>로 뒤를 이었고 여기선 <b>콜론</b>으로 잇는다는 점이 차이. <span class="wikilink" onclick="gotoGrammar('imperative-and-or')">📐 명령문(동사원형 시작) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;• <b>another</b> = an + other → "또 하나의(다른)" · 항상 <b>단수명사</b>와 함께(another example ○ / another examples ✗). <b>take an example</b> = 예를 들다.<br>` +
+      `② ⭐ <b>콜론 :</b> — 앞(예를 들겠다) = 뒤(그 예의 내용) <b>등호 관계</b>. "그게 뭐냐면 → (짜잔)" 하고 공개. 3-8(<b>one good reason: Beauty is power</b>)과 같은 용법. <span class="wikilink" onclick="gotoGrammar('punctuation','pn-colon')">🎁 콜론(:) 자세히 →</span><br>` +
+      `③ <b>In every culture</b> (전치사구 부사 · M) — "모든 문화에서". <b>every</b> 뒤는 반드시 <b>단수명사</b>(every culture ○ / every cultures ✗). 뜻은 '모든'이지만 문법상 단수 취급.<br>` +
+      `④ ⭐ <b>one's hairstyle</b> (주어 · <b>일반인 one의 소유격</b>) — 여기 one은 앞 명사를 받는 게 아니라 <b>"사람은 누구나(불특정 일반인)"</b>. 소유격 <b>one's</b> = "그 사람의" ≒ your. 이 지문 속 <b>one 삼형제</b>: 3-6 <b>one out of three</b>(숫자 1) / 3-16 <b>the unattractive ones</b>(앞 명사 faces 대신) / 3-30 <b>one's hairstyle</b>(일반인) — 셋 다 다른 one! <span class="wikilink" onclick="gotoGrammar('pronoun-one','po-generic')">👤 일반인 one / one's 자세히 →</span> <span class="wikilink" onclick="gotoGrammar('pronoun-one','po-vs-it')">🔍 one vs it 구별 →</span><br>` +
+      `⑤ <b>sends a clear message</b> (V + O · <b>3형식</b>) — <b>send</b>(보내다·전하다) + 목적어 <b>a clear message</b>. 주어 hairstyle이 단수 → <b>send<u>s</u></b>. "분명한 메시지를 <b>전한다</b>" = 머리 모양만 봐도 그 사람에 대해 뭔가 알 수 있다. <span class="wikilink" onclick="gotoGrammar('articles','ar-a')">📐 관사 a(불특정 하나) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;• <b>send a message</b> = 메시지를 전하다·신호를 보내다(send-sent-sent). <b>clear</b> = 분명한.<br><br>` +
+      `📝 <b>해석:</b> "<b>또 다른 예를 들어보자</b>: 모든 문화에서, <b>사람의 머리 모양은 분명한 메시지를 전한다</b>." — 3-29(몸매 선호의 문화차)에 이어 <b>두 번째 예시(머리 모양)</b>를 여는 <b>주제문</b>. 다음 3-31~3-35의 파푸아뉴기니 Huli 부족 이야기가 이 '메시지'의 구체적 사례.`,
+    trans: "또 다른 예를 들어보자: 모든 문화에서, 사람의 머리 모양은 분명한 메시지를 전한다.",
+  },
+  // 지문 3 · 32번째 문장: In the Huli culture of Papua New Guinea, men grow their hair long as a symbol of health and strength.
+  "3-31": {
+    form: "5형식 (S + V + O + OC·형용사) · grow + O + long · as(~로서·자격) · of(동격·내용) · 명사 병렬(health and strength)",
+    tense: "현재 (관습 · 일반적 사실)",
+    chips: [
+      ["수식어(M)", "In the Huli culture of Papua New Guinea"],
+      ["주어(S)", "men"],
+      ["동사(V)", "grow"],
+      ["목적어(O)", "their hair"],
+      ["목적격보어(OC)·형용사", "long"],
+      ["수식어(M)·as 자격", "as a symbol of health and strength"],
+    ],
+    structure:
+      `뼈대: <b>In the Huli culture ~(M), men(S) + grow(V) + their hair(O) + long(OC) + as a symbol of ~(M)</b>. 목적어 뒤에 <b>형용사 long</b>이 붙은 <b>5형식</b>이 핵심.<br><br>` +
+      `① <b>In the Huli culture of Papua New Guinea</b> (전치사구 부사 · M) — "파푸아뉴기니의 Huli 문화에서는". 3-30이 예고한 '머리 모양 메시지'의 <b>구체적 사례 시작</b>. <b>of</b> = 소속(파푸아뉴기니<b>의</b> Huli 문화). <span class="wikilink" onclick="gotoGrammar('of-types','of-possess')">📐 of(소유·소속) 자세히 →</span><br>` +
+      `② ⭐ <b>grow their hair long</b> (<b>5형식 · grow + O + 형용사</b>) — <b>their hair(O) = long(OC)</b> 관계! grow는 여기서 "기르다"(타동사)이고, <b>long</b>은 목적어 hair가 <b>결과적으로 되는 상태</b>를 나타내는 <b>목적격보어</b>. "머리를 <b>길게</b>(길어지도록) 기른다". 🚨 부사 long<b>ly</b>가 아니라 <b>형용사 long</b>인 이유 = 목적어(hair)를 꾸미기 때문. <span class="wikilink" onclick="gotoGrammar('five-pattern','fp-adj')">📐 5형식 O + 형용사 자세히 →</span><br>` +
+      `&nbsp;&nbsp;• 비교: 1-4 <b>making soccer the world's sport</b>(O + 명사) / 2-7 <b>allow them to lift</b>(O + to V) — 같은 5형식, 보어 종류만 다름. <span class="wikilink" onclick="gotoGrammar('five-pattern','fp-noun')">📐 O + 명사형 →</span><br>` +
+      `③ ⭐ <b>as a symbol of health and strength</b> (<b>as = ~로서(자격)</b> + 전치사구) — 뒤에 <b>명사구</b>(a symbol)가 오는 as는 <b>전치사 "~로서"</b>. 시간(~할 때)·이유(~때문에) as와 구별! "건강과 힘의 <b>상징으로서</b>". <span class="wikilink" onclick="gotoGrammar('as-roles','as-role')">📐 as(~로서·자격) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;• <b>a symbol of health and strength</b>: <b>of</b> = "~라는/~을 나타내는" (상징 = 건강·힘). <b>health and strength</b>는 <b>and 명사 병렬</b>(둘 다 of의 목적어). <span class="wikilink" onclick="gotoGrammar('of-types','of-content')">📐 of(내용·대상) 자세히 →</span> <span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">📐 and 병렬(같은 급) →</span><br>` +
+      `&nbsp;&nbsp;• <b>grow</b>(grow-grew-grown) = 기르다·자라다. <b>symbol</b> = 상징. <b>strength</b> = 힘(a. strong).<br><br>` +
+      `📝 <b>해석:</b> "파푸아뉴기니의 Huli 문화에서는, 남자들이 <b>건강과 힘의 상징으로</b> 머리를 <b>길게 기른다</b>." — 3-30 '머리 모양 = 메시지'의 실례: 긴 머리라는 <b>모양</b>이 건강·힘이라는 <b>메시지</b>를 전함. 다음 3-32에서 '남자가 머리 꾸미기'가 서양과 다르다는 문화차로 확장.`,
+    trans: "파푸아뉴기니의 Huli 문화에서는, 남자들이 건강과 힘의 상징으로 머리를 길게 기른다.",
+  },
+
+  // 지문 3 · 33번째 문장: Teenage boys in this culture learn from a young age to style and decorate their hair—a behavior more commonly associated with the opposite gender in many cultures.
+  "3-32": {
+    form: "learn + to부정사(명사적 용법·목적어) · 삽입구(from a young age) · 동사 병렬(style and decorate) · 대시 — 동격 명사구 · 과거분사 후치수식(associated with) · 비교급 more commonly",
+    tense: "현재 (관습 · 일반적 사실)",
+    chips: [
+      ["주어(S)", "Teenage boys in this culture"],
+      ["동사(V)", "learn"],
+      ["삽입구", "from a young age"],
+      ["목적어(O)·to부정사", "to style and decorate their hair"],
+      ["대시(—)·동격", "a behavior ..."],
+      ["과거분사 후치수식", "(which is) more commonly associated with the opposite gender in many cultures"],
+    ],
+    structure:
+      `뼈대: <b>Teenage boys ~(S) + learn(V) + [from a young age](삽입) + to style and decorate their hair(O)</b> <b>—</b> <b>a behavior (which is) more commonly associated with ~</b>(동격 덧붙임). 앞 절이 핵심, 대시 뒤는 앞 행위에 <b>이름표를 붙인</b> 명사구.<br><br>` +
+      `① <b>Teenage boys in this culture</b> (주어) — 핵심주어 <b>boys</b>(복수) + 전치사구 in this culture가 뒤에서 수식. this culture = 앞 문장의 Huli 문화.<br>` +
+      `② ⭐ <b>learn ... to style and decorate their hair</b> (<b>learn + to부정사 목적어</b>) — <b>learn to V</b> = "~하는 법을 배우다". to부정사가 learn의 <b>목적어</b>(명사적 용법). 사이에 <b>from a young age</b>(어릴 때부터)라는 부사구가 <b>끼어들어</b> learn과 to가 떨어져 있음 → 3-29의 found ... that처럼 <b>삽입구를 걷어내면</b> learn to V가 바로 보임. <span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-noun')">📐 to부정사 명사적 용법(목적어) 자세히 →</span><br>` +
+      `③ <b>style and decorate</b> (<b>동사원형 병렬</b>) — to 하나가 <b>style</b>과 <b>decorate</b> 두 동사를 공유(to style and (to) decorate). 목적어 their hair도 둘이 공유. "머리를 <b>손질하고 장식하는</b>". <span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">📐 and 병렬(같은 급) 자세히 →</span><br>` +
+      `④ ⭐ <b>—a behavior ...</b> (<b>대시 + 동격 명사구</b>) — 문장 끝에 대시로 툭 덧붙인 명사구. <b>a behavior</b> = 앞의 "머리를 손질·장식하는 것" <b>행위 전체의 동격</b>(그 행위에 이름 붙이기). 3-11의 <b>—or so we think</b>(단서)와 같은 '문장 끝 대시' 자리. <span class="wikilink" onclick="gotoGrammar('punctuation','pn-dash')">✒️ 대시(—) 동격·덧붙이기 자세히 →</span><br>` +
+      `⑤ ⭐ <b>a behavior (which is) more commonly associated with the opposite gender</b> (<b>과거분사 후치수식</b>) — 3-29의 <b>shapes regarded as ~</b>와 같은 꼴! behavior는 '결부시키는' 게 아니라 '<b>결부되는</b>' 대상 → <b>과거분사 associated</b>(수동). [which is] 생략. "반대 성별과 <b>더 흔히 결부되는</b> 행동". <span class="wikilink" onclick="gotoGrammar('participle-postmod','pp-omit')">✂️ 후치수식 & (which is) 생략 자세히 →</span> <span class="wikilink" onclick="gotoGrammar('participle-postmod','pp-active-passive')">🔑 현재분사 vs 과거분사 →</span> <span class="wikilink" onclick="gotoGrammar('passive-voice','pv-form')">📐 수동(be + p.p.) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;• <b>be associated with</b> = ~와 연관되다(associate A with B의 수동). <b>more commonly</b> = 부사 commonly의 <b>비교급</b>("더 흔히") — 뒤에 than이 없지만 '(남성보다) 여성 쪽과 더 흔히'라는 비교가 숨어 있음. <b>the opposite gender</b> = 반대 성별(= 여성). <b>in many cultures</b> = 많은 문화에서(↔ 이 Huli 문화).<br><br>` +
+      `📝 <b>해석:</b> "이 문화의 십대 소년들은 <b>어릴 때부터</b> 머리를 <b>손질하고 장식하는 법을 배운다</b>—많은 문화에서는 <b>반대 성별과 더 흔히 결부되는 행동</b>이다." — 3-31 '긴 머리 = 힘의 상징'에 이어, '머리 꾸미기'가 Huli에선 <b>남자</b>의 일이지만 다른 문화에선 <b>여자</b>의 일 → 미의 기준·행동이 <b>문화마다 다르다</b>(3-28)는 주장의 두 번째 증거. 다음 3-33(It is also the men ~ who ~)에서 강조구문으로 못박음.`,
+    trans: "이 문화의 십대 소년들은 어릴 때부터 머리를 손질하고 장식하는 법을 배운다—많은 문화에서는 반대 성별과 더 흔히 결부되는 행동이다.",
+  },
+  // 지문 3 · 34번째 문장: It is also the men in this culture who are the objects of beauty.
+  "3-33": {
+    form: "It is ~ who 강조구문(사람 강조) · also 삽입 · 복수 강조대상 → are · of(내용) · the objects of beauty",
+    tense: "현재 (일반적 사실)",
+    chips: [
+      ["강조 장치", "It is (also)"],
+      ["강조 대상(원래 주어)", "the men in this culture"],
+      ["강조 접속사", "who"],
+      ["나머지 (V + C)", "are the objects of beauty"],
+    ],
+    structure:
+      `뼈대: <b>It is + [also] + the men in this culture(강조 대상) + who + are the objects of beauty(나머지)</b>. 원문 <b>The men in this culture are the objects of beauty</b>에서 주어 <b>the men ~</b>을 <b>It is ~ who</b> 사이에 넣어 "<b>바로 남자들</b>"이라고 강조.<br><br>` +
+      `① ⭐ <b>It is ... the men in this culture who ~</b> (<b>강조구문 · 사람 → who</b>) — 강조 대상이 <b>사람</b>이라 that 대신 <b>who</b>. 여기 <b>It</b>은 '그것'이 아니라 <b>뜻 없는 강조 장치</b>(해석 ✗). 🔍 <b>It is</b>와 <b>who</b>를 지우고 the men을 원래 자리에 넣으면 "The men in this culture are the objects of beauty" = <b>완전한 문장</b> → 강조구문 확정(가주어 아님). <span class="wikilink" onclick="gotoGrammar('cleft-sentence','cs-who')">👤 It is + 사람 + who 강조 자세히 →</span> <span class="wikilink" onclick="gotoGrammar('cleft-sentence','cs-test')">🔍 강조구문 vs 가주어 구별법 →</span><br>` +
+      `&nbsp;&nbsp;• 🚨 <b>수일치</b>: It <b>is</b>는 고정이지만, who 뒤 동사는 강조 대상 <b>the men(복수)</b>에 맞춰 <b>are</b>. (It is ~ who <b>is</b> ✗)<br>` +
+      `② <b>also</b> (부사 삽입) — It is와 강조 대상 사이에 끼어든 "<b>~이기도 하다</b>". 앞 3-31·3-32에서 남자가 '머리를 기르고 꾸민다'고 했으니 → "(그뿐 아니라) 미의 <b>대상</b>이 되는 것<b>도</b> 남자". 3-13의 <b>may start at a very early age</b>처럼 앞 내용에 <b>추가</b>하는 신호.<br>` +
+      `③ <b>the objects of beauty</b> (보어 · <b>of 내용</b>) — "미(美)의 대상". <b>object</b> = 대상(← 여기서 '물체·목적' 아님). <b>of</b>는 "~의 (내용을 가진)" → 아름다움이라는 평가를 <b>받는</b> 쪽. 3-31 <b>a symbol of health</b>와 같은 of. <span class="wikilink" onclick="gotoGrammar('of-types','of-content')">📐 of(내용·대상) 자세히 →</span> <span class="wikilink" onclick="gotoGrammar('articles','ar-the')">📐 정관사 the(특정) →</span><br>` +
+      `&nbsp;&nbsp;• <b>in this culture</b> = 앞 문장 this culture 반복 → 계속 Huli 이야기. 서양(여성이 미의 대상)과 <b>정반대</b>임을 부각.<br><br>` +
+      `📝 <b>해석:</b> "이 문화에서 미의 대상이 되는 것 <b>또한 바로 남자들</b>이다." — 3-32의 '남자가 머리를 꾸민다(서양에선 여자 일)'에 이어, <b>미의 대상 = 남자</b>라는 두 번째 뒤집기. 강조구문으로 '남자'를 확성기로 외침 → 미의 기준이 <b>문화마다 정반대</b>일 수 있다는 증거 강화. 3-34~3-35에서 남자 치장의 구체 모습.`,
+    trans: "이 문화에서 미의 대상이 되는 것 또한 바로 남자들이다.",
+  },
+
+  // 지문 3 · 35번째 문장: For certain festivals and celebrations, men dress up and paint their faces.
+  "3-34": {
+    form: "3형식 · 동사(구) 병렬(dress up and paint) · 명사 병렬(festivals and celebrations) · For(~을 위해·~때) 전치사구 부사 · 구동사 dress up",
+    tense: "현재 (관습 · 반복되는 일)",
+    chips: [
+      ["수식어(M)", "For certain festivals and celebrations"],
+      ["주어(S)", "men"],
+      ["동사1(V)·자동사", "dress up"],
+      ["등위접속사", "and"],
+      ["동사2(V)·타동사", "paint"],
+      ["목적어(O)", "their faces"],
+    ],
+    structure:
+      `뼈대: <b>For certain festivals and celebrations(M), men(S) + dress up(V1) + and + paint(V2) + their faces(O)</b>. 주어 하나(men)에 <b>동사 두 개</b>가 and로 나란히.<br><br>` +
+      `① <b>For certain festivals and celebrations</b> (전치사구 부사 · M) — "<b>특정 축제와 기념행사를 위해(그럴 때)</b>". 여기 <b>for</b> = 목적·행사 대상(~을 위해 → 그런 자리에서). <b>certain</b> = '확실한'이 아니라 "<b>어떤·특정한</b>"(3-18 <b>certain features</b>와 같은 뜻). <b>festivals and celebrations</b>는 <b>and 명사 병렬</b>(둘 다 for의 목적어). <span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">📐 and 병렬(같은 급) 자세히 →</span><br>` +
+      `② ⭐ <b>dress up and paint their faces</b> (<b>동사 병렬</b>) — <b>dress up</b>(차려입다 · 자동사구, 목적어 없음)과 <b>paint their faces</b>(얼굴을 칠하다 · 타동사 + O)가 and로 연결. 두 동사 모두 주어 <b>men</b>(복수)에 맞춰 <b>원형(-s 없음)</b>. 3-28 <b>is subjective and varies</b>와 같은 '동사 병렬' 구조. <span class="wikilink" onclick="gotoGrammar('correlative','cc-agreement')">📐 병렬 시 수일치 →</span><br>` +
+      `&nbsp;&nbsp;• <b>dress up</b> = (평소보다) 잘 차려입다·분장하다 (구동사: dress + up). <b>paint their faces</b> = 얼굴에 색을 칠하다(페이스 페인팅). 3-1의 <b>painting their nails</b>(손톱 칠하기)과 같은 paint.<br>` +
+      `&nbsp;&nbsp;• <b>their faces</b>: 주어 men이 복수라 얼굴도 <b>faces</b>(복수) — 각자 자기 얼굴. 한국어로는 '얼굴을'이지만 영어는 사람 수만큼 복수.<br><br>` +
+      `📝 <b>해석:</b> "특정 축제와 기념행사 때, 남자들은 <b>차려입고 얼굴을 칠한다</b>." — 3-33 '미의 대상 = 남자'의 <b>구체적 장면</b>. 서양에서 여성의 화장·치장으로 여겨지는 행동을 Huli 남자가 함. 다음 3-35에서 '화려할수록 남자답다'는 이 문화의 평가 기준으로 마무리.`,
+    trans: "특정 축제와 기념행사 때, 남자들은 차려입고 얼굴을 칠한다.",
+  },
+
+  // 지문 3 · 36번째 문장: The more colorful a man is, the more masculine—and attractive—he is considered.
+  "3-35": {
+    form: "The 비교급 ~, the 비교급 ~ (~할수록 더 ~) · 보어 전진 어순 · be considered + C 수동 · 대시 삽입(—and attractive—) · 형용사 병렬",
+    tense: "현재 (일반적 사실 · 평가 기준)",
+    chips: [
+      ["조건절 · The 비교급", "The more colorful"],
+      ["조건절 S + V", "a man is"],
+      ["결과절 · the 비교급", "the more masculine—and attractive—"],
+      ["대시 삽입", "—and attractive—"],
+      ["결과절 S + V(수동)", "he is considered"],
+    ],
+    structure:
+      `뼈대: <b>[The more colorful + a man is], [the more masculine (—and attractive—) + he is considered]</b>. 앞 절 = 조건(~할수록), 뒤 절 = 결과(더 ~하다). 두 절 모두 <b>보어가 the 비교급이 되어 맨 앞으로</b> 나간 어순.<br><br>` +
+      `① ⭐ <b>The more colorful ~, the more masculine ~</b> (<b>The 비교급, the 비교급</b>) — "<b>~할수록 더 ~하다</b>" 비례 공식. 여기 <b>the</b>는 관사가 아니라 '그만큼'이라는 <b>부사</b>. 앞 절 the more colorful = 조건(화려<b>할수록</b>), 뒤 절 the more masculine = 결과(<b>더</b> 남자다운). <span class="wikilink" onclick="gotoGrammar('the-comparative','tc-basic')">📐 The 비교급, the 비교급 자세히 →</span> <span class="wikilink" onclick="gotoGrammar('as-roles','as-proportion')">📐 비슷한 뜻 As ~(~할수록) →</span><br>` +
+      `② ⭐ <b>어순 복원</b> (<b>보어 전진</b>) — 비교급이 앞으로 튀어나온 것이므로 <b>원래 자리로 돌려</b> 읽기:<br>` +
+      `&nbsp;&nbsp;• 앞 절: a man is <u>colorful</u> → <b>The more colorful</b> a man is (보어 colorful이 앞으로).<br>` +
+      `&nbsp;&nbsp;• 뒤 절: he is considered <u>masculine</u> → <b>the more masculine</b> he is considered (보어 masculine이 앞으로). 뒤에 <b>S + V(he is considered)</b>만 덩그러니 남아 어색해 보이지만 정상. <span class="wikilink" onclick="gotoGrammar('the-comparative','tc-order')">🔑 비교급 앞으로 나간 어순 복원 →</span><br>` +
+      `③ ⭐ <b>he is considered (masculine)</b> (<b>be considered + 보어 · 수동</b>) — 능동 <b>consider + O + OC</b>(5형식: 그를 남자답다고 여기다)의 <b>수동</b>. 목적어 he가 주어로 가고 보어 masculine은 남음 → "<b>남자답다고 여겨진다</b>". 3-24·3-28의 <b>what is considered attractive/beautiful</b>과 같은 구조. <span class="wikilink" onclick="gotoGrammar('passive-voice','pv-form')">📐 수동태 be + p.p. 자세히 →</span> <span class="wikilink" onclick="gotoGrammar('five-pattern','fp-adj')">📐 원래 능동은 5형식(consider + O + 형용사) →</span><br>` +
+      `④ <b>—and attractive—</b> (<b>대시 삽입 · 형용사 병렬</b>) — masculine 뒤에 대시로 확 끼워 넣은 "<b>그리고 매력적</b>". the more <b>masculine and attractive</b>(둘 다 the more에 걸리는 형용사 병렬)인데, 대시로 attractive를 <b>튀게 강조</b>. 이 지문의 주제어 <b>attractive</b>(미)를 확성기로! <span class="wikilink" onclick="gotoGrammar('punctuation','pn-dash')">✒️ 대시(—…—) 삽입 자세히 →</span> <span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">📐 and 병렬 →</span><br>` +
+      `&nbsp;&nbsp;• <b>a man</b>(앞 절) → <b>he</b>(뒤 절): 같은 사람. <b>colorful</b> = 색이 화려한(얼굴 칠·장식). <b>masculine</b> = 남성적인(↔ feminine).<br>` +
+      `&nbsp;&nbsp;• 비교급 만들기: colorful·masculine·attractive는 <b>3음절 이상</b> → -er 대신 <b>more + 형용사</b>.<br><br>` +
+      `📝 <b>해석:</b> "남자가 <b>화려할수록</b>, 그는 <b>더 남자답고—그리고 매력적이라고—여겨진다</b>." — Huli 문화의 미 기준을 한 문장으로 요약: '화려함 = 남성성 = 매력'. 서양의 '화려함 = 여성성'과 정반대 → 3-28 '미는 주관적·문화마다 다름'의 <b>결정적 사례</b>. 다음 3-36부터 결론부(For better or worse ~).`,
+    trans: "남자가 화려할수록, 그는 더 남자답고—그리고 매력적이라고—여겨진다.",
+  },
+  // 지문 3 · 37번째 문장: For better or worse, beauty plays a role in our lives.
+  "3-36": {
+    form: "3형식 (S + V + O) · 관용구 For better or worse(문두 부사구) · play a role in ~ · 관사 a role",
+    tense: "현재 (일반적 사실 · 결론부 시작)",
+    chips: [
+      ["수식어(M)·관용구", "For better or worse"],
+      ["주어(S)", "beauty"],
+      ["동사(V)", "plays"],
+      ["목적어(O)", "a role"],
+      ["수식어(M)", "in our lives"],
+    ],
+    structure:
+      `뼈대: <b>For better or worse(M), beauty(S) + plays(V) + a role(O) + in our lives(M)</b>. 단순한 3형식 — 지문 전체의 <b>결론부(3-36~3-39)를 여는 문장</b>.<br><br>` +
+      `① <b>For better or worse</b> (관용구 · 문두 부사구) — "<b>좋든 나쁘든</b>(좋으나 궂으나)". better/worse는 good/bad의 <b>비교급</b>이지만 여기선 굳어진 표현이라 따로 비교 대상 없음. 앞 내용(미의 힘 + 문화차)을 <b>가치판단 없이</b> 받아들이자는 신호 → 결론 전환.<br>` +
+      `&nbsp;&nbsp;• 3-24의 <b>predominantly cultural</b>, 3-30의 <b>Take another example</b>처럼 문두에 <b>담화표지</b>를 두고 쉼표로 끊는 패턴.<br>` +
+      `② <b>beauty plays a role</b> (S + V + O · <b>3형식</b>) — <b>play a role (in ~)</b> = "(~에서) <b>역할을 하다</b>, 한몫하다"(= play a part in). role은 '하나의 역할'이라 <b>관사 a</b>. 주어 beauty(불가산·단수) → play<b>s</b>. <span class="wikilink" onclick="gotoGrammar('articles','ar-a')">📐 관사 a(불특정 하나) 자세히 →</span><br>` +
+      `③ <b>in our lives</b> (전치사구 부사) — "우리의 삶에서". <b>lives</b> = life의 <b>복수</b>(우리 각자의 삶 → 복수). 🚨 동사 live<b>s</b>(산다)와 철자 같음 — 여기선 our 뒤 <b>명사</b>. 3-6 <b>on beauty and health-care products</b>처럼 <b>our</b>·<b>we</b>로 독자 포함시키는 결론부 어법.<br>` +
+      `&nbsp;&nbsp;• <b>beauty</b>: 관사 없이 <b>추상명사 일반 개념</b>(아름다움 그 자체). <span class="wikilink" onclick="gotoGrammar('articles','ar-zero')">📐 무관사(추상·일반 개념) →</span><br><br>` +
+      `📝 <b>해석:</b> "<b>좋든 나쁘든</b>, 아름다움은 우리 삶에서 <b>한몫한다</b>." — 결론 ①: 미가 힘(3-8~3-9)이든 문화 상대적(3-22~3-35)이든, 어쨌든 우리 삶에 영향을 미친다는 <b>사실 인정</b>. 다음 3-37에서 '그러나 정의하긴 어렵다'로 이어짐.`,
+    trans: "좋든 나쁘든, 아름다움은 우리 삶에서 한몫한다.",
+  },
+
+  // 지문 3 · 38번째 문장: But it is extremely difficult to define exactly what makes one person attractive to another.
+  "3-37": {
+    form: "가주어 it + 진주어 to부정사 · 간접의문문(what + V, what = 주어) · 5형식 make + O + 형용사 · one ~ another 대응 · 부사 extremely·exactly",
+    tense: "현재 (일반적 사실)",
+    chips: [
+      ["접속사", "But"],
+      ["가주어", "it"],
+      ["동사+보어", "is extremely difficult"],
+      ["진주어·to부정사", "to define exactly what makes one person attractive to another"],
+      ["define의 목적어·간접의문문", "what makes one person attractive to another"],
+      ["what절 속 5형식", "what(S) makes(V) one person(O) attractive(OC)"],
+    ],
+    structure:
+      `뼈대: <b>But + it(가주어) + is extremely difficult + [to define exactly what makes one person attractive to another](진주어)</b>. 세 겹 구조: ⓐ 가주어-진주어 → ⓑ define의 목적어 = <b>what절</b> → ⓒ what절 속은 <b>5형식</b>.<br><br>` +
+      `① ⭐ <b>it is extremely difficult to define ~</b> (<b>가주어 it + 진주어 to부정사</b>) — 진짜 주어는 <b>to define ~</b>("~을 정의하는 것"). 머리가 무거워 뒤로 보내고 빈 자리에 it. 3-11의 <b>Trying to define it is difficult</b>와 <b>같은 뜻, 다른 구조</b>(그땐 동명사 주어를 앞에 그대로 둠). <b>extremely</b> = 부사, difficult(형용사) 강조. <span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-formal-it')">📐 가주어 It ~ to부정사 자세히 →</span><br>` +
+      `② ⭐ <b>define exactly what makes one person attractive to another</b> (<b>간접의문문 · what = 절의 주어</b>) — define(정의하다)의 목적어가 <b>what절</b> 통째. 여기 <b>what</b>은 makes의 <b>주어</b>("<b>무엇이</b> ~하는지"). 뒤에 바로 동사 makes가 오는 이유 = what이 주어 자리를 채웠기 때문(불완전한 절). <b>exactly</b>(정확히)는 what절 전체를 수식하는 부사로 define과 what 사이에 삽입. <span class="wikilink" onclick="gotoGrammar('indirect-question','iq-subject')">📐 간접의문문(what = 주어) 자세히 →</span> <span class="wikilink" onclick="gotoGrammar('indirect-question','iq-adverb')">📐 exactly + 의문사 →</span> <span class="wikilink" onclick="gotoGrammar('relative-pronoun','rp-what')">📐 관계대명사 what과 비교 →</span><br>` +
+      `③ ⭐ <b>makes one person attractive</b> (<b>5형식 · make + O + 형용사</b>) — <b>one person(O) = attractive(OC)</b>. "한 사람을 <b>매력적으로 만들다</b>". 3-31의 <b>grow their hair long</b>과 같은 O + 형용사 보어. 🚨 부사 attractive<b>ly</b> ✗. <span class="wikilink" onclick="gotoGrammar('five-pattern','fp-adj')">📐 5형식 O + 형용사 자세히 →</span><br>` +
+      `④ <b>one person ... to another</b> (<b>one ~ another 대응</b>) — "<b>한 사람</b>이 <b>다른 사람</b>에게(보기에)". another = an + other (person 생략). <b>attractive to + 사람</b> = ~에게 매력적인. 여기 one은 숫자·일반인이 아니라 <b>'(어떤) 하나'</b>. 3-30 one's(일반인)과 또 다름. <span class="wikilink" onclick="gotoGrammar('pronoun-one','po-generic')">👤 one 삼형제 구별 →</span><br>` +
+      `&nbsp;&nbsp;• <b>But</b>: 3-36(미는 한몫한다)을 <b>인정한 뒤 반전</b> → 그런데 정의는 어렵다. <b>define</b> = 정의하다(n. definition).<br><br>` +
+      `📝 <b>해석:</b> "<b>하지만</b> 무엇이 한 사람을 다른 사람에게 매력적으로 만드는지 <b>정확히 정의하기는 극도로 어렵다</b>." — 결론 ②: 3-10~3-11(But what exactly is beauty? ~ difficult)의 <b>질문을 다시 소환</b>해 답이 없음을 인정. 다음 3-38에서 '보편 특징도 있지만, 단일 기준은 없다'로 절충.`,
+    trans: "하지만 무엇이 한 사람을 다른 사람에게 매력적으로 만드는지 정확히 정의하기는 극도로 어렵다.",
+  },
+
+  // 지문 3 · 39번째 문장: Although there do seem to be certain physical traits that are considered universally appealing, it is also true that beauty does not always conform to a single, uniform standard.
+  "3-38": {
+    form: "Although 양보절 + 주절 · 강조의 do(do seem) · there seem to be · 주격 관계대명사 that + be considered + C · 가주어 it + 진주어 that절 · 부분부정 not always · 형용사 나열(a single, uniform)",
+    tense: "현재 (일반적 사실 · 절충 결론)",
+    chips: [
+      ["양보 접속사", "Although"],
+      ["양보절 · 강조 do", "there do seem to be certain physical traits"],
+      ["관계사절(주격 that)", "that are considered universally appealing"],
+      ["주절 · 가주어", "it is also true"],
+      ["진주어·that절", "that beauty does not always conform to ~"],
+      ["부분부정", "not always"],
+      ["형용사 나열", "a single, uniform standard"],
+    ],
+    structure:
+      `뼈대: <b>[Although there do seem to be certain physical traits (that are considered universally appealing)](양보절), [it is also true (that beauty does not always conform to a single, uniform standard)](주절)</b>. 앞에서 <b>인정</b>(보편적 특징이 있긴 함) → 뒤에서 <b>하지만</b>(단일 기준은 없음). 지문 전체의 <b>절충 결론</b>.<br><br>` +
+      `① <b>Although ~, 주절</b> (<b>양보 접속사</b>) — "비록 ~이지만". 접속사라 뒤에 <b>완전한 절</b>이 오고 쉼표 뒤 주절이 필수. 부사 however(문장 연결 ✗)와 다름. 2-28의 <b>Although genes ~ play a part, training is needed</b>와 같은 '인정 → 반박' 틀. 필자 입장 = <b>주절</b>.<br>` +
+      `② ⭐ <b>there do seem to be certain physical traits</b> (<b>강조의 do + there seem to be</b>) — 원래 <b>there seem to be ~</b>(~이 있는 것 같다)에 <b>do</b>를 넣어 "<b>정말</b> 있는 것 같다"고 강조. do를 지워도 문장 성립 → 의문문의 do가 아닌 <b>강조 do</b>. 양보절 속이라 "그래, <b>정말</b> 있긴 있어"라는 <b>인정의 뉘앙스</b>. <span class="wikilink" onclick="gotoGrammar('emphatic-do','ed-concession')">📐 양보절 속 강조 do 자세히 →</span> <span class="wikilink" onclick="gotoGrammar('seem-appear')">📐 seem to V(~인 것 같다) →</span><br>` +
+      `&nbsp;&nbsp;• 🚨 <b>수일치</b>: there 구문의 진짜 주어는 뒤의 <b>traits(복수)</b> → do seem (does ✗). <b>certain</b> = '특정한·어떤'(3-18, 3-34와 동일).<br>` +
+      `③ ⭐ <b>traits that are considered universally appealing</b> (<b>주격 관계대명사 that + be considered + C</b>) — that 뒤 절에 <b>주어가 빠짐</b>(불완전) → 관계대명사, 선행사 traits(복수) → <b>are</b>. 속은 <b>be considered + 보어(appealing)</b> 수동("매력적이라고 여겨지는"). <b>universally</b>(보편적으로)는 appealing 수식 부사. 3-24·3-28·3-35의 <b>considered + 형용사</b> 시리즈 마무리. <span class="wikilink" onclick="gotoGrammar('relative-pronoun','rp-incomplete')">📐 관계대명사(불완전 절) 자세히 →</span> <span class="wikilink" onclick="gotoGrammar('passive-voice','pv-form')">📐 수동 be + p.p. →</span> <span class="wikilink" onclick="gotoGrammar('noun-clause-that','nc-vs')">⚔️ that 삼형제 구별 →</span><br>` +
+      `④ ⭐ <b>it is also true that beauty ~</b> (<b>가주어 it + 진주어 that절</b>) — 진짜 주어 = <b>that beauty does not ~ standard</b>("~라는 것"). it은 해석 ✗. 3-37은 <b>to부정사</b> 진주어, 3-38은 <b>that절</b> 진주어 — 연달아 나온 가주어 두 종류! 🔍 It is와 that을 지우면 true가 들어갈 자리 없음 + that절은 완전 → 강조구문 아님. <b>also</b> = "~<b>도</b> 사실"(양보절 내용도 사실이고, 이것<b>도</b>). <span class="wikilink" onclick="gotoGrammar('noun-clause-that','nc-formal-it')">📐 가주어 It + that절 자세히 →</span> <span class="wikilink" onclick="gotoGrammar('cleft-sentence','cs-test')">🔍 강조구문 vs 가주어 구별 →</span><br>` +
+      `⑤ ⭐ <b>does not always conform to</b> (<b>부분부정 · not + always</b>) — "<b>항상</b> ~하는 <b>것은 아니다</b>"(때로는 따르고, 때로는 안 따름). 전체부정(never conforms 전혀 안 따른다)과 구별! 3-22 <b>Not everyone agrees</b>와 같은 부분부정. <span class="wikilink" onclick="gotoGrammar('partial-negation','pn-partial')">📐 부분부정 not + always 자세히 →</span><br>` +
+      `&nbsp;&nbsp;• <b>conform to</b> = ~에 따르다·부합하다. <b>a single, uniform standard</b> = <b>형용사 두 개(single, uniform)를 쉼표로 나열</b>해 standard 수식 → "<b>단 하나의, 획일적인</b> 기준". 3-35 <b>—and attractive—</b>가 대시 병렬이었다면 여긴 쉼표 병렬.<br><br>` +
+      `📝 <b>해석:</b> "<b>보편적으로 매력적이라고 여겨지는 특정 신체적 특징이 정말 있는 것 같긴 하지만</b>, 아름다움이 <b>항상 단 하나의 획일적인 기준을 따르지는 않는다</b>는 것 <b>또한 사실</b>이다." — 결론 ③(절충): 3-18~3-21(보편 특징: 큰 눈·맑은 피부 등)을 <b>인정</b>하면서도 3-22~3-35(문화차)를 근거로 <b>단일 기준은 없다</b>고 정리. 다음 3-39가 속담으로 마무리.`,
+    trans: "보편적으로 매력적이라고 여겨지는 특정 신체적 특징이 정말 있는 것 같긴 하지만, 아름다움이 항상 단 하나의 획일적인 기준을 따르지는 않는다는 것 또한 사실이다.",
+  },
+
+  // 지문 3 · 40번째 문장: In the end, beauty really is, as the saying goes, in the eye of the beholder.
+  "3-39": {
+    form: "1형식/2형식 (S + be + 전치사구 보어) · 삽입절 as the saying goes(as 양태) · 부사 really(be 강조) · 관용구 in the eye of the beholder · 담화표지 In the end",
+    tense: "현재 (일반적 진리 · 최종 결론)",
+    chips: [
+      ["담화표지(M)", "In the end"],
+      ["주어(S)", "beauty"],
+      ["부사(강조)", "really"],
+      ["동사(V)", "is"],
+      ["삽입절", ", as the saying goes,"],
+      ["보어(C)·전치사구", "in the eye of the beholder"],
+    ],
+    structure:
+      `뼈대: <b>In the end(M), beauty(S) + really + is(V) + [, as the saying goes,](삽입) + in the eye of the beholder(C)</b>. 뼈대는 <b>beauty is in the eye of the beholder</b>(속담) 하나. 사이에 <b>really</b>와 <b>삽입절</b>이 끼어 길어 보일 뿐.<br><br>` +
+      `① <b>In the end</b> (담화표지 · M) — "<b>결국</b>, 결론적으로"(= finally, after all). 결론부 마지막 문장임을 알리는 신호. 3-36 For better or worse → 3-37 But → 3-38 Although → 3-39 <b>In the end</b>: 결론부 4문장의 담화표지 흐름.<br>` +
+      `② ⭐ <b>as the saying goes</b> (<b>삽입절 · as = ~처럼/~대로(양태)</b>) — 쉼표 두 개로 <b>is</b>와 보어 사이에 끼워 넣은 절. <b>as</b> + S(the saying) + V(goes) = "<b>속담이 말하듯</b>, 흔히 말하듯". 여기 <b>go</b> = '가다' ✗ → "(말·노래 등이) <b>~라고 되어 있다</b>". 3-29 <b>in one study, for example</b>처럼 <b>걷어내면</b> 뼈대가 보이는 삽입. <span class="wikilink" onclick="gotoGrammar('as-roles','as-manner')">📐 as(~처럼·~대로 양태) 자세히 →</span> <span class="wikilink" onclick="gotoGrammar('punctuation')">✒️ 쉼표 삽입 →</span><br>` +
+      `③ <b>really is</b> (<b>부사 really로 be동사 강조</b>) — "<b>정말로</b> ~이다". 일반동사면 3-38처럼 <b>do</b>로 강조하지만, <b>be동사는 do ✗</b> → really / indeed 같은 <b>부사</b>로 강조. is에 힘을 주어 읽기. <span class="wikilink" onclick="gotoGrammar('emphatic-do','ed-form')">📐 cf. 일반동사 강조는 do →</span><br>` +
+      `④ ⭐ <b>is in the eye of the beholder</b> (<b>be + 전치사구 보어 · 관용구</b>) — 속담 "<b>Beauty is in the eye of the beholder</b>"(미는 보는 사람의 눈에 있다 = <b>제 눈에 안경</b>). <b>beholder</b> = behold(보다) + -er(사람) → 보는 사람. <b>the</b> = 속담 속 일반화된 '그 보는 사람'. of = 소유(보는 사람<b>의</b> 눈). <span class="wikilink" onclick="gotoGrammar('of-types','of-possess')">📐 of(소유) →</span> <span class="wikilink" onclick="gotoGrammar('articles','ar-the')">📐 정관사 the →</span><br>` +
+      `&nbsp;&nbsp;• 왜 이 속담이 결론? = 3-28 <b>subjective</b>(주관적)·3-38 <b>단일 기준 없음</b>을 한 줄 속담으로 <b>압축</b>. 지문 제목 "What is Beauty?"에 대한 최종 답: "<b>보는 사람마다 다르다</b>".<br><br>` +
+      `📝 <b>해석:</b> "<b>결국</b>, 아름다움은 <b>속담이 말하듯</b>, <b>정말로 보는 사람의 눈에 달려 있다</b>." — 지문 3 마무리: 3-10 "But what exactly is beauty?"로 던진 질문에, 보편성(3-18~21)과 문화 상대성(3-22~35)을 모두 거친 뒤 '<b>제 눈에 안경</b>'이라는 속담으로 답함. 🎉 지문 3 분석 완료!`,
+    trans: "결국, 아름다움은 속담이 말하듯, 정말로 보는 사람의 눈에 달려 있다.",
+  },
 };
 
 /* ---------- 문법 정리 (공부한 내용 채우기) ----------
@@ -4033,6 +4277,13 @@ const GRAMMAR = [
       `<b>tell/show/teach + 사람(간접목적어) + that절(직접목적어)</b> = "…에게 ~라고 말하다/보여주다".<br>` +
       `예) He told me <u>that he was tired</u>. = 그는 나에게 피곤하다<b>고</b> 말했다.` +
       `</div>` +
+      `<div id="nc-formal-it" class="g-sub">` +
+      `<b>③ 주어 자리 → 가주어 It + 진주어 that절 (It is true that ~)</b><br>` +
+      `that절이 <b>주어</b>면 머리가 무거워 뒤로 보내고, 빈 자리에 <b>가주어 it</b>을 세움. <b>It is + 형용사/명사 + that ~</b> = "~라는 것은 …이다". it은 해석 ✗.<br>` +
+      `예) <b>It</b> is true <u>that beauty does not always conform to a single standard</u>. = 미가 항상 단일 기준을 따르지는 않는다<b>는 것은</b> 사실이다.<br>` +
+      `예) <b>It</b> is clear <u>that he lied</u>. = 그가 거짓말했다<b>는 것은</b> 분명하다.<br>` +
+      `🔍 to부정사 진주어(It is hard <u>to learn</u>)와 같은 원리 → <span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-formal-it')">📐 It ~ to부정사 가주어 →</span> · 강조구문 It is ~ that과 헷갈리면 → <span class="wikilink" onclick="gotoGrammar('cleft-sentence','cs-test')">🔍 구별법 →</span>` +
+      `</div>` +
       `<div id="nc-vs" class="g-sub">` +
       `<b>⚔️ that 삼형제 — 뒤 절의 완전/불완전으로 한 방에!</b><br>` +
       `· <b>명사절 that</b>: 뒤 절 <b>완전</b> + 자기가 <b>명사(주·목·보) 역할</b> → "~라는 것" (I know <u>that he left</u>)<br>` +
@@ -4043,6 +4294,7 @@ const GRAMMAR = [
       ["명사절 that (목적어) · ~라는 것", "The study suggests that women prefer tall men.", "그 연구는 여성이 키 큰 남자를 선호한다는 것을 시사한다."],
       ["4형식 직접목적어 · ~라고", "Scientists tell us that beauty equals health.", "과학자들은 우리에게 아름다움이 건강과 같다고 말한다."],
       ["cf. 동격 that (~라는)", "the idea that beauty is power", "아름다움이 곧 힘이라는 생각 (명사=that절)"],
+      ["가주어 It + 진주어 that절", "It is true that beauty varies by culture.", "미가 문화마다 다르다는 것은 사실이다."],
     ],
   },
   {
@@ -4146,7 +4398,15 @@ const GRAMMAR = [
     body:
       `이 5가지는 단순히 문법을 나누는 선이 아니라, <b>“이 정보가 얼마나 중요한가(강조 세기)”</b> 와 <b>“앞뒤를 어떻게 연결할까(호흡·흐름)”</b> 를 조절하는 장치.<br><br>` +
       `<b>① 부연설명 트리오 (중간에 끼워넣기)</b> — 강조 세기가 다름.<br>` +
-      `&nbsp;&nbsp;대시 <b>—</b> (확성기·확 튐) &gt; 쉼표 <b>,</b> (기본·자연스러움) &gt; 괄호 <b>( )</b> (귓속말·빼도 됨).<br><br>` +
+      `&nbsp;&nbsp;대시 <b>—</b> (확성기·확 튐) &gt; 쉼표 <b>,</b> (기본·자연스러움) &gt; 괄호 <b>( )</b> (귓속말·빼도 됨).<br>` +
+      `<div id="pn-dash" class="g-sub">` +
+      `<b>✒️ 대시 — 의 두 가지 자리</b><br>` +
+      `• <b>중간 삽입 (—…—)</b>: 문장 한가운데 끼워넣고 다시 본문으로 복귀. 예) sales of makeup<b>—as well as gym memberships—</b>generate ...<br>` +
+      `• <b>문장 끝 덧붙이기 (…—명사구/절)</b>: 앞말 전체를 받아 <b>이름 붙이기(동격)</b>·<b>단서</b>·<b>반전</b>을 툭 던짐. 이때 대시 뒤 명사구 = <b>앞 내용 전체의 동격</b>.<br>` +
+      `예) boys learn to style and decorate their hair<b>—a behavior</b> associated with the opposite gender. = 머리를 손질·장식하는 것<b>—(그건) 반대 성별과 결부되는 행동</b>. (a behavior = 앞의 '머리 손질·장식' 행위 전체)<br>` +
+      `예) we know it when we see it<b>—or so we think</b>. = 보면 안다<b>—아니, 그렇게 생각할 뿐일지도</b>. (단서·반전)` +
+      `</div>` +
+      `<br>` +
       `<b>② 연결 듀오 (앞뒤 잇기)</b> — 연결 방식이 다름.<br>` +
       `<div id="pn-colon" class="g-sub">` +
       `<b>🎁 콜론 : — 앞 내용의 구체적 설명·정답·목록을 공개</b><br>` +
@@ -4212,6 +4472,13 @@ const GRAMMAR = [
       `• 여기 <b>It</b>은 '그것'이 <b>아님</b> — 뜻 없는 강조 장치. 해석 안 함.<br>` +
       `• 강조 대상이 <b>사람</b>이면 that 대신 <b>who</b>, <b>사물</b>이면 that/which, <b>시간·장소</b>면 when/where도 가능.<br>` +
       `• <b>주어·목적어·부사구</b>는 강조 가능하지만, <b>동사</b>는 이 틀로 강조 못 함.<br><br>` +
+      `<div id="cs-who" class="g-sub">` +
+      `<b>👤 It is + 사람 + who ~ — 사람 강조는 who</b><br>` +
+      `강조 대상이 <b>사람</b>이면 that 대신 <b>who</b>를 자주 씀(that도 가능). 강조 대상이 <b>복수</b>여도 <b>It is</b>는 그대로, 뒤 동사는 <b>강조 대상의 수</b>에 맞춤.<br>` +
+      `예) <b>It is</b> also <u>the men</u> in this culture <b>who</b> <b>are</b> the objects of beauty. = 이 문화에서 미의 대상은 <b>바로 남자들</b>이기도 하다. (the men 복수 → are)<br>` +
+      `&nbsp;&nbsp;원문: <u>The men</u> in this culture are the objects of beauty. → It is와 who를 지우면 완전한 문장 = 강조구문 ✅<br>` +
+      `🔸 <b>also / only / not</b> 같은 부사가 It is와 강조 대상 사이에 끼기도 함: It is <b>also</b> the men who ~ / It is <b>only</b> you who ~ / It is <b>not</b> money that ~.` +
+      `</div>` +
       `<div id="cs-test" class="g-sub">` +
       `<b>🔍 강조구문 vs 가주어 It ~ that 구별법 (시험 단골!)</b><br>` +
       `<b>It is</b> 와 <b>that</b>을 <b>지우고</b>, 강조 대상을 원래 자리에 넣어 봐라.<br>` +
@@ -4224,6 +4491,7 @@ const GRAMMAR = [
       ["주어 강조", "It is this simplicity that makes soccer popular.", "축구를 인기있게 만드는 건 바로 이 단순함이다."],
       ["목적어 강조", "It was soccer that they loved most.", "그들이 가장 사랑한 건 바로 축구였다."],
       ["부사구(장소) 강조", "It was in Africa that the sport spread fast.", "그 스포츠가 빠르게 퍼진 건 바로 아프리카에서였다."],
+      ["사람 강조 who (+ also)", "It is also the men who are the objects of beauty.", "미의 대상은 바로 남자들이기도 하다."],
     ],
   },
   {
@@ -4239,6 +4507,14 @@ const GRAMMAR = [
       `예) I lost my pen. I need to buy <b>one</b>. → <b>one = a pen</b> (아무 펜이나 새로)<br>` +
       `예) I lost my pen. Where is <b>it</b>? → <b>it = the pen</b> (잃어버린 바로 그 펜)` +
       `</div>` +
+      `<div id="po-generic" class="g-sub">` +
+      `<b>👤 일반인 one / one's / oneself — "사람은 누구나"</b><br>` +
+      `앞 명사를 받는 게 아니라 <b>불특정한 일반 사람</b>(= you, people, 누구든)을 가리키는 one. 격식체에서 씀.<br>` +
+      `• 주격 <b>one</b> / 소유격 <b>one's</b> / 목적격 <b>one</b> / 재귀 <b>oneself</b>. 동사는 <b>단수</b>.<br>` +
+      `예) <b>One's</b> hairstyle sends a message. = <b>사람의(누구든 그 사람의)</b> 머리 모양은 메시지를 전한다. (= Your hairstyle ~)<br>` +
+      `예) <b>One</b> should keep <b>one's</b> promise. = 사람은 자기 약속을 지켜야 한다.<br>` +
+      `🔍 <b>one 삼형제 구별</b>: ① 숫자 1 (<b>one</b> out of three) ② 앞 명사 대신 (the red <b>one</b>/<b>ones</b>) ③ <b>일반인</b> (<b>one's</b> hairstyle). 뒤에 <b>'s</b>가 붙고 앞에 받을 명사가 없으면 ③!` +
+      `</div>` +
       `<b>포인트</b><br>` +
       `• 형용사가 붙으면 <b>a long one</b>, <b>the red one</b> 처럼 관사와 함께.<br>` +
       `• 복수는 <b>ones</b>. 예) the red <b>ones</b> (빨간 것들).<br>` +
@@ -4247,6 +4523,7 @@ const GRAMMAR = [
       ["one = a + 명사 (같은 종류)", "The story is a long one.", "그 이야기는 긴 것(긴 이야기)이다. (one = story)"],
       ["one vs it", "I lost my ball; I'll buy one. Where is it?", "공을 잃었다; 하나 살게(아무 공). 그건 어딨지?(그 공)"],
       ["복수 ones", "I like the red ones.", "난 빨간 것들이 좋다."],
+      ["일반인 one's (소유격)", "One's hairstyle sends a clear message.", "사람의 머리 모양은 분명한 메시지를 전한다. (one's = 누구든 그 사람의)"],
     ],
   },
   {
@@ -4597,6 +4874,132 @@ const GRAMMAR = [
       ["명령문 + and (~하면)", "Study hard, and you will pass.", "열심히 공부해라, 그러면 합격할 것이다."],
       ["명령문 + or (~안 하면)", "Study hard, or you will fail.", "열심히 공부해라, 그렇지 않으면 떨어질 것이다."],
       ["예시 제시용 and", "Look around, and you'll see it.", "둘러보라, 그러면 그것이 보일 것이다."],
+    ],
+  },
+  {
+    id: "five-pattern",
+    title: "5형식 (S + V + O + OC) — 목적어에 '상태·이름·행동'을 붙이다",
+    tag: "핵심",
+    body:
+      `<b>S + V + O + OC(목적격보어)</b>. 목적어(O) 뒤에 <b>그 목적어를 설명하는 말(OC)</b>이 하나 더 붙는 형식. 핵심 판별법: <b>O = OC</b> 또는 <b>O가 OC하다/한다</b>는 관계가 성립하면 5형식.<br>` +
+      `🔍 4형식(S+V+IO+DO)과 구별: 4형식은 <b>IO ≠ DO</b>(I gave <b>him a book</b> — he≠book), 5형식은 <b>O = OC</b>(I made <b>him happy</b> — he=happy).<br><br>` +
+      `<div id="fp-adj" class="g-sub">` +
+      `<b>① O + 형용사 — "O를 ~한 상태로 (만들다·두다·기르다)"</b><br>` +
+      `<b>make / keep / leave / find / consider / grow / paint / cut</b> + O + <b>형용사</b>. 형용사가 목적어의 <b>결과 상태</b>를 나타냄.<br>` +
+      `예) men <b>grow their hair long</b>. = 남자들은 머리를 <b>길게</b> 기른다. (their hair = long 상태가 됨)<br>` +
+      `예) Keep <b>the door open</b>. = 문을 <b>열린 채로</b> 둬라. / It made <b>me happy</b>. = 그게 나를 <b>행복하게</b> 만들었다.<br>` +
+      `🚨 이 자리에 <b>부사(-ly)는 ✗</b>: grow their hair long<b>ly</b> ✗ → OC는 목적어를 꾸미므로 <b>형용사</b>. (시험 단골)` +
+      `</div>` +
+      `<div id="fp-noun" class="g-sub">` +
+      `<b>② O + 명사 — "O를 ~라고 (부르다·만들다·여기다)"</b><br>` +
+      `<b>call / name / make / consider / elect</b> + O + <b>명사</b>. O = 명사.<br>` +
+      `예) This makes <b>soccer the most popular sport</b>. = 이것이 축구를 <b>가장 인기 있는 스포츠로</b> 만든다. (soccer = the most popular sport)<br>` +
+      `예) They call <b>him a genius</b>. = 그들은 그를 <b>천재라고</b> 부른다.` +
+      `</div>` +
+      `<div id="fp-to" class="g-sub">` +
+      `<b>③ O + to부정사 — "O가 ~하도록 (허락·요청·원하다)"</b><br>` +
+      `<b>allow / enable / want / ask / tell / expect / cause</b> + O + <b>to V</b>. O가 to V의 <b>의미상 주어</b>.<br>` +
+      `예) These allow <b>them to lift</b> hundreds of kilos. = 이것들이 그들이 수백 kg을 <b>들 수 있게</b> 해준다.<br>` +
+      `예) I want <b>you to come</b>. = 나는 네가 <b>오기를</b> 원한다.` +
+      `</div>` +
+      `<div id="fp-bare" class="g-sub">` +
+      `<b>④ O + 동사원형 / 분사 — 사역·지각동사</b><br>` +
+      `<b>make / have / let</b>(사역) · <b>see / hear / feel / watch</b>(지각) + O + <b>동사원형</b>(to 없음). O가 '당하는' 쪽이면 <b>과거분사</b>, 진행 중이면 <b>현재분사</b>.<br>` +
+      `예) She made <b>me wait</b>. = 그녀는 나를 <b>기다리게</b> 했다. / I saw <b>him cross</b> the street. = 그가 길을 <b>건너는 걸</b> 봤다.<br>` +
+      `예) I had <b>my hair cut</b>. = 머리를 <b>잘랐다(잘리게 했다)</b>. (hair는 잘리는 쪽 → 과거분사)<br>` +
+      `<span class="wikilink" onclick="gotoGrammar('bare-infinitive','bi-causative')">📐 사역동사 + 동사원형 자세히 →</span> <span class="wikilink" onclick="gotoGrammar('bare-infinitive','bi-perception')">📐 지각동사 + 동사원형 자세히 →</span>` +
+      `</div>`,
+    eg: [
+      ["① O + 형용사", "Men grow their hair long as a symbol of strength.", "남자들은 힘의 상징으로 머리를 길게 기른다. (hair = long)"],
+      ["① O + 형용사 (keep)", "Keep your room clean.", "방을 깨끗한 상태로 유지해라."],
+      ["② O + 명사", "This makes soccer the world's sport.", "이것이 축구를 세계의 스포츠로 만든다."],
+      ["③ O + to부정사", "The coach allowed us to rest.", "코치가 우리가 쉬도록 허락했다."],
+      ["④ O + 동사원형", "Let me go.", "나를 가게 해줘."],
+    ],
+  },
+  {
+    id: "the-comparative",
+    title: "The 비교급 ~, the 비교급 ~ — '~할수록 더 ~하다'",
+    tag: "핵심 · 독해",
+    body:
+      `두 가지가 <b>같이 커지거나(줄어드는)</b> 비례 관계를 나타내는 공식. 앞 절이 <b>조건(~할수록)</b>, 뒤 절이 <b>결과(더 ~하다)</b>.<br><br>` +
+      `<div id="tc-basic" class="g-sub">` +
+      `<b>① 기본 공식: The + 비교급 + (S + V), the + 비교급 + (S + V)</b><br>` +
+      `예) <b>The more</b> you practice, <b>the better</b> you get. = 연습<b>할수록</b> <b>더</b> 잘하게 된다.<br>` +
+      `예) <b>The older</b> we grow, <b>the wiser</b> we become. = 나이 들<b>수록</b> <b>더</b> 현명해진다.<br>` +
+      `🔸 여기 <b>the</b>는 관사가 아니라 "그만큼"이라는 <b>부사</b>. 앞뒤 the 둘 다 필수.` +
+      `</div>` +
+      `<div id="tc-order" class="g-sub">` +
+      `<b>② 어순 — 비교급이 문장 앞으로 튀어나온 것! (원래 자리 복원하기)</b><br>` +
+      `원래 문장에서 <b>형용사/부사/목적어</b>가 <b>the + 비교급</b>이 되어 절 맨 앞으로 이동하고, <b>나머지(S + V)</b>가 뒤따름.<br>` +
+      `예) a man is <u>colorful</u> → <b>The more colorful</b> a man is, ...<br>` +
+      `예) he is considered <u>masculine</u> → <b>the more masculine</b> he is considered. (보어 masculine이 앞으로!)<br>` +
+      `&nbsp;&nbsp;→ 합치면: <b>The more colorful</b> a man is, <b>the more masculine</b> he is considered. = 남자가 화려<b>할수록</b>, <b>더</b> 남자답다고 여겨진다.<br>` +
+      `🚨 해석 요령: 뒤 절의 S + V가 <b>수동태(is considered)</b>여도 겁먹지 말고 비교급을 <b>원래 자리(보어)</b>로 돌려 읽기.` +
+      `</div>` +
+      `<div id="tc-omit" class="g-sub">` +
+      `<b>③ 축약형 — S + be 생략</b><br>` +
+      `주어와 be동사가 뻔하면 생략하고 <b>The 비교급, the 비교급</b>만 남기기도 함.<br>` +
+      `예) <b>The sooner, the better.</b> = 빠를수록 좋다. / <b>The more, the merrier.</b> = 많을수록 즐겁다.` +
+      `</div>` +
+      `<span class="wikilink" onclick="gotoGrammar('as-roles','as-proportion')">📐 비슷한 뜻: As ~ (~함에 따라·~할수록) →</span>`,
+    eg: [
+      ["기본", "The more you practice, the better you get.", "연습할수록 더 잘하게 된다."],
+      ["보어가 앞으로 (수동태)", "The more colorful a man is, the more masculine he is considered.", "남자가 화려할수록, 더 남자답다고 여겨진다."],
+      ["축약형", "The sooner, the better.", "빠를수록 좋다."],
+    ],
+  },
+  {
+    id: "emphatic-do",
+    title: "강조의 do / does / did + 동사원형 — '정말로 ~하다'",
+    tag: "핵심 · 독해",
+    body:
+      `평서문(긍정문)에 <b>do / does / did</b>를 굳이 넣고 뒤에 <b>동사원형</b>을 두면 = "<b>정말(분명히) ~하다</b>"라는 <b>강조</b>. 의문문·부정문의 조동사 do와 달리 <b>없어도 문장이 성립</b>하는 것이 특징.<br><br>` +
+      `<div id="ed-form" class="g-sub">` +
+      `<b>① 형태: S + do/does/did + 동사원형</b><br>` +
+      `시제·수는 <b>do가 대신</b> 지고, 본동사는 <b>원형</b>으로 돌아감.<br>` +
+      `예) I <b>do love</b> you. = 널 <b>정말</b> 사랑해. / She <b>does know</b> it. = 그녀는 그걸 <b>분명히</b> 안다. / He <b>did go</b>. = 그는 <b>확실히</b> 갔다.<br>` +
+      `예) there <b>do seem</b> to be certain traits ~ = 어떤 특징들이 <b>정말</b> 있는 것 같다. (there ~ traits(복수) → do)` +
+      `</div>` +
+      `<div id="ed-concession" class="g-sub">` +
+      `<b>② 양보절 속 do — "~하긴 하지만" (인정 → 반박)</b><br>` +
+      `<b>Although / While ~ do V ~, 주절</b>: 앞에서 상대 주장을 <b>"그래, 정말 그렇긴 해"</b> 하고 인정한 뒤, 주절에서 <b>하지만</b>으로 뒤집는 논증 패턴. 독해에서 <b>필자 입장 = 주절</b>.<br>` +
+      `예) <b>Although</b> there <b>do seem</b> to be universal traits, it is also true that beauty varies. = 보편적 특징이 <b>있긴 하지만</b>, 미가 다양하다는 것도 사실이다.<br>` +
+      `🔍 <b>판별법</b>: do를 지워도 문장이 되면(there seem to be ~ ○) → 강조의 do. 의문문/부정문의 do는 지우면 문장이 깨짐.` +
+      `</div>`,
+    eg: [
+      ["긍정 강조", "I do love this song.", "나는 이 노래를 정말 좋아한다."],
+      ["과거 강조", "He did call you yesterday.", "그는 어제 분명히 너한테 전화했다."],
+      ["양보절 속 (인정→반박)", "Although it does look easy, it is hard.", "쉬워 보이긴 하지만, 어렵다."],
+    ],
+  },
+  {
+    id: "indirect-question",
+    title: "간접의문문 — 의문사절이 명사(주어·목적어) 자리에",
+    tag: "핵심 · 어순 함정",
+    body:
+      `의문문이 <b>다른 문장 속</b>에 들어가 <b>명사 덩어리</b>(주어·목적어·보어)가 된 것. 뜻은 "<b>무엇이/누가/어떻게 ~하는지</b>".<br><br>` +
+      `<div id="iq-order" class="g-sub">` +
+      `<b>① 어순: 의문사 + S + V (도치 ✗)</b><br>` +
+      `직접의문문의 <b>V + S 도치</b>가 풀리고 <b>평서문 어순</b>으로 돌아감. 물음표도 없음.<br>` +
+      `예) Where <u>does he live</u>? → I know <b>where he lives</b>. = 그가 어디 사는<b>지</b> 안다.<br>` +
+      `예) Which country <u>does a player play</u> for? → influence <b>which country a player plays for</b>.` +
+      `</div>` +
+      `<div id="iq-subject" class="g-sub">` +
+      `<b>② 의문사가 절의 주어일 때 — what/who + V (어순 변화 없음)</b><br>` +
+      `<b>what / who</b>가 <b>절 안의 주어</b>면 뒤에 바로 동사. 이때 what절은 <b>불완전</b>(주어 자리를 what이 채움) → "무엇이 ~하는지".<br>` +
+      `예) define <b>what makes</b> one person attractive. = <b>무엇이</b> 한 사람을 매력적으로 만드는<b>지</b> 정의하다. (what = makes의 주어)<br>` +
+      `🔍 관계대명사 what("~하는 것")과 모양이 같음 — <b>define / know / ask / wonder</b> 같은 '알다·묻다' 동사 뒤면 "무엇이 ~인지"(의문)로, 그 외엔 "~하는 것"으로 읽으면 자연스러움. 시험에선 둘 다 <b>불완전한 절을 이끄는 명사절</b>이라는 점이 핵심.<br>` +
+      `<span class="wikilink" onclick="gotoGrammar('relative-pronoun','rp-what')">📐 관계대명사 what과 비교 →</span>` +
+      `</div>` +
+      `<div id="iq-adverb" class="g-sub">` +
+      `<b>③ 의문사 앞에 부사가 끼기도 — exactly what / just how</b><br>` +
+      `예) define <b>exactly what</b> makes ~ = <b>정확히</b> 무엇이 ~인지 정의하다. (exactly는 what절 전체 수식)` +
+      `</div>`,
+    eg: [
+      ["목적어 · 어순 S+V", "I don't know where he lives.", "그가 어디 사는지 모른다."],
+      ["의문사 = 주어 (what + V)", "Tell me what makes you happy.", "무엇이 너를 행복하게 하는지 말해줘."],
+      ["부사 + 의문사", "It is hard to define exactly what beauty is.", "미가 정확히 무엇인지 정의하기는 어렵다."],
     ],
   },
 ];
