@@ -106,6 +106,56 @@
     <h2 class="section-title">문법 체계 정리</h2>
     <div id="grammar-list"></div>
   </section>
+
+  <!-- ===== 출석 ===== -->
+  <section class="screen" id="screen-calendar">
+    <h2 class="section-title">출석체크</h2>
+
+    <div class="card at-summary">
+      <div class="at-top">
+        <div class="at-big"><span id="at-done">0</span><small id="at-target"></small></div>
+        <span class="at-dday" id="at-dday"></span>
+      </div>
+      <div class="at-plan" id="at-plan"></div>
+      <div class="at-bar"><div class="at-fill" id="at-fill"></div><div class="at-mark" id="at-mark"></div></div>
+      <div class="at-status" id="at-status"></div>
+      <div class="at-stats">
+        <div><b id="at-streak">0</b><span>연속 출석</span></div>
+        <div><b id="at-need">0</b><span>남은 하루 필요</span></div>
+        <div><b id="at-week">0</b><span>이번 주 문장</span></div>
+      </div>
+    </div>
+
+    <div class="card at-check">
+      <div class="at-date" id="at-date"></div>
+      <div class="at-stepper">
+        <button onclick="atStep(-1)" aria-label="한 문장 빼기">−</button>
+        <div class="at-count"><span id="at-count">7</span>문장</div>
+        <button onclick="atStep(1)" aria-label="한 문장 더하기">+</button>
+      </div>
+      <div class="at-quick" id="at-quick"></div>
+      <button class="at-btn" id="at-btn" onclick="atSave()">✅ 출석체크</button>
+      <div class="at-note" id="at-note"></div>
+    </div>
+
+    <div class="card at-cal">
+      <div class="at-cal-head">
+        <button onclick="atMonth(-1)" aria-label="이전 달">‹</button>
+        <span id="at-month"></span>
+        <button onclick="atMonth(1)" aria-label="다음 달">›</button>
+      </div>
+      <div class="at-grid" id="at-grid"></div>
+      <div class="at-legend">
+        <span><i class="lg-goal"></i>목표 달성</span>
+        <span><i class="lg-part"></i>출석 (목표 미만)</span>
+        <span><i class="lg-today"></i>오늘</span>
+        <span>🏁 완주 목표일</span>
+      </div>
+    </div>
+
+    <div class="card" id="at-passages"></div>
+    <p class="at-foot">기록은 이 기기(이 앱)에만 저장돼요. 폰 홈 화면 앱에서만 체크하세요.<br>지난 날짜를 누르면 빠뜨린 기록도 고칠 수 있어요.</p>
+  </section>
 </main>
 
 <nav class="tabbar">
@@ -113,6 +163,7 @@
   <button data-screen="passages" onclick="switchTab('passages')"><span class="ico">📖</span>지문</button>
   <button data-screen="analyze" onclick="switchTab('analyze')"><span class="ico">🔍</span>문장분석</button>
   <button data-screen="grammar" onclick="switchTab('grammar')"><span class="ico">📐</span>문법</button>
+  <button data-screen="calendar" onclick="switchTab('calendar')"><span class="ico">📅</span>출석</button>
 </nav>
 
 <script src="data.js"></script>
