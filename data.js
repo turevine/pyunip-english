@@ -4292,7 +4292,7 @@ const ANALYSIS = {
     ],
     structure:
       `뼈대: [<b>If</b> you <b>could</b> take off ~ and lay ~](조건절), <b>it(S) + would cover(V) + an area(O)</b> [of about 1.9 square meters]. "만약 피부를 벗겨 평평하게 펼 <b>수 있다면</b>, 그것은 약 1.9제곱미터의 면적을 덮<b>을 것이다</b>".<br><br>` +
-      `① ⭐⭐ <b>If you could ~, it would ~</b> (<b>가정법 과거</b>) — 🚨 과거 이야기가 아님! 실제로는 <b>피부를 벗길 수 없으니</b>(현재 사실의 반대) <b>if절엔 과거형 could</b>, <b>주절엔 would + 원형</b>. 2-35·2-38에서 본 바로 그 짝: <b>if가 조건</b>("벗길 수 있다면"), <b>would가 결과</b>("덮을 것이다")를 맡음.<br>` +
+      `① ⭐⭐ <b>If you could ~, it would ~</b> (<b>가정법 과거</b>) — 🚨 과거 이야기가 아님! 실제로는 <b>피부를 벗길 수 없으니</b>(현재 사실의 반대) <b>if절엔 과거형 could</b>, <b>주절엔 would + 원형</b>. <b>if가 조건</b>("벗길 수 있다면"), <b>would가 결과</b>("덮을 것이다")를 맡음.<br>` +
       `&nbsp;&nbsp;• ⭐ if절에 <b>could</b>가 온 이유 — 그냥 took off(벗긴다면)가 아니라 <b>could take off</b> = "<b>벗길 수 있다면</b>"(능력 가정 = if you were able to). 불가능한 일이라 '할 수 있다면'으로 표현.<br>` +
       `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subjunctive-past','sp-form')">📐 가정법 과거 형태(If S 과거, S would V) 자세히 →</span><br>` +
       `② <b>you</b> (<b>일반인 you</b>) — 독자 한 명이 아니라 "<b>(누구든) 사람이</b>". 과학 설명문에서 독자를 끌어들이는 말투. 해석할 땐 보통 생략("피부를 벗겨 ~한다면").<br>` +
