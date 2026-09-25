@@ -3219,12 +3219,12 @@ const ANALYSIS = {
     structure:
       `뼈대 ①: <b>Otherwise,</b> <b>they(S) + couldn't handle(V) + the training loads(O)</b> [(that) we put on them](관계절). "그렇지 않다면, 그들은 우리가 부과하는 훈련량을 감당하지 못할 것이다".<br>` +
       `뼈대 ②: <b>[Athletes](S) + have to be(V) + good(C)</b> <b>at</b> [<u>setting</u> ~, <u>generating</u> ~, and <u>managing</u> ~](동명사 3개 병렬). "선수들은 ~하는 것, ~하는 것, 그리고 ~하는 것을 잘해야 한다".<br><br>` +
-      `① ⭐⭐ <b>Otherwise,</b> (접속부사·<b>if절 대용</b>) — "<b>그렇지 않다면</b>" = <b>if they weren't (psychologically healthy)</b>. 앞 문장 2-34 "They have to be (healthy)"를 받아 "<b>(정신적으로 건강하지) 않다면</b>". 품사는 <b>부사</b>라 콤마로 떨어져 문장 앞에 붙고, 문장 성분(S·V·O) 계산에선 빠짐. (단어카드: otherwise)<br>` +
+      `① ⭐⭐ <b>Otherwise,</b> (접속부사·<b>if절 대용</b>) — "<b>그렇지 않다면</b>" = <b>if they weren't (psychologically healthy)</b>. 앞 문장 "They have to be (healthy)"를 받아 "<b>(정신적으로 건강하지) 않다면</b>". 품사는 <b>부사</b>라 콤마로 떨어져 문장 앞에 붙고, 문장 성분(S·V·O) 계산에선 빠짐. (단어카드: otherwise)<br>` +
       `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('conjunctive-adverb','ca-vs-conjunction')">📐 접속부사(뜻만 잇는 부사) 자세히 →</span><br>` +
       `② ⭐⭐ <b>they couldn't handle</b> (<b>가정법 과거</b>) — 🚨 과거 이야기가 아닌데 <b>could</b>! Otherwise가 <b>숨은 if절</b> 역할을 하므로 주절은 <b>조동사 과거(could/would) + 동사원형</b> = <b>현재 사실의 반대</b>("(실제론 건강하니 감당하지만) 건강하지 않다면 <b>감당 못 할 것</b>"). "감당하지 못했다"(과거)로 해석하면 ❌. they=athletes. (단어카드: handle)<br>` +
       `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subjunctive-past','sp-otherwise')">📐 if 없는 가정법 — otherwise + could 자세히 →</span><br>` +
       `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subjunctive-past','sp-form')">📐 가정법 과거의 형태(If S 과거, S could/would V) →</span><br>` +
-      `③ ⭐ <b>the training loads (that) we put on them</b> (<b>목적격 관계대명사 생략</b>) — 원래 the training loads <u>(that/which)</u> we put <u>__</u> on them. put의 <b>목적어 자리가 비어</b> 있고 그게 선행사 loads → "<b>우리가 그들에게 부과하는 훈련량</b>". 1-2번 the sport we know today와 같은 구조(명사 + 바로 S+V가 오면 생략 의심!).<br>` +
+      `③ ⭐ <b>the training loads (that) we put on them</b> (<b>목적격 관계대명사 생략</b>) — 원래 the training loads <u>(that/which)</u> we put <u>__</u> on them. put의 <b>목적어 자리가 비어</b> 있고 그게 선행사 loads → "<b>우리가 그들에게 부과하는 훈련량</b>". 🔍 명사 뒤에 바로 S+V가 붙으면 관계대명사 생략을 의심!<br>` +
       `&nbsp;&nbsp;• <b>put A on B</b> = "A를 B에게 <b>지우다·부과하다</b>"(put pressure on ~ 압박을 가하다와 같은 on). <b>training load</b>=훈련 부하·훈련량. we=올림픽 트레이닝 센터 사람들(코치·스태프), them=athletes. (단어카드: load)<br>` +
       `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('relative-pronoun','rp-object-omit')">📐 목적격 관계대명사 생략 자세히 →</span><br>` +
       `④ <b>[Athletes]</b> (<b>대괄호 [ ]</b>·인용문 편집 표시) — 인용 원문엔 아마 <b>They</b>였는데, 편집자가 지칭 대상을 분명히 하려고 <b>바꿔 끼운 말</b>이라는 표시. 말한 사람의 원래 단어가 아님을 알리는 부호일 뿐, 문장 성분은 그냥 <b>주어</b>. 🚨 괄호( )(부연·삽입)와 역할이 다름.<br>` +
@@ -3236,7 +3236,7 @@ const ANALYSIS = {
       `&nbsp;&nbsp;• C <b>managing anxiety</b> = 불안을 다스리는 것 (<b>manage</b> 관리하다·다스리다) (단어카드: manage / anxiety)<br>` +
       `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('gerund-prep','gp-parallel')">📐 전치사 뒤 동명사 병렬(A, B, and C) →</span><br>` +
       `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">📐 병렬 원칙(같은 모양끼리) 자세히 →</span><br>` +
-      `💡 <b>흐름:</b> 2-34 "그들은 (정신적으로도 건강)해야 한다"의 <b>이유(Otherwise, ~)</b> + <b>구체적 정신 능력 3가지</b>(목표 설정·에너지 끌어내기·불안 관리). 마지막 <b>managing anxiety</b>가 다음 2-36(어떻게 극심한 압박에 적응하나?)·루가니스의 불안 조절 이야기로 이어지는 연결고리.<br><br>` +
+      `💡 <b>흐름:</b> 앞 문장 "그들은 (정신적으로도 건강)해야 한다"의 <b>이유(Otherwise, ~)</b> + <b>구체적 정신 능력 3가지</b>(목표 설정·에너지 끌어내기·불안 관리). 마지막 <b>managing anxiety</b>가 다음 문장(어떻게 극심한 압박에 적응하나?)·루가니스의 불안 조절 이야기로 이어지는 연결고리.<br><br>` +
       `📝 <b>해석:</b> "그렇지 않다면 그들은 우리가 그들에게 부과하는 훈련량을 감당하지 못할 것입니다. [선수들은] 목표를 세우고, 필요할 때 에너지를 끌어내고, 불안을 다스리는 일을 잘해야 합니다."`,
     trans: "\"그렇지 않다면 그들은 우리가 부과하는 훈련량을 감당하지 못할 겁니다. [선수들은] 목표를 세우고, 필요할 때 에너지를 끌어내고, 불안을 다스리는 데 능숙해야 합니다.\"",
   },
@@ -3255,15 +3255,15 @@ const ANALYSIS = {
     structure:
       `뼈대: <b>How</b>(의문사) + <b>do</b>(조동사) + <b>athletes</b>(S) + <b>adjust</b>(V) + <b>to such intense pressure</b>(전치사구)<b>?</b> "선수들은 <b>어떻게</b> 그런 극심한 압박에 적응하는가?" — 평서문 Athletes adjust to ~ 를 의문문으로 만든 것.<br><br>` +
       `① ⭐⭐ <b>How do athletes adjust ~?</b> (<b>직접의문문</b>: 의문사 + do + S + 동사원형) — 일반동사 문장을 의문문으로 만들면 <b>조동사 do가 주어 앞으로</b> 나오고(도치), 본동사는 <b>원형</b>(adjust). 주어 athletes가 복수라 <b>do</b>(does ❌). How="어떻게(방법)".<br>` +
-      `&nbsp;&nbsp;• 🚨 바로 다음 2-37의 <b>explains how he learned ~</b>와 비교! 문장 속에 들어가면(<b>간접의문문</b>) do가 사라지고 <b>how + S + V</b> 평서문 어순으로 돌아감 → how <u>he learned</u> (how did he learn ❌).<br>` +
+      `&nbsp;&nbsp;• 🚨 비교: 의문문이 문장 속에 들어가면(<b>간접의문문</b>) do가 사라지고 <b>how + S + V</b> 평서문 어순으로 돌아감 → 예) Louganis explains <b>how he learned</b> ~ (how did he learn ❌).<br>` +
       `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('indirect-question','iq-order')">📐 직접의문문 ↔ 간접의문문 어순 비교 →</span><br>` +
       `② ⭐ <b>adjust to ~</b> (자동사 + 전치사) — "<b>~에 적응하다</b>". 🚨 이 <b>to는 전치사</b>라 뒤에 <b>명사</b>(pressure)가 오고, 동사를 넣으려면 <b>-ing</b>(adjust to living ⭕ / adjust to live ❌). 목적어가 전치사구 안에 있으니 문형은 <b>1형식</b>. (단어카드: adjust to)<br>` +
       `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('gerund-prep','gp-rule')">📐 전치사 to + 동명사(adjust to -ing) 자세히 →</span><br>` +
       `③ ⭐⭐ <b>such intense pressure</b> (<b>such + 형용사 + 명사</b>) — "<b>그런(그토록) 극심한 압박</b>". such는 <b>명사를 꾸미는</b> 말이라 [such + (a/an) + 형용사 + 명사] 어순. <b>pressure</b>는 <b>셀 수 없는 명사</b>라 a 없이 such intense pressure. 🚨 <b>so</b>를 쓰면 so intense <u>a</u> pressure 식으로 어순이 바뀜 — so는 <b>형용사</b>를 꾸미기 때문(so intense pressure ❌). (단어카드: intense / pressure)<br>` +
       `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('such-so','ss-order')">📐 such vs so 어순 (such a 형+명 / so 형 a 명) →</span><br>` +
-      `&nbsp;&nbsp;• <b>such</b>는 여기서 "앞에서 말한 바로 <b>그런</b>" — 2-33~35의 <b>엄청난 훈련량·정신적 부담</b>을 가리킴.<br>` +
+      `&nbsp;&nbsp;• <b>such</b>는 여기서 "앞에서 말한 바로 <b>그런</b>" — 앞에서 말한 <b>엄청난 훈련량·정신적 부담</b>을 가리킴.<br>` +
       `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('articles','ar-zero')">📐 무관사(셀 수 없는 명사 pressure) 자세히 →</span><br>` +
-      `💡 <b>흐름:</b> 2-35의 마지막 능력 <b>managing anxiety(불안 관리)</b>를 받아 <b>질문</b>을 던져 화제 전환 — "그럼 실제로 어떻게 적응하나?" 답은 다음 2-37~38 <b>루가니스의 경험담</b>(유머로 불안 다스리기). 글쓴이가 <b>질문 → 사례로 답</b>하는 전형적 전개.<br><br>` +
+      `💡 <b>흐름:</b> 앞 문장의 마지막 능력 <b>managing anxiety(불안 관리)</b>를 받아 <b>질문</b>을 던져 화제 전환 — "그럼 실제로 어떻게 적응하나?" 답은 이어지는 <b>루가니스의 경험담</b>(유머로 불안 다스리기). 글쓴이가 <b>질문 → 사례로 답</b>하는 전형적 전개.<br><br>` +
       `📝 <b>해석:</b> "선수들은 그렇게 극심한 압박에 어떻게 적응하는가?"`,
     trans: "선수들은 그토록 극심한 압박에 어떻게 적응할까?",
   },
@@ -3283,22 +3283,22 @@ const ANALYSIS = {
     ],
     structure:
       `뼈대: <b>Louganis(S) + explains(V) + [how he learned to control his anxiety during a competition](O)</b><b>:</b> "…," he says. "루가니스는 시합 중 불안을 다스리는 법을 어떻게 배웠는지 설명한다: '…'이라고 그는 말한다".<br><br>` +
-      `① <b>Louganis explains</b> (주어+동사) — 2-32에 나온 <b>Greg Louganis</b>(다이빙 금메달 4관왕)를 이번엔 <b>성만</b>으로 받음(영어 기사에선 두 번째부터 성만 씀). 주어 단수 → <b>explains</b>. (단어카드: explain)<br>` +
-      `② ⭐⭐ <b>how he learned to control ~</b> (목적어·<b>간접의문문</b>) — explains의 <b>목적어</b>가 된 의문사절: "<b>그가 어떻게 ~을 배웠는지</b>". 🚨 문장 속이라 <b>how + S + V</b> 평서문 어순(how <u>did he learn</u> ❌). 바로 앞 2-36 직접의문문 <b>How do athletes adjust ~?</b>와 어순을 비교해 볼 것!<br>` +
+      `① <b>Louganis explains</b> (주어+동사) — 앞에서 풀네임으로 소개한 <b>Greg Louganis</b>(다이빙 금메달 4관왕)를 이번엔 <b>성만</b>으로 받음(영어 기사에선 두 번째부터 성만 씀). 주어 단수 → <b>explains</b>. (단어카드: explain)<br>` +
+      `② ⭐⭐ <b>how he learned to control ~</b> (목적어·<b>간접의문문</b>) — explains의 <b>목적어</b>가 된 의문사절: "<b>그가 어떻게 ~을 배웠는지</b>". 🚨 문장 속이라 <b>how + S + V</b> 평서문 어순(how <u>did he learn</u> ❌). 비교: 직접의문문이면 <b>How did he learn ~?</b>(do 도치).<br>` +
       `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('indirect-question','iq-order')">📐 간접의문문 어순(의문사 + S + V) 자세히 →</span><br>` +
       `③ ⭐ <b>learned to control his anxiety</b> (<b>learn + to부정사</b>) — "<b>불안을 다스리는 법을 배웠다</b>". to control은 learned의 <b>목적어</b>(명사적 용법). <b>learn to V</b>="~하는 법을 배우다 / ~할 수 있게 되다". 배운 건 과거의 일이라 <b>learned</b>(과거). control=다스리다·조절하다, his anxiety=그의 불안. (단어카드: learn to V / control / anxiety)<br>` +
       `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-noun')">📐 to부정사 명사적 용법(목적어) 자세히 →</span><br>` +
       `④ ⭐⭐ <b>during a competition</b> (<b>전치사 during + 명사</b>) — "<b>시합 도중에</b>". 🚨 during은 <b>전치사</b>라 뒤에 <b>명사(구)</b>만! 문장(S+V)을 붙이려면 접속사 <b>while</b>: while he was competing ⭕ / during he was competing ❌. (편입 단골 비교) (단어카드: during / competition)<br>` +
       `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('during-while','dw-basic')">📐 during(전치사) vs while(접속사) 자세히 →</span><br>` +
-      `⑤ ⭐ <b>:</b> (콜론) — 앞에서 "어떻게 배웠는지 설명한다"고 예고한 뒤, <b>그 설명(인용)을 공개</b>. 2-32와 같은 쓰임.<br>` +
+      `⑤ ⭐ <b>:</b> (콜론) — 앞에서 "어떻게 배웠는지 설명한다"고 예고한 뒤, <b>그 설명(인용)을 공개</b>.<br>` +
       `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('punctuation','pn-colon')">📐 콜론(:)의 쓰임 자세히 →</span><br>` +
       `⑥ <b>"Most divers think too much...,"</b> (인용문) — "<b>대부분의 다이버는 생각이 너무 많아요…</b>".<br>` +
       `&nbsp;&nbsp;• ⭐ <b>Most divers</b> = <b>most + 무관사 복수명사</b> "(일반적인) 대부분의 다이버". 🚨 특정 집단이면 <b>most of the</b> divers(of 뒤엔 the 필요) — most of divers ❌. 복수 주어라 동사 <b>think</b>.<br>` +
       `&nbsp;&nbsp;• <b>think too much</b> — think는 <b>자동사</b>(목적어 없음), <b>too much</b>=부사 "너무 많이"(think를 수식). "생각을 너무 많이 한다"=지나치게 머리를 쓴다. (단어카드: too much)<br>` +
       `&nbsp;&nbsp;• <b>...</b> (말줄임표) — 말이 <b>잠시 끊기거나 여운</b>을 남기는 표시. 다음 문장 "They're too much in their heads."로 말이 이어짐.<br>` +
-      `⑦ ⭐⭐ <b>he says</b> (전달절·<b>도치 안 함</b>) — 🚨 2-34의 "…," <b>says Sean McCann</b>(도치)과 비교! 전달절 주어가 <b>대명사(he/she/they)</b>면 보통 <b>도치하지 않고 he says</b> 그대로 씀(says he는 거의 안 씀). 명사 주어일 때만 says + 주어 도치가 흔함.<br>` +
+      `⑦ ⭐⭐ <b>he says</b> (전달절·<b>도치 안 함</b>) — 🚨 전달절 주어가 <b>대명사(he/she/they)</b>면 보통 <b>도치하지 않고 he says</b> 그대로 씀(says he는 거의 안 씀). 명사 주어일 때만 "…," <b>says Sean McCann</b>처럼 says + 주어 도치가 흔함.<br>` +
       `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('quotation-inversion','qi-pronoun')">📐 인용 도치 — 대명사 주어는 도치 ✗ 자세히 →</span><br>` +
-      `💡 <b>흐름:</b> 2-36 질문 "어떻게 극심한 압박에 적응하나?"에 대한 <b>답을 사례로</b> 시작 — 루가니스의 진단: 다이버들의 문제는 <b>생각이 너무 많은 것</b>. 다음 2-38에서 "머릿속에만 있다 → 나한텐 <b>유머</b>가 통했다"로 해결책 제시.<br><br>` +
+      `💡 <b>흐름:</b> 앞 문장의 질문 "어떻게 극심한 압박에 적응하나?"에 대한 <b>답을 사례로</b> 시작 — 루가니스의 진단: 다이버들의 문제는 <b>생각이 너무 많은 것</b>. 다음 문장에서 "머릿속에만 있다 → 나한텐 <b>유머</b>가 통했다"로 해결책 제시.<br><br>` +
       `📝 <b>해석:</b> "루가니스는 자신이 시합 중에 불안을 다스리는 법을 어떻게 배웠는지 설명한다: '대부분의 다이버는 생각이 너무 많아요…'라고 그는 말한다."`,
     trans: "루가니스는 자신이 시합 중에 불안을 다스리는 법을 어떻게 배웠는지 설명한다: \"대부분의 다이버는 생각이 너무 많아요…\"라고 그는 말한다.",
   },
@@ -3324,8 +3324,8 @@ const ANALYSIS = {
       `② <b>[What worked for me](S) + was(V) + humor(C)</b> — "나한테 통했던 건 유머였다"<br>` +
       `③ <b>I(S) + remember(V) + [thinking about ~](O)</b> — "~에 대해 생각했던 게 기억난다"<br>` +
       `④ <b>She(S) + 'd compliment(V) + me(O) + on the beautiful splash</b> — "엄마는 아마 아름다운 물보라를 칭찬했을 것이다"<br><br>` +
-      `① ⭐ <b>They're too much in their heads.</b> (2형식) — They=<b>Most divers</b>(2-37). <b>be in one's head</b>="<b>머릿속(생각)에 갇혀 있다</b>", 즉 몸이 아니라 생각에 사로잡힌 상태. <b>too much</b>(부사)가 전치사구 in their heads를 꾸며 "<b>지나치게</b> 머릿속에 있다". 🚨 their <b>heads</b> 복수 — 다이버들 각자의 머리라 복수형. (단어카드: in one's head / too much)<br>` +
-      `&nbsp;&nbsp;• 💡 2-37의 <b>think too much</b>(생각이 너무 많다)를 <b>말만 바꿔 되풀이</b>한 것 → 문제 진단.<br>` +
+      `① ⭐ <b>They're too much in their heads.</b> (2형식) — They=<b>Most divers</b>(대부분의 다이버). <b>be in one's head</b>="<b>머릿속(생각)에 갇혀 있다</b>", 즉 몸이 아니라 생각에 사로잡힌 상태. <b>too much</b>(부사)가 전치사구 in their heads를 꾸며 "<b>지나치게</b> 머릿속에 있다". 🚨 their <b>heads</b> 복수 — 다이버들 각자의 머리라 복수형. (단어카드: in one's head / too much)<br>` +
+      `&nbsp;&nbsp;• 💡 앞 문장의 <b>think too much</b>(생각이 너무 많다)를 <b>말만 바꿔 되풀이</b>한 것 → 문제 진단.<br>` +
       `② ⭐⭐ <b>What worked for me was humor.</b> (<b>관계대명사 what 주어절</b>) — <b>What</b> = the thing which, "<b>~한 것</b>". what절 안에서 what이 <b>worked의 주어</b>(불완전). what절 전체가 문장 주어 → 🚨 <b>단수 취급 was</b>. <b>work</b>=자동사 "<b>효과가 있다·통하다</b>"(일하다 ❌), for me=나에게는. (단어카드: work / humor)<br>` +
       `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('relative-pronoun','rp-what')">📐 관계대명사 what(~하는 것) 자세히 →</span><br>` +
       `&nbsp;&nbsp;• ⭐ <b>What ~ was X</b> = X를 <b>문장 끝에 놓아 강조</b>하는 구조(유사분열문). 평범하게 쓰면 Humor worked for me. → 뒤에 <b>humor</b>를 두어 "(다른 게 아니라) <b>바로 유머</b>였다"는 정답 공개 느낌.<br>` +
@@ -3334,7 +3334,7 @@ const ANALYSIS = {
       `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('gerund-vs-infinitive','gi-remember')">📐 remember -ing vs remember to V 자세히 →</span><br>` +
       `&nbsp;&nbsp;• ⭐ <b>about what my mother would say</b> — 전치사 <b>about의 목적어</b>로 <b>what절</b>(명사절). what이 <b>say의 목적어</b> 자리를 채움(say __ 가 비어 있음 = 불완전) → "<b>엄마가 뭐라고 말할지</b>". 전치사 뒤라 명사 덩어리(what절)가 온 것.<br>` +
       `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('indirect-question','iq-order')">📐 what + S + V 어순(간접의문문) 자세히 →</span><br>` +
-      `&nbsp;&nbsp;• ⭐⭐ <b>would say if she saw ~</b> (<b>가정법 과거</b>) — <b>If + S + 과거(saw), S + would + 원형(say)</b>. "(실제로 본 건 아니지만) <b>만약 엄마가 ~을 본다면</b> 뭐라고 할지". 🚨 saw·would는 과거 사실이 아니라 <b>상상</b>의 표시. 2-35의 Otherwise, they couldn't ~에 이어 다시 나온 가정법.<br>` +
+      `&nbsp;&nbsp;• ⭐⭐ <b>would say if she saw ~</b> (<b>가정법 과거</b>) — <b>If + S + 과거(saw), S + would + 원형(say)</b>. "(실제로 본 건 아니지만) <b>만약 엄마가 ~을 본다면</b> 뭐라고 할지". 🚨 saw·would는 과거 사실이 아니라 <b>상상</b>의 표시.<br>` +
       `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subjunctive-past','sp-form')">📐 가정법 과거 형태(If S 과거, S would V) 자세히 →</span><br>` +
       `&nbsp;&nbsp;• ⭐⭐ <b>saw me do a bad dive</b> (<b>지각동사 see + O + 원형</b>) — "<b>내가 형편없는 다이빙을 하는 것을</b> 보다". 목적격보어에 <b>to 없는 do</b>(to do ❌). 다이빙 처음부터 끝까지 <b>전체</b>를 본 것이라 원형(진행 중 장면이면 doing). <b>do a dive</b>=다이빙을 하다, bad dive=실패한 다이빙.<br>` +
       `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('bare-infinitive','bi-perception')">📐 지각동사 + O + 원형부정사 자세히 →</span><br>` +
@@ -3342,7 +3342,7 @@ const ANALYSIS = {
       `&nbsp;&nbsp;• 🚨 <b>'d 구별법</b>: 뒤에 <b>동사원형</b> → would / 뒤에 <b>p.p.</b> → had (She'd gone = She had gone).<br>` +
       `&nbsp;&nbsp;• ⭐ <b>compliment A on B</b> = "<b>B에 대해 A를 칭찬하다</b>" — 칭찬하는 <b>이유·대상에 on</b>(congratulate A on B와 같은 on). 🚨 철자 주의 <b>compliment</b>(칭찬) ≠ complement(보완). (단어카드: compliment)<br>` +
       `&nbsp;&nbsp;• 😄 <b>유머 포인트</b>: 다이빙은 <b>물보라(splash)가 작을수록</b> 좋은 점수. 실패한 다이빙은 물보라가 크게 튐 → 그런데 엄마는 그걸 "<b>물보라 참 예쁘네!</b>"라고 칭찬할 거라는 상상. 이 엉뚱한 생각으로 <b>긴장을 풀었다</b>는 것. (단어카드: splash)<br>` +
-      `💡 <b>흐름:</b> 2-36 질문(어떻게 압박에 적응하나?)의 <b>답 완성</b> — 문제: 생각이 너무 많음(①) → 해결: <b>유머</b>(②) → 구체 예: 엄마의 엉뚱한 칭찬을 상상(③④). 지문 2의 결론 = 챔피언은 <b>몸(유전·환경·훈련)</b>뿐 아니라 <b>마음(불안 관리)</b>도 갖춰야 한다.<br><br>` +
+      `💡 <b>흐름:</b> "어떻게 압박에 적응하나?"라는 질문의 <b>답 완성</b> — 문제: 생각이 너무 많음(①) → 해결: <b>유머</b>(②) → 구체 예: 엄마의 엉뚱한 칭찬을 상상(③④). 지문 2의 결론 = 챔피언은 <b>몸(유전·환경·훈련)</b>뿐 아니라 <b>마음(불안 관리)</b>도 갖춰야 한다.<br><br>` +
       `📝 <b>해석:</b> "그들은 너무 생각에만 빠져 있어요. 저한테 효과가 있었던 건 유머였어요. 제가 다이빙을 망치는 걸 엄마가 본다면 뭐라고 하실지 생각했던 게 기억나요. 아마 엄마는 그저 물보라가 참 예쁘다고 칭찬해 주셨을 거예요."`,
     trans: "\"그들은 너무 생각에만 빠져 있어요. 저한테 효과가 있었던 건 유머였어요. 제가 다이빙을 망치는 걸 엄마가 보신다면 뭐라고 하실지 생각했던 게 기억나요. 아마 엄마는 그저 물보라가 참 아름답다고 칭찬해 주셨을 거예요.\"",
   },
@@ -4305,7 +4305,7 @@ const ANALYSIS = {
       `⑤ <b>it would cover</b> (주절) — <b>it = your skin</b>(앞에서 벗겨 편 피부). <b>cover</b> = "(면적을) <b>덮다·차지하다</b>". (단어카드: cover)<br>` +
       `⑥ ⭐ <b>an area of about 1.9 square meters</b> (목적어 + <b>동격의 of</b>) — "<b>약 1.9제곱미터라는 면적</b>". an area = 1.9 square meters (앞 = 뒤). <b>about</b>은 여기서 전치사 '~에 대해'가 아니라 숫자 앞 부사 "<b>약·대략</b>"(= around, approximately). square meters는 1보다 큰 수라 <b>복수 -s</b>. (단어카드: area / about / square meter)<br>` +
       `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('of-types','of-apposition')">📐 동격의 of(A라는 B) 자세히 →</span><br>` +
-      `💡 <b>흐름:</b> 지문 4 「Skin: The body's canvas」의 <b>도입</b> — "피부를 벗겨 펴면?"이라는 <b>엉뚱한 가정</b>으로 호기심을 끈 뒤 수치(1.9㎡)를 제시. 다음 4-1 "피부는 단연 <b>가장 큰 장기</b>"라는 핵심 사실로 이어짐.<br><br>` +
+      `💡 <b>흐름:</b> 지문 4 「Skin: The body's canvas」의 <b>도입</b> — "피부를 벗겨 펴면?"이라는 <b>엉뚱한 가정</b>으로 호기심을 끈 뒤 수치(1.9㎡)를 제시. 다음 문장 "피부는 단연 <b>가장 큰 장기</b>"라는 핵심 사실로 이어짐.<br><br>` +
       `📝 <b>해석:</b> "만약 피부를 벗겨서 평평하게 펼 수 있다면, 그것은 약 1.9제곱미터의 면적을 덮을 것이다."`,
     trans: "만약 피부를 벗겨서 평평하게 펼칠 수 있다면, 그것은 약 1.9제곱미터의 면적을 덮을 것이다.",
   },
@@ -4322,7 +4322,7 @@ const ANALYSIS = {
     ],
     structure:
       `뼈대: <b>Skin(S) + is(V) + the body's largest organ(C)</b> 의 <b>2형식</b>. 콤마로 감싼 <b>by far</b>는 최상급을 세게 만드는 강조어일 뿐 → 걷어내도 뼈대 온전. "피부는 <b>단연</b> 몸에서 <b>가장 큰</b> 장기다".<br><br>` +
-      `① <b>Skin</b> (주어·<b>무관사</b>) — 특정 사람의 피부가 아니라 <b>'피부라는 것' 일반</b>(총칭). skin은 셀 수 없는 명사로 쓰여 a도 -s도 없음. 4-0에서 your skin(내 피부 하나)으로 말하다가 여기선 <b>일반적 사실</b>로 넘어감.<br>` +
+      `① <b>Skin</b> (주어·<b>무관사</b>) — 특정 사람의 피부가 아니라 <b>'피부라는 것' 일반</b>(총칭). skin은 셀 수 없는 명사로 쓰여 a도 -s도 없음.<br>` +
       `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('articles','ar-zero')">📐 무관사(총칭·불가산) 자세히 →</span><br>` +
       `② <b>is</b> (be동사·2형식) — Skin = the body's largest organ(주어 = 보어). 🚨 skin이 단수라 <b>is</b>.<br>` +
       `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('linking-become','lb-why-adj')">📐 2형식(주어 = 보어) 연결동사 자세히 →</span><br>` +
@@ -4334,7 +4334,7 @@ const ANALYSIS = {
       `&nbsp;&nbsp;• <b>large-larger-largest</b>(1음절 → -est). <b>organ</b>=(신체) 장기·기관. (단어카드: organ)<br>` +
       `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('superlative','su-the')">📐 최상급과 the · 소유격이면 the 생략 자세히 →</span><br>` +
       `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('articles','ar-the')">📐 정관사 the(최상급·서수·only) 자세히 →</span><br>` +
-      `💡 <b>흐름:</b> 4-0의 "펴면 1.9㎡"라는 <b>숫자</b>가 무슨 의미인지 한 줄로 정리 — 그러니까 피부는 <b>가장 큰 장기</b>다. 피부를 '겉껍데기'가 아니라 <b>장기(organ)</b>로 보는 관점 제시 → 다음 4-2에서 그 장기가 하는 일(보호)로 이어짐.<br><br>` +
+      `💡 <b>흐름:</b> 앞 문장의 "펴면 1.9㎡"라는 <b>숫자</b>가 무슨 의미인지 한 줄로 정리 — 그러니까 피부는 <b>가장 큰 장기</b>다. 피부를 '겉껍데기'가 아니라 <b>장기(organ)</b>로 보는 관점 제시 → 다음 문장에서 그 장기가 하는 일(보호)로 이어짐.<br><br>` +
       `📝 <b>해석:</b> "피부는 단연 우리 몸에서 가장 큰 장기다."`,
     trans: "피부는 단연 우리 몸에서 가장 큰 장기다.",
   },
@@ -4362,7 +4362,7 @@ const ANALYSIS = {
       `④ ⭐ <b>protect A from B</b> — "<b>B로부터 A를 보호하다</b>". A=us, B=a variety of external forces. from은 '분리·방어'의 from (keep/prevent/stop A from B와 같은 계열 — 🚨 단, prevent A from <b>-ing</b>처럼 동사가 오면 동명사).<br>` +
       `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('gerund-prep','gp-rule')">📐 전치사(from) 뒤 동명사 자세히 →</span><br>` +
       `⑤ ⭐ <b>a variety of external forces</b> — <b>a variety of + 복수명사</b> = "<b>다양한</b> ~"(forces 복수). 🚨 <b>a variety of</b>(다양한) vs <b>the variety of</b>(~의 다양성, 단수 취급) 구별. <b>external</b>=외부의(↔internal), <b>force</b>=힘. (단어카드: a variety of / external / force)<br>` +
-      `💡 <b>흐름:</b> 4-1 '가장 큰 장기' → 그 장기의 <b>첫 번째 기능 = 보호</b>. 다음 4-3에서 external forces가 구체적으로 뭔지(극한 기온·햇빛·화학물질·감염) <b>나열</b>로 풀어줌.<br><br>` +
+      `💡 <b>흐름:</b> 앞 문장 '가장 큰 장기' → 그 장기의 <b>첫 번째 기능 = 보호</b>. 다음 문장에서 external forces가 구체적으로 뭔지(극한 기온·햇빛·화학물질·감염) <b>나열</b>로 풀어줌.<br><br>` +
       `📝 <b>해석:</b> "몸의 거의 전체를 덮고 있는 피부는 다양한 외부의 힘으로부터 우리를 보호한다."`,
     trans: "몸의 거의 전체를 덮고 있는 피부는 다양한 외부의 힘으로부터 우리를 보호한다.",
   },
