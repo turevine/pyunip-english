@@ -139,6 +139,13 @@ const WORDS_BY_PASSAGE = {
   { word: "anxiety",          pos: "n.",   meaning: "불안(감), 걱정 (a. anxious)",   example: "managing anxiety" },
   { word: "adjust to",        pos: "phr.", meaning: "~에 적응하다, 순응하다 (adjust 조절하다)", example: "adjust to such intense pressure" },
   { word: "intense",          pos: "a.",   meaning: "강렬한, 극심한 (intense pressure 극심한 압박)", example: "such intense pressure" },
+  { word: "pressure",         pos: "n.",   meaning: "압박, 압력 (불가산 → such intense pressure, a 없음) (put pressure on ~에 압박을 가하다)", example: "such intense pressure (그토록 극심한 압박)" },
+  { word: "explain",          pos: "v.",   meaning: "설명하다 (n. explanation) — explain + 명사/의문사절 (explain me ❌ → explain to me)", example: "Louganis explains how he learned ~ (어떻게 ~를 배웠는지 설명한다)" },
+  { word: "learn to V",       pos: "phr.", meaning: "~하는 법을 배우다, ~할 수 있게 되다", example: "learned to control his anxiety (불안을 다스리는 법을 배웠다)" },
+  { word: "control",          pos: "v./n.", meaning: "통제하다, 다스리다, 조절하다; 통제 (-lled, -lling)", example: "control his anxiety (불안을 다스리다)" },
+  { word: "during",           pos: "prep.", meaning: "~ 동안(에), ~ 중에 (🚨 전치사 → 뒤에 명사만. S+V가 오면 while)", example: "during a competition (시합 중에)" },
+  { word: "competition",      pos: "n.",   meaning: "시합, 대회; 경쟁 (v. compete, n. competitor 경쟁자)", example: "during a competition (시합 도중)" },
+  { word: "too much",         pos: "ad./a.", meaning: "너무 많이; 너무 많은 (불가산명사 앞) (cf. too many + 복수명사)", example: "Most divers think too much. (대부분의 다이버는 생각이 너무 많다.)" },
   { word: "compliment",       pos: "v./n.", meaning: "칭찬하다; 칭찬 (≠complement 보완하다)", example: "compliment me on the beautiful splash" },
   { word: "splash",           pos: "n./v.", meaning: "물보라, 첨벙(하는 소리); 튀기다", example: "the beautiful splash" },
   { word: "gymnast",          pos: "n.",   meaning: "체조 선수 (gymnastics 체조)",   example: "male and female gymnasts" },
@@ -3224,6 +3231,68 @@ const ANALYSIS = {
     trans: "\"그렇지 않다면 그들은 우리가 부과하는 훈련량을 감당하지 못할 겁니다. [선수들은] 목표를 세우고, 필요할 때 에너지를 끌어내고, 불안을 다스리는 데 능숙해야 합니다.\"",
   },
 
+  // 지문 2 · 37번째 문장: How do athletes adjust to such intense pressure?
+  "2-36": {
+    form: "직접의문문 (How + do + S + V?) · 조동사 do 도치 · adjust to + 명사(to=전치사) · such + 형용사 + 명사(무관사 불가산) · 1형식(자동사 adjust + 전치사구)",
+    tense: "현재 (일반적 사실을 묻는 의문문)",
+    chips: [
+      ["의문사(방법)", "How"],
+      ["조동사(도치)", "do"],
+      ["주어(S)", "athletes"],
+      ["동사(V)·자동사+전치사", "adjust to"],
+      ["전치사의 목적어·such+형+명", "such intense pressure"],
+    ],
+    structure:
+      `뼈대: <b>How</b>(의문사) + <b>do</b>(조동사) + <b>athletes</b>(S) + <b>adjust</b>(V) + <b>to such intense pressure</b>(전치사구)<b>?</b> "선수들은 <b>어떻게</b> 그런 극심한 압박에 적응하는가?" — 평서문 Athletes adjust to ~ 를 의문문으로 만든 것.<br><br>` +
+      `① ⭐⭐ <b>How do athletes adjust ~?</b> (<b>직접의문문</b>: 의문사 + do + S + 동사원형) — 일반동사 문장을 의문문으로 만들면 <b>조동사 do가 주어 앞으로</b> 나오고(도치), 본동사는 <b>원형</b>(adjust). 주어 athletes가 복수라 <b>do</b>(does ❌). How="어떻게(방법)".<br>` +
+      `&nbsp;&nbsp;• 🚨 바로 다음 2-37의 <b>explains how he learned ~</b>와 비교! 문장 속에 들어가면(<b>간접의문문</b>) do가 사라지고 <b>how + S + V</b> 평서문 어순으로 돌아감 → how <u>he learned</u> (how did he learn ❌).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('indirect-question','iq-order')">📐 직접의문문 ↔ 간접의문문 어순 비교 →</span><br>` +
+      `② ⭐ <b>adjust to ~</b> (자동사 + 전치사) — "<b>~에 적응하다</b>". 🚨 이 <b>to는 전치사</b>라 뒤에 <b>명사</b>(pressure)가 오고, 동사를 넣으려면 <b>-ing</b>(adjust to living ⭕ / adjust to live ❌). 목적어가 전치사구 안에 있으니 문형은 <b>1형식</b>. (단어카드: adjust to)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('gerund-prep','gp-rule')">📐 전치사 to + 동명사(adjust to -ing) 자세히 →</span><br>` +
+      `③ ⭐⭐ <b>such intense pressure</b> (<b>such + 형용사 + 명사</b>) — "<b>그런(그토록) 극심한 압박</b>". such는 <b>명사를 꾸미는</b> 말이라 [such + (a/an) + 형용사 + 명사] 어순. <b>pressure</b>는 <b>셀 수 없는 명사</b>라 a 없이 such intense pressure. 🚨 <b>so</b>를 쓰면 so intense <u>a</u> pressure 식으로 어순이 바뀜 — so는 <b>형용사</b>를 꾸미기 때문(so intense pressure ❌). (단어카드: intense / pressure)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('such-so','ss-order')">📐 such vs so 어순 (such a 형+명 / so 형 a 명) →</span><br>` +
+      `&nbsp;&nbsp;• <b>such</b>는 여기서 "앞에서 말한 바로 <b>그런</b>" — 2-33~35의 <b>엄청난 훈련량·정신적 부담</b>을 가리킴.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('articles','ar-zero')">📐 무관사(셀 수 없는 명사 pressure) 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 2-35의 마지막 능력 <b>managing anxiety(불안 관리)</b>를 받아 <b>질문</b>을 던져 화제 전환 — "그럼 실제로 어떻게 적응하나?" 답은 다음 2-37~38 <b>루가니스의 경험담</b>(유머로 불안 다스리기). 글쓴이가 <b>질문 → 사례로 답</b>하는 전형적 전개.<br><br>` +
+      `📝 <b>해석:</b> "선수들은 그렇게 극심한 압박에 어떻게 적응하는가?"`,
+    trans: "선수들은 그토록 극심한 압박에 어떻게 적응할까?",
+  },
+
+  // 지문 2 · 38번째 문장: Louganis explains how he learned to control his anxiety during a competition: "Most divers think too much...," he says.
+  "2-37": {
+    form: "3형식 (explains + 간접의문문 how S V) · learn to V(명사적 to부정사) · during + 명사(전치사 vs 접속사 while) · 콜론(:) 구체 인용 · Most + 복수명사 · too much(부사) · ...(말줄임표) · he says(대명사 주어 → 도치 ✗)",
+    tense: "현재 (진술·인용) · 과거 learned (배운 경험)",
+    chips: [
+      ["주어(S)", "Louganis"],
+      ["동사(V)·타동사", "explains"],
+      ["목적어(O)·간접의문문(how+S+V)", "how he learned to control his anxiety"],
+      ["수식어·during+명사", "during a competition"],
+      ["콜론(:)·구체 인용 도입", ":"],
+      ["인용문·Most+복수명사", "\"Most divers think too much...,\""],
+      ["전달절(도치 ✗)·대명사 주어", "he says"],
+    ],
+    structure:
+      `뼈대: <b>Louganis(S) + explains(V) + [how he learned to control his anxiety during a competition](O)</b><b>:</b> "…," he says. "루가니스는 시합 중 불안을 다스리는 법을 어떻게 배웠는지 설명한다: '…'이라고 그는 말한다".<br><br>` +
+      `① <b>Louganis explains</b> (주어+동사) — 2-32에 나온 <b>Greg Louganis</b>(다이빙 금메달 4관왕)를 이번엔 <b>성만</b>으로 받음(영어 기사에선 두 번째부터 성만 씀). 주어 단수 → <b>explains</b>. (단어카드: explain)<br>` +
+      `② ⭐⭐ <b>how he learned to control ~</b> (목적어·<b>간접의문문</b>) — explains의 <b>목적어</b>가 된 의문사절: "<b>그가 어떻게 ~을 배웠는지</b>". 🚨 문장 속이라 <b>how + S + V</b> 평서문 어순(how <u>did he learn</u> ❌). 바로 앞 2-36 직접의문문 <b>How do athletes adjust ~?</b>와 어순을 비교해 볼 것!<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('indirect-question','iq-order')">📐 간접의문문 어순(의문사 + S + V) 자세히 →</span><br>` +
+      `③ ⭐ <b>learned to control his anxiety</b> (<b>learn + to부정사</b>) — "<b>불안을 다스리는 법을 배웠다</b>". to control은 learned의 <b>목적어</b>(명사적 용법). <b>learn to V</b>="~하는 법을 배우다 / ~할 수 있게 되다". 배운 건 과거의 일이라 <b>learned</b>(과거). control=다스리다·조절하다, his anxiety=그의 불안. (단어카드: learn to V / control / anxiety)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-noun')">📐 to부정사 명사적 용법(목적어) 자세히 →</span><br>` +
+      `④ ⭐⭐ <b>during a competition</b> (<b>전치사 during + 명사</b>) — "<b>시합 도중에</b>". 🚨 during은 <b>전치사</b>라 뒤에 <b>명사(구)</b>만! 문장(S+V)을 붙이려면 접속사 <b>while</b>: while he was competing ⭕ / during he was competing ❌. (편입 단골 비교) (단어카드: during / competition)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('during-while','dw-basic')">📐 during(전치사) vs while(접속사) 자세히 →</span><br>` +
+      `⑤ ⭐ <b>:</b> (콜론) — 앞에서 "어떻게 배웠는지 설명한다"고 예고한 뒤, <b>그 설명(인용)을 공개</b>. 2-32와 같은 쓰임.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('punctuation','pn-colon')">📐 콜론(:)의 쓰임 자세히 →</span><br>` +
+      `⑥ <b>"Most divers think too much...,"</b> (인용문) — "<b>대부분의 다이버는 생각이 너무 많아요…</b>".<br>` +
+      `&nbsp;&nbsp;• ⭐ <b>Most divers</b> = <b>most + 무관사 복수명사</b> "(일반적인) 대부분의 다이버". 🚨 특정 집단이면 <b>most of the</b> divers(of 뒤엔 the 필요) — most of divers ❌. 복수 주어라 동사 <b>think</b>.<br>` +
+      `&nbsp;&nbsp;• <b>think too much</b> — think는 <b>자동사</b>(목적어 없음), <b>too much</b>=부사 "너무 많이"(think를 수식). "생각을 너무 많이 한다"=지나치게 머리를 쓴다. (단어카드: too much)<br>` +
+      `&nbsp;&nbsp;• <b>...</b> (말줄임표) — 말이 <b>잠시 끊기거나 여운</b>을 남기는 표시. 다음 문장 "They're too much in their heads."로 말이 이어짐.<br>` +
+      `⑦ ⭐⭐ <b>he says</b> (전달절·<b>도치 안 함</b>) — 🚨 2-34의 "…," <b>says Sean McCann</b>(도치)과 비교! 전달절 주어가 <b>대명사(he/she/they)</b>면 보통 <b>도치하지 않고 he says</b> 그대로 씀(says he는 거의 안 씀). 명사 주어일 때만 says + 주어 도치가 흔함.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('quotation-inversion','qi-pronoun')">📐 인용 도치 — 대명사 주어는 도치 ✗ 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 2-36 질문 "어떻게 극심한 압박에 적응하나?"에 대한 <b>답을 사례로</b> 시작 — 루가니스의 진단: 다이버들의 문제는 <b>생각이 너무 많은 것</b>. 다음 2-38에서 "머릿속에만 있다 → 나한텐 <b>유머</b>가 통했다"로 해결책 제시.<br><br>` +
+      `📝 <b>해석:</b> "루가니스는 자신이 시합 중에 불안을 다스리는 법을 어떻게 배웠는지 설명한다: '대부분의 다이버는 생각이 너무 많아요…'라고 그는 말한다."`,
+    trans: "루가니스는 자신이 시합 중에 불안을 다스리는 법을 어떻게 배웠는지 설명한다: \"대부분의 다이버는 생각이 너무 많아요…\"라고 그는 말한다.",
+  },
+
   // 지문 3 · 1번째 문장: The search for beauty spans centuries and continents.
   "3-0": {
     form: "3형식 (S + V + O)",
@@ -4890,6 +4959,12 @@ const GRAMMAR = [
       `<div id="qi-appos" class="g-sub">` +
       `<b>주어 뒤 콤마 동격(,)</b><br>` +
       `<b>C. Loring Brace<u>,</u> an anthropologist at ~</b> = "~의 인류학자<b>인</b> C. Loring Brace" — 콤마로 <b>사람 = 신분</b>을 나란히 놓는 <b>동격</b>. 앞 명사를 다시 설명(A, B에서 A=B).` +
+      `</div>` +
+      `<div id="qi-pronoun" class="g-sub">` +
+      `<b>🚨 주어가 대명사면 도치 ✗</b><br>` +
+      `도치(says + 주어)는 주어가 <b>명사</b>(사람 이름·the expert)일 때 흔함. 주어가 <b>he / she / they</b> 같은 <b>대명사</b>면 보통 <b>원래 어순 그대로</b>.<br>` +
+      `&nbsp;&nbsp;• "They have to be," <b>says Sean McCann</b>. (명사 주어 → 도치 ⭕)<br>` +
+      `&nbsp;&nbsp;• "Most divers think too much...," <b>he says</b>. (대명사 주어 → 도치 ✗, says he는 거의 안 씀)` +
       `</div>`,
     eg: [
       ["인용 도치 · says + 주어", "\"It can change,\" says the expert.", "\"그것은 바뀔 수 있다\"고 그 전문가는 말한다. (says + the expert)"],
@@ -5098,6 +5173,57 @@ const GRAMMAR = [
       ["be good at -ing", "She is good at solving problems.", "그녀는 문제를 잘 푼다."],
       ["by -ing (수단)", "You improve by practicing every day.", "매일 연습함으로써 실력이 는다."],
       ["전치사 to + -ing", "I look forward to meeting you.", "당신을 만나기를 고대합니다."],
+    ],
+  },
+  {
+    id: "such-so",
+    title: "such vs so 어순 — such (a) 형 명 / so 형 (a 명)",
+    tag: "핵심 · 어순 함정",
+    body:
+      `둘 다 "<b>그렇게·그토록</b>"이지만 꾸미는 대상이 다름. <b>such는 명사</b>(덩어리)를, <b>so는 형용사·부사</b>를 꾸밈 → 그래서 <b>관사 a의 위치</b>가 달라짐.<br><br>` +
+      `<div id="ss-order" class="g-sub">` +
+      `<b>① 어순 공식</b><br>` +
+      `&nbsp;&nbsp;• <b>such + a/an + 형용사 + 명사</b> — such <b>a</b> good player (그렇게 훌륭한 선수)<br>` +
+      `&nbsp;&nbsp;• <b>such + 형용사 + 불가산/복수 명사</b> (a 없음) — such <b>intense pressure</b> · such <b>long hours</b><br>` +
+      `&nbsp;&nbsp;• <b>so + 형용사/부사</b> — The pressure is <b>so intense</b>. · He trains <b>so hard</b>.<br>` +
+      `&nbsp;&nbsp;• <b>so + 형용사 + a/an + 명사</b> (딱딱한 문어체) — <b>so good a</b> player (= such a good player)<br>` +
+      `🚨 ❌ so intense pressure · ❌ a such good player · ❌ such good a player` +
+      `</div>` +
+      `<div id="ss-that" class="g-sub">` +
+      `<b>② 결과 구문: so/such ~ that … = "너무 ~해서 …하다"</b><br>` +
+      `예) The pressure was <b>so</b> intense <b>that</b> he couldn't sleep.<br>` +
+      `예) It was <b>such</b> intense pressure <b>that</b> he couldn't sleep. (두 문장 같은 뜻)<br>` +
+      `<span class="wikilink" onclick="gotoGrammar('so-roles','so-adverb')">📐 정도 부사 so 자세히 →</span>` +
+      `</div>`,
+    eg: [
+      ["such + a + 형 + 명", "She is such a fast runner.", "그녀는 그렇게나 빠른 주자다."],
+      ["such + 형 + 불가산명사", "How do athletes adjust to such intense pressure?", "선수들은 그토록 극심한 압박에 어떻게 적응하는가?"],
+      ["so + 형 (+ that)", "The dive was so fast that I missed it.", "다이빙이 너무 빨라서 놓쳤다."],
+    ],
+  },
+  {
+    id: "during-while",
+    title: "during vs while — 전치사(+명사) vs 접속사(+S V)",
+    tag: "핵심 · 문법 단골",
+    body:
+      `둘 다 "<b>~ 동안(에)</b>"지만 품사가 다름. 뒤에 뭐가 오는지만 보면 바로 정답이 갈림.<br><br>` +
+      `<div id="dw-basic" class="g-sub">` +
+      `<b>① 뒤에 오는 것</b><br>` +
+      `&nbsp;&nbsp;• <b>during</b> (전치사) + <b>명사(구)</b> — during <b>a competition</b> · during <b>the summer</b><br>` +
+      `&nbsp;&nbsp;• <b>while</b> (접속사) + <b>S + V</b> — while <b>he was competing</b> · while <b>I slept</b><br>` +
+      `🚨 ❌ during he was competing · ❌ while the competition (명사만 오면 during)<br>` +
+      `💡 while 뒤 <b>주어+be</b>는 생략 가능: while (he was) competing → <b>while competing</b> (분사구문처럼 보여도 while은 접속사)` +
+      `</div>` +
+      `<div id="dw-family" class="g-sub">` +
+      `<b>② 같은 원리의 짝 (전치사 vs 접속사)</b><br>` +
+      `&nbsp;&nbsp;• <b>because of</b> + 명사 ↔ <b>because</b> + S V (~ 때문에)<br>` +
+      `&nbsp;&nbsp;• <b>despite / in spite of</b> + 명사 ↔ <b>although / though</b> + S V (~에도 불구하고)<br>` +
+      `&nbsp;&nbsp;• <b>for</b> + 기간(숫자) ↔ <b>during</b> + 특정 기간(명사): for three hours / during the race` +
+      `</div>`,
+    eg: [
+      ["during + 명사", "He felt calm during the competition.", "그는 시합 동안 차분했다."],
+      ["while + S + V", "He felt calm while he was diving.", "그는 다이빙하는 동안 차분했다."],
+      ["despite vs although", "Despite the pain, he won. = Although he was in pain, he won.", "고통에도 불구하고 그는 이겼다."],
     ],
   },
 ];
