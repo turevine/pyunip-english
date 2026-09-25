@@ -265,8 +265,12 @@ const WORDS_BY_PASSAGE = {
 
   /* ----- 지문 4: Skin — The body's canvas ----- */
   4: [
+  { word: "take off",         pos: "phr.", meaning: "①(옷 등을) 벗다, 떼어내다 ②(비행기가) 이륙하다 (n. takeoff) — 🚨 대명사 목적어는 사이에: take it off", example: "take off your skin (피부를 벗기다)" },
   { word: "lay",              pos: "v.",   meaning: "놓다, 눕히다 (lay-laid-laid, 타동사; ≠lie 눕다/lie-lay-lain)", example: "take off your skin and lay it flat" },
   { word: "flat",             pos: "a./ad.", meaning: "평평한; 평평하게",              example: "lay it flat" },
+  { word: "cover",            pos: "v.",   meaning: "①(면적을) 덮다, 차지하다 ②포함하다 ③다루다", example: "it would cover an area of ~ (~의 면적을 덮을 것이다)" },
+  { word: "area",             pos: "n.",   meaning: "면적; 지역, 구역; 분야", example: "an area of about 1.9 square meters (약 1.9제곱미터의 면적)" },
+  { word: "about",            pos: "ad./prep.", meaning: "(숫자 앞 부사) 약, 대략 (= around, approximately); (전치사) ~에 대해", example: "about 1.9 square meters (약 1.9제곱미터)" },
   { word: "square meter",     pos: "n.",   meaning: "제곱미터 (square 정사각형의/제곱)", example: "about 1.9 square meters" },
   { word: "by far",           pos: "phr.", meaning: "단연코, 훨씬 (최상급 강조)",       example: "by far the body's largest organ" },
   { word: "organ",            pos: "n.",   meaning: "(신체) 장기, 기관; 오르간",        example: "the body's largest organ" },
@@ -4271,6 +4275,38 @@ const ANALYSIS = {
       `&nbsp;&nbsp;• 왜 이 속담이 결론? = 3-28 <b>subjective</b>(주관적)·3-38 <b>단일 기준 없음</b>을 한 줄 속담으로 <b>압축</b>. 지문 제목 "What is Beauty?"에 대한 최종 답: "<b>보는 사람마다 다르다</b>".<br><br>` +
       `📝 <b>해석:</b> "<b>결국</b>, 아름다움은 <b>속담이 말하듯</b>, <b>정말로 보는 사람의 눈에 달려 있다</b>." — 지문 3 마무리: 3-10 "But what exactly is beauty?"로 던진 질문에, 보편성(3-18~21)과 문화 상대성(3-22~35)을 모두 거친 뒤 '<b>제 눈에 안경</b>'이라는 속담으로 답함. 🎉 지문 3 분석 완료!`,
     trans: "결국, 아름다움은 속담이 말하듯, 정말로 보는 사람의 눈에 달려 있다.",
+  },
+
+  // 지문 4 · 1번째 문장: If you could take off your skin and lay it flat, it would cover an area of about 1.9 square meters.
+  "4-0": {
+    form: "가정법 과거 (If + S + could V, S + would V) · 동사구 병렬(take off ~ and lay ~) · lay + O + 형용사(5형식) · 일반인 you · 동격의 of(an area of ~) · about(약)",
+    tense: "가정법 과거 (현재 사실의 반대: 실제로는 피부를 벗길 수 없음)",
+    chips: [
+      ["조건절·가정법 과거", "If you could"],
+      ["동사구①·take off+O", "take off your skin"],
+      ["and·동사구②·5형식", "and lay it flat"],
+      ["주어(S)·it=your skin", "it"],
+      ["동사(V)·가정법 would", "would cover"],
+      ["목적어(O)·동격 of", "an area of about 1.9 square meters"],
+    ],
+    structure:
+      `뼈대: [<b>If</b> you <b>could</b> take off ~ and lay ~](조건절), <b>it(S) + would cover(V) + an area(O)</b> [of about 1.9 square meters]. "만약 피부를 벗겨 평평하게 펼 <b>수 있다면</b>, 그것은 약 1.9제곱미터의 면적을 덮<b>을 것이다</b>".<br><br>` +
+      `① ⭐⭐ <b>If you could ~, it would ~</b> (<b>가정법 과거</b>) — 🚨 과거 이야기가 아님! 실제로는 <b>피부를 벗길 수 없으니</b>(현재 사실의 반대) <b>if절엔 과거형 could</b>, <b>주절엔 would + 원형</b>. 2-35·2-38에서 본 바로 그 짝: <b>if가 조건</b>("벗길 수 있다면"), <b>would가 결과</b>("덮을 것이다")를 맡음.<br>` +
+      `&nbsp;&nbsp;• ⭐ if절에 <b>could</b>가 온 이유 — 그냥 took off(벗긴다면)가 아니라 <b>could take off</b> = "<b>벗길 수 있다면</b>"(능력 가정 = if you were able to). 불가능한 일이라 '할 수 있다면'으로 표현.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subjunctive-past','sp-form')">📐 가정법 과거 형태(If S 과거, S would V) 자세히 →</span><br>` +
+      `② <b>you</b> (<b>일반인 you</b>) — 독자 한 명이 아니라 "<b>(누구든) 사람이</b>". 과학 설명문에서 독자를 끌어들이는 말투. 해석할 땐 보통 생략("피부를 벗겨 ~한다면").<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('pronoun-one','po-generic')">📐 일반인 주어(one = you = people) 자세히 →</span><br>` +
+      `③ ⭐ <b>take off your skin and lay it flat</b> (<b>동사구 병렬</b>) — <b>and</b>가 두 동사구를 이음. 둘 다 <b>could</b>에 걸림: could [<u>take</u> off ~] and [<u>lay</u> ~] → 그래서 lay도 <b>원형</b>(laid ❌).<br>` +
+      `&nbsp;&nbsp;• <b>take off</b> = "<b>벗다, 떼어내다</b>"(옷·모자를 벗을 때 쓰는 말 → 피부를 옷처럼 벗는다는 재미있는 비유). 🚨 목적어가 <b>대명사</b>면 반드시 사이에: take <b>it</b> off ⭕ / take off it ❌. 명사면 둘 다 ⭕: take off your skin = take your skin off. (단어카드: take off)<br>` +
+      `④ ⭐⭐ <b>lay it flat</b> (<b>5형식</b>: lay + O + 형용사) — "<b>그것을 평평하게</b> 펴 놓다". it(=your skin)이 <b>flat한 상태</b>가 됨(it = flat) → <b>flat은 목적격보어(형용사)</b>. 🚨 flatly(부사) ❌ — '어떻게 놓느냐'가 아니라 '놓은 결과 <b>목적어의 상태</b>'라 형용사.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('five-pattern','fp-adj')">📐 5형식 O + 형용사(결과 상태) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;• 🚨🚨 <b>lay vs lie</b> (편입 단골): <b>lay</b>(타동사, 목적어 O) "~을 놓다/눕히다" lay-<b>laid-laid</b> / <b>lie</b>(자동사, 목적어 ✗) "눕다·놓여 있다" lie-<b>lay-lain</b>. 여기선 목적어 it이 있으니 <b>lay</b>. (lie의 과거형도 lay라 헷갈림 주의!) (단어카드: lay / flat)<br>` +
+      `⑤ <b>it would cover</b> (주절) — <b>it = your skin</b>(앞에서 벗겨 편 피부). <b>cover</b> = "(면적을) <b>덮다·차지하다</b>". (단어카드: cover)<br>` +
+      `⑥ ⭐ <b>an area of about 1.9 square meters</b> (목적어 + <b>동격의 of</b>) — "<b>약 1.9제곱미터라는 면적</b>". an area = 1.9 square meters (앞 = 뒤). <b>about</b>은 여기서 전치사 '~에 대해'가 아니라 숫자 앞 부사 "<b>약·대략</b>"(= around, approximately). square meters는 1보다 큰 수라 <b>복수 -s</b>. (단어카드: area / about / square meter)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('of-types','of-apposition')">📐 동격의 of(A라는 B) 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 지문 4 「Skin: The body's canvas」의 <b>도입</b> — "피부를 벗겨 펴면?"이라는 <b>엉뚱한 가정</b>으로 호기심을 끈 뒤 수치(1.9㎡)를 제시. 다음 4-1 "피부는 단연 <b>가장 큰 장기</b>"라는 핵심 사실로 이어짐.<br><br>` +
+      `📝 <b>해석:</b> "만약 피부를 벗겨서 평평하게 펼 수 있다면, 그것은 약 1.9제곱미터의 면적을 덮을 것이다."`,
+    trans: "만약 피부를 벗겨서 평평하게 펼칠 수 있다면, 그것은 약 1.9제곱미터의 면적을 덮을 것이다.",
   },
 };
 
