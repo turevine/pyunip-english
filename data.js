@@ -133,6 +133,9 @@ const WORDS_BY_PASSAGE = {
   { word: "reflex",           pos: "n.",   meaning: "반사 (작용), 반사 신경",       example: "It has to be reflex." },
   { word: "handle",           pos: "v.",   meaning: "다루다, 감당하다, 처리하다",    example: "couldn't handle the training loads" },
   { word: "load",             pos: "n.",   meaning: "부하, 부담, 짐 (training load 훈련량)", example: "the training loads we put on them" },
+  { word: "be good at",       pos: "phr.", meaning: "~을 잘하다, ~에 능숙하다 (at은 전치사 → 뒤에 명사/동명사) (↔ be poor at)", example: "be good at setting goals (목표를 세우는 것을 잘하다)" },
+  { word: "set a goal",       pos: "phr.", meaning: "목표를 세우다 (set-set-set)", example: "setting goals (목표를 세우는 것)" },
+  { word: "manage",           pos: "v.",   meaning: "①관리하다, 다스리다 ②(manage to V) 간신히 ~해내다 (n. management)", example: "managing anxiety (불안을 다스리는 것)" },
   { word: "anxiety",          pos: "n.",   meaning: "불안(감), 걱정 (a. anxious)",   example: "managing anxiety" },
   { word: "adjust to",        pos: "phr.", meaning: "~에 적응하다, 순응하다 (adjust 조절하다)", example: "adjust to such intense pressure" },
   { word: "intense",          pos: "a.",   meaning: "강렬한, 극심한 (intense pressure 극심한 압박)", example: "such intense pressure" },
@@ -3180,6 +3183,47 @@ const ANALYSIS = {
     trans: "\"그들은 (반드시) 그래야 합니다\"라고 미국 올림픽 트레이닝 센터의 스포츠 심리학자 숀 매캔이 말한다.",
   },
 
+  // 지문 2 · 36번째 문장: "Otherwise, they couldn't handle the training loads we put on them. [Athletes] have to be good at setting goals, generating energy when they need it, and managing anxiety."
+  "2-35": {
+    form: "Otherwise(=if not, 접속부사) + 가정법 과거 couldn't(현재 사실 반대) · 목적격 관계대명사 생략(loads (that) we put) · put A on B · [ ](인용 속 편집 표시) · be good at + 동명사 3개 병렬(A, B, and C) · when 시간부사절",
+    tense: "가정법 과거(①문장: 현재 사실의 반대) · 현재(②문장: 일반적 사실)",
+    chips: [
+      ["접속부사·if절 대용(=if not)", "Otherwise,"],
+      ["주어(S)", "they"],
+      ["동사(V)·가정법 과거", "couldn't handle"],
+      ["목적어(O)·선행사", "the training loads"],
+      ["관계절(목적격 that 생략)", "(that) we put on them"],
+      ["주어(S)·[편집 표시]", "[Athletes]"],
+      ["동사(V)+보어(C)", "have to be good"],
+      ["at+동명사①", "setting goals"],
+      ["at+동명사②·when절", "generating energy when they need it"],
+      ["at+동명사③", "and managing anxiety"],
+    ],
+    structure:
+      `뼈대 ①: <b>Otherwise,</b> <b>they(S) + couldn't handle(V) + the training loads(O)</b> [(that) we put on them](관계절). "그렇지 않다면, 그들은 우리가 부과하는 훈련량을 감당하지 못할 것이다".<br>` +
+      `뼈대 ②: <b>[Athletes](S) + have to be(V) + good(C)</b> <b>at</b> [<u>setting</u> ~, <u>generating</u> ~, and <u>managing</u> ~](동명사 3개 병렬). "선수들은 ~하는 것, ~하는 것, 그리고 ~하는 것을 잘해야 한다".<br><br>` +
+      `① ⭐⭐ <b>Otherwise,</b> (접속부사·<b>if절 대용</b>) — "<b>그렇지 않다면</b>" = <b>if they weren't (psychologically healthy)</b>. 앞 문장 2-34 "They have to be (healthy)"를 받아 "<b>(정신적으로 건강하지) 않다면</b>". 품사는 <b>부사</b>라 콤마로 떨어져 문장 앞에 붙고, 문장 성분(S·V·O) 계산에선 빠짐. (단어카드: otherwise)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('conjunctive-adverb','ca-vs-conjunction')">📐 접속부사(뜻만 잇는 부사) 자세히 →</span><br>` +
+      `② ⭐⭐ <b>they couldn't handle</b> (<b>가정법 과거</b>) — 🚨 과거 이야기가 아닌데 <b>could</b>! Otherwise가 <b>숨은 if절</b> 역할을 하므로 주절은 <b>조동사 과거(could/would) + 동사원형</b> = <b>현재 사실의 반대</b>("(실제론 건강하니 감당하지만) 건강하지 않다면 <b>감당 못 할 것</b>"). "감당하지 못했다"(과거)로 해석하면 ❌. they=athletes. (단어카드: handle)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subjunctive-past','sp-otherwise')">📐 if 없는 가정법 — otherwise + could 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subjunctive-past','sp-form')">📐 가정법 과거의 형태(If S 과거, S could/would V) →</span><br>` +
+      `③ ⭐ <b>the training loads (that) we put on them</b> (<b>목적격 관계대명사 생략</b>) — 원래 the training loads <u>(that/which)</u> we put <u>__</u> on them. put의 <b>목적어 자리가 비어</b> 있고 그게 선행사 loads → "<b>우리가 그들에게 부과하는 훈련량</b>". 1-2번 the sport we know today와 같은 구조(명사 + 바로 S+V가 오면 생략 의심!).<br>` +
+      `&nbsp;&nbsp;• <b>put A on B</b> = "A를 B에게 <b>지우다·부과하다</b>"(put pressure on ~ 압박을 가하다와 같은 on). <b>training load</b>=훈련 부하·훈련량. we=올림픽 트레이닝 센터 사람들(코치·스태프), them=athletes. (단어카드: load)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('relative-pronoun','rp-object-omit')">📐 목적격 관계대명사 생략 자세히 →</span><br>` +
+      `④ <b>[Athletes]</b> (<b>대괄호 [ ]</b>·인용문 편집 표시) — 인용 원문엔 아마 <b>They</b>였는데, 편집자가 지칭 대상을 분명히 하려고 <b>바꿔 끼운 말</b>이라는 표시. 말한 사람의 원래 단어가 아님을 알리는 부호일 뿐, 문장 성분은 그냥 <b>주어</b>. 🚨 괄호( )(부연·삽입)와 역할이 다름.<br>` +
+      `⑤ <b>have to be good at</b> (2형식 + 전치사) — <b>have to</b>=~해야 한다, <b>be good at ~</b>="<b>~을 잘하다</b>"(good=보어 형용사). 🚨 <b>at은 전치사 → 뒤엔 명사/동명사</b>(good at to set ❌). (단어카드: have to / be good at)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('gerund-prep','gp-rule')">📐 전치사 + 동명사(-ing) 자세히 →</span><br>` +
+      `⑥ ⭐⭐ <b>setting goals, generating energy ~, and managing anxiety</b> (<b>동명사 3개 병렬</b>: A, B, and C) — 셋 다 <b>at의 목적어</b>라 모두 <b>-ing</b>로 모양을 맞춤. 🚨 중간 하나만 to generate / generates 식으로 바꾸면 병렬 깨짐(시험 단골 오답 포인트).<br>` +
+      `&nbsp;&nbsp;• A <b>setting goals</b> = 목표를 세우는 것 (<b>set a goal</b> 목표를 세우다) (단어카드: set a goal)<br>` +
+      `&nbsp;&nbsp;• B <b>generating energy when they need it</b> = <b>필요할 때</b> 에너지를 끌어내는 것. <b>when they need it</b>=시간 부사절(generating을 수식), <b>they=athletes, it=energy</b>. (단어카드: generate)<br>` +
+      `&nbsp;&nbsp;• C <b>managing anxiety</b> = 불안을 다스리는 것 (<b>manage</b> 관리하다·다스리다) (단어카드: manage / anxiety)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('gerund-prep','gp-parallel')">📐 전치사 뒤 동명사 병렬(A, B, and C) →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">📐 병렬 원칙(같은 모양끼리) 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 2-34 "그들은 (정신적으로도 건강)해야 한다"의 <b>이유(Otherwise, ~)</b> + <b>구체적 정신 능력 3가지</b>(목표 설정·에너지 끌어내기·불안 관리). 마지막 <b>managing anxiety</b>가 다음 2-36(어떻게 극심한 압박에 적응하나?)·루가니스의 불안 조절 이야기로 이어지는 연결고리.<br><br>` +
+      `📝 <b>해석:</b> "그렇지 않다면 그들은 우리가 그들에게 부과하는 훈련량을 감당하지 못할 것입니다. [선수들은] 목표를 세우고, 필요할 때 에너지를 끌어내고, 불안을 다스리는 일을 잘해야 합니다."`,
+    trans: "\"그렇지 않다면 그들은 우리가 부과하는 훈련량을 감당하지 못할 겁니다. [선수들은] 목표를 세우고, 필요할 때 에너지를 끌어내고, 불안을 다스리는 데 능숙해야 합니다.\"",
+  },
+
   // 지문 3 · 1번째 문장: The search for beauty spans centuries and continents.
   "3-0": {
     form: "3형식 (S + V + O)",
@@ -5000,6 +5044,60 @@ const GRAMMAR = [
       ["목적어 · 어순 S+V", "I don't know where he lives.", "그가 어디 사는지 모른다."],
       ["의문사 = 주어 (what + V)", "Tell me what makes you happy.", "무엇이 너를 행복하게 하는지 말해줘."],
       ["부사 + 의문사", "It is hard to define exactly what beauty is.", "미가 정확히 무엇인지 정의하기는 어렵다."],
+    ],
+  },
+  {
+    id: "subjunctive-past",
+    title: "가정법 과거 — 현재 사실의 반대 (if 없는 가정: otherwise)",
+    tag: "핵심 · 해석 함정",
+    body:
+      `과거형 조동사(<b>could / would / might</b>)가 나오는데 문맥은 <b>지금</b> 이야기라면 → <b>가정법 과거</b>를 의심. 뜻은 "<b>(실제로는 아니지만) 만약 ~라면, ~할 텐데/할 것이다</b>" = <b>현재 사실의 반대</b>. 형태만 과거일 뿐 시간은 <b>현재</b>.<br><br>` +
+      `<div id="sp-form" class="g-sub">` +
+      `<b>① 형태: If + S + 과거동사(be는 were), S + could/would/might + 동사원형</b><br>` +
+      `예) If I <b>were</b> rich, I <b>would buy</b> it. = 내가 부자라면 그걸 살 텐데. (실제론 부자 아님)<br>` +
+      `예) If they <b>weren't</b> healthy, they <b>couldn't handle</b> the loads. = 건강하지 않다면 그 훈련량을 감당 못 할 것이다.<br>` +
+      `🚨 "~했다"(과거)로 해석하면 ❌ — <b>현재</b>에 대한 가정. (과거 사실의 반대는 <b>had p.p. / would have p.p.</b> = 가정법 과거완료)` +
+      `</div>` +
+      `<div id="sp-otherwise" class="g-sub">` +
+      `<b>② if 없는 가정 — otherwise / without / but for (if절 대용어)</b><br>` +
+      `if절이 안 보여도 <b>이 말들이 if절 역할</b>을 하면 주절은 그대로 <b>could/would + V</b>.<br>` +
+      `&nbsp;&nbsp;• <b>Otherwise,</b> ~ = "<b>그렇지 않다면</b>" = if not (앞 문장 내용을 뒤집은 조건)<br>` +
+      `&nbsp;&nbsp;&nbsp;&nbsp;예) They have to be healthy. <b>Otherwise, they couldn't handle</b> the loads. = 건강해야 한다. 그렇지 않으면(=If they weren't) 감당 못 할 것이다.<br>` +
+      `&nbsp;&nbsp;• <b>Without / But for</b> + 명사 = "~이 없다면" = If it were not for ~<br>` +
+      `&nbsp;&nbsp;&nbsp;&nbsp;예) <b>Without</b> water, we <b>couldn't</b> live. = 물이 없다면 살 수 없을 것이다.<br>` +
+      `🔍 <b>판별법</b>: could/would가 있는데 과거 시점 표시가 없다 → 문장 앞뒤에서 <b>숨은 조건(otherwise·without·to부정사·주어)</b>을 찾아라.` +
+      `</div>`,
+    eg: [
+      ["기본형 (현재 사실 반대)", "If I had time, I would help you.", "시간이 있다면 너를 도울 텐데."],
+      ["otherwise = if not", "Leave now; otherwise, you would miss the bus.", "지금 떠나라. 그렇지 않으면 버스를 놓칠 것이다."],
+      ["without = if it were not for", "Without your help, I couldn't finish it.", "네 도움이 없다면 그걸 끝낼 수 없을 것이다."],
+    ],
+  },
+  {
+    id: "gerund-prep",
+    title: "전치사 + 동명사(-ing) — to부정사는 절대 불가",
+    tag: "핵심 · 문법 단골",
+    body:
+      `<b>전치사(at·in·of·by·for·about·without…) 뒤에는 명사 자리</b> → 동사를 넣으려면 반드시 <b>동명사(-ing)</b>. to부정사·동사원형은 ❌. 편입 문법 문제에서 가장 자주 찍히는 자리 중 하나.<br><br>` +
+      `<div id="gp-rule" class="g-sub">` +
+      `<b>① 자주 나오는 전치사 + -ing 덩어리</b><br>` +
+      `&nbsp;&nbsp;• <b>be good at -ing</b> (~을 잘하다) — good at <b>setting</b> goals (to set ❌)<br>` +
+      `&nbsp;&nbsp;• <b>be capable of -ing</b> (~할 수 있다) — capable of <b>winning</b><br>` +
+      `&nbsp;&nbsp;• <b>by -ing</b> (~함으로써) — by <b>repeating</b> the motions<br>` +
+      `&nbsp;&nbsp;• <b>play a part in -ing</b> (~에 한몫하다) — in <b>becoming</b> an athlete<br>` +
+      `&nbsp;&nbsp;• <b>go into -ing</b> (~하는 데 투입되다) — into <b>making</b> a super athlete<br>` +
+      `🚨 <b>to가 전치사인 경우</b>도 -ing: look forward <b>to seeing</b>, be used <b>to running</b>, adjust <b>to living</b> (to see ❌).` +
+      `</div>` +
+      `<div id="gp-parallel" class="g-sub">` +
+      `<b>② 전치사 하나에 동명사 여러 개 — A, B, and C 병렬</b><br>` +
+      `전치사는 <b>맨 앞에 한 번만</b> 쓰고, 뒤의 동명사들은 모두 <b>-ing로 모양을 맞춤</b>.<br>` +
+      `예) be good <b>at</b> [<b>setting</b> goals, <b>generating</b> energy, and <b>managing</b> anxiety]<br>` +
+      `🚨 ❌ good at setting goals, <u>to generate</u> energy, and managing anxiety → 병렬 깨짐 (시험에선 이 한 자리를 틀리게 만들어 둠)` +
+      `</div>`,
+    eg: [
+      ["be good at -ing", "She is good at solving problems.", "그녀는 문제를 잘 푼다."],
+      ["by -ing (수단)", "You improve by practicing every day.", "매일 연습함으로써 실력이 는다."],
+      ["전치사 to + -ing", "I look forward to meeting you.", "당신을 만나기를 고대합니다."],
     ],
   },
 ];
