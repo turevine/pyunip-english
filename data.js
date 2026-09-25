@@ -146,7 +146,12 @@ const WORDS_BY_PASSAGE = {
   { word: "during",           pos: "prep.", meaning: "~ 동안(에), ~ 중에 (🚨 전치사 → 뒤에 명사만. S+V가 오면 while)", example: "during a competition (시합 중에)" },
   { word: "competition",      pos: "n.",   meaning: "시합, 대회; 경쟁 (v. compete, n. competitor 경쟁자)", example: "during a competition (시합 도중)" },
   { word: "too much",         pos: "ad./a.", meaning: "너무 많이; 너무 많은 (불가산명사 앞) (cf. too many + 복수명사)", example: "Most divers think too much. (대부분의 다이버는 생각이 너무 많다.)" },
-  { word: "compliment",       pos: "v./n.", meaning: "칭찬하다; 칭찬 (≠complement 보완하다)", example: "compliment me on the beautiful splash" },
+  { word: "in one's head",    pos: "phr.", meaning: "머릿속(생각)에 갇혀 있는, 생각이 너무 많은 (be too much in one's head 지나치게 생각에 빠져 있다)", example: "They're too much in their heads. (그들은 너무 생각에만 빠져 있다.)" },
+  { word: "work",             pos: "v.",   meaning: "①일하다 ②(자동사) 효과가 있다, (잘) 통하다 — What works for me 나한테 효과 있는 것", example: "What worked for me was humor. (나한테 통했던 건 유머였다.)" },
+  { word: "humor",            pos: "n.",   meaning: "유머, 익살 (a. humorous 유머러스한) (영국식 humour)", example: "What worked for me was humor." },
+  { word: "remember -ing / to V", pos: "phr.", meaning: "remember -ing: (과거에) ~했던 것을 기억하다 / remember to V: (앞으로) ~할 것을 기억하다, 잊지 않고 ~하다", example: "I remember thinking about ~ (~을 생각했던 게 기억난다)" },
+  { word: "probably",         pos: "ad.",  meaning: "아마 (확률 높음: probably > maybe·perhaps)", example: "She'd probably just compliment me. (아마 그저 날 칭찬하셨을 것이다.)" },
+  { word: "compliment",       pos: "v./n.", meaning: "칭찬하다; 칭찬 (≠complement 보완하다) — compliment A on B: B에 대해 A를 칭찬하다", example: "compliment me on the beautiful splash" },
   { word: "splash",           pos: "n./v.", meaning: "물보라, 첨벙(하는 소리); 튀기다", example: "the beautiful splash" },
   { word: "gymnast",          pos: "n.",   meaning: "체조 선수 (gymnastics 체조)",   example: "male and female gymnasts" },
   { word: "suffer",           pos: "v.",   meaning: "(피해·고통을) 겪다, 당하다 (suffer damage 손상을 입다)", example: "less likely to suffer damage" },
@@ -3293,6 +3298,50 @@ const ANALYSIS = {
     trans: "루가니스는 자신이 시합 중에 불안을 다스리는 법을 어떻게 배웠는지 설명한다: \"대부분의 다이버는 생각이 너무 많아요…\"라고 그는 말한다.",
   },
 
+  // 지문 2 · 39번째 문장: "They're too much in their heads. What worked for me was humor. I remember thinking about what my mother would say if she saw me do a bad dive. She'd probably just compliment me on the beautiful splash."
+  "2-38": {
+    form: "①2형식 be + too much + 전치사구(in one's head) · ②what 주어절(단수 was) = What ~ was X 강조(유사분열문) · ③remember + 동명사(과거 기억) · 전치사 about + what절 · 가정법 과거(would say if saw) · 지각동사 saw + O + 원형 · ④She'd = She would(가정 계속) · compliment A on B",
+    tense: "현재(①진단) · 과거(②③ 경험 회상) · 가정법 과거(③④ 상상: 실제로 일어나지 않은 일)",
+    chips: [
+      ["①주어+be·2형식", "They're"],
+      ["①부사+전치사구(보어)", "too much in their heads"],
+      ["②주어(S)·what절→단수", "What worked for me"],
+      ["②동사+보어(C)", "was humor"],
+      ["③주어+동사·remember -ing", "I remember thinking"],
+      ["③about + what절(say의 목적어 빔)", "about what my mother would say"],
+      ["③가정법 if절·지각동사+O+원형", "if she saw me do a bad dive"],
+      ["④주어+would(가정)", "She'd probably just"],
+      ["④compliment A on B", "compliment me on the beautiful splash"],
+    ],
+    structure:
+      `인용이 이어진 <b>네 문장</b>. 뼈대:<br>` +
+      `① <b>They(S) + 're(V) + too much in their heads</b> — "그들은 너무 머릿속에만 있다"<br>` +
+      `② <b>[What worked for me](S) + was(V) + humor(C)</b> — "나한테 통했던 건 유머였다"<br>` +
+      `③ <b>I(S) + remember(V) + [thinking about ~](O)</b> — "~에 대해 생각했던 게 기억난다"<br>` +
+      `④ <b>She(S) + 'd compliment(V) + me(O) + on the beautiful splash</b> — "엄마는 아마 아름다운 물보라를 칭찬했을 것이다"<br><br>` +
+      `① ⭐ <b>They're too much in their heads.</b> (2형식) — They=<b>Most divers</b>(2-37). <b>be in one's head</b>="<b>머릿속(생각)에 갇혀 있다</b>", 즉 몸이 아니라 생각에 사로잡힌 상태. <b>too much</b>(부사)가 전치사구 in their heads를 꾸며 "<b>지나치게</b> 머릿속에 있다". 🚨 their <b>heads</b> 복수 — 다이버들 각자의 머리라 복수형. (단어카드: in one's head / too much)<br>` +
+      `&nbsp;&nbsp;• 💡 2-37의 <b>think too much</b>(생각이 너무 많다)를 <b>말만 바꿔 되풀이</b>한 것 → 문제 진단.<br>` +
+      `② ⭐⭐ <b>What worked for me was humor.</b> (<b>관계대명사 what 주어절</b>) — <b>What</b> = the thing which, "<b>~한 것</b>". what절 안에서 what이 <b>worked의 주어</b>(불완전). what절 전체가 문장 주어 → 🚨 <b>단수 취급 was</b>. <b>work</b>=자동사 "<b>효과가 있다·통하다</b>"(일하다 ❌), for me=나에게는. (단어카드: work / humor)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('relative-pronoun','rp-what')">📐 관계대명사 what(~하는 것) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;• ⭐ <b>What ~ was X</b> = X를 <b>문장 끝에 놓아 강조</b>하는 구조(유사분열문). 평범하게 쓰면 Humor worked for me. → 뒤에 <b>humor</b>를 두어 "(다른 게 아니라) <b>바로 유머</b>였다"는 정답 공개 느낌.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('cleft-sentence','cs-what')">📐 What ~ is X 강조(유사분열문) 자세히 →</span><br>` +
+      `③ ⭐⭐ <b>I remember thinking about ~</b> (<b>remember + 동명사</b>) — "<b>~에 대해 생각했던 것을 기억한다</b>". 🚨 <b>remember -ing</b>=<b>(과거에) 한 일</b>을 기억 / <b>remember to V</b>=<b>(앞으로) 할 일</b>을 기억("잊지 않고 ~하다"). 여기선 시합 때 실제로 떠올렸던 <b>과거의 생각</b>이라 <b>thinking</b>. (단어카드: remember -ing / to V)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('gerund-vs-infinitive','gi-remember')">📐 remember -ing vs remember to V 자세히 →</span><br>` +
+      `&nbsp;&nbsp;• ⭐ <b>about what my mother would say</b> — 전치사 <b>about의 목적어</b>로 <b>what절</b>(명사절). what이 <b>say의 목적어</b> 자리를 채움(say __ 가 비어 있음 = 불완전) → "<b>엄마가 뭐라고 말할지</b>". 전치사 뒤라 명사 덩어리(what절)가 온 것.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('indirect-question','iq-order')">📐 what + S + V 어순(간접의문문) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;• ⭐⭐ <b>would say if she saw ~</b> (<b>가정법 과거</b>) — <b>If + S + 과거(saw), S + would + 원형(say)</b>. "(실제로 본 건 아니지만) <b>만약 엄마가 ~을 본다면</b> 뭐라고 할지". 🚨 saw·would는 과거 사실이 아니라 <b>상상</b>의 표시. 2-35의 Otherwise, they couldn't ~에 이어 다시 나온 가정법.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subjunctive-past','sp-form')">📐 가정법 과거 형태(If S 과거, S would V) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;• ⭐⭐ <b>saw me do a bad dive</b> (<b>지각동사 see + O + 원형</b>) — "<b>내가 형편없는 다이빙을 하는 것을</b> 보다". 목적격보어에 <b>to 없는 do</b>(to do ❌). 다이빙 처음부터 끝까지 <b>전체</b>를 본 것이라 원형(진행 중 장면이면 doing). <b>do a dive</b>=다이빙을 하다, bad dive=실패한 다이빙.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('bare-infinitive','bi-perception')">📐 지각동사 + O + 원형부정사 자세히 →</span><br>` +
+      `④ ⭐ <b>She'd probably just compliment me on the beautiful splash.</b> — <b>She'd = She would</b>(she had ❌ — 뒤에 <b>동사원형 compliment</b>가 오니 would!). 앞 문장의 가정(if she saw ~)이 <b>계속</b> 이어져 "<b>(그랬다면) 아마 ~했을 것이다</b>". <b>probably</b>=아마, <b>just</b>=그냥·그저. (단어카드: probably)<br>` +
+      `&nbsp;&nbsp;• 🚨 <b>'d 구별법</b>: 뒤에 <b>동사원형</b> → would / 뒤에 <b>p.p.</b> → had (She'd gone = She had gone).<br>` +
+      `&nbsp;&nbsp;• ⭐ <b>compliment A on B</b> = "<b>B에 대해 A를 칭찬하다</b>" — 칭찬하는 <b>이유·대상에 on</b>(congratulate A on B와 같은 on). 🚨 철자 주의 <b>compliment</b>(칭찬) ≠ complement(보완). (단어카드: compliment)<br>` +
+      `&nbsp;&nbsp;• 😄 <b>유머 포인트</b>: 다이빙은 <b>물보라(splash)가 작을수록</b> 좋은 점수. 실패한 다이빙은 물보라가 크게 튐 → 그런데 엄마는 그걸 "<b>물보라 참 예쁘네!</b>"라고 칭찬할 거라는 상상. 이 엉뚱한 생각으로 <b>긴장을 풀었다</b>는 것. (단어카드: splash)<br>` +
+      `💡 <b>흐름:</b> 2-36 질문(어떻게 압박에 적응하나?)의 <b>답 완성</b> — 문제: 생각이 너무 많음(①) → 해결: <b>유머</b>(②) → 구체 예: 엄마의 엉뚱한 칭찬을 상상(③④). 지문 2의 결론 = 챔피언은 <b>몸(유전·환경·훈련)</b>뿐 아니라 <b>마음(불안 관리)</b>도 갖춰야 한다.<br><br>` +
+      `📝 <b>해석:</b> "그들은 너무 생각에만 빠져 있어요. 저한테 효과가 있었던 건 유머였어요. 제가 다이빙을 망치는 걸 엄마가 본다면 뭐라고 하실지 생각했던 게 기억나요. 아마 엄마는 그저 물보라가 참 예쁘다고 칭찬해 주셨을 거예요."`,
+    trans: "\"그들은 너무 생각에만 빠져 있어요. 저한테 효과가 있었던 건 유머였어요. 제가 다이빙을 망치는 걸 엄마가 보신다면 뭐라고 하실지 생각했던 게 기억나요. 아마 엄마는 그저 물보라가 참 아름답다고 칭찬해 주셨을 거예요.\"",
+  },
+
   // 지문 3 · 1번째 문장: The search for beauty spans centuries and continents.
   "3-0": {
     form: "3형식 (S + V + O)",
@@ -4599,6 +4648,14 @@ const GRAMMAR = [
       `&nbsp;&nbsp;• 넣을 자리가 없고 that절이 <b>이미 완전</b>하면 → <b>가주어-진주어</b> (It = 뒤 that절).<br>` +
       `예) It is <u>this simplicity</u> that makes soccer popular. → 지우면 "This simplicity makes soccer popular"(완전) = <b>강조구문</b> ✅<br>` +
       `예) It is <u>true</u> that he left. → true를 넣을 자리 없음, "he left"는 이미 완전 = <b>가주어</b> (그가 떠난 건 사실이다)` +
+      `</div>` +
+      `<div id="cs-what" class="g-sub">` +
+      `<b>➕ What ~ is X (유사분열문) — 강조할 말을 끝에 공개</b><br>` +
+      `<b>What + (불완전한 절) + be + X</b> = "~한 것은 (바로) X다". 평범한 문장의 한 부분을 <b>문장 끝으로 빼서</b> 강조. what절은 주어라 <b>단수 동사(is/was)</b>.<br>` +
+      `예) Humor worked for me. → <b>What worked for me was humor.</b> (나한테 통한 건 바로 유머였다)<br>` +
+      `예) I need rest. → <b>What I need is rest.</b> (내게 필요한 건 휴식이다)<br>` +
+      `💡 It is X that ~(분열문)과 같은 강조 효과. 비교) It was humor that worked for me.<br>` +
+      `<span class="wikilink" onclick="gotoGrammar('relative-pronoun','rp-what')">📐 관계대명사 what 자세히 →</span>` +
       `</div>`,
     eg: [
       ["주어 강조", "It is this simplicity that makes soccer popular.", "축구를 인기있게 만드는 건 바로 이 단순함이다."],
@@ -5224,6 +5281,30 @@ const GRAMMAR = [
       ["during + 명사", "He felt calm during the competition.", "그는 시합 동안 차분했다."],
       ["while + S + V", "He felt calm while he was diving.", "그는 다이빙하는 동안 차분했다."],
       ["despite vs although", "Despite the pain, he won. = Although he was in pain, he won.", "고통에도 불구하고 그는 이겼다."],
+    ],
+  },
+  {
+    id: "gerund-vs-infinitive",
+    title: "동명사 vs to부정사 목적어 — 뜻이 바뀌는 동사 (remember · forget · stop · try)",
+    tag: "핵심 · 문법 단골",
+    body:
+      `대부분의 동사는 목적어로 -ing나 to V 중 <b>하나만</b> 받지만, 몇몇 동사는 <b>둘 다 받되 뜻이 달라짐</b>. 기준은 <b>시간</b>: <b>-ing = 이미 한 일(과거)</b>, <b>to V = 앞으로 할 일(미래)</b>.<br><br>` +
+      `<div id="gi-remember" class="g-sub">` +
+      `<b>① remember / forget</b><br>` +
+      `&nbsp;&nbsp;• <b>remember -ing</b> = (과거에) ~<b>했던 것</b>을 기억하다 — I remember <b>thinking</b> about ~ (~을 생각했던 게 기억난다)<br>` +
+      `&nbsp;&nbsp;• <b>remember to V</b> = (앞으로) ~<b>할 것</b>을 기억하다 → 잊지 않고 ~하다 — Remember <b>to call</b> her. (잊지 말고 전화해)<br>` +
+      `&nbsp;&nbsp;• <b>forget -ing</b> = ~<b>했던 것</b>을 잊다 / <b>forget to V</b> = ~<b>할 것</b>을 잊다(깜빡하다)` +
+      `</div>` +
+      `<div id="gi-stop" class="g-sub">` +
+      `<b>② stop / try</b><br>` +
+      `&nbsp;&nbsp;• <b>stop -ing</b> = ~하던 것을 <b>멈추다</b> — He stopped <b>smoking</b>. (담배를 끊었다)<br>` +
+      `&nbsp;&nbsp;• <b>stop to V</b> = ~<b>하려고</b> 멈추다 (to V는 목적의 부사적 용법) — He stopped <b>to smoke</b>. (담배 피우려고 멈췄다)<br>` +
+      `&nbsp;&nbsp;• <b>try -ing</b> = 시험 삼아 ~<b>해 보다</b> / <b>try to V</b> = ~<b>하려고 애쓰다</b>` +
+      `</div>`,
+    eg: [
+      ["remember -ing (과거)", "I remember meeting him.", "그를 만났던 게 기억난다."],
+      ["remember to V (미래)", "Remember to lock the door.", "잊지 말고 문을 잠가라."],
+      ["stop -ing vs to V", "He stopped talking. / He stopped to talk.", "그는 말을 멈췄다. / 그는 말하려고 멈췄다."],
     ],
   },
 ];
