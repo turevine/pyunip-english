@@ -274,6 +274,7 @@ const WORDS_BY_PASSAGE = {
   { word: "square meter",     pos: "n.",   meaning: "제곱미터 (square 정사각형의/제곱)", example: "about 1.9 square meters" },
   { word: "by far",           pos: "phr.", meaning: "단연코, 훨씬 (최상급 강조)",       example: "by far the body's largest organ" },
   { word: "organ",            pos: "n.",   meaning: "(신체) 장기, 기관; 오르간",        example: "the body's largest organ" },
+  { word: "almost",           pos: "ad.",  meaning: "거의 (부사 → 명사 직접 수식 ✗: almost all/the entire/no + 명사) (cf. most + 명사 대부분의)", example: "almost the entire body (몸의 거의 전체)" },
   { word: "entire",           pos: "a.",   meaning: "전체의, 온전한 (= whole, ad. entirely)", example: "covering almost the entire body" },
   { word: "protect",          pos: "v.",   meaning: "보호하다, 지키다 (protect A from B, n. protection)", example: "skin protects us from external forces" },
   { word: "a variety of",     pos: "phr.", meaning: "다양한, 여러 가지의 (+복수명사)",  example: "a variety of external forces" },
@@ -4308,6 +4309,63 @@ const ANALYSIS = {
       `📝 <b>해석:</b> "만약 피부를 벗겨서 평평하게 펼 수 있다면, 그것은 약 1.9제곱미터의 면적을 덮을 것이다."`,
     trans: "만약 피부를 벗겨서 평평하게 펼칠 수 있다면, 그것은 약 1.9제곱미터의 면적을 덮을 것이다.",
   },
+
+  // 지문 4 · 2번째 문장: Skin is, by far, the body's largest organ.
+  "4-1": {
+    form: "2형식 (S + be + C) · 최상급 강조 by far(콤마 삽입) · 소유격(the body's) + 최상급 → the 대신 · 무관사 skin(물질·총칭)",
+    tense: "현재 (일반적 사실·진리)",
+    chips: [
+      ["주어(S)·무관사(총칭)", "Skin"],
+      ["동사(V)·be", "is"],
+      ["삽입·최상급 강조", ", by far,"],
+      ["보어(C)·소유격+최상급", "the body's largest organ"],
+    ],
+    structure:
+      `뼈대: <b>Skin(S) + is(V) + the body's largest organ(C)</b> 의 <b>2형식</b>. 콤마로 감싼 <b>by far</b>는 최상급을 세게 만드는 강조어일 뿐 → 걷어내도 뼈대 온전. "피부는 <b>단연</b> 몸에서 <b>가장 큰</b> 장기다".<br><br>` +
+      `① <b>Skin</b> (주어·<b>무관사</b>) — 특정 사람의 피부가 아니라 <b>'피부라는 것' 일반</b>(총칭). skin은 셀 수 없는 명사로 쓰여 a도 -s도 없음. 4-0에서 your skin(내 피부 하나)으로 말하다가 여기선 <b>일반적 사실</b>로 넘어감.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('articles','ar-zero')">📐 무관사(총칭·불가산) 자세히 →</span><br>` +
+      `② <b>is</b> (be동사·2형식) — Skin = the body's largest organ(주어 = 보어). 🚨 skin이 단수라 <b>is</b>.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('linking-become','lb-why-adj')">📐 2형식(주어 = 보어) 연결동사 자세히 →</span><br>` +
+      `③ ⭐⭐ <b>, by far,</b> (<b>최상급 강조</b>·콤마 삽입) — "<b>단연코, 훨씬</b>". 최상급(largest) 앞에서 "2등과 비교도 안 되게 1등"이라는 강조. 원래 자리는 <b>by far the body's largest organ</b>(최상급 바로 앞)인데, 여기선 <b>콤마로 떼어 is 뒤에 삽입</b>해서 더 힘을 줌. (단어카드: by far)<br>` +
+      `&nbsp;&nbsp;• 🚨 최상급 강조어: <b>by far / much / the very</b> — by far the largest ⭕, much the largest ⭕, the very largest ⭕ / <b>very the largest ❌</b> (very는 the 뒤에!)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('superlative','su-emphasis')">📐 최상급 강조(by far · much · the very) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('conjunctive-adverb','ca-insert')">📐 콤마로 감싼 삽입어 걷어내기 →</span><br>` +
+      `④ ⭐⭐ <b>the body's largest organ</b> (보어·<b>소유격 + 최상급</b>) — "<b>몸의 가장 큰 장기</b>". 최상급엔 원래 <b>the</b>(the largest organ)가 붙지만, 🚨 <b>소유격(the body's)</b>이 오면 그게 한정사 자리를 차지해서 <b>the를 또 쓰지 않음</b>: the body's <u>the</u> largest ❌. (the body's의 the는 <b>body</b>에 붙은 것)<br>` +
+      `&nbsp;&nbsp;• <b>large-larger-largest</b>(1음절 → -est). <b>organ</b>=(신체) 장기·기관. (단어카드: organ)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('superlative','su-the')">📐 최상급과 the · 소유격이면 the 생략 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('articles','ar-the')">📐 정관사 the(최상급·서수·only) 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 4-0의 "펴면 1.9㎡"라는 <b>숫자</b>가 무슨 의미인지 한 줄로 정리 — 그러니까 피부는 <b>가장 큰 장기</b>다. 피부를 '겉껍데기'가 아니라 <b>장기(organ)</b>로 보는 관점 제시 → 다음 4-2에서 그 장기가 하는 일(보호)로 이어짐.<br><br>` +
+      `📝 <b>해석:</b> "피부는 단연 우리 몸에서 가장 큰 장기다."`,
+    trans: "피부는 단연 우리 몸에서 가장 큰 장기다.",
+  },
+
+  // 지문 4 · 3번째 문장: Covering almost the entire body, skin protects us from a variety of external forces.
+  "4-2": {
+    form: "분사구문 (Covering ~ = As it covers ~, 능동·이유/부대상황) · almost + the entire(almost vs most) · 3형식 + protect A from B · a variety of + 복수명사",
+    tense: "현재 (일반적 사실)",
+    chips: [
+      ["분사구문(능동)·= As it covers", "Covering almost the entire body"],
+      ["주어(S)", "skin"],
+      ["동사(V)·protect A from B", "protects"],
+      ["목적어(O)", "us"],
+      ["from + 명사(B: ~로부터)", "from a variety of external forces"],
+    ],
+    structure:
+      `뼈대: [<b>Covering almost the entire body</b>](분사구문), <b>skin(S) + protects(V) + us(O)</b> [<b>from</b> a variety of external forces]. "몸 거의 전체를 덮고 있어서, 피부는 다양한 외부의 힘으로부터 우리를 보호한다".<br><br>` +
+      `① ⭐⭐ <b>Covering almost the entire body,</b> (<b>분사구문</b>·능동) — 원래 부사절 <b>As/Because it covers almost the entire body</b>에서 <b>접속사 삭제 → 주어(it=skin, 주절 주어와 같음) 삭제 → covers → Covering</b>. 피부가 몸을 <b>덮는</b>(능동) 거라 <b>-ing</b>(Covered ❌).<br>` +
+      `&nbsp;&nbsp;• 뜻: "<b>(몸 거의 전체를) 덮고 있어서/덮고 있으면서</b>" — 덮고 있으니까(이유) 보호할 수 있다는 흐름. 🚨 분사구문의 <b>의미상 주어 = 주절 주어 skin</b>. 콤마 뒤 첫 명사가 곧 분사의 주인!<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('participle-construction','pc-make')">📐 분사구문 만드는 3단계 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('participle-construction','pc-meaning')">📐 분사구문의 의미(이유·부대상황·결과) →</span><br>` +
+      `② ⭐⭐ <b>almost the entire body</b> (<b>almost + the + 명사</b>) — "<b>거의</b> 몸 전체". <b>almost</b>는 <b>부사</b>라 명사를 직접 못 꾸미고 the entire(한정사+형용사)를 꾸밈. 🚨 편입 단골: <b>almost</b> the entire body ⭕ / <b>most</b> the entire body ❌ / almost people ❌ → <b>almost all</b> people ⭕ = <b>most</b> people ⭕. <b>entire</b>=전체의(= whole). (단어카드: almost / entire)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('almost-most','am-diff')">📐 almost(부사) vs most(형용사) 자세히 →</span><br>` +
+      `③ <b>skin protects us</b> (주절·3형식) — skin(단수) → <b>protects</b>. 🚨 여기 skin도 <b>무관사</b>(피부 일반). us=우리(사람들). (단어카드: protect)<br>` +
+      `④ ⭐ <b>protect A from B</b> — "<b>B로부터 A를 보호하다</b>". A=us, B=a variety of external forces. from은 '분리·방어'의 from (keep/prevent/stop A from B와 같은 계열 — 🚨 단, prevent A from <b>-ing</b>처럼 동사가 오면 동명사).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('gerund-prep','gp-rule')">📐 전치사(from) 뒤 동명사 자세히 →</span><br>` +
+      `⑤ ⭐ <b>a variety of external forces</b> — <b>a variety of + 복수명사</b> = "<b>다양한</b> ~"(forces 복수). 🚨 <b>a variety of</b>(다양한) vs <b>the variety of</b>(~의 다양성, 단수 취급) 구별. <b>external</b>=외부의(↔internal), <b>force</b>=힘. (단어카드: a variety of / external / force)<br>` +
+      `💡 <b>흐름:</b> 4-1 '가장 큰 장기' → 그 장기의 <b>첫 번째 기능 = 보호</b>. 다음 4-3에서 external forces가 구체적으로 뭔지(극한 기온·햇빛·화학물질·감염) <b>나열</b>로 풀어줌.<br><br>` +
+      `📝 <b>해석:</b> "몸의 거의 전체를 덮고 있는 피부는 다양한 외부의 힘으로부터 우리를 보호한다."`,
+    trans: "몸의 거의 전체를 덮고 있는 피부는 다양한 외부의 힘으로부터 우리를 보호한다.",
+  },
 };
 
 /* ---------- 문법 정리 (공부한 내용 채우기) ----------
@@ -5341,6 +5399,52 @@ const GRAMMAR = [
       ["remember -ing (과거)", "I remember meeting him.", "그를 만났던 게 기억난다."],
       ["remember to V (미래)", "Remember to lock the door.", "잊지 말고 문을 잠가라."],
       ["stop -ing vs to V", "He stopped talking. / He stopped to talk.", "그는 말을 멈췄다. / 그는 말하려고 멈췄다."],
+    ],
+  },
+  {
+    id: "superlative",
+    title: "최상급 — the + -est/most · 소유격이면 the 생략 · 강조(by far)",
+    tag: "핵심 · 문법 단골",
+    body:
+      `여럿 중 <b>가장 ~한</b> 것을 말할 때. 비교 대상 중 하나로 <b>특정</b>되니 기본적으로 <b>the</b>가 붙음.<br><br>` +
+      `<div id="su-the" class="g-sub">` +
+      `<b>① 형태와 the</b><br>` +
+      `&nbsp;&nbsp;• 1~2음절: <b>the + -est</b> — the large<b>st</b>, the fast<b>est</b>, the happi<b>est</b><br>` +
+      `&nbsp;&nbsp;• 3음절 이상: <b>the most + 원급</b> — the most popular, the most important<br>` +
+      `&nbsp;&nbsp;• 🚨 <b>소유격이 오면 the 생략</b>: <b>the body's largest</b> organ · <b>my best</b> friend · <b>Korea's highest</b> mountain (the body's <u>the</u> largest ❌ — 소유격이 the 자리를 차지)<br>` +
+      `&nbsp;&nbsp;• 불규칙: good/well-<b>best</b>, bad-<b>worst</b>, many/much-<b>most</b>, little-<b>least</b>` +
+      `</div>` +
+      `<div id="su-emphasis" class="g-sub">` +
+      `<b>② 최상급 강조 — by far · much · the very ("단연, 훨씬")</b><br>` +
+      `&nbsp;&nbsp;• <b>by far / much + the 최상급</b> — <b>by far</b> the largest organ · <b>much</b> the best<br>` +
+      `&nbsp;&nbsp;• <b>the very + 최상급</b> — <b>the very</b> best (very는 <b>the 뒤</b>!)<br>` +
+      `&nbsp;&nbsp;• 콤마로 떼어 삽입도 가능 — Skin is<b>, by far,</b> the body's largest organ.<br>` +
+      `🚨 ❌ <b>very</b> the largest · ❌ very largest(최상급은 very로 강조 ✗) · cf. 비교급 강조는 <b>much / far / even / still / a lot</b> + -er (very ✗)` +
+      `</div>`,
+    eg: [
+      ["소유격 + 최상급 (the ✗)", "Skin is the body's largest organ.", "피부는 몸에서 가장 큰 장기다."],
+      ["by far + 최상급", "She is by far the fastest runner.", "그녀는 단연 가장 빠른 주자다."],
+      ["the very + 최상급", "This is the very best choice.", "이것이 단연 최고의 선택이다."],
+    ],
+  },
+  {
+    id: "almost-most",
+    title: "almost vs most — 부사 vs 형용사 (almost people ❌)",
+    tag: "핵심 · 문법 단골",
+    body:
+      `둘 다 "대부분·거의"로 해석되지만 <b>품사가 다름</b>. <b>almost는 부사</b>라서 <b>명사를 직접 꾸미지 못함</b>. <b>most는 형용사/대명사</b>라서 명사 앞에 바로 옴.<br><br>` +
+      `<div id="am-diff" class="g-sub">` +
+      `<b>① 공식</b><br>` +
+      `&nbsp;&nbsp;• <b>most + 명사</b> = 대부분의 ~ — <b>most</b> people · <b>most</b> divers<br>` +
+      `&nbsp;&nbsp;• <b>most of the/소유격 + 명사</b> = (특정한) ~ 중 대부분 — <b>most of the</b> divers (most of divers ❌)<br>` +
+      `&nbsp;&nbsp;• <b>almost + all/every/no/half/the entire/숫자</b> = 거의 ~ — <b>almost all</b> people · <b>almost the entire</b> body · <b>almost no</b> trees · <b>almost half</b> of ~ · <b>almost 26,000</b> people<br>` +
+      `&nbsp;&nbsp;• <b>almost + 형용사/동사</b> — It's <b>almost</b> sunrise. · I <b>almost</b> fell.<br>` +
+      `🚨 ❌ <b>almost people</b> · ❌ almost of the people · ❌ <b>most</b> the entire body → almost가 오면 뒤에 <b>all·every·no·the entire</b> 같은 말을 끼워야 함` +
+      `</div>`,
+    eg: [
+      ["most + 명사", "Most people like music.", "대부분의 사람들은 음악을 좋아한다."],
+      ["almost all + 명사", "Almost all people like music.", "거의 모든 사람이 음악을 좋아한다."],
+      ["almost + the entire", "Skin covers almost the entire body.", "피부는 몸의 거의 전체를 덮는다."],
     ],
   },
 ];
