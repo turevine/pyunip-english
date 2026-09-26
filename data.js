@@ -4366,6 +4366,73 @@ const ANALYSIS = {
       `📝 <b>해석:</b> "몸의 거의 전체를 덮고 있는 피부는 다양한 외부의 힘으로부터 우리를 보호한다."`,
     trans: "몸의 거의 전체를 덮고 있는 피부는 다양한 외부의 힘으로부터 우리를 보호한다.",
   },
+
+  // 지문 4 · 4번째 문장: For example, it protects us from extremes of temperature, damaging sunlight, harmful chemicals, and dangerous infections.
+  "4-3": {
+    form: "연결어 For example(예시) · 3형식 + protect A from B · B 자리 명사 4개 병렬(A, B, C, and D) · 형용사 + 명사 (damaging/harmful/dangerous) · extremes of temperature",
+    tense: "현재 (일반적 사실)",
+    chips: [
+      ["연결어·예시", "For example,"],
+      ["주어(S)·it=skin", "it"],
+      ["동사(V)·protect A from B", "protects"],
+      ["목적어(O)", "us"],
+      ["from ①·극한 기온", "from extremes of temperature,"],
+      ["②·형용사+명사", "damaging sunlight,"],
+      ["③·형용사+명사", "harmful chemicals,"],
+      ["and ④·형용사+명사", "and dangerous infections"],
+    ],
+    structure:
+      `뼈대: <b>For example</b>, <b>it(S) + protects(V) + us(O)</b> [<b>from</b> ①extremes of temperature, ②damaging sunlight, ③harmful chemicals, <b>and</b> ④dangerous infections]. 구조는 딱 <b>protect A from B</b> 하나, B 자리에 명사 <b>4개가 줄줄이</b> 병렬. "예를 들어, 피부는 극한의 기온, 해로운 햇빛, 유해한 화학물질, 위험한 감염으로부터 우리를 보호한다".<br><br>` +
+      `① <b>For example,</b> (연결어·<b>예시</b>) — 앞 문장의 추상적인 말(<b>a variety of external forces</b>)을 <b>구체적인 예</b>로 풀겠다는 신호. 문장 맨 앞 + 콤마. 🚨 for example은 <b>부사구</b>라 접속사처럼 두 문장을 콤마 하나로 붙이지 못함 (<b>; for example,</b> 또는 마침표 필요).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('conjunctive-adverb','ca-vs-conjunction')">📐 접속사 vs 접속부사(연결어) 문장부호 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('conjunctive-adverb','ca-insert')">📐 콤마로 떼는 연결어 걷어내기 →</span><br>` +
+      `② <b>it protects us</b> (주절·3형식) — <b>it = skin</b>(피부). 단수라 <b>protects</b>. us=우리(사람들). (단어카드: protect)<br>` +
+      `③ ⭐⭐ <b>protect A from B</b> — "<b>B로부터 A를 보호하다</b>". A=us, B=명사 4개 묶음. <b>from은 한 번만</b> 쓰고 뒤 4개가 전부 from에 걸림: from [①, ②, ③, and ④]. (from을 매번 반복하지 않음)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('gerund-prep','gp-rule')">📐 전치사(from) 뒤엔 명사/동명사 자세히 →</span><br>` +
+      `④ ⭐⭐ <b>A, B, C, and D</b> (<b>명사 4개 병렬</b>) — 여러 개를 나열할 땐 <b>콤마로 잇다가 마지막 앞에만 and</b>. (and 앞 콤마 = 옥스퍼드 콤마, 있어도 없어도 ⭕) 🚨 병렬 규칙: 4개 모두 <b>(형용사) + 명사</b> 꼴로 모양이 맞음 → 중간에 동사(-ing)나 절이 끼면 ❌.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">📐 병렬 규칙(같은 급끼리) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;• ① <b>extremes of temperature</b> — "<b>기온의 극단</b>" = 극한의 기온(너무 덥거나 너무 추운 것). 여기 <b>extreme은 명사</b>(극단)라 복수 <b>-s</b>가 붙음. 형용사 extreme으로 쓰면 extreme temperatures(극한 기온)로 같은 뜻. (단어카드: extreme / temperature)<br>` +
+      `&nbsp;&nbsp;• ② ⭐ <b>damaging sunlight</b> — "<b>손상을 주는</b> 햇빛". 햇빛이 피부를 <b>손상시키는</b>(능동) 쪽이라 <b>-ing</b>. 🚨 <b>damaged</b> sunlight ❌(손상<b>된</b> 햇빛 — 뜻이 뒤집힘). sunlight는 셀 수 없는 명사라 -s ✗. (단어카드: damaging)<br>` +
+      `&nbsp;&nbsp;&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('participle-postmod','pp-active-passive')">📐 현재분사(-ing 능동) vs 과거분사(p.p. 수동) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;• ③ <b>harmful chemicals</b> — "<b>유해한</b> 화학물질". harm(해) + <b>-ful</b>(~가 가득한) → 형용사. ↔ harm<b>less</b>(무해한). <b>chemical</b>은 여기서 명사(화학물질)라 복수 -s. (단어카드: harmful / chemical)<br>` +
+      `&nbsp;&nbsp;• ④ <b>dangerous infections</b> — "<b>위험한</b> 감염". danger + <b>-ous</b> → 형용사. infection = 감염(v. infect). (단어카드: infection)<br>` +
+      `💡 <b>흐름:</b> 앞 문장의 <b>a variety of external forces</b>(다양한 외부의 힘)를 <b>For example</b>로 받아서 4가지로 <b>구체화</b> — 기온(물리) · 햇빛(자연) · 화학물질(화학) · 감염(생물). "보호" 기능 설명을 마무리하고, 다음 문장에서 <b>also</b>로 피부의 <b>또 다른 기능(감각)</b>을 덧붙임.<br><br>` +
+      `📝 <b>해석:</b> "예를 들어, 피부는 극한의 기온, 해로운 햇빛, 유해한 화학물질, 그리고 위험한 감염으로부터 우리를 보호한다."`,
+    trans: "예를 들어, 피부는 극한의 기온, 해로운 햇빛, 유해한 화학물질, 그리고 위험한 감염으로부터 우리를 보호한다.",
+  },
+
+  // 지문 4 · 5번째 문장: Skin is also packed with nerves, which keeps the brain in touch with the outside world.
+  "4-4": {
+    form: "be packed with (수동형 + by 아닌 전치사 with) · also 위치(be동사 뒤) · 계속적 용법 , which (선행사 = 앞 절 전체 → 단수 keeps) · keep + O + in touch with(5형식, 상태 유지)",
+    tense: "현재 (일반적 사실)",
+    chips: [
+      ["주어(S)·무관사(총칭)", "Skin"],
+      ["동사(V)·be packed with", "is also packed"],
+      ["with + 명사(~로)", "with nerves"],
+      ["계속적 용법·앞 절 전체", ", which"],
+      ["동사·단수(절이 선행사)", "keeps"],
+      ["목적어(O)", "the brain"],
+      ["목적격보어(OC)·상태", "in touch with the outside world"],
+    ],
+    structure:
+      `뼈대: <b>Skin(S) + is packed(V)</b> [<b>with</b> nerves], <b>which</b>(= and <u>this</u>) <b>keeps(V) + the brain(O) + in touch with the outside world(OC)</b>. "피부는 또한 신경으로 가득 차 있는데, <b>이것이</b> 뇌를 바깥세상과 계속 연결되어 있게 한다".<br><br>` +
+      `① <b>Skin</b> (주어·<b>무관사</b>) — 여전히 <b>'피부라는 것' 일반</b>(총칭). 셀 수 없는 명사로 써서 a·-s 없음, 단수 취급 → <b>is</b>.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('articles','ar-zero')">📐 무관사(총칭·불가산) 자세히 →</span><br>` +
+      `② <b>also</b> (부사·위치) — "<b>또한</b>". 🚨 빈도·첨가 부사 자리: <b>be동사·조동사 뒤, 일반동사 앞</b> → Skin <b>is also</b> packed ⭕ / Skin also is packed (어색). 수동태에선 <b>be와 p.p. 사이</b>.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('passive-voice','pv-form')">📐 수동태 공식 · 부사는 be와 p.p. 사이 자세히 →</span><br>` +
+      `③ ⭐⭐ <b>is packed with nerves</b> (<b>be packed with</b>) — "<b>신경으로 꽉 차 있다</b>". 꼴은 수동태(be + p.p.)지만 뜻은 <b>상태</b>(빽빽하다). 🚨 행위자 <b>by</b>가 아니라 <b>with</b>를 씀 — 누가 채웠느냐가 아니라 <b>무엇으로</b> 차 있느냐라서. (be filled with / be covered with 같은 계열) <b>nerve</b>=신경, 셀 수 있어서 nerves. (단어카드: be packed with / nerve)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('passive-preposition','ps-with')">📐 by 말고 다른 전치사를 쓰는 수동태 자세히 →</span><br>` +
+      `④ ⭐⭐⭐ <b>, which keeps</b> (<b>계속적 용법</b>·<b>선행사 = 앞 절 전체</b>) — 콤마 뒤 which는 앞 명사를 '한정'하지 않고 <b>이어서 설명</b>(= <b>and this / and it</b>). 🚨 핵심 단서는 동사 <b>keeps(단수)</b>! 바로 앞 nerves(복수)가 선행사였다면 <b>keep</b>이어야 함 → keeps니까 which가 가리키는 건 <b>"피부가 신경으로 가득 차 있다는 사실(앞 절 전체)"</b>. 절은 <b>단수 취급</b>.<br>` +
+      `&nbsp;&nbsp;• 🚨 편입 단골: ① 앞 절 전체를 받는 건 <b>, which</b>만 ⭕ — <b>, that</b> ❌ (that은 계속적 용법 불가) / <b>, it</b> ❌ (접속사 없이 두 절 연결 = comma splice) ② 동사 수일치: 절 전체 → <b>단수</b>.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('relative-nonrestrictive','rn-clause')">📐 계속적 용법 , which — 앞 절 전체 받기 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('relative-nonrestrictive','rn-comma')">📐 한정 용법 vs 계속적 용법(콤마 유무) →</span><br>` +
+      `⑤ ⭐⭐ <b>keeps the brain in touch with the outside world</b> (<b>5형식</b>: keep + O + 상태) — "<b>뇌를 바깥세상과 연결된 상태로 유지시킨다</b>". <b>the brain = in touch with ~</b>(뇌가 접촉 상태에 있음) → 전치사구 <b>in touch with</b>가 형용사처럼 <b>목적격보어</b> 역할. keep O <b>형용사/전치사구</b> = O를 ~한 상태로 유지하다 (keep the room <u>clean</u> / keep him <u>in shape</u>).<br>` +
+      `&nbsp;&nbsp;• <b>keep in touch with</b> = ~와 연락·접촉을 유지하다. 여기선 목적어 the brain이 <b>keep과 in touch 사이</b>에 끼어 "<b>뇌를</b> 바깥과 접촉하게 한다". <b>the outside world</b>=바깥세상, 외부 세계. (단어카드: keep in touch with)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('five-pattern','fp-adj')">📐 5형식 O + 형용사(상태) 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> <b>also</b>로 피부의 <b>두 번째 기능</b>을 추가 — 앞의 '보호(막아 주기)'에 이어 이번엔 '<b>감각(느끼기)</b>'. 피부의 신경이 바깥 정보를 뇌에 전달해 준다는 것. 여기까지가 피부의 <b>건강·기능</b> 이야기이고, 이후 지문은 '<b>겉모습</b>(appearance)' 쪽으로 방향을 틈.<br><br>` +
+      `📝 <b>해석:</b> "피부는 또한 신경으로 가득 차 있는데, 이것이 뇌가 바깥세상과 계속 연결되어 있게 해 준다."`,
+    trans: "피부는 또한 신경으로 가득 차 있는데, 이것이 뇌가 바깥세상과 계속 연결되어 있게 해 준다.",
+  },
 };
 
 /* ---------- 문법 정리 (공부한 내용 채우기) ----------
@@ -5445,6 +5512,55 @@ const GRAMMAR = [
       ["most + 명사", "Most people like music.", "대부분의 사람들은 음악을 좋아한다."],
       ["almost all + 명사", "Almost all people like music.", "거의 모든 사람이 음악을 좋아한다."],
       ["almost + the entire", "Skin covers almost the entire body.", "피부는 몸의 거의 전체를 덮는다."],
+    ],
+  },
+  {
+    id: "relative-nonrestrictive",
+    title: "계속적 용법 , which — 콤마 뒤 관계사 · 앞 절 전체 받기",
+    tag: "핵심 · 문법 단골",
+    body:
+      `관계대명사 앞에 <b>콤마(,)</b>가 있으면 <b>계속적 용법</b>. 앞 명사를 '어떤 ~인지' 좁히는(한정) 게 아니라, 말을 <b>이어서 덧붙이는</b> 것 → <b>and/but + 대명사</b>로 풀어 읽음.<br><br>` +
+      `<div id="rn-comma" class="g-sub">` +
+      `<b>① 한정 용법 vs 계속적 용법</b><br>` +
+      `&nbsp;&nbsp;• 한정(콤마 ✗): He has two sons <b>who</b> became doctors. — 의사가 된 아들이 둘 (다른 아들이 더 있을 수도)<br>` +
+      `&nbsp;&nbsp;• 계속(콤마 ⭕): He has two sons<b>, who</b> became doctors. = and they — 아들이 둘인데, 둘 다 의사가 됨<br>` +
+      `🚨 <b>, that</b> ❌ — that은 계속적 용법 불가! · <b>, what</b> ❌ · 계속적 용법의 관계대명사는 <b>생략 불가</b>` +
+      `</div>` +
+      `<div id="rn-clause" class="g-sub">` +
+      `<b>② ⭐ , which = 앞 절 전체 (and this / and that)</b><br>` +
+      `which는 앞 명사 하나뿐 아니라 <b>앞 문장(절) 전체</b>를 받을 수 있음. 이때 <b>절은 단수</b>라 뒤 동사도 <b>단수</b>.<br>` +
+      `&nbsp;&nbsp;• Skin is packed with nerves<b>, which keeps</b> the brain in touch ~ — which = 피부가 신경으로 가득하다는 사실 (nerves가 선행사였다면 keep)<br>` +
+      `&nbsp;&nbsp;• He passed the exam<b>, which surprised</b> everyone. — 그가 합격했다는 것이 모두를 놀라게 함<br>` +
+      `🔎 <b>판별법:</b> 콤마 뒤 which + 동사의 <b>수</b>를 보라 — 바로 앞 명사가 복수인데 동사가 단수면 → 선행사는 <b>앞 절 전체</b>.<br>` +
+      `🚨 ❌ ~ nerves<b>, it</b> keeps ~ (대명사로는 두 절 연결 불가 = comma splice) → <b>, which</b> 또는 <b>, and this</b>` +
+      `</div>`,
+    eg: [
+      ["계속적 용법 (= and they)", "He has two sons, who became doctors.", "그에겐 아들이 둘 있는데, 둘 다 의사가 되었다."],
+      ["앞 절 전체 → 단수", "He passed the exam, which surprised everyone.", "그는 시험에 합격했는데, 그것이 모두를 놀라게 했다."],
+      ["앞 절 전체 (지문)", "Skin is packed with nerves, which keeps the brain in touch with the world.", "피부는 신경으로 가득한데, 이것이 뇌를 세상과 연결시켜 준다."],
+    ],
+  },
+  {
+    id: "passive-preposition",
+    title: "by 이외의 전치사를 쓰는 수동태 — be packed with · be known for",
+    tag: "암기 · 숙어형",
+    body:
+      `꼴은 <b>be + p.p.</b>(수동태)지만 '누가 했느냐'보다 <b>상태·감정</b>을 말하는 표현들은 <b>by 대신 다른 전치사</b>와 짝지어 외움.<br><br>` +
+      `<div id="ps-with" class="g-sub">` +
+      `<b>① with — "~로" (채움·덮음)</b><br>` +
+      `&nbsp;&nbsp;• <b>be packed with</b> ~로 가득 차다 · <b>be filled with</b> ~로 가득 차다 · <b>be covered with</b> ~로 덮여 있다 · <b>be crowded with</b> ~로 붐비다 · <b>be satisfied with</b> ~에 만족하다` +
+      `</div>` +
+      `<div id="ps-other" class="g-sub">` +
+      `<b>② 그 밖의 짝</b><br>` +
+      `&nbsp;&nbsp;• <b>in</b>: be interested in ~에 관심 있다 · be involved in ~에 관여하다<br>` +
+      `&nbsp;&nbsp;• <b>at</b>: be surprised at ~에 놀라다 · <b>about</b>: be worried about ~을 걱정하다<br>` +
+      `&nbsp;&nbsp;• <b>be known for</b>(~로 유명) / <b>be known as</b>(~로서 알려짐) / <b>be known to</b>(~에게 알려짐)<br>` +
+      `&nbsp;&nbsp;• <b>be made of</b>(재료 그대로: 나무→책상) / <b>be made from</b>(재료 변형: 포도→와인)` +
+      `</div>`,
+    eg: [
+      ["be packed with", "Skin is packed with nerves.", "피부는 신경으로 가득 차 있다."],
+      ["be covered with", "The ground was covered with snow.", "땅이 눈으로 덮여 있었다."],
+      ["be known for", "The city is known for its food.", "그 도시는 음식으로 유명하다."],
     ],
   },
 ];
