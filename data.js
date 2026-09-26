@@ -4831,18 +4831,18 @@ const GRAMMAR = [
       `예) <b>It</b>'s a part of human nature <u>to look for beauty</u>. = 아름다움을 찾는 것은 인간 본성의 일부다.` +
       `</div>` +
       `<div id="ti-adj" class="g-sub">` +
-      `<b>③ 형용사적 용법 — 명사 뒤에서 "~하는/~할 (명사)"</b><br>` +
+      `<b>② 형용사적 용법 — 명사 뒤에서 "~하는/~할 (명사)"</b><br>` +
       `to부정사가 <b>바로 앞 명사</b>를 꾸밈. ability · chance · way · time · effort · decision 등이 자주 데려옴.<br>` +
       `예) its <b>ability</b> <u>to perform</u> its functions = 기능을 <b>수행하는</b> 능력<br>` +
       `예) the best <b>way</b> <u>to learn</u> = 배우는 최고의 방법 · 🚨 ability <u>of performing</u> ❌ → ability <b>to perform</b>` +
       `</div>` +
       `<div id="ti-adverb" class="g-sub">` +
-      `<b>② 부사적 용법 — 문장을 꾸밈. 대표 뜻 "~하기 위해(목적)"</b><br>` +
+      `<b>③ 부사적 용법 — 문장을 꾸밈. 대표 뜻 "~하기 위해(목적)"</b><br>` +
       `없어도 문장이 성립하는 <b>수식어</b>. "왜?/무엇을 위해?"에 답하면 <b>목적</b>. (그 밖에 감정의 원인·결과 등도 있음)<br>` +
       `예) ... <b>to play</b> soccer = 축구를 하기 <b>위해</b>. (= in order to play)<br>` +
       `예) I came here <b>to see</b> you. = 너를 보<b>려고</b> 여기 왔다.` +
       `</div>` +
-      `<b>③ 형용사적 용법 — 앞의 명사를 뒤에서 꾸밈 "~할/~하는"</b><br>` +
+      `<b>② 형용사적 용법 — 앞의 명사를 뒤에서 꾸밈 "~할/~하는"</b><br>` +
       `명사 뒤에 붙어 후치수식. 예) something <b>to eat</b>(먹을 것), a chance <b>to win</b>(이길 기회).<br><br>` +
       `⭐ <b>구분 요령:</b> 동사 <b>바로 뒤 목적어 자리</b>면 → 명사적. 이미 완전한 문장에 <b>덤으로 붙어</b> "왜?"에 답하면 → 부사적(목적). <b>명사 뒤</b>에 붙으면 → 형용사적.`,
     eg: [
