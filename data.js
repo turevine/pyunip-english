@@ -292,7 +292,11 @@ const WORDS_BY_PASSAGE = {
   { word: "perform",          pos: "v.",   meaning: "수행하다, 실행하다; 공연하다 (n. performance)", example: "perform its protective functions" },
   { word: "protective",       pos: "a.",   meaning: "보호하는, 방어적인",             example: "its protective functions" },
   { word: "function",         pos: "n./v.", meaning: "기능; 기능하다, 작동하다",        example: "protective functions" },
+  { word: "ability",          pos: "n.",   meaning: "능력 (+ to V: ~하는 능력, a. able)", example: "its ability to perform its protective functions" },
+  { word: "well-being",       pos: "n.",   meaning: "안녕, 행복, 건강한 상태",         example: "crucial to our well-being" },
   { word: "crucial",          pos: "a.",   meaning: "중대한, 결정적인 (= critical, essential)", example: "crucial to our well-being" },
+  { word: "appearance",       pos: "n.",   meaning: "겉모습, 외모; 출현 (v. appear)",   example: "the appearance of our skin" },
+  { word: "if not",           pos: "phr.", meaning: "(A, if not B) B까진 아니더라도 A / A, 어쩌면 B", example: "equally—if not more—important" },
   { word: "equally",          pos: "ad.",  meaning: "똑같이, 동등하게 (a. equal)",      example: "equally important" },
   { word: "planet",           pos: "n.",   meaning: "행성; 지구 (on this planet 이 지구상에)", example: "many people on this planet" },
   { word: "determine",        pos: "v.",   meaning: "결정하다, 좌우하다; 알아내다 (n. determination)", example: "Your genes determine your skin's color." },
@@ -4433,6 +4437,65 @@ const ANALYSIS = {
       `📝 <b>해석:</b> "피부는 또한 신경으로 가득 차 있는데, 이것이 뇌가 바깥세상과 계속 연결되어 있게 해 준다."`,
     trans: "피부는 또한 신경으로 가득 차 있는데, 이것이 뇌가 바깥세상과 계속 연결되어 있게 해 준다.",
   },
+
+  // 지문 4 · 6번째 문장: The health of our skin and its ability to perform its protective functions are crucial to our well-being.
+  "4-5": {
+    form: "2형식 (S + be + C) · 주어 A and B → 복수 동사 are · its = skin's (its vs it's) · ability to V (형용사적 to부정사) · be crucial to + 명사",
+    tense: "현재 (일반적 사실)",
+    chips: [
+      ["주어 A·of 수식", "The health of our skin"],
+      ["and·주어 B", "and its ability"],
+      ["to부정사·ability 수식", "to perform its protective functions"],
+      ["동사(V)·복수(A and B)", "are"],
+      ["보어(C)·형용사", "crucial"],
+      ["to + 명사(~에)", "to our well-being"],
+    ],
+    structure:
+      `뼈대: [<b>The health</b> of our skin] <b>and</b> [<b>its ability</b> to perform ~](S) + <b>are</b>(V) + <b>crucial</b>(C) [to our well-being]. 주어가 길지만 알맹이는 <b>health + ability 두 개</b> → 그래서 <b>are</b>. "피부의 건강과 그 보호 기능을 수행하는 능력은 우리의 안녕에 매우 중요하다".<br><br>` +
+      `① ⭐⭐⭐ <b>A and B + are</b> (<b>주어 수일치</b>) — 주어 = <b>The health</b> (of our skin) <b>and its ability</b> (to perform ~). 명사 두 개가 <b>and</b>로 묶였으니 <b>복수 → are</b>. 🚨 함정: 동사 바로 앞 단어가 <b>functions</b>(복수)라 맞아 보이지만 그건 수식어 속 명사일 뿐. 반대로 skin(단수)만 보고 <b>is</b>를 고르면 ❌. <b>수식어(of ~, to ~)를 걷어내고 주어 알맹이만</b> 세기!<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subject-agreement','sv-and')">📐 A and B 주어 → 복수 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subject-agreement','sv-modifier')">📐 수식어 걷어내고 진짜 주어 찾기 →</span><br>` +
+      `② <b>The health of our skin</b> (주어 A) — "<b>우리 피부의 건강</b>". of는 '~의'(소유·관계). health는 셀 수 없는 명사, 뒤에 of로 한정돼서 <b>the</b>.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('of-types','of-possess')">📐 소유·관계의 of 자세히 →</span><br>` +
+      `③ ⭐ <b>its ability</b> (주어 B) — <b>its = skin's</b>(피부의). 🚨 편입 단골: <b>its</b>(그것의, 소유격) vs <b>it's</b>(= it is / it has). 여기선 뒤에 명사 ability가 오니 소유격 <b>its</b>. 뒤의 <b>its</b> protective functions도 마찬가지(= 피부의 보호 기능).<br>` +
+      `④ ⭐⭐ <b>ability to perform ~</b> (<b>형용사적 to부정사</b>) — to perform이 앞 명사 <b>ability</b>를 꾸밈: "<b>수행하는/수행할</b> 능력". 🚨 ability 뒤엔 <b>to V</b> (ability of performing ❌ — 짝으로 외우기: ability/chance/way/time <b>to V</b>). <b>perform</b>=수행하다, <b>protective</b>=보호하는(protect의 형용사), <b>function</b>=기능. (단어카드: ability / perform / protective / function)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-adj')">📐 to부정사 형용사적 용법(명사 + to V) 자세히 →</span><br>` +
+      `⑤ <b>are crucial</b> (2형식·형용사 보어) — 주어 = crucial(중대한). crucial = <b>critical / essential / vital</b>(동의어 세트 단골). (단어카드: crucial)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('linking-become','lb-why-adj')">📐 2형식 보어엔 형용사 자세히 →</span><br>` +
+      `⑥ ⭐ <b>crucial to our well-being</b> — <b>be crucial to + 명사</b> = "<b>~에 매우 중요하다</b>". 여기 <b>to는 전치사</b>(뒤에 명사 well-being). <b>well-being</b>=안녕·행복·건강한 상태. cf. 동사가 오면 <b>crucial for -ing</b> 또는 It is crucial <b>to V</b>(가주어). (단어카드: well-being)<br>` +
+      `💡 <b>흐름:</b> 앞 문장까지 설명한 피부의 기능(보호·감각)을 <b>"그러니 피부 건강과 기능은 중요하다"</b>로 정리하는 마무리 문장. 다음 문장이 <b>However</b>로 이걸 뒤집으며 '<b>겉모습</b>' 이야기로 넘어가는 발판.<br><br>` +
+      `📝 <b>해석:</b> "우리 피부의 건강과, 피부가 보호 기능을 수행하는 능력은 우리의 안녕에 매우 중요하다."`,
+    trans: "우리 피부의 건강과, 피부가 보호 기능을 수행하는 능력은 우리의 안녕에 매우 중요하다.",
+  },
+
+  // 지문 4 · 7번째 문장: However, the appearance of our skin is equally—if not more—important to many people on this planet.
+  "4-6": {
+    form: "접속부사 However(역접) · 2형식 · 주어 appearance(단수) → is · equally important (원급 비교 생략) · 대시 삽입 if not more (A, if not B = B까진 아니어도 A / 어쩌면 B)",
+    tense: "현재 (일반적 사실)",
+    chips: [
+      ["접속부사·역접", "However,"],
+      ["주어(S)·단수", "the appearance of our skin"],
+      ["동사(V)·단수", "is"],
+      ["부사·똑같이", "equally"],
+      ["대시 삽입·if not 비교급", "—if not more—"],
+      ["보어(C)·형용사", "important"],
+      ["to + 명사(~에게)", "to many people on this planet"],
+    ],
+    structure:
+      `뼈대: <b>However</b>, <b>the appearance</b>(of our skin)(S) + <b>is</b>(V) + <b>equally important</b>(C) [to many people ~]. 대시 속 <b>if not more</b>는 삽입이라 걷어내면 "피부의 겉모습은 <b>똑같이</b> 중요하다". 넣어서 읽으면 "<b>똑같이</b>—<b>어쩌면 더</b>—중요하다".<br><br>` +
+      `① ⭐ <b>However,</b> (<b>접속부사</b>·역접) — "<b>그러나</b>". 앞 문장 '<b>건강·기능</b>이 중요하다' → '그런데 <b>겉모습</b>도 그만큼(혹은 더) 중요하다'로 방향 전환. 🚨 however는 <b>부사</b>라 콤마만으로 두 문장을 못 이음(; however, 또는 마침표 필요). 문장 맨 앞 + 콤마.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('conjunctive-adverb','ca-vs-conjunction')">📐 접속사 but vs 접속부사 however 자세히 →</span><br>` +
+      `② ⭐⭐ <b>the appearance of our skin is</b> (<b>수일치</b>) — 주어 알맹이는 <b>appearance</b>(단수). of our skin은 수식어 → <b>is</b>. 🚨 of 뒤 명사에 속지 말 것 (the appearance of our skins <b>are</b> ❌ 식 함정). <b>appearance</b>=겉모습·외모(v. appear). (단어카드: appearance)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subject-agreement','sv-modifier')">📐 수식어 걷어내고 진짜 주어 찾기 →</span><br>` +
+      `③ ⭐ <b>equally important</b> — "<b>똑같이 중요한</b>". 부사 equally가 형용사 important를 꾸밈(equal important ❌). 무엇과 똑같이? 앞 문장의 <b>피부 건강·기능</b>과 → 풀어 쓰면 <b>as important as</b> the health of our skin. 비교 대상이 뻔해서 생략. (단어카드: equally)<br>` +
+      `④ ⭐⭐⭐ <b>—if not more—</b> (<b>대시 삽입</b> + <b>A, if not B</b>) — 원래 꼴: equally important, <b>if not more important</b>. 뒤 important가 겹쳐서 생략되고 <b>more</b>만 남음. 뜻: "<b>더 중요하다고까진 못 해도 (최소한) 똑같이</b>" = "<b>똑같이, 아니 어쩌면 더</b>". 🚨 <b>if not</b>을 "만약 ~아니라면"으로 직역하면 해석이 망가짐! <b>A, if not B</b> = "<b>B까진 아니더라도 A</b> / <b>A, 어쩌면 B</b>" (B가 더 센 말).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('if-not','in-basic')">📐 A, if not B — "B까진 아니어도 A" 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('punctuation','pn-dash')">📐 대시(—…—) 중간 삽입 자세히 →</span><br>` +
+      `⑤ <b>to many people on this planet</b> — <b>important to + 사람</b> = "<b>~에게</b> 중요한". <b>on this planet</b>=이 지구상의(= in the world, 과장해서 '전 세계 많은 사람'). on은 '표면 위'라 planet엔 <b>on</b>. (단어카드: planet)<br>` +
+      `💡 <b>흐름:</b> 지문의 <b>전환점</b> — 지금까지 '<b>기능</b>으로서의 피부'였다면, However 이후로는 '<b>보여지는 것</b>으로서의 피부'(피부색·문신·흉터). 제목 「The body's canvas(몸의 캔버스)」가 가리키는 본론이 여기서 시작됨.<br><br>` +
+      `📝 <b>해석:</b> "그러나 피부의 겉모습은 이 지구상의 많은 사람들에게 똑같이—어쩌면 더—중요하다."`,
+    trans: "그러나 피부의 겉모습은 이 지구상의 많은 사람들에게 (건강만큼) 똑같이, 아니 어쩌면 더 중요하다.",
+  },
 };
 
 /* ---------- 문법 정리 (공부한 내용 채우기) ----------
@@ -4766,6 +4829,12 @@ const GRAMMAR = [
       `to부정사(구)가 <b>주어</b>면 머리가 무거워, 뒤로 빼고 빈 주어 자리에 <b>가주어 it</b>을 세움. 이 <b>it은 해석하지 않고</b>, 진짜 주어는 <b>뒤의 to부정사</b>.<br>` +
       `예) <b>It</b> is hard <u>to learn English</u>. = 영어를 배우는 것은 어렵다. (It = to learn English)<br>` +
       `예) <b>It</b>'s a part of human nature <u>to look for beauty</u>. = 아름다움을 찾는 것은 인간 본성의 일부다.` +
+      `</div>` +
+      `<div id="ti-adj" class="g-sub">` +
+      `<b>③ 형용사적 용법 — 명사 뒤에서 "~하는/~할 (명사)"</b><br>` +
+      `to부정사가 <b>바로 앞 명사</b>를 꾸밈. ability · chance · way · time · effort · decision 등이 자주 데려옴.<br>` +
+      `예) its <b>ability</b> <u>to perform</u> its functions = 기능을 <b>수행하는</b> 능력<br>` +
+      `예) the best <b>way</b> <u>to learn</u> = 배우는 최고의 방법 · 🚨 ability <u>of performing</u> ❌ → ability <b>to perform</b>` +
       `</div>` +
       `<div id="ti-adverb" class="g-sub">` +
       `<b>② 부사적 용법 — 문장을 꾸밈. 대표 뜻 "~하기 위해(목적)"</b><br>` +
@@ -5561,6 +5630,52 @@ const GRAMMAR = [
       ["be packed with", "Skin is packed with nerves.", "피부는 신경으로 가득 차 있다."],
       ["be covered with", "The ground was covered with snow.", "땅이 눈으로 덮여 있었다."],
       ["be known for", "The city is known for its food.", "그 도시는 음식으로 유명하다."],
+    ],
+  },
+  {
+    id: "subject-agreement",
+    title: "주어-동사 수일치 — A and B는 복수 · 수식어 걷어내고 주어 찾기",
+    tag: "핵심 · 문법 단골",
+    body:
+      `동사의 단수/복수는 <b>주어 알맹이</b>가 결정. 편입은 주어와 동사 사이에 <b>긴 수식어</b>를 끼워서 가까운 명사에 낚이게 만듦.<br><br>` +
+      `<div id="sv-and" class="g-sub">` +
+      `<b>① A and B → 복수</b><br>` +
+      `&nbsp;&nbsp;• <b>The health</b> of our skin <b>and its ability</b> to perform ~ <b>are</b> crucial. (health + ability = 2개)<br>` +
+      `&nbsp;&nbsp;• 🚨 예외: 한 덩어리·한 사람이면 단수 — <b>Bread and butter is</b> my breakfast. · The poet and singer <b>is</b> here.(한 사람)<br>` +
+      `&nbsp;&nbsp;• cf. A <b>as well as</b> B / A <b>with</b> B / A <b>along with</b> B → <b>A</b>에 맞춤 (and가 아니라 수식어)` +
+      `</div>` +
+      `<div id="sv-modifier" class="g-sub">` +
+      `<b>② 수식어 걷어내기 — of ~ / 전치사구 / 분사 / 관계사절 / to부정사</b><br>` +
+      `&nbsp;&nbsp;• The appearance <s>of our skin</s> <b>is</b> ~ (appearance 단수)<br>` +
+      `&nbsp;&nbsp;• The key <s>to the doors</s> <b>is</b> lost. (doors ❌ → key)<br>` +
+      `&nbsp;&nbsp;• People <s>who live near the sea</s> <b>are</b> ~ (sea ❌ → People)<br>` +
+      `🔎 <b>요령:</b> 주어 첫 명사 → 괄호 치고(of·to·who·-ing·p.p.) → 동사 직전 명사는 <b>일단 의심</b>` +
+      `</div>`,
+    eg: [
+      ["A and B → 복수", "His skill and his effort are admirable.", "그의 기술과 노력은 훌륭하다."],
+      ["of 수식어 걷어내기", "The quality of the products is high.", "그 제품들의 품질은 높다."],
+      ["관계사절 걷어내기", "The students who study hard pass.", "열심히 공부하는 학생들은 합격한다."],
+    ],
+  },
+  {
+    id: "if-not",
+    title: "A, if not B — \"B까진 아니더라도 A / A, 어쩌면 B\"",
+    tag: "독해 · 구문",
+    body:
+      `<b>if not</b>을 "만약 ~아니라면"으로 읽으면 해석이 꼬이는 대표 구문. <b>A보다 한 단계 센 B</b>를 조심스럽게 덧붙이는 말.<br><br>` +
+      `<div id="in-basic" class="g-sub">` +
+      `<b>① 공식과 뜻</b><br>` +
+      `&nbsp;&nbsp;• <b>A, if not B</b> = "<b>B까지는 아니더라도 (최소한) A</b>" = "<b>A, 아니 어쩌면 B</b>"<br>` +
+      `&nbsp;&nbsp;• equally<b>—if not more—</b>important = equally important, <b>if not more</b> important → 똑같이, 어쩌면 더 중요한<br>` +
+      `&nbsp;&nbsp;• many, <b>if not most</b>, people — 대부분까진 아니어도 많은 사람들<br>` +
+      `&nbsp;&nbsp;• difficult, <b>if not impossible</b> — 불가능까진 아니어도 어려운<br>` +
+      `🚨 B 자리엔 겹치는 말이 생략되는 경우가 많음(more <s>important</s>). 대시·콤마로 <b>삽입</b>되는 게 보통 → 걷어내도 뼈대 멀쩡.<br>` +
+      `cf. <b>if not</b> + 절 단독(If not, ~) = "그렇지 않다면"(조건) — 문장 앞에서 절을 받을 때만` +
+      `</div>`,
+    eg: [
+      ["A, if not B", "It is difficult, if not impossible.", "그것은 불가능까진 아니어도 어렵다."],
+      ["many, if not most", "Many, if not most, students agree.", "대부분까진 아니어도 많은 학생들이 동의한다."],
+      ["equally, if not more", "Appearance is equally—if not more—important.", "외모는 똑같이, 아니 어쩌면 더 중요하다."],
     ],
   },
 ];
