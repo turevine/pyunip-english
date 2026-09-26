@@ -299,10 +299,14 @@ const WORDS_BY_PASSAGE = {
   { word: "if not",           pos: "phr.", meaning: "(A, if not B) B까진 아니더라도 A / A, 어쩌면 B", example: "equally—if not more—important" },
   { word: "equally",          pos: "ad.",  meaning: "똑같이, 동등하게 (a. equal)",      example: "equally important" },
   { word: "planet",           pos: "n.",   meaning: "행성; 지구 (on this planet 이 지구상에)", example: "many people on this planet" },
+  { word: "take A for example", pos: "phr.", meaning: "A를 예로 들다 (명령문 Take A, for example. = 예를 들어 A를 보자)", example: "Take skin color, for example." },
+  { word: "gene",             pos: "n.",   meaning: "유전자 (a. genetic 유전의)",       example: "Your genes determine your skin's color." },
   { word: "determine",        pos: "v.",   meaning: "결정하다, 좌우하다; 알아내다 (n. determination)", example: "Your genes determine your skin's color." },
   { word: "lighten",          pos: "v.",   meaning: "밝게/환하게 하다; 가볍게 하다 (light+en, ↔darken)", example: "products used to lighten skin" },
   { word: "darken",          pos: "v.",   meaning: "어둡게 하다, 어두워지다 (dark+en)", example: "lighten or darken their skin" },
   { word: "in an attempt to", pos: "phr.", meaning: "~하려는 시도로, ~하기 위해 (n./v. attempt 시도)", example: "in an attempt to be more attractive" },
+  { word: "attractive",       pos: "a.",   meaning: "매력적인 (v. attract, 비교급 more attractive)", example: "in an attempt to be more attractive" },
+  { word: "century",          pos: "n.",   meaning: "세기, 100년 (for centuries 수 세기 동안; the 1800s = the 19th century)", example: "for centuries, humans have tried ~" },
   { word: "desirable",        pos: "a.",   meaning: "바람직한, 탐나는 (v. desire 바라다)", example: "white skin was desirable" },
   { word: "upper class",      pos: "n.",   meaning: "상류층 (↔lower/working class)",   example: "a member of the upper class" },
   { word: "shift",            pos: "v./n.", meaning: "바뀌다, 옮기다; 변화, 교대 근무",  example: "attitudes shifted in the opposite direction" },
@@ -4496,6 +4500,90 @@ const ANALYSIS = {
       `📝 <b>해석:</b> "그러나 피부의 겉모습은 이 지구상의 많은 사람들에게 똑같이—어쩌면 더—중요하다."`,
     trans: "그러나 피부의 겉모습은 이 지구상의 많은 사람들에게 (건강만큼) 똑같이, 아니 어쩌면 더 중요하다.",
   },
+
+  // 지문 4 · 8번째 문장: Take skin color, for example.
+  "4-7": {
+    form: "명령문 (동사원형 Take로 시작, 주어 you 생략) · take A for example(A를 예로 들다) · for example 콤마 삽입",
+    tense: "현재 (명령문 — 독자에게 건네는 말)",
+    chips: [
+      ["동사(V)·명령문", "Take"],
+      ["목적어(O)·A", "skin color"],
+      ["삽입·for example", ", for example."],
+    ],
+    structure:
+      `뼈대: <b>Take(V) + skin color(O)</b>, <b>for example</b>. 주어 없이 <b>동사원형</b>으로 시작 = <b>명령문</b>. 원래 <b>take A for example</b>(A를 예로 들다)인데, for example을 콤마로 떼어 뒤에 붙인 꼴. "<b>피부색을 예로 들어 보자</b>".<br><br>` +
+      `① ⭐⭐ <b>Take</b> (<b>명령문</b>) — 문장 맨 앞에 주어 없이 <b>동사원형</b> → 주어 <b>you가 생략된 명령문</b>. 그렇다고 '가져가라'라고 명령하는 게 아니라, 독자에게 "<b>~를 한번 봐 봐 / ~를 예로 들어 보자</b>"라고 권하는 말투. 설명문에서 <b>예시를 꺼낼 때</b> 자주 씀.<br>` +
+      `&nbsp;&nbsp;• 🚨 Takes ❌ / Taking ❌ — 명령문은 무조건 <b>동사원형</b>.<br>` +
+      `② ⭐⭐ <b>take A for example</b> — "<b>A를 예로 들다</b>" = for example, A. 여기선 A = <b>skin color</b>(피부색). 같은 뜻: <b>take A for instance</b> / <b>consider A</b> / <b>look at A</b>. (단어카드: take A for example)<br>` +
+      `③ <b>, for example.</b> (콤마 삽입) — take ~ for example에서 for example만 <b>콤마로 떼어</b> 문장 끝에 둔 것. 걷어내도 Take skin color. 로 뼈대 온전.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('conjunctive-adverb','ca-insert')">📐 콤마로 떼는 연결어 걷어내기 →</span><br>` +
+      `④ <b>skin color</b> (명사 + 명사) — 앞 명사 skin이 형용사처럼 뒤 명사를 꾸밈: "<b>피부(의) 색</b>". 🚨 이때 앞 명사는 <b>단수형</b>으로 (skins color ❌). 무관사 = 특정 사람이 아닌 <b>피부색이라는 것 일반</b>.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('articles','ar-zero')">📐 무관사(총칭) 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 앞 문장이 "<b>겉모습</b>이 똑같이, 어쩌면 더 중요하다"고 <b>주장</b>만 했으니, 이제 <b>첫 번째 증거</b>를 꺼내는 짧은 신호 문장. 이 뒤로 한동안 <b>피부색</b> 이야기(밝게·어둡게 바꾸려는 노력)가 이어짐.<br><br>` +
+      `📝 <b>해석:</b> "피부색을 예로 들어 보자."`,
+    trans: "피부색을 예로 들어 보자.",
+  },
+
+  // 지문 4 · 9번째 문장: Your genes determine your skin's color, but for centuries, humans have tried to lighten or darken their skin in an attempt to be more attractive.
+  "4-8": {
+    form: "등위접속사 but으로 두 절 연결 · 3형식(genes determine color) · 현재완료 계속(for centuries, have tried) · try to V(애쓰다) · lighten or darken 병렬(-en 동사) · in an attempt to V(목적) · 비교급 more attractive",
+    tense: "앞 절: 현재 (일반적 사실) / 뒤 절: 현재완료 계속 (수 세기 전부터 지금까지 쭉)",
+    chips: [
+      ["주어(S)", "Your genes"],
+      ["동사(V)", "determine"],
+      ["목적어(O)·소유격", "your skin's color,"],
+      ["등위접속사·대조", "but"],
+      ["부사구·기간", "for centuries,"],
+      ["주어(S)", "humans"],
+      ["동사(V)·현재완료", "have tried"],
+      ["to부정사·목적어", "to lighten or darken their skin"],
+      ["부사구·목적", "in an attempt to be more attractive"],
+    ],
+    structure:
+      `뼈대: [<b>Your genes(S) + determine(V) + your skin's color(O)</b>], <b>but</b> [for centuries, <b>humans(S) + have tried(V) + to lighten or darken their skin(O)</b> (in an attempt to be more attractive)]. 완전한 두 절을 <b>, but</b>이 이음. "유전자가 피부색을 결정<b>하지만</b>, 수 세기 동안 인간은 더 매력적으로 보이려고 피부를 밝게 하거나 어둡게 하려 애써 왔다".<br><br>` +
+      `① <b>Your genes determine your skin's color</b> (앞 절·3형식) — <b>genes</b>(유전자, 복수) → 동사 <b>determine</b>(-s ✗). <b>determine</b>=결정하다·좌우하다. <b>your</b>는 일반인 you의 소유격(누구든 사람의). <b>your skin's color</b> = 피부의 색(소유격 's). (단어카드: gene / determine)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('pronoun-one','po-generic')">📐 일반인 you 자세히 →</span><br>` +
+      `② ⭐ <b>, but</b> (<b>등위접속사</b>·대조) — "타고나는 건 유전자가 정하는데 <b>그런데도</b> 사람들은 바꾸려 해 왔다"는 대조. but은 <b>진짜 접속사</b>라 <b>콤마 + but</b>으로 두 완전한 문장을 바로 이을 수 있음(however와 다른 점).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('conjunctive-adverb','ca-vs-conjunction')">📐 접속사 but vs 접속부사 however 자세히 →</span><br>` +
+      `③ ⭐⭐ <b>for centuries, humans have tried</b> (<b>현재완료 계속</b>) — "<b>수 세기 동안 (지금까지 쭉) 애써 왔다</b>". <b>for + 기간</b>이 붙으면 계속 용법 신호. 과거에 시작해서 <b>지금도 진행 중</b>이라 have p.p. 🚨 for centuries(기간) + 단순과거 tried도 문법적으론 가능하지만 그러면 '과거에 끝난 일' → 지금도 계속된다는 뜻을 살리려 현재완료. <b>try-tried-tried</b>. (단어카드: century)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('present-perfect','pf-uses')">📐 현재완료 4용법(계속 · for/since) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('present-perfect','pf-vs-past')">📐 현재완료 vs 과거 자세히 →</span><br>` +
+      `④ ⭐⭐ <b>tried to lighten or darken</b> (<b>try to V</b>) — "<b>~하려고 애쓰다</b>". 🚨 <b>try -ing</b>(시험 삼아 ~해 보다)와 뜻이 다름! 여기선 '노력'이라 <b>to V</b>.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('gerund-vs-infinitive','gi-stop')">📐 try to V vs try -ing 자세히 →</span><br>` +
+      `⑤ ⭐ <b>lighten or darken their skin</b> (<b>병렬</b> + <b>-en 동사</b>) — or가 동사원형 두 개를 이음: to [<b>lighten</b> or <b>darken</b>] their skin (to는 한 번만). 둘 다 <b>형용사 + -en = 동사</b>: light(밝은) → lighten(밝게 하다), dark(어두운) → darken(어둡게 하다). their = humans'. (단어카드: lighten / darken)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('word-suffix','ws-en')">📐 -en 붙여 동사 만들기(lighten · widen · strengthen) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">📐 병렬 규칙(같은 급끼리) 자세히 →</span><br>` +
+      `⑥ ⭐⭐ <b>in an attempt to be more attractive</b> — <b>in an attempt to V</b> = "<b>~하려는 시도로, ~하기 위해</b>"(목적) = in order to / so as to. 명사 attempt 뒤의 to be는 attempt를 꾸미는 형용사적 to부정사. <b>be more attractive</b> = <b>더 매력적이다</b> — attractive는 3음절이라 비교급이 <b>more + 원급</b>(attractiver ❌). 🚨 than 이하는 생략(than they naturally are, 타고난 것보다). (단어카드: in an attempt to / attractive)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-adj')">📐 명사 + to V (형용사적 용법) 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 피부색은 <b>타고나는 것</b>(genes)인데 → 사람들은 <b>바꾸려 애써 왔다</b>(lighten/darken). '밝게'와 '어둡게' <b>두 방향</b>을 모두 언급한 게 복선 — 이어서 시대·지역에 따라 <b>흰 피부</b>를 원한 경우와 <b>태닝</b>을 원한 경우가 차례로 나옴.<br><br>` +
+      `📝 <b>해석:</b> "유전자가 피부색을 결정하지만, 수 세기 동안 인간은 더 매력적으로 보이려는 시도로 피부를 밝게 하거나 어둡게 하려고 애써 왔다."`,
+    trans: "유전자가 피부색을 결정하지만, 수 세기 동안 인간은 더 매력적으로 보이기 위해 피부를 밝게 하거나 어둡게 하려고 애써 왔다.",
+  },
+
+  // 지문 4 · 10번째 문장: In the 1800s, white skin was desirable for many Europeans.
+  "4-9": {
+    form: "2형식 (S + be + C) · 연대 표현 in the 1800s(= 19세기) · 과거 시제 · desirable(-able 형용사) for + 사람 · 무관사 white skin",
+    tense: "과거 (1800년대라는 끝난 시점)",
+    chips: [
+      ["부사구·시대", "In the 1800s,"],
+      ["주어(S)·무관사", "white skin"],
+      ["동사(V)·과거", "was"],
+      ["보어(C)·형용사", "desirable"],
+      ["for + 사람(~에게)", "for many Europeans"],
+    ],
+    structure:
+      `뼈대: [In the 1800s], <b>white skin(S) + was(V) + desirable(C)</b> [for many Europeans]. "1800년대에는 많은 유럽인들에게 <b>흰 피부</b>가 <b>바람직한 것</b>이었다".<br><br>` +
+      `① ⭐⭐ <b>In the 1800s</b> (<b>연대 표현</b>) — "<b>1800년대</b>(1800~1899년)" = <b>the 19th century</b>(19세기). 🚨 읽기: the eighteen hundreds. 연대를 묶을 땐 <b>the + 숫자 + s</b>(the 1990s = 1990년대). 🚨 <b>1800s ≠ 18세기</b>! 18세기는 1700년대(the 18th century) — 세기는 <b>앞자리 + 1</b>. 기간 앞 전치사는 <b>in</b>.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('era-expression','ee-decade')">📐 연대·세기 표현(the 1800s = 19th century) 자세히 →</span><br>` +
+      `② <b>was</b> (<b>과거</b>) — 1800년대라는 <b>이미 끝난 과거 시점</b>이 딱 정해졌으니 단순과거. 🚨 명확한 과거 시점 표현(In the 1800s, in 1990, ago, last ~)이 있으면 현재완료 ❌.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('present-perfect','pf-vs-past')">📐 현재완료 vs 과거(과거 시점 부사) 자세히 →</span><br>` +
+      `③ <b>white skin</b> (주어·<b>무관사</b>) — 특정 누구의 피부가 아니라 <b>'흰 피부라는 것' 일반</b>. 단수 취급 → was.<br>` +
+      `④ ⭐ <b>desirable for many Europeans</b> — <b>desire</b>(바라다) + <b>-able</b>(~할 만한) → "<b>바랄 만한, 바람직한, 탐나는</b>". 2형식 보어 자리라 형용사. <b>for + 사람</b> = "~에게(있어)". <b>Europeans</b>=유럽인들(Europe의 사람 명사, 셀 수 있어 -s). (단어카드: desirable)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('word-suffix','ws-able')">📐 -able 붙여 형용사 만들기(desirable · readable) 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 앞 문장의 "피부를 <b>밝게</b> 하거나 어둡게"에서 먼저 <b>밝게(흰 피부)</b> 쪽 사례 — 1800년대 유럽. 다음 문장이 <b>왜</b> 흰 피부가 선호됐는지(계층·햇빛 아래 노동) 이유를 설명함.<br><br>` +
+      `📝 <b>해석:</b> "1800년대에는 많은 유럽인들에게 흰 피부가 바람직한 것이었다."`,
+    trans: "1800년대에는 많은 유럽인들에게 흰 피부가 선망의 대상이었다.",
+  },
 };
 
 /* ---------- 문법 정리 (공부한 내용 채우기) ----------
@@ -5675,6 +5763,50 @@ const GRAMMAR = [
       ["A, if not B", "It is difficult, if not impossible.", "그것은 불가능까진 아니어도 어렵다."],
       ["many, if not most", "Many, if not most, students agree.", "대부분까진 아니어도 많은 학생들이 동의한다."],
       ["equally, if not more", "Appearance is equally—if not more—important.", "외모는 똑같이, 아니 어쩌면 더 중요하다."],
+    ],
+  },
+  {
+    id: "word-suffix",
+    title: "접미사로 품사 바꾸기 — -en(동사) · -able(형용사)",
+    tag: "어휘 · 품사",
+    body:
+      `단어 끝에 붙는 <b>접미사</b>만 봐도 품사를 알 수 있음 → 빈칸에 <b>품사</b>를 고르는 문제에서 바로 써먹음.<br><br>` +
+      `<div id="ws-en" class="g-sub">` +
+      `<b>① 형용사/명사 + -en → 동사 "~하게 만들다"</b><br>` +
+      `&nbsp;&nbsp;• light → <b>lighten</b>(밝게 하다) · dark → <b>darken</b>(어둡게 하다) · wide → <b>widen</b>(넓히다) · short → <b>shorten</b>(줄이다) · weak → <b>weaken</b>(약화시키다) · sharp → <b>sharpen</b>(날카롭게 하다)<br>` +
+      `&nbsp;&nbsp;• 명사 + -en: strength → <b>strengthen</b>(강화하다) · length → <b>lengthen</b>(늘이다) · height → <b>heighten</b>(높이다)<br>` +
+      `&nbsp;&nbsp;• 🚨 반대로 <b>en-</b>이 <b>앞</b>에 붙어도 동사: <b>en</b>large(확대하다) · <b>en</b>able(가능하게 하다) · <b>en</b>rich(풍부하게 하다)` +
+      `</div>` +
+      `<div id="ws-able" class="g-sub">` +
+      `<b>② 동사 + -able/-ible → 형용사 "~할 수 있는 / ~할 만한"</b><br>` +
+      `&nbsp;&nbsp;• desire → <b>desirable</b>(바람직한) · read → <b>readable</b>(읽기 쉬운) · accept → <b>acceptable</b>(받아들일 만한) · rely → <b>reliable</b>(믿을 만한) · access → <b>accessible</b>(접근 가능한)<br>` +
+      `&nbsp;&nbsp;• 🚨 헷갈리는 짝: <b>desirable</b>(바람직한) vs <b>desirous</b>(바라는, be desirous of) · <b>respectable</b>(존경할 만한) vs <b>respectful</b>(공손한) vs <b>respective</b>(각각의)` +
+      `</div>`,
+    eg: [
+      ["-en 동사", "They tried to lighten their skin.", "그들은 피부를 밝게 하려 애썼다."],
+      ["명사 + -en", "Exercise strengthens the heart.", "운동은 심장을 튼튼하게 한다."],
+      ["-able 형용사", "White skin was desirable.", "흰 피부는 바람직한 것이었다."],
+    ],
+  },
+  {
+    id: "era-expression",
+    title: "연대·세기 표현 — the 1800s = the 19th century",
+    tag: "기초 · 독해",
+    body:
+      `연도를 <b>10년·100년 단위로 묶거나</b> 세기를 말할 때 쓰는 표현. 숫자가 한 칸씩 어긋나서 해석 실수가 잦음.<br><br>` +
+      `<div id="ee-decade" class="g-sub">` +
+      `<b>① the + 숫자 + s = ~년대</b><br>` +
+      `&nbsp;&nbsp;• <b>the 1800s</b> = 1800년대(1800~1899) · <b>the 1990s</b> = 1990년대 · in the <b>early/mid/late</b> 1800s = 1800년대 초/중/후반<br>` +
+      `&nbsp;&nbsp;• 앞에 <b>the</b> 필수, 전치사는 <b>in</b>(기간). 읽기: the eighteen hundreds / the nineteen nineties<br>` +
+      `<b>② the + 서수 + century = ~세기</b><br>` +
+      `&nbsp;&nbsp;• 🚨 세기 = <b>앞 두 자리 + 1</b>: 1800년대 = <b>the 19th century</b> · 1900년대 = <b>the 20th century</b> · 2000년대 = the 21st century<br>` +
+      `&nbsp;&nbsp;• 서수라 <b>the</b> 필수: in <b>the</b> 19th century (in 19th century ❌)<br>` +
+      `&nbsp;&nbsp;• 수식할 땐 하이픈: <b>a 19th-century</b> painting (19세기 그림)` +
+      `</div>`,
+    eg: [
+      ["the 1800s", "In the 1800s, white skin was desirable.", "1800년대에는 흰 피부가 선망받았다."],
+      ["the 20th century", "During the 20th century, attitudes shifted.", "20세기 동안 태도가 바뀌었다."],
+      ["~년대 후반", "in the late 1990s", "1990년대 후반에"],
     ],
   },
 ];
