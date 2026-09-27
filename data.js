@@ -320,7 +320,11 @@ const WORDS_BY_PASSAGE = {
   { word: "indicate",         pos: "v.",   meaning: "나타내다, 가리키다, 보여주다 (n. indication)", example: "began to indicate leisure time" },
   { word: "leisure",          pos: "n.",   meaning: "여가, 한가한 시간",              example: "indicate leisure time and health" },
   { word: "salon",            pos: "n.",   meaning: "(미용·네일) 살롱, 미용실",         example: "tanning in a salon" },
+  { word: "remain",           pos: "v.",   meaning: "여전히 ~이다(+형용사), 남아 있다 (= stay)", example: "tanning remains popular" },
+  { word: "even though",      pos: "conj.", meaning: "비록 ~이지만 (사실인 양보, = although; 뒤에 S+V / 전치사 despite는 +명사)", example: "even though people are more aware of the dangers" },
   { word: "be aware of",      pos: "phr.", meaning: "~을 알고 있다, 인식하다 (n. awareness)", example: "aware of the dangers of UV rays" },
+  { word: "just as A, so B",  pos: "phr.", meaning: "A인 것과 마찬가지로 B도 그렇다 (so 뒤 도치 가능: so too have cultures marked ~)", example: "Just as people have altered ~, so too have cultures marked ~" },
+  { word: "alter",            pos: "v.",   meaning: "바꾸다, 변경하다 (n. alteration, = change)", example: "people have altered their skin's color" },
   { word: "denote",           pos: "v.",   meaning: "나타내다, 의미하다, 표시하다",     example: "altered their skin to denote wealth" },
   { word: "wealth",           pos: "n.",   meaning: "부, 재산 (a. wealthy 부유한)",     example: "to denote wealth and beauty" },
   { word: "mark",             pos: "v./n.", meaning: "표시하다, 자국을 내다; 자국, 표시", example: "cultures marked their skin" },
@@ -4701,6 +4705,111 @@ const ANALYSIS = {
       `📝 <b>해석:</b> "20세기 동안 다른 문화권에서는 도시가 커지고 일이 실내로 옮겨감에 따라 흰 피부에 대한 태도가 반대 방향으로 바뀌었다."`,
     trans: "20세기에 들어 다른 문화권에서는 도시가 성장하고 노동이 실내로 옮겨가면서 밝은 피부에 대한 태도가 반대 방향으로 바뀌었다.",
   },
+
+  // 지문 4 · 14번째 문장: Tanned skin began to indicate leisure time and health.
+  "4-13": {
+    form: "3형식 (S + began + to V 목적어) · 과거분사 형용사 tanned(전치수식) · begin to V(= begin -ing) · indicate O · 명사 병렬 leisure time and health(무관사)",
+    tense: "과거 (20세기에 새로 생긴 의미)",
+    chips: [
+      ["과거분사·형용사", "Tanned"],
+      ["주어(S)", "skin"],
+      ["동사(V)·과거", "began"],
+      ["to부정사·목적어", "to indicate"],
+      ["indicate의 목적어①", "leisure time"],
+      ["등위접속사·병렬", "and"],
+      ["indicate의 목적어②", "health."],
+    ],
+    structure:
+      `뼈대: <b>Tanned skin(S) + began(V) + to indicate leisure time and health(O)</b>. "그을린 피부는 <b>여가 시간과 건강</b>을 나타내기 <b>시작했다</b>".<br><br>` +
+      `① ⭐⭐ <b>Tanned skin</b> (<b>과거분사 → 형용사</b>) — tan(햇볕에 태우다) → <b>tanned</b> = "<b>(햇볕에) 그을린</b>". 피부는 스스로 태우는 게 아니라 <b>태워진</b> 쪽이라 <b>수동 → 과거분사</b>. 분사 한 단어라 명사 <b>앞에서</b> 꾸밈(전치수식). 🚨 tanning skin ❌(피부가 태우는 중). 무관사 = 그을린 피부 <b>일반</b>. (단어카드: tanned)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('participle-postmod','pp-active-passive')">📐 현재분사 vs 과거분사(능동·수동) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('articles','ar-zero')">📐 무관사(총칭) 자세히 →</span><br>` +
+      `② ⭐⭐ <b>began to indicate</b> (<b>begin to V</b>·명사적 to부정사) — to indicate가 began의 <b>목적어</b>("~하는 것을 시작했다"). <b>begin/start</b>는 <b>to V와 -ing 둘 다</b> 받고 뜻도 같음 → began <b>indicating</b>도 ✓. <b>begin-began-begun</b> 불규칙.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('gerund-vs-infinitive','gi-both')">📐 to V·-ing 둘 다 되고 뜻 같은 동사(begin·start) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-noun')">📐 to부정사 명사적 용법(목적어) 자세히 →</span><br>` +
+      `③ ⭐ <b>indicate leisure time and health</b> — <b>indicate</b> = "<b>나타내다, 보여주다</b>"(표시·신호). 목적어 두 개를 and가 병렬: [<b>leisure time</b>] and [<b>health</b>]. 둘 다 <b>불가산</b> 추상명사라 관사·-s 없음. leisure time = <b>여가 시간</b>(명사 + 명사). (단어카드: indicate / leisure)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">📐 병렬 규칙(같은 급끼리) 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 앞 문장 "일이 실내로 옮겨가면서 태도가 반대로" → 그 <b>결과</b>. 이제 햇볕에 그을렸다 = 밖에서 <b>놀 시간·돈이 있다</b>(여가) + <b>건강해 보인다</b>. 1800년대엔 흰 피부가 '일 안 하는 부자' 표시였는데, 이제는 <b>그을린 피부</b>가 여유의 표시로 <b>뒤집힘</b>.<br><br>` +
+      `📝 <b>해석:</b> "그을린 피부는 여가 시간과 건강을 나타내기 시작했다."`,
+    trans: "(햇볕에) 그을린 피부는 여가와 건강을 상징하기 시작했다.",
+  },
+
+  // 지문 4 · 15번째 문장: In many places today, tanning on the beach or in a salon remains popular, even though people are more aware of the dangers of UV rays.
+  "4-14": {
+    form: "2형식 (S + remains + C) · 동명사 주어 tanning(단수 → remains) · 전치사구 병렬 on the beach or in a salon · remain + 형용사(상태 유지) · 양보 접속사 even though + S V · be aware of · 비교급 more aware(than 생략)",
+    tense: "현재 (오늘날의 상황 — today)",
+    chips: [
+      ["부사구·장소/시간", "In many places today,"],
+      ["주어(S)·동명사", "tanning"],
+      ["수식·장소 병렬", "on the beach or in a salon"],
+      ["동사(V)·단수", "remains"],
+      ["보어(C)·형용사", "popular,"],
+      ["양보 접속사", "even though"],
+      ["종속절 주어(s)", "people"],
+      ["종속절 동사(v)", "are"],
+      ["보어·비교급", "more aware"],
+      ["of + 목적어", "of the dangers of UV rays."],
+    ],
+    structure:
+      `뼈대: [In many places today], <b>tanning(S)</b> [on the beach or in a salon] <b>+ remains(V) + popular(C)</b>, [<b>even though</b> people are more aware of the dangers of UV rays]. "오늘날 많은 곳에서 해변이나 살롱에서 <b>태닝하는 것은</b> 여전히 <b>인기가 있다</b>, 사람들이 자외선의 위험을 더 잘 알고 있<b>는데도</b>".<br><br>` +
+      `① <b>In many places today</b> — "오늘날 많은 곳에서". 문장 앞 부사구 → 걷어내고 주어 찾기.<br>` +
+      `② ⭐⭐⭐ <b>tanning ~ remains</b> (<b>동명사 주어 = 단수</b>) — tanning은 '태닝하는 것'이라는 <b>동명사</b> 주어. 동명사(·to부정사·명사절) 주어는 <b>단수 취급</b> → <b>remains</b>(-s). 🚨 바로 앞 명사 a salon / the beach는 수식어일 뿐. (단어카드: salon)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subject-agreement','sv-gerund')">📐 동명사·to부정사·명사절 주어는 단수 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subject-agreement','sv-modifier')">📐 수식어 걷어내고 수일치 자세히 →</span><br>` +
+      `③ ⭐ <b>on the beach or in a salon</b> (<b>전치사구 병렬</b>) — or가 [<b>on</b> the beach]와 [<b>in</b> a salon]을 이음. 전치사가 서로 달라서 <b>각각 살려 씀</b>(on the beach or a salon ❌ → 해변 '위' vs 살롱 '안'). the beach = 누구나 아는 그 해변(일반), a salon = 아무 태닝숍 하나.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">📐 병렬 규칙(같은 급끼리) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('articles','ar-a')">📐 부정관사 a(아무거나 하나) 자세히 →</span><br>` +
+      `④ ⭐⭐ <b>remains popular</b> (<b>remain + 형용사</b>·2형식) — remain = "<b>여전히 ~인 상태이다</b>". 뒤에 <b>형용사 보어</b>(popular) → 주어의 상태를 설명. 🚨 remains <b>popularly</b> ❌. 같은 무리: stay / keep + 형용사. (단어카드: remain)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('linking-become','lb-remain')">📐 상태유지 동사 remain·stay·keep + 형용사 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('linking-become','lb-why-adj')">📐 왜 부사가 아니라 형용사? →</span><br>` +
+      `⑤ ⭐⭐⭐ <b>, even though ~</b> (<b>양보 접속사</b>) — "<b>비록 ~이지만, ~인데도</b>". 뒤에 <b>주어 + 동사</b>(people are) → 접속사. = although / though. 🚨 뒤가 <b>명사(구)</b>면 전치사 <b>despite / in spite of</b>: despite the dangers ✓ / even though the dangers ❌. 🚨 <b>even if</b>(설령 ~라도, 가정)와 구별 — 여기선 '위험을 아는 건 <b>사실</b>'이라 even though. (단어카드: even though)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('concession','cn-conj')">📐 even though vs even if · although 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('concession','cn-prep')">📐 접속사 although vs 전치사 despite 자세히 →</span><br>` +
+      `⑥ ⭐ <b>people are more aware of the dangers of UV rays</b> — <b>be aware of</b> + 명사 = "<b>~을 알고 있다</b>". <b>more aware</b> = 비교급(than 이하 <b>생략</b>: than they used to be, 예전보다). <b>the dangers of UV rays</b> = 자외선의 위험들(of = '~의'). UV rays = 자외선(ultraviolet rays). (단어카드: be aware of / ray)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('of-types','of-possess')">📐 소유의 of 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 앞 문장(20세기 그을린 피부 = 여가·건강)이 <b>오늘날까지</b> 이어진다는 마무리. even though로 "<b>위험한 걸 아는데도</b> 계속한다" → 사람들이 외모를 위해 건강 위험까지 감수한다는, 앞서 말한 '외모가 건강만큼 혹은 더 중요하다'는 주장을 뒷받침. 이 문장으로 <b>피부색</b> 이야기가 끝나고, 소제목(Identity and Status) 뒤 문신 이야기로 넘어감.<br><br>` +
+      `📝 <b>해석:</b> "오늘날 많은 곳에서, 사람들이 자외선의 위험을 더 잘 알고 있음에도 불구하고, 해변이나 살롱에서 태닝하는 것은 여전히 인기가 있다."`,
+    trans: "오늘날 많은 곳에서, 사람들이 자외선의 위험성을 더 잘 알게 되었는데도 해변이나 태닝숍에서 피부를 태우는 것은 여전히 인기가 있다.",
+  },
+
+  // 지문 4 · 16번째 문장: Just as people have altered their skin's color to denote wealth and beauty, so too have cultures around the globe marked their skin to indicate cultural identity or community status.
+  "4-16": {
+    form: "Just as A, so (too) B (A인 것과 마찬가지로 B도) · so too 뒤 도치(have + S + p.p.) · 현재완료 have altered / have marked · to부정사 부사적 용법(목적) to denote / to indicate · 병렬 wealth and beauty / cultural identity or community status",
+    tense: "현재완료 (예로부터 지금까지 쭉 — 두 절 모두)",
+    chips: [
+      ["접속사·~와 마찬가지로", "Just as"],
+      ["주어(s)", "people"],
+      ["동사(v)·현재완료", "have altered"],
+      ["목적어(o)", "their skin's color"],
+      ["to부정사·목적", "to denote wealth and beauty,"],
+      ["so too·도치 신호", "so too"],
+      ["조동사(have)", "have"],
+      ["주어(S)", "cultures around the globe"],
+      ["과거분사(p.p.)", "marked"],
+      ["목적어(O)", "their skin"],
+      ["to부정사·목적", "to indicate cultural identity or community status."],
+    ],
+    structure:
+      `뼈대: [<b>Just as</b> people have altered their skin's color (to denote ~)], <b>so too</b> <b>have(조동사) + cultures around the globe(S) + marked(p.p.) + their skin(O)</b> (to indicate ~). 원래 순서: cultures around the globe have marked their skin too. "사람들이 부와 아름다움을 나타내려고 피부색을 바꿔 온 <b>것과 마찬가지로</b>, 전 세계의 문화들<b>도</b> 문화적 정체성이나 공동체 내 지위를 나타내려고 피부에 표시를 해 왔다".<br><br>` +
+      `① ⭐⭐⭐ <b>Just as A, so (too) B</b> (<b>유사·비교 구문</b>) — "<b>A인 것과 (꼭) 마찬가지로 B도 그렇다</b>". <b>as</b> = '~처럼'(양태), <b>just</b>는 '꼭, 정확히' 강조, <b>so</b>는 '그렇게, 마찬가지로', <b>too</b>는 '~도' 강조. A(피부색 바꾸기)와 B(피부에 표시하기)를 <b>나란히 비교</b>. (단어카드: just as A, so B)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('just-as-so','js-basic')">📐 Just as A, so B 구문 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('as-roles','as-manner')">📐 as = ~처럼(양태) 자세히 →</span><br>` +
+      `② ⭐⭐⭐ <b>so too have cultures ~ marked</b> (<b>도치</b>) — so (too)가 절 앞에 나오면 <b>조동사 + 주어</b> 순서로 뒤집힘: cultures <b>have</b> marked → <b>have</b> cultures marked. 조동사 have만 앞으로, p.p. marked는 주어 뒤에 그대로. 🚨 도치돼도 have의 수는 <b>주어 cultures(복수)</b>에 맞춤 → has ❌. 도치는 선택 — so cultures have marked ~도 가능.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('just-as-so','js-inversion')">📐 so 뒤 도치(조동사 + 주어) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subject-agreement','sv-modifier')">📐 수식어(around the globe) 걷어내고 주어 찾기 →</span><br>` +
+      `③ ⭐⭐ <b>have altered / have marked</b> (<b>현재완료</b>) — 둘 다 "(예로부터 지금까지) <b>~해 왔다</b>"(계속·경험). 특정 과거 시점이 아니라 <b>오랜 역사 전체</b>를 말하므로 현재완료. <b>alter</b> = 바꾸다(= change), <b>mark</b> = 표시하다·자국을 내다(문신·흉터 등). (단어카드: alter / mark)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('present-perfect','pf-uses')">📐 현재완료 4용법 자세히 →</span><br>` +
+      `④ <b>their skin's color</b> — their = people's. 소유격 's로 '<b>피부의 색</b>'. 🚨 뒤 절의 their skin의 their는 cultures(의 사람들).<br>` +
+      `⑤ ⭐⭐ <b>to denote ~ / to indicate ~</b> (<b>부사적 to부정사·목적</b>) — "<b>~을 나타내기 위해</b>". 두 절에 똑같은 모양(동사 + 목적어 + to V)이 반복돼 <b>대구</b>를 이룸: [altered ~ <b>to denote</b> wealth and beauty] ↔ [marked ~ <b>to indicate</b> identity or status]. <b>denote</b> ≒ <b>indicate</b>(나타내다) — 같은 말 반복을 피한 바꿔 쓰기. (단어카드: denote / indicate)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-adverb')">📐 to부정사 부사적 용법(목적) 자세히 →</span><br>` +
+      `⑥ ⭐ <b>wealth and beauty / cultural identity or community status</b> (<b>병렬</b>) — 명사끼리 and·or로 연결. <b>cultural identity</b> = 문화적 정체성(형용사 + 명사), <b>community status</b> = 공동체(내의) 지위(명사 + 명사, 앞 명사가 형용사 역할). 모두 추상명사라 무관사. (단어카드: wealth / identity / status)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">📐 병렬 규칙 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('articles','ar-zero')">📐 추상명사 무관사 자세히 →</span><br>` +
+      `⑦ <b>around the globe</b> — "<b>전 세계의</b>" = around the world. cultures를 뒤에서 꾸미는 전치사구. the globe = 지구(하나뿐이라 the).<br>` +
+      `💡 <b>흐름:</b> 소제목 <b>Identity and Status</b>(정체성과 지위)의 첫 문장 = <b>다리 놓기</b>. Just as 절이 앞 단락(피부색 바꾸기 = 부·아름다움)을 요약하고, so too 절이 새 화제(피부에 <b>표시하기</b> = 문신·흉터 → 정체성·지위)를 꺼냄. 이어서 문신(tattooing)의 역사 예시가 나옴.<br><br>` +
+      `📝 <b>해석:</b> "사람들이 부와 아름다움을 나타내기 위해 피부색을 바꿔 온 것과 마찬가지로, 전 세계의 문화들도 문화적 정체성이나 공동체 내 지위를 나타내기 위해 피부에 표시를 해 왔다."`,
+    trans: "사람들이 부와 아름다움을 드러내려고 피부색을 바꿔 온 것처럼, 세계 곳곳의 문화들 역시 문화적 정체성이나 공동체 내 신분을 나타내려고 피부에 표식을 새겨 왔다.",
+  },
 };
 
 /* ---------- 문법 정리 (공부한 내용 채우기) ----------
@@ -5232,7 +5341,13 @@ const GRAMMAR = [
       `&nbsp;&nbsp;• <b>come true</b>: '진실로 오다' (✗) ➜ <b>이루어지다 / 실현되다</b> (O) — 꿈이 진짜가 됨.<br>` +
       `👉 동사를 <b>직역하지 말고</b> "동사+형용사"를 <b>한 덩어리 상태변화</b>로 해석하는 게 핵심.` +
       `</div>` +
-      `<b>💡 자주 나오는 세트</b> (모두 뒤에 형용사): go bad/wrong, fall asleep/ill, come true, get ready/tired, grow old, turn red, run dry.`,
+      `<b>💡 자주 나오는 세트</b> (모두 뒤에 형용사): go bad/wrong, fall asleep/ill, come true, get ready/tired, grow old, turn red, run dry.` +
+      `<div id="lb-remain" class="g-sub">` +
+      `<b>➕ 상태 '유지' 동사 — remain · stay · keep + 형용사 = "여전히/계속 ~한 상태이다"</b><br>` +
+      `&nbsp;&nbsp;• Tanning <b>remains popular</b>. (태닝은 여전히 인기 있다) · <b>Stay calm</b>. (침착해라) · <b>keep quiet</b> (조용히 있다)<br>` +
+      `&nbsp;&nbsp;• 🚨 여기도 보어 자리라 <b>형용사</b>: remains popular<b>ly</b> ❌ · stay calm<b>ly</b> ❌<br>` +
+      `&nbsp;&nbsp;• 변화(become·get·grow·turn) ↔ 유지(remain·stay·keep) — 둘 다 2형식 + 형용사 보어` +
+      `</div>`,
     eg: [
       ["go + 형용사 · 상하다", "The milk went bad.", "그 우유는 상했다. (나쁘게 간 게 X → 상한 상태가 됨)"],
       ["fall + 형용사 · 잠들다", "He fell asleep during class.", "그는 수업 중에 잠들었다. (잠으로 떨어진 게 X → 잠든 상태가 됨)"],
@@ -5742,6 +5857,12 @@ const GRAMMAR = [
       `&nbsp;&nbsp;• <b>stop -ing</b> = ~하던 것을 <b>멈추다</b> — He stopped <b>smoking</b>. (담배를 끊었다)<br>` +
       `&nbsp;&nbsp;• <b>stop to V</b> = ~<b>하려고</b> 멈추다 (to V는 목적의 부사적 용법) — He stopped <b>to smoke</b>. (담배 피우려고 멈췄다)<br>` +
       `&nbsp;&nbsp;• <b>try -ing</b> = 시험 삼아 ~<b>해 보다</b> / <b>try to V</b> = ~<b>하려고 애쓰다</b>` +
+      `</div>` +
+      `<div id="gi-both" class="g-sub">` +
+      `<b>③ 둘 다 되고 뜻도 같은 동사 — begin · start · continue · like · love · hate · prefer</b><br>` +
+      `&nbsp;&nbsp;• Tanned skin began <b>to indicate</b> ~ = began <b>indicating</b> ~ (둘 다 ✓, 뜻 같음)<br>` +
+      `&nbsp;&nbsp;• It started <b>to rain</b>. = It started <b>raining</b>.<br>` +
+      `&nbsp;&nbsp;• 🚨 참고: 이미 -ing형인 동사 뒤에선 to V를 선호 — It is beginning <b>to rain</b> (beginning raining 어색)` +
       `</div>`,
     eg: [
       ["remember -ing (과거)", "I remember meeting him.", "그를 만났던 게 기억난다."],
@@ -5862,6 +5983,13 @@ const GRAMMAR = [
       `&nbsp;&nbsp;• The key <s>to the doors</s> <b>is</b> lost. (doors ❌ → key)<br>` +
       `&nbsp;&nbsp;• People <s>who live near the sea</s> <b>are</b> ~ (sea ❌ → People)<br>` +
       `🔎 <b>요령:</b> 주어 첫 명사 → 괄호 치고(of·to·who·-ing·p.p.) → 동사 직전 명사는 <b>일단 의심</b>` +
+      `</div>` +
+      `<div id="sv-gerund" class="g-sub">` +
+      `<b>③ 동명사 · to부정사 · 명사절 주어 → 단수</b><br>` +
+      `&nbsp;&nbsp;• <b>Tanning</b> on the beach or in a salon <b>remains</b> popular. (동명사 = '~하는 것' 한 덩어리)<br>` +
+      `&nbsp;&nbsp;• <b>To learn</b> languages <b>is</b> fun. · <b>What they want</b> <b>is</b> money.<br>` +
+      `&nbsp;&nbsp;• 🚨 동명사 뒤 목적어가 복수여도 단수: <b>Reading</b> books <b>is</b> ~ (books ❌ → Reading)<br>` +
+      `&nbsp;&nbsp;• 예외: 동명사 둘을 and로 이으면 복수 — Tanning and tattooing <b>are</b> popular.` +
       `</div>`,
     eg: [
       ["A and B → 복수", "His skill and his effort are admirable.", "그의 기술과 노력은 훌륭하다."],
@@ -5983,6 +6111,58 @@ const GRAMMAR = [
       ["금지", "You must not work in the sun.", "햇볕 아래서 일하면 안 된다."],
       ["불필요", "Its owner did not have to work in the sun.", "그 주인은 햇볕 아래서 일할 필요가 없었다."],
       ["과거 의무", "Workers had to work outdoors.", "노동자들은 밖에서 일해야 했다."],
+    ],
+  },
+  {
+    id: "concession",
+    title: "양보 — although · even though · even if (+S V) vs despite · in spite of (+명사)",
+    tag: "핵심 · 빈출",
+    body:
+      `"~에도 불구하고, 비록 ~이지만". 편입은 <b>뒤에 절이 오나 명사가 오나</b>로 접속사/전치사를 고르는 문제를 자주 냄.<br><br>` +
+      `<div id="cn-conj" class="g-sub">` +
+      `<b>① 접속사 (+ 주어 + 동사)</b><br>` +
+      `&nbsp;&nbsp;• <b>although / though / even though</b> = 비록 ~이지만 (<b>사실</b>) — even though가 가장 강한 느낌<br>` +
+      `&nbsp;&nbsp;• <b>even if</b> = 설령 ~라 하더라도 (<b>가정</b>, 사실인지 모름)<br>` +
+      `&nbsp;&nbsp;&nbsp;&nbsp;– Tanning remains popular, <b>even though</b> people <b>are</b> aware of the dangers. (아는 건 사실)<br>` +
+      `&nbsp;&nbsp;&nbsp;&nbsp;– I'll go <b>even if</b> it rains. (비가 올지 안 올지 모름)<br>` +
+      `&nbsp;&nbsp;• 🚨 although ~, <b>but</b> ~ ❌ — 접속사 두 개 중복 금지` +
+      `</div>` +
+      `<div id="cn-prep" class="g-sub">` +
+      `<b>② 전치사 (+ 명사 / 동명사)</b><br>` +
+      `&nbsp;&nbsp;• <b>despite</b> = <b>in spite of</b> = ~에도 불구하고 — <b>despite</b> the dangers / <b>in spite of</b> knowing the dangers<br>` +
+      `&nbsp;&nbsp;• 🚨 despite <b>of</b> ❌ (despite는 of 없이) · in spite <b>of</b> ✓<br>` +
+      `&nbsp;&nbsp;• 🚨 despite + 주어 동사 ❌ → despite <b>the fact that</b> + S V ✓` +
+      `</div>`,
+    eg: [
+      ["even though + S V", "even though people are aware of the dangers", "사람들이 위험을 알고 있는데도"],
+      ["despite + 명사", "despite the dangers of UV rays", "자외선의 위험에도 불구하고"],
+      ["even if (가정)", "Even if it is dangerous, I'll do it.", "설령 위험하더라도 하겠다."],
+    ],
+  },
+  {
+    id: "just-as-so",
+    title: "Just as A, so (too) B — 'A인 것과 마찬가지로 B도' + so 뒤 도치",
+    tag: "구문 · 도치",
+    body:
+      `두 사실을 <b>나란히 비교</b>할 때 쓰는 격식 있는 구문. so 뒤가 <b>도치</b>될 수 있어 독해에서 주어를 놓치기 쉬움.<br><br>` +
+      `<div id="js-basic" class="g-sub">` +
+      `<b>① 기본: (Just) as A, so B = A인 것과 (꼭) 마찬가지로 B도 그렇다</b><br>` +
+      `&nbsp;&nbsp;• as = ~처럼(양태) · just = 꼭 (강조) · so = 그와 같이 · too/also = ~도 (강조)<br>` +
+      `&nbsp;&nbsp;• <b>Just as</b> food nourishes the body, <b>so</b> books nourish the mind. (음식이 몸을 살찌우듯 책은 마음을 살찌운다)<br>` +
+      `&nbsp;&nbsp;• 🚨 so 부분이 빠진 <b>Just as A, B</b>도 흔함 · 한 문장으로 쓰면 B, just as A (A인 것처럼 B)` +
+      `</div>` +
+      `<div id="js-inversion" class="g-sub">` +
+      `<b>② so 뒤 도치: so (too) + 조동사/be/do + 주어</b><br>` +
+      `&nbsp;&nbsp;• 일반동사 → do/does/did: Just as you love music, so <b>do I</b>.<br>` +
+      `&nbsp;&nbsp;• 완료형 → have만 앞으로: so too <b>have cultures</b> around the globe <b>marked</b> their skin (p.p.는 주어 뒤 그대로)<br>` +
+      `&nbsp;&nbsp;• be동사: Just as he was tired, so <b>was she</b>.<br>` +
+      `&nbsp;&nbsp;• 🚨 도치돼도 수일치는 <b>뒤의 주어</b>에 맞춤 (have cultures ✓ / has cultures ❌)<br>` +
+      `&nbsp;&nbsp;• cf. 대답의 So do I(나도 그래) · Neither do I(나도 안 그래)도 같은 도치` +
+      `</div>`,
+    eg: [
+      ["Just as A, so B", "Just as food feeds the body, so books feed the mind.", "음식이 몸을 먹이듯 책은 마음을 먹인다."],
+      ["so too + 도치", "so too have cultures marked their skin", "문화들도 피부에 표시를 해 왔다"],
+      ["So + 조동사 + S", "She likes tea, and so do I.", "그녀는 차를 좋아하고 나도 그렇다."],
     ],
   },
 ];
