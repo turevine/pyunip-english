@@ -310,6 +310,7 @@ const WORDS_BY_PASSAGE = {
   { word: "desirable",        pos: "a.",   meaning: "바람직한, 탐나는 (v. desire 바라다)", example: "white skin was desirable" },
   { word: "owner",            pos: "n.",   meaning: "주인, 소유자 (v. own 소유하다 / a. own 자신의)", example: "its owner was a member of the upper class" },
   { word: "upper class",      pos: "n.",   meaning: "상류층 (↔lower/working class)",   example: "a member of the upper class" },
+  { word: "among",            pos: "prep.", meaning: "~ 사이에서, ~ 중에서 (셋 이상 무리 + 복수명사; 둘 사이는 between)", example: "Among darker-skinned people, ~" },
   { word: "dark-skinned",     pos: "a.",   meaning: "피부가 검은 (dark + skin + -ed; 비교급 darker-skinned, ↔light/fair-skinned)", example: "among darker-skinned people" },
   { word: "product",          pos: "n.",   meaning: "제품, 상품; 산물 (v. produce 생산하다)", example: "products used to lighten skin" },
   { word: "attitude",         pos: "n.",   meaning: "태도, 사고방식 (attitude toward/to ~에 대한 태도)", example: "attitudes toward light skin" },
