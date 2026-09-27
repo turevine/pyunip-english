@@ -330,7 +330,9 @@ const WORDS_BY_PASSAGE = {
   { word: "mark",             pos: "v./n.", meaning: "표시하다, 자국을 내다; 자국, 표시", example: "cultures marked their skin" },
   { word: "identity",         pos: "n.",   meaning: "정체성, 신원 (identify 확인하다)",  example: "cultural identity" },
   { word: "status",           pos: "n.",   meaning: "지위, 신분; 상태",               example: "community status" },
+  { word: "tattoo",           pos: "n./v.", meaning: "문신; 문신을 새기다 (n. tattooing 문신 새기기)", example: "Tattooing has been carried out ~" },
   { word: "carry out",        pos: "phr.", meaning: "수행하다, 실시하다, 이행하다",     example: "Tattooing has been carried out for thousands of years." },
+  { word: "thousands of",     pos: "phr.", meaning: "수천의, 수많은 (막연한 수; ≠ three thousand 정확한 수, -s 없음)", example: "for thousands of years" },
   { word: "bravery",          pos: "n.",   meaning: "용감함, 용기 (a. brave)",         example: "to mark their status or bravery" },
   { word: "identify",         pos: "v.",   meaning: "확인하다, 식별하다; (identify A as B) A를 B로 규정하다", example: "identify the wearer as a family member" },
   { word: "wearer",           pos: "n.",   meaning: "착용자, (문신 등을) 지닌 사람 (wear+er)", example: "identify the wearer" },
@@ -4810,6 +4812,35 @@ const ANALYSIS = {
       `📝 <b>해석:</b> "사람들이 부와 아름다움을 나타내기 위해 피부색을 바꿔 온 것과 마찬가지로, 전 세계의 문화들도 문화적 정체성이나 공동체 내 지위를 나타내기 위해 피부에 표시를 해 왔다."`,
     trans: "사람들이 부와 아름다움을 드러내려고 피부색을 바꿔 온 것처럼, 세계 곳곳의 문화들 역시 문화적 정체성이나 공동체 내 신분을 나타내려고 피부에 표식을 새겨 왔다.",
   },
+
+  // 지문 4 · 17번째 문장: Tattooing, for example, has been carried out for thousands of years.
+  "4-17": {
+    form: "1형식 수동태 (S + has been p.p.) · 동명사 주어 Tattooing(단수 → has) · for example 콤마 삽입 · 현재완료 수동태 have been p.p. · 구동사 수동태 be carried out · for + 기간(계속) · thousands of(막연한 수)",
+    tense: "현재완료 수동 (수천 년 전부터 지금까지 쭉 행해져 옴)",
+    chips: [
+      ["주어(S)·동명사", "Tattooing,"],
+      ["삽입·for example", "for example,"],
+      ["동사(V)·현재완료 수동", "has been carried out"],
+      ["부사구·기간", "for thousands of years."],
+    ],
+    structure:
+      `뼈대: <b>Tattooing(S)</b>, for example, <b>+ has been carried out(V)</b> [for thousands of years]. "예를 들어, <b>문신 새기기는</b> 수천 년 동안 <b>행해져 왔다</b>".<br><br>` +
+      `① ⭐⭐ <b>Tattooing ~ has</b> (<b>동명사 주어 = 단수</b>) — tattoo(문신을 새기다) + -ing = "<b>문신을 새기는 것</b>". 동명사 주어는 <b>단수</b> → <b>has</b> been(have ❌). (단어카드: tattoo)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subject-agreement','sv-gerund')">📐 동명사 주어는 단수 자세히 →</span><br>` +
+      `② <b>, for example,</b> (<b>콤마 삽입</b>) — 주어와 동사 사이에 끼운 연결어. 걷어내면 Tattooing has been carried out ~ 로 뼈대 온전. 앞 문장의 '피부에 표시하기(marked their skin)'에 대한 <b>첫 번째 예</b>라는 신호.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('conjunctive-adverb','ca-insert')">📐 콤마로 떼는 연결어 걷어내기 →</span><br>` +
+      `③ ⭐⭐⭐ <b>has been carried out</b> (<b>현재완료 수동태</b>) — <b>have/has been + p.p.</b> = "(지금까지) <b>~되어 왔다</b>". 현재완료(has p.p.) + 수동태(be p.p.)가 합쳐진 꼴: has <b>been</b>(be의 p.p.) + <b>carried</b>(p.p.). 문신은 사람이 '<b>행하는</b>' 대상이라 수동. 행위자(by people)는 뻔해서 생략.<br>` +
+      `&nbsp;&nbsp;• 🚨 has carried out ❌ (그러면 문신이 무언가를 수행한 게 됨) · has been carrying out ❌ (진행 = 능동)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('passive-voice','pv-form')">📐 수동태 공식(완료: has been p.p.) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('present-perfect','pf-uses')">📐 현재완료 계속(for + 기간) 자세히 →</span><br>` +
+      `④ ⭐⭐ <b>carried out</b> (<b>구동사 수동태</b>) — <b>carry out</b> = "<b>수행하다, 실시하다</b>"(= perform, conduct). 두 단어가 <b>한 동사</b>라서 수동태에서도 <b>out을 절대 빼지 않음</b>: has been carried ❌. 원래 능동: People have carried out tattooing. (단어카드: carry out)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('passive-voice','pv-phrasal')">📐 구동사 수동태(be carried out · be looked after) 자세히 →</span><br>` +
+      `⑤ ⭐⭐ <b>for thousands of years</b> (<b>막연한 수</b>) — "<b>수천 년 동안</b>". <b>thousands of</b> + 복수명사 = 수천의(정확히 몇 천인지 모름). 🚨 정확한 수면 <b>-s·of 없이</b>: three thousand years ✓ / three thousands of years ❌. for + 기간 → 현재완료 계속 신호. (단어카드: thousands of)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('number-plural','np-hundreds')">📐 thousands of vs three thousand 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 앞 문장이 "문화들이 정체성·지위를 나타내려고 <b>피부에 표시</b>해 왔다"고 큰 주제를 던졌으니 → 첫 번째 방법 <b>문신</b>을 꺼내며, 그 역사가 <b>수천 년</b>이나 됐다고 강조. 다음 문장부터 고대 이집트·영국·페루의 문신 사례가 이어짐.<br><br>` +
+      `📝 <b>해석:</b> "예를 들어, 문신 새기기는 수천 년 동안 행해져 왔다."`,
+    trans: "예를 들어 문신은 수천 년 동안 행해져 왔다.",
+  },
 };
 
 /* ---------- 문법 정리 (공부한 내용 채우기) ----------
@@ -5316,6 +5347,12 @@ const GRAMMAR = [
       `&nbsp;&nbsp;1️⃣ 목적어 → 주어로 &nbsp; 2️⃣ 동사 → <b>be + p.p.</b> &nbsp; 3️⃣ 주어 → <b>by + 목적격</b><br>` +
       `예) People play soccer. → <b>Soccer is played</b> (by people).<br>` +
       `⚠️ <b>목적어가 있는 타동사만</b> 수동태 가능. <b>자동사</b>(happen, occur, appear, arrive…)는 <b>수동태 불가</b> (was happened ✗).` +
+      `</div>` +
+      `<div id="pv-phrasal" class="g-sub">` +
+      `<b>🧩 구동사 수동태 — 동사 + 부사/전치사를 한 덩어리로</b><br>` +
+      `&nbsp;&nbsp;• carry out → <b>be carried out</b>: Tattooing has been <b>carried out</b> for thousands of years.<br>` +
+      `&nbsp;&nbsp;• look after → <b>be looked after</b> · laugh at → <b>be laughed at</b> · put off → <b>be put off</b> · take care of → <b>be taken care of</b><br>` +
+      `&nbsp;&nbsp;• 🚨 뒤의 out/at/of를 <b>빼면 틀림</b>: The baby was looked ❌ → was looked <b>after</b> ✓ (by가 바로 붙어도 OK: was laughed <b>at by</b> everyone)` +
       `</div>`,
     eg: [
       ["과거 수동태", "Early matches were played in 1862.", "초기 경기들은 1862년에 열렸다. (경기 = 치러지는 대상)"],
@@ -6163,6 +6200,27 @@ const GRAMMAR = [
       ["Just as A, so B", "Just as food feeds the body, so books feed the mind.", "음식이 몸을 먹이듯 책은 마음을 먹인다."],
       ["so too + 도치", "so too have cultures marked their skin", "문화들도 피부에 표시를 해 왔다"],
       ["So + 조동사 + S", "She likes tea, and so do I.", "그녀는 차를 좋아하고 나도 그렇다."],
+    ],
+  },
+  {
+    id: "number-plural",
+    title: "hundreds of vs two hundred — 막연한 수 vs 정확한 수",
+    tag: "기초 · 빈출",
+    body:
+      `hundred · thousand · million · dozen은 <b>정확한 수</b>인지 <b>막연한 수</b>인지에 따라 -s와 of가 붙고 안 붙고가 갈림.<br><br>` +
+      `<div id="np-hundreds" class="g-sub">` +
+      `<b>① 정확한 수: 숫자 + hundred/thousand + 복수명사 (-s ❌, of ❌)</b><br>` +
+      `&nbsp;&nbsp;• <b>three thousand</b> years · <b>two hundred</b> people · <b>five million</b> dollars<br>` +
+      `&nbsp;&nbsp;• 🚨 three thousand<b>s</b> ❌ · two hundred <b>of</b> people ❌ (단, 특정 집단 중 일부면 two hundred <b>of the</b> people ✓)<br>` +
+      `<b>② 막연한 수: hundreds/thousands/millions of + 복수명사 = 수백/수천/수백만의</b><br>` +
+      `&nbsp;&nbsp;• <b>thousands of</b> years (수천 년) · <b>hundreds of</b> people (수백 명) · <b>millions of</b> stars<br>` +
+      `&nbsp;&nbsp;• 강조: <b>tens of thousands of</b> (수만의) · <b>hundreds of thousands of</b> (수십만의)<br>` +
+      `&nbsp;&nbsp;• 🚨 thousands <b>of</b>에서 of 빼면 ❌ (thousands years ❌)` +
+      `</div>`,
+    eg: [
+      ["막연한 수", "for thousands of years", "수천 년 동안"],
+      ["정확한 수", "about three thousand years ago", "약 3천 년 전에"],
+      ["강조", "tens of thousands of visitors", "수만 명의 방문객"],
     ],
   },
 ];
