@@ -308,7 +308,11 @@ const WORDS_BY_PASSAGE = {
   { word: "attractive",       pos: "a.",   meaning: "매력적인 (v. attract, 비교급 more attractive)", example: "in an attempt to be more attractive" },
   { word: "century",          pos: "n.",   meaning: "세기, 100년 (for centuries 수 세기 동안; the 1800s = the 19th century)", example: "for centuries, humans have tried ~" },
   { word: "desirable",        pos: "a.",   meaning: "바람직한, 탐나는 (v. desire 바라다)", example: "white skin was desirable" },
+  { word: "owner",            pos: "n.",   meaning: "주인, 소유자 (v. own 소유하다 / a. own 자신의)", example: "its owner was a member of the upper class" },
   { word: "upper class",      pos: "n.",   meaning: "상류층 (↔lower/working class)",   example: "a member of the upper class" },
+  { word: "dark-skinned",     pos: "a.",   meaning: "피부가 검은 (dark + skin + -ed; 비교급 darker-skinned, ↔light/fair-skinned)", example: "among darker-skinned people" },
+  { word: "product",          pos: "n.",   meaning: "제품, 상품; 산물 (v. produce 생산하다)", example: "products used to lighten skin" },
+  { word: "attitude",         pos: "n.",   meaning: "태도, 사고방식 (attitude toward/to ~에 대한 태도)", example: "attitudes toward light skin" },
   { word: "shift",            pos: "v./n.", meaning: "바뀌다, 옮기다; 변화, 교대 근무",  example: "attitudes shifted in the opposite direction" },
   { word: "opposite",         pos: "a.",   meaning: "반대의, 맞은편의 (opposite direction 반대 방향)", example: "shifted in the opposite direction" },
   { word: "indoors",          pos: "ad.",  meaning: "실내에서, 실내로 (↔outdoors 실외에서)", example: "work moved indoors" },
@@ -4584,6 +4588,119 @@ const ANALYSIS = {
       `📝 <b>해석:</b> "1800년대에는 많은 유럽인들에게 흰 피부가 바람직한 것이었다."`,
     trans: "1800년대에는 많은 유럽인들에게 흰 피부가 선망의 대상이었다.",
   },
+
+  // 지문 4 · 11번째 문장: Skin this color meant that its owner was a member of the upper class and did not have to work in the sun.
+  "4-10": {
+    form: "3형식 (S + meant + that절 목적어) · Skin (of) this color(성질의 of 생략) · 명사절 that · that절 안 동사 병렬(was ~ and did not have to work) · don't have to(~할 필요 없다) · 시제 일치(과거)",
+    tense: "과거 (meant) — that절도 시제 일치로 과거 (was / did not have to)",
+    chips: [
+      ["주어(S)", "Skin"],
+      ["수식·(of) 생략", "this color"],
+      ["동사(V)·과거", "meant"],
+      ["명사절 접속사", "that"],
+      ["that절 주어(s)", "its owner"],
+      ["that절 동사①(v)", "was a member of the upper class"],
+      ["등위접속사·병렬", "and"],
+      ["that절 동사②(v)·불필요", "did not have to work in the sun"],
+    ],
+    structure:
+      `뼈대: <b>Skin (this color)(S) + meant(V) + [that its owner was ~ and did not have to ~](O)</b>. "이런 색의 피부는 [그 주인이 상류층의 일원이며 햇볕 아래서 일할 필요가 없다]는 것을 <b>의미했다</b>".<br><br>` +
+      `① ⭐⭐ <b>Skin this color</b> (<b>성질의 of 생략</b>) — 원래 <b>skin (of) this color</b> = "<b>이런 색의 피부</b>". 크기·나이·색·모양을 나타내는 <b>성질의 of</b>는 자주 <b>생략</b>돼서 명사 뒤에 <b>명사구가 바로 붙음</b>. this color = 앞 문장의 <b>흰색</b>. 같은 꼴: a man <b>your age</b>(네 나이의 남자) · shoes <b>this size</b>(이 사이즈의 신발).<br>` +
+      `&nbsp;&nbsp;• 🚨 Skin을 동사로 착각 ❌ — 문장 첫 명사 Skin이 주어, 진짜 동사는 <b>meant</b>. this color는 주어를 꾸미는 수식어라 걷어내면 Skin meant that ~.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('of-types','of-quality')">📐 성질의 of와 of 생략(a man your age) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subject-agreement','sv-modifier')">📐 수식어 걷어내고 주어·동사 찾기 →</span><br>` +
+      `② ⭐ <b>meant that ~</b> (<b>명사절 that</b>·목적어) — mean(<b>의미하다, 뜻하다</b>) + that절 = "<b>~라는 것을 의미하다</b>". that 뒤가 <b>주어+동사 다 갖춘 완전한 절</b> → 명사절 접속사 that(관계대명사 ❌). <b>mean-meant-meant</b> [ment] 발음 주의.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('noun-clause-that','nc-object')">📐 목적어 자리 명사절 that 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('noun-clause-that','nc-vs')">📐 명사절 that vs 관계대명사 that 구별 →</span><br>` +
+      `③ <b>its owner</b> — <b>its</b> = 그 피부(skin)의 → "<b>그 피부의 주인</b>" = 그런 피부를 가진 사람. 🚨 <b>its</b>(소유격) vs <b>it's</b>(= it is) 혼동 금지. <b>owner</b> = own(소유하다) + -er(사람). (단어카드: owner)<br>` +
+      `④ ⭐ <b>was a member of the upper class</b> — "<b>상류층의 일원이었다</b>". a member <b>of</b> ~ = ~의 일원(소속의 of). <b>the upper class</b> = 상류층(사회 계층은 정해진 집단이라 the). (단어카드: upper class)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('of-types','of-possess')">📐 소유·소속의 of 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('articles','ar-the')">📐 정관사 the(정해진 대상) 자세히 →</span><br>` +
+      `⑤ ⭐⭐ <b>and did not have to work</b> (<b>병렬</b> + <b>don't have to</b>) — and가 that절 안의 동사 둘을 이음: its owner [<b>was</b> ~] and [<b>did not have to work</b> ~]. 주어 its owner는 한 번만.<br>` +
+      `&nbsp;&nbsp;• 🚨🚨 <b>don't have to V</b> = "<b>~할 필요가 없다</b>"(불필요) ≠ <b>must not V</b> = "<b>~하면 안 된다</b>"(금지). 여기선 '햇볕 아래서 <b>일할 필요가 없었다</b>' = 일 안 해도 먹고살 만큼 부유했다는 뜻.<br>` +
+      `&nbsp;&nbsp;• 과거형 = <b>did not have to</b> (must는 과거형이 없어 had to / didn't have to로 씀).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('must-have-to','mh-not')">📐 must not(금지) vs don't have to(불필요) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">📐 병렬 규칙(같은 급끼리) 자세히 →</span><br>` +
+      `⑥ <b>시제 일치</b> — 주절 동사가 <b>meant</b>(과거)라 that절도 <b>was / did</b>(과거)로 맞춤. 1800년대 이야기이므로 전부 과거.<br>` +
+      `⑦ <b>in the sun</b> — "<b>햇볕 아래서</b>". 이때 the sun은 '햇볕, 햇빛'. 🚨 전치사 <b>in</b>(under the sun도 가능하지만 '햇볕 쬐며'는 in the sun이 기본).<br>` +
+      `💡 <b>흐름:</b> 앞 문장 "흰 피부가 바람직했다"의 <b>이유</b>. 흰 피부 = <b>밖에서 일 안 해도 되는 사람</b> = 부자·상류층의 표시. 즉 피부색이 <b>신분(status)</b>을 드러내는 신호였다는 것 — 뒤에서 20세기에 이 의미가 <b>뒤집히는</b> 이야기의 전제.<br><br>` +
+      `📝 <b>해석:</b> "이런 색의 피부는 그 주인이 상류층의 일원이며 햇볕 아래서 일할 필요가 없다는 것을 의미했다."`,
+    trans: "이런 (흰) 피부는 그 사람이 상류층이라서 햇볕 아래에서 일할 필요가 없다는 것을 의미했다.",
+  },
+
+  // 지문 4 · 12번째 문장: Among darker-skinned people in some parts of the world, products used to lighten skin are still popular today.
+  "4-11": {
+    form: "2형식 (S + are + C) · Among + 복수명사 · 복합형용사 darker-skinned(명사+-ed) · 과거분사 후치수식 products (which are) used to V · be used to V(~하는 데 사용되다) vs used to V vs be used to -ing · 주어-동사 수일치(products → are)",
+    tense: "현재 (still ~ today — 지금도 여전히)",
+    chips: [
+      ["부사구·~사이에서", "Among darker-skinned people"],
+      ["수식·장소", "in some parts of the world,"],
+      ["주어(S)·복수", "products"],
+      ["과거분사 후치수식", "used to lighten skin"],
+      ["동사(V)·복수", "are"],
+      ["부사·여전히", "still"],
+      ["보어(C)·형용사", "popular"],
+      ["부사·오늘날", "today."],
+    ],
+    structure:
+      `뼈대: [Among darker-skinned people in some parts of the world], <b>products(S)</b> [used to lighten skin] <b>+ are(V) + popular(C)</b> still today. "세계 일부 지역의 피부가 더 검은 사람들 사이에서는, 피부를 밝게 하는 데 쓰이는 <b>제품들이</b> 오늘날에도 여전히 <b>인기가 있다</b>".<br><br>` +
+      `① ⭐ <b>Among darker-skinned people</b> — <b>among</b> + 복수명사 = "<b>~ 사이에서, ~ 중에서</b>"(셋 이상 무리). 🚨 둘 사이는 <b>between</b>. 문장 앞 전치사구라 주어가 아님 → 걷어내고 주어 찾기.<br>` +
+      `② ⭐⭐ <b>darker-skinned</b> (<b>복합형용사</b>: 형용사 + 명사-ed) — dark(검은) + skin(피부) + <b>-ed</b> → "<b>피부가 검은</b>". 명사에 -ed를 붙이면 "<b>~을 가진</b>"이라는 형용사: blue-<b>eyed</b>(파란 눈의) · left-<b>handed</b>(왼손잡이의) · kind-<b>hearted</b>(마음씨 착한). 여기선 앞부분이 비교급 <b>darker</b> → "(상대적으로) <b>피부가 더 검은</b>". 🚨 dark-skin people ❌ → dark-skinned ✓. (단어카드: dark-skinned)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('word-suffix','ws-ed')">📐 명사 + -ed 복합형용사(dark-skinned · blue-eyed) 자세히 →</span><br>` +
+      `③ <b>in some parts of the world</b> — "세계 <b>일부 지역</b>에서", people을 꾸미는 수식어. 🚨 some parts <b>of the world</b>: 부분의 of(전체 = the world 중 일부).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('of-types','of-partitive')">📐 부분의 of 자세히 →</span><br>` +
+      `④ ⭐⭐⭐ <b>products used to lighten skin</b> (<b>과거분사 후치수식</b>) — products (<b>which are</b>) <b>used</b> to lighten skin → "피부를 밝게 하는 데 <b>사용되는</b> 제품들". 제품은 <b>사용되는</b> 쪽이라 <b>수동 → 과거분사 used</b>. 여기서 <b>to lighten</b>은 '~하기 위해'(목적)의 부사적 to부정사. (단어카드: product / lighten)<br>` +
+      `&nbsp;&nbsp;• 🚨🚨 <b>used to 3형제</b> 함정! ① <b>used to V</b> = ~하곤 했다(과거 습관, 조동사) ② <b>be used to V</b> = ~하는 데 사용되다(수동태 + 목적 to) ③ <b>be used to -ing</b> = ~에 익숙하다(to는 전치사). 이 문장은 ②에서 which are가 생략된 꼴 — "제품들이 피부를 밝게 하곤 했다" ❌.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('used-to','ut-three')">📐 used to V / be used to V / be used to -ing 구별 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('participle-postmod','pp-omit')">📐 분사 후치수식 & (관계대명사+be) 생략 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('participle-postmod','pp-active-passive')">📐 현재분사 vs 과거분사(능동·수동) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-adverb')">📐 to부정사 부사적 용법(목적) 자세히 →</span><br>` +
+      `⑤ ⭐⭐ <b>are</b> (<b>수일치</b>) — 주어는 <b>products</b>(복수) → <b>are</b>. 바로 앞의 skin(단수)에 끌려 <b>is</b> ❌. 주어 뒤 분사구(used to lighten skin)는 걷어내고 판단.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subject-agreement','sv-modifier')">📐 수식어 걷어내고 수일치 자세히 →</span><br>` +
+      `⑥ <b>still popular today</b> — 2형식 보어 자리 형용사 <b>popular</b>(인기 있는). <b>still</b>(여전히) + <b>today</b>(오늘날) → 과거(1800s)뿐 아니라 <b>지금도</b>라는 강조 → 현재 시제.<br>` +
+      `💡 <b>흐름:</b> 앞 문장(1800년대 유럽의 흰 피부 선호)에서 → '<b>밝게</b> 하려는' 욕구가 <b>지금도, 다른 지역에서도</b> 이어진다는 보충. 이제 다음 문장에서 반대 방향(<b>어둡게</b>, 태닝) 사례로 넘어감.<br><br>` +
+      `📝 <b>해석:</b> "세계 일부 지역의 피부가 더 검은 사람들 사이에서는, 피부를 밝게 하는 데 쓰이는 제품들이 오늘날에도 여전히 인기가 있다."`,
+    trans: "세계 일부 지역의 피부색이 더 짙은 사람들 사이에서는 피부를 하얗게 해 주는 제품이 오늘날에도 여전히 인기가 있다.",
+  },
+
+  // 지문 4 · 13번째 문장: During the 20th century, attitudes toward light skin shifted in the opposite direction in other cultures, as cities grew and work moved indoors.
+  "4-12": {
+    form: "1형식 (S + 자동사 shifted) · During + 명사(기간) · the 20th century(세기) · attitudes toward ~(~에 대한 태도) · 부사구 3개(방향·장소) · 접속사 as(~함에 따라) + 두 절 병렬 · 무관사 불가산 work · 부사 indoors",
+    tense: "과거 (20세기에 일어난 변화)",
+    chips: [
+      ["전치사구·기간", "During the 20th century,"],
+      ["주어(S)·복수", "attitudes"],
+      ["수식·~에 대한", "toward light skin"],
+      ["동사(V)·자동사", "shifted"],
+      ["부사구·방향", "in the opposite direction"],
+      ["부사구·장소", "in other cultures,"],
+      ["접속사·~함에 따라", "as"],
+      ["절①", "cities grew"],
+      ["등위접속사·병렬", "and"],
+      ["절②", "work moved indoors."],
+    ],
+    structure:
+      `뼈대: [During the 20th century], <b>attitudes(S)</b> [toward light skin] <b>+ shifted(V)</b> [in the opposite direction] [in other cultures], <b>as</b> [cities grew] and [work moved indoors]. "20세기 동안 다른 문화권에서는 흰 피부에 대한 <b>태도가 반대 방향으로 바뀌었다</b>, 도시가 커지고 일이 실내로 옮겨감에 따라".<br><br>` +
+      `① ⭐⭐ <b>During the 20th century</b> (<b>during + 명사</b>) — "<b>20세기 동안</b>". during은 <b>전치사</b>라 뒤에 <b>명사</b>. 🚨 뒤에 주어+동사 절이 오면 <b>while</b>. <b>the 20th century</b> = <b>1900년대</b>(the 1900s) — 세기는 앞자리 + 1, 서수라 <b>the</b> 필수.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('during-while','dw-basic')">📐 during(+명사) vs while(+S V) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('era-expression','ee-decade')">📐 세기 표현(the 20th century = the 1900s) 자세히 →</span><br>` +
+      `② ⭐⭐ <b>attitudes toward light skin</b> (주어 + 수식어) — <b>attitude toward/to ~</b> = "<b>~에 대한 태도</b>". 주어는 <b>attitudes</b>(복수), toward light skin은 수식어. light skin = 흰(밝은) 피부, 무관사 = 일반적인 흰 피부. (단어카드: attitude)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subject-agreement','sv-modifier')">📐 수식어 걷어내고 주어 찾기 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('articles','ar-zero')">📐 무관사(총칭) 자세히 →</span><br>` +
+      `③ ⭐ <b>shifted</b> (<b>자동사</b>·1형식) — shift = "<b>바뀌다, 옮겨가다</b>". 목적어 없이 혼자 쓰인 자동사 → 뒤는 전부 부사구. 🚨 과거라 수일치 형태 차이는 없지만 주어는 attitudes. (단어카드: shift)<br>` +
+      `④ <b>in the opposite direction</b> — "<b>반대 방향으로</b>". 🚨 전치사는 <b>in</b>(to the opposite direction ❌). 여기서 '반대'란 흰 피부 선호 → <b>검은(그을린) 피부 선호</b>로의 변화. opposite은 하나뿐인 반대쪽이라 <b>the</b>. (단어카드: opposite)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('articles','ar-the')">📐 정관사 the(유일한 대상) 자세히 →</span><br>` +
+      `⑤ <b>in other cultures</b> — "<b>다른 문화권에서는</b>". 앞 문장의 '일부 지역(여전히 미백 선호)'과 대비되는 <b>다른 곳</b>. other + <b>복수명사</b>.<br>` +
+      `⑥ ⭐⭐ <b>, as cities grew and work moved indoors</b> (<b>접속사 as</b>·비례/이유) — as 뒤에 <b>주어 + 동사</b> 완전한 절 두 개 → 접속사. 도시가 '커지는' 변화와 태도가 '바뀌는' 변화가 <b>함께 진행</b> → "<b>~함에 따라</b>"(비례), 동시에 태도 변화의 <b>이유</b>이기도 함. and가 [cities grew]와 [work moved indoors] 두 절을 <b>병렬</b>로 연결.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('as-roles','as-proportion')">📐 as = ~함에 따라(비례) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('as-roles','as-cause')">📐 as = ~ 때문에(이유) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">📐 병렬 규칙 자세히 →</span><br>` +
+      `⑦ ⭐ <b>work moved indoors</b> — <b>work</b>(일, 노동)는 <b>불가산</b> → 관사·-s 없이 단수 취급(a work ❌ / works는 '작품'). move = 자동사 '옮겨가다'. <b>indoors</b>는 <b>부사</b>(실내로)라 전치사 없이 바로 씀: moved <b>to indoors</b> ❌. 형용사형은 indoor(an indoor pool). (단어카드: indoors)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('articles','ar-zero')">📐 불가산명사 무관사 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 흰 피부 = '밖에서 일 안 하는 부자'였던 논리가 <b>산업화</b>로 뒤집힘 — 이제 일이 <b>실내</b>(공장·사무실)에서 이뤄지니 하얀 피부는 평범해지고, 오히려 <b>그을린 피부</b>가 여유(휴가·레저)의 표시가 됨. 다음 문장이 바로 그 결론(Tanned skin began to indicate leisure time)을 말함.<br><br>` +
+      `📝 <b>해석:</b> "20세기 동안 다른 문화권에서는 도시가 커지고 일이 실내로 옮겨감에 따라 흰 피부에 대한 태도가 반대 방향으로 바뀌었다."`,
+    trans: "20세기에 들어 다른 문화권에서는 도시가 성장하고 노동이 실내로 옮겨가면서 밝은 피부에 대한 태도가 반대 방향으로 바뀌었다.",
+  },
 };
 
 /* ---------- 문법 정리 (공부한 내용 채우기) ----------
@@ -4773,10 +4890,10 @@ const GRAMMAR = [
   },
   {
     id: "of-types",
-    title: "of의 여러 종류 (소유 · 동격 · 내용 · 부분)",
+    title: "of의 여러 종류 (소유 · 동격 · 내용 · 부분 · 성질)",
     tag: "핵심",
     body:
-      `of는 그냥 '~의'가 아님. 크게 4가지로 구분하면 해석이 정확해짐.<br>` +
+      `of는 그냥 '~의'가 아님. 크게 5가지로 구분하면 해석이 정확해짐.<br>` +
       `<div id="of-possess" class="g-sub">` +
       `<b>① 소유·소속의 of ('~의')</b><br>` +
       `가장 기본. A of B = 'B의 A'. 예) the leg of the table (탁자의 다리).` +
@@ -4804,6 +4921,13 @@ const GRAMMAR = [
       `&nbsp;&nbsp;• ⭐ <b>both 뒤 of는 생략 가능</b>: both <b>(of)</b> the players = both the players. (다른 수량어는 of 못 뺌: most <b>of</b> the ~ ✓ / most the ~ ✗)<br>` +
       `&nbsp;&nbsp;• 대명사 앞에선 of <b>필수</b>: both <b>of</b> them ✓ (both them ✗).<br>` +
       `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('both-usage','both-optional-of')">🔀 both의 of 생략 규칙 자세히 →</span>` +
+      `</div>` +
+      `<div id="of-quality" class="g-sub">` +
+      `<b>⑤ 성질·특징의 of ('~인 / ~한') — of가 자주 생략됨</b><br>` +
+      `<b>of + (크기·나이·색·모양·가격) 명사</b>가 앞 명사의 성질을 나타냄. 🚨 이때 <b>of를 빼고</b> 명사구를 바로 뒤에 붙이는 경우가 많음.<br>` +
+      `&nbsp;&nbsp;• skin <b>(of) this color</b> = 이런 색의 피부 · a man <b>(of) your age</b> = 너만 한 나이의 남자 · shoes <b>(of) this size</b> = 이 사이즈의 신발 · a room <b>(of) that shape</b> = 그런 모양의 방<br>` +
+      `&nbsp;&nbsp;• 🚨 독해 함정: 명사 + 명사구가 붙어 있으면 <b>동사를 못 찾아 헤맴</b> → 뒤 명사구는 <b>수식어</b>이니 걷어내고 진짜 동사를 찾을 것. (Skin this color <b>meant</b> ~)<br>` +
+      `&nbsp;&nbsp;• 같은 계열(of 유지): a matter <b>of importance</b> = an important matter (of + 추상명사 = 형용사)` +
       `</div>`,
     eg: [
       ["① 소유의 of", "the leg of the table", "탁자의 다리"],
@@ -4811,6 +4935,7 @@ const GRAMMAR = [
       ["③ 내용의 of", "the promise of great wealth", "막대한 부를 얻는다는 기대"],
       ["④ 부분의 of", "several of the best players", "최고 선수들 중 몇몇"],
       ["④ 부분의 of · both", "both of the players are ~", "그 선수들 둘 다 ~ (항상 복수)"],
+      ["⑤ 성질의 of (생략)", "Skin this color meant wealth.", "이런 색의 피부는 부를 의미했다."],
     ],
   },
   {
@@ -5767,7 +5892,7 @@ const GRAMMAR = [
   },
   {
     id: "word-suffix",
-    title: "접미사로 품사 바꾸기 — -en(동사) · -able(형용사)",
+    title: "접미사로 품사 바꾸기 — -en(동사) · -able(형용사) · 명사+-ed(형용사)",
     tag: "어휘 · 품사",
     body:
       `단어 끝에 붙는 <b>접미사</b>만 봐도 품사를 알 수 있음 → 빈칸에 <b>품사</b>를 고르는 문제에서 바로 써먹음.<br><br>` +
@@ -5781,11 +5906,18 @@ const GRAMMAR = [
       `<b>② 동사 + -able/-ible → 형용사 "~할 수 있는 / ~할 만한"</b><br>` +
       `&nbsp;&nbsp;• desire → <b>desirable</b>(바람직한) · read → <b>readable</b>(읽기 쉬운) · accept → <b>acceptable</b>(받아들일 만한) · rely → <b>reliable</b>(믿을 만한) · access → <b>accessible</b>(접근 가능한)<br>` +
       `&nbsp;&nbsp;• 🚨 헷갈리는 짝: <b>desirable</b>(바람직한) vs <b>desirous</b>(바라는, be desirous of) · <b>respectable</b>(존경할 만한) vs <b>respectful</b>(공손한) vs <b>respective</b>(각각의)` +
+      `</div>` +
+      `<div id="ws-ed" class="g-sub">` +
+      `<b>③ (형용사/숫자) + 명사 + -ed → 복합형용사 "~을 가진"</b><br>` +
+      `&nbsp;&nbsp;• dark + skin + ed → <b>dark-skinned</b>(피부가 검은) · <b>blue-eyed</b>(파란 눈의) · <b>left-handed</b>(왼손잡이의) · <b>kind-hearted</b>(마음씨 착한) · <b>long-haired</b>(머리가 긴) · <b>three-legged</b>(다리가 셋인)<br>` +
+      `&nbsp;&nbsp;• 🚨 동사의 과거분사가 아니라 <b>명사에 -ed</b>를 붙인 것: skin(n.) → skinned. dark-skin people ❌ / dark-<b>skinned</b> people ✓<br>` +
+      `&nbsp;&nbsp;• 앞 형용사는 비교급도 가능: <b>darker-skinned</b>(피부가 더 검은) · <b>lighter-skinned</b>(피부가 더 흰)` +
       `</div>`,
     eg: [
       ["-en 동사", "They tried to lighten their skin.", "그들은 피부를 밝게 하려 애썼다."],
       ["명사 + -en", "Exercise strengthens the heart.", "운동은 심장을 튼튼하게 한다."],
       ["-able 형용사", "White skin was desirable.", "흰 피부는 바람직한 것이었다."],
+      ["명사 + -ed 형용사", "among darker-skinned people", "피부가 더 검은 사람들 사이에서"],
     ],
   },
   {
@@ -5807,6 +5939,50 @@ const GRAMMAR = [
       ["the 1800s", "In the 1800s, white skin was desirable.", "1800년대에는 흰 피부가 선망받았다."],
       ["the 20th century", "During the 20th century, attitudes shifted.", "20세기 동안 태도가 바뀌었다."],
       ["~년대 후반", "in the late 1990s", "1990년대 후반에"],
+    ],
+  },
+  {
+    id: "used-to",
+    title: "used to 3형제 — used to V · be used to V · be used to -ing",
+    tag: "핵심 · 빈출",
+    body:
+      `생김새가 거의 같은데 뜻이 완전히 다른 3개. <b>be동사 유무</b>와 <b>to 뒤 품사</b>로 가름.<br><br>` +
+      `<div id="ut-three" class="g-sub">` +
+      `<b>① used to + 동사원형 = ~하곤 했다 / (예전엔) ~였다</b> — 과거 습관·상태 (지금은 아님)<br>` +
+      `&nbsp;&nbsp;• I <b>used to live</b> in Busan. (예전엔 부산에 살았다 — 지금은 아님)<br>` +
+      `&nbsp;&nbsp;• be동사 <b>없음</b>. 부정 didn't use to / 의문 Did you use to ~?<br>` +
+      `<b>② be used to + 동사원형 = ~하는 데 사용되다</b> — use(사용하다)의 <b>수동태</b> + 목적의 to부정사<br>` +
+      `&nbsp;&nbsp;• This product <b>is used to lighten</b> skin. (이 제품은 피부를 밝게 하는 데 사용된다)<br>` +
+      `&nbsp;&nbsp;• 🚨 명사 뒤에서 <b>(which are) 생략</b>되면 be가 안 보임: products <b>used to lighten</b> skin = 피부를 밝게 하는 데 <b>쓰이는</b> 제품들 → ①로 착각 금지! 문장에 <b>진짜 동사가 따로</b> 있으면 이 used는 과거분사.<br>` +
+      `<b>③ be/get used to + -ing(명사) = ~에 익숙하다 / 익숙해지다</b> — 이때 to는 <b>전치사</b><br>` +
+      `&nbsp;&nbsp;• I <b>am used to getting</b> up early. (나는 일찍 일어나는 데 익숙하다) · = be accustomed to -ing<br>` +
+      `&nbsp;&nbsp;• 🚨 be used to get up ❌ (그러면 ②의 '일어나는 데 사용된다'가 됨)` +
+      `</div>`,
+    eg: [
+      ["① 과거 습관", "He used to work in the sun.", "그는 (예전엔) 햇볕 아래서 일하곤 했다."],
+      ["② 사용되다", "products used to lighten skin", "피부를 밝게 하는 데 쓰이는 제품들"],
+      ["③ 익숙하다", "She is used to working indoors.", "그녀는 실내에서 일하는 데 익숙하다."],
+    ],
+  },
+  {
+    id: "must-have-to",
+    title: "must / have to — 의무 · must not(금지) vs don't have to(불필요)",
+    tag: "조동사 · 빈출",
+    body:
+      `긍정일 땐 둘 다 "~해야 한다"로 비슷하지만, <b>부정</b>이 되면 뜻이 완전히 갈림.<br><br>` +
+      `<div id="mh-not" class="g-sub">` +
+      `<b>① 긍정: must V = have to V = ~해야 한다</b><br>` +
+      `&nbsp;&nbsp;• must는 <b>과거형이 없음</b> → 과거는 <b>had to</b>, 미래는 <b>will have to</b><br>` +
+      `<b>② 부정: 뜻이 갈림 🚨🚨</b><br>` +
+      `&nbsp;&nbsp;• <b>must not V</b> = <b>~하면 안 된다</b> (금지) — You must not smoke here.<br>` +
+      `&nbsp;&nbsp;• <b>don't have to V</b> = <b>~할 필요 없다</b> (불필요) = need not V = don't need to V — You don't have to come.<br>` +
+      `&nbsp;&nbsp;• 과거 불필요 = <b>didn't have to V</b> (~할 필요가 없었다): The rich <b>did not have to work</b> in the sun.<br>` +
+      `&nbsp;&nbsp;• 🚨 have to의 주어가 3인칭 단수면 <b>has to / doesn't have to</b> (doesn't has to ❌)` +
+      `</div>`,
+    eg: [
+      ["금지", "You must not work in the sun.", "햇볕 아래서 일하면 안 된다."],
+      ["불필요", "Its owner did not have to work in the sun.", "그 주인은 햇볕 아래서 일할 필요가 없었다."],
+      ["과거 의무", "Workers had to work outdoors.", "노동자들은 밖에서 일해야 했다."],
     ],
   },
 ];
