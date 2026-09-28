@@ -358,6 +358,8 @@ const WORDS_BY_PASSAGE = {
   { word: "complex",          pos: "a.",   meaning: "복잡한 (= complicated, ↔simple)",  example: "the complex design of a tattoo" },
   { word: "include",          pos: "v.",   meaning: "포함하다 (prep. including ~을 포함하여 · ↔ exclude)", example: "the design usually includes symbols" },
   { word: "character trait",  pos: "n.",   meaning: "성격 특성, 기질 (character 성격 + trait 특성)", example: "symbols of character traits" },
+  { word: "get a tattoo",     pos: "phr.", meaning: "문신을 하다(새겨 받다) (get + 명사 = 받다·얻다)", example: "The process of getting a full-body tattoo" },
+  { word: "take + 시간 + to V", pos: "phr.", meaning: "~하는 데 (시간이) 걸리다 (It takes 시간 to V)", example: "can take two years or more to complete" },
   { word: "process",          pos: "n.",   meaning: "과정, 절차",                     example: "The process of getting a tattoo is slow." },
   { word: "painful",          pos: "a.",   meaning: "고통스러운, 아픈 (n. pain)",       example: "slow and painful" },
   { word: "complete",         pos: "v./a.", meaning: "완성하다, 끝내다; 완전한",        example: "take two years to complete" },
@@ -5072,6 +5074,42 @@ const ANALYSIS = {
       `📝 <b>해석:</b> "야쿠자 조직원 문신의 복잡한 디자인에는 보통 문신을 지닌 사람이 갖고 싶어 하는 성격 특성의 상징들이 들어 있다."`,
     trans: "야쿠자 조직원이 새기는 복잡한 문신 도안에는 대개 본인이 지니고 싶은 성품을 상징하는 문양들이 담겨 있다.",
   },
+
+  // 지문 4 · 24번째 문장: The process of getting a full-body tattoo is both slow and painful and can take two years or more to complete.
+  "4-24": {
+    form: "2형식 (S + is + both 형용사 and 형용사) + and + 3형식 (can take + 시간 + to V) · 주어 The process(단수) + of + 동명사 · 전치사 뒤 동명사 getting · both A and B(형용사 병렬) · 동사구 병렬(is ~ and can take ~) · 조동사 can(가능성) · take + 시간 + to V(~하는 데 걸리다)",
+    tense: "단순 현재 (일반적 사실 + 조동사 can)",
+    chips: [
+      ["주어(S)", "The process"],
+      ["of + 동명사", "of getting a full-body tattoo"],
+      ["동사(V1)·be", "is"],
+      ["보어(C)·both A and B", "both slow and painful"],
+      ["접속사·동사 병렬", "and"],
+      ["동사(V2)·조동사 + take", "can take"],
+      ["목적어(O)·시간", "two years or more"],
+      ["to부정사", "to complete."],
+    ],
+    structure:
+      `뼈대: <b>The process(S)</b> [of getting a full-body tattoo] <b>is(V1)</b> <b>both slow and painful(C)</b> <b>and</b> <b>can take(V2)</b> two years or more <b>to complete</b>. "전신 문신을 받는 <b>과정은</b> <b>느리기도 하고 고통스럽기도 하며</b>, 완성하는 데 2년 이상이 <b>걸릴 수도 있다</b>".<br><br>` +
+      `① ⭐⭐⭐ <b>The process ~ is</b> (<b>수식어 걷어내고 주어 찾기</b>) — 주어 알맹이는 <b>process</b>(단수) → <b>is</b>. of getting a full-body tattoo는 괄호. 🚨 동사 바로 앞 tattoo에 맞추는 게 아니라 process에 맞춤 — of 뒤를 tattoos로 바꿔도 여전히 <b>is</b>. (단어카드: process)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subject-agreement','sv-modifier')">📐 수식어(of ~) 걷어내고 주어 찾기 →</span><br>` +
+      `② ⭐⭐⭐ <b>of getting</b> (<b>전치사 + 동명사</b>) — 전치사 of 뒤는 명사 자리 → 동사 get을 넣으려면 <b>getting</b>. of to get ❌ / of get ❌. the process <b>of -ing</b> = "<b>~하는 과정</b>"(of = 동격: 과정 = 문신 받기). <b>get a tattoo</b> = 문신을 (새겨) 받다. (단어카드: get a tattoo)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('gerund-prep','gp-rule')">📐 전치사 + 동명사(-ing) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('of-types','of-apposition')">📐 동격의 of(the process of ~) 자세히 →</span><br>` +
+      `③ ⭐ <b>a full-body tattoo</b> (<b>복합형용사</b>) — full(전체의) + body를 하이픈으로 묶어 "<b>전신의</b>". 하이픈 복합형용사 안의 명사는 <b>단수</b>: full-bodies ❌. (단어카드: full-body)<br>` +
+      `④ ⭐⭐⭐ <b>is both slow and painful</b> (<b>both A and B · 형용사 병렬</b>) — "<b>느리기도 하고 고통스럽기도 한</b>". be동사 뒤 보어 자리에 형용사 두 개(slow ↔ painful)로 모양을 맞춤. 🚨 both slow and <b>pain</b> ❌(명사) / both slow and painful<b>ly</b> ❌(부사) → 보어는 <b>형용사</b>. painful = pain + -ful(~가 가득한). (단어카드: painful)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-list')">📐 both A and B 상관접속사 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">📐 병렬 — 같은 품사끼리 연결 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('linking-become','lb-why-adj')">📐 be동사 뒤 보어는 형용사(부사 ❌) 자세히 →</span><br>` +
+      `⑤ ⭐⭐ <b>and can take</b> (<b>동사구 병렬 · and가 두 개</b>) — 이 문장엔 and가 둘! 첫 and는 both A <b>and</b> B(형용사끼리), 두 번째 and는 [<b>is</b> both ~] <b>and</b> [<b>can take</b> ~]로 <b>동사구끼리</b> 연결. 공통 주어 The process라 두 번째 동사 앞 주어 생략. can = "<b>~할 수도 있다</b>"(가능성) → 뒤는 동사원형 take(takes ❌).<br>` +
+      `⑥ ⭐⭐⭐ <b>take two years or more to complete</b> (<b>take + 시간 + to V = ~하는 데 걸리다</b>) — take의 목적어가 <b>시간</b>(two years or more = 2년 이상)이면 "(시간이) 걸리다". 뒤의 <b>to complete</b> = "<b>완성하는 데</b>". 🚨 to complete 뒤에 목적어가 없는 이유: 완성할 대상 = 문장 주어(그 과정·문신)라 이미 앞에 나와 있음 → to complete <s>it</s> ❌. 같은 뜻: <b>It can take</b> two years or more <b>to complete</b> a full-body tattoo. (단어카드: take + 시간 + to V / complete)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-take')">📐 take + 시간 + to V (It takes ~) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-adverb')">📐 to부정사 부사적 용법 자세히 →</span><br>` +
+      `⑦ ⭐ <b>two years or more</b> — "<b>2년 또는 그 이상</b>" = 2년 이상(= at least two years). or more를 숫자 뒤에 붙여 최소치를 나타냄.<br>` +
+      `💡 <b>흐름:</b> 야쿠자 문신의 <b>디자인(무엇을 담나)</b>에 이어 새기는 <b>과정(얼마나 힘드나)</b>으로 이동. 느리고, 아프고, 몇 년씩 걸린다 → 그만큼 문신이 <b>큰 결심과 인내</b>의 표시라는 뉘앙스. 이다음엔 문신 대신 <b>흉터 내기(scarring)</b>라는 다른 표시 방법으로 넘어감.<br><br>` +
+      `📝 <b>해석:</b> "전신 문신을 받는 과정은 느리기도 하고 고통스럽기도 하며, 완성하는 데 2년 이상이 걸릴 수도 있다."`,
+    trans: "전신 문신은 새기는 과정이 더디고 고통스러우며, 완성까지 2년 넘게 걸리기도 한다.",
+  },
 };
 
 /* ---------- 문법 정리 (공부한 내용 채우기) ----------
@@ -5441,6 +5479,13 @@ const GRAMMAR = [
       `&nbsp;&nbsp;❸ <b>형용사적 전형 패턴인지</b> — (a) 명사가 to V의 <b>목적어</b>: something to eat(eat something) · a house to live <b>in</b>(live in a house) (b) <b>추상명사</b>의 내용: ability · chance · way · time · decision · effort + to V (c) the first / last / only + 명사 + to V(~한 첫 번째 사람). 여기 해당 안 되면 부사적일 가능성 ↑<br>` +
       `&nbsp;&nbsp;❹ <b>문맥이 '왜?'를 묻는지</b> — "<b>무슨</b> 명사?"면 형용사적, "<b>왜</b> 그랬나?"면 부사적.<br>` +
       `&nbsp;&nbsp;💡 둘 다 말이 되는 경우도 많음(뜻 차이 거의 없음). 그땐 <b>완전한 S+V+O 뒤에 덤으로 붙은 to V = 부사적(목적)</b>이 기본값.` +
+      `</div>` +
+      `<div id="ti-take" class="g-sub">` +
+      `<b>⏳ take + 시간 + to V = "~하는 데 (시간이) 걸리다"</b><br>` +
+      `&nbsp;&nbsp;• <b>It takes</b> (사람) + 시간 + <b>to V</b>: <b>It took</b> me two hours <b>to finish</b> it. (그걸 끝내는 데 2시간 걸렸다)<br>` +
+      `&nbsp;&nbsp;• 일 자체가 주어: <b>The tattoo can take</b> two years <b>to complete</b>. (그 문신은 완성하는 데 2년이 걸릴 수 있다)<br>` +
+      `&nbsp;&nbsp;• 🚨 주어가 to V의 <b>의미상 목적어</b>면 to V 뒤를 비워 둠(능동 모양·수동 의미): to complete <s>it</s> ❌ — 이미 주어가 완성할 대상. cf. easy <b>to read</b>(읽기 쉬운)도 같은 원리.<br>` +
+      `&nbsp;&nbsp;• 🚨 take + 시간 + <b>-ing</b> ❌ / to complete ✓ · 돈이면 <b>cost</b>: It cost me $100.` +
       `</div>` +
       `<br>` +
       `⭐ <b>구분 요령:</b> 동사 <b>바로 뒤 목적어 자리</b>면 → 명사적. 이미 완전한 문장에 <b>덤으로 붙어</b> "왜?"에 답하면 → 부사적(목적). <b>명사 뒤</b>에 붙으면 → 형용사적.`,
