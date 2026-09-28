@@ -349,7 +349,15 @@ const WORDS_BY_PASSAGE = {
   { word: "outlaw",           pos: "v.",   meaning: "불법화하다, 금지하다 (= ban)",      example: "was outlawed in the 19th century" },
   { word: "criminal",         pos: "n./a.", meaning: "범죄자; 범죄의 (n. crime)",       example: "associated with criminals" },
   { word: "be known for",     pos: "phr.", meaning: "~로 유명하다, 알려져 있다 (≠be known as ~로서 알려지다)", example: "known for their full-body tattoos" },
+  { word: "law",              pos: "n.",   meaning: "법, 법률 (a law against ~ ~을 금지하는 법)", example: "there are no laws against it today" },
+  { word: "against",          pos: "prep.", meaning: "~에 반대하여, ~을 금지하는; ~에 기대어", example: "no laws against it" },
+  { word: "be associated with", pos: "phr.", meaning: "~와 연관되다, ~을 연상시키다 (associate A with B: A를 B와 연관 짓다)", example: "tattoos are strongly associated with criminals" },
+  { word: "particularly",     pos: "ad.",  meaning: "특히 (= especially, in particular)",  example: "particularly the yakuza" },
+  { word: "mafia",            pos: "n.",   meaning: "마피아, 범죄 조직 (the yakuza = 일본 조직폭력단)", example: "the yakuza, or the Japanese mafia" },
+  { word: "full-body",        pos: "a.",   meaning: "전신의, 온몸의 (cf. full-facial 얼굴 전체의)", example: "their full-body tattoos" },
   { word: "complex",          pos: "a.",   meaning: "복잡한 (= complicated, ↔simple)",  example: "the complex design of a tattoo" },
+  { word: "include",          pos: "v.",   meaning: "포함하다 (prep. including ~을 포함하여 · ↔ exclude)", example: "the design usually includes symbols" },
+  { word: "character trait",  pos: "n.",   meaning: "성격 특성, 기질 (character 성격 + trait 특성)", example: "symbols of character traits" },
   { word: "process",          pos: "n.",   meaning: "과정, 절차",                     example: "The process of getting a tattoo is slow." },
   { word: "painful",          pos: "a.",   meaning: "고통스러운, 아픈 (n. pain)",       example: "slow and painful" },
   { word: "complete",         pos: "v./a.", meaning: "완성하다, 끝내다; 완전한",        example: "take two years to complete" },
@@ -4958,6 +4966,112 @@ const ANALYSIS = {
       `📝 <b>해석:</b> "이 문신들은 또한 그 사람이 살면서 이룬 업적을 상징할 수도 있다."`,
     trans: "이러한 문신은 그 사람이 살면서 이룬 업적을 상징하기도 한다.",
   },
+
+  // 지문 4 · 21번째 문장: In Japan, tattooing has been practiced for thousands of years, but was outlawed in the 19th century.
+  "4-21": {
+    form: "1형식 수동태 2개를 but으로 연결 (S + has been p.p. ~, but (S 생략) + was p.p.) · 동명사 주어 tattooing(단수) · 현재완료 수동(계속) vs 과거 수동(특정 과거) · 공통 주어 생략 · the 19th century",
+    tense: "현재완료 수동 (has been practiced) + 단순과거 수동 (was outlawed)",
+    chips: [
+      ["부사구·장소", "In Japan,"],
+      ["주어(S)·동명사", "tattooing"],
+      ["동사(V1)·현재완료 수동", "has been practiced"],
+      ["부사구·기간", "for thousands of years,"],
+      ["접속사·역접", "but"],
+      ["동사(V2)·과거 수동", "was outlawed"],
+      ["부사구·특정 과거", "in the 19th century."],
+    ],
+    structure:
+      `뼈대: [In Japan], <b>tattooing(S)</b> <b>has been practiced(V1)</b> [for thousands of years], <b>but</b> (tattooing) <b>was outlawed(V2)</b> [in the 19th century]. "일본에서 <b>문신은</b> 수천 년 동안 <b>행해져 왔지만</b>, 19세기에 <b>불법화되었다</b>".<br><br>` +
+      `① ⭐⭐ <b>tattooing has</b> (<b>동명사 주어 = 단수</b>) — tattooing = "문신 새기기"라는 한 가지 행위 → 단수 <b>has</b>. 두 번째 동사도 단수 <b>was</b>(were ❌).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subject-agreement','sv-gerund')">📐 동명사 주어는 단수 자세히 →</span><br>` +
+      `② ⭐⭐⭐ <b>has been practiced</b> (<b>현재완료 수동태 · 계속</b>) — have/has been + p.p. = "(지금까지) <b>~되어 왔다</b>". practice = (관습·종교 등을) <b>행하다, 실천하다</b>('연습하다'가 아님!). 문신은 사람이 '행하는' 대상 → 수동. for thousands of years(수천 년 동안) = 계속의 신호. (단어카드: practice / thousands of)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('passive-voice','pv-form')">📐 수동태 공식(완료: has been p.p.) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('present-perfect','pf-uses')">📐 현재완료 계속(for + 기간) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('number-plural','np-hundreds')">📐 thousands of vs three thousand 자세히 →</span><br>` +
+      `③ ⭐⭐⭐ <b>has been practiced ~, but was outlawed in the 19th century</b> (<b>현재완료 vs 단순과거</b>) — 한 문장에 시제 두 개! 앞은 '수천 년 → 지금까지' 이어진 흐름이라 <b>현재완료</b>, 뒤는 <b>in the 19th century</b>라는 <b>콕 집은 과거 시점</b>이 있어서 <b>단순과거</b>. 🚨 명확한 과거 시점 부사(in 1850, yesterday, ~ ago, in the 19th century)는 <b>현재완료와 함께 못 씀</b>: has been outlawed in the 19th century ❌.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('present-perfect','pf-vs-past')">📐 현재완료 vs 단순과거(과거 시점 부사) 자세히 →</span><br>` +
+      `④ ⭐⭐ <b>, but was outlawed</b> (<b>공통 주어 생략 · 동사 병렬</b>) — but 뒤에 주어가 없음 → 앞과 <b>같은 주어(tattooing)</b>라서 생략. [has been practiced ~] but [was outlawed ~]로 <b>동사구끼리</b> 연결. 원래: ~, but <u>it</u> was outlawed. outlaw = out(밖으로) + law(법) → "<b>법 밖으로 내몰다 = 불법화하다</b>"(= ban). 문신이 '금지당한' 쪽이라 수동. (단어카드: outlaw)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">📐 병렬 — 동사구끼리 연결 자세히 →</span><br>` +
+      `⑤ ⭐ <b>in the 19th century</b> (<b>세기 표현</b>) — "<b>19세기에</b>" = 1800년대(1800~1899). 서수(19th)라 <b>the</b> 필수, 기간이라 전치사 <b>in</b>. 🚨 세기 = 앞 두 자리 + 1 (18xx년 → 19세기). (단어카드: century)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('era-expression','ee-decade')">📐 연대·세기 표현(the 1800s = the 19th century) 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 문신이 정체성·업적을 드러내는 <b>긍정적</b> 사례들 뒤에, <b>but</b>으로 방향을 틀어 <b>일본</b>의 경우를 꺼냄 — 긴 역사가 있지만 한때 <b>불법</b>이었다. 이어서 오늘날 일본에서 문신이 갖는 <b>부정적 이미지</b>로 연결됨.<br><br>` +
+      `📝 <b>해석:</b> "일본에서 문신은 수천 년 동안 행해져 왔지만, 19세기에 불법화되었다."`,
+    trans: "일본에서도 문신은 수천 년의 역사를 지녔지만, 19세기에 법으로 금지되었다.",
+  },
+
+  // 지문 4 · 22번째 문장: Although there are no laws against it today, tattoos are still strongly associated with criminals—particularly the yakuza, or the Japanese mafia, who are known for their full-body tattoos.
+  "4-22": {
+    form: "양보절 Although + 주절 (1형식 수동태 be associated with) · There are + 복수명사(no laws) · against = ~을 금지하는 · 부사 still strongly · 대시(—) 부연 particularly ~ · 콤마 + or = 즉(동격) · 계속적 용법 , who · be known for",
+    tense: "단순 현재 (+ 수동태 · 오늘날의 인식)",
+    chips: [
+      ["양보 접속사", "Although"],
+      ["유도부사 there·동사", "there are"],
+      ["주어(s)·전치사구", "no laws against it"],
+      ["부사(시간)", "today,"],
+      ["주어(S)", "tattoos"],
+      ["동사(V)·수동 + 부사", "are still strongly associated"],
+      ["전치사구(with)", "with criminals"],
+      ["대시·부연(특히)", "—particularly the yakuza,"],
+      ["동격의 or(즉)", "or the Japanese mafia,"],
+      ["계속적 관계사절", "who are known for their full-body tattoos."],
+    ],
+    structure:
+      `뼈대: [<b>Although</b> there are no laws against it today], <b>tattoos(S) + are (still strongly) associated(V)</b> with criminals<b>—</b>particularly the yakuza, <b>or</b> the Japanese mafia, <b>who</b> are known for their full-body tattoos. "오늘날 문신을 금지하는 법은 없<b>지만</b>, <b>문신은</b> 여전히 범죄자들과 <b>강하게 연관되어 있다</b> — 특히 전신 문신으로 유명한 야쿠자, <b>즉</b> 일본 마피아와".<br><br>` +
+      `① ⭐⭐⭐ <b>Although ~, tattoos are ~</b> (<b>양보 접속사</b>) — "<b>비록 ~이지만</b>". Although는 <b>접속사</b> → 뒤에 주어 + 동사(there are ~). 🚨 Although ~, <b>but</b> tattoos ~ ❌(접속사 중복) · <b>Despite</b> there are ~ ❌(despite는 전치사 → 명사만: Despite the absence of laws ✓).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('concession','cn-conj')">📐 양보 접속사 although·even though 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('concession','cn-prep')">📐 despite·in spite of(+명사)와 구별 →</span><br>` +
+      `② ⭐⭐ <b>there are no laws against it</b> (<b>There + be + 주어</b>) — there는 해석 안 하는 유도부사, <b>진짜 주어는 be 뒤의 no laws</b>(복수) → <b>are</b>(is ❌). <b>against</b> = "<b>~에 반대하는, ~을 금지하는</b>" → laws against it = 그것(문신)을 <b>금지하는</b> 법. <b>it</b> = 앞에서 말한 tattooing(문신 새기기). (단어카드: law / against)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subject-agreement','sv-modifier')">📐 수일치 — 진짜 주어 찾기 자세히 →</span><br>` +
+      `③ ⭐⭐⭐ <b>are still strongly associated with criminals</b> (<b>be associated with = ~와 연관되다</b>) — 능동 associate A <b>with</b> B(A를 B와 연관 짓다)의 수동태 → A be associated <b>with</b> B. 사람들이 문신을 범죄자와 '연관 짓는' 것이라 문신 입장에선 수동. 전치사는 <b>by가 아니라 with</b>로 짝지어 외우기. (단어카드: be associated with / criminal)<br>` +
+      `&nbsp;&nbsp;• <b>still strongly</b>: 부사 두 개가 be와 p.p. 사이에 끼어듦. still = <b>(법은 없어졌는데도) 여전히</b>, strongly = <b>강하게</b>. Although절과 still이 호응 → "법적으론 문제없지만 <b>이미지는 여전히</b> 나쁘다".<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('passive-preposition','ps-with')">📐 by 대신 with를 쓰는 수동태(be associated with) 자세히 →</span><br>` +
+      `④ ⭐⭐ <b>—particularly the yakuza</b> (<b>대시 부연 · 특히</b>) — 대시 뒤에서 criminals를 <b>콕 집어</b> 구체화: "범죄자들 — <b>특히</b> 야쿠자". particularly = especially = in particular. the yakuza는 criminals의 한 예라 앞의 with에 똑같이 걸림(associated with ~ the yakuza). (단어카드: particularly)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('punctuation','pn-dash')">📐 대시(—) 문장 끝 덧붙이기 자세히 →</span><br>` +
+      `⑤ ⭐⭐⭐ <b>the yakuza, or the Japanese mafia</b> (<b>동격의 or = 즉</b>) — 여기 or는 '또는'이 아니라 "<b>즉, 다시 말해</b>". 야쿠자라는 낯선 일본어를 영어권 독자에게 <b>'일본 마피아'로 풀어 주는</b> 말. 야쿠자 ≠ 다른 선택지 → 같은 대상. 🚨 '야쿠자 또는 일본 마피아'로 해석하면 두 조직이 따로 있는 것처럼 오역. (단어카드: mafia)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('punctuation','pn-or')">📐 콤마 + or = 즉(동격) 판별법 →</span><br>` +
+      `⑥ ⭐⭐⭐ <b>, who are known for their full-body tattoos</b> (<b>계속적 용법 · be known for</b>) — 콤마 + who = "<b>그런데 그들은</b> ~". 선행사 = <b>the yakuza</b>(= 야쿠자 조직원들, 사람들 → who, 복수 취급 → <b>are</b>). 콤마가 있으니 '어떤 야쿠자인지' 좁히는 게 아니라 야쿠자에 대한 정보를 <b>덧붙이는</b> 것. 🚨 , that ❌(that은 계속적 용법 불가).<br>` +
+      `&nbsp;&nbsp;• <b>be known for</b> = "<b>~로 유명하다</b>"(이유·특징) ≠ be known <b>as</b>(~로서 알려지다, 자격) ≠ be known <b>to</b>(~에게 알려지다, 대상). <b>full-body tattoos</b> = 전신 문신(full-body 복합형용사). (단어카드: be known for / full-body)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('relative-nonrestrictive','rn-comma')">📐 계속적 용법(콤마 + who/which) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('passive-preposition','ps-other')">📐 be known for / as / to 구별 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> "19세기에 불법화됐다" → Although로 "지금은 불법이 아니다"라고 인정한 뒤, 주절에서 <b>그런데도 여전히</b> 범죄 이미지가 강하다고 반전. 그 대표 예가 전신 문신으로 유명한 <b>야쿠자</b>. 다음엔 야쿠자 문신의 <b>디자인</b> 이야기로 이어짐.<br><br>` +
+      `📝 <b>해석:</b> "오늘날 문신을 금지하는 법은 없지만, 문신은 여전히 범죄자들, 특히 전신 문신으로 유명한 야쿠자, 즉 일본 마피아와 강하게 연관되어 있다."`,
+    trans: "지금은 문신을 금하는 법이 없는데도, 일본에서 문신은 여전히 범죄자, 특히 전신 문신으로 이름난 일본의 조직폭력단 야쿠자를 강하게 떠올리게 한다.",
+  },
+
+  // 지문 4 · 23번째 문장: The complex design of a yakuza member's tattoo usually includes symbols of character traits that the wearer wants to have.
+  "4-23": {
+    form: "3형식 (S + V + O) · 긴 주어 The complex design(단수) + of 수식어 · 명사 수식 명사 yakuza member · 소유격 a ~'s · 빈도부사 usually 위치 · 3인칭 단수 includes · 목적격 관계대명사 that(have의 목적어) · want + to V(명사적 용법)",
+    tense: "단순 현재 (일반적 사실 · usually)",
+    chips: [
+      ["주어(S)", "The complex design"],
+      ["of 수식어·소유격", "of a yakuza member's tattoo"],
+      ["빈도부사", "usually"],
+      ["동사(V)·3인칭 단수", "includes"],
+      ["목적어(O)", "symbols"],
+      ["of 수식어(내용)", "of character traits"],
+      ["목적격 관계대명사", "that"],
+      ["관계사절(s+v)", "the wearer wants"],
+      ["to부정사·명사적(목적어)", "to have."],
+    ],
+    structure:
+      `뼈대: <b>The complex design(S)</b> [of a yakuza member's tattoo] <b>+ (usually) includes(V) + symbols(O)</b> [of character traits] [<b>that</b> the wearer wants to have __]. "야쿠자 조직원 문신의 <b>복잡한 디자인은</b> 보통 문신을 지닌 사람이 갖고 싶어 하는 성격 특성의 <b>상징들을 포함한다</b>".<br><br>` +
+      `① ⭐⭐⭐ <b>The complex design ~ includes</b> (<b>수식어 걷어내고 주어 찾기</b>) — 주어 알맹이는 <b>design</b>(단수). of a yakuza member's tattoo는 괄호 → 동사는 <b>includes</b>(단수 -s). 🚨 동사 앞 명사 tattoo·member도 단수라 여기선 티가 안 나지만, 시험에선 of 뒤를 복수(of yakuza members' tattoos)로 바꿔 <b>include</b>로 낚음 → 무조건 <b>design</b>에 맞춤. complex = 복잡한(= complicated). (단어카드: complex / design / include)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subject-agreement','sv-modifier')">📐 수식어(of ~) 걷어내고 주어 찾기 →</span><br>` +
+      `② ⭐⭐ <b>a yakuza member's tattoo</b> (<b>명사 + 명사 · 소유격</b>) — <b>yakuza</b>(명사)가 member 앞에서 <b>형용사처럼</b> "야쿠자 조직원"으로 꾸밈. 소유격 <b>'s</b>는 덩어리 <b>a yakuza member</b> 전체에 붙음 → "(한) 야쿠자 조직원<b>의</b> 문신". 관사 a는 tattoo가 아니라 <b>member</b>에 걸림(a member).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('of-types','of-possess')">📐 소유 표현('s · of) 자세히 →</span><br>` +
+      `③ ⭐⭐ <b>usually includes</b> (<b>빈도부사 위치</b>) — usually·always·often·sometimes·never 같은 빈도부사는 <b>일반동사 앞</b>, <b>be동사·조동사 뒤</b>. → usually <b>includes</b> ✓ / includes usually ❌. cf. is usually / can usually. 단순현재 + usually = <b>일반적인 경향</b>(대체로 그렇다).<br>` +
+      `④ ⭐⭐ <b>symbols of character traits</b> (<b>내용의 of</b>) — "<b>성격 특성을 나타내는</b> 상징들". of가 상징이 <b>담고 있는 내용</b>을 알려 줌. <b>character trait</b> = 성격 특성(용기·충성심 등) — 명사 character가 trait를 꾸미는 명사 + 명사. (단어카드: character trait / symbol)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('of-types','of-content')">📐 내용의 of(~을 담은) 자세히 →</span><br>` +
+      `⑤ ⭐⭐⭐ <b>traits that the wearer wants to have __</b> (<b>목적격 관계대명사 that</b>) — that 뒤에 주어(the wearer) + 동사(wants)가 바로 나오고, 맨 끝 <b>have의 목적어 자리가 비어</b> 있음 → 목적격. 빈자리를 채우면: the wearer wants to have <u>character traits</u>. 🚨 선행사는 symbols가 아니라 <b>(character) traits</b> — 사람이 갖고 싶은 건 '상징'이 아니라 '<b>성격 특성</b>'. 목적격이라 <b>생략 가능</b>: traits (that) the wearer wants to have.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('relative-pronoun','rp-incomplete')">📐 관계사 뒤 불완전한 절(빈자리 찾기) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('relative-pronoun','rp-object-omit')">📐 목적격 관계대명사 생략 자세히 →</span><br>` +
+      `⑥ ⭐⭐ <b>wants to have</b> (<b>want + to V · 명사적 용법</b>) — to have가 want의 <b>목적어</b> = "<b>갖기를</b> 원하다". 🚨 want는 to부정사만 목적어로: wants having ❌. 주어 the wearer(단수) → want<b>s</b>. <b>the wearer</b> = 그 문신을 지닌 사람(= 앞의 a yakuza member). (단어카드: wearer)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-noun')">📐 to부정사 명사적 용법(want + to V) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('gerund-vs-infinitive','gi-remember')">📐 to V만 / -ing만 목적어로 받는 동사 →</span><br>` +
+      `💡 <b>흐름:</b> 야쿠자 = 전신 문신 → 그 문신의 <b>디자인이 무엇을 담는지</b>로 확대. 문신 속 상징은 이미 가진 것보다 <b>갖고 싶은(wants to have)</b> 성격을 표현한다는 점이 포인트. 이어서 전신 문신을 새기는 <b>과정</b>(느리고 고통스러움)이 나옴.<br><br>` +
+      `📝 <b>해석:</b> "야쿠자 조직원 문신의 복잡한 디자인에는 보통 문신을 지닌 사람이 갖고 싶어 하는 성격 특성의 상징들이 들어 있다."`,
+    trans: "야쿠자 조직원이 새기는 복잡한 문신 도안에는 대개 본인이 지니고 싶은 성품을 상징하는 문양들이 담겨 있다.",
+  },
 };
 
 /* ---------- 문법 정리 (공부한 내용 채우기) ----------
@@ -5273,6 +5387,13 @@ const GRAMMAR = [
       `<b>🔗 세미콜론 ; — 접속사 없이 밀접한 두 완전한 문장을 연결</b><br>` +
       `and/but 같은 접속사 대신 씀. 마침표(.)보다 약하고 쉼표(,)보다 강함. <b>양쪽 모두 완전한 문장</b>이어야 함.<br>` +
       `예) I practiced all night<b>;</b> my fingers hurt so much.` +
+      `</div>` +
+      `<div id="pn-or" class="g-sub">` +
+      `<b>🔁 콤마 + or = "즉, 다시 말해" (동격의 or)</b><br>` +
+      `or가 늘 '또는(선택)'은 아님. <b>A, or B</b>에서 B가 A를 <b>쉽게 풀어 준 같은 대상</b>이면 "<b>A, 즉 B</b>".<br>` +
+      `&nbsp;&nbsp;• the <b>yakuza, or the Japanese mafia</b> = 야쿠자, <b>즉</b> 일본 마피아 (야쿠자 = 일본 마피아, 둘 중 고르는 게 아님)<br>` +
+      `&nbsp;&nbsp;• <b>botany, or the study of plants</b> = 식물학, 즉 식물 연구<br>` +
+      `🔎 <b>판별법:</b> B가 A의 <b>뜻풀이·다른 이름</b>이면 동격(즉), A와 B가 <b>서로 다른 선택지</b>면 '또는'. 낯선 용어·외래어 뒤에 자주 나옴 → 독해 때 단어 뜻을 알려 주는 힌트!` +
       `</div>`,
     eg: [
       ["엠 대시 —  ·  확성기 (강조·반전)", "My best friend —the one who hates sports— came to my match.", "내 베프가 —참고로 걔 스포츠 극혐인데— 내 경기에 왔어."],
@@ -6113,7 +6234,7 @@ const GRAMMAR = [
       `꼴은 <b>be + p.p.</b>(수동태)지만 '누가 했느냐'보다 <b>상태·감정</b>을 말하는 표현들은 <b>by 대신 다른 전치사</b>와 짝지어 외움.<br><br>` +
       `<div id="ps-with" class="g-sub">` +
       `<b>① with — "~로" (채움·덮음)</b><br>` +
-      `&nbsp;&nbsp;• <b>be packed with</b> ~로 가득 차다 · <b>be filled with</b> ~로 가득 차다 · <b>be covered with</b> ~로 덮여 있다 · <b>be crowded with</b> ~로 붐비다 · <b>be satisfied with</b> ~에 만족하다` +
+      `&nbsp;&nbsp;• <b>be packed with</b> ~로 가득 차다 · <b>be filled with</b> ~로 가득 차다 · <b>be covered with</b> ~로 덮여 있다 · <b>be crowded with</b> ~로 붐비다 · <b>be satisfied with</b> ~에 만족하다 · <b>be associated with</b> ~와 연관되다(associate A with B의 수동)` +
       `</div>` +
       `<div id="ps-other" class="g-sub">` +
       `<b>② 그 밖의 짝</b><br>` +
