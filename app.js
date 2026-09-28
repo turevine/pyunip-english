@@ -266,6 +266,13 @@ function atLoad(){
 function atPersist(){
   try{ localStorage.setItem(AT_KEY, JSON.stringify(atLog)); atStorageOK = true; }
   catch(e){ atStorageOK = false; }
+  atRequestPersist();
+}
+// Safari(ITP)는 한동안 안 연 사이트의 localStorage를 지울 수 있음 → '지우지 말아 달라'고 요청 (허용 여부는 브라우저가 결정)
+function atRequestPersist(){
+  try{
+    if(navigator.storage && navigator.storage.persist) navigator.storage.persisted().then(ok=>{ if(!ok) navigator.storage.persist(); });
+  }catch(e){}
 }
 function atDone(){   // 플랜 시작일 이후 기록만 (target이 시작일 기준 남은 문장 수라서)
   return Object.entries(atLog).reduce((s,[d,n])=> d>=STUDY_PLAN.start ? s+n : s, 0);
@@ -422,4 +429,5 @@ renderPassageList();
 renderAnPassageList();
 renderGrammar();
 atLoad();
+atRequestPersist();
 atOpen();
