@@ -334,10 +334,17 @@ const WORDS_BY_PASSAGE = {
   { word: "tattoo",           pos: "n./v.", meaning: "문신; 문신을 새기다 (n. tattooing 문신 새기기)", example: "Tattooing has been carried out ~" },
   { word: "carry out",        pos: "phr.", meaning: "수행하다, 실시하다, 이행하다",     example: "Tattooing has been carried out for thousands of years." },
   { word: "thousands of",     pos: "phr.", meaning: "수천의, 수많은 (막연한 수; ≠ three thousand 정확한 수, -s 없음)", example: "for thousands of years" },
+  { word: "leader",           pos: "n.",   meaning: "지도자, 우두머리 (v. lead 이끌다 · n. leadership 지도력)", example: "Leaders in places including ancient Egypt" },
+  { word: "including",        pos: "prep.", meaning: "~을 포함하여 (-ing 모양이지만 전치사 → 뒤에 명사; ↔ excluding)", example: "places including ancient Egypt, Britain, and Peru" },
   { word: "bravery",          pos: "n.",   meaning: "용감함, 용기 (a. brave)",         example: "to mark their status or bravery" },
+  { word: "as well as",       pos: "phr.", meaning: "~뿐만 아니라 …도 (A as well as B: 같은 모양끼리 연결, 주어면 동사는 A에 맞춤)", example: "among the Maori people as well as in cultures in Samoa" },
+  { word: "full-facial",      pos: "a.",   meaning: "얼굴 전체의 (full 전체의 + facial 얼굴의; cf. full-body 전신의)", example: "full-facial tattoos" },
+  { word: "be used to V",     pos: "phr.", meaning: "~하는 데 사용되다 (≠ used to V ~하곤 했다 / be used to -ing ~에 익숙하다)", example: "tattoos are still used to identify the wearer" },
+  { word: "certain",          pos: "a.",   meaning: "①(a certain + 명사) 어떤, 특정한 ②(be certain) 확실한", example: "a member of a certain family" },
   { word: "identify",         pos: "v.",   meaning: "확인하다, 식별하다; (identify A as B) A를 B로 규정하다", example: "identify the wearer as a family member" },
   { word: "wearer",           pos: "n.",   meaning: "착용자, (문신 등을) 지닌 사람 (wear+er)", example: "identify the wearer" },
   { word: "symbolize",        pos: "v.",   meaning: "상징하다, 나타내다 (n. symbol)",   example: "tattoos symbolize achievements" },
+  { word: "achievement",      pos: "n.",   meaning: "업적, 성취 (v. achieve 이루다, 성취하다)", example: "the person's achievements in life" },
   { word: "practice",         pos: "v.",   meaning: "(관습을) 행하다, 실천하다; 연습하다", example: "tattooing has been practiced for thousands of years" },
   { word: "outlaw",           pos: "v.",   meaning: "불법화하다, 금지하다 (= ban)",      example: "was outlawed in the 19th century" },
   { word: "criminal",         pos: "n./a.", meaning: "범죄자; 범죄의 (n. crime)",       example: "associated with criminals" },
@@ -4842,6 +4849,115 @@ const ANALYSIS = {
       `📝 <b>해석:</b> "예를 들어, 문신 새기기는 수천 년 동안 행해져 왔다."`,
     trans: "예를 들어 문신은 수천 년 동안 행해져 왔다.",
   },
+
+  // 지문 4 · 18번째 문장: Leaders in places including ancient Egypt, Britain, and Peru wore tattoos to mark their status, or their bravery.
+  "4-18": {
+    form: "3형식 (S + V + O) + 부사적 to부정사(목적) · 긴 주어(전치사구 in places + including 후치수식) · 전치사 including · A, B, and C 병렬 · 단순과거 wore(불규칙) · 콤마 + or 덧붙임",
+    tense: "단순 과거 (고대 지도자들의 과거 관습)",
+    chips: [
+      ["주어(S)", "Leaders"],
+      ["전치사구·후치수식", "in places"],
+      ["전치사 including·병렬", "including ancient Egypt, Britain, and Peru"],
+      ["동사(V)·과거", "wore"],
+      ["목적어(O)", "tattoos"],
+      ["to부정사·부사적(목적)", "to mark their status,"],
+      ["덧붙임·or", "or their bravery."],
+    ],
+    structure:
+      `뼈대: <b>Leaders(S)</b> [in places including ancient Egypt, Britain, and Peru] <b>+ wore(V) + tattoos(O)</b> (<b>to mark</b> their status, or their bravery). "고대 이집트, 영국, 페루를 포함한 지역의 <b>지도자들은</b> 자신의 지위, 혹은 용맹함을 <b>표시하기 위해</b> <b>문신을 했다</b>".<br><br>` +
+      `① ⭐⭐ <b>Leaders [in places including ~ Peru]</b> (<b>긴 주어 · 수식어 걷어내기</b>) — 주어 알맹이는 <b>Leaders</b> 한 단어. in places(~ 지역의)가 Leaders를 뒤에서 꾸미고, including ~ Peru가 다시 places를 꾸미는 <b>이중 후치수식</b>. 괄호 치면 Leaders <b>wore</b> tattoos만 남음. 🚨 동사 바로 앞 명사 <b>Peru</b>를 주어로 착각 금지.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subject-agreement','sv-modifier')">📐 수식어 걷어내고 주어 찾기 →</span><br>` +
+      `② ⭐⭐ <b>including</b> (<b>전치사</b>) — "<b>~을 포함하여</b>". 모양은 -ing지만 사전에 <b>전치사</b>로 올라간 단어 → 뒤에 명사(구)만 옴. places including ~ = "~을 포함한 지역들". 반대말 <b>excluding</b>(~을 제외하고). (단어카드: including)<br>` +
+      `③ ⭐ <b>ancient Egypt, Britain, and Peru</b> (<b>A, B, and C 병렬</b>) — 셋 다 고유명사(나라 이름)라 병렬 OK. <b>ancient</b>는 셋 모두에 걸림("고대의 이집트·영국·페루"). 나라 이름은 무관사. (단어카드: ancient)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-list')">📐 A, B, and C 나열 규칙 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('articles','ar-zero')">📐 고유명사 무관사 자세히 →</span><br>` +
+      `④ ⭐ <b>wore tattoos</b> (<b>단순과거 · wear 불규칙</b>) — wear-<b>wore</b>-worn. <b>wear a tattoo</b> = "문신을 하고 있다"(옷·화장·가발처럼 몸에 '지니고 있음'에도 wear). 고대(ancient)의 끝난 일이라 현재완료 ❌ → 단순과거. (단어카드: wear / tattoo)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('present-perfect','pf-vs-past')">📐 현재완료 vs 단순과거 자세히 →</span><br>` +
+      `⑤ ⭐⭐⭐ <b>to mark their status</b> (<b>부사적 용법 · 목적</b>) — "<b>지위를 표시하기 위해</b>". mark = 표시하다, their = <b>Leaders의</b>. (단어카드: mark / status)<br>` +
+      `&nbsp;&nbsp;🤔 <b>"tattoos를 꾸미는 형용사적 용법(지위를 표시하는 문신)으로 봐도 되지 않나?"</b> — 좋은 의심! 명사 tattoos 바로 뒤에 붙어 있어서 겉모양만으론 둘 다 가능. 뜻도 거의 같아서 형용사적으로 읽는다고 해석이 틀어지진 않음. 그래도 <b>부사적(목적)이 기본 해석</b>인 이유 4가지:<br>` +
+      `&nbsp;&nbsp;❶ <b>in order to 넣기 테스트</b> — wore tattoos <b>in order to</b> mark their status ✓ 자연스러움 → 목적. (형용사적이면 in order to가 안 들어감: something <s>in order</s> to eat ❌)<br>` +
+      `&nbsp;&nbsp;❷ <b>문장 맨 앞으로 옮기기 테스트</b> — <b>To mark their status</b>, leaders wore tattoos. ✓ 뜻 그대로 → 부사. 형용사적 to부정사는 명사에 딱 붙어 있어야 해서 <b>떼어 옮기면 깨짐</b>: <s>To eat</s>, I want something ❌.<br>` +
+      `&nbsp;&nbsp;❸ <b>형용사적 용법의 전형 패턴이 아님</b> — 형용사적 to부정사는 보통 (a) 명사가 to V의 <b>목적어</b>(something to eat = eat <b>something</b>) 이거나 (b) ability·chance·way·time 같은 <b>추상명사</b>의 내용(a chance to win)일 때. 그런데 mark의 목적어는 their status이지 tattoos가 아님(mark tattoos ❌), tattoos는 추상명사도 아님 → 형용사적으로 볼 근거가 약함.<br>` +
+      `&nbsp;&nbsp;❹ <b>문맥 — '왜?'에 답하는 문장</b> — 소제목이 Identity and Status(정체성과 지위). 이 글은 사람들이 <b>왜</b> 피부에 표시를 했는지(목적)를 말하는 중. "<b>무슨</b> 문신을 했나?"(종류)보다 "지도자들이 <b>왜</b> 문신을 했나?"(이유·목적)가 핵심 → mark의 의미상 주어도 <b>Leaders</b>(지도자들이 자기 지위를 표시함 — their = Leaders').<br>` +
+      `&nbsp;&nbsp;👉 결론: 시험에서 <b>완전한 문장(S+V+O) 뒤에 덤으로 붙어 '왜?'에 답하는 to V</b>는 부사적(목적)으로 잡는 게 정석. 형용사적 해석은 "틀린 건 아니지만 덜 자연스러운 읽기".<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-vs')">📐 형용사적 vs 부사적 헷갈릴 때 판별법 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-adverb')">📐 to부정사 부사적 용법(목적) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-adj')">📐 to부정사 형용사적 용법 자세히 →</span><br>` +
+      `⑥ ⭐ <b>, or their bravery</b> (<b>콤마 + or 덧붙임</b>) — mark의 목적어가 their status <b>or</b> their bravery 두 개. 콤마를 찍어 "혹은 (전사라면) 용맹함을" 하고 <b>한 박자 쉬고 덧붙이는</b> 느낌. their를 반복해 둘 다 '지도자들의' 것임을 분명히 함. bravery = 용감함(a. brave). (단어카드: bravery)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">📐 병렬(명사 or 명사) 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> "문신은 수천 년 역사"라는 말의 <b>구체적 증거</b> — 고대 세 지역의 <b>지도자들</b>이 지위·용맹의 표시로 문신을 했다. 소제목의 <b>Status(지위)</b>에 해당하는 사례. 이어서 오늘날에도 남아 있는 문신 문화(뉴질랜드 마오리족 등)로 넘어감.<br><br>` +
+      `📝 <b>해석:</b> "고대 이집트, 영국, 페루를 포함한 지역의 지도자들은 자신의 지위, 혹은 용맹함을 표시하기 위해 문신을 했다."`,
+    trans: "고대 이집트와 영국, 페루 등지의 지도자들은 자신의 신분이나 용맹함을 드러내려고 문신을 새겼다.",
+  },
+
+  // 지문 4 · 19번째 문장: Today, among the Maori people of New Zealand as well as in cultures in Samoa, Tahiti, and Borneo, full-facial tattoos are still used to identify the wearer as a member of a certain family.
+  "4-19": {
+    form: "1형식 수동태 (S + are used) + 부사적 to부정사(목적) · be used to V(~하는 데 사용되다) · 문두 부사구 Today + 긴 장소 부사구(among ~ as well as in ~) · A as well as B 병렬(전치사구끼리) · 복합형용사 full-facial · identify A as B(as 자격) · a certain(어떤 특정한)",
+    tense: "단순 현재 수동 (+ still: 오늘날에도 여전히)",
+    chips: [
+      ["부사(시간)", "Today,"],
+      ["부사구·장소 A", "among the Maori people of New Zealand"],
+      ["as well as", "as well as"],
+      ["부사구·장소 B", "in cultures in Samoa, Tahiti, and Borneo,"],
+      ["주어(S)·복합형용사", "full-facial tattoos"],
+      ["동사(V)·현재 수동", "are still used"],
+      ["to부정사·부사적(목적)", "to identify"],
+      ["목적어(o)", "the wearer"],
+      ["as·자격 (A as B)", "as a member of a certain family."],
+    ],
+    structure:
+      `뼈대: [Today], [among ~ New Zealand <b>as well as</b> in ~ Borneo], <b>full-facial tattoos(S) + are (still) used(V)</b> (<b>to identify</b> the wearer <b>as</b> a member of a certain family). "오늘날 뉴질랜드의 마오리족 사이에서뿐만 아니라 사모아, 타히티, 보르네오의 문화에서도, <b>얼굴 전체 문신은</b> 착용자를 특정 가문의 일원으로 <b>식별하는 데</b> 여전히 <b>사용된다</b>".<br><br>` +
+      `① ⭐⭐ <b>Today, among ~ Borneo,</b> (<b>문두 부사구 → 주어는 콤마 뒤</b>) — 시간(Today) + 장소(among ~ / in ~)가 길게 앞에 나와서 주어가 한참 뒤에 등장. 부사구는 전부 괄호 → 두 번째 콤마 뒤 <b>full-facial tattoos</b>가 진짜 주어. 🚨 Borneo·cultures·people에 낚여 주어로 잡으면 안 됨. among = (무리) 사이에서. (단어카드: among)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subject-agreement','sv-modifier')">📐 수식어 걷어내고 주어 찾기 →</span><br>` +
+      `② ⭐⭐⭐ <b>among A as well as in B</b> (<b>A as well as B · 전치사구 병렬</b>) — "<b>A뿐만 아니라 B에서도</b>". 연결되는 두 덩어리가 <b>전치사구 ↔ 전치사구</b>로 모양이 같음: [<b>among</b> the Maori people ~] as well as [<b>in</b> cultures ~]. 전치사가 다른 이유: 민족(사람들)은 '<b>~ 사이에서</b>'(among), 문화는 '<b>~ 안에서</b>'(in). (단어카드: as well as)<br>` +
+      `&nbsp;&nbsp;• 🚨 A as well as B가 <b>주어</b>로 오면 동사는 <b>A</b>에 맞춤(B 아님) — 여기선 부사구라 수일치 무관.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">📐 병렬 — 같은 모양끼리 연결 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subject-agreement','sv-and')">📐 A as well as B의 수일치(A에 맞춤) 자세히 →</span><br>` +
+      `③ ⭐ <b>the Maori people of New Zealand</b> — "<b>뉴질랜드의 마오리족</b>". people = 민족(a people 한 민족 / peoples 여러 민족). the + 민족 이름 + people. <b>Samoa, Tahiti, and Borneo</b>는 A, B, and C 나열(태평양·동남아 섬들).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-list')">📐 A, B, and C 나열 자세히 →</span><br>` +
+      `④ ⭐⭐ <b>full-facial tattoos</b> (<b>복합형용사</b>) — full(전체의) + facial(얼굴의, face의 형용사)을 <b>하이픈</b>으로 묶어 한 형용사로 → "<b>얼굴 전체에 새긴</b> 문신". 복수 tattoos라 뒤 동사 <b>are</b>. cf. full-body tattoo(전신 문신). 🚨 dark-skinned처럼 <b>명사 + -ed</b>로 만드는 복합형용사와는 다른 꼴 — 여기는 facial 자체가 이미 형용사라 -ed 불필요. (단어카드: full-facial)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('word-suffix','ws-ed')">📐 비교: 명사 + -ed 복합형용사(dark-skinned) →</span><br>` +
+      `⑤ ⭐⭐⭐ <b>are still used to identify</b> (<b>be used to + 동사원형 = ~하는 데 사용되다</b>) — use(사용하다)의 <b>수동태</b>(are used) + <b>목적의 to부정사</b>(to identify). 능동으로 돌리면: People still <b>use</b> full-facial tattoos <b>to identify</b> ~. 문신은 사람이 '사용하는' 대상 → 수동. still = 여전히(옛날뿐 아니라 <b>오늘날에도</b>).<br>` +
+      `&nbsp;&nbsp;• 🚨 <b>used to 3형제 함정</b>: be동사(are) 있음 + to 뒤 <b>동사원형</b>(identify) → ② '<b>~하는 데 사용되다</b>'. ① used to V(~하곤 했다)는 be동사 없음, ③ be used to <b>-ing</b>(~에 익숙하다)는 to 뒤 -ing. → are used to identify<b>ing</b>이면 "식별하는 데 익숙하다"라는 엉뚱한 뜻.<br>` +
+      `&nbsp;&nbsp;• 여기 to identify도 <b>부사적(목적)</b>: "무엇을 위해 사용되나?"에 답함. in order to 넣어도 ✓.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('used-to','ut-three')">📐 used to 3형제 구별 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('passive-voice','pv-form')">📐 수동태 공식(be + p.p.) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-adverb')">📐 to부정사 부사적 용법(목적) 자세히 →</span><br>` +
+      `⑥ ⭐⭐⭐ <b>identify the wearer as a member ~</b> (<b>identify A as B = A를 B로 확인·규정하다</b>) — 여기 <b>as</b>는 전치사 '<b>~로서</b>'(자격). A = the wearer, B = a member of a certain family → the wearer = a member(A = B 관계). 같은 틀: regard/see/view/describe/define <b>A as B</b>(A를 B로 여기다·묘사하다). 🚨 identify A <b>to</b> B ❌ / identify A <b>for</b> B ❌. (단어카드: identify)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('as-roles','as-role')">📐 as = ~로서(자격) 자세히 →</span><br>` +
+      `⑦ ⭐ <b>the wearer</b> — wear(착용하다) + -er(~하는 사람) = "(그 문신을) <b>지닌 사람</b>". 앞의 tattoos를 몸에 새긴 사람이라 정해진 대상 → <b>the</b>. (단어카드: wearer)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('articles','ar-the')">📐 정해진 대상의 the 자세히 →</span><br>` +
+      `⑧ ⭐⭐ <b>a certain family</b> (<b>a certain = 어떤 특정한</b>) — 명사 앞 <b>a certain</b> = "(굳이 이름은 안 밝히지만) <b>어떤 특정한</b>". 🚨 be certain(확실한)과 구별: I'm certain. = 나는 확신한다. 위치로 가름 — <b>명사 앞</b>이면 '어떤', <b>be동사 뒤</b>면 '확실한'. (단어카드: certain)<br>` +
+      `💡 <b>흐름:</b> 고대 지도자들의 문신 → <b>오늘날(Today)</b>에도 <b>여전히(still)</b> 이어지는 문신 문화로 시간 이동. 여기서 문신은 '지위'보다 <b>소속(가문)</b> = 소제목의 <b>Identity(정체성)</b>를 보여 주는 사례.<br><br>` +
+      `📝 <b>해석:</b> "오늘날 뉴질랜드의 마오리족 사이에서뿐만 아니라 사모아, 타히티, 보르네오의 문화에서도, 얼굴 전체에 새긴 문신은 그것을 지닌 사람을 특정 가문의 일원으로 식별하는 데 여전히 사용된다."`,
+    trans: "오늘날 뉴질랜드 마오리족은 물론 사모아, 타히티, 보르네오의 문화에서도 얼굴 전체 문신은 여전히 그 사람이 어느 가문에 속하는지 알려 주는 표시로 쓰인다.",
+  },
+
+  // 지문 4 · 20번째 문장: These tattoos can also symbolize the person's achievements in life.
+  "4-20": {
+    form: "3형식 (S + V + O) · 지시형용사 These + 복수명사 · 조동사 can(~할 수도 있다: 가능성) + 동사원형 · also 위치(조동사 뒤) · 소유격 the person's · 전치사구 in life",
+    tense: "단순 현재 (+ 조동사 can: 가능성)",
+    chips: [
+      ["주어(S)·지시형용사", "These tattoos"],
+      ["조동사·also", "can also"],
+      ["동사(V)·원형", "symbolize"],
+      ["목적어(O)·소유격", "the person's achievements"],
+      ["전치사구", "in life."],
+    ],
+    structure:
+      `뼈대: <b>These tattoos(S) + can (also) symbolize(V) + the person's achievements(O)</b> [in life]. "이 문신들은 또한 그 사람의 <b>인생에서의 업적을</b> <b>상징할 수도 있다</b>".<br><br>` +
+      `① ⭐⭐ <b>These tattoos</b> (<b>지시형용사 + 복수명사</b>) — these는 뒤 명사를 꾸미는 <b>지시형용사</b>. <b>These</b> + 복수(tattoos) / <b>This</b> + 단수(tattoo) — 수 맞추기 필수: These tattoo ❌. 가리키는 대상 = 바로 앞에서 말한 <b>얼굴 전체 문신(full-facial tattoos)</b>. 앞 내용을 받아 문장을 잇는 연결고리.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('articles','ar-the')">📐 앞에 나온 대상 다시 가리키기(the·these) →</span><br>` +
+      `② ⭐⭐⭐ <b>can also symbolize</b> (<b>조동사 can + 동사원형 · also 위치</b>) — can 뒤는 무조건 <b>동사원형</b>: can symbolize<b>s</b> ❌ (주어가 복수든 단수든 원형). 여기 can은 '능력'이 아니라 <b>가능성</b> = "<b>~할 수도 있다</b>, (경우에 따라) ~하기도 한다". also는 <b>조동사 뒤, 본동사 앞</b>(can also V). 일반동사만 있으면 동사 앞(also symbolize), be동사면 뒤(is also). (단어카드: symbolize)<br>` +
+      `&nbsp;&nbsp;• 🚨 also 위치 공식: <b>조동사·be동사 뒤 / 일반동사 앞</b> → Skin is <b>also</b> packed ~ · They <b>also</b> wear ~ · They can <b>also</b> wear ~<br>` +
+      `③ ⭐⭐ <b>the person's achievements</b> (<b>소유격 's</b>) — "<b>그 사람의</b> 업적들". the person = 앞의 <b>the wearer</b>(문신을 지닌 사람)를 바꿔 말한 것 → 이미 정해진 사람이라 <b>the</b>. achievement = 업적, 성취(v. achieve, -ment 명사 어미). 업적이 여러 개라 복수. (단어카드: achievement)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('of-types','of-possess')">📐 소유 표현('s · of) 자세히 →</span><br>` +
+      `④ ⭐ <b>in life</b> — "<b>살면서, 인생에서</b>". achievements를 뒤에서 꾸미는 전치사구(인생에서 이룬 업적). life는 '인생 전반'을 말하는 추상명사라 무관사.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('articles','ar-zero')">📐 추상명사 무관사 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 얼굴 문신의 기능 <b>①</b> 소속(가문) 식별에 이어 <b>also</b>로 기능 <b>②</b> 개인의 <b>업적</b> 상징을 추가. 즉 문신 하나가 "<b>어느 집안 사람인지</b>(정체성)"와 "<b>무엇을 이뤘는지</b>(지위)"를 동시에 보여 줌 → 소제목 Identity and Status를 한 번에 정리. 이다음엔 일본의 문신 이야기로 넘어감.<br><br>` +
+      `📝 <b>해석:</b> "이 문신들은 또한 그 사람이 살면서 이룬 업적을 상징할 수도 있다."`,
+    trans: "이러한 문신은 그 사람이 살면서 이룬 업적을 상징하기도 한다.",
+  },
 };
 
 /* ---------- 문법 정리 (공부한 내용 채우기) ----------
@@ -5195,6 +5311,15 @@ const GRAMMAR = [
       `없어도 문장이 성립하는 <b>수식어</b>. "왜?/무엇을 위해?"에 답하면 <b>목적</b>. (그 밖에 감정의 원인·결과 등도 있음)<br>` +
       `예) ... <b>to play</b> soccer = 축구를 하기 <b>위해</b>. (= in order to play)<br>` +
       `예) I came here <b>to see</b> you. = 너를 보<b>려고</b> 여기 왔다.` +
+      `</div>` +
+      `<div id="ti-vs" class="g-sub">` +
+      `<b>🔍 명사 뒤 to V — 형용사적? 부사적? 헷갈릴 때 판별법</b><br>` +
+      `S + V + <b>명사</b> + to V 꼴이면 to V가 명사를 꾸미는지(형용사적), 문장 전체에 목적을 더하는지(부사적) 겉모양만으론 애매.<br>` +
+      `&nbsp;&nbsp;❶ <b>in order to 넣기</b> — 자연스러우면 <b>부사적(목적)</b>. wore tattoos <b>in order to</b> mark their status ✓<br>` +
+      `&nbsp;&nbsp;❷ <b>문장 맨 앞으로 옮기기</b> — 뜻이 그대로면 <b>부사적</b>. <b>To mark their status</b>, leaders wore tattoos. ✓ / 형용사적은 명사에서 떼면 깨짐: <s>To eat</s>, I want something ❌<br>` +
+      `&nbsp;&nbsp;❸ <b>형용사적 전형 패턴인지</b> — (a) 명사가 to V의 <b>목적어</b>: something to eat(eat something) · a house to live <b>in</b>(live in a house) (b) <b>추상명사</b>의 내용: ability · chance · way · time · decision · effort + to V (c) the first / last / only + 명사 + to V(~한 첫 번째 사람). 여기 해당 안 되면 부사적일 가능성 ↑<br>` +
+      `&nbsp;&nbsp;❹ <b>문맥이 '왜?'를 묻는지</b> — "<b>무슨</b> 명사?"면 형용사적, "<b>왜</b> 그랬나?"면 부사적.<br>` +
+      `&nbsp;&nbsp;💡 둘 다 말이 되는 경우도 많음(뜻 차이 거의 없음). 그땐 <b>완전한 S+V+O 뒤에 덤으로 붙은 to V = 부사적(목적)</b>이 기본값.` +
       `</div>` +
       `<br>` +
       `⭐ <b>구분 요령:</b> 동사 <b>바로 뒤 목적어 자리</b>면 → 명사적. 이미 완전한 문장에 <b>덤으로 붙어</b> "왜?"에 답하면 → 부사적(목적). <b>명사 뒤</b>에 붙으면 → 형용사적.`,
