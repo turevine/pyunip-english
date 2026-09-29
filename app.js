@@ -243,7 +243,7 @@ function gotoGrammar(id, subId){
   }, 350);
 }
 
-// ---- 출석 (하루 목표 문장 수 체크 · 기록은 이 기기 localStorage) ----
+// ---- 출석 (하루 목표 문장 수 체크 · localStorage 캐시 + 비밀코드 동기화) ----
 const AT_KEY = 'pyunip-attendance-v1';
 const WEEKDAY = ['일','월','화','수','목','금','토'];
 let atLog = {};                   // { 'YYYY-MM-DD': 그날 한 문장 수 }
@@ -389,7 +389,8 @@ function atStep(delta){ atCount = Math.max(0, Math.min(99, atCount+delta)); rend
 function atSet(n){ atCount = n; renderAtCheck(); }
 function atSave(){
   if(atCount===0) delete atLog[atSel]; else atLog[atSel] = atCount;
-  atPersist(); renderAttendance();
+  atPersist(); atMarkDirty(); renderAttendance();
+  atPush();
 }
 function atMonth(delta){ atView = new Date(atView.getFullYear(), atView.getMonth()+delta, 1); renderAtCalendar(); }
 // 탭을 열 때마다 호출 — 앱을 켜 둔 채 자정을 넘겼으면 오늘로 다시 맞춤
@@ -402,8 +403,108 @@ function atOpen(){
   } else renderAttendance();
 }
 document.addEventListener('visibilitychange', ()=>{
-  if(!document.hidden && document.getElementById('screen-calendar').classList.contains('active')) atOpen();
+  if(document.hidden) return;
+  atSync();   // 다른 기기에서 체크한 게 있으면 받아옴
+  if(document.getElementById('screen-calendar').classList.contains('active')) atOpen();
 });
+
+// ---- 출석 동기화 (로그인 없이 비밀코드 · /api/attendance → Vercel Redis) ----
+// localStorage는 캐시. 못 올린 변경은 DIRTY로 표시해 두고 다음 동기화 때 올림.
+const AT_CODE = 'pyunip-sync-code';
+const AT_DIRTY = 'pyunip-attendance-dirty';
+const AT_MERGED = 'pyunip-attendance-merged';   // 이 기기가 합치기를 끝낸 코드 (처음 켤 때만 로컬+클라우드 합침)
+let atCode = lsGet(AT_CODE);
+let atSyncState = '';      // '' | 'syncing' | 'ok' | 'error' | 'nostore'
+let atCodeOpen = false;
+let atCodeMsg = '';
+
+function lsGet(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function lsSet(k,v){ try{ v==null ? localStorage.removeItem(k) : localStorage.setItem(k,v); }catch(e){} }
+function atMarkDirty(){ if(atCode) lsSet(AT_DIRTY,'1'); }
+
+async function atApi(method, body){
+  const r = await fetch('/api/attendance', {
+    method, cache:'no-store',
+    headers: { 'x-sync-code': atCode, ...(body ? {'Content-Type':'application/json'} : {}) },
+    body: body ? JSON.stringify(body) : undefined,
+  });
+  if(r.status===503) throw 'nostore';
+  if(!r.ok) throw 'error';
+  return r.json();
+}
+
+async function atPush(){
+  if(!atCode) return;
+  atSyncState = 'syncing'; renderAtAcct();
+  try{ await atApi('PUT', { log: atLog }); atSyncState = 'ok'; lsSet(AT_DIRTY, null); }
+  catch(e){ atSyncState = e==='nostore' ? 'nostore' : 'error'; }
+  renderAtAcct();
+}
+
+async function atSync(){
+  if(!atCode) return;
+  atSyncState = 'syncing'; renderAtAcct();
+  let cloud;
+  try{ cloud = (await atApi('GET')).log; }
+  catch(e){ atSyncState = e==='nostore' ? 'nostore' : 'error'; renderAtAcct(); return; }
+
+  let push = false;
+  if(!cloud){ push = true; }                              // 이 코드로 처음 → 이 기기 기록을 올림
+  else if(lsGet(AT_MERGED) !== atCode){                   // 이 기기에서 처음 켬 → 날짜별 큰 값으로 합침
+    const merged = { ...cloud };
+    for(const [d,n] of Object.entries(atLog)) merged[d] = Math.max(merged[d]||0, n);
+    atLog = merged; push = true;
+  }
+  else if(lsGet(AT_DIRTY)){ atLog = { ...cloud, ...atLog }; push = true; }   // 못 올린 수정 → 이 기기 우선
+  else atLog = cloud;
+
+  atPersist();
+  lsSet(AT_MERGED, atCode);
+  if(push) await atPush(); else { atSyncState = 'ok'; renderAtAcct(); }
+  if(atToday) renderAttendance();
+}
+
+function renderAtAcct(){
+  const el = document.getElementById('at-acct');
+  if(atCode){
+    const st = { syncing:'동기화 중…', ok:'모든 기기와 동기화됨',
+      error:'⚠️ 동기화 실패 — 앱을 다시 열면 재시도해요',
+      nostore:'⚠️ 서버 저장소가 아직 연결 안 됐어요 (Vercel Storage)' }[atSyncState] || '';
+    el.innerHTML = `<div class="acct-row"><span class="acct-ico">☁️</span>
+      <div class="acct-txt"><b>동기화 켜짐</b><span class="${/error|nostore/.test(atSyncState)?'warn':''}">${st}</span></div>
+      <button class="acct-link" onclick="atCodeOff()">끄기</button></div>`;
+    return;
+  }
+  if(!atCodeOpen){
+    el.innerHTML = `<div class="acct-row"><span class="acct-ico">📱</span>
+      <div class="acct-txt"><b>이 기기에만 저장 중</b><span>동기화를 켜면 폰·맥 어디서든 출석이 같이 보여요</span></div>
+      <button class="acct-btn" onclick="atCodeToggle(true)">동기화 켜기</button></div>`;
+    return;
+  }
+  el.innerHTML = `<form class="acct-form" onsubmit="atCodeSubmit(event)">
+      <div class="acct-help">나만 아는 <b>비밀코드</b>를 정해서 넣으세요.<br>다른 기기에도 <b>똑같은 코드</b>를 넣으면 기록이 합쳐져요.</div>
+      <input id="acct-code" type="text" autocomplete="off" autocapitalize="off" spellcheck="false"
+        placeholder="비밀코드 (6자 이상)" minlength="6" maxlength="100" required>
+      <button class="at-btn" type="submit">☁️ 이 코드로 동기화</button>
+      <div class="acct-msg">${atCodeMsg}</div>
+      <button type="button" class="acct-link" onclick="atCodeToggle(false)">닫기</button>
+    </form>`;
+}
+function atCodeToggle(open){ atCodeOpen = open; atCodeMsg = ''; renderAtAcct(); }
+function atCodeSubmit(e){
+  e.preventDefault();
+  const code = document.getElementById('acct-code').value.trim();
+  if(code.length < 6){ atCodeMsg = '6자 이상으로 정해 주세요.'; renderAtAcct(); return; }
+  atCode = code; lsSet(AT_CODE, code);
+  atCodeOpen = false;
+  atSync();
+}
+function atCodeOff(){
+  if(!confirm('이 기기의 동기화를 끌까요? 기록은 이 기기에 그대로 남아요.')) return;
+  atCode = null; atSyncState = '';
+  lsSet(AT_CODE, null); lsSet(AT_MERGED, null); lsSet(AT_DIRTY, null);
+  renderAtAcct();
+}
 
 // ---- 확대 방지 (iOS Safari 대응) ----
 // 핀치 줌 차단
@@ -430,4 +531,6 @@ renderAnPassageList();
 renderGrammar();
 atLoad();
 atRequestPersist();
+renderAtAcct();
 atOpen();
+atSync();

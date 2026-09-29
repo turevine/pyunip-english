@@ -219,3 +219,24 @@ nav.tabbar button{flex:1;background:none;border:none;color:var(--muted);font-siz
   display:flex;flex-direction:column;align-items:center;gap:4px;padding:6px 2px}
 nav.tabbar button .ico{font-size:20px}
 nav.tabbar button.active{color:var(--accent)}
+
+/* ---- 출석 동기화 계정 카드 ---- */
+.at-acct{margin-bottom:12px;padding:12px 14px}
+.acct-row{display:flex;align-items:center;gap:10px}
+.acct-ico{font-size:20px;flex:none}
+.acct-txt{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}
+.acct-txt b{font-size:14px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.acct-txt span{font-size:12px;color:var(--muted);line-height:1.4}
+.acct-txt span.warn{color:var(--warn)}
+.acct-btn{flex:none;padding:8px 14px;border-radius:999px;border:1px solid var(--accent);background:var(--accent);
+  color:#fff;font-size:13px;font-weight:700;cursor:pointer}
+.acct-link{flex:none;background:none;border:none;color:var(--muted);font-size:12px;cursor:pointer;padding:6px;text-decoration:underline}
+.acct-form{display:flex;flex-direction:column;gap:8px}
+.acct-form .acct-link{align-self:center}
+.acct-help{font-size:13px;color:var(--muted);line-height:1.6;text-align:center;margin-bottom:2px}
+.acct-help b{color:var(--text)}
+.acct-form input{width:100%;box-sizing:border-box;padding:12px;border-radius:10px;border:1px solid var(--line);
+  background:var(--surface-2);color:var(--text);font-size:16px}
+.acct-form input:focus{outline:none;border-color:var(--accent)}
+.acct-msg{font-size:12px;color:var(--warn);text-align:center;line-height:1.5;min-height:0}
+.acct-msg:empty{display:none}
