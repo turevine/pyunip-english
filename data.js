@@ -383,6 +383,15 @@ const WORDS_BY_PASSAGE = {
   { word: "permanent",        pos: "a.",   meaning: "영구적인, 영속적인 (↔temporary 일시적인)", example: "Not all skin markings are permanent." },
   { word: "though",          pos: "ad./conj.", meaning: "(문장 끝·중간) 그렇지만 = however; (접속사) 비록 ~이지만", example: "Not all skin markings are permanent, though." },
   { word: "religious",        pos: "a.",   meaning: "종교의, 종교적인 (n. religion)",   example: "important religious holidays" },
+  { word: "such as",         pos: "phr.",  meaning: "~와 같은, 예를 들어 ~ (예시 나열 · = like)", example: "countries such as Morocco and India" },
+  { word: "decorate A with B", pos: "phr.",  meaning: "A를 B로 장식하다 (n. decoration)", example: "decorate their skin with henna designs" },
+  { word: "colorful",        pos: "a.",    meaning: "다채로운, 알록달록한 (color + -ful)", example: "colorful henna designs" },
+  { word: "henna",           pos: "n.",    meaning: "헤나 (식물에서 얻는 붉은 갈색 염료)", example: "colorful henna designs" },
+  { word: "celebration",     pos: "n.",    meaning: "축하, 기념 행사 (v. celebrate)", example: "for celebrations such as weddings" },
+  { word: "wedding",         pos: "n.",    meaning: "결혼식", example: "celebrations such as weddings" },
+  { word: "holiday",         pos: "n.",    meaning: "휴일; 명절, 축일 (religious holiday 종교 명절)", example: "important religious holidays" },
+  { word: "come from",       pos: "phr.",  meaning: "~에서 나오다, ~에서 유래하다 (자동사 · 수동 ❌)", example: "which comes from a plant" },
+  { word: "coloring",        pos: "n.",    meaning: "염료, 색소; 착색 (color + -ing)", example: "The henna coloring fades." },
   { word: "fade",             pos: "v.",   meaning: "바래다, 희미해지다, 서서히 사라지다", example: "The henna fades over time." },
   { word: "disappear",        pos: "v.",   meaning: "사라지다, 없어지다 (↔appear 나타나다)", example: "fades and disappears over time" },
   { word: "over time",        pos: "phr.", meaning: "시간이 지나면서, 시간이 흐르며",   example: "disappears over time" },
@@ -5294,6 +5303,68 @@ const ANALYSIS = {
       `📝 <b>해석:</b> "하지만 모든 피부 표시가 영구적인 것은 아니다."`,
     trans: "그렇다고 피부에 남기는 표시가 모두 평생 가는 것은 아니다.",
   },
+
+  // 지문 4 · 30번째 문장: In countries such as Morocco and India, women decorate their skin with colorful henna designs for celebrations such as weddings and important religious holidays.
+  "4-30": {
+    form: "3형식 (S + V + O) · decorate A with B(A를 B로 장식하다) · such as(예시) 두 번 · 문두 부사구 In countries ~ · for(목적·때) · 명사 병렬(weddings and holidays) · 명사 + 명사(henna designs)",
+    tense: "단순 현재 (반복되는 관습)",
+    chips: [
+      ["부사구(장소)", "In countries"],
+      ["예시·such as", "such as Morocco and India,"],
+      ["주어(S)", "women"],
+      ["동사(V)", "decorate"],
+      ["목적어(O)", "their skin"],
+      ["with + 재료", "with colorful henna designs"],
+      ["전치사구(목적)", "for celebrations"],
+      ["예시·such as", "such as weddings and important religious holidays."],
+    ],
+    structure:
+      `뼈대: In countries such as ~, <b>women(S)</b> <b>decorate(V)</b> <b>their skin(O)</b> <b>with</b> colorful henna designs for celebrations such as ~. "~ 같은 나라에서 <b>여성들은 피부를 헤나 무늬로 장식한다</b>".<br><br>` +
+      `① ⭐⭐⭐ <b>such as</b> (<b>예시 · ~와 같은</b>) — 한 문장에 두 번! countries <b>such as</b> Morocco and India(모로코·인도 <b>같은</b> 나라들) / celebrations <b>such as</b> weddings and ~(결혼식 <b>같은</b> 축하 행사). 앞의 넓은 명사(countries, celebrations)를 뒤에서 <b>구체적 예</b>로 보여 줌. = like · = such countries as Morocco and India. (단어카드: such as)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('as-roles','as-such')">📐 such as (예시) 자세히 →</span><br>` +
+      `② ⭐⭐⭐ <b>decorate their skin with ~</b> (<b>decorate A with B = A를 B로 장식하다</b>) — with = <b>재료·도구</b>(~로). 장식되는 대상(A)이 목적어, 장식하는 재료(B)는 with 뒤. 같은 틀: <b>cover</b> A with B · <b>fill</b> A with B · <b>provide</b> A with B. (단어카드: decorate A with B)<br>` +
+      `③ ⭐⭐ <b>women decorate</b> (<b>수일치 · 현재시제</b>) — women은 woman의 <b>복수</b> → decorate(-s ❌). 지금도 반복되는 <b>관습</b>이라 단순 현재. 앞 부사구의 India에 맞춰 decorates로 쓰면 ❌ — 주어는 콤마 뒤 women.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subject-agreement','sv-modifier')">📐 수식어 걷어내고 주어 찾기 자세히 →</span><br>` +
+      `④ ⭐ <b>their skin</b> — their = women's. 여러 사람의 피부지만 skin은 보통 <b>셀 수 없는 명사</b>처럼 써서 skin<b>s</b> ❌.<br>` +
+      `⑤ ⭐⭐ <b>colorful henna designs</b> (<b>형용사 + 명사 + 명사</b>) — henna(헤나, 식물 염료)가 명사지만 designs 앞에서 형용사처럼 꾸밈 → "<b>헤나 무늬</b>". 앞 명사는 단수 그대로(hennas designs ❌). colorful = color + -ful(~가 가득한) "<b>알록달록한</b>". (단어카드: henna / colorful)<br>` +
+      `⑥ ⭐⭐ <b>for celebrations</b> (<b>for = ~을 위해 · ~ 때</b>) — 축하 행사<b>를 위해</b>(행사 때 하려고). celebration = celebrate(축하하다) + -tion. (단어카드: celebration)<br>` +
+      `⑦ ⭐⭐ <b>weddings and important religious holidays</b> (<b>명사 병렬</b>) — A and B 둘 다 <b>복수 명사</b>로 모양 맞춤. important와 religious가 <b>둘 다</b> holidays를 꾸밈 → "중요한 종교 명절". holiday = 휴일, <b>명절·축일</b>. (단어카드: wedding / holiday / religious)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">📐 병렬 — 같은 모양끼리 연결 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> '모든 피부 표시가 영구적인 건 아니다' → 그 <b>예</b>로 헤나를 소개. 문신·흉터는 평생 남는 표시였다면, 헤나는 <b>축하 행사 때 잠깐</b> 하는 장식. 다음 문장에서 헤나가 왜 사라지는지 설명함.<br><br>` +
+      `📝 <b>해석:</b> "모로코와 인도 같은 나라에서는, 여성들이 결혼식과 중요한 종교 명절 같은 축하 행사를 위해 화려한 헤나 무늬로 피부를 장식한다."`,
+    trans: "모로코나 인도 같은 나라의 여성들은 결혼식이나 중요한 종교 명절 같은 경사 때 알록달록한 헤나 무늬로 피부를 꾸민다.",
+  },
+
+  // 지문 4 · 31번째 문장: The henna coloring, which comes from a plant, fades and disappears over time.
+  "4-31": {
+    form: "1형식 (S + V and V) · 계속적 용법 , which ~ ,(주어 뒤 삽입) · 주어-동사 수일치(단수 coloring → -s) · 동사 병렬 fades and disappears · 자동사(수동태 ❌) · come from",
+    tense: "단순 현재 (일반적 사실)",
+    chips: [
+      ["주어(S)", "The henna coloring,"],
+      ["계속적 용법 관계절", "which comes from a plant,"],
+      ["동사(V1)", "fades"],
+      ["접속사·동사 병렬", "and"],
+      ["동사(V2)", "disappears"],
+      ["부사구(시간)", "over time."],
+    ],
+    structure:
+      `뼈대: <b>The henna coloring(S)</b>, [which comes from a plant,] <b>fades(V1)</b> <b>and</b> <b>disappears(V2)</b> over time. "<b>헤나 염료는</b> 시간이 지나면 <b>옅어지고 사라진다</b>".<br><br>` +
+      `① ⭐⭐⭐ <b>, which comes from a plant,</b> (<b>계속적 용법 · 주어 뒤 삽입</b>) — 콤마로 감싼 which절 = 앞 명사에 대한 <b>덧붙임 정보</b> "(그런데) 그건 식물에서 나온다". 콤마째 걷어내면 뼈대: The henna coloring <b>fades and disappears</b> over time. 🚨 콤마 뒤엔 <b>that ❌</b> → , which ✓.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('relative-nonrestrictive','rn-comma')">📐 계속적 용법 , which 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('relative-pronoun','rp-subject-omit')">📐 주격 관계대명사 (뒤에 바로 동사) 자세히 →</span><br>` +
+      `② ⭐⭐⭐ <b>coloring ~ comes / fades / disappears</b> (<b>수일치</b>) — which의 선행사 = The henna coloring(<b>단수</b>) → which <b>comes</b>. 문장 주어도 coloring(단수) → <b>fades</b>, <b>disappears</b> 둘 다 -s. 주어와 동사 사이에 삽입절이 길게 끼어도 <b>걷어내고</b> 주어에 맞춤.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subject-agreement','sv-modifier')">📐 수식어 걷어내고 주어 찾기 자세히 →</span><br>` +
+      `③ ⭐⭐ <b>comes from a plant</b> (<b>come from = ~에서 나오다, 유래하다</b>) — come은 <b>자동사</b>라 목적어 없이 from + 출처. 🚨 is come from ❌ (자동사는 수동태 불가). (단어카드: come from)<br>` +
+      `④ ⭐⭐⭐ <b>fades and disappears</b> (<b>동사 병렬 · 둘 다 자동사</b>) — and가 <b>동사끼리</b> 연결, 공통 주어 coloring. 순서도 의미 있음: 점점 <b>옅어지다(fade)</b> → 결국 <b>사라지다(disappear)</b>. 🚨 둘 다 자동사라 <b>was faded / is disappeared ❌</b>. (단어카드: fade / disappear)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">📐 병렬 — 같은 모양끼리 연결 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('passive-voice','pv-when')">📐 자동사는 수동태 불가 자세히 →</span><br>` +
+      `⑤ ⭐ <b>over time</b> — "<b>시간이 지나면서</b>" (한순간이 아니라 서서히). (단어카드: over time)<br>` +
+      `⑥ ⭐ <b>The henna coloring</b> (<b>the = 앞에서 말한 그것</b>) — 앞 문장에 나온 헤나를 다시 가리켜 <b>The</b>. coloring = color + -ing → 명사 "<b>염료, 색소</b>". (단어카드: coloring)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('articles','ar-the')">📐 the — 이미 나온 것 가리키기 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 헤나가 <b>'영구적이지 않은'</b> 이유를 설명 — 식물에서 얻은 염료라 시간이 지나면 저절로 사라짐. 이것으로 '모든 피부 표시가 영구적인 건 아니다'는 말이 마무리되고, 이다음엔 현대 사회의 몸 표시 유행으로 넘어감.<br><br>` +
+      `📝 <b>해석:</b> "헤나 염료는, 식물에서 나오는 것인데, 시간이 지나면서 옅어지고 사라진다."`,
+    trans: "식물에서 얻는 헤나 물감은 시간이 흐르면 점점 옅어지다 사라진다.",
+  },
 };
 
 /* ---------- 문법 정리 (공부한 내용 채우기) ----------
@@ -6042,6 +6113,13 @@ const GRAMMAR = [
       `<b>⑤ (전치사) ~로서 [자격·기능]</b><br>` +
       `예) work <b>as</b> a coach (코치로서 일하다) · use it <b>as</b> a tool (도구로 쓰다)<br>` +
       `🔸 그 밖에: <b>as ~ as</b>(원급 비교), <b>such as</b>(~같은), <b>as if/though</b>(마치 ~처럼).` +
+      `</div>` +
+      `<div id="as-such" class="g-sub">` +
+      `<b>⑥ such as = ~와 같은, 예를 들어 [예시]</b><br>` +
+      `&nbsp;&nbsp;• <b>넓은 명사 + such as + 구체적인 예</b>: countries <b>such as</b> Morocco and India (모로코·인도 같은 나라들)<br>` +
+      `&nbsp;&nbsp;• 같은 뜻: <b>such</b> countries <b>as</b> Morocco and India / countries <b>like</b> Morocco and India / countries, <b>including</b> Morocco and India<br>` +
+      `&nbsp;&nbsp;• 뒤에는 <b>명사(구)</b> 나열: A and B / A, B, and C<br>` +
+      `&nbsp;&nbsp;• 🚨 such as 자체가 '예를 들면'이라 끝에 <b>etc.</b>를 또 붙이면 중복 ❌` +
       `</div>`,
     eg: [
       ["① 때·동시 (~하면서)", "As they move, they clear lactate.", "그들은 움직이면서 젖산을 제거한다."],
