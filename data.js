@@ -371,6 +371,7 @@ const WORDS_BY_PASSAGE = {
   { word: "for instance",    pos: "phr.",  meaning: "예를 들어 (= for example)", example: "For many men in West Africa, for instance, ..." },
   { word: "male",            pos: "n./a.", meaning: "남성, 수컷; 남성의 (↔ female)", example: "a male has matured" },
   { word: "mature",           pos: "v./a.", meaning: "성숙하다, 어른이 되다; 성숙한 (↔immature)", example: "a male has matured from a child into an adult" },
+  { word: "from A into B",    pos: "phr.", meaning: "A에서 B로 (변하다) (into = 변화의 결과 · turn/change/grow from A into B)", example: "a male has matured from a child into an adult" },
   { word: "native",          pos: "a./n.", meaning: "토착의, 원주민의, 태어난 곳의; 원주민 (native language 모국어)", example: "some native peoples" },
   { word: "peoples",         pos: "n.",    meaning: "민족들, 부족들 (a people 한 민족 / people 사람들은 peoples ❌)", example: "among some native peoples" },
   { word: "reach",           pos: "v.",    meaning: "~에 이르다, 도달하다 (타동사: reach to ❌ = arrive at, get to)", example: "when they reach age 16 or 17" },
@@ -5154,6 +5155,7 @@ const ANALYSIS = {
       `⑥ ⭐⭐ <b>people who have darker skin</b> (<b>주격 관계대명사 who</b>) — who 뒤에 주어 없이 바로 동사 have → 주격. 선행사 people은 <b>복수</b> → <b>have</b>(has ❌). darker = 비교급 "(밝은 피부에 비해) <b>더 어두운</b>".<br>` +
       `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('relative-pronoun','rp-incomplete')">📐 관계대명사 뒤는 불완전한 절 자세히 →</span><br>` +
       `⑦ ⭐⭐⭐ <b>skin on which a tattoo would be difficult to see</b> (<b>전치사 + 관계대명사 · 뒤는 완전한 절</b>) — 원래 두 문장: people have darker <b>skin</b>. + A tattoo would be difficult to see <b>on the skin</b>. → the skin을 which로 바꾸고 전치사 <b>on</b>까지 데리고 앞으로! 그래서 뒤 절(a tattoo would be difficult to see)은 빠진 게 없는 <b>완전한 절</b>. 🚨 <b>on that</b> ❌ (전치사 뒤엔 that 불가). 🚨 선행사는 people이 아니라 <b>skin</b> — 문신이 '피부 위에서' 잘 안 보이는 것.<br>` +
+      `&nbsp;&nbsp;💡 <b>on which = where (관계부사)</b> — 선행사가 '~ 위에서/~에서'처럼 <b>장소</b>로 읽히면 [전치사 + which]를 <b>where</b> 한 단어로 바꿀 수 있음: darker skin <b>where</b> a tattoo would be difficult to see ✓. where도 뒤는 <b>완전한 절</b>. 🚨 전치사 없이 <b>which</b>만 쓰면 ❌ (skin which a tattoo would be difficult to see ✗ — on이 사라져 '피부를 보다'가 돼 버림) → <b>on which = where</b> ✓ / which ❌.<br>` +
       `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('relative-pronoun','rp-prep')">📐 전치사 + 관계대명사(on which) 자세히 →</span><br>` +
       `⑧ ⭐⭐⭐ <b>a tattoo would be difficult to see</b> (<b>난이형용사 구문</b>) — = It would be difficult <b>to see a tattoo</b> on the skin. to see의 목적어 a tattoo를 주어로 끌어올린 모양. 그래서 to see 뒤는 비워 둠 → difficult to see <s>it</s> ❌. "문신이 <b>보기 어려운</b>" = 잘 안 보이는.<br>` +
       `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-tough')">📐 difficult / easy + to V (난이형용사) 자세히 →</span><br>` +
@@ -5194,7 +5196,7 @@ const ANALYSIS = {
       `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('noun-clause-that','nc-object')">📐 목적어 자리 명사절 that 자세히 →</span><br>` +
       `⑥ ⭐⭐ <b>has matured</b> (<b>현재완료 · 결과</b>) — "<b>성숙해서 (지금은) 어른인 상태</b>". 과거에 자란 사건 + 지금 어른이라는 결과를 함께 말함. mature는 여기서 <b>자동사</b>(성숙하다) → 목적어 없음. a male 단수 → <b>has</b>. (단어카드: mature)<br>` +
       `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('present-perfect','pf-uses')">📐 현재완료 4용법(결과) 자세히 →</span><br>` +
-      `⑦ ⭐⭐ <b>from a child into an adult</b> (<b>from A into B = A에서 B로 변하다</b>) — into는 <b>변화의 결과</b>(~으로 바뀌어). grow / turn / change <b>from A into B</b>와 같은 틀. a child ↔ an adult: adult가 모음 발음이라 <b>an</b>.<br>` +
+      `⑦ ⭐⭐ <b>from a child into an adult</b> (<b>from A into B = A에서 B로 변하다</b>) — into는 <b>변화의 결과</b>(~으로 바뀌어). grow / turn / change <b>from A into B</b>와 같은 틀. a child ↔ an adult: adult가 모음 발음이라 <b>an</b>. (단어카드: from A into B)<br>` +
       `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('articles','ar-a')">📐 a / an 고르기 자세히 →</span><br>` +
       `⑧ ⭐ <b>a male</b> — 여기선 명사 "<b>남성, 남자</b>". 앞의 men을 그대로 반복하지 않고 바꿔 말함. (단어카드: male)<br>` +
       `💡 <b>흐름:</b> '일부 문화에서 흉터 내기를 한다' → <b>for instance</b>로 첫 번째 예(서아프리카 남성: 어른이 됐다는 표시). 이다음엔 두 번째 예(호주 원주민)가 이어짐.<br><br>` +
@@ -5234,13 +5236,13 @@ const ANALYSIS = {
 
   // 지문 4 · 28번째 문장: Without these, they were traditionally not permitted to trade, sing ceremonial songs, or participate in other activities.
   "4-28": {
-    form: "5형식 수동태 (S + were not permitted + to V) · 문두 Without + 명사(~이 없으면) · 부사 위치(be와 p.p. 사이) · to V 병렬 A, B, or C(to는 한 번만) · 부정문 속 or · participate in(자동사 + in)",
+    form: "2형식 수동태 (S + were not permitted + to V(주격보어)) ← 능동은 5형식 permit + O + to V(목적격보어) · 문두 Without + 명사(~이 없으면) · 부사 위치(be와 p.p. 사이) · to V 병렬 A, B, or C(to는 한 번만) · 부정문 속 or · participate in(자동사 + in)",
     tense: "단순 과거 수동 (예전부터 이어진 관습)",
     chips: [
       ["전치사구(조건)", "Without these,"],
       ["주어(S)", "they"],
-      ["동사(V)·5형식 수동태", "were traditionally not permitted"],
-      ["to부정사 ①", "to trade,"],
+      ["동사(V)·수동태(능동 5형식)", "were traditionally not permitted"],
+      ["주격보어(C)·to부정사 ①", "to trade,"],
       ["to부정사 ②(to 생략)", "sing ceremonial songs,"],
       ["접속사", "or"],
       ["to부정사 ③(to 생략)", "participate in other activities."],
@@ -5250,6 +5252,7 @@ const ANALYSIS = {
       `① ⭐⭐ <b>Without these</b> (<b>without = ~이 없으면</b>) — these = 앞에서 말한 <b>cuts(칼자국들)</b>. cuts가 복수라 <b>these</b>(this ❌). without은 "~ 없이"지만 문장 앞에 오면 "<b>~이 없으면</b>"이라는 <b>조건</b>. 여기선 실제 있었던 관습을 말하니까 그냥 과거시제 were. cf. 가정일 땐: Without water, we <b>could not</b> live.<br>` +
       `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subjunctive-past','sp-otherwise')">📐 if 없는 가정(without / otherwise) 자세히 →</span><br>` +
       `② ⭐⭐⭐ <b>were not permitted to trade</b> (<b>5형식 수동태</b>) — 능동: (Their society) did not <b>permit them to trade</b>. (permit + O + to V = O가 ~하도록 허락하다) → O(them)가 주어로 나가면 <b>be permitted to V</b> "<b>~하는 것이 허용되다</b>". to V는 그대로 남음 → were permitted trade ❌. they 복수·과거 → <b>were</b>. (단어카드: permit)<br>` +
+      `&nbsp;&nbsp;🔎 <b>그럼 몇 형식?</b> 능동은 <b>5형식</b>(S + permit + <u>O</u> + <u>to V = 목적격보어</u>). 수동으로 바꾸면 O가 주어로 올라가 목적어가 없어지고, 남은 to V는 이제 <b>주어(they)를 설명하는 주격보어</b> → 수동문은 <b>2형식</b>(S + be p.p. + C). 규칙: <b>5형식 → 수동 2형식</b> / 4형식 → 수동 3형식 / 3형식 → 수동 1형식. '5형식 수동태'는 <b>능동이 5형식인 수동태</b>라는 이름일 뿐, 수동문 자체는 2형식.<br>` +
       `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('passive-voice','pv-5th')">📐 5형식 수동태 be permitted to V 자세히 →</span><br>` +
       `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('five-pattern','fp-to')">📐 5형식 O + to V (permit·allow) 자세히 →</span><br>` +
       `③ ⭐⭐ <b>were traditionally not permitted</b> (<b>부사 위치</b>) — 부사는 <b>be와 p.p. 사이</b>. traditionally(전통적으로) + 과거시제 → "<b>예로부터 관습상</b> ~할 수 없었다". (단어카드: traditionally)<br>` +
@@ -5371,7 +5374,8 @@ const GRAMMAR = [
       `&nbsp;&nbsp;&nbsp;&nbsp;= darker skin <b>which</b> a tattoo would be difficult to see <b>on</b> (전치사를 뒤에 남겨도 OK · 구어체)<br>` +
       `&nbsp;&nbsp;• 🚨 전치사가 앞으로 나가면 뒤 절은 주어·목적어가 다 있는 <b>완전한 절</b> (빠진 건 '전치사 + 명사' 덩어리뿐) → 완전/불완전 판별 문제에서 자주 나옴.<br>` +
       `&nbsp;&nbsp;• 🚨 전치사 바로 뒤엔 <b>that ❌ · who ❌</b> → on <b>which</b> ✓ / with <b>whom</b> ✓ (on that ❌, with who ❌)<br>` +
-      `&nbsp;&nbsp;• 전치사 고르기: 원래 문장으로 되돌려 봄 — see it <b>on</b> the skin → on which / talk <b>with</b> him → the man with whom I talked` +
+      `&nbsp;&nbsp;• 전치사 고르기: 원래 문장으로 되돌려 봄 — see it <b>on</b> the skin → on which / talk <b>with</b> him → the man with whom I talked<br>` +
+      `&nbsp;&nbsp;• 💡 <b>장소면 [전치사 + which] = where(관계부사)</b>: skin <b>on which</b> ~ = skin <b>where</b> ~ / the city <b>in which</b> I live = the city <b>where</b> I live · 🚨 전치사 뺀 which 단독 ❌ (the city which I live ✗)` +
       `</div>`,
     eg: [
       ["주격 who (사람)", "the man who lives here", "여기 사는 그 남자"],
@@ -5848,6 +5852,7 @@ const GRAMMAR = [
       `<b>🎯 5형식 수동태 — O + to V → be p.p. + to V</b><br>` +
       `&nbsp;&nbsp;• 능동: They did not <b>permit</b> <u>them</u> <b>to trade</b>. (permit + O + to V) → 수동: <u>They</u> <b>were not permitted to trade</b>.<br>` +
       `&nbsp;&nbsp;• 목적어만 주어로 나가고 <b>to V는 제자리에 남음</b> — were permitted trade ❌<br>` +
+      `&nbsp;&nbsp;• 🔎 형식: 능동 <b>5형식</b>(to V = 목적격보어) → 수동 <b>2형식</b>(to V = 주격보어). 목적어가 주어로 올라가면서 보어가 설명하는 대상도 목적어→주어로 바뀜. (4형식 → 수동 3형식 · 3형식 → 수동 1형식)<br>` +
       `&nbsp;&nbsp;• 같은 틀: be <b>allowed / asked / told / expected / forced / required</b> to V<br>` +
       `&nbsp;&nbsp;• 부정은 be 뒤: were <b>not</b> permitted to V = ~하는 것이 허용되지 않았다<br>` +
       `&nbsp;&nbsp;• cf. 사역 make + O + 원형 → 수동에선 <b>to가 부활</b>: He was made <b>to</b> wait.` +
