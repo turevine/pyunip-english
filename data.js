@@ -365,12 +365,22 @@ const WORDS_BY_PASSAGE = {
   { word: "complete",         pos: "v./a.", meaning: "완성하다, 끝내다; 완전한",        example: "take two years to complete" },
   { word: "scar",             pos: "n./v.", meaning: "흉터; 흉터를 남기다 (scarring 흉터내기)", example: "scarring—a marking caused by cutting the skin" },
   { word: "burn",             pos: "v.",   meaning: "태우다, 데다; 타다",             example: "cutting or burning the skin" },
+  { word: "marking",         pos: "n.",    meaning: "표시, 무늬, 반점 (v. mark 표시하다)", example: "a marking caused by cutting the skin" },
+  { word: "cut",             pos: "v./n.", meaning: "베다, 자르다; 베인 상처, 칼자국 (cut-cut-cut)", example: "cuts are made on the skin" },
   { word: "rite of passage",  pos: "phr.", meaning: "통과의례 (인생의 한 단계를 넘는 의식)", example: "Scarring is a rite of passage." },
+  { word: "for instance",    pos: "phr.",  meaning: "예를 들어 (= for example)", example: "For many men in West Africa, for instance, ..." },
+  { word: "male",            pos: "n./a.", meaning: "남성, 수컷; 남성의 (↔ female)", example: "a male has matured" },
   { word: "mature",           pos: "v./a.", meaning: "성숙하다, 어른이 되다; 성숙한 (↔immature)", example: "a male has matured from a child into an adult" },
+  { word: "native",          pos: "a./n.", meaning: "토착의, 원주민의, 태어난 곳의; 원주민 (native language 모국어)", example: "some native peoples" },
+  { word: "peoples",         pos: "n.",    meaning: "민족들, 부족들 (a people 한 민족 / people 사람들은 peoples ❌)", example: "among some native peoples" },
+  { word: "reach",           pos: "v.",    meaning: "~에 이르다, 도달하다 (타동사: reach to ❌ = arrive at, get to)", example: "when they reach age 16 or 17" },
   { word: "permit",           pos: "v.",   meaning: "허가하다, 허락하다 (be permitted to V ~하도록 허용되다; n. 허가증)", example: "not permitted to trade" },
   { word: "traditionally",    pos: "ad.",  meaning: "전통적으로 (a. traditional)",      example: "traditionally not permitted to trade" },
   { word: "ceremonial",       pos: "a.",   meaning: "의식의, 의례적인 (n. ceremony 의식)", example: "sing ceremonial songs" },
+  { word: "trade",           pos: "v./n.", meaning: "거래하다, 교역하다; 무역, 거래", example: "not permitted to trade" },
+  { word: "participate in",  pos: "phr.",  meaning: "~에 참여하다 (= take part in · n. participation)", example: "participate in other activities" },
   { word: "permanent",        pos: "a.",   meaning: "영구적인, 영속적인 (↔temporary 일시적인)", example: "Not all skin markings are permanent." },
+  { word: "though",          pos: "ad./conj.", meaning: "(문장 끝·중간) 그렇지만 = however; (접속사) 비록 ~이지만", example: "Not all skin markings are permanent, though." },
   { word: "religious",        pos: "a.",   meaning: "종교의, 종교적인 (n. religion)",   example: "important religious holidays" },
   { word: "fade",             pos: "v.",   meaning: "바래다, 희미해지다, 서서히 사라지다", example: "The henna fades over time." },
   { word: "disappear",        pos: "v.",   meaning: "사라지다, 없어지다 (↔appear 나타나다)", example: "fades and disappears over time" },
@@ -5110,6 +5120,177 @@ const ANALYSIS = {
       `📝 <b>해석:</b> "전신 문신을 받는 과정은 느리기도 하고 고통스럽기도 하며, 완성하는 데 2년 이상이 걸릴 수도 있다."`,
     trans: "전신 문신은 새기는 과정이 더디고 고통스러우며, 완성까지 2년 넘게 걸리기도 한다.",
   },
+
+  // 지문 4 · 25번째 문장: In some cultures, scarring—a marking caused by cutting or burning the skin—is practiced, usually among people who have darker skin on which a tattoo would be difficult to see.
+  "4-25": {
+    form: "1형식 수동태 (S + is practiced) · 문두 부사구 In some cultures · 대시 삽입(—동격—) a marking · 과거분사 후치수식 caused by · 전치사 + 동명사 병렬(cutting or burning) · 주격 관계대명사 who · 전치사 + 관계대명사 on which(뒤는 완전한 절) · 난이형용사 difficult to see · would(추측)",
+    tense: "단순 현재 수동 (일반적 사실) + 관계절 속 would (한 발 물러선 추측)",
+    chips: [
+      ["부사구(장소)", "In some cultures,"],
+      ["주어(S)", "scarring"],
+      ["대시 삽입·동격", "—a marking"],
+      ["과거분사 후치수식", "caused by cutting or burning the skin—"],
+      ["동사(V)·수동태", "is practiced,"],
+      ["부사", "usually"],
+      ["전치사구", "among people"],
+      ["주격 관계대명사절", "who have darker skin"],
+      ["전치사 + 관계대명사", "on which"],
+      ["관계절(완전한 절)", "a tattoo would be difficult to see."],
+    ],
+    structure:
+      `뼈대: In some cultures, <b>scarring(S)</b> [—a marking ~—] <b>is practiced(V)</b>, usually among people [who have darker skin [on which ~]]. "일부 문화에서는 <b>흉터 내기가 행해진다</b>, 주로 ~한 사람들 사이에서".<br><br>` +
+      `① ⭐⭐⭐ <b>scarring —…— is practiced</b> (<b>대시 삽입 걷어내기</b>) — 두 대시 사이는 scarring이 뭔지 풀어 주는 <b>동격 삽입</b>. 걷어내면 뼈대는 <b>scarring is practiced</b>. scarring = scar(흉터를 내다) + -ing → <b>동명사 주어는 단수</b> → <b>is</b>. 대시 안 a marking = scarring (흉터 내기 = ~로 생기는 표시). (단어카드: scar / marking)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('punctuation','pn-dash')">📐 대시 —…— 중간 삽입 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subject-agreement','sv-gerund')">📐 동명사 주어는 단수 자세히 →</span><br>` +
+      `② ⭐⭐⭐ <b>a marking caused by ~</b> (<b>과거분사 후치수식</b>) — a marking <s>(which is)</s> caused by ~ 에서 [주격 관계사 + be] 생략. 표시는 스스로 일으키는 게 아니라 (베기·태우기로) <b>생겨나는</b> 대상 → 과거분사 <b>caused</b>. 🚨 a marking <b>causing</b> ❌ (표시가 뭔가를 일으키는 뜻이 됨). "<b>~로 인해 생긴</b> 표시".<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('participle-postmod','pp-omit')">📐 (which is) 생략 → 분사 후치수식 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('participle-postmod','pp-active-passive')">📐 현재분사 vs 과거분사 고르기 자세히 →</span><br>` +
+      `③ ⭐⭐ <b>by cutting or burning the skin</b> (<b>전치사 + 동명사 병렬</b>) — by(~함으로써, 수단) 뒤는 명사 자리 → <b>cutting</b> / <b>burning</b> 둘 다 -ing로 모양 맞춤. by cutting or <b>burn</b> ❌. the skin은 cutting과 burning의 <b>공통 목적어</b>. (단어카드: cut / burn)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('gerund-prep','gp-rule')">📐 전치사 + 동명사(-ing) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('gerund-prep','gp-parallel')">📐 전치사 하나에 동명사 병렬 자세히 →</span><br>` +
+      `④ ⭐⭐ <b>is practiced</b> (<b>수동태</b>) — practice = (관습·의식을) <b>행하다</b>(타동사). 흉터 내기는 사람들이 <b>행하는 대상</b> → be + p.p. "<b>행해진다</b>". 누가 하는지(by people)는 뻔해서 생략. (단어카드: practice)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('passive-voice','pv-form')">📐 수동태 be + p.p. 자세히 →</span><br>` +
+      `⑤ ⭐ <b>usually among people</b> — usually(대개) + among(~ 사이에서, 셋 이상의 무리 속). 콤마 뒤에 덧붙여 "<b>주로 어떤 사람들이 하느냐</b>"를 보충. (단어카드: among)<br>` +
+      `⑥ ⭐⭐ <b>people who have darker skin</b> (<b>주격 관계대명사 who</b>) — who 뒤에 주어 없이 바로 동사 have → 주격. 선행사 people은 <b>복수</b> → <b>have</b>(has ❌). darker = 비교급 "(밝은 피부에 비해) <b>더 어두운</b>".<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('relative-pronoun','rp-incomplete')">📐 관계대명사 뒤는 불완전한 절 자세히 →</span><br>` +
+      `⑦ ⭐⭐⭐ <b>skin on which a tattoo would be difficult to see</b> (<b>전치사 + 관계대명사 · 뒤는 완전한 절</b>) — 원래 두 문장: people have darker <b>skin</b>. + A tattoo would be difficult to see <b>on the skin</b>. → the skin을 which로 바꾸고 전치사 <b>on</b>까지 데리고 앞으로! 그래서 뒤 절(a tattoo would be difficult to see)은 빠진 게 없는 <b>완전한 절</b>. 🚨 <b>on that</b> ❌ (전치사 뒤엔 that 불가). 🚨 선행사는 people이 아니라 <b>skin</b> — 문신이 '피부 위에서' 잘 안 보이는 것.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('relative-pronoun','rp-prep')">📐 전치사 + 관계대명사(on which) 자세히 →</span><br>` +
+      `⑧ ⭐⭐⭐ <b>a tattoo would be difficult to see</b> (<b>난이형용사 구문</b>) — = It would be difficult <b>to see a tattoo</b> on the skin. to see의 목적어 a tattoo를 주어로 끌어올린 모양. 그래서 to see 뒤는 비워 둠 → difficult to see <s>it</s> ❌. "문신이 <b>보기 어려운</b>" = 잘 안 보이는.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-tough')">📐 difficult / easy + to V (난이형용사) 자세히 →</span><br>` +
+      `⑨ ⭐ <b>would</b> (<b>숨은 가정 · 추측</b>) — "(만약 거기에 문신을 한다면) 잘 안 보일 <b>것이다</b>". 실제로 문신을 한 게 아니라 가정해 보는 말이라 will 대신 한 발 물러선 <b>would</b>.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subjunctive-past','sp-otherwise')">📐 if 없는 가정(would) 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 문신 얘기에서 <b>다른 표시 방법</b>으로 넘어감. 피부가 어두우면 문신이 잘 안 보인다 → 그래서 <b>흉터 내기</b>를 한다는 이유까지 한 문장에 담음. 낯선 단어 scarring은 대시 안에서 바로 정의해 줌. 이다음엔 흉터 내기의 구체적인 예가 나옴.<br><br>` +
+      `📝 <b>해석:</b> "일부 문화에서는 흉터 내기—피부를 베거나 태워서 생기는 표시—가 행해지는데, 대개 그 위에서는 문신이 보기 어려울 더 어두운 피부를 가진 사람들 사이에서 그렇다."`,
+    trans: "어떤 문화권에서는 피부를 베거나 지져서 무늬를 내는 '흉터 새기기'를 하는데, 주로 피부색이 짙어 문신이 잘 드러나지 않는 사람들 사이에서 행해진다.",
+  },
+
+  // 지문 4 · 26번째 문장: For many men in West Africa, for instance, scarring is a rite of passage—an act that symbolizes that a male has matured from a child into an adult.
+  "4-26": {
+    form: "2형식 (S + is + C) · 문두 전치사구 For many men in West Africa · 삽입 for instance · 대시 뒤 동격 an act · that 두 개(주격 관계대명사 that + 명사절 that) · 현재완료 has matured(결과) · from A into B(변화)",
+    tense: "단순 현재 (일반적 사실) + 명사절 속 현재완료 (성숙해서 지금 어른인 상태)",
+    chips: [
+      ["전치사구(~에게 있어)", "For many men in West Africa,"],
+      ["삽입·예시", "for instance,"],
+      ["주어(S)", "scarring"],
+      ["동사(V)", "is"],
+      ["보어(C)", "a rite of passage"],
+      ["대시·동격", "—an act"],
+      ["주격 관계대명사 that", "that symbolizes"],
+      ["명사절 that(목적어)", "that a male"],
+      ["현재완료", "has matured"],
+      ["from A into B", "from a child into an adult."],
+    ],
+    structure:
+      `뼈대: For many men in West Africa, for instance, <b>scarring(S)</b> <b>is(V)</b> <b>a rite of passage(C)</b>—an act [that symbolizes [that ~]]. "예를 들어 서아프리카의 많은 남성에게 <b>흉터 내기는 통과의례다</b>".<br><br>` +
+      `① ⭐ <b>For many men in West Africa</b> — 이 for는 "<b>~에게 (있어서)</b>". 문장 맨 앞에 콤마로 떼어 '누구 얘기인지' 먼저 깔아 둠.<br>` +
+      `② ⭐⭐ <b>, for instance,</b> (<b>콤마로 감싼 삽입</b>) — = for example(예를 들어). 앞 문장의 '일부 문화'에 대한 <b>구체적 예시</b>를 들겠다는 신호. 콤마째 걷어내면 뼈대가 그대로 보임. (단어카드: for instance)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('conjunctive-adverb','ca-insert')">📐 콤마로 감싼 문중 삽입 자세히 →</span><br>` +
+      `③ ⭐⭐ <b>scarring is a rite of passage</b> (<b>2형식</b>) — 흉터 내기 = <b>통과의례</b>(아이→어른처럼 인생의 한 단계를 넘을 때 치르는 의식). passage = 통과·지나감. (단어카드: rite of passage)<br>` +
+      `④ ⭐⭐⭐ <b>—an act</b> (<b>대시 뒤 동격</b>) — 대시 뒤 명사구가 앞의 a rite of passage를 <b>다시 풀어서</b> 설명: 통과의례 = <b>~을 상징하는 행위</b>. 어려운 말을 쉬운 말로 한 번 더 이름 붙이기.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('punctuation','pn-dash')">📐 대시 뒤 덧붙이기(동격) 자세히 →</span><br>` +
+      `⑤ ⭐⭐⭐ <b>an act that symbolizes that ~</b> (<b>that 두 개 구별!</b>) — 🚨 편입 단골.<br>&nbsp;&nbsp;• 첫 번째 <b>that</b>: 뒤에 주어 없이 바로 동사 symbolizes → <b>주격 관계대명사</b>(선행사 an act). an act가 <b>단수</b> → symbolize<b>s</b>.<br>&nbsp;&nbsp;• 두 번째 <b>that</b>: 뒤에 a male has matured ~ 가 주어·동사 다 갖춘 <b>완전한 절</b> + symbolizes의 <b>목적어</b> → <b>명사절 that</b> "<b>~라는 것</b>"을 상징하다. (단어카드: symbolize)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('noun-clause-that','nc-vs')">📐 that 삼형제(명사절·동격·관계사) 구별 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('relative-pronoun','rp-incomplete')">📐 관계대명사 that (불완전한 절) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('noun-clause-that','nc-object')">📐 목적어 자리 명사절 that 자세히 →</span><br>` +
+      `⑥ ⭐⭐ <b>has matured</b> (<b>현재완료 · 결과</b>) — "<b>성숙해서 (지금은) 어른인 상태</b>". 과거에 자란 사건 + 지금 어른이라는 결과를 함께 말함. mature는 여기서 <b>자동사</b>(성숙하다) → 목적어 없음. a male 단수 → <b>has</b>. (단어카드: mature)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('present-perfect','pf-uses')">📐 현재완료 4용법(결과) 자세히 →</span><br>` +
+      `⑦ ⭐⭐ <b>from a child into an adult</b> (<b>from A into B = A에서 B로 변하다</b>) — into는 <b>변화의 결과</b>(~으로 바뀌어). grow / turn / change <b>from A into B</b>와 같은 틀. a child ↔ an adult: adult가 모음 발음이라 <b>an</b>.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('articles','ar-a')">📐 a / an 고르기 자세히 →</span><br>` +
+      `⑧ ⭐ <b>a male</b> — 여기선 명사 "<b>남성, 남자</b>". 앞의 men을 그대로 반복하지 않고 바꿔 말함. (단어카드: male)<br>` +
+      `💡 <b>흐름:</b> '일부 문화에서 흉터 내기를 한다' → <b>for instance</b>로 첫 번째 예(서아프리카 남성: 어른이 됐다는 표시). 이다음엔 두 번째 예(호주 원주민)가 이어짐.<br><br>` +
+      `📝 <b>해석:</b> "예를 들어, 서아프리카의 많은 남성들에게 흉터 내기는 통과의례—남자가 아이에서 어른으로 성숙했다는 것을 상징하는 행위—이다."`,
+    trans: "예컨대 서아프리카의 많은 남성에게 흉터 새기기는 소년이 어른이 되었음을 보여 주는 일종의 성인식이다.",
+  },
+
+  // 지문 4 · 27번째 문장: In Australia, among some native peoples, cuts are made on the skin of both men and women when they reach age 16 or 17.
+  "4-27": {
+    form: "1형식 수동태 (S + are made) · 문두 부사구 2개(In Australia / among some native peoples) · peoples(민족들) · make a cut의 수동 · both A and B · 시간 부사절 when · reach(타동사, to ❌)",
+    tense: "단순 현재 수동 (일반적 관습)",
+    chips: [
+      ["부사구(장소)", "In Australia,"],
+      ["부사구(범위)", "among some native peoples,"],
+      ["주어(S)", "cuts"],
+      ["동사(V)·수동태", "are made"],
+      ["전치사구(장소)", "on the skin"],
+      ["of + both A and B", "of both men and women"],
+      ["부사절(때)", "when they reach"],
+      ["목적어(O)", "age 16 or 17."],
+    ],
+    structure:
+      `뼈대: In Australia, among some native peoples, <b>cuts(S)</b> <b>are made(V)</b> on the skin of both men and women [when they reach age 16 or 17]. "호주의 일부 원주민 사이에서는 <b>칼자국이 새겨진다</b>".<br><br>` +
+      `① ⭐⭐ <b>among some native peoples</b> (<b>people vs peoples</b>) — people이 "사람들"이면 이미 복수라 peoples ❌. 하지만 "<b>민족·부족</b>"이면 셀 수 있는 명사 → a people(한 민족) / <b>peoples</b>(여러 민족). native = <b>토착의, 원주민의</b>. (단어카드: native / people)<br>` +
+      `② ⭐⭐⭐ <b>cuts are made</b> (<b>수동태</b>) — 능동: They <b>make cuts</b> on the skin. (칼자국을 내다) → 목적어 cuts가 주어로 나가서 <b>are made</b>. cuts가 <b>복수</b> → are. 여기 cut은 명사 "<b>베인 자국, 칼자국</b>"(동사 아님!). 누가 내는지는 중요하지 않아 by ~ 생략. (단어카드: cut)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('passive-voice','pv-when')">📐 능동 → 수동 3단계 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('passive-voice','pv-form')">📐 수동태 be + p.p. 자세히 →</span><br>` +
+      `③ ⭐⭐ <b>the skin of both men and women</b> (<b>both A and B</b>) — "<b>남자와 여자 모두의</b> 피부". A, B 둘 다 명사로 병렬. 🚨 both men <b>or</b> women ❌ — both는 반드시 <b>and</b>와 짝.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-list')">📐 both A and B 상관접속사 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('both-usage','both-no-of')">📐 both 뒤 of 쓸까 말까 자세히 →</span><br>` +
+      `④ ⭐⭐⭐ <b>when they reach age 16 or 17</b> (<b>때 부사절 · reach는 타동사</b>) — they = men and women. reach = "<b>~에 이르다</b>"로 바로 목적어를 받음 → reach <b>to</b> age 16 ❌. 같은 뜻: <b>arrive at</b> / <b>get to</b>(전치사 필요). age 16 = 16세(= the age of 16). (단어카드: reach)<br>` +
+      `⑤ ⭐ <b>현재시제</b> — 지금도 그 사회에서 반복되는 <b>관습</b>이라 단순 현재(are made, reach).<br>` +
+      `💡 <b>흐름:</b> 흉터 내기의 <b>두 번째 예</b>(호주 원주민). 서아프리카는 '남성'만, 여기는 <b>남녀 모두</b>라는 차이가 있음. 다음 문장의 <b>these</b>가 바로 이 cuts(칼자국)를 가리킴.<br><br>` +
+      `📝 <b>해석:</b> "호주에서는, 일부 원주민 부족들 사이에서, 남자와 여자 모두 16세나 17세가 되면 피부에 칼자국이 새겨진다."`,
+    trans: "호주의 일부 원주민 부족은 남녀 모두 열여섯에서 열일곱 살이 되면 피부에 칼자국을 낸다.",
+  },
+
+  // 지문 4 · 28번째 문장: Without these, they were traditionally not permitted to trade, sing ceremonial songs, or participate in other activities.
+  "4-28": {
+    form: "5형식 수동태 (S + were not permitted + to V) · 문두 Without + 명사(~이 없으면) · 부사 위치(be와 p.p. 사이) · to V 병렬 A, B, or C(to는 한 번만) · 부정문 속 or · participate in(자동사 + in)",
+    tense: "단순 과거 수동 (예전부터 이어진 관습)",
+    chips: [
+      ["전치사구(조건)", "Without these,"],
+      ["주어(S)", "they"],
+      ["동사(V)·5형식 수동태", "were traditionally not permitted"],
+      ["to부정사 ①", "to trade,"],
+      ["to부정사 ②(to 생략)", "sing ceremonial songs,"],
+      ["접속사", "or"],
+      ["to부정사 ③(to 생략)", "participate in other activities."],
+    ],
+    structure:
+      `뼈대: Without these, <b>they(S)</b> <b>were</b> traditionally <b>not permitted(V)</b> <b>to</b> [trade / sing ~ / participate ~]. "이것들이 없으면 그들은 ~하는 것이 <b>허용되지 않았다</b>".<br><br>` +
+      `① ⭐⭐ <b>Without these</b> (<b>without = ~이 없으면</b>) — these = 앞에서 말한 <b>cuts(칼자국들)</b>. cuts가 복수라 <b>these</b>(this ❌). without은 "~ 없이"지만 문장 앞에 오면 "<b>~이 없으면</b>"이라는 <b>조건</b>. 여기선 실제 있었던 관습을 말하니까 그냥 과거시제 were. cf. 가정일 땐: Without water, we <b>could not</b> live.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subjunctive-past','sp-otherwise')">📐 if 없는 가정(without / otherwise) 자세히 →</span><br>` +
+      `② ⭐⭐⭐ <b>were not permitted to trade</b> (<b>5형식 수동태</b>) — 능동: (Their society) did not <b>permit them to trade</b>. (permit + O + to V = O가 ~하도록 허락하다) → O(them)가 주어로 나가면 <b>be permitted to V</b> "<b>~하는 것이 허용되다</b>". to V는 그대로 남음 → were permitted trade ❌. they 복수·과거 → <b>were</b>. (단어카드: permit)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('passive-voice','pv-5th')">📐 5형식 수동태 be permitted to V 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('five-pattern','fp-to')">📐 5형식 O + to V (permit·allow) 자세히 →</span><br>` +
+      `③ ⭐⭐ <b>were traditionally not permitted</b> (<b>부사 위치</b>) — 부사는 <b>be와 p.p. 사이</b>. traditionally(전통적으로) + 과거시제 → "<b>예로부터 관습상</b> ~할 수 없었다". (단어카드: traditionally)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('passive-voice','pv-form')">📐 부사는 be와 p.p. 사이 자세히 →</span><br>` +
+      `④ ⭐⭐⭐ <b>to trade, sing ~, or participate ~</b> (<b>to V 병렬 · A, B, or C</b>) — to는 <b>맨 앞에 한 번만</b> 쓰고 뒤는 <b>동사원형</b>으로 모양 맞춤: to [trade / sing / participate]. 🚨 sing<b>ing</b> ❌ / <b>to</b> sing도 가능하지만 보통 생략. 셋 이상은 A, B, <b>or</b> C처럼 마지막 앞에만 접속사.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">📐 병렬 — 같은 모양끼리 연결 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('gerund-prep','gp-parallel')">📐 A, B, and C 병렬(전치사 버전) 자세히 →</span><br>` +
+      `⑤ ⭐⭐ <b>not ~ A, B, or C</b> (<b>부정문 속 or</b>) — 부정문에서 or = "<b>A도, B도, C도</b> 못 했다"(셋 다 부정). and를 쓰면 '셋을 한꺼번에는 못 했다'로 뜻이 약해짐.<br>` +
+      `⑥ ⭐⭐⭐ <b>participate in</b> (<b>자동사 + 전치사</b>) — participate는 자동사라 목적어 앞에 <b>in</b> 필수. participate other activities ❌. = <b>take part in</b>. (단어카드: participate in / trade)<br>` +
+      `⑦ ⭐ <b>ceremonial songs</b> — ceremony(의식) → ceremonial(<b>의식의</b>). 의식 때 부르는 노래. (단어카드: ceremonial)<br>` +
+      `💡 <b>흐름:</b> 칼자국 = 일종의 <b>'어른 자격증'</b>. 없으면 교역·의식·공동체 활동에서 빠져야 했다 → 흉터가 사회의 <b>정식 구성원 표시</b>였다는 점을 보여 줌. 여기까지가 평생 남는 표시(문신·흉터) 이야기.<br><br>` +
+      `📝 <b>해석:</b> "이것들이 없으면, 그들은 전통적으로 교역을 하거나, 의식의 노래를 부르거나, 다른 활동에 참여하는 것이 허용되지 않았다."`,
+    trans: "칼자국이 없는 사람은 예로부터 물건을 사고팔 수도, 의식 노래를 부를 수도, 그 밖의 활동에 끼지도 못했다.",
+  },
+
+  // 지문 4 · 29번째 문장: Not all skin markings are permanent, though.
+  "4-29": {
+    form: "2형식 (S + are + C) · 부분부정 Not all(모두 ~인 건 아니다) · 명사 + 명사(skin markings) · 문장 끝 though(부사 = however)",
+    tense: "단순 현재 (일반적 사실)",
+    chips: [
+      ["부분부정", "Not all"],
+      ["주어(S)", "skin markings"],
+      ["동사(V)", "are"],
+      ["보어(C)", "permanent,"],
+      ["접속부사(대조)", "though."],
+    ],
+    structure:
+      `뼈대: <b>Not all skin markings(S)</b> <b>are(V)</b> <b>permanent(C)</b>, though. "<b>하지만</b> 모든 피부 표시가 <b>영구적인 것은 아니다</b>".<br><br>` +
+      `① ⭐⭐⭐ <b>Not all skin markings</b> (<b>부분부정</b>) — not + all = "<b>모두 ~인 것은 아니다</b>"(일부는 영구적, 일부는 아님). 🚨 "어떤 표시도 영구적이지 않다"로 읽으면 정반대! 그건 전체부정 <b>No</b> skin markings are permanent.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('partial-negation','pn-partial')">📐 부분부정 not + all 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('partial-negation','pn-total')">📐 전체부정(no·none)과 구별 자세히 →</span><br>` +
+      `② ⭐⭐ <b>skin markings are</b> (<b>명사 + 명사 · 수일치</b>) — skin(피부)이 명사지만 앞에서 형용사처럼 꾸밈 → "<b>피부 표시</b>". 알맹이는 markings(<b>복수</b>) → <b>are</b>. skin<b>s</b> markings ❌ (앞 명사는 단수 그대로). (단어카드: marking)<br>` +
+      `③ ⭐⭐ <b>are permanent</b> (<b>be + 형용사 보어</b>) — permanent = <b>영구적인</b> ↔ temporary(일시적인). 보어 자리라 permanent<b>ly</b> ❌. (단어카드: permanent)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('linking-become','lb-why-adj')">📐 be동사 뒤 보어는 형용사 자세히 →</span><br>` +
+      `④ ⭐⭐⭐ <b>, though.</b> (<b>문장 끝 though = however</b>) — 뒤에 주어·동사 없이 문장 맨 끝에 붙으면 <b>부사</b> "<b>그렇지만, 하지만</b>". = <b>However,</b> not all skin markings are permanent. 🚨 접속사 though(= although)는 뒤에 S V가 옴: <b>Though</b> it rained, we played. → <b>뒤에 절이 있나 없나</b>로 판별. (단어카드: though)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('conjunctive-adverb','ca-though')">📐 문장 끝 , though (= however) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('concession','cn-conj')">📐 접속사 though / although (+S V) 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> <b>화제 전환</b> 문장. 지금까지는 평생 남는 표시(문신·흉터) → though로 방향을 틀어 이제 <b>사라지는 표시</b>(헤나) 이야기로 넘어감. 짧은 문장 하나로 문단의 방향을 바꿔 줌.<br><br>` +
+      `📝 <b>해석:</b> "하지만 모든 피부 표시가 영구적인 것은 아니다."`,
+    trans: "그렇다고 피부에 남기는 표시가 모두 평생 가는 것은 아니다.",
+  },
 };
 
 /* ---------- 문법 정리 (공부한 내용 채우기) ----------
@@ -5181,6 +5362,16 @@ const GRAMMAR = [
       `· some bags <u>(which are)</u> tied together → some bags tied together (⭕)<br>` +
       `· the boy <u>(who is)</u> playing soccer → the boy playing soccer (⭕)<br>` +
       `👉 이게 바로 '분사의 후치수식'과 이어짐. <span class="wikilink" onclick="gotoGrammar('participle-postmod','pp-omit')">✂️ 후치수식 자세히 →</span>` +
+      `</div>` +
+      `<div id="rp-prep" class="g-sub">` +
+      `<b>🔗 전치사 + 관계대명사 (on which · with whom) — 뒤는 '완전한 절'!</b><br>` +
+      `관계사가 뒤 절에서 <b>전치사의 목적어</b>일 때, 전치사를 관계사 앞으로 데려올 수 있음.<br>` +
+      `&nbsp;&nbsp;• people have darker <b>skin</b>. + A tattoo would be difficult to see <b>on the skin</b>.<br>` +
+      `&nbsp;&nbsp;&nbsp;&nbsp;→ darker skin <b>on which</b> a tattoo would be difficult to see (그 위에서 문신이 잘 안 보이는 피부)<br>` +
+      `&nbsp;&nbsp;&nbsp;&nbsp;= darker skin <b>which</b> a tattoo would be difficult to see <b>on</b> (전치사를 뒤에 남겨도 OK · 구어체)<br>` +
+      `&nbsp;&nbsp;• 🚨 전치사가 앞으로 나가면 뒤 절은 주어·목적어가 다 있는 <b>완전한 절</b> (빠진 건 '전치사 + 명사' 덩어리뿐) → 완전/불완전 판별 문제에서 자주 나옴.<br>` +
+      `&nbsp;&nbsp;• 🚨 전치사 바로 뒤엔 <b>that ❌ · who ❌</b> → on <b>which</b> ✓ / with <b>whom</b> ✓ (on that ❌, with who ❌)<br>` +
+      `&nbsp;&nbsp;• 전치사 고르기: 원래 문장으로 되돌려 봄 — see it <b>on</b> the skin → on which / talk <b>with</b> him → the man with whom I talked` +
       `</div>`,
     eg: [
       ["주격 who (사람)", "the man who lives here", "여기 사는 그 남자"],
@@ -5487,6 +5678,13 @@ const GRAMMAR = [
       `&nbsp;&nbsp;• 🚨 주어가 to V의 <b>의미상 목적어</b>면 to V 뒤를 비워 둠(능동 모양·수동 의미): to complete <s>it</s> ❌ — 이미 주어가 완성할 대상. cf. easy <b>to read</b>(읽기 쉬운)도 같은 원리.<br>` +
       `&nbsp;&nbsp;• 🚨 take + 시간 + <b>-ing</b> ❌ / to complete ✓ · 돈이면 <b>cost</b>: It cost me $100.` +
       `</div>` +
+      `<div id="ti-tough" class="g-sub">` +
+      `<b>🧗 난이형용사 구문 — difficult / easy / hard / impossible + to V</b><br>` +
+      `&nbsp;&nbsp;• It is difficult <b>to see a tattoo</b> on dark skin. → <b>A tattoo</b> is difficult <b>to see</b> on dark skin. (to V의 <b>목적어</b>를 주어로 끌어올림)<br>` +
+      `&nbsp;&nbsp;• 🚨 주어가 이미 to V의 목적어라 to V 뒤를 비움: difficult to see <s>it</s> ❌<br>` +
+      `&nbsp;&nbsp;• 🚨 to V의 <b>의미상 주어(사람)</b>는 주어로 못 올림: <b>He</b> is difficult to solve the problem ❌ → It is difficult <b>for him</b> to solve it ✓ / The problem is difficult for him to solve ✓<br>` +
+      `&nbsp;&nbsp;• 대표 형용사: easy · hard · difficult · impossible · tough · dangerous · pleasant` +
+      `</div>` +
       `<br>` +
       `⭐ <b>구분 요령:</b> 동사 <b>바로 뒤 목적어 자리</b>면 → 명사적. 이미 완전한 문장에 <b>덤으로 붙어</b> "왜?"에 답하면 → 부사적(목적). <b>명사 뒤</b>에 붙으면 → 형용사적.`,
     eg: [
@@ -5645,6 +5843,14 @@ const GRAMMAR = [
       `&nbsp;&nbsp;• carry out → <b>be carried out</b>: Tattooing has been <b>carried out</b> for thousands of years.<br>` +
       `&nbsp;&nbsp;• look after → <b>be looked after</b> · laugh at → <b>be laughed at</b> · put off → <b>be put off</b> · take care of → <b>be taken care of</b><br>` +
       `&nbsp;&nbsp;• 🚨 뒤의 out/at/of를 <b>빼면 틀림</b>: The baby was looked ❌ → was looked <b>after</b> ✓ (by가 바로 붙어도 OK: was laughed <b>at by</b> everyone)` +
+      `</div>` +
+      `<div id="pv-5th" class="g-sub">` +
+      `<b>🎯 5형식 수동태 — O + to V → be p.p. + to V</b><br>` +
+      `&nbsp;&nbsp;• 능동: They did not <b>permit</b> <u>them</u> <b>to trade</b>. (permit + O + to V) → 수동: <u>They</u> <b>were not permitted to trade</b>.<br>` +
+      `&nbsp;&nbsp;• 목적어만 주어로 나가고 <b>to V는 제자리에 남음</b> — were permitted trade ❌<br>` +
+      `&nbsp;&nbsp;• 같은 틀: be <b>allowed / asked / told / expected / forced / required</b> to V<br>` +
+      `&nbsp;&nbsp;• 부정은 be 뒤: were <b>not</b> permitted to V = ~하는 것이 허용되지 않았다<br>` +
+      `&nbsp;&nbsp;• cf. 사역 make + O + 원형 → 수동에선 <b>to가 부활</b>: He was made <b>to</b> wait.` +
       `</div>`,
     eg: [
       ["과거 수동태", "Early matches were played in 1862.", "초기 경기들은 1862년에 열렸다. (경기 = 치러지는 대상)"],
@@ -5734,6 +5940,13 @@ const GRAMMAR = [
       `<b>💡 문중 삽입 (콤마로 감싸기)</b><br>` +
       `접속부사는 문두뿐 아니라 <b>주어 뒤</b>에 콤마로 감싸 삽입되기도 함. 이때 앞뒤 콤마를 걷어내면 문장 뼈대가 그대로 보임.<br>` +
       `예) A trained athlete<b>, however,</b> might not feel pain. → (however 제거) A trained athlete might not feel pain. (뼈대 온전)` +
+      `</div>` +
+      `<div id="ca-though" class="g-sub">` +
+      `<b>🔚 문장 끝 , though = however (그렇지만)</b><br>` +
+      `&nbsp;&nbsp;• Not all skin markings are permanent<b>, though</b>. = <b>However,</b> not all skin markings are permanent.<br>` +
+      `&nbsp;&nbsp;• 콤마 + though가 문장 <b>끝</b>이나 주어 뒤 <b>삽입</b>으로 오면 <b>부사</b> — 앞 내용과 대조되는 말을 가볍게 꺼냄.<br>` +
+      `&nbsp;&nbsp;• 🚨 접속사 though(= although)는 뒤에 <b>S + V</b>가 옴: <b>Though</b> it rained, we played. → 뒤에 절이 있나 없나로 판별<br>` +
+      `&nbsp;&nbsp;• 🚨 <b>although</b>는 부사로 못 씀: ~ permanent, although. ❌` +
       `</div>`,
     eg: [
       ["대조 however (그러나)", "It rained; however, we played.", "비가 왔다; 그러나 우리는 (경기)했다."],
