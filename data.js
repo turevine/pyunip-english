@@ -395,18 +395,36 @@ const WORDS_BY_PASSAGE = {
   { word: "fade",             pos: "v.",   meaning: "바래다, 희미해지다, 서서히 사라지다", example: "The henna fades over time." },
   { word: "disappear",        pos: "v.",   meaning: "사라지다, 없어지다 (↔appear 나타나다)", example: "fades and disappears over time" },
   { word: "over time",        pos: "phr.", meaning: "시간이 지나면서, 시간이 흐르며",   example: "disappears over time" },
+  { word: "recent",          pos: "a.",    meaning: "최근의 (ad. recently) · in recent years 최근 몇 년간", example: "In recent years, tattooing has been gaining in popularity." },
+  { word: "body art",        pos: "n.",    meaning: "보디아트 (몸에 하는 문신·헤나·피어싱 등 장식)", example: "henna body art" },
+  { word: "popularity",      pos: "n.",    meaning: "인기 (a. popular)", example: "gaining in popularity" },
   { word: "industrialized",   pos: "a.",   meaning: "산업화된 (industry 산업)",         example: "many industrialized nations" },
   { word: "to a lesser degree", pos: "phr.", meaning: "덜한 정도로, 상대적으로 덜 (degree 정도)", example: "and, to a lesser degree, scarring" },
   { word: "gain in popularity", pos: "phr.", meaning: "인기를 얻다 (gain 얻다, popularity 인기)", example: "have been gaining in popularity" },
+  { word: "appealing",       pos: "a.",    meaning: "매력적인, 마음을 끄는 (v. appeal · be appealing to ~에게 매력적이다)", example: "What makes these practices appealing to those living in modern cities?" },
+  { word: "modern",          pos: "a.",    meaning: "현대의, 근대의; 최신의 (↔traditional 전통의)", example: "those living in modern cities" },
+  { word: "according to",    pos: "prep.", meaning: "~에 따르면 (뒤에 명사 · 출처)", example: "According to photographer Chris Rainier, ~" },
+  { word: "whose",           pos: "rel.",  meaning: "(소유격 관계대명사) 그의/그것의 ~가 · 뒤에 무관사 명사 + 완전한 절", example: "Chris Rainier, whose book examines body markings" },
   { word: "photographer",     pos: "n.",   meaning: "사진작가, 사진사 (photograph 사진)", example: "according to photographer Chris Rainier" },
   { word: "examine",          pos: "v.",   meaning: "조사하다, 살펴보다; 검사하다 (n. examination)", example: "his book examines body markings" },
   { word: "connection",       pos: "n.",   meaning: "연결, 관련, 유대 (v. connect)",    example: "a connection with the traditional world" },
+  { word: "around the globe", pos: "phr.", meaning: "전 세계에서, 세계 곳곳의 (= around the world · globe 지구)", example: "body markings around the globe" },
+  { word: "look for",        pos: "phr.",  meaning: "~을 찾다 (= seek, search for)", example: "people are looking for a connection" },
+  { word: "traditional",     pos: "a.",    meaning: "전통의, 전통적인 (n. tradition)", example: "a connection with the traditional world" },
+  { word: "whole",           pos: "a./n.", meaning: "전체의, 온; 전체 (a whole + 명사 = 하나의 통째 ~)", example: "a whole sector of modern society" },
+  { word: "society",         pos: "n.",    meaning: "사회 (a. social)", example: "a whole sector of modern society" },
+  { word: "meaning",         pos: "n.",    meaning: "의미, 뜻; (삶의) 의의 (v. mean)", example: "people in search of meaning" },
   { word: "sector",           pos: "n.",   meaning: "부문, 분야, 영역",               example: "a whole sector of modern society" },
   { word: "in search of",     pos: "phr.", meaning: "~을 찾아서, 구하여",             example: "people in search of identity" },
   { word: "hence",            pos: "ad.",  meaning: "따라서, 그러므로; 이런 이유로 (= therefore)", example: "Hence, a huge explosion of tattooing." },
   { word: "explosion",        pos: "n.",   meaning: "폭발; (수·양의) 폭발적 증가 (v. explode)", example: "a huge explosion of tattooing" },
+  { word: "huge",            pos: "a.",    meaning: "거대한, 엄청난 (= enormous, vast)", example: "a huge explosion of tattooing" },
+  { word: "reason",          pos: "v./n.", meaning: "(v.) 추론하다, 논리적으로 판단하다 · (n.) 이유", example: "Rainier reasons that it's mankind wanting identity." },
   { word: "mankind",          pos: "n.",   meaning: "인류, 인간 (= humankind)",        example: "mankind wanting identity" },
   { word: "a sense of",       pos: "phr.", meaning: "~의 감각/느낌 (a sense of place 소속감/장소감)", example: "a sense of place and culture" },
+  { word: "a sense of place", pos: "phr.", meaning: "소속감, 내 자리라는 느낌; 장소감", example: "wanting a sense of place" },
+  { word: "within",          pos: "prep.", meaning: "~ 안에서, ~ 이내에 (범위·경계 안)", example: "a sense of culture within their community" },
+  { word: "community",       pos: "n.",    meaning: "공동체, 지역 사회", example: "within their community" },
   ],
 
   /* ----- 지문 5: Racing to rescue koalas ----- */
@@ -415,7 +433,10 @@ const WORDS_BY_PASSAGE = {
   { word: "fence",            pos: "n.",   meaning: "울타리, 담",                     example: "caught on a fence" },
   { word: "prisoner",         pos: "n.",   meaning: "죄수, 포로 (prison 감옥)",         example: "like a prisoner trying to escape" },
   { word: "escape",           pos: "v./n.", meaning: "탈출하다, 벗어나다; 탈출",        example: "a prisoner trying to escape" },
+  { word: "two in the morning", pos: "phr.", meaning: "새벽 2시 (in the morning = 오전 · 비인칭 it과 함께: It's ~)", example: "It's two in the morning." },
   { word: "suburb",           pos: "n.",   meaning: "교외, 근교 (a. suburban)",         example: "a suburb of Brisbane" },
+  { word: "ring",            pos: "v.",    meaning: "(전화·벨이) 울리다 (ring-rang-rung · 자동사)", example: "A phone rings in the home of Megan Aitken." },
+  { word: "coast",           pos: "n.",    meaning: "해안, 연안 (on the east coast 동해안에)", example: "on the east coast of Australia" },
   { word: "run",              pos: "v.",   meaning: "운영하다, 경영하다; 달리다",        example: "Aitken runs a volunteer organization." },
   { word: "volunteer",        pos: "n./v.", meaning: "자원봉사자; 자원하다",           example: "a volunteer organization" },
   { word: "organization",     pos: "n.",   meaning: "조직, 단체, 기구 (v. organize)",   example: "a volunteer organization" },
@@ -423,8 +444,13 @@ const WORDS_BY_PASSAGE = {
   { word: "rescue",           pos: "v./n.", meaning: "구조하다, 구하다; 구조",          example: "rescuing wild koalas" },
   { word: "wild",             pos: "a.",   meaning: "야생의; 거친 (in the wild 야생에서)", example: "wild koalas" },
   { word: "location",         pos: "n.",   meaning: "위치, 장소 (v. locate)",           example: "before she is told the location" },
+  { word: "be told",         pos: "phr.",  meaning: "(정보를) 전달받다, 듣다 · 4형식 수동 be told + 명사", example: "Before she is told the location, ~" },
+  { word: "throw on",        pos: "phr.",  meaning: "(옷을) 급히 걸쳐 입다 · throw A over B = B 위에 A를 걸치다 (throw-threw-thrown)", example: "she has already thrown her clothes over her pajamas" },
+  { word: "pajamas",         pos: "n.",    meaning: "잠옷 (항상 복수형)", example: "over her pajamas" },
+  { word: "ready to V",      pos: "phr.",  meaning: "~할 준비가 된", example: "ready to head out" },
   { word: "head out",         pos: "phr.", meaning: "나서다, 출발하다, 향하다",         example: "ready to head out" },
   { word: "scene",            pos: "n.",   meaning: "현장, 장면 (on the scene 현장에)",  example: "when Aitken arrives on the scene" },
+  { word: "arrive on the scene", pos: "phr.", meaning: "현장에 도착하다 (arrive는 자동사 → at/in/on 필요)", example: "When Aitken arrives on the scene, ~" },
   { word: "discover",         pos: "v.",   meaning: "발견하다, 알아내다 (n. discovery)", example: "They discover that the fur is caught." },
   { word: "fur",              pos: "n.",   meaning: "(동물의) 털, 모피",              example: "the koala's fur" },
   { word: "barbed wire",      pos: "n.",   meaning: "가시철사, 철조망 (barbed 가시가 있는)", example: "caught in the barbed wire" },
@@ -5365,6 +5391,370 @@ const ANALYSIS = {
       `📝 <b>해석:</b> "헤나 염료는, 식물에서 나오는 것인데, 시간이 지나면서 옅어지고 사라진다."`,
     trans: "식물에서 얻는 헤나 물감은 시간이 흐르면 점점 옅어지다 사라진다.",
   },
+
+  // 지문 4 · 32번째 문장: In recent years in many industrialized nations, tattooing, henna body art, and, to a lesser degree, scarring have been gaining in popularity.
+  "4-32": {
+    form: "1형식 (S + V) · 현재완료진행 have been -ing · 주어 A, B, and C(동명사·명사 나열) → 복수 have · 삽입구 , to a lesser degree, · 문두 부사구 2개(시간 + 장소) · gain in popularity",
+    tense: "현재완료진행 (최근 몇 년 동안 쭉 ~해 오고 있다)",
+    chips: [
+      ["부사구(시간)", "In recent years"],
+      ["부사구(장소)", "in many industrialized nations,"],
+      ["주어 A(S)", "tattooing,"],
+      ["주어 B(S)", "henna body art,"],
+      ["접속사", "and,"],
+      ["삽입구", "to a lesser degree,"],
+      ["주어 C(S)", "scarring"],
+      ["동사(V) · 현재완료진행", "have been gaining"],
+      ["전치사구", "in popularity."],
+    ],
+    structure:
+      `뼈대: In recent years in ~ nations, <b>tattooing, henna body art, and scarring(S)</b> <b>have been gaining(V)</b> in popularity. "최근 몇 년간 ~ 나라들에서 <b>문신, 헤나 보디아트, 흉터 새기기가 인기를 얻어 오고 있다</b>".<br><br>` +
+      `① ⭐⭐⭐ <b>have been gaining</b> (<b>현재완료진행 · have been + -ing</b>) — 과거(몇 년 전)에 시작해서 <b>지금도 계속 진행 중</b>. "~해 오고 있다". In recent years(최근 몇 년간)가 <b>과거~현재 기간</b>을 나타내 현재완료(진행)와 짝. 🚨 in recent years 같은 '기간'은 현재완료 OK / yesterday·ago 같은 '과거 한 시점'은 ❌.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('present-perfect','pf-progressive')">📐 현재완료진행 have been -ing 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('present-perfect','pf-vs-past')">📐 현재완료 vs 과거 (시점 부사) 자세히 →</span><br>` +
+      `② ⭐⭐⭐ <b>A, B, and C → have</b> (<b>주어 3개 나열 → 복수</b>) — tattooing(동명사) + henna body art(명사) + scarring(동명사) = <b>세 가지</b>. 동명사 하나면 단수지만 and로 묶으면 <b>복수</b> → <b>have</b> been(has ❌). 바로 앞 scarring(단수처럼 보임)에 낚여 has 쓰면 ❌.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subject-agreement','sv-and')">📐 A and B → 복수 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subject-agreement','sv-gerund')">📐 동명사 주어 (하나면 단수 · and면 복수) 자세히 →</span><br>` +
+      `③ ⭐⭐ <b>, to a lesser degree,</b> (<b>콤마 삽입구</b>) — "<b>(그보다는) 덜한 정도로</b>". 콤마째 걷어내면 tattooing, henna body art, and scarring으로 뼈대 온전. 바로 뒤 scarring만 꾸밈 → "흉터 새기기는 <b>문신·헤나보다는 덜하지만</b>". lesser = little의 비교급(형용사, '더 적은'). (단어카드: to a lesser degree)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('conjunctive-adverb','ca-insert')">📐 콤마로 감싼 삽입 걷어내기 자세히 →</span><br>` +
+      `④ ⭐⭐ <b>tattooing, ~, and scarring</b> (<b>명사 병렬 A, B, and C</b>) — 셋 다 <b>명사 덩어리</b>로 모양을 맞춤. 마지막 앞에만 and, 앞에는 콤마.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-list')">📐 A, B, and C 나열 규칙 자세히 →</span><br>` +
+      `⑤ ⭐⭐ <b>gaining in popularity</b> (<b>gain in + 명사 = ~이 늘다</b>) — gain(얻다)이 자동사로 쓰여 <b>in + 명사</b>: "<b>인기 면에서 늘다 → 점점 인기를 얻다</b>". 같은 틀: gain in weight(체중이 늘다) · gain in strength(힘이 세지다). (단어카드: gain in popularity / popularity)<br>` +
+      `⑥ ⭐⭐ <b>industrialized nations</b> (<b>-ize + -ed 형용사</b>) — industry(산업) → industrialize(산업화하다) → industrialized "<b>산업화된</b>". 수동의 '완료된 상태'를 나타내는 p.p. 형용사 → 산업화<b>가 된</b> 나라들. (단어카드: industrialized)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('participle-postmod','pp-active-passive')">📐 현재분사 vs 과거분사 (능동·수동) 자세히 →</span><br>` +
+      `⑦ ⭐ <b>In recent years in many ~ nations</b> (<b>문두 부사구 2개</b>) — 시간(In recent years) + 장소(in many ~ nations)가 연달아 오고 콤마 뒤에 주어 시작. 부사구는 문장 성분이 아니라 걷어내고 주어 찾기.<br>` +
+      `💡 <b>흐름:</b> 지금까지는 <b>전통 사회</b>의 몸 표시(문신·흉터·헤나)를 소개했다면, 여기서부터 <b>현대 산업화 사회</b>로 장면 전환. 전통 관습이 요즘 선진국에서 <b>유행</b>하고 있다 → 다음 문장에서 "왜?"를 질문함.<br><br>` +
+      `📝 <b>해석:</b> "최근 몇 년 동안 많은 산업화된 나라들에서, 문신, 헤나 보디아트, 그리고 그보다 덜하지만 흉터 새기기가 인기를 얻어 오고 있다."`,
+    trans: "최근 몇 년 사이 많은 선진국에서 문신과 헤나 보디아트, 그리고 정도는 덜해도 흉터 새기기까지 점점 인기를 끌고 있다.",
+  },
+
+  // 지문 4 · 33번째 문장: What makes these practices appealing to those living in modern cities?
+  "4-33": {
+    form: "5형식 의문문 (S + V + O + OC) · 의문사 What = 주어 → do 없이 바로 동사 · make + O + 형용사 · be appealing to(~에게 매력적인) · those (who are) living ~(분사 후치수식)",
+    tense: "단순 현재 (현재의 일반적 상황을 묻는 질문)",
+    chips: [
+      ["주어(S) · 의문사", "What"],
+      ["동사(V)", "makes"],
+      ["목적어(O)", "these practices"],
+      ["목적격보어(OC) · 형용사", "appealing"],
+      ["전치사(대상)", "to"],
+      ["대명사(= people)", "those"],
+      ["분사 후치수식", "living in modern cities?"],
+    ],
+    structure:
+      `뼈대: <b>What(S)</b> <b>makes(V)</b> <b>these practices(O)</b> <b>appealing(OC)</b> to those ~? "<b>무엇이</b> 이 관습들을 <b>매력적으로 만드는가</b>?"<br><br>` +
+      `① ⭐⭐⭐ <b>What makes ~?</b> (<b>의문사가 주어 → do 없음</b>) — What이 makes의 <b>주어</b>. 주어를 묻는 의문문은 도치·do 없이 <b>의문사 + 동사</b> 그대로. What <b>does</b> make ~? ❌(강조 아니면) / What <b>makes</b> ~? ✓. What은 단수 취급 → make<b>s</b>.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('indirect-question','iq-subject')">📐 의문사가 주어일 때 (what + V) 자세히 →</span><br>` +
+      `② ⭐⭐⭐ <b>makes these practices appealing</b> (<b>5형식 make + O + 형용사</b>) — "O를 <b>~한 상태로</b> 만들다". these practices = appealing(매력적인) 관계 성립 → 5형식. 🚨 OC 자리에 부사 ❌: appealing<b>ly</b> ✗. "왜 매력적이냐?"를 "무엇이 매력적으로 만드냐?"로 묻는 영어식 표현 = <b>Why are these practices appealing ~?</b><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('five-pattern','fp-adj')">📐 5형식 O + 형용사 자세히 →</span><br>` +
+      `③ ⭐⭐ <b>appealing to ~</b> (<b>-ing 형용사 · ~에게 매력적인</b>) — appeal(마음을 끌다) → appealing "<b>매력적인, 마음을 끄는</b>"(사물이 사람을 끄는 쪽 → -ing). to = <b>대상</b>(~에게). 같은 틀: interesting / attractive <b>to</b> ~. (단어카드: appealing)<br>` +
+      `④ ⭐⭐⭐ <b>those living in modern cities</b> (<b>those = people · 분사 후치수식</b>) — those가 앞 명사를 받는 게 아니라 "<b>~하는 사람들</b>"(= people). 원래 those <b>(who are)</b> living in ~ → [주격 관계대명사 + be] 생략 → <b>living</b>이 뒤에서 꾸밈. "<b>현대 도시에 사는 사람들</b>". 사람들이 직접 사는 거니까 능동 -ing.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('participle-postmod','pp-omit')">📐 분사 후치수식 (who are 생략) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('relative-pronoun','rp-subject-omit')">📐 주격 관계대명사 + be 통째로 생략 자세히 →</span><br>` +
+      `⑤ ⭐ <b>these practices</b> — practice = <b>관습, 관행</b>(연습 ❌). 앞 문장의 문신·헤나·흉터 새기기를 한꺼번에 these로 받음. (단어카드: practice)<br>` +
+      `💡 <b>흐름:</b> 앞에서 "현대 선진국에서 몸 표시가 유행"이라고 했으니, 여기서 <b>질문을 던져</b> 글의 방향을 틀어 줌. 수사적 질문 → 다음 문장부터 사진작가 Rainier의 말로 <b>답</b>이 나옴. 질문 문장 = 이후 내용의 <b>주제 예고</b>(독해 포인트).<br><br>` +
+      `📝 <b>해석:</b> "무엇이 이러한 관습들을 현대 도시에 사는 사람들에게 매력적으로 만드는가?"`,
+    trans: "현대 도시에 사는 사람들은 왜 이런 관습에 끌리는 걸까?",
+  },
+
+  // 지문 4 · 34번째 문장: According to photographer Chris Rainier, whose book Ancient Marks examines body markings around the globe, people are looking for a connection with the traditional world.
+  "4-34": {
+    form: "3형식 (S + V + O) · According to ~(출처) · 소유격 관계대명사 , whose + 명사 ~(계속적 용법 · 뒤는 완전한 절) · 동격 photographer Chris Rainier / book Ancient Marks · 현재진행 are looking for · a connection with",
+    tense: "단순 현재(관계절 examines) + 현재진행(주절 are looking for · 요즘 진행 중인 경향)",
+    chips: [
+      ["전치사구(출처)", "According to"],
+      ["직함 + 이름(동격)", "photographer Chris Rainier,"],
+      ["소유격 관계대명사", "whose"],
+      ["관계절 주어 · 동격", "book Ancient Marks"],
+      ["관계절 동사", "examines"],
+      ["관계절 목적어", "body markings around the globe,"],
+      ["주어(S)", "people"],
+      ["동사(V) · 현재진행", "are looking for"],
+      ["목적어(O)", "a connection"],
+      ["전치사구", "with the traditional world."],
+    ],
+    structure:
+      `뼈대: According to ~ Rainier, [whose book ~ examines ~,] <b>people(S)</b> <b>are looking for(V)</b> <b>a connection(O)</b> with the traditional world. "Rainier에 따르면, <b>사람들은 전통 세계와의 연결을 찾고 있다</b>".<br><br>` +
+      `① ⭐⭐⭐ <b>, whose book ~ examines ~,</b> (<b>소유격 관계대명사 whose</b>) — whose = <b>his</b>(Rainier의). 원래 Chris Rainier + <b>His</b> book Ancient Marks examines ~ → His를 whose로 바꿔 연결. "<b>그의 책</b> 『Ancient Marks』가 ~을 살펴보는 (사진작가)". 🚨 whose <b>바로 뒤엔 무관사 명사</b>(whose <b>the</b> book ❌), 그 뒤는 주어·동사·목적어 다 갖춘 <b>완전한 절</b>(book이 주어, examines가 동사, body markings가 목적어). (단어카드: whose)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('relative-pronoun','rp-whose')">📐 소유격 관계대명사 whose 자세히 →</span><br>` +
+      `② ⭐⭐⭐ <b>콤마 + whose</b> (<b>계속적 용법</b>) — 고유명사(Chris Rainier)는 이미 딱 한 사람이라 한정할 필요 없음 → 콤마로 <b>덧붙임 정보</b>. 콤마째 걷어내면 뼈대: According to photographer Chris Rainier, people are looking for ~.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('relative-nonrestrictive','rn-comma')">📐 계속적 용법 (콤마 + 관계사) 자세히 →</span><br>` +
+      `③ ⭐⭐ <b>book ~ examines</b> (<b>수일치</b>) — 관계절 주어 = book(<b>단수</b>) → examine<b>s</b>. Ancient Marks가 s로 끝나 복수처럼 보여도 <b>책 제목 = 한 권</b> → 단수. 주절 주어 people은 <b>복수</b> → <b>are</b> looking. (단어카드: examine)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subject-agreement','sv-modifier')">📐 수식어 걷어내고 주어 찾기 자세히 →</span><br>` +
+      `④ ⭐⭐ <b>photographer Chris Rainier</b> / <b>book Ancient Marks</b> (<b>명사 + 명사 동격 · 무관사</b>) — 직함·종류 + 고유명사를 붙여 "<b>사진작가</b> Chris Rainier", "<b>책</b> 『Ancient Marks』". 직함이 이름 앞에 바로 붙으면 <b>관사 생략</b>(a photographer Chris Rainier ❌). = Chris Rainier, a photographer(콤마 동격). (단어카드: photographer)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('quotation-inversion','qi-appos')">📐 콤마 동격 A, B (A=B) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('articles','ar-zero')">📐 무관사 자리 자세히 →</span><br>` +
+      `⑤ ⭐⭐⭐ <b>According to ~</b> (<b>~에 따르면 · 출처</b>) — 2단어짜리 <b>전치사</b> → 뒤에 <b>명사</b>만(According to <b>he says</b> ❌ / According to <b>him</b> ✓). 🚨 according to <b>me</b>는 어색(자기 의견엔 In my opinion). (단어카드: according to)<br>` +
+      `⑥ ⭐⭐ <b>are looking for</b> (<b>현재진행 · look for = ~을 찾다</b>) — 요즘 <b>한창 진행 중인 경향</b>을 나타내는 현재진행. look for는 구동사로 <b>for + 목적어</b>까지 한 덩어리 = seek. (단어카드: look for)<br>` +
+      `⑦ ⭐⭐ <b>a connection with ~</b> (<b>명사 + with · ~와의 연결</b>) — connect A with B(A를 B와 연결하다)의 명사형 → connection <b>with</b>(to도 가능). "<b>전통 세계와의 유대·연결고리</b>". (단어카드: connection / traditional)<br>` +
+      `⑧ ⭐ <b>around the globe</b> — "<b>전 세계의, 세계 곳곳의</b>" = around the world. globe = 지구(본). body markings를 뒤에서 꾸밈. (단어카드: around the globe / marking)<br>` +
+      `💡 <b>흐름:</b> 앞 질문("왜 현대인이 끌리나?")에 대한 <b>첫 번째 답</b>. 전문가(사진작가 Rainier) 권위를 according to로 끌어와 답을 제시 → 사람들은 <b>전통 세계와의 연결</b>을 원한다. 이 '연결·정체성'이 글 마지막까지 이어지는 <b>핵심 키워드</b>.<br><br>` +
+      `📝 <b>해석:</b> "그의 책 『Ancient Marks』가 전 세계의 신체 표시를 살펴보는 사진작가 Chris Rainier에 따르면, 사람들은 전통 세계와의 연결을 찾고 있다."`,
+    trans: "전 세계 몸 표식을 담은 책 『Ancient Marks』의 저자인 사진작가 크리스 레이니어는 사람들이 전통 세계와 이어지기를 바란다고 말한다.",
+  },
+
+  // 지문 4 · 35번째 문장: "There is a whole sector of modern society—people in search of identity, people in search of meaning...," says Rainier.
+  "4-35": {
+    form: "인용문 도치 \"…,\" says + 주어 · 인용문 안: There is + 단수 주어(유도부사 there · 1형식) · 대시(—) 동격 · 명사 반복 병렬 people ~, people ~ · in search of(전치사구 후치수식) · 말줄임표(...)",
+    tense: "단순 현재 (현재 사회 상황 · 인용 전달)",
+    chips: [
+      ["유도부사", "\"There"],
+      ["동사(V)", "is"],
+      ["진짜 주어(S)", "a whole sector"],
+      ["전치사구", "of modern society"],
+      ["대시 · 동격 ①", "—people in search of identity,"],
+      ["동격 ②", "people in search of meaning...,\""],
+      ["전달동사(V) · 도치", "says"],
+      ["주어(S)", "Rainier."],
+    ],
+    structure:
+      `뼈대: "<b>There is(V)</b> <b>a whole sector(S)</b> of modern society—people ~, people ~," <b>says(V) Rainier(S)</b>. "<b>현대 사회에는 한 무리 전체가 있다</b>—정체성을 찾는 사람들, 의미를 찾는 사람들…"이라고 Rainier는 말한다.<br><br>` +
+      `① ⭐⭐⭐ <b>\"…,\" says Rainier</b> (<b>인용문 도치</b>) — 인용문이 앞으로 나가면서 <b>says + 주어</b>로 뒤집힘. 원래 Rainier says, "…". 주어가 고유명사(명사)라 도치 OK — 대명사면 he says(says he ❌).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('quotation-inversion','qi-order')">📐 인용문 도치 says + 주어 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('quotation-inversion','qi-pronoun')">📐 대명사 주어면 도치 ✗ 자세히 →</span><br>` +
+      `② ⭐⭐⭐ <b>There is a whole sector</b> (<b>There + be + 진짜 주어 · 수일치</b>) — There는 뜻 없는 유도부사, <b>진짜 주어는 be 뒤</b>의 a whole sector(<b>단수</b>) → <b>is</b>. 대시 뒤 people(복수)에 낚여 There are ❌. "~이 있다"(1형식).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subject-agreement','sv-there')">📐 There is/are 뒤 진짜 주어에 수일치 자세히 →</span><br>` +
+      `③ ⭐⭐⭐ <b>—people in search of ~</b> (<b>대시 동격</b>) — 대시 뒤 명사구 = 앞 a whole sector of modern society를 <b>구체적으로 풀어 줌</b>. "현대 사회의 한 부류, <b>즉</b> 정체성을 찾는 사람들". sector = people(동격).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('punctuation','pn-dash')">📐 대시 — 동격·덧붙이기 자세히 →</span><br>` +
+      `④ ⭐⭐ <b>people in search of identity, people in search of meaning</b> (<b>같은 틀 반복 병렬</b>) — <b>people in search of + 명사</b>를 두 번 반복해서 리듬·강조. 말할 때 생각나는 대로 이어 가는 <b>구어체</b> 느낌 + 말줄임표(...)로 "그 밖에도 많다"는 여운.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">📐 병렬 — 같은 모양끼리 연결 자세히 →</span><br>` +
+      `⑤ ⭐⭐⭐ <b>in search of + 명사</b> (<b>~을 찾아서 · 전치사구 후치수식</b>) — 3단어짜리 전치사구가 people을 <b>뒤에서</b> 꾸밈 = people (who are) <b>searching for</b> identity. 같은 뜻: <b>in pursuit of</b> / <b>looking for</b>. (단어카드: in search of)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('participle-postmod','pp-omit')">📐 뒤에서 꾸미기 (who are 생략) 자세히 →</span><br>` +
+      `⑥ ⭐⭐ <b>a whole sector of modern society</b> (<b>of = 부분 · 전체 중 일부</b>) — 현대 사회(전체) <b>중의</b> 한 부문 전체. whole = <b>전체의, 통째의</b> → "꽤 큰 무리"라는 강조. (단어카드: sector / whole)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('of-types','of-partitive')">📐 of — 부분 (전체 중 일부) 자세히 →</span><br>` +
+      `⑦ ⭐ <b>identity / meaning</b> (<b>추상명사 · 무관사</b>) — 정체성·(삶의) 의미 같은 <b>추상명사</b>라 a/the 없이 씀. (단어카드: identity / meaning)<br>` +
+      `💡 <b>흐름:</b> 앞 문장의 '전통 세계와의 연결'을 Rainier의 <b>직접 인용</b>으로 뒷받침. 현대인이 몸 표시에 끌리는 이유 = <b>정체성·의미를 찾으려는 욕구</b>. 다음 문장에서 그 결과(문신 폭발적 증가)를 Hence로 이어 감.<br><br>` +
+      `📝 <b>해석:</b> "현대 사회에는 하나의 큰 부류가 있습니다—정체성을 찾는 사람들, 의미를 찾는 사람들…"이라고 Rainier는 말한다.`,
+    trans: "레이니어는 \"현대 사회에는 정체성을 찾고, 삶의 의미를 찾는 사람들이 한 무리를 이루고 있다\"고 말한다.",
+  },
+
+  // 지문 4 · 36번째 문장: "Hence, [there has been] a huge explosion of tattooing and body marking."
+  "4-36": {
+    form: "1형식 (There + V + S) · 접속부사 Hence(따라서 · 결과) · 대괄호 [ ](인용자가 보충한 말) · there has been + 단수 주어(현재완료) · explosion of + 동명사/명사 병렬",
+    tense: "현재완료 (과거부터 지금까지 이어진 결과 · ~해 왔다)",
+    chips: [
+      ["접속부사(결과)", "\"Hence,"],
+      ["유도부사 · 보충어 [ ]", "[there"],
+      ["동사(V) · 현재완료", "has been]"],
+      ["진짜 주어(S)", "a huge explosion"],
+      ["전치사", "of"],
+      ["of의 목적어 A", "tattooing"],
+      ["접속사", "and"],
+      ["of의 목적어 B", "body marking.\""],
+    ],
+    structure:
+      `뼈대: "Hence, [<b>there has been(V)</b>] <b>a huge explosion(S)</b> of tattooing and body marking." "<b>그래서</b> 문신과 몸 표시가 <b>폭발적으로 늘어났다</b>."<br><br>` +
+      `① ⭐⭐⭐ <b>Hence,</b> (<b>접속부사 · 따라서 = therefore</b>) — 앞 내용(정체성·의미를 찾는 사람들)의 <b>결과</b>를 이끎. 🚨 접속부사라 두 문장을 직접 못 이음 → 마침표/세미콜론 뒤에 오고 보통 <b>콤마</b>를 붙임. 같은 무리: therefore · thus · consequently · as a result. (단어카드: hence)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('conjunctive-adverb','ca-vs-conjunction')">📐 접속사 vs 접속부사 자세히 →</span><br>` +
+      `② ⭐⭐⭐ <b>[there has been]</b> (<b>대괄호 · 인용자가 넣은 말</b>) — Rainier가 실제로 한 말은 "Hence, a huge explosion of ~"(동사 없는 말투). 글쓴이가 문장이 되도록 <b>빠진 말을 [ ] 안에 채워 넣음</b>. 해석할 땐 그냥 본문처럼 읽으면 됨.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('punctuation','pn-bracket')">📐 대괄호 [ ] — 인용문 속 보충 자세히 →</span><br>` +
+      `③ ⭐⭐⭐ <b>there has been a huge explosion</b> (<b>There + be + 진짜 주어 · 수일치</b>) — 진짜 주어 = a huge explosion(<b>단수</b>) → <b>has</b> been. of 뒤 tattooing and body marking(두 개)에 낚여 have been ❌.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subject-agreement','sv-there')">📐 There is/are 뒤 진짜 주어에 수일치 자세히 →</span><br>` +
+      `④ ⭐⭐ <b>has been</b> (<b>현재완료 · 결과/계속</b>) — 그동안 쭉 늘어나서 <b>지금 폭발적으로 많아진 상태</b>. 최근 몇 년간 이어진 유행을 말하므로 과거(there was)가 아니라 현재완료.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('present-perfect','pf-uses')">📐 현재완료 4가지 용법 자세히 →</span><br>` +
+      `⑤ ⭐⭐ <b>a huge explosion of ~</b> (<b>명사 + of · 폭발적 증가</b>) — explosion = 폭발 → 비유로 <b>(수·양의) 폭발적 증가</b>. "문신<b>의</b> 폭발적 증가" = 문신이 <b>폭발적으로 늘어남</b>(of 뒤가 의미상 주어). huge가 explosion을 한 번 더 강조. (단어카드: explosion / huge)<br>` +
+      `⑥ ⭐⭐ <b>of tattooing and body marking</b> (<b>전치사 + 동명사·명사 병렬</b>) — 전치사 of는 <b>한 번만</b>, 뒤 A and B는 둘 다 <b>-ing 명사</b>로 모양 맞춤. tattooing = 문신 새기기(동명사), body marking = 몸 표시하기. (단어카드: marking)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('gerund-prep','gp-parallel')">📐 전치사 하나 + 동명사 여러 개 병렬 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">📐 병렬 — 같은 모양끼리 연결 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 앞 인용("정체성·의미를 찾는 사람들이 많다") → Hence → <b>그 결과</b> 문신·몸 표시가 폭발적으로 늘었다. <b>원인 → 결과</b> 구조. 앞에서 던진 질문("왜 현대인이 끌리나?")에 대한 답이 여기서 완성됨.<br><br>` +
+      `📝 <b>해석:</b> "따라서, 문신과 신체 표시의 엄청난 폭발적 증가가 [있어 왔다]."`,
+    trans: "\"그래서 문신과 몸에 표식을 새기는 일이 폭발적으로 늘어난 겁니다.\"",
+  },
+
+  // 지문 4 · 37번째 문장: Rainier reasons that it's "mankind wanting identity, wanting a sense of place... and a sense of culture within their community."
+  "4-37": {
+    form: "3형식 (S + V + O) · reason that ~(that절 목적어 · ~라고 추론하다) · it's = it is(2형식 보어) · 명사 + 현재분사 후치수식 mankind wanting ~ · 분사 반복 병렬 wanting ~, wanting ~ · 목적어 병렬 a sense of place and a sense of culture",
+    tense: "단순 현재 (전달동사 reasons + 현재 상황 판단)",
+    chips: [
+      ["주어(S)", "Rainier"],
+      ["동사(V)", "reasons"],
+      ["접속사(명사절)", "that"],
+      ["that절 주어 + 동사", "it's"],
+      ["보어(C)", "\"mankind"],
+      ["분사 후치수식 ①", "wanting identity,"],
+      ["분사 후치수식 ②", "wanting a sense of place..."],
+      ["접속사", "and"],
+      ["wanting의 목적어 ②-2", "a sense of culture"],
+      ["전치사구", "within their community.\""],
+    ],
+    structure:
+      `뼈대: <b>Rainier(S)</b> <b>reasons(V)</b> [<b>that it's mankind ~</b>](O). "Rainier는 <b>그것은 ~을 원하는 인류(의 모습)라고 추론한다</b>".<br><br>` +
+      `① ⭐⭐⭐ <b>reasons that ~</b> (<b>reason = 동사 · 추론하다 · that절 목적어</b>) — reason이 명사(이유)가 아니라 <b>동사</b>! 주어 Rainier(단수) 뒤라 reason<b>s</b>. "<b>논리적으로 따져 ~라고 결론 내리다</b>". 뒤에 that절이 통째로 목적어 → 3형식. 같은 틀: think / argue / claim <b>that</b> ~. (단어카드: reason)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('noun-clause-that','nc-object')">📐 목적어 that절 (V + that ~) 자세히 →</span><br>` +
+      `② ⭐⭐ <b>it's \"mankind ~\"</b> (<b>it = 앞에서 말한 현상</b>) — it = 문신·몸 표시의 폭발적 유행. "그건 (결국) ~하는 인류다" = 그 유행의 정체는 <b>~을 원하는 인류의 모습</b>이다. it's = it <b>is</b>(its ❌ — its는 소유격).<br>` +
+      `③ ⭐⭐⭐ <b>mankind wanting identity</b> (<b>명사 + 현재분사 후치수식</b>) — = mankind <b>(which is)</b> wanting ~ → "<b>정체성을 원하는</b> 인류". 인류가 직접 원하니까 능동 <b>-ing</b>. 분사에 목적어(identity)가 붙어 길어지면 명사 <b>뒤</b>에서 꾸밈.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('participle-postmod','pp-omit')">📐 분사 후치수식 (관계사 + be 생략) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('participle-postmod','pp-active-passive')">📐 현재분사 vs 과거분사 (능동·수동) 자세히 →</span><br>` +
+      `④ ⭐⭐⭐ <b>wanting ~, wanting ~</b> (<b>같은 분사 반복 병렬</b>) — wanting identity / wanting a sense of place and ~. 같은 틀을 <b>반복</b>해서 리듬·강조(말하는 사람의 구어체). 두 번째 wanting의 목적어가 다시 <b>a sense of place ... and a sense of culture</b>로 병렬.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">📐 병렬 — 같은 모양끼리 연결 자세히 →</span><br>` +
+      `⑤ ⭐⭐⭐ <b>a sense of place</b> / <b>a sense of culture</b> (<b>a sense of + 명사 = ~감</b>) — sense = 감각·느낌. a sense of place = <b>소속감, 내가 있을 자리라는 느낌</b> · a sense of culture = <b>문화적 소속감</b>. 같은 틀: a sense of humor(유머 감각) · a sense of belonging(소속감). (단어카드: a sense of)<br>` +
+      `⑥ ⭐⭐ <b>within their community</b> (<b>within = ~ 안에서</b>) — 공동체 <b>안에서의</b> 문화적 소속감. within은 in보다 '범위·경계 안'을 강조. their = mankind를 사람들(복수)로 보고 받음. (단어카드: within / community)<br>` +
+      `⑦ ⭐ <b>mankind</b> (<b>무관사 · 집합 명사</b>) — 인류 전체를 가리키는 말이라 a/the 없이 씀. = humankind. (단어카드: mankind)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('articles','ar-zero')">📐 무관사 자리 자세히 →</span><br>` +
+      `⑧ ⭐ <b>... (말줄임표)</b> — 인용 중간을 <b>생략</b>했다는 표시. 원래 말이 더 길었지만 글쓴이가 핵심만 남김.<br>` +
+      `💡 <b>흐름:</b> 글의 <b>결론</b>. 현대인이 몸에 표시를 새기는 이유 = <b>정체성(identity), 소속감(a sense of place), 공동체 문화(a sense of culture)</b>를 원하기 때문. 글 앞부분의 '피부로 정체성·신분을 드러낸다'는 내용과 <b>수미상관</b>으로 맞물리며 마무리.<br><br>` +
+      `📝 <b>해석:</b> Rainier는 그것이 "정체성을 원하고, 소속감과… 자기 공동체 안에서의 문화적 소속감을 원하는 인류"라고 추론한다.`,
+    trans: "레이니어는 그 현상이 \"정체성을 갈망하고, 머물 자리와… 공동체 안에서 문화적 소속감을 갈망하는 인간의 모습\"이라고 본다.",
+  },
+
+  // 지문 5 · 1번째 문장: It's two in the morning, and a koala is caught on a fence, like a prisoner trying to escape.
+  "5-0": {
+    form: "중문 (절 + , and + 절) · 비인칭 주어 It(시간) · 2형식 It's two · 수동태 be caught on(~에 걸리다) · 전치사 like(~처럼) + 명사 · 분사 후치수식 a prisoner trying ~ · try to V(~하려고 애쓰다)",
+    tense: "단순 현재 (생생한 서사 현재 · 지금 눈앞에 벌어지듯)",
+    chips: [
+      ["비인칭 주어 + V", "It's"],
+      ["보어(C) · 시간", "two in the morning,"],
+      ["접속사", "and"],
+      ["주어(S)", "a koala"],
+      ["동사(V) · 수동태", "is caught"],
+      ["전치사구(장소)", "on a fence,"],
+      ["전치사(비유)", "like"],
+      ["like의 목적어", "a prisoner"],
+      ["분사 후치수식", "trying to escape."],
+    ],
+    structure:
+      `뼈대: <b>It's(S+V)</b> two in the morning, <b>and</b> <b>a koala(S)</b> <b>is caught(V)</b> on a fence, like a prisoner ~. "<b>새벽 2시</b>, 그리고 <b>코알라 한 마리가 울타리에 걸려 있다</b>".<br><br>` +
+      `① ⭐⭐⭐ <b>It's two in the morning</b> (<b>비인칭 주어 it · 시간</b>) — it은 "그것" ❌, 시간을 말할 때 주어 자리만 채우는 <b>빈 주어</b>. two in the morning = <b>새벽 2시</b>(in the morning = 0시~정오 전).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('impersonal-it','it-time')">📐 비인칭 주어 it (시간·날씨) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('impersonal-it','it-vs')">📐 it 세 가지 구별 자세히 →</span><br>` +
+      `② ⭐⭐⭐ <b>a koala is caught on a fence</b> (<b>수동태 · be caught on = ~에 걸리다</b>) — 코알라가 직접 잡는 게 아니라 울타리<b>에 걸린</b> 상태 → be + p.p.(catch-caught-<b>caught</b>). on = 울타리 <b>위·표면에</b> 걸림. (단어카드: be caught on / fence)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('passive-voice','pv-form')">📐 수동태 공식 be + p.p. 자세히 →</span><br>` +
+      `③ ⭐⭐ <b>, and</b> (<b>등위접속사 · 완전한 절 두 개 연결</b>) — It's ~ / a koala is ~ 두 문장을 <b>콤마 + and</b>로 이음. 첫 절은 <b>시간 배경</b>, 둘째 절은 <b>사건</b>.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('conjunctive-adverb','ca-vs-conjunction')">📐 접속사 vs 접속부사 (문장 잇는 법) 자세히 →</span><br>` +
+      `④ ⭐⭐⭐ <b>like a prisoner</b> (<b>전치사 like = ~처럼 · 비유</b>) — like 뒤에 <b>명사</b>(a prisoner). 🚨 like는 전치사라 뒤에 S + V 오면 원칙상 ❌ → 절이면 <b>as / as if</b>. "<b>탈출하려는 죄수처럼</b>" — 울타리에 매달린 코알라를 감옥 철창에 매달린 죄수에 비유. (단어카드: prisoner)<br>` +
+      `⑤ ⭐⭐⭐ <b>a prisoner trying to escape</b> (<b>현재분사 후치수식</b>) — = a prisoner <b>(who is)</b> trying to escape. 죄수가 직접 애쓰니 능동 <b>-ing</b>. 분사에 to escape가 붙어 길어져서 명사 <b>뒤</b>에서 꾸밈.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('participle-postmod','pp-omit')">📐 분사 후치수식 (who is 생략) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('participle-postmod','pp-active-passive')">📐 현재분사 vs 과거분사 자세히 →</span><br>` +
+      `⑥ ⭐⭐ <b>trying to escape</b> (<b>try to V = ~하려고 애쓰다</b>) — 탈출에 성공했는지는 모름, <b>애쓰는 중</b>. try escaping(시험 삼아 탈출해 보다)과 뜻이 다름. escape = 탈출하다(자동사). (단어카드: escape)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('gerund-vs-infinitive','gi-try')">📐 try to V vs try -ing 자세히 →</span><br>` +
+      `⑦ ⭐ <b>a koala / a fence / a prisoner</b> (<b>처음 등장 → a</b>) — 이야기에 처음 나오는 대상이라 부정관사 a. 다시 나오면 the koala.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('articles','ar-a')">📐 부정관사 a — 처음 나오는 것 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 글의 <b>도입</b>. 한밤중이라는 시간 + 울타리에 걸린 코알라 장면으로 <b>긴박감</b>을 만듦. 현재시제로 써서 독자가 <b>현장에 있는 듯</b> 느끼게 하는 서사 기법. 다음부터 구조자가 등장.<br><br>` +
+      `📝 <b>해석:</b> "새벽 2시이고, 코알라 한 마리가 마치 탈출하려는 죄수처럼 울타리에 걸려 있다."`,
+    trans: "새벽 두 시, 코알라 한 마리가 탈옥하려다 붙잡힌 죄수처럼 울타리에 걸려 있다.",
+  },
+
+  // 지문 5 · 2번째 문장: A phone rings in the home of Megan Aitken in a suburb of Brisbane, on the east coast of Australia.
+  "5-1": {
+    form: "1형식 (S + V) · 자동사 ring · 전치사구 줄줄이(장소: 작은 곳 → 큰 곳) · 소유의 of(the home of ~) · 콤마 동격 Brisbane, on the east coast of ~",
+    tense: "단순 현재 (서사 현재)",
+    chips: [
+      ["주어(S)", "A phone"],
+      ["동사(V) · 자동사", "rings"],
+      ["전치사구(장소 ①)", "in the home"],
+      ["소유의 of", "of Megan Aitken"],
+      ["전치사구(장소 ②)", "in a suburb"],
+      ["소유·소속의 of", "of Brisbane,"],
+      ["콤마 동격(위치 설명)", "on the east coast of Australia."],
+    ],
+    structure:
+      `뼈대: <b>A phone(S)</b> <b>rings(V)</b> in the home of ~. "<b>전화가 울린다</b>" — 나머지는 전부 <b>장소</b> 전치사구.<br><br>` +
+      `① ⭐⭐⭐ <b>A phone rings</b> (<b>1형식 · 자동사 ring</b>) — ring = (전화·벨이) <b>울리다</b>. 목적어 없이 문장 완성. 주어 a phone(<b>단수</b>) → ring<b>s</b>. 뒤의 긴 덩어리는 모두 <b>부사구</b>라 걷어내면 뼈대만 남음.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subject-agreement','sv-modifier')">📐 수식어 걷어내고 주어 찾기 자세히 →</span><br>` +
+      `② ⭐⭐⭐ <b>in the home ~ in a suburb ~ on the east coast ~</b> (<b>장소 전치사구 줄줄이 · 작은 곳 → 큰 곳</b>) — 집 → 교외 → 도시 → 해안 → 나라 순으로 <b>줌아웃</b>. 영어는 장소를 <b>작은 단위부터</b> 씀(한국어는 큰 데부터: 호주 동해안 브리즈번 교외의 ~ 집). 해석은 뒤에서부터 올라오면 자연스러움.<br>` +
+      `③ ⭐⭐ <b>the home of Megan Aitken</b> (<b>소유의 of · B의 A</b>) — = Megan Aitken's home. "Megan Aitken<b>의</b> 집". 사람 이름이라 's도 가능하지만 뒤에 장소 정보가 길게 이어져서 of로 풀어 씀.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('of-types','of-possess')">📐 소유·소속의 of 자세히 →</span><br>` +
+      `④ ⭐⭐ <b>a suburb of Brisbane</b> (<b>교외 · a + 여러 개 중 하나</b>) — suburb = 도시 주변 주택가(<b>교외</b>). 브리즈번엔 교외가 여러 곳 → 그중 <b>한 곳</b>이라 a. (단어카드: suburb)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('articles','ar-a')">📐 부정관사 a — 여럿 중 하나 자세히 →</span><br>` +
+      `⑤ ⭐⭐ <b>Brisbane, on the east coast of Australia</b> (<b>콤마 동격 · 위치 보충</b>) — 콤마 뒤 전치사구가 Brisbane이 <b>어디 있는지</b> 덧붙여 설명. "호주 <b>동해안에 있는</b> 브리즈번". 콤마째 걷어내도 문장 성립.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('quotation-inversion','qi-appos')">📐 콤마 동격 A, B (A = B) 자세히 →</span><br>` +
+      `⑥ ⭐ <b>on the east coast</b> (<b>on + 해안선 · the east</b>) — 해안은 '선' 위에 붙어 있는 느낌이라 <b>on</b>. east coast는 하나뿐이라 <b>the</b>. cf. <b>in</b> the east of Australia(호주 동부 <b>안에</b>).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('articles','ar-the')">📐 the — 하나뿐인 것 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 장면 전환 — 울타리의 코알라 → <b>구조 요청 전화</b>가 울리는 집. 주인공 Megan Aitken이 처음 등장하고, 장소를 구체적으로 알려 줘서 실제 이야기라는 느낌을 줌.<br><br>` +
+      `📝 <b>해석:</b> "호주 동해안의 브리즈번 교외에 있는 Megan Aitken의 집에서 전화가 울린다."`,
+    trans: "호주 동부 해안, 브리즈번 교외에 있는 메건 에이킨의 집에 전화벨이 울린다.",
+  },
+
+  // 지문 5 · 3번째 문장: Aitken runs a volunteer organization devoted to rescuing wild koalas.
+  "5-2": {
+    form: "3형식 (S + V + O) · run = 운영하다(타동사) · 명사 + 명사(volunteer organization) · 과거분사 후치수식 devoted to ~ · be devoted to + -ing(to는 전치사)",
+    tense: "단순 현재 (현재 사실 · 하고 있는 일)",
+    chips: [
+      ["주어(S)", "Aitken"],
+      ["동사(V)", "runs"],
+      ["목적어(O)", "a volunteer organization"],
+      ["과거분사 후치수식", "devoted"],
+      ["전치사 to", "to"],
+      ["동명사 + 목적어", "rescuing wild koalas."],
+    ],
+    structure:
+      `뼈대: <b>Aitken(S)</b> <b>runs(V)</b> <b>a volunteer organization(O)</b> [devoted to rescuing wild koalas]. "Aitken은 <b>자원봉사 단체를 운영한다</b>" + 어떤 단체? → 야생 코알라 구조에 헌신하는.<br><br>` +
+      `① ⭐⭐⭐ <b>runs</b> (<b>run = 운영하다 · 타동사</b>) — '달리다'(자동사) ❌. 뒤에 목적어(organization)가 오면 <b>운영·경영하다</b>. run a business / run a store. 주어 Aitken(단수) → run<b>s</b>. (단어카드: run)<br>` +
+      `② ⭐⭐⭐ <b>organization devoted to ~</b> (<b>과거분사 후치수식</b>) — = an organization <b>(which is)</b> devoted to ~. 단체가 직접 헌신하는 게 아니라 (사람들에 의해) ~에 <b>바쳐진</b> 단체 → 수동 <b>p.p.</b> "<b>~에 전념하는</b> 단체".<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('participle-postmod','pp-omit')">📐 분사 후치수식 (which is 생략) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('participle-postmod','pp-active-passive')">📐 현재분사 vs 과거분사 (능동·수동) 자세히 →</span><br>` +
+      `③ ⭐⭐⭐ <b>devoted to rescuing</b> (<b>to = 전치사 → -ing</b>) — be devoted to의 to는 to부정사가 아니라 <b>전치사</b> → 뒤에 동명사. 🚨 devoted to <b>rescue</b> ❌ / devoted to <b>rescuing</b> ✓. 같은 무리: look forward to -ing · be used to -ing · be committed to -ing. (단어카드: be devoted to / rescue)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('gerund-prep','gp-rule')">📐 to가 전치사인 경우 + -ing 자세히 →</span><br>` +
+      `④ ⭐⭐ <b>a volunteer organization</b> (<b>명사 + 명사</b>) — volunteer(자원봉사자)가 명사지만 organization 앞에서 형용사처럼 꾸밈 → "<b>자원봉사</b> 단체". 앞 명사는 단수 그대로(volunteers organization ❌). (단어카드: volunteer / organization)<br>` +
+      `⑤ ⭐ <b>rescuing wild koalas</b> (<b>동명사 + 목적어</b>) — 동명사도 동사 성질이라 목적어(wild koalas)를 바로 가짐. wild = <b>야생의</b>(↔ 동물원·애완). (단어카드: wild)<br>` +
+      `💡 <b>흐름:</b> 주인공 Aitken이 <b>누구인지</b> 소개 — 야생 코알라 구조 자원봉사 단체 운영자. 그래서 한밤중에 전화가 오는 것. 이어서 그녀가 얼마나 재빨리 출동하는지 보여 줌.<br><br>` +
+      `📝 <b>해석:</b> "Aitken은 야생 코알라를 구조하는 데 전념하는 자원봉사 단체를 운영한다."`,
+    trans: "에이킨은 야생 코알라 구조에 힘쓰는 자원봉사 단체를 운영하고 있다.",
+  },
+
+  // 지문 5 · 4번째 문장: Before she is told the location, she has already thrown her clothes over her pajamas, ready to head out.
+  "5-3": {
+    form: "부사절 Before + S + V(시간) · 4형식 수동태 be told + 직접목적어 · 현재완료(완료) has already thrown · throw A over B · 형용사 분사구문 (being) ready to V · head out",
+    tense: "현재완료 (완료 · 이미 ~했다) + 부사절 단순 현재 (서사 현재)",
+    chips: [
+      ["접속사(시간)", "Before"],
+      ["부사절 주어", "she"],
+      ["부사절 동사 · 4형식 수동", "is told"],
+      ["남은 목적어", "the location,"],
+      ["주어(S)", "she"],
+      ["동사(V) · 현재완료", "has already thrown"],
+      ["목적어(O)", "her clothes"],
+      ["전치사구", "over her pajamas,"],
+      ["형용사 분사구문", "ready to head out."],
+    ],
+    structure:
+      `뼈대: [Before she is told the location,] <b>she(S)</b> <b>has already thrown(V)</b> <b>her clothes(O)</b> over her pajamas, ready to head out. "위치를 듣기도 전에, <b>그녀는 이미 잠옷 위에 옷을 걸쳤다</b>, 나갈 준비를 한 채로".<br><br>` +
+      `① ⭐⭐⭐ <b>she is told the location</b> (<b>4형식 수동태 · 목적어가 남음</b>) — 능동: (Someone) tells <b>her</b> <b>the location</b>(누군가 그녀에게 위치를 알려 준다) → her를 주어로 올리면 She <b>is told</b> the location. 🚨 수동태 뒤에 명사(the location)가 남아도 <b>정상</b> — 4형식이라 목적어가 하나 남은 것. "위치를 <b>전달받다</b>". (단어카드: location)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('passive-voice','pv-4th')">📐 4형식 수동태 (be told + O) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('passive-voice','pv-form')">📐 수동태 공식 be + p.p. 자세히 →</span><br>` +
+      `② ⭐⭐⭐ <b>has already thrown</b> (<b>현재완료 · 완료 용법</b>) — already(벌써)와 짝을 이뤄 "<b>이미 ~해 버렸다</b>". throw-threw-<b>thrown</b>. 위치를 듣기도 전에 옷 입기가 <b>이미 끝난 상태</b> → 그만큼 재빠르다는 강조. already 자리 = <b>has와 p.p. 사이</b>.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('present-perfect','pf-uses')">📐 현재완료 4가지 용법 (완료) 자세히 →</span><br>` +
+      `③ ⭐⭐ <b>Before she is told ~</b> (<b>접속사 before + S + V</b>) — 뒤에 절(주어+동사)이 오면 접속사. before + 명사/-ing면 전치사(before the call / before leaving). 부사절이 앞에 오면 <b>콤마</b>로 주절과 구분.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('during-while','dw-family')">📐 전치사 vs 접속사 짝 자세히 →</span><br>` +
+      `④ ⭐⭐ <b>thrown her clothes over her pajamas</b> (<b>throw A over B = B 위에 A를 걸치다</b>) — throw(던지다)가 옷과 함께 쓰이면 <b>휙 걸쳐 입다</b>. 잠옷을 갈아입을 시간도 없이 그 위에 옷을 덧입은 것 → 급박함. pajamas는 항상 <b>복수형</b>(바지가 두 갈래). (단어카드: throw on / pajamas)<br>` +
+      `⑤ ⭐⭐⭐ <b>, ready to head out</b> (<b>형용사로 시작하는 분사구문 · being 생략</b>) — = , <b>(being) ready</b> to head out = and she is ready to head out. 주어 she의 <b>상태</b>를 덧붙임 "<b>나갈 준비를 마친 채</b>". ready to V = ~할 준비가 된. (단어카드: head out)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('participle-construction','pc-adj')">📐 형용사 분사구문 (being 생략) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-adj')">📐 형용사 + to V 자세히 →</span><br>` +
+      `⑥ ⭐ <b>head out</b> (<b>구동사 · 나서다, 출발하다</b>) — head(~로 향하다) + out(밖으로) = <b>집을 나서다</b>. = set out, leave.<br>` +
+      `💡 <b>흐름:</b> 전화를 받자마자 위치도 듣기 전에 옷부터 걸치는 모습 → Aitken이 얼마나 <b>숙련되고 헌신적인지</b> 행동으로 보여 줌. 서사 현재 + 현재완료로 '이미 끝나 있다'는 속도감을 살림.<br><br>` +
+      `📝 <b>해석:</b> "위치를 전달받기도 전에, 그녀는 이미 잠옷 위에 옷을 걸치고 나갈 준비를 마쳤다."`,
+    trans: "위치를 듣기도 전에 그녀는 벌써 잠옷 위에 옷을 걸쳐 입고 나설 채비를 끝냈다.",
+  },
+
+  // 지문 5 · 5번째 문장: When Aitken arrives on the scene, two other volunteers—Jane Davies and Sandra Peachey—are already there.
+  "5-4": {
+    form: "부사절 When + S + V(시간) · 2형식/1형식 are there(장소 보어) · 대시 동격 —A and B— 삽입 · 주어 복수 volunteers → are · two other + 복수명사 · arrive on the scene",
+    tense: "단순 현재 (서사 현재)",
+    chips: [
+      ["접속사(시간)", "When"],
+      ["부사절 주어", "Aitken"],
+      ["부사절 동사", "arrives"],
+      ["전치사구", "on the scene,"],
+      ["주어(S)", "two other volunteers"],
+      ["대시 동격 삽입", "—Jane Davies and Sandra Peachey—"],
+      ["동사(V)", "are"],
+      ["부사", "already"],
+      ["장소 부사", "there."],
+    ],
+    structure:
+      `뼈대: [When Aitken arrives on the scene,] <b>two other volunteers(S)</b> —~— <b>are(V)</b> already <b>there</b>. "Aitken이 현장에 도착했을 때, <b>다른 자원봉사자 두 명이 이미 와 있다</b>".<br><br>` +
+      `① ⭐⭐⭐ <b>—Jane Davies and Sandra Peachey—</b> (<b>대시 동격 · 중간 삽입</b>) — 대시 두 개로 감싼 부분 = 앞 two other volunteers가 <b>누구인지</b> 이름으로 풀어 줌(volunteers = Jane과 Sandra). 대시째 걷어내면 뼈대: two other volunteers are already there.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('punctuation','pn-dash')">📐 대시 — 중간 삽입 · 동격 자세히 →</span><br>` +
+      `② ⭐⭐⭐ <b>volunteers ~ are</b> (<b>수일치 · 삽입 걷어내기</b>) — 주어 = two other volunteers(<b>복수</b>) → <b>are</b>. 바로 앞 Sandra Peachey(한 사람)에 낚여 is ❌. 삽입 속 Jane and Sandra도 2명이라 어차피 복수.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subject-agreement','sv-modifier')">📐 수식어 걷어내고 주어 찾기 자세히 →</span><br>` +
+      `③ ⭐⭐ <b>two other volunteers</b> (<b>숫자 + other + 복수명사</b>) — "<b>다른</b> 자원봉사자 <b>두 명</b>". 어순: 숫자 → other → 명사(other two volunteers도 가능하나 two other가 흔함). 🚨 another는 단수 명사 앞 → another volunteer / two <b>other</b> volunteers. (단어카드: volunteer)<br>` +
+      `④ ⭐⭐ <b>When Aitken arrives</b> (<b>시간 부사절 · 접속사 when</b>) — When + S + V로 주절의 <b>시점</b>을 정함. 이야기 전체가 현재시제라 arrives도 현재. 주어 Aitken(단수) → arrive<b>s</b>.<br>` +
+      `⑤ ⭐⭐ <b>arrives on the scene</b> (<b>arrive + 전치사 · 자동사</b>) — arrive는 <b>자동사</b>라 바로 목적어 ❌ → arrive <b>at</b>(좁은 곳)/<b>in</b>(넓은 곳)/<b>on</b> the scene(현장에). 🚨 arrive the scene ❌. scene = (사건) <b>현장</b>. (단어카드: scene)<br>` +
+      `⑥ ⭐⭐ <b>are already there</b> (<b>be + 장소 부사 · ~에 있다</b>) — there = <b>그곳에</b>(현장). be동사 + 장소 = "~에 있다". already가 be동사 <b>뒤</b>에 옴(일반동사는 앞: already know). "Aitken보다 <b>먼저</b> 와 있었다"는 느낌.<br>` +
+      `💡 <b>흐름:</b> 혼자가 아니라 <b>팀</b>으로 움직인다는 것을 보여 줌. 앞 문장에서 Aitken이 재빨리 출동했는데도 동료들이 <b>이미 와 있을 만큼</b> 모두 헌신적임. 이제 세 사람이 구조 작업을 시작함.<br><br>` +
+      `📝 <b>해석:</b> "Aitken이 현장에 도착했을 때, 다른 자원봉사자 두 명—Jane Davies와 Sandra Peachey—이 이미 그곳에 와 있다."`,
+    trans: "에이킨이 현장에 도착하니 다른 자원봉사자 제인 데이비스와 샌드라 피치가 벌써 와 있다.",
+  },
 };
 
 /* ---------- 문법 정리 (공부한 내용 채우기) ----------
@@ -5447,6 +5837,15 @@ const GRAMMAR = [
       `&nbsp;&nbsp;• 🚨 전치사 바로 뒤엔 <b>that ❌ · who ❌</b> → on <b>which</b> ✓ / with <b>whom</b> ✓ (on that ❌, with who ❌)<br>` +
       `&nbsp;&nbsp;• 전치사 고르기: 원래 문장으로 되돌려 봄 — see it <b>on</b> the skin → on which / talk <b>with</b> him → the man with whom I talked<br>` +
       `&nbsp;&nbsp;• 💡 <b>장소면 [전치사 + which] = where(관계부사)</b>: skin <b>on which</b> ~ = skin <b>where</b> ~ / the city <b>in which</b> I live = the city <b>where</b> I live · 🚨 전치사 뺀 which 단독 ❌ (the city which I live ✗)` +
+      `</div>` +
+      `<div id="rp-whose" class="g-sub">` +
+      `<b>👤 소유격 관계대명사 whose — "그의/그것의 ~가"</b><br>` +
+      `선행사의 <b>소유격(his/her/its/their)</b> 자리를 대신하는 관계대명사. 사람·사물 모두 OK.<br>` +
+      `&nbsp;&nbsp;• Chris Rainier + <b>His</b> book examines body markings. → Chris Rainier, <b>whose</b> book examines body markings (<b>그의</b> 책이 신체 표시를 살펴보는 Rainier)<br>` +
+      `&nbsp;&nbsp;• a house <b>whose</b> roof is red (지붕이 빨간 집) = a house the roof <b>of which</b> is red<br>` +
+      `&nbsp;&nbsp;• 🚨 <b>whose + 무관사 명사</b>: whose <b>the</b> book ❌ / whose book ✓ (whose 자체가 소유격이라 관사와 못 겹침)<br>` +
+      `&nbsp;&nbsp;• 🚨 whose 뒤는 <b>완전한 절</b>: [whose + 명사]가 통째로 주어/목적어가 되고 나머지 성분은 다 있음 → 불완전한 절이 오는 who/which와 구별 (편입 단골)<br>` +
+      `&nbsp;&nbsp;• 🚨 who's(= who is)와 헷갈리지 말기: whose book ✓ / who's book ❌` +
       `</div>`,
     eg: [
       ["주격 who (사람)", "the man who lives here", "여기 사는 그 남자"],
@@ -5472,6 +5871,13 @@ const GRAMMAR = [
       `<b>이 문장에서의 의미 = ‘결과(그래서 ~하다)’</b><br>` +
       `“…, 그리고 그것이 축구를 세계의 스포츠로 만든다” → 앞 내용의 <b>결과</b>를 덧붙이는 분사구문.<br>` +
       `속 구조까지 뜯으면 <b>make + O + OC (5형식)</b>: making(분사) + soccer(목적어) + the world's sport(목적격보어) = ‘축구를 세계의 스포츠로 만들다’.` +
+      `</div>` +
+      `<div id="pc-adj" class="g-sub">` +
+      `<b>🧩 형용사로 시작하는 분사구문 — (being) 생략</b><br>` +
+      `분사구문의 <b>Being</b>은 대부분 생략 → 형용사(구)·p.p.만 덜렁 남아 주어를 설명함.<br>` +
+      `&nbsp;&nbsp;• ~ over her pajamas, <b>ready to head out</b>. = ~, <b>(being) ready</b> to head out (= and she was ready to head out) → "<b>나갈 준비를 한 채로</b>"<br>` +
+      `&nbsp;&nbsp;• <b>(Being) Tired</b>, he went to bed early. (피곤해서 일찍 잤다)<br>` +
+      `&nbsp;&nbsp;• 🔍 문장 끝 콤마 뒤 형용사(구) = 주어의 <b>상태</b>를 덧붙임 (동시 상황 '~한 채로')` +
       `</div>`,
     eg: [
       ["원래 부사절", "As she smiled, she waved at me.", "그녀는 웃으면서 나에게 손을 흔들었다."],
@@ -5698,6 +6104,14 @@ const GRAMMAR = [
       `&nbsp;&nbsp;• the <b>yakuza, or the Japanese mafia</b> = 야쿠자, <b>즉</b> 일본 마피아 (야쿠자 = 일본 마피아, 둘 중 고르는 게 아님)<br>` +
       `&nbsp;&nbsp;• <b>botany, or the study of plants</b> = 식물학, 즉 식물 연구<br>` +
       `🔎 <b>판별법:</b> B가 A의 <b>뜻풀이·다른 이름</b>이면 동격(즉), A와 B가 <b>서로 다른 선택지</b>면 '또는'. 낯선 용어·외래어 뒤에 자주 나옴 → 독해 때 단어 뜻을 알려 주는 힌트!` +
+      `</div>` +
+      `<div id="pn-bracket" class="g-sub">` +
+      `<b>[ ] 대괄호 — 인용문 속 "글쓴이가 채워 넣은 말"</b><br>` +
+      `직접 인용("...") 안의 [ ]는 <b>원래 화자가 한 말이 아니라</b>, 글쓴이가 문맥을 보충하려고 <b>끼워 넣은 말</b>.<br>` +
+      `&nbsp;&nbsp;• "Hence, <b>[there has been]</b> a huge explosion of tattooing." → 말로는 동사 없이 "Hence, a huge explosion of ~"라고 했는데, 문장이 되게 there has been을 보충<br>` +
+      `&nbsp;&nbsp;• "<b>[He]</b> was the best coach." → 원래 대명사가 가리키는 사람을 밝히거나 바꿔 넣을 때도 씀<br>` +
+      `&nbsp;&nbsp;• 짝꿍: <b>...</b>(말줄임표) = 인용에서 <b>뺀</b> 부분 / <b>[ ]</b> = 인용에 <b>넣은</b> 부분<br>` +
+      `💡 독해할 땐 [ ] 안까지 그냥 본문처럼 이어 읽으면 됨.` +
       `</div>`,
     eg: [
       ["엠 대시 —  ·  확성기 (강조·반전)", "My best friend —the one who hates sports— came to my match.", "내 베프가 —참고로 걔 스포츠 극혐인데— 내 경기에 왔어."],
@@ -5927,6 +6341,14 @@ const GRAMMAR = [
       `&nbsp;&nbsp;• 같은 틀: be <b>allowed / asked / told / expected / forced / required</b> to V<br>` +
       `&nbsp;&nbsp;• 부정은 be 뒤: were <b>not</b> permitted to V = ~하는 것이 허용되지 않았다<br>` +
       `&nbsp;&nbsp;• cf. 사역 make + O + 원형 → 수동에선 <b>to가 부활</b>: He was made <b>to</b> wait.` +
+      `</div>` +
+      `<div id="pv-4th" class="g-sub">` +
+      `<b>🎁 4형식 수동태 — be told + 직접목적어 (목적어가 하나 남는다!)</b><br>` +
+      `4형식(S + V + IO + DO)은 목적어가 <b>두 개</b>라, 하나를 주어로 올려도 <b>나머지 하나가 p.p. 뒤에 그대로 남음</b>.<br>` +
+      `&nbsp;&nbsp;• 능동: Someone tells <b>her</b>(IO) <b>the location</b>(DO). (누군가 그녀에게 위치를 알려 준다)<br>` +
+      `&nbsp;&nbsp;• 수동: <b>She is told the location</b>. (그녀가 위치를 <b>전달받는다</b>) ← the location이 뒤에 남음<br>` +
+      `&nbsp;&nbsp;• 같은 틀: be <b>given</b> a chance · be <b>shown</b> the way · be <b>taught</b> English · be <b>asked</b> a question<br>` +
+      `&nbsp;&nbsp;• 🚨 '수동태 뒤엔 목적어 없다' ❌ → 4형식 수동은 <b>p.p. + 명사</b>가 정상! (편입 문법 단골 함정)` +
       `</div>`,
     eg: [
       ["과거 수동태", "Early matches were played in 1862.", "초기 경기들은 1862년에 열렸다. (경기 = 치러지는 대상)"],
@@ -6079,6 +6501,15 @@ const GRAMMAR = [
       `&nbsp;&nbsp;• I <b>have seen</b> him yesterday. (❌) → I <b>saw</b> him yesterday. (⭕)<br>` +
       `&nbsp;&nbsp;• <b>When</b> did you arrive? (⭕) / When have you arrived? (❌)<br>` +
       `👉 "지금까지"의 느낌이면 현재완료, "그때 딱"이면 과거.` +
+      `</div>` +
+      `<div id="pf-progressive" class="g-sub">` +
+      `<b>⏳ 현재완료진행 have/has been + -ing — "(과거부터 지금까지) 쭉 ~해 오고 있다"</b><br>` +
+      `현재완료(계속) + 진행형. 과거에 시작한 동작이 <b>지금도 진행 중</b>이고 앞으로도 이어질 수 있다는 느낌을 강조.<br>` +
+      `&nbsp;&nbsp;• Tattooing and scarring <b>have been gaining</b> in popularity <b>in recent years</b>. (최근 몇 년간 쭉 인기를 얻어 오고 있다)<br>` +
+      `&nbsp;&nbsp;• I <b>have been studying</b> English <b>for</b> two hours. (두 시간째 공부하는 중)<br>` +
+      `&nbsp;&nbsp;• 단짝 표현: <b>for</b> + 기간 · <b>since</b> + 시점 · <b>in recent years / lately / recently</b> · <b>all day</b><br>` +
+      `&nbsp;&nbsp;• 🚨 수일치는 have/has가 담당: 주어 복수 → <b>have</b> been / 단수 → <b>has</b> been<br>` +
+      `&nbsp;&nbsp;• 🚨 know·believe·own 같은 <b>상태동사</b>는 진행형 ❌ → I have known him for years ✓ (have been knowing ✗)` +
       `</div>`,
     eg: [
       ["경험 (~한 적 있다)", "She has won several marathons.", "그녀는 여러 마라톤에서 우승한 적이 있다."],
@@ -6488,6 +6919,12 @@ const GRAMMAR = [
       `&nbsp;&nbsp;• Tanned skin began <b>to indicate</b> ~ = began <b>indicating</b> ~ (둘 다 ✓, 뜻 같음)<br>` +
       `&nbsp;&nbsp;• It started <b>to rain</b>. = It started <b>raining</b>.<br>` +
       `&nbsp;&nbsp;• 🚨 참고: 이미 -ing형인 동사 뒤에선 to V를 선호 — It is beginning <b>to rain</b> (beginning raining 어색)` +
+      `</div>` +
+      `<div id="gi-try" class="g-sub">` +
+      `<b>④ try to V vs try -ing — 뜻이 달라짐</b><br>` +
+      `&nbsp;&nbsp;• <b>try to V</b> = ~하려고 <b>애쓰다·노력하다</b> (될지 안 될지 모름): a prisoner <b>trying to escape</b> (탈출하려고 <b>애쓰는</b> 죄수)<br>` +
+      `&nbsp;&nbsp;• <b>try -ing</b> = <b>시험 삼아</b> ~해 보다 (해 보는 것 자체는 함): <b>Try adding</b> some salt. (소금을 한번 넣어 봐)<br>` +
+      `&nbsp;&nbsp;• 🔍 to V = 아직 안 된 미래·목표 / -ing = 실제로 해 보는 행동 → remember·stop과 같은 원리` +
       `</div>`,
     eg: [
       ["remember -ing (과거)", "I remember meeting him.", "그를 만났던 게 기억난다."],
@@ -6615,6 +7052,13 @@ const GRAMMAR = [
       `&nbsp;&nbsp;• <b>To learn</b> languages <b>is</b> fun. · <b>What they want</b> <b>is</b> money.<br>` +
       `&nbsp;&nbsp;• 🚨 동명사 뒤 목적어가 복수여도 단수: <b>Reading</b> books <b>is</b> ~ (books ❌ → Reading)<br>` +
       `&nbsp;&nbsp;• 예외: 동명사 둘을 and로 이으면 복수 — Tanning and tattooing <b>are</b> popular.` +
+      `</div>` +
+      `<div id="sv-there" class="g-sub">` +
+      `<b>④ There is / are + 진짜 주어 → 뒤 명사에 맞춤</b><br>` +
+      `There는 뜻 없는 <b>유도부사</b>(가짜 자리 채움). <b>진짜 주어는 be 동사 뒤</b>에 옴 → 그 명사의 수에 맞춤.<br>` +
+      `&nbsp;&nbsp;• There <b>is</b> <u>a whole sector</u> of modern society—people ~. (sector 단수 → is · 뒤의 people에 낚이면 ❌)<br>` +
+      `&nbsp;&nbsp;• There <b>are</b> <u>many reasons</u> for it. (reasons 복수 → are)<br>` +
+      `&nbsp;&nbsp;• 🚨 There is <b>a number of</b> ~ ❌ → There <b>are</b> a number of(많은) ~ ✓ / There <b>is</b> <b>the number of</b>(~의 수) ~ ✓` +
       `</div>`,
     eg: [
       ["A and B → 복수", "His skill and his effort are admirable.", "그의 기술과 노력은 훌륭하다."],
@@ -6809,6 +7253,31 @@ const GRAMMAR = [
       ["막연한 수", "for thousands of years", "수천 년 동안"],
       ["정확한 수", "about three thousand years ago", "약 3천 년 전에"],
       ["강조", "tens of thousands of visitors", "수만 명의 방문객"],
+    ],
+  },
+  {
+    id: "impersonal-it",
+    title: "비인칭 주어 it — 시간·날씨·거리·명암",
+    tag: "기초 · 독해",
+    body:
+      `뜻 없이 <b>주어 자리만 채우는 it</b>. "그것"으로 해석 ❌. 영어는 주어가 꼭 있어야 해서 시간·날씨 같은 문장에 빈 주어 it을 씀.<br><br>` +
+      `<div id="it-time" class="g-sub">` +
+      `<b>① 시간·날씨·거리·요일·명암의 it</b><br>` +
+      `&nbsp;&nbsp;• 시간: <b>It's two in the morning.</b> (새벽 2시다) · It's 7 o'clock.<br>` +
+      `&nbsp;&nbsp;• 날씨: It is raining. · 요일·날짜: It's Monday. · 거리: It's 3 km to the station. · 명암: It's dark outside.<br>` +
+      `&nbsp;&nbsp;• 🔍 <b>two in the morning</b> = 새벽 2시 (in the morning = 오전, 0시~12시 전부) · two <b>at night</b>도 비슷` +
+      `</div>` +
+      `<div id="it-vs" class="g-sub">` +
+      `<b>② it 세 가지 구별</b><br>` +
+      `&nbsp;&nbsp;• <b>대명사 it</b>: 앞 명사를 받음 — I bought a book. <b>It</b> is fun. (그것)<br>` +
+      `&nbsp;&nbsp;• <b>비인칭 it</b>: 받는 명사 없음, 시간·날씨 — <b>It</b>'s two in the morning.<br>` +
+      `&nbsp;&nbsp;• <b>가주어 it</b>: 뒤의 to V/that절이 진짜 주어 — <b>It</b> is hard <b>to learn English</b>.<br>` +
+      `<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-formal-it')">📐 가주어 it — to부정사 →</span>` +
+      `</div>`,
+    eg: [
+      ["시간", "It's two in the morning.", "새벽 2시다."],
+      ["날씨", "It is snowing outside.", "밖에 눈이 오고 있다."],
+      ["거리", "It's about 5 km from here.", "여기서 약 5km다."],
     ],
   },
 ];
