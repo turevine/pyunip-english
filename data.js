@@ -5755,6 +5755,224 @@ const ANALYSIS = {
       `📝 <b>해석:</b> "Aitken이 현장에 도착했을 때, 다른 자원봉사자 두 명—Jane Davies와 Sandra Peachey—이 이미 그곳에 와 있다."`,
     trans: "에이킨이 현장에 도착하니 다른 자원봉사자 제인 데이비스와 샌드라 피치가 벌써 와 있다.",
   },
+
+  "5-5": {
+    form: "3형식 (S + V + O) · O = that 명사절 · 명사절 안은 현재 수동태",
+    tense: "단순 현재 (discover) · that절 현재 수동 (is caught)",
+    chips: [
+      ["주어(S)", "They"],
+      ["동사(V)", "discover"],
+      ["목적어(O)·that명사절", "that the koala's fur is caught ..."],
+      ["명사절 주어", "the koala's fur"],
+      ["명사절 동사·수동", "is caught"],
+      ["전치사구", "in the barbed wire."],
+    ],
+    structure:
+      `뼈대: <b>They(S)</b> + <b>discover(V)</b> + <b>[that ...](O)</b> 의 3형식. 목적어 자리에 <b>that 명사절</b> 통째로.<br><br>` +
+      `① ⭐⭐ <b>that the koala's fur is caught ...</b> (<b>목적어절 · 명사절 접속사 that</b>) — discover(알아내다)의 <b>목적어</b>가 되는 명사절. 여기서 that은 뜻이 없고 "<b>~라는 것을</b>" 묶어 주는 <b>접속사</b>일 뿐(해석 안 해도 됨). that 뒤에는 <b>완전한 문장</b>(주어+동사 다 있음)이 옴 → 관계대명사 that과 구별!<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('noun-clause-that','nc-object')">📐 목적어 자리 that명사절 자세히 →</span><br>` +
+      `② ⭐ <b>the koala's fur</b> (명사절 주어 · <b>소유격 's</b>) — "코알라<b>의</b> 털". fur = (동물의) 털·모피. (단어카드: fur)<br>` +
+      `③ ⭐⭐⭐ <b>is caught</b> (<b>현재 수동태 · be + p.p.</b>) — catch–caught–<b>caught</b>. 털이 "스스로 잡는" 게 아니라 "<b>철사에 걸려 있는(당하는)</b>" 입장이라 <b>수동</b>. <b>be caught in ~</b> = "~에 걸리다/끼이다"로 통째 숙어처럼 외우기.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('passive-voice','pv-form')">📐 수동태 be + p.p. 자세히 →</span><br>` +
+      `④ <b>in the barbed wire</b> (전치사구) — "<b>가시철사(철조망) 안에</b>". barbed = 가시가 달린(barb "가시" + -ed), wire = 철사. (단어카드: barbed wire)<br>` +
+      `💡 <b>흐름:</b> 왜 코알라가 울타리에 붙잡혀 있는지 그 원인을 확인하는 장면 — 털이 가시철사에 엉켜 못 움직이는 상태.<br><br>` +
+      `📝 <b>해석:</b> "그들은 코알라의 털이 가시철사에 걸려 있다는 것을 발견한다."`,
+    trans: "그들은 코알라의 털이 가시철사에 걸려 있는 것을 발견한다.",
+  },
+
+  "5-6": {
+    form: "3형식 (S + V + O)",
+    tense: "단순 현재 (notice)",
+    chips: [
+      ["수식어(M)·장소부사", "Nearby,"],
+      ["주어(S)", "they"],
+      ["동사(V)", "notice"],
+      ["목적어(O)", "tall eucalyptus trees."],
+    ],
+    structure:
+      `뼈대: <b>they(S)</b> + <b>notice(V)</b> + <b>tall eucalyptus trees(O)</b> 의 간단한 3형식.<br><br>` +
+      `① <b>Nearby,</b> (장소 부사·수식어) — "<b>근처에</b>". 문장 앞에 나와 장면의 위치를 잡아 줌. 콤마로 분리.<br>` +
+      `② <b>notice</b> (동사) — "<b>알아차리다·(눈에) 띄다</b>". see보다 "문득 눈에 들어오다"의 느낌. (단어카드: notice)<br>` +
+      `③ ⭐ <b>tall eucalyptus trees</b> (목적어 · <b>형용사 + 명사 + 명사 · 무관사 복수</b>) — tall(키 큰) + eucalyptus(유칼립투스, 코알라가 먹는 나무) + trees. 복수 보통명사가 "<b>그런 나무들</b>"을 <b>일반적으로</b> 가리켜 <b>a/the 없이</b> 쓰임. (단어카드: eucalyptus)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('articles','ar-zero')">📐 무관사 복수(일반 지칭) 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 코알라가 <b>건너가려던 목적지</b>(유칼립투스 나무)가 길 반대편에 있다는 단서를 깔아 둠.<br><br>` +
+      `📝 <b>해석:</b> "근처에서, 그들은 키 큰 유칼립투스 나무들을 발견한다(눈에 들어온다)."`,
+    trans: "근처에서 그들은 키 큰 유칼립투스 나무들을 발견한다.",
+  },
+
+  "5-7": {
+    form: "인용문(직접화법) + 전달동사 · 인용문은 2형식 be + 과거진행 try to V",
+    tense: "인용 과거진행 (was trying) · 전달 현재 (says)",
+    chips: [
+      ["인용문(O)", "\"He was obviously trying to get ...\""],
+      ["인용문 주어", "He"],
+      ["인용문 동사·과거진행", "was ... trying"],
+      ["부사", "obviously"],
+      ["to부정사", "to get to the trees"],
+      ["전치사구", "on the other side,"],
+      ["전달 주어·동사", "Aitken says."],
+    ],
+    structure:
+      `큰따옴표 안이 Aitken이 실제로 한 말(<b>직접화법</b>). 전체 뼈대: <b>"인용문"</b> + <b>Aitken says</b>.<br><br>` +
+      `① <b>"..., " Aitken says</b> (<b>인용문 뒤 전달동사</b>) — 말한 내용을 <b>먼저</b> 큰따옴표로 보여 주고 "<b>~라고 Aitken이 말한다</b>"를 뒤에 붙임. 주어가 대명사가 아니라 이름이라 <b>says Aitken</b>처럼 도치해도 되지만 여기선 평범한 <b>주어+동사</b> 순서.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('quotation-inversion','qi-order')">📐 인용문 + 전달동사 어순 자세히 →</span><br>` +
+      `② ⭐ <b>He was ... trying</b> (<b>과거진행 · was + V-ing</b>) — "그가 <b>~하려고 애쓰고 있었다</b>". 구조에 걸리기 <b>전까지</b> 계속되던 동작이라 진행형.<br>` +
+      `③ <b>obviously</b> (부사 · 삽입) — "<b>분명히</b>". was와 trying 사이에 끼어 동사를 꾸밈. (단어카드: obviously)<br>` +
+      `④ ⭐⭐ <b>trying to get</b> (<b>try + to부정사</b>) — try <b>to</b> V = "<b>~하려고 (애써) 시도하다</b>". 🚨 try <b>-ing</b>("시험 삼아 ~해 보다")와 뜻이 <b>완전히 다름</b> — 구별 필수!<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('gerund-vs-infinitive','gi-try')">📐 try to V ↔ try V-ing 차이 자세히 →</span><br>` +
+      `⑤ <b>get to the trees</b> (<b>get to + 장소</b>) — "~<b>에 도달하다/가 닿다</b>". get to = reach.<br>` +
+      `⑥ <b>on the other side</b> (전치사구) — "<b>반대편에</b> (있는)". the other side = (둘 중) 나머지 한쪽 = 길 건너편. 앞 trees를 꾸밈.<br>` +
+      `💡 <b>흐름:</b> 코알라가 울타리를 넘으려 한 <b>이유</b>(건너편 나무로 가려고)를 구조대원이 해석해 주는 대사.<br><br>` +
+      `📝 <b>해석:</b> "'그 녀석은 분명 반대편 나무들로 가려고 애쓰고 있었어요'라고 Aitken이 말한다."`,
+    trans: "\"그 녀석은 분명히 반대편에 있는 나무로 가려고 애쓰던 거예요\"라고 에이킨이 말한다.",
+  },
+
+  "5-8": {
+    form: "3형식 (S + V + O) · V = 구동사 put on",
+    tense: "단순 현재 (puts)",
+    chips: [
+      ["주어(S)", "Aitken"],
+      ["동사(V)·구동사", "puts on"],
+      ["목적어(O)", "heavy gloves."],
+    ],
+    structure:
+      `뼈대: <b>Aitken(S)</b> + <b>puts on(V)</b> + <b>heavy gloves(O)</b> 의 3형식.<br><br>` +
+      `① ⭐⭐ <b>puts on</b> (<b>구동사 put on · 착용하다</b>) — put(두다) + on(몸에 붙여) = "<b>(옷·장갑 등을) 착용하다/끼다</b>". 동사(put)+부사(on)가 한 덩어리.<br>` +
+      `&nbsp;&nbsp;🚨 <b>목적어 위치:</b> 목적어가 <b>명사</b>면 put on gloves = put gloves on 둘 다 OK. 하지만 목적어가 <b>대명사</b>면 반드시 <b>사이에</b> → put <b>them</b> on (⭕) / put on them (❌).<br>` +
+      `② <b>heavy gloves</b> (목적어 · <b>무관사 복수</b>) — heavy(두꺼운·무거운) + gloves(장갑, 보통 한 켤레라 복수). "그런 장갑"을 일반적으로 가리켜 <b>a/the 없이</b>. (단어카드: gloves)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('articles','ar-zero')">📐 무관사 복수 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 코알라가 물 수 있으니 <b>보호 장비</b>부터 갖추는 장면 — 바로 뒤 "물 수 있다"는 설명으로 이어짐.<br><br>` +
+      `📝 <b>해석:</b> "Aitken은 두꺼운 장갑을 낀다."`,
+    trans: "에이킨이 두꺼운 장갑을 낀다.",
+  },
+
+  "5-9": {
+    form: "2형식 (S + 조동사 can be + C) · Despite + 명사(양보) · when + 분사(축약 부사절)",
+    tense: "단순 현재 (can be)",
+    chips: [
+      ["수식어(M)·양보", "Despite their cute appearance,"],
+      ["주어(S)", "koalas"],
+      ["동사(V)·조동사+be", "can be"],
+      ["보어(C)·형용사", "ferocious"],
+      ["부사절(축약)", "when resisting capture."],
+    ],
+    structure:
+      `뼈대: [Despite ...] <b>koalas(S)</b> + <b>can be(V)</b> + <b>ferocious(C)</b> [when ...] 의 2형식.<br><br>` +
+      `① ⭐⭐⭐ <b>Despite their cute appearance</b> (<b>양보 전치사 Despite + 명사</b>) — "귀여운 외모<b>에도 불구하고</b>". 🚨 <b>Despite는 전치사</b>라서 뒤에 <b>명사(구)</b>만! 뒤에 주어+동사(절)를 쓰려면 <b>Although/Though</b>(접속사). (Despite ≒ In spite of)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('concession','cn-prep')">📐 양보 전치사 despite/in spite of 자세히 →</span><br>` +
+      `② ⭐ <b>can be ferocious</b> (<b>조동사 can + be + 형용사 보어</b>) — can(~일 수 있다) + be동사 + <b>ferocious</b>(사나운·흉포한)로 S의 성질을 설명하는 2형식. (단어카드: ferocious)<br>` +
+      `③ ⭐⭐ <b>when resisting capture</b> (<b>when + 분사 · 부사절 축약</b>) — 원래 <b>when they resist(=are resisting) capture</b>인데, <b>주어가 주절과 같아</b>(they=koalas) 주어+be를 지우고 <b>-ing</b>만 남긴 꼴. "<b>포획에 저항할 때</b>". resist(저항하다) + capture(붙잡힘·포획, 명사). (단어카드: resist / capture)<br>` +
+      `💡 <b>흐름:</b> "귀엽다 😊 ↔ 사납다 😠"의 <b>반전</b> — 겉모습만 보고 방심하면 안 된다는 경고.<br><br>` +
+      `📝 <b>해석:</b> "귀여운 외모에도 불구하고, 코알라는 붙잡히지 않으려 저항할 때 사나워질 수 있다."`,
+    trans: "귀여운 외모와 달리, 코알라는 붙잡히지 않으려 저항할 때 사나워질 수 있다.",
+  },
+
+  "5-10": {
+    form: "조건 부사절 If + 주절(1형식 bite) · and 로 묶인 두 번째 주절(3형식 has + O) · 명사 뒤 to부정사",
+    tense: "단순 현재",
+    chips: [
+      ["접속사(조건)", "If"],
+      ["조건절", "they feel threatened,"],
+      ["주절①(1형식)", "they bite,"],
+      ["등위접속사", "and"],
+      ["주절②(3형식)", "Aitken has the scars"],
+      ["to부정사(형용사적)", "to prove it."],
+    ],
+    structure:
+      `뼈대: [If they feel threatened,] <b>they bite</b>, <b>and</b> <b>Aitken has the scars to prove it</b>. 조건절 + 주절 두 개를 and로 연결.<br><br>` +
+      `① ⭐ <b>If they feel threatened</b> (<b>조건 부사절 · feel + 과거분사</b>) — "그들이 <b>위협받는다고 느끼면</b>". feel + <b>threatened</b>(threaten "위협하다"의 p.p.=형용사)로 "위협<b>받는</b> 상태를 느끼다"는 수동 의미. (단어카드: threaten/threatened)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('word-suffix','ws-ed')">📐 -ed 분사형 형용사(수동) 자세히 →</span><br>` +
+      `② <b>they bite</b> (주절① · <b>1형식 · 자동사</b>) — bite "물다". 여기선 목적어 없이 "(사람을) 문다"라는 동작 자체. bite–bit–bitten.<br>` +
+      `③ <b>and Aitken has the scars</b> (주절② · 3형식) — has(가지고 있다) + the scars(흉터들). (단어카드: scar)<br>` +
+      `④ ⭐⭐ <b>to prove it</b> (<b>명사 수식 to부정사 · 형용사적 용법</b>) — 앞 명사 <b>the scars</b>를 꾸며 "그것을 <b>증명해 줄</b> 흉터". to부정사가 명사 뒤에서 "<b>~할/~해 줄</b>"로 수식. it = 앞 내용(코알라가 문다는 사실). prove = 증명하다.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-adj')">📐 명사 뒤 to부정사(형용사적) 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 앞에서 "사나워질 수 있다"고 한 말을 <b>실제 증거(흉터)</b>로 뒷받침 — 과장이 아니라 경험담.<br><br>` +
+      `📝 <b>해석:</b> "위협을 느끼면 그들은 물며, Aitken에게는 그것을 증명해 줄 흉터들이 있다."`,
+    trans: "위협을 느끼면 코알라는 물며, 에이킨에게는 그걸 증명할 흉터가 있다.",
+  },
+
+  "5-11": {
+    form: "1형식 (S + V) · get to work = 숙어",
+    tense: "단순 현재 (get)",
+    chips: [
+      ["주어(S)", "The volunteers"],
+      ["동사(V)·숙어", "get to work."],
+    ],
+    structure:
+      `뼈대: <b>The volunteers(S)</b> + <b>get to work(V)</b> 의 1형식(목적어 없이 동작만).<br><br>` +
+      `① ⭐⭐ <b>get to work</b> (<b>숙어 · 일에 착수하다</b>) — "<b>본격적으로 일을 시작하다</b>". 여기서 work는 <b>관사 없는 불가산 명사</b>("일·작업") → <b>get to work</b>로 통째 외우기. 🚨 get to <b>the</b> work와 다름.<br>` +
+      `&nbsp;&nbsp;💡 참고: get to <b>work</b>(일에 착수하다) ↔ get to <b>the office</b>(사무실에 도착하다)처럼 get to 뒤 명사에 따라 뜻이 달라짐.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('articles','ar-zero')">📐 무관사 불가산명사(work) 자세히 →</span><br>` +
+      `② <b>The volunteers</b> (주어 · <b>특정 the</b>) — 앞서 등장한 바로 그 자원봉사자들이라 <b>the</b>. (단어카드: volunteer)<br>` +
+      `💡 <b>흐름:</b> 상황 설명·경고가 끝나고, 이제부터 세 사람이 <b>실제 구조 작업</b>에 들어감을 알리는 짧은 전환 문장.<br><br>` +
+      `📝 <b>해석:</b> "자원봉사자들이 작업에 착수한다."`,
+    trans: "자원봉사자들이 작업에 착수한다.",
+  },
+
+  "5-12": {
+    form: "3형식 주절 + while 부사절(3형식) · 동시동작/대조",
+    tense: "단순 현재",
+    chips: [
+      ["주어(S)", "Davies"],
+      ["동사(V)", "throws"],
+      ["목적어(O)", "a blanket"],
+      ["전치사구", "over the animal,"],
+      ["접속사(동시)", "while"],
+      ["부사절", "Peachey opens the lid of a cage."],
+    ],
+    structure:
+      `뼈대: <b>Davies throws a blanket over the animal</b>, <b>while</b> <b>Peachey opens the lid of a cage</b>. 두 사람이 <b>동시에</b> 다른 일을 함.<br><br>` +
+      `① <b>Davies throws a blanket over the animal</b> (주절 · 3형식) — throws(던지다) + a blanket(담요, O) + over the animal(동물 <b>위로</b>). "담요를 코알라 위로 덮어 씌운다". (단어카드: blanket)<br>` +
+      `② ⭐⭐ <b>while</b> (<b>접속사 · 동시·대조</b>) — "<b>~하는 동안·~하면서</b>". 뒤에 <b>주어+동사(절)</b>가 옴. 🚨 <b>during</b>은 전치사라 뒤에 <b>명사</b>만 (during the rescue) — while과 혼동 금지!<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('during-while','dw-basic')">📐 while(접속사) ↔ during(전치사) 자세히 →</span><br>` +
+      `③ ⭐ <b>the lid of a cage</b> (<b>소유의 of</b>) — "<b>우리의 뚜껑</b>" = a cage's lid. A of B = "B의 A". (단어카드: lid / cage)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('of-types','of-possess')">📐 소유의 of 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 두 보조 대원이 <b>역할을 나눠</b> 움직이는 장면 — 한 명은 담요로 덮고, 한 명은 우리를 열어 둠.<br><br>` +
+      `📝 <b>해석:</b> "Davies가 그 동물 위로 담요를 덮는 동안, Peachey는 우리의 뚜껑을 연다."`,
+    trans: "데이비스가 동물 위로 담요를 덮는 동안, 피치는 우리 뚜껑을 연다.",
+  },
+
+  "5-13": {
+    form: "3형식 · 동사 3개 병렬 (grasps / frees / drops) · A, B, and C",
+    tense: "단순 현재",
+    chips: [
+      ["주어(S)", "Aitken"],
+      ["부사", "firmly"],
+      ["동사구①", "grasps the koala through the blanket,"],
+      ["동사구②", "frees it from the fence,"],
+      ["등위접속사", "and"],
+      ["동사구③", "drops it in the cage."],
+    ],
+    structure:
+      `뼈대: <b>Aitken(S)</b>이 <b>① grasps ... ② frees ... ③ drops ...</b> 세 동작을 차례로 함. 한 주어에 <b>동사구 3개가 and로 병렬</b>.<br><br>` +
+      `① ⭐⭐ <b>A, B, and C 병렬</b> (<b>세 개 나열</b>) — [grasps the koala], [frees it], [and drops it]처럼 <b>콤마로 나열하다 마지막만 and</b>로 묶는 전형적 3개 나열. 동작의 <b>순서</b>(붙잡고 → 떼어내고 → 넣고)를 보여 줌.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-list')">📐 A, B, and C 나열·병렬 자세히 →</span><br>` +
+      `② <b>firmly grasps the koala through the blanket</b> — firmly(단단히, 부사) + grasp(꽉 붙잡다) + through the blanket(담요 <b>너머로</b>). (단어카드: grasp / firmly)<br>` +
+      `③ ⭐ <b>frees it from the fence</b> (<b>free A from B</b>) — free가 여기선 <b>동사</b>("풀어 주다·떼어 내다"). "그것(코알라)을 울타리<b>에서</b> 떼어 낸다". it = the koala.<br>` +
+      `④ <b>drops it in the cage</b> — drop(떨어뜨리다·내려 놓다) + 우리 <b>안에</b>. "우리에 넣는다".<br>` +
+      `💡 <b>흐름:</b> 담요로 감싸 안전하게 붙잡고 → 철사에서 떼어 → 우리에 넣는, <b>구조의 핵심 3단계</b>를 한 문장에 압축.<br><br>` +
+      `📝 <b>해석:</b> "Aitken은 담요 너머로 코알라를 단단히 붙잡아, 울타리에서 떼어 낸 뒤, 우리에 넣는다."`,
+    trans: "에이킨은 담요 너머로 코알라를 단단히 붙잡아 울타리에서 떼어 낸 뒤 우리에 넣는다.",
+  },
+
+  "5-14": {
+    form: "3형식 (S + V + O)",
+    tense: "단순 현재 (check)",
+    chips: [
+      ["수식어(M)·순서부사", "Next,"],
+      ["주어(S)", "they"],
+      ["동사(V)", "check"],
+      ["목적어(O)", "the animal's physical condition."],
+    ],
+    structure:
+      `뼈대: <b>they(S)</b> + <b>check(V)</b> + <b>the animal's physical condition(O)</b> 의 3형식.<br><br>` +
+      `① <b>Next,</b> (순서 부사·수식어) — "<b>다음으로</b>". 구조 작업의 <b>단계</b>를 이어 줌(붙잡아 넣은 뒤 → 다음 단계).<br>` +
+      `② <b>check</b> (동사) — "<b>점검하다·확인하다</b>".<br>` +
+      `③ ⭐ <b>the animal's physical condition</b> (목적어 · <b>소유격 's + 형용사</b>) — the animal<b>'s</b>("그 동물<b>의</b>", 소유격) + <b>physical</b>(신체의, 형용사) + condition(상태). "그 동물의 <b>신체 상태</b>". (단어카드: physical / condition)<br>` +
+      `💡 <b>흐름:</b> 포획이 끝나면 곧바로 <b>건강 점검</b> — 다친 데가 있는지 보고, 병원行·방사 여부를 정하는 단계로 이어짐.<br><br>` +
+      `📝 <b>해석:</b> "다음으로, 그들은 그 동물의 신체 상태를 점검한다."`,
+    trans: "다음으로 그들은 그 동물의 신체 상태를 점검한다.",
+  },
 };
 
 /* ---------- 문법 정리 (공부한 내용 채우기) ----------
