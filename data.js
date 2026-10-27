@@ -514,6 +514,10 @@ const WORDS_BY_PASSAGE = {
   { word: "plentiful",        pos: "a.",   meaning: "풍부한, 많은 (= abundant, n. plenty)", example: "Eucalyptus leaves were plentiful." },
   { word: "clear",            pos: "v.",   meaning: "(숲·땅을) 개간하다, 없애다; 치우다", example: "the forests had been cleared" },
   { word: "two-thirds",       pos: "n.",   meaning: "3분의 2 (분수: 분자 기수 + 분모 서수, 분자 2 이상이면 분모에 s)", example: "nearly two-thirds of the forests" },
+  { word: "sick",             pos: "a.",   meaning: "아픈, 병든 (be sick 아프다, n. sickness)", example: "if the koala is sick or injured" },
+  { word: "healthy",          pos: "a.",   meaning: "건강한 (n. health, ↔unhealthy)", example: "if the koala is healthy" },
+  { word: "normally",         pos: "ad.",  meaning: "보통, 평소에; 정상적으로 (a. normal)", example: "it is normally released" },
+  { word: "right now",        pos: "phr.", meaning: "바로 지금, 당장 (= at this moment)", example: "Right now, Aitken and the koala are in a suburb." },
   ],
 
   /* ----- 지문 6: Tracking the snow leopard ----- */
@@ -5972,6 +5976,116 @@ const ANALYSIS = {
       `💡 <b>흐름:</b> 포획이 끝나면 곧바로 <b>건강 점검</b> — 다친 데가 있는지 보고, 병원行·방사 여부를 정하는 단계로 이어짐.<br><br>` +
       `📝 <b>해석:</b> "다음으로, 그들은 그 동물의 신체 상태를 점검한다."`,
     trans: "다음으로 그들은 그 동물의 신체 상태를 점검한다.",
+  },
+
+  "5-15": {
+    form: "조건 부사절 If + 주절 (복문) · 주절은 need to be p.p.(수동)",
+    tense: "단순 현재 (조건절) + 조동사 may",
+    chips: [
+      ["접속사·조건", "If"],
+      ["주어(S)", "the koala"],
+      ["동사(V)", "is"],
+      ["보어(C)", "sick or injured,"],
+      ["주어(S)", "it"],
+      ["조동사", "may"],
+      ["동사(V)", "need"],
+      ["to부정사(수동)", "to be taken"],
+      ["전치사구", "to an animal hospital."],
+    ],
+    structure:
+      `뼈대: <b>If the koala is sick or injured(조건절)</b>, <b>it may need to be taken ...(주절)</b> — "만약 ~라면, ~해야 할 수도 있다".<br><br>` +
+      `① <b>If 조건절</b> (직설법·단순 조건) — "만약 ~라면". 실제로 일어날 수 있는 일을 가정 → <b>If + 현재동사</b>, 주절은 <b>may/will + 동사원형</b>. (could/would + 과거동사로 받는 가정법 과거와 다름 — 지금의 실제 가능성)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subjunctive-past','sp-form')">📐 가정법 과거(if ~ were)와 구별 자세히 →</span><br>` +
+      `② <b>the koala is sick or injured</b> — be동사 + <b>형용사 보어</b>(2형식). sick(아픈) <b>or</b> injured(다친), 형용사 두 개를 or로 묶은 보어. (단어카드: sick / injured)<br>` +
+      `③ ⭐⭐ <b>it may need to be taken</b> (주절 핵심) — may(조동사, "~일지도 모른다"·추측) + <b>need to V</b>("~할 필요가 있다", need 뒤 to부정사 = 명사적 목적어).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-noun')">📐 need/want + to V (명사적 용법) 자세히 →</span><br>` +
+      `④ ⭐ <b>to be taken</b> (<b>to부정사의 수동태</b> · to be + p.p.) — 코알라가 직접 데려가는 게 아니라 <b>데려가지는</b> 쪽 → be taken. "데려가질 필요 = 데려가야 할 수도".<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('passive-voice','pv-form')">📐 수동태 be + p.p. 자세히 →</span><br>` +
+      `⑤ <b>to an animal hospital</b> (전치사구) — "동물병원<b>으로</b>". take A <b>to B</b>(A를 B로 데려가다)의 to B가 수동태에서도 그대로 남음.<br>` +
+      `💡 <b>흐름:</b> 신체 상태를 점검한 결과, 아프거나 다친 경우의 <b>처치(병원行)</b>를 말하는 조건문.<br><br>` +
+      `📝 <b>해석:</b> "만약 그 코알라가 아프거나 다쳤다면, 동물병원으로 데려가야 할 수도 있다."`,
+    trans: "만약 그 코알라가 아프거나 다쳤다면, 동물병원으로 데려가야 할 수도 있다.",
+  },
+
+  "5-16": {
+    form: "조건 부사절 If + 주절 (복문) · 대시 삽입 · 주절 수동태",
+    tense: "단순 현재 (수동 is released / is found)",
+    chips: [
+      ["접속사·조건", "If"],
+      ["주어(S)", "the koala"],
+      ["동사(V)", "is"],
+      ["보어(C)", "healthy"],
+      ["삽입(대시)", "—like this one—"],
+      ["주어(S)", "it"],
+      ["동사(V·수동)", "is normally released"],
+      ["관계부사절", "where it is found."],
+    ],
+    structure:
+      `뼈대: <b>If the koala is healthy(조건절)</b>, <b>it is ... released ...(주절)</b>. 가운데 <b>—like this one—</b>가 대시로 삽입됨.<br><br>` +
+      `① <b>If 조건절</b> (직설법·단순 조건) — "만약 (코알라가) 건강하다면". 실제 가능성을 말하는 조건문(If + 현재).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subjunctive-past','sp-form')">📐 가정법 과거와 구별 자세히 →</span><br>` +
+      `② <b>the koala is healthy</b> — be + <b>형용사 보어</b>(2형식). "건강하다면". (단어카드: healthy)<br>` +
+      `③ ⭐ <b>—like this one—</b> (<b>대시 삽입</b>) — 대시 두 개로 문장 한가운데 끼워 넣고 본문으로 복귀. this one = 지금 구조한 바로 <b>이 코알라</b>, like(~처럼). 걷어내도 뼈대(If the koala is healthy, it is released ~)는 멀쩡.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('punctuation','pn-dash')">📐 대시 — 중간 삽입 자세히 →</span> <span class="wikilink" onclick="gotoGrammar('pronoun-one','po-vs-it')">📐 대명사 one(this one) 자세히 →</span><br>` +
+      `④ ⭐ <b>it is normally released</b> (주절 · <b>수동태</b>) — be + p.p.(release→released). 코알라가 스스로 푸는 게 아니라 <b>풀려나는</b> 쪽. 부사 <b>normally</b>(보통)는 be와 p.p. <b>사이</b>에 들어감. "보통 방사된다/풀어 준다". (단어카드: release / normally)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('passive-voice','pv-form')">📐 수동태 be + p.p.(부사는 be와 p.p. 사이) 자세히 →</span><br>` +
+      `⑤ ⭐ <b>where it is found</b> (<b>관계부사 where = 장소</b>) — where = "<b>~하는 그곳에(서)</b>"(= in the place where). 선행사(the place)를 자기 안에 품은 관계부사. it(= the koala) is found 역시 <b>수동</b>(find→found, 발견되는 쪽). "발견된 그 자리에(풀어 준다)".<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('passive-voice','pv-form')">📐 is found 수동 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 건강하면 → 원래 있던 자리에 그대로 방사. 코알라가 좁은 영역에 사는 습성과 이어짐.<br><br>` +
+      `📝 <b>해석:</b> "만약 그 코알라가—이 녀석처럼—건강하다면, 보통 발견된 자리에 그대로 풀어 준다."`,
+    trans: "만약 그 코알라가(이 녀석처럼) 건강하다면, 보통 발견된 자리에 그대로 풀어 준다.",
+  },
+
+  "5-17": {
+    form: "1형식 동사 2개 병렬 (tend to live / eat) · A and B",
+    tense: "단순 현재 (습성·일반적 사실)",
+    chips: [
+      ["주어(S)", "Koalas"],
+      ["동사구①", "tend to live in a small area,"],
+      ["등위접속사", "and"],
+      ["빈도부사", "often"],
+      ["동사구②", "eat from the same trees over and over."],
+    ],
+    structure:
+      `뼈대: <b>Koalas(S)</b>가 <b>① tend to live ...</b> 하고 <b>② (often) eat ...</b> 한다 — 한 주어에 <b>동사 2개가 and로 병렬</b>.<br><br>` +
+      `① ⭐ <b>tend to live</b> (<b>tend to V</b> = ~하는 경향이 있다) — tend 뒤에 to부정사. "(좁은 지역에) <b>사는 경향이 있다</b>". to live = tend의 to부정사(명사적). (단어카드: tend to)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-noun')">📐 tend/need/want + to V 자세히 →</span><br>` +
+      `② <b>in a small area</b> (전치사구) — "좁은 지역<b>에서</b>". live는 자동사라 전치사(in)가 필요.<br>` +
+      `③ ⭐ <b>and ... eat</b> (<b>동사 병렬 · A and B</b>) — 콤마 + and로 앞의 <b>tend(to live)</b>와 뒤의 <b>eat</b>, 두 현재형 동사를 나란히 연결. 주어는 똑같이 Koalas.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">📐 A and B 병렬(같은 급 맞추기) 자세히 →</span><br>` +
+      `④ <b>often eat from the same trees</b> — often(자주, 빈도부사) + eat from(~에서 먹다) + <b>the same trees</b>(the + same + 명사 = 똑같은 그 나무들). from = 먹이를 얻는 출처.<br>` +
+      `⑤ <b>over and over</b> (관용구) — "<b>몇 번이고, 반복해서</b>"(= repeatedly). 같은 나무를 되풀이해 이용. (단어카드: over and over)<br>` +
+      `💡 <b>흐름:</b> 코알라는 <b>행동권이 좁고</b> 같은 나무에 의존 → 나무가 사라지면 치명적이라는, 뒤에 이어질 서식지 문제의 복선.<br><br>` +
+      `📝 <b>해석:</b> "코알라는 좁은 지역에 사는 경향이 있고, 자주 같은 나무에서 반복해 (잎을) 먹는다."`,
+    trans: "코알라는 좁은 지역에 사는 경향이 있고, 자주 같은 나무에서 반복해서 먹는다.",
+  },
+
+  "5-18": {
+    form: "1형식 (S + be + 장소) · 접속부사 however 삽입 · A and B 주어",
+    tense: "단순 현재 (are)",
+    chips: [
+      ["부사구", "Right now,"],
+      ["접속부사(삽입)", "however,"],
+      ["주어(S)", "Aitken and the rescued koala"],
+      ["동사(V)", "are"],
+      ["전치사구(장소)", "in a suburb"],
+      ["전치사구", "with almost no trees."],
+    ],
+    structure:
+      `뼈대: <b>Aitken and the rescued koala(S)</b> + <b>are(V)</b> + <b>in a suburb ...(장소)</b>. 앞에 Right now, however, 가 붙음.<br><br>` +
+      `① <b>Right now,</b> (부사구) — "<b>바로 지금, 당장</b>"(현재 시점 강조). (단어카드: right now)<br>` +
+      `② ⭐ <b>however,</b> (<b>접속부사 · 삽입</b>) — "그러나"(대조). however는 접속사가 아니라 <b>부사</b>라 문장 성분 계산에서 빠지고, 앞뒤 <b>콤마로 감싸</b> 삽입됨. 걷어내도 뼈대 온전. 구조·방사가 잘 끝난 흐름을 뒤집어 <b>문제 제기</b>로 전환.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('conjunctive-adverb','ca-insert')">📐 however 문중 삽입(콤마로 감싸기) 자세히 →</span><br>` +
+      `③ ⭐ <b>Aitken and the rescued koala</b> (<b>A and B 주어 → 복수</b>) — 두 명사를 and로 묶은 복수 주어라 be동사는 <b>are</b>.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subject-agreement','sv-and')">📐 A and B는 복수 자세히 →</span><br>` +
+      `④ ⭐ <b>the rescued koala</b> (<b>과거분사 명사수식</b>) — rescued(구조된)는 과거분사가 명사 koala를 앞에서 꾸밈. 코알라는 <b>구조되는</b> 쪽(수동) → rescue의 p.p. rescued. "구조된 (그) 코알라". (단어카드: rescue)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('participle-postmod','pp-active-passive')">📐 과거분사(수동) 명사수식 자세히 →</span><br>` +
+      `⑤ <b>are in a suburb</b> — be동사가 "<b>있다</b>"(존재·위치). "교외에 있다". (단어카드: suburb)<br>` +
+      `⑥ ⭐ <b>with almost no trees</b> (<b>almost + no</b>) — with(~을 가진·딸린) + <b>almost no</b> trees. almost는 <b>부사</b>라 명사를 직접 못 꾸미고 no/all/every 앞에 붙음 → almost no(거의 없는). "나무가 <b>거의 없는</b> (교외)".<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('almost-most','am-diff')">📐 almost no / almost all 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 구조는 끝났지만 돌려보낼 <b>나무가 거의 없는 교외</b> — 서식지 파괴라는 진짜 문제로 넘어가는 전환 문장.<br><br>` +
+      `📝 <b>해석:</b> "그러나 바로 지금, 에이킨과 구조된 코알라는 나무가 거의 없는 교외에 있다."`,
+    trans: "그러나 지금, 에이킨과 구조된 그 코알라는 나무가 거의 없는 교외에 있다.",
   },
 };
 
