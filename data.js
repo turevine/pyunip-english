@@ -6540,6 +6540,233 @@ const ANALYSIS = {
       `📝 <b>해석:</b> "'한때 번성하던 코알라 개체군이 멸종해 가고 있습니다,'라고 Hanger가 말한다."`,
     trans: "“한때 번성하던 코알라 개체군이 점점 멸종해 가고 있어요,”라고 행어가 말한다.",
   },
+
+  // 지문 5 · 37번째 문장: Once, there were millions of koalas in Australia; now, there are believed to be fewer than 80,000.
+  "5-36": {
+    form: "세미콜론(;)으로 두 완전한 절 대비 (Once↔now) · 유도부사 there be 진주어 수일치(were) · millions of(수백만의) · be believed to be 수동(추정) · fewer than(few 비교급 · 가산)",
+    tense: "단순 과거(were · 한때) ↔ 단순 현재(are believed · 지금)",
+    chips: [
+      ["부사(시간)", "Once,"],
+      ["유도부사", "there"],
+      ["동사(V)", "were"],
+      ["진주어(S)", "millions of koalas"],
+      ["전치사구", "in Australia;"],
+      ["부사(시간)", "now,"],
+      ["유도부사", "there"],
+      ["동사(V) · 수동", "are believed"],
+      ["to부정사", "to be"],
+      ["진주어(S)", "fewer than 80,000."],
+    ],
+    structure:
+      `뼈대: <b>Once, there were(V) millions of koalas(S)</b>; <b>now, there are believed to be(V) fewer than 80,000(S)</b>. "한때는 수백만 마리가 있었지만, 지금은 8만 미만이 있다고 여겨진다."<br><br>` +
+      `① ⭐⭐ <b>Once, ~ ; now, ~</b> (<b>세미콜론 · 두 완전한 절 대비</b>) — 접속사 없이 세미콜론이 마침표처럼 두 문장을 잇되, <b>Once(한때)↔now(지금)</b>의 <b>대비</b>를 강조. (단어카드: 시간부사 once/now)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('punctuation','pn-semicolon')">🔗 세미콜론 ; (대비·연결) 자세히 →</span><br>` +
+      `② ⭐⭐⭐ <b>there were millions of koalas</b> (<b>유도부사 there + be · 진주어에 수일치</b>) — there는 형식주어(유도부사)일 뿐, 진짜 주어는 뒤의 <b>millions of koalas(복수)</b> → <b>were</b>(there에 낚여 was ❌).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subject-agreement','sv-there')">📐 There is/are 뒤 진짜 주어에 수일치 자세히 →</span><br>` +
+      `③ ⭐⭐ <b>millions of</b> (<b>막연한 큰 수 · 복수 s + of</b>) — "수백만의". million에 <b>복수 s</b>를 붙여 막연히 많음을 표현. 🚨 구체 숫자 앞에선 s 없이 — two <b>million</b> koalas(two millions ❌).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('number-plural','np-hundreds')">📐 millions of vs two million 자세히 →</span><br>` +
+      `④ ⭐⭐⭐ <b>there are believed to be fewer than 80,000</b> (<b>be believed to be · 수동(추정)</b>) — "~이 있다고 <b>여겨진다/추정된다</b>". <u>It is believed that there are ~</u> = <u>There are believed to be ~</u>로, there be 구문이 통째로 believed의 뼈대로 올라온 형태. 행위자(누가 믿는지)는 생략.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('passive-voice','pv-form')">📐 be believed/said to V (추정 수동) 자세히 →</span><br>` +
+      `⑤ ⭐⭐ <b>fewer than 80,000</b> (<b>fewer = few의 비교급 · 가산 복수</b>) — 셀 수 있는 명사(koalas)엔 <b>fewer</b>(less ❌). "8만보다 적은".<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('the-comparative')">📐 비교급 fewer/less 구별 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 위기 섹션의 <b>쐐기</b> — 한때 수백만이던 코알라가 지금은 8만 미만. 과거↔현재 수치 대비로 급감의 충격을 각인하고 다음 '보호 활동' 섹션으로 넘어감.<br><br>` +
+      `📝 <b>해석:</b> "한때는 호주에 수백만 마리의 코알라가 있었지만, 지금은 8만 마리 미만이 있는 것으로 여겨진다."`,
+    trans: "한때 호주에는 수백만 마리의 코알라가 있었지만, 지금은 8만 마리도 안 되는 것으로 추정된다.",
+  },
+
+  // 지문 5 · 38번째 문장: At her home near Brisbane, Deidré de Villiers is taking care of a female koala named Ruby.
+  "5-37": {
+    form: "전치사구(장소) 문두 + 주어 + 현재진행 is taking care of(숙어 돌보다) + 목적어 + 과거분사 named 후치수식",
+    tense: "현재진행 (is taking care of · 지금 ~하는 중)",
+    chips: [
+      ["전치사구(장소)", "At her home near Brisbane,"],
+      ["주어(S)", "Deidré de Villiers"],
+      ["동사(V) · 현재진행", "is taking care of"],
+      ["목적어(O)", "a female koala"],
+      ["과거분사 후치수식", "named Ruby."],
+    ],
+    structure:
+      `뼈대: <b>Deidré de Villiers(S) is taking care of(V) a female koala(O)</b> named Ruby. "~드 빌리에가 Ruby라는 암컷 코알라를 돌보고 있다."<br><br>` +
+      `① ⭐ <b>At her home near Brisbane,</b> (<b>전치사구 부사 · 장소 문두</b>) — 장소 배경을 앞으로 빼 콤마로 떼어 둠. near Brisbane이 home을 꾸며 "브리즈번 근처 자기 집에서". (단어카드: suburb 계열)<br>` +
+      `② ⭐⭐ <b>is taking care of</b> (<b>현재진행 + take care of = 돌보다</b>) — 지금 돌보는 중(현재진행). take care of(= care for)는 세 단어가 한 덩어리 타동사. (단어카드: take care of)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('passive-voice','pv-phrasal')">📐 구동사(여러 단어 한 덩어리 동사) 자세히 →</span><br>` +
+      `③ ⭐⭐⭐ <b>a female koala named Ruby</b> (<b>과거분사 named 후치수식</b>) — = a female koala <b>(which is)</b> named Ruby. 코알라가 "Ruby라고 <b>불리는</b>" 수동 관계 → named. "Ruby라는 이름의 암컷 코알라". <b>[주격 관계대명사 + be]</b>가 생략된 자리. (단어카드: female)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('participle-postmod','pp-active-passive')">📐 과거분사(수동) 후치수식 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('relative-pronoun','rp-subject-omit')">✂️ [주격 관계대명사 + be] 생략 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 'A Friend to Koalas' 소제목 아래 <b>개인 사례</b>로 전환 — 연구자 de Villiers가 직접 돌보는 코알라 Ruby를 등장시켜 보호 활동을 생생하게 보여 줌.<br><br>` +
+      `📝 <b>해석:</b> "브리즈번 근처 자기 집에서, Deidré de Villiers는 Ruby라는 암컷 코알라를 돌보고 있다."`,
+    trans: "브리즈번 근처 자신의 집에서 데이드레 드 빌리에는 루비라는 이름의 암컷 코알라를 돌보고 있다.",
+  },
+
+  // 지문 5 · 39번째 문장: "Ruby still sleeps in the basket hugging her teddy bear," she says. "She was rescued from the jaws of a dog."
+  "5-38": {
+    form: "인용 + she says(대명사 주어 → 도치 ❌) · 분사구문 hugging(동시동작 ~하면서) · 수동 be rescued from · the jaws of a dog",
+    tense: "단순 현재(sleeps/says · 일반) + 단순 과거 수동(was rescued)",
+    chips: [
+      ["주어(S)", "\"Ruby"],
+      ["부사", "still"],
+      ["동사(V)", "sleeps"],
+      ["전치사구", "in the basket"],
+      ["분사구문(동시동작)", "hugging her teddy bear,\""],
+      ["주어(S)", "she"],
+      ["전달동사(V)", "says."],
+      ["주어(S)", "\"She"],
+      ["동사(V) · 수동", "was rescued"],
+      ["from 출처", "from the jaws of a dog.\""],
+    ],
+    structure:
+      `뼈대: <b>"Ruby(S) still sleeps(V) ... hugging ...,"</b> <b>she(S) says(V)</b>. <b>"She(S) was rescued(V) from ..."</b> "'Ruby는 아직 곰인형을 안고 바구니에서 잔다'고 그녀가 말한다. '이 아이는 개의 입에서 구조됐다.'"<br><br>` +
+      `① ⭐⭐⭐ <b>sleeps ... hugging her teddy bear</b> (<b>분사구문 · 동시동작 ~하면서</b>) — 현재분사 hugging이 "~한 채로/~하면서"라는 <b>동시동작</b>을 나타냄. = while she <b>hugs</b> her teddy bear. "곰인형을 <b>안은 채</b> 잔다". (단어카드: hug)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('participle-construction','pc-meaning')">📐 분사구문(동시동작·이유 등) 자세히 →</span><br>` +
+      `② ⭐⭐⭐ <b>she says</b> (<b>대명사 주어 → 도치 ❌</b>) — 33·36번은 <u>explains veterinarian ~ / says Hanger</u>처럼 주어가 <b>명사</b>라 도치했지만, 주어가 <b>대명사(she)</b>면 <b>she says 정상어순</b>(says she ❌). 편입 단골 비교.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('quotation-inversion','qi-pronoun')">📐 대명사 주어는 도치 안 함 자세히 →</span><br>` +
+      `③ ⭐⭐ <b>She was rescued from</b> (<b>수동태 be rescued from = ~에서 구조되다</b>) — Ruby가 구조<b>된</b> 쪽(수동). 과거의 일이라 was. from이 '~로부터'. (단어카드: rescue)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('passive-voice','pv-form')">📐 수동태 be + p.p. 자세히 →</span><br>` +
+      `④ ⭐ <b>the jaws of a dog</b> (<b>jaws 복수 = 입·아가리</b>) — jaw(턱)의 복수 jaws는 "입·아가리". "개의 <b>아가리</b>에서 구조됨" = 거의 물려 죽을 뻔했음을 함축. (단어카드: jaws)<br>` +
+      `💡 <b>흐름:</b> Ruby의 사연 — 곰인형을 안고 자는 애틋한 모습과 개에게서 구조된 과거를 겹쳐, 보호 활동의 의미와 코알라가 겪는 위협을 동시에 부각.<br><br>` +
+      `📝 <b>해석:</b> "'Ruby는 아직도 바구니에서 곰인형을 안고 잔답니다,'라고 그녀가 말한다. '이 아이는 개의 입에서 구조됐어요.'"`,
+    trans: "“루비는 아직도 바구니 속에서 곰인형을 껴안고 잔답니다,”라고 그녀가 말한다. “이 아이는 개의 아가리에서 구조됐어요.”",
+  },
+
+  // 지문 5 · 40번째 문장: Every two days, de Villiers collects eucalyptus leaves, the koala's primary food, from a nearby farm to feed Ruby.
+  "5-39": {
+    form: "빈도부사구 Every two days(~마다) 문두 + 주어 + collects + 목적어 + 동격 삽입(the koala's primary food) + from 전치사구 + 목적 to부정사(to feed)",
+    tense: "단순 현재 (collects · 반복적 습관)",
+    chips: [
+      ["부사구(빈도)", "Every two days,"],
+      ["주어(S)", "de Villiers"],
+      ["동사(V)", "collects"],
+      ["목적어(O)", "eucalyptus leaves,"],
+      ["동격(삽입)", "the koala's primary food,"],
+      ["전치사구(출처)", "from a nearby farm"],
+      ["to부정사(목적)", "to feed Ruby."],
+    ],
+    structure:
+      `뼈대: <b>de Villiers(S) collects(V) eucalyptus leaves(O)</b> ... from a nearby farm <b>to feed Ruby</b>. "이틀마다 de Villiers가 유칼립투스 잎을 농장에서 모아 Ruby에게 먹인다."<br><br>` +
+      `① ⭐⭐ <b>Every two days</b> (<b>every + 기수 + 복수명사 = ~마다</b>) — "이틀마다"(= every second day). every 뒤에 <b>복수(two days)</b>가 와 주기를 표현. 🚨 every day(매일)와 달리 숫자가 끼면 복수.<br>` +
+      `② ⭐⭐⭐ <b>eucalyptus leaves, the koala's primary food,</b> (<b>동격 · 콤마 삽입</b>) — 콤마 두 개 사이 the koala's primary food는 앞 <b>eucalyptus leaves를 다시 설명</b>하는 동격(= 즉, 코알라의 주식). 빼도 문장이 성립. (단어카드: primary)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('punctuation','pn-dash')">🔗 콤마·대시 삽입(부연·동격) 자세히 →</span><br>` +
+      `③ ⭐ <b>from a nearby farm</b> (<b>전치사구 · 출처</b>) — "근처 농장에서" 어디서 모으는지. (단어카드: collect)<br>` +
+      `④ ⭐⭐ <b>to feed Ruby</b> (<b>목적 to부정사 · ~하기 위해</b>) — "Ruby에게 먹이려고". 부사적 용법(목적, = in order to feed). (단어카드: feed)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-adverb')">📐 to부정사 부사적 용법(목적) 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> Ruby를 돌보는 <b>구체적 정성</b> — 이틀마다 주식인 유칼립투스 잎을 농장에서 구해 먹인다는 디테일로 de Villiers의 헌신을 보여 줌.<br><br>` +
+      `📝 <b>해석:</b> "이틀마다 de Villiers는 코알라의 주식인 유칼립투스 잎을 근처 농장에서 모아 Ruby에게 먹인다."`,
+    trans: "이틀마다 드 빌리에는 코알라의 주식인 유칼립투스 잎을 근처 농장에서 구해 와 루비에게 먹인다.",
+  },
+
+  // 지문 5 · 41번째 문장: For 12 years, she has cared for more than 60 koalas.
+  "5-40": {
+    form: "현재완료 계속(For 12 years + has cared) · care for 구동사(돌보다) · more than + 수(~이상·넘는)",
+    tense: "현재완료 (has cared · 12년간 계속 ~해 옴)",
+    chips: [
+      ["전치사구(기간)", "For 12 years,"],
+      ["주어(S)", "she"],
+      ["동사(V) · 현재완료", "has cared for"],
+      ["목적어(O)", "more than 60 koalas."],
+    ],
+    structure:
+      `뼈대: <b>she(S) has cared for(V) more than 60 koalas(O)</b>. 앞에 For 12 years(기간). "12년 동안 그녀는 60마리 넘는 코알라를 돌봐 왔다."<br><br>` +
+      `① ⭐⭐⭐ <b>For 12 years, ~ has cared for</b> (<b>현재완료 · 계속</b>) — "for + 기간"과 현재완료가 짝을 이뤄 <b>과거부터 지금까지 쭉</b> 돌봐 옴을 표현. 단순과거(cared)면 지금은 안 하는 느낌이라 ❌.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('present-perfect','pf-uses')">📐 현재완료 계속 용법(for/since) 자세히 →</span><br>` +
+      `② ⭐⭐ <b>care for</b> (<b>구동사 = 돌보다(= take care of)</b>) — care는 자동사라 for를 붙여 목적어를 받음. 여기선 완료형 has cared for. (단어카드: care for)<br>` +
+      `③ ⭐ <b>more than 60 koalas</b> (<b>more than + 수 · ~보다 많은·넘는</b>) — "60마리가 넘는". 엄밀히는 60은 포함 안 함(61부터).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('the-comparative')">📐 more than / fewer than 수량 비교 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> de Villiers의 <b>이력·헌신의 깊이</b> — Ruby만이 아니라 12년간 60마리 넘게 돌봐 온 베테랑임을 밝혀 신뢰를 더함.<br><br>` +
+      `📝 <b>해석:</b> "12년 동안 그녀는 60마리가 넘는 코알라를 돌봐 왔다."`,
+    trans: "12년 동안 그녀는 60마리가 넘는 코알라를 돌봐 왔다.",
+  },
+
+  // 지문 5 · 42번째 문장: Later, de Villiers visits a forest near Brisbane to catch Tee Vee, a wild female koala.
+  "5-41": {
+    form: "부사 Later 문두 + 주어 + visits + 목적어 + 목적 to부정사(to catch) + 동격 콤마(Tee Vee = a wild female koala)",
+    tense: "단순 현재 (visits · 생생한 현재 서술)",
+    chips: [
+      ["부사(시간)", "Later,"],
+      ["주어(S)", "de Villiers"],
+      ["동사(V)", "visits"],
+      ["목적어(O)", "a forest near Brisbane"],
+      ["to부정사(목적)", "to catch Tee Vee,"],
+      ["동격", "a wild female koala."],
+    ],
+    structure:
+      `뼈대: <b>de Villiers(S) visits(V) a forest(O)</b> ... <b>to catch Tee Vee</b>, a wild female koala. "~드 빌리에가 Tee Vee를 잡으러 숲을 찾아간다."<br><br>` +
+      `① ⭐ <b>Later,</b> (<b>시간부사 문두</b>) — "나중에". 장면 전환을 알리는 부사. 콤마로 떼어 둠.<br>` +
+      `② ⭐⭐ <b>to catch Tee Vee</b> (<b>목적 to부정사 · ~하기 위해</b>) — 숲을 찾는 <b>목적</b>을 to부정사로. 부사적 용법(= in order to catch). (단어카드: wild)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-adverb')">📐 to부정사 부사적 용법(목적) 자세히 →</span><br>` +
+      `③ ⭐⭐⭐ <b>Tee Vee, a wild female koala</b> (<b>동격 · 콤마</b>) — 콤마 뒤 a wild female koala가 앞 고유명사 <b>Tee Vee를 다시 설명</b>하는 동격. "야생 암컷 코알라인 Tee Vee". 사람·동물 이름 뒤 콤마 동격은 편입 단골.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('punctuation','pn-dash')">🔗 콤마 삽입(동격·부연) 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 보호 대상이 <b>집 안 Ruby → 야생 Tee Vee</b>로 확장 — 현장 추적 장면으로 이어 가며 연구 활동을 보여 줌.<br><br>` +
+      `📝 <b>해석:</b> "나중에 de Villiers는 야생 암컷 코알라인 Tee Vee를 잡으러 브리즈번 근처 숲을 찾아간다."`,
+    trans: "나중에 드 빌리에는 야생 암컷 코알라인 티비를 잡으러 브리즈번 근처 숲을 찾아간다.",
+  },
+
+  // 지문 5 · 43번째 문장: De Villiers has been following Tee Vee for over a year.
+  "5-42": {
+    form: "현재완료진행(has been following · 계속 추적해 옴) · for over a year(1년 넘게) · follow 타동사",
+    tense: "현재완료진행 (has been following · 과거부터 지금까지 쭉 ~하는 중)",
+    chips: [
+      ["주어(S)", "De Villiers"],
+      ["동사(V) · 현재완료진행", "has been following"],
+      ["목적어(O)", "Tee Vee"],
+      ["전치사구(기간)", "for over a year."],
+    ],
+    structure:
+      `뼈대: <b>De Villiers(S) has been following(V) Tee Vee(O)</b> for over a year. "~드 빌리에가 1년 넘게 Tee Vee를 추적해 오고 있다."<br><br>` +
+      `① ⭐⭐⭐ <b>has been following</b> (<b>현재완료진행 · have been + V-ing</b>) — "과거부터 <b>지금까지 쭉</b> 추적 중". 완료(계속)에 진행의 <b>생생함</b>을 더함 — 여전히 진행 중임을 강조. (단어카드: follow)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('present-perfect','pf-progressive')">📐 현재완료진행(계속 + 진행) 자세히 →</span><br>` +
+      `② ⭐⭐ <b>for over a year</b> (<b>for + 기간 · over = ~넘게</b>) — "1년 넘게". over(= more than)가 기간을 "그 이상"으로 늘림. 완료형과 자연스럽게 결합.<br>` +
+      `💡 <b>흐름:</b> Tee Vee가 <b>장기 추적 대상</b>임을 밝혀 앞 문장의 '잡으러 간다'에 무게를 더함 — 즉흥이 아니라 오랜 연구의 일부.<br><br>` +
+      `📝 <b>해석:</b> "de Villiers는 1년 넘게 Tee Vee를 추적해 오고 있다."`,
+    trans: "드 빌리에는 1년 넘게 티비를 추적해 오고 있다.",
+  },
+
+  // 지문 5 · 44번째 문장: Using special audio equipment, de Villiers walks and listens for a signal from the koala's radio collar.
+  "5-43": {
+    form: "분사구문 Using ~(수단·동시 ~하면서) + 주어 + walks and listens(동사 병렬) + listen for(귀 기울이다) + from 전치사구",
+    tense: "단순 현재 (walks / listens · 생생한 현재 서술)",
+    chips: [
+      ["분사구문(수단)", "Using special audio equipment,"],
+      ["주어(S)", "de Villiers"],
+      ["동사(V) · 병렬", "walks and listens"],
+      ["for 대상", "for a signal"],
+      ["전치사구(출처)", "from the koala's radio collar."],
+    ],
+    structure:
+      `뼈대: <b>de Villiers(S) walks and listens(V)</b> for a signal ... Using special audio equipment(분사구문). "특수 음향 장비를 쓰면서 de Villiers가 걸으며 신호에 귀 기울인다."<br><br>` +
+      `① ⭐⭐⭐ <b>Using special audio equipment,</b> (<b>분사구문 · 수단·동시동작</b>) — "~을 <b>쓰면서/써서</b>". 능동 현재분사 Using이 "~하면서(동시)" 또는 "~함으로써(수단)"를 나타냄. = As she uses ~. (단어카드: equipment)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('participle-construction','pc-meaning')">📐 분사구문(수단·동시동작) 자세히 →</span><br>` +
+      `② ⭐⭐ <b>walks and listens</b> (<b>동사 병렬 · and</b>) — 한 주어(de Villiers)에 동사 두 개를 and로 연결. 둘 다 현재 단수라 -s 형태로 <b>형태 일치</b>(walks / listens).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">📐 and 병렬(형태 맞추기) 자세히 →</span><br>` +
+      `③ ⭐⭐ <b>listens for a signal</b> (<b>listen for = ~을 들으려 귀 기울이다</b>) — listen은 자동사라 for를 붙여 "~이 들리길 기다리며 귀 기울이다"(단순히 listen to '듣다'와 뉘앙스 차이). (단어카드: signal)<br>` +
+      `④ ⭐ <b>from the koala's radio collar</b> (<b>전치사구 · 출처</b>) — 신호가 나오는 곳 = 코알라의 무선 추적 목걸이. (단어카드: collar)<br>` +
+      `💡 <b>흐름:</b> 추적의 <b>방법</b>을 구체화 — 무선 목걸이 신호를 음향 장비로 좇는 현장 기술을 묘사해 긴장감을 높임.<br><br>` +
+      `📝 <b>해석:</b> "특수 음향 장비를 사용하여, de Villiers는 걸으면서 코알라의 무선 목걸이에서 나오는 신호에 귀를 기울인다."`,
+    trans: "특수 음향 장비를 사용해 드 빌리에는 걸으면서 코알라의 무선 목걸이에서 나오는 신호에 귀를 기울인다.",
+  },
+
+  // 지문 5 · 45번째 문장: She eventually finds Tee Vee sitting on a tree branch 15 meters high.
+  "5-44": {
+    form: "5형식 find + O + 현재분사 보어(sitting · ~하고 있는 것을 발견) · eventually(마침내) · 15 meters high(수량 + 형용사 후치)",
+    tense: "단순 현재 (finds · 생생한 현재 서술)",
+    chips: [
+      ["주어(S)", "She"],
+      ["부사", "eventually"],
+      ["동사(V)", "finds"],
+      ["목적어(O)", "Tee Vee"],
+      ["목적격보어(C) · 현재분사", "sitting on a tree branch"],
+      ["수량 + 형용사(후치)", "15 meters high."],
+    ],
+    structure:
+      `뼈대: <b>She(S) finds(V) Tee Vee(O) sitting on a tree branch(C)</b> 15 meters high. "그녀가 마침내 Tee Vee가 나뭇가지에 앉아 있는 것을 발견한다."<br><br>` +
+      `① ⭐ <b>eventually</b> (<b>부사 · 마침내·결국</b>) — 오랜 추적 끝에 "결국" 찾아냄(= finally, in the end). (단어카드: eventually)<br>` +
+      `② ⭐⭐⭐ <b>finds Tee Vee sitting</b> (<b>5형식 · find + O + 현재분사 보어</b>) — "O가 <b>~하고 있는 것을</b> 발견하다". O(Tee Vee)와 분사가 <b>능동 관계</b>(Tee Vee가 앉아 있음)라 현재분사 sitting. find + O + <b>p.p.</b>(수동)와 구별.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('five-pattern','fp-adj')">📐 5형식 목적격보어(분사·형용사) 자세히 →</span><br>` +
+      `③ ⭐⭐ <b>a tree branch 15 meters high</b> (<b>수량 + 형용사 후치수식</b>) — "15미터 높이의". [수치 + high/long/old] 덩어리가 <b>명사 뒤에서</b> 꾸밈(= a branch that is 15 meters high). (단어카드: branch)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('participle-postmod','pp-omit')">✂️ [관계대명사 + be] 생략 후치수식 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 추적의 <b>성공</b> — 마침내 높은 나뭇가지에서 Tee Vee를 발견. '15미터 높이'로 뒤이을 사다리·포획 장면의 난이도를 예고.<br><br>` +
+      `📝 <b>해석:</b> "그녀는 마침내 Tee Vee가 15미터 높이의 나뭇가지에 앉아 있는 것을 발견한다."`,
+    trans: "그녀는 마침내 티비가 15미터 높이의 나뭇가지에 앉아 있는 것을 발견한다.",
+  },
 };
 
 /* ---------- 문법 정리 (공부한 내용 채우기) ----------
