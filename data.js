@@ -555,6 +555,7 @@ const WORDS_BY_PASSAGE = {
   { word: "rarely",           pos: "ad.",  meaning: "드물게, 좀처럼 ~않는 (= seldom)",   example: "they are very rarely seen" },
   { word: "officially",       pos: "ad.",  meaning: "공식적으로 (a. official)",          example: "officially protected since 1975" },
   { word: "enforce",          pos: "v.",   meaning: "(법을) 시행하다, 집행하다 (n. enforcement)", example: "enforcing this law has proven difficult" },
+  { word: "prove",            pos: "v.",   meaning: "~로 판명되다/드러나다 (2형식, prove+형용사); 증명하다", example: "has proven difficult" },
   { word: "body parts",       pos: "n.",   meaning: "신체 부위 (여기선 동물의 몸의 부위)", example: "killed for their fur and body parts" },
   { word: "fortune",          pos: "n.",   meaning: "큰돈, 재산; 운 (worth a fortune 엄청난 값어치의)", example: "worth a fortune on the black market" },
   { word: "black market",     pos: "n.",   meaning: "암시장",                         example: "worth a fortune on the black market" },
@@ -6574,8 +6575,8 @@ const ANALYSIS = {
     trans: "한때 호주에는 수백만 마리의 코알라가 있었지만, 지금은 8만 마리도 안 되는 것으로 추정된다.",
   },
 
-  // 지문 5 · 38번째 문장: At her home near Brisbane, Deidré de Villiers is taking care of a female koala named Ruby.
-  "5-37": {
+  // 지문 5 · 39번째 문장: At her home near Brisbane, Deidré de Villiers is taking care of a female koala named Ruby.
+  "5-38": {
     form: "전치사구(장소) 문두 + 주어 + 현재진행 is taking care of(숙어 돌보다) + 목적어 + 과거분사 named 후치수식",
     tense: "현재진행 (is taking care of · 지금 ~하는 중)",
     chips: [
@@ -6598,8 +6599,8 @@ const ANALYSIS = {
     trans: "브리즈번 근처 자신의 집에서 데이드레 드 빌리에는 루비라는 이름의 암컷 코알라를 돌보고 있다.",
   },
 
-  // 지문 5 · 39번째 문장: "Ruby still sleeps in the basket hugging her teddy bear," she says. "She was rescued from the jaws of a dog."
-  "5-38": {
+  // 지문 5 · 40번째 문장: "Ruby still sleeps in the basket hugging her teddy bear," she says. "She was rescued from the jaws of a dog."
+  "5-39": {
     form: "인용 + she says(대명사 주어 → 도치 ❌) · 분사구문 hugging(동시동작 ~하면서) · 수동 be rescued from · the jaws of a dog",
     tense: "단순 현재(sleeps/says · 일반) + 단순 과거 수동(was rescued)",
     chips: [
@@ -6628,8 +6629,8 @@ const ANALYSIS = {
     trans: "“루비는 아직도 바구니 속에서 곰인형을 껴안고 잔답니다,”라고 그녀가 말한다. “이 아이는 개의 아가리에서 구조됐어요.”",
   },
 
-  // 지문 5 · 40번째 문장: Every two days, de Villiers collects eucalyptus leaves, the koala's primary food, from a nearby farm to feed Ruby.
-  "5-39": {
+  // 지문 5 · 41번째 문장: Every two days, de Villiers collects eucalyptus leaves, the koala's primary food, from a nearby farm to feed Ruby.
+  "5-40": {
     form: "빈도부사구 Every two days(~마다) 문두 + 주어 + collects + 목적어 + 동격 삽입(the koala's primary food) + from 전치사구 + 목적 to부정사(to feed)",
     tense: "단순 현재 (collects · 반복적 습관)",
     chips: [
@@ -6654,8 +6655,8 @@ const ANALYSIS = {
     trans: "이틀마다 드 빌리에는 코알라의 주식인 유칼립투스 잎을 근처 농장에서 구해 와 루비에게 먹인다.",
   },
 
-  // 지문 5 · 41번째 문장: For 12 years, she has cared for more than 60 koalas.
-  "5-40": {
+  // 지문 5 · 42번째 문장: For 12 years, she has cared for more than 60 koalas.
+  "5-41": {
     form: "현재완료 계속(For 12 years + has cared) · care for 구동사(돌보다) · more than + 수(~이상·넘는)",
     tense: "현재완료 (has cared · 12년간 계속 ~해 옴)",
     chips: [
@@ -6676,8 +6677,8 @@ const ANALYSIS = {
     trans: "12년 동안 그녀는 60마리가 넘는 코알라를 돌봐 왔다.",
   },
 
-  // 지문 5 · 42번째 문장: Later, de Villiers visits a forest near Brisbane to catch Tee Vee, a wild female koala.
-  "5-41": {
+  // 지문 5 · 43번째 문장: Later, de Villiers visits a forest near Brisbane to catch Tee Vee, a wild female koala.
+  "5-42": {
     form: "부사 Later 문두 + 주어 + visits + 목적어 + 목적 to부정사(to catch) + 동격 콤마(Tee Vee = a wild female koala)",
     tense: "단순 현재 (visits · 생생한 현재 서술)",
     chips: [
@@ -6700,8 +6701,8 @@ const ANALYSIS = {
     trans: "나중에 드 빌리에는 야생 암컷 코알라인 티비를 잡으러 브리즈번 근처 숲을 찾아간다.",
   },
 
-  // 지문 5 · 43번째 문장: De Villiers has been following Tee Vee for over a year.
-  "5-42": {
+  // 지문 5 · 44번째 문장: De Villiers has been following Tee Vee for over a year.
+  "5-43": {
     form: "현재완료진행(has been following · 계속 추적해 옴) · for over a year(1년 넘게) · follow 타동사",
     tense: "현재완료진행 (has been following · 과거부터 지금까지 쭉 ~하는 중)",
     chips: [
@@ -6720,8 +6721,8 @@ const ANALYSIS = {
     trans: "드 빌리에는 1년 넘게 티비를 추적해 오고 있다.",
   },
 
-  // 지문 5 · 44번째 문장: Using special audio equipment, de Villiers walks and listens for a signal from the koala's radio collar.
-  "5-43": {
+  // 지문 5 · 45번째 문장: Using special audio equipment, de Villiers walks and listens for a signal from the koala's radio collar.
+  "5-44": {
     form: "분사구문 Using ~(수단·동시 ~하면서) + 주어 + walks and listens(동사 병렬) + listen for(귀 기울이다) + from 전치사구",
     tense: "단순 현재 (walks / listens · 생생한 현재 서술)",
     chips: [
@@ -6744,8 +6745,8 @@ const ANALYSIS = {
     trans: "특수 음향 장비를 사용해 드 빌리에는 걸으면서 코알라의 무선 목걸이에서 나오는 신호에 귀를 기울인다.",
   },
 
-  // 지문 5 · 45번째 문장: She eventually finds Tee Vee sitting on a tree branch 15 meters high.
-  "5-44": {
+  // 지문 5 · 46번째 문장: She eventually finds Tee Vee sitting on a tree branch 15 meters high.
+  "5-45": {
     form: "5형식 find + O + 현재분사 보어(sitting · ~하고 있는 것을 발견) · eventually(마침내) · 15 meters high(수량 + 형용사 후치)",
     tense: "단순 현재 (finds · 생생한 현재 서술)",
     chips: [
@@ -6766,6 +6767,784 @@ const ANALYSIS = {
       `💡 <b>흐름:</b> 추적의 <b>성공</b> — 마침내 높은 나뭇가지에서 Tee Vee를 발견. '15미터 높이'로 뒤이을 사다리·포획 장면의 난이도를 예고.<br><br>` +
       `📝 <b>해석:</b> "그녀는 마침내 Tee Vee가 15미터 높이의 나뭇가지에 앉아 있는 것을 발견한다."`,
     trans: "그녀는 마침내 티비가 15미터 높이의 나뭇가지에 앉아 있는 것을 발견한다.",
+  },
+
+  // 지문 5 · 47번째 문장: As de Villiers climbs up a ladder, Tee Vee starts moving down the tree.
+  "5-46": {
+    form: "부사절 접속사 As(~하자·~할 때 · 동시) + 주절 · start + 동명사 목적어(moving) · 방향부사 up ↔ down 대비",
+    tense: "단순 현재 (climbs / starts · 생생한 현재 서술)",
+    chips: [
+      ["부사절 접속사", "As"],
+      ["종속절(S+V)", "de Villiers climbs up a ladder,"],
+      ["주어(S)", "Tee Vee"],
+      ["동사(V)", "starts"],
+      ["동명사 목적어(O)", "moving down the tree."],
+    ],
+    structure:
+      `뼈대: <b>As de Villiers climbs up(종속절)</b>, <b>Tee Vee(S) starts(V) moving down the tree(O)</b>. "그녀가 사다리를 올라가자, Tee Vee는 나무를 타고 내려가기 시작한다."<br><br>` +
+      `① ⭐⭐⭐ <b>As ~ climbs</b> (<b>부사절 접속사 As · ~하자·~할 때(동시)</b>) — 두 동작이 <b>동시에 맞물림</b>(사람은 올라가고 코알라는 내려감). as는 '시간·동시 / 이유 / ~처럼 / 비례' 등 여러 뜻 → 여기선 '시간·동시'. (단어카드: ladder)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('as-roles','as-time')">📐 As의 여러 뜻(시간·동시) 자세히 →</span><br>` +
+      `② ⭐⭐ <b>starts moving</b> (<b>start + 동명사(-ing) 목적어</b>) — start는 <b>동명사·to부정사 둘 다</b> 목적어로 취함(의미차 거의 없음). "~하기 시작하다". → start to move 로 바꿔도 됨.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('gerund-vs-infinitive','gi-both')">📐 동명사/to부정사 둘 다 되는 동사 자세히 →</span><br>` +
+      `③ ⭐ <b>up ↔ down</b> (<b>방향 부사 대비</b>) — climbs <b>up</b>(올라가다) ↔ moving <b>down</b>(내려가다)이 대조되어 쫓고 쫓기는 긴박함을 드러냄.<br>` +
+      `💡 <b>흐름:</b> 포획의 <b>시작</b> — 사람이 다가가자 코알라가 반대 방향으로 달아남. 추격 장면의 긴장 조성.<br><br>` +
+      `📝 <b>해석:</b> "de Villiers가 사다리를 올라가자, Tee Vee는 나무 아래로 내려가기 시작한다."`,
+    trans: "드 빌리에가 사다리를 올라가자, 티비는 나무를 타고 내려가기 시작한다.",
+  },
+
+  // 지문 5 · 48번째 문장: Then, suddenly, the koala jumps into the air and lands on the ground.
+  "5-47": {
+    form: "부사 Then·suddenly 연속 삽입 · 동사 병렬 jumps and lands(and) · into(안으로)↔on(접촉) 전치사 대비",
+    tense: "단순 현재 (jumps / lands · 생생한 현재 서술)",
+    chips: [
+      ["부사(연속 삽입)", "Then, suddenly,"],
+      ["주어(S)", "the koala"],
+      ["동사①(V)", "jumps into the air"],
+      ["접속사", "and"],
+      ["동사②(V)", "lands on the ground."],
+    ],
+    structure:
+      `뼈대: <b>the koala(S) jumps(V) ... and lands(V) ...</b>. "그때 갑자기 코알라가 공중으로 뛰어올라 땅에 떨어진다."<br><br>` +
+      `① ⭐⭐ <b>Then, suddenly,</b> (<b>부사 연속 삽입</b>) — 시간부사 Then(그때) + 양태부사 suddenly(갑자기)를 콤마로 떼어 문두에 얹음. 장면 전환 + 돌발성 강조.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('conjunctive-adverb','ca-insert')">📐 접속부사·부사 콤마 삽입 자세히 →</span><br>` +
+      `② ⭐⭐⭐ <b>jumps into the air and lands on the ground</b> (<b>동사 병렬 · and</b>) — 한 주어(the koala)에 동사 두 개를 and로 연결, 둘 다 현재 단수라 <b>-s 형태 일치</b>(jumps / lands).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">📐 and 병렬(형태 맞추기) 자세히 →</span><br>` +
+      `③ ⭐⭐ <b>into the air ↔ on the ground</b> (<b>전치사 뉘앙스 · into(안으로) vs on(접촉)</b>) — into는 '~속으로' 이동(공중으로 뛰어듦), on은 '표면에 닿음'(땅에 착지). 이동·접촉의 대비.<br>` +
+      `💡 <b>흐름:</b> 추격의 <b>절정</b> — 코알라가 높은 나무에서 과감히 뛰어내려 땅으로. 포획 직전의 극적 전환.<br><br>` +
+      `📝 <b>해석:</b> "그때 갑자기 코알라가 공중으로 뛰어올라 땅에 착지한다."`,
+    trans: "그때 갑자기 코알라가 공중으로 뛰어올라 땅에 떨어진다.",
+  },
+
+  // 지문 5 · 49번째 문장: She is quickly captured by de Villiers's team.
+  "5-48": {
+    form: "수동태 be captured by(~에게 붙잡히다) · 부사 quickly가 be와 p.p. 사이 삽입 · 소유격 's(팀)",
+    tense: "단순 현재 · 수동 (is captured)",
+    chips: [
+      ["주어(S) · =코알라", "She"],
+      ["부사", "quickly"],
+      ["동사(V) · 수동", "is captured"],
+      ["by 행위자", "by de Villiers's team."],
+    ],
+    structure:
+      `뼈대: <b>She(S) is captured(V·수동)</b> by de Villiers's team. "그녀(코알라)는 de Villiers의 팀에게 재빨리 붙잡힌다." (She = Tee Vee, 암컷 코알라)<br><br>` +
+      `① ⭐⭐⭐ <b>is captured</b> (<b>수동태 be + 과거분사</b>) — 코알라가 '붙잡는' 게 아니라 '<b>붙잡히는</b>' 쪽 → 수동. 초점이 당하는 대상(코알라)에 있음.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('passive-voice','pv-form')">📐 수동태 be + p.p. 기본형 자세히 →</span><br>` +
+      `② ⭐⭐ <b>by de Villiers's team</b> (<b>by + 행위자</b>) — 실제로 붙잡은 주체를 by로 밝힘. (소유격 's = ~의 팀)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('of-types','of-possess')">📐 소유('s · of) 자세히 →</span><br>` +
+      `③ ⭐⭐ <b>is quickly captured</b> (<b>부사 위치 · be + 부사 + p.p.</b>) — 양태·빈도 부사(quickly)는 be동사와 과거분사 <b>사이</b>에 자주 끼어듦.<br>` +
+      `💡 <b>흐름:</b> 포획 <b>성공</b> — 땅에 내려온 코알라를 팀이 신속히 확보. 뒤이을 검진 장면으로 연결.<br><br>` +
+      `📝 <b>해석:</b> "그녀(코알라)는 de Villiers의 팀에게 재빨리 붙잡힌다."`,
+    trans: "그녀(코알라)는 드 빌리에의 팀에게 재빨리 붙잡힌다.",
+  },
+
+  // 지문 5 · 50번째 문장: Tee Vee is given medicine to relax her.
+  "5-49": {
+    form: "4형식 수동태 be given + 직접목적어(medicine) 남음 · 목적의 to부정사(to relax · ~하기 위해)",
+    tense: "단순 현재 · 수동 (is given)",
+    chips: [
+      ["주어(S)", "Tee Vee"],
+      ["동사(V) · 수동", "is given"],
+      ["직접목적어(남은 O)", "medicine"],
+      ["목적 to부정사(부사적)", "to relax her."],
+    ],
+    structure:
+      `뼈대: <b>Tee Vee(S) is given(V·수동) medicine(O)</b> to relax her. "Tee Vee는 그녀를 진정시키기 위해 약을 투여받는다."<br><br>` +
+      `① ⭐⭐⭐ <b>is given medicine</b> (<b>4형식의 수동태 · 간접목적어가 주어로</b>) — give A B(A에게 B를 주다)에서 <b>사람(간접목적어 Tee Vee)</b>을 주어로 올리면, 뒤에 <b>직접목적어(medicine)가 그대로 남음</b>. "~을 받다".<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('passive-voice','pv-4th')">📐 4형식 수동태(남은 목적어) 자세히 →</span><br>` +
+      `② ⭐⭐ <b>to relax her</b> (<b>목적의 to부정사 · ~하기 위해</b>) — "진정시키기 위해". 부사적 용법(목적 = in order to relax).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-adverb')">📐 to부정사 부사적 용법(목적) 자세히 →</span><br>` +
+      `③ ⭐ <b>relax her</b> (<b>타동사 relax · ~을 진정시키다</b>) — relax가 목적어(her=코알라)를 받아 "~을 편안하게·진정시키다"(자동사 '쉬다'와 구별). (단어카드: relax)<br>` +
+      `💡 <b>흐름:</b> 검진 <b>준비</b> — 야생 코알라의 스트레스·공격을 줄이려 진정제 투여. 안전한 검사로 이어짐.<br><br>` +
+      `📝 <b>해석:</b> "Tee Vee는 그녀(자신)를 진정시키기 위한 약을 투여받는다."`,
+    trans: "티비는 자신을 진정시키기 위한 약을 투여받는다.",
+  },
+
+  // 지문 5 · 51번째 문장: Next, de Villiers measures the length of the koala's body and head.
+  "5-50": {
+    form: "3형식 measures + 목적어(the length) · the length of ~(of 소유·부분) · body and head 명사 병렬 · 부사 Next 문두",
+    tense: "단순 현재 (measures · 생생한 현재 서술)",
+    chips: [
+      ["부사(문두)", "Next,"],
+      ["주어(S)", "de Villiers"],
+      ["동사(V)", "measures"],
+      ["목적어(O)", "the length"],
+      ["of 전치사구", "of the koala's body and head."],
+    ],
+    structure:
+      `뼈대: <b>de Villiers(S) measures(V) the length(O)</b> of ~ body and head. "다음으로 de Villiers가 코알라의 몸과 머리 길이를 잰다."<br><br>` +
+      `① ⭐⭐ <b>the length of ~</b> (<b>of + 명사 · 소유·부분</b>) — "~의 길이". of가 '~에 속한·~의' 관계를 이어 줌.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('of-types','of-possess')">📐 of의 여러 뜻(소유·부분) 자세히 →</span><br>` +
+      `② ⭐⭐ <b>the koala's body and head</b> (<b>명사 병렬 · and</b>) — 소유격 하나(koala's)가 body·head <b>두 명사에 함께</b> 걸림(= 코알라의 몸 + 코알라의 머리).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">📐 and 병렬(공통 수식) 자세히 →</span><br>` +
+      `③ ⭐ <b>Next,</b> (<b>부사 문두 · 다음으로</b>) — 검진 절차의 순서를 '다음으로'로 전개. 콤마로 떼어 얹음.<br>` +
+      `💡 <b>흐름:</b> 검진 <b>① 측정</b> — 몸·머리 길이를 재며 신체 데이터 수집. 과학적 관찰 과정을 구체화.<br><br>` +
+      `📝 <b>해석:</b> "다음으로 de Villiers는 코알라의 몸과 머리 길이를 잰다."`,
+    trans: "다음으로 드 빌리에는 코알라의 몸과 머리 길이를 잰다.",
+  },
+
+  // 지문 5 · 52번째 문장: She also checks Tee Vee's teeth and the condition of her fur.
+  "5-51": {
+    form: "3형식 checks + 목적어 둘(A and B) 병렬 · the condition of ~(of 속성) · 부사 also",
+    tense: "단순 현재 (checks · 생생한 현재 서술)",
+    chips: [
+      ["주어(S) · =de Villiers", "She"],
+      ["부사", "also"],
+      ["동사(V)", "checks"],
+      ["목적어①", "Tee Vee's teeth"],
+      ["and + 목적어②", "the condition of her fur."],
+    ],
+    structure:
+      `뼈대: <b>She(S) checks(V) [Tee Vee's teeth] and [the condition of her fur](O)</b>. "그녀는 Tee Vee의 이빨과 털 상태도 확인한다." (She=de Villiers, her=Tee Vee)<br><br>` +
+      `① ⭐⭐⭐ <b>checks A and B</b> (<b>목적어 병렬 · and</b>) — checks 뒤에 명사구 <b>두 개</b>(이빨 / 털 상태)를 and로 묶어 공통 목적어로 둠.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">📐 and 병렬(목적어 묶기) 자세히 →</span><br>` +
+      `② ⭐⭐ <b>the condition of her fur</b> (<b>of + 명사 · 속성·상태</b>) — "털의 상태". of가 '~의(속한 특성)'를 나타냄. (단어카드: fur)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('of-types','of-quality')">📐 of(속성·상태) 자세히 →</span><br>` +
+      `③ ⭐ <b>also</b> (<b>부사 · ~도 또한</b>) — 일반동사 앞에 위치, 앞 측정에 '추가로' 확인하는 항목을 덧붙임.<br>` +
+      `💡 <b>흐름:</b> 검진 <b>② 건강 확인</b> — 이빨(나이·영양)·털 상태로 건강을 점검. 세밀한 관찰 이어짐.<br><br>` +
+      `📝 <b>해석:</b> "그녀(de Villiers)는 Tee Vee의 이빨과 털 상태도 확인한다."`,
+    trans: "그녀는 티비의 이빨과 털 상태도 확인한다.",
+  },
+
+  // 지문 5 · 53번째 문장: "I think she has a baby," de Villiers says.
+  "5-52": {
+    form: "직접인용 + 전달동사 후치(says) · think (that) 명사절(접속사 that 생략) · she = 코알라",
+    tense: "단순 현재 (think / has / says)",
+    chips: [
+      ["인용절", "\"I think she has a baby,\""],
+      ["주어(S)", "de Villiers"],
+      ["전달동사(V)", "says."],
+    ],
+    structure:
+      `뼈대: "I think (that) she has a baby," <b>de Villiers(S) says(V)</b>. "'이 코알라가 새끼를 가진 것 같아요'라고 de Villiers가 말한다." (she = Tee Vee, 암컷 코알라)<br><br>` +
+      `① ⭐⭐ <b>"...," de Villiers says</b> (<b>인용 + 전달동사 후치</b>) — 직접인용 뒤에 [주어+전달동사]가 옴. 주어가 <b>명사(de Villiers)</b>라 says를 앞으로 <b>도치하지 않고 그대로</b>(대명사 she였다면 보통 she says 순서).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('quotation-inversion','qi-pronoun')">📐 인용문 전달동사 도치/비도치 자세히 →</span><br>` +
+      `② ⭐⭐ <b>I think (that) she has</b> (<b>think + that 명사절 · that 생략</b>) — think의 목적어로 that절(완전한 문장)이 옴. 구어라 접속사 that을 생략.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('noun-clause-that','nc-object')">📐 that 명사절(목적어 자리) 자세히 →</span><br>` +
+      `③ ⭐ <b>she has a baby</b> (<b>she = 코알라 · have 소유</b>) — 여기 she는 Tee Vee(암컷 코알라). "새끼를 배고 있다·가지고 있다".<br>` +
+      `💡 <b>흐름:</b> 결정적 <b>단서</b> — 전문가가 새끼의 존재를 직감. 바로 다음 주머니 확인으로 이어짐.<br><br>` +
+      `📝 <b>해석:</b> "'이 코알라가 새끼를 가진 것 같아요'라고 de Villiers가 말한다."`,
+    trans: "'이 코알라가 새끼를 가진 것 같아요'라고 드 빌리에가 말한다.",
+  },
+
+  // 지문 5 · 54번째 문장: She carefully opens the koala's pouch and takes out a 10-centimeter-long baby koala.
+  "5-53": {
+    form: "동사 병렬 opens and takes out(and) · 구동사 take out(꺼내다) · 하이픈 복합형용사 10-centimeter-long(단위 단수) 전치수식",
+    tense: "단순 현재 (opens / takes · 생생한 현재 서술)",
+    chips: [
+      ["주어(S) · =de Villiers", "She"],
+      ["부사", "carefully"],
+      ["동사①(V)", "opens the koala's pouch"],
+      ["접속사", "and"],
+      ["동사②(V) · 구동사", "takes out"],
+      ["복합형용사+명사(O)", "a 10-centimeter-long baby koala."],
+    ],
+    structure:
+      `뼈대: <b>She(S) opens(V) ~ pouch and takes out(V) ~ baby koala</b>. "그녀는 코알라의 주머니를 조심스럽게 열어 10센티미터 길이의 새끼 코알라를 꺼낸다." (She=de Villiers)<br><br>` +
+      `① ⭐⭐ <b>opens ~ and takes out ~</b> (<b>동사 병렬 · and</b>) — 한 주어에 두 동작을 and로 연결, 둘 다 현재 단수 <b>-s 형태 일치</b>(opens / takes).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">📐 and 병렬(형태 맞추기) 자세히 →</span><br>` +
+      `② ⭐⭐ <b>takes out</b> (<b>구동사 take out · 꺼내다</b>) — take + out(분리·밖으로). 목적어가 명사면 take out A / take A out 둘 다 가능(a baby koala가 길어 뒤로 둠). (단어카드: pouch)<br>` +
+      `③ ⭐⭐⭐ <b>a 10-centimeter-long baby koala</b> (<b>하이픈 복합형용사 전치수식 · 단위 단수</b>) — [수치-단위-형용사]를 하이픈으로 묶어 <b>한 개의 형용사</b>처럼 명사 앞에서 꾸밈. 하이픈 안에선 단위가 <b>단수</b>(10-centimeter ⭕ / 10-centimeters ❌). = a baby koala that is 10 centimeters long.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('articles','ar-a')">📐 부정관사 a(한 마리) 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 결정적 <b>발견</b> — 주머니를 열어 새끼를 직접 확인. 지문 마무리의 '희망'을 뒷받침하는 복선.<br><br>` +
+      `📝 <b>해석:</b> "그녀는 코알라의 주머니를 조심스럽게 열어 10센티미터 길이의 새끼 코알라를 꺼낸다."`,
+    trans: "그녀는 코알라의 주머니를 조심스럽게 열어 10센티미터 길이의 새끼 코알라를 꺼낸다.",
+  },
+
+  // 지문 5 · 55번째 문장: De Villiers examines the baby for any problems.
+  "5-54": {
+    form: "3형식 examine A for B(A에게 B가 있는지 살피다) · for 목적·추구 · any 긍정문 '어떤 ~라도' · the baby 지시 정관사",
+    tense: "단순 현재 (examines · 생생한 현재 서술)",
+    chips: [
+      ["주어(S)", "De Villiers"],
+      ["동사(V)", "examines"],
+      ["목적어(O)", "the baby"],
+      ["for 전치사구", "for any problems."],
+    ],
+    structure:
+      `뼈대: <b>De Villiers(S) examines(V) the baby(O)</b> for any problems. "De Villiers가 새끼에게 문제가 없는지 검사한다."<br><br>` +
+      `① ⭐⭐⭐ <b>examines the baby for any problems</b> (<b>examine A for B · A를 B가 있는지 살피다</b>) — "~을 검사하다" + <b>for(~이 있는지 찾아)</b>. check A for B / search A for B 와 같은 틀.<br>` +
+      `② ⭐⭐ <b>for any problems</b> (<b>any · 긍정문에서 '어떤 ~라도·조금이라도'</b>) — any가 긍정문에 쓰이면 '어떤 ~든 (하나라도)'의 뜻. "<b>어떤 문제라도</b> 있는지".<br>` +
+      `③ ⭐ <b>the baby</b> (<b>지시의 정관사 the</b>) — 앞에서 꺼낸 바로 '그 새끼'를 가리켜 the. (단어카드: examine)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('articles','ar-the')">📐 정관사 the(앞에 나온 것 지시) 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 검진 <b>③ 새끼 확인</b> — 꺼낸 새끼의 건강·이상 유무를 점검. 조심스러운 과학적 관찰의 연속.<br><br>` +
+      `📝 <b>해석:</b> "De Villiers는 새끼에게 (어떤) 문제가 없는지 검사한다."`,
+    trans: "드 빌리에는 새끼에게 문제가 없는지 검사한다.",
+  },
+
+  // 지문 5 · 56번째 문장: Then she puts it back in the mother's pouch.
+  "5-55": {
+    form: "3형식 put + O(it) + 부사 back + 장소 전치사구 · put A back(제자리에 돌려놓다) · 대명사 목적어는 동사·부사 사이 · it=새끼 / mother's 소유격",
+    tense: "단순 현재 (puts · 생생한 현재 서술)",
+    chips: [
+      ["부사(문두)", "Then"],
+      ["주어(S) · =de Villiers", "she"],
+      ["동사(V)", "puts"],
+      ["목적어(O) · =새끼", "it"],
+      ["부사", "back"],
+      ["장소 전치사구", "in the mother's pouch."],
+    ],
+    structure:
+      `뼈대: <b>she(S) puts(V) it(O) back</b> in the mother's pouch. "그런 다음 그녀는 그것(새끼)을 어미의 주머니에 다시 넣는다." (she=de Villiers, it=새끼)<br><br>` +
+      `① ⭐⭐⭐ <b>puts it back</b> (<b>put + O + back · 제자리에 돌려놓다</b>) — put A back = "A를 원래 자리에 <b>다시</b> 두다". <b>대명사 목적어(it)는 동사와 부사 사이</b>에 옴(puts it back ⭕ / puts back it ❌).<br>` +
+      `② ⭐⭐ <b>in the mother's pouch</b> (<b>장소 in + 소유격 's</b>) — 어미(Tee Vee)의 주머니 '안에'. (단어카드: pouch)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('of-types','of-possess')">📐 소유('s · of) 자세히 →</span><br>` +
+      `③ ⭐ <b>it</b> (<b>대명사 지시 · =새끼 코알라</b>) — 앞 문장에서 꺼낸 baby koala를 받는 it.<br>` +
+      `💡 <b>흐름:</b> 검진 <b>마무리</b> — 확인을 끝낸 새끼를 어미 품으로 되돌려 보호. 야생 존중의 태도.<br><br>` +
+      `📝 <b>해석:</b> "그런 다음 그녀는 새끼를 어미의 주머니에 다시 넣는다."`,
+    trans: "그런 다음 그녀는 새끼를 어미의 주머니에 다시 넣는다.",
+  },
+
+  // 지문 5 · 57번째 문장: "As long as there are healthy babies," she says, "there's still hope."
+  "5-56": {
+    form: "조건 접속사 as long as(~하는 한) · 유도부사 there be 존재구문(there are/there's) 수일치 · 인용 중간 삽입(she says)",
+    tense: "단순 현재 (are / says / there's)",
+    chips: [
+      ["조건절(인용)", "\"As long as there are healthy babies,\""],
+      ["삽입(S+V)", "she says,"],
+      ["주절(인용)", "\"there's still hope.\""],
+    ],
+    structure:
+      `뼈대: <b>As long as there are healthy babies</b>(조건), <b>there's still hope</b>(주절). 중간에 she says 삽입. "'건강한 새끼들이 있는 한, 여전히 희망은 있다'고 그녀가 말한다."<br><br>` +
+      `① ⭐⭐⭐ <b>As long as ~</b> (<b>조건 접속사 · ~하는 한·~이기만 하면</b>) — 조건·범위를 한정. "그것만 충족되면". 시간 '~하는 동안'이 아니라 여기선 '조건'.<br>` +
+      `② ⭐⭐⭐ <b>there are healthy babies / there's still hope</b> (<b>유도부사 there be · 존재("~이 있다")</b>) — be동사는 <b>뒤 명사에 수일치</b>: babies(복수)→<b>are</b>, hope(불가산 단수)→<b>is('s)</b>.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subject-agreement','sv-there')">📐 there be 수일치(뒤 명사에 맞춤) 자세히 →</span><br>` +
+      `③ ⭐⭐ <b>"...," she says, "..."</b> (<b>인용 중간 삽입 · 전달동사</b>) — 직접인용을 둘로 쪼개 사이에 [주어+전달동사]를 끼워 넣음. 대명사 주어(she)라 도치 없이 she says.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('quotation-inversion','qi-order')">📐 인용문 전달동사 위치·어순 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 지문의 <b>결론·희망</b> — 건강한 새끼가 곧 종의 미래. 멸종 위기의 비관 속에서 '희망'으로 마무리.<br><br>` +
+      `📝 <b>해석:</b> "'건강한 새끼들이 있는 한, 여전히 희망은 있다'고 그녀는 말한다."`,
+    trans: "'건강한 새끼들이 있는 한, 여전히 희망은 있다'고 그녀는 말한다.",
+  },
+
+  // 지문 5 · 보충자료 1번째 문장(key 5-57): Over two centuries ago, about ten million koalas lived in forests on the east coast of Australia.
+  "5-57": {
+    form: "시간부사구 Over ~ ago(~도 더 전에) · about 수량(약) · ten million koalas(구체적 수 + million 단수형 + 복수명사) · 장소 in/on 전치사 중첩",
+    tense: "단순 과거 (lived · 과거의 사실)",
+    chips: [
+      ["시간부사구", "Over two centuries ago,"],
+      ["부사(약)", "about"],
+      ["주어(S)", "ten million koalas"],
+      ["동사(V)", "lived"],
+      ["장소 전치사구", "in forests on the east coast of Australia."],
+    ],
+    structure:
+      `뼈대: <b>ten million koalas(S) lived(V)</b> in forests .... "2세기도 더 전에, 약 천만 마리의 코알라가 ~숲에 살았다."<br><br>` +
+      `① ⭐⭐ <b>Over two centuries ago</b> (<b>기간 + ago · ~이전에</b>) — ago는 '지금으로부터 ~전'(반드시 과거시제와). Over = '~이 넘는'. "2세기도 더 전에".<br>` +
+      `② ⭐⭐⭐ <b>about ten million koalas</b> (<b>구체적 수 + million은 단수형</b>) — 앞에 구체적 수(ten)가 오면 million·hundred 등은 <b>단수형</b>(ten million ⭕ / ten millions ❌). 막연한 'millions of(수백만의)'와 구별. about='약'.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('number-plural','np-hundreds')">📐 hundred/million 단·복수(수 + 단위) 자세히 →</span><br>` +
+      `③ ⭐⭐ <b>in forests on the east coast of Australia</b> (<b>전치사 중첩 · 범위 좁히기</b>) — in(숲 안) → on(동해안 위) → of(호주의). 큰 범위에서 작은 범위로. (단어카드: coast)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('articles','ar-the')">📐 정관사 the(유일한 the east coast) 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 보충자료 <b>도입</b> — 과거엔 코알라가 '천만 마리'로 번성. 현재의 급감(8만 미만)과 대비할 기준점.<br><br>` +
+      `📝 <b>해석:</b> "2세기도 더 전에, 약 천만 마리의 코알라가 호주 동해안의 숲에 살았다."`,
+    trans: "2세기도 더 전에, 약 천만 마리의 코알라가 호주 동해안의 숲에 살았다.",
+  },
+
+  // 지문 5 · 보충자료 2번째 문장(key 5-58): Eucalyptus leaves—their primary food source—were plentiful.
+  "5-58": {
+    form: "대시(—) 삽입 동격 설명 · 주어 Eucalyptus leaves(복수) → were 수일치(삽입 단수 source에 낚이지 말 것) · 2형식 be + 형용사 보어(plentiful)",
+    tense: "단순 과거 (were · 과거의 상태)",
+    chips: [
+      ["주어(S)", "Eucalyptus leaves"],
+      ["대시 삽입(동격)", "—their primary food source—"],
+      ["동사(V)", "were"],
+      ["보어(C) · 형용사", "plentiful."],
+    ],
+    structure:
+      `뼈대: <b>Eucalyptus leaves(S) were(V) plentiful(C)</b>. 대시 사이는 동격 삽입. "유칼립투스 잎—그들의 주식—은 풍부했다."<br><br>` +
+      `① ⭐⭐⭐ <b>—their primary food source—</b> (<b>대시(—) 삽입 · 동격 설명</b>) — 주어(유칼립투스 잎)를 대시 두 개로 감싼 어구로 부연(= 코알라의 주된 먹이원). 콤마·괄호 삽입과 같은 역할.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('punctuation','pn-dash')">📐 대시(—) 삽입·부연 자세히 →</span><br>` +
+      `② ⭐⭐⭐ <b>Eucalyptus leaves ... were</b> (<b>주어-동사 수일치 · 삽입구에 낚이지 말 것</b>) — 진짜 주어는 <b>leaves(복수)</b> → were. 바로 앞 단수 source에 낚여 was로 쓰면 ❌.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subject-agreement','sv-modifier')">📐 삽입·수식에 가려진 주어 수일치 자세히 →</span><br>` +
+      `③ ⭐ <b>were plentiful</b> (<b>2형식 be + 형용사 보어</b>) — "풍부했다". be동사 뒤 형용사 보어가 주어의 상태를 서술. (단어카드: plentiful)<br>` +
+      `💡 <b>흐름:</b> 과거엔 먹이(유칼립투스)가 <b>넘쳤음</b> → 뒤 문장의 '숲 벌채·서식지 상실'과 극명히 대비.<br><br>` +
+      `📝 <b>해석:</b> "유칼립투스 잎—그들의 주식—은 풍부했다."`,
+    trans: "유칼립투스 잎—그들의 주식—은 풍부했다.",
+  },
+
+  // 지문 5 · 보충자료 3번째 문장(key 5-59): By the start of this century, nearly two-thirds of the forests had been cleared, leaving fewer than 80,000 koalas left in the wild.
+  "5-59": {
+    form: "과거완료 수동 had been cleared(그 시점까지 완료) · 분수 주어 two-thirds of ~(of 뒤 명사에 수일치) · 분사구문 leaving(결과) · fewer than(가산 비교급) · by + 시점(~까지)",
+    tense: "과거완료 수동 (had been cleared · 그때까지 이미 ~됨) + 분사구문",
+    chips: [
+      ["시간(~까지)", "By the start of this century,"],
+      ["분수 주어(S)", "nearly two-thirds of the forests"],
+      ["동사(V) · 과거완료 수동", "had been cleared,"],
+      ["분사구문(결과)", "leaving fewer than 80,000 koalas left in the wild."],
+    ],
+    structure:
+      `뼈대: <b>two-thirds of the forests(S) had been cleared(V·과거완료수동)</b>, leaving ~(분사구문). "금세기 초까지, 숲의 거의 3분의 2가 이미 벌채되어, 야생에 8만 마리도 안 되는 코알라만 남았다."<br><br>` +
+      `① ⭐⭐⭐ <b>two-thirds of the forests had been cleared</b> (<b>분수 of + 명사 수일치 / 과거완료 수동</b>) — 분수·부분표현은 <b>of 뒤 명사(forests 복수)</b>에 수일치. 동사는 had been p.p. = 과거완료 수동("그 시점까지 <b>이미</b> 벌채된").<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subject-agreement','sv-modifier')">📐 부분표현(of 뒤 명사) 수일치 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('passive-voice','pv-form')">📐 수동태 be + p.p.(had been cleared) 자세히 →</span><br>` +
+      `② ⭐⭐⭐ <b>leaving fewer than 80,000 koalas left ~</b> (<b>분사구문 · 결과</b>) — 앞 내용의 <b>결과</b>를 "그 결과 ~을 남기며". = and left ~. (단어카드: clear)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('participle-construction','pc-meaning')">📐 분사구문(결과) 자세히 →</span><br>` +
+      `③ ⭐⭐ <b>fewer than 80,000 koalas</b> (<b>fewer than · 가산명사 비교급</b>) — koalas(셀 수 있는 명사)라 <b>fewer</b> than ⭕ (less than ❌). "8만 마리보다 적은".<br>` +
+      `④ ⭐ <b>By the start of this century</b> (<b>by + 시점 · ~까지(완료 기준)</b>) — by는 '~까지(그 전에 완료)'. 과거완료와 호응해 '그때까지 이미'.<br>` +
+      `💡 <b>흐름:</b> 보충자료 <b>결론</b> — 숲 3분의 2 소실 → 개체수 8만 미만으로 급감. 서식지 파괴가 멸종 위기의 근본 원인임을 수치로 못박음.<br><br>` +
+      `📝 <b>해석:</b> "금세기 초까지, 숲의 거의 3분의 2가 벌채되어 야생에는 8만 마리도 안 되는 코알라만 남게 되었다."`,
+    trans: "금세기 초까지 숲의 거의 3분의 2가 벌채되어, 야생에는 8만 마리도 안 되는 코알라만 남게 되었다.",
+  },
+
+  /* ----- 지문 6: Tracking the snow leopard ----- */
+
+  // 지문 6 · 1번째 문장: "When a snow leopard stalks its prey among the mountain walls, it moves... softly, slowly," explains Indian biologist Raghunandan Singh Chundawat, who has studied the animal for years.
+  "6-0": {
+    form: "시간 부사절 When(~할 때)+주절 · 인용 + 전달동사 도치(explains + 긴 주어) · 주격 관계대명사 who + 현재완료 계속(has studied ~ for years) · 타동사 stalk(몰래 쫓다)",
+    tense: "단순 현재(stalks / moves / explains) + 현재완료 계속(has studied · 수년간 ~해 옴)",
+    chips: [
+      ["시간 부사절", "When a snow leopard stalks its prey ...,"],
+      ["주절(인용)", "it moves... softly, slowly,"],
+      ["전달동사(V) · 도치", "explains"],
+      ["주어(S)", "Indian biologist ... Chundawat,"],
+      ["주격 관계대명사절", "who has studied the animal for years."],
+    ],
+    structure:
+      `뼈대: "<b>When ~ stalks</b>(시간절), <b>it moves ~</b>(주절)," <b>explains(V) Chundawat(S)</b>, who has studied ~. "'눈표범이 바위 사이에서 먹이를 몰래 쫓을 때, 아주 조용하고 느리게 움직인다'고 생물학자 Chundawat가 설명하는데, 그는 수년간 그 동물을 연구해 왔다."<br><br>` +
+      `① ⭐⭐ <b>When ~ stalks its prey, it moves</b> (<b>시간 부사절 · ~할 때</b>) — When절이 주절 앞에 와 '~하는 상황'을 깖. it = a snow leopard. stalk = 몰래 다가가 쫓다. (단어카드: prey · stalk)<br>` +
+      `② ⭐⭐⭐ <b>"...," explains Indian biologist Chundawat</b> (<b>인용 + 전달동사 도치</b>) — 인용문 뒤 주어가 <b>긴 명사</b>라 [전달동사(explains) + 주어] 순으로 <b>도치</b>. 주어가 대명사였다면 도치 안 함(he explains).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('quotation-inversion','qi-order')">📐 인용문 전달동사 도치·어순 자세히 →</span><br>` +
+      `③ ⭐⭐⭐ <b>who has studied the animal for years</b> (<b>주격 관계대명사 + 현재완료 계속</b>) — 선행사(Chundawat)를 보충 설명하는 <b>주격 who</b>(뒤에 주어가 빠진 불완전절). has studied ~ for years = 현재완료 '<b>계속</b>'(수년간 해 왔고 지금도).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('relative-pronoun','rp-incomplete')">📐 관계대명사(불완전한 절) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('present-perfect','pf-uses')">📐 현재완료 계속(for ~) 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 지문 <b>도입</b> — 눈표범의 '은밀함'을 전문가 인용으로 생생히. 바위 사이를 소리 없이 움직이는 사냥 묘사로 시작.<br><br>` +
+      `📝 <b>해석:</b> "'눈표범이 산의 바위 사이에서 먹이를 몰래 쫓을 때, 아주 조용하고 느리게 움직인다'고 인도 생물학자 Raghunandan Singh Chundawat가 설명하는데, 그는 수년간 그 동물을 연구해 왔다."`,
+    trans: "'눈표범이 산의 바위 사이에서 먹이를 몰래 쫓을 때, 아주 조용하고 느리게 움직인다'고 인도 생물학자 라구난단 싱 춘다왓이 설명하는데, 그는 수년간 그 동물을 연구해 왔다.",
+  },
+
+  // 지문 6 · 2번째 문장: "If it knocks a stone loose, it will reach out a foot to stop it from falling and making noise."
+  "6-1": {
+    form: "If 조건절(현재시제) + 주절 will(실현가능 조건문) · 5형식 knock+O+형용사보어(loose) · 목적 to부정사 · stop A from ~ing(막다) + 동명사 병렬(falling and making)",
+    tense: "조건 현재(knocks) + 미래 will(will reach)",
+    chips: [
+      ["조건 부사절", "If it knocks a stone loose,"],
+      ["주어(S)", "it"],
+      ["동사(V) · 미래", "will reach out a foot"],
+      ["목적 to부정사", "to stop it from falling and making noise."],
+    ],
+    structure:
+      `뼈대: <b>If it knocks a stone loose</b>(조건), <b>it(S) will reach out(V) a foot</b> to stop ~. "돌을 쳐서 느슨하게 만들면, 발을 뻗어 그 돌이 떨어져 소리 내는 것을 막는다."<br><br>` +
+      `① ⭐⭐ <b>If it knocks ~, it will ~</b> (<b>실현 가능한 조건문 · If절 현재 → 주절 will</b>) — 일어날 수 있는 조건: <b>If절은 현재시제로 미래를 대신</b>하고, 주절에 will. (가정법 아님)<br>` +
+      `② ⭐⭐⭐ <b>knocks a stone loose</b> (<b>5형식 · 동사 + O + 형용사 보어</b>) — "돌(a stone)을 쳐서(knock) <b>느슨한(loose) 상태로</b> 만들다". loose가 목적격보어(형용사).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('five-pattern','fp-adj')">📐 5형식 형용사 목적격보어 자세히 →</span><br>` +
+      `③ ⭐⭐ <b>to stop it</b> (<b>목적의 to부정사 · ~하기 위해</b>) — "~을 막기 위해". 부사적 용법(목적).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-adverb')">📐 to부정사 부사적 용법(목적) 자세히 →</span><br>` +
+      `④ ⭐⭐⭐ <b>stop it from falling and making noise</b> (<b>stop A from ~ing · A가 ~하지 못하게 막다 + 동명사 병렬</b>) — from 뒤는 <b>동명사(-ing)</b>, falling·making이 and로 <b>병렬</b>(둘 다 ~ing 형태 일치).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('gerund-prep','gp-rule')">📐 전치사 from + 동명사 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">📐 and 병렬(동명사 형태 맞추기) 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 은밀함의 <b>극치</b> — 소리조차 안 내려 굴러갈 돌까지 발로 붙잡음. 앞 문장의 '조용히'를 구체 사례로 확장.<br><br>` +
+      `📝 <b>해석:</b> "'돌을 쳐서 느슨하게 만들면, 발을 뻗어 그 돌이 떨어져 소리 내는 것을 막는다.'"`,
+    trans: "'돌을 쳐서 느슨하게 만들면, 발을 뻗어 그 돌이 떨어져 소리 내는 것을 막는다.'",
+  },
+
+  // 지문 6 · 3번째 문장: One might be moving right now, perfectly silent, maybe close by.
+  "6-2": {
+    form: "부정대명사 One(한 마리) · 조동사 might + 진행(be moving · ~하고 있을지도) · 형용사/부사구 나열(silent, close by) 부가",
+    tense: "현재진행 추측 (might be moving · ~하고 있을지도 모른다)",
+    chips: [
+      ["주어(S) · 부정대명사", "One"],
+      ["동사(V) · 추측 진행", "might be moving"],
+      ["부사", "right now,"],
+      ["보충(형용사/부사)", "perfectly silent, maybe close by."],
+    ],
+    structure:
+      `뼈대: <b>One(S) might be moving(V)</b> right now, perfectly silent, maybe close by. "지금 이 순간에도 한 마리가 완벽히 조용하게, 어쩌면 가까이에서 움직이고 있을지도 모른다."<br><br>` +
+      `① ⭐⭐ <b>One</b> (<b>부정대명사 · (눈표범) 한 마리</b>) — 특정하지 않은 '하나'를 가리킴(= a snow leopard). 숫자 1이 아니라 '임의의 한 마리'.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('pronoun-one','po-generic')">📐 부정대명사 one 자세히 →</span><br>` +
+      `② ⭐⭐⭐ <b>might be moving</b> (<b>조동사 might + 진행(be ~ing) · 추측</b>) — "~하고 있을지도 모른다". 약한 추측 might + 진행형이 결합, right now와 호응해 '바로 지금'을 상상케 함.<br>` +
+      `③ ⭐⭐ <b>perfectly silent, maybe close by</b> (<b>형용사·부사구 나열 부가</b>) — 주어의 상태를 콤마로 덧붙임(= being perfectly silent). close by = 바로 가까이에.<br>` +
+      `💡 <b>흐름:</b> 독자 <b>현장감</b> — '지금도 네 곁에 있을지 모른다'로 눈표범의 은밀함·편재를 극대화. 바로 뒤 "But where?"로 긴장 연결.<br><br>` +
+      `📝 <b>해석:</b> "지금 이 순간에도 한 마리가 완벽히 조용하게, 어쩌면 바로 가까이에서 움직이고 있을지도 모른다."`,
+    trans: "지금 이 순간에도 한 마리가 완벽히 조용하게, 어쩌면 바로 가까이에서 움직이고 있을지도 모른다.",
+  },
+
+  // 지문 6 · 4번째 문장: But where?
+  "6-3": {
+    form: "생략 의문문 · 대조 접속사 But + 의문부사 where 단독(But where (is one)? 에서 반복어 생략)",
+    tense: "현재(생략된 is)",
+    chips: [
+      ["대조 접속사", "But"],
+      ["의문부사(생략 의문문)", "where?"],
+    ],
+    structure:
+      `뼈대: But where (is one)? "하지만 (그게) 어디에?"<br><br>` +
+      `① ⭐ <b>But</b> (<b>대조 접속사</b>) — 앞 문장('지금도 한 마리가 가까이 움직일지 모른다')을 받아 '그런데 어디서?'로 궁금증을 터뜨림.<br>` +
+      `② ⭐⭐ <b>where?</b> (<b>생략 의문문</b>) — 원래 <b>But where is one (moving)?</b>에서 되풀이되는 부분(is one moving)을 지우고 의문부사 <b>where</b>만 남긴 것. 서술 중 짧게 끊어 긴장감·리듬을 줌.<br>` +
+      `💡 <b>흐름:</b> 단 두 단어로 독자의 궁금증을 극대화 — '그런데 대체 어디에?' 사냥 장면 묘사(도입)에서 눈표범 본격 소개로 넘어가는 다리.<br><br>` +
+      `📝 <b>해석:</b> "하지만 어디에 (있을까)?"`,
+    trans: "하지만 (그게) 어디에 있을까?",
+  },
+
+  // 지문 6 · 5번째 문장: Best known for its spotted coat and long distinctive tail, the snow leopard is one of the world's most secretive animals.
+  "6-4": {
+    form: "분사구문 문두(Being 생략 + 과거분사 known) · be best known for의 분사형 · and 병렬(coat and tail) · one of the + 최상급 + 복수명사",
+    tense: "단순 현재(is)",
+    chips: [
+      ["분사구문(이유·부연)", "Best known for its spotted coat and long distinctive tail,"],
+      ["주어(S)", "the snow leopard"],
+      ["동사(V)", "is"],
+      ["보어(C)", "one of the world's most secretive animals."],
+    ],
+    structure:
+      `뼈대: <b>(Being) Best known for ~</b>(분사구문), <b>the snow leopard(S) is(V) one of the most secretive animals(C)</b>. "얼룩무늬 털가죽과 길고 독특한 꼬리로 가장 잘 알려진 눈표범은 세계에서 가장 은밀한 동물 중 하나다."<br><br>` +
+      `① ⭐⭐⭐ <b>Best known for ~,</b> (<b>문두 분사구문 · Being 생략</b>) — 원래 <b>As it is best known for ~</b> 같은 부사절에서 [접속사+주어+be]를 지우고, 앞의 <b>Being이 생략</b>되어 과거분사 <b>known</b>으로 시작한 수동 분사구문. 뜻은 '~로 잘 알려져 있는/있어서'. (be best known for = ~로 가장 유명하다)<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('participle-construction','pc-make')">📐 분사구문 만드는 법 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('participle-construction','pc-meaning')">📐 분사구문 의미(이유 등) 자세히 →</span><br>` +
+      `② ⭐⭐ <b>its spotted coat and long distinctive tail</b> (<b>and 병렬</b>) — 전치사 for의 목적어인 명사구 둘을 and로 대등 연결.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">📐 and 병렬(형태·역할 맞추기) 자세히 →</span><br>` +
+      `③ ⭐⭐⭐ <b>one of the world's most secretive animals</b> (<b>one of the + 최상급 + 복수명사 · ~중 하나</b>) — 'the 최상급 ~들 중 하나'라서 반드시 <b>복수명사(animals)</b>. 여기선 소유격 <b>world's가 the 자리를 차지</b>해 the most가 아니라 world's most.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('superlative','su-the')">📐 최상급 the·소유격 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 눈표범 본격 소개 — 외형(얼룩 털·긴 꼬리)과 핵심 특성(은밀함)을 한 문장에 압축.<br><br>` +
+      `📝 <b>해석:</b> "얼룩무늬 털가죽과 길고 독특한 꼬리로 가장 잘 알려진 눈표범은 세계에서 가장 은밀한 동물 중 하나다."`,
+    trans: "얼룩무늬 털가죽과 길고 독특한 꼬리로 가장 잘 알려진 눈표범은 세계에서 가장 은밀한 동물 중 하나다.",
+  },
+
+  // 지문 6 · 6번째 문장: These elusive cats can only be found high in the remote, mountainous regions of Central Asia.
+  "6-5": {
+    form: "조동사 can + 수동태 be found(발견될 수 있다) · 범위 한정 only · 부사 high(높은 곳에) · 등위 형용사 콤마(remote, mountainous)",
+    tense: "현재(can be found)",
+    chips: [
+      ["주어(S)", "These elusive cats"],
+      ["동사(V)·조동사+수동", "can only be found"],
+      ["부사", "high"],
+      ["장소 전치사구", "in the remote, mountainous regions of Central Asia."],
+    ],
+    structure:
+      `뼈대: <b>These elusive cats(S) can only be found(V·수동)</b> high in ~. "이 찾기 힘든 고양이들은 중앙아시아의 외딴 산악 지역 높은 곳에서만 발견될 수 있다."<br><br>` +
+      `① ⭐⭐⭐ <b>can only be found</b> (<b>조동사 can + 수동태 be p.p.</b>) — 조동사 뒤 수동은 [조동사 + <b>be</b> + 과거분사]. 주어(cats)가 '발견되는' 대상이라 수동. only는 '오직 ~에서만'으로 장소를 한정.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('passive-voice','pv-form')">📐 수동태 형태(be + p.p.) 자세히 →</span><br>` +
+      `② ⭐⭐ <b>high</b> (<b>부사 · 높은 곳에</b>) — 여기서 high는 형용사가 아니라 '높이/높은 곳에'를 뜻하는 <b>부사</b>로 be found를 꾸밈. (highly = '매우'와 혼동 금지)<br>` +
+      `③ ⭐⭐ <b>the remote, mountainous regions</b> (<b>등위 형용사 나열</b>) — remote와 mountainous가 콤마로 대등하게 regions를 꾸밈(= remote <b>and</b> mountainous).<br>` +
+      `💡 <b>흐름:</b> 은밀함을 서식지로 뒷받침 — 중앙아시아 외딴 고산지대, 그것도 높은 곳에서만 발견됨.<br><br>` +
+      `📝 <b>해석:</b> "이 찾기 힘든 고양이들은 중앙아시아의 외딴 산악 지역 높은 곳에서만 발견될 수 있다."`,
+    trans: "이 찾기 힘든 고양이들은 중앙아시아의 외딴 산악 지역 높은 곳에서만 발견될 수 있다.",
+  },
+
+  // 지문 6 · 7번째 문장: For this reason, and because they hunt primarily at night, they are very rarely seen.
+  "6-6": {
+    form: "이유 부사구 For this reason + 이유 부사절 because를 and로 병렬 · 수동태 are seen · 준부정 빈도부사 rarely",
+    tense: "현재(hunt / are seen)",
+    chips: [
+      ["이유①(부사구)", "For this reason,"],
+      ["이유②(부사절)·and 병렬", "and because they hunt primarily at night,"],
+      ["주어(S)", "they"],
+      ["동사(V)·수동", "are very rarely seen."],
+    ],
+    structure:
+      `뼈대: <b>For this reason, and because ~</b>(이유 두 개), <b>they(S) are ~ seen(V·수동)</b>. "이런 이유로, 또 주로 밤에 사냥하기 때문에, 그들은 좀처럼 목격되지 않는다."<br><br>` +
+      `① ⭐⭐⭐ <b>For this reason, and because they hunt ~</b> (<b>이유 부사구 + 이유 부사절 and 병렬</b>) — '이유를 나타내는 요소' 둘을 and로 대등 연결: 전치사구 <b>For this reason</b> ↔ 접속사절 <b>because they hunt ~</b>.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">📐 and 병렬(대등한 것끼리) 자세히 →</span><br>` +
+      `② ⭐ <b>hunt primarily at night</b> (<b>primarily · 주로</b>) — primarily = 주로(= mainly), 동사 hunt를 꾸밈.<br>` +
+      `③ ⭐⭐⭐ <b>they are very rarely seen</b> (<b>수동태 + 준부정 빈도부사 rarely</b>) — 주어 they(cats)가 '보여지는' 대상이라 수동 <b>are seen</b>. <b>rarely</b> = '좀처럼 ~않다'(준부정어), very가 강조.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('passive-voice','pv-form')">📐 수동태 형태(be + p.p.) 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 외딴 고산 서식 + 야행성이라는 두 이유로 '거의 안 보인다'는 결론. 눈표범의 희소성 강조.<br><br>` +
+      `📝 <b>해석:</b> "이런 이유로, 또 주로 밤에 사냥하기 때문에, 그들은 좀처럼 목격되지 않는다."`,
+    trans: "이런 이유로, 또 주로 밤에 사냥하기 때문에, 그들은 좀처럼 목격되지 않는다.",
+  },
+
+  // 지문 6 · 8번째 문장: Snow leopards have been officially protected since 1975, but enforcing this law has proven difficult.
+  "6-7": {
+    form: "현재완료 수동 have been protected + since(계속) · but 대조 · 동명사 주어 enforcing(단수취급 has) · prove + 형용사 보어(~로 판명되다)",
+    tense: "현재완료 계속·수동(have been protected) + 현재완료(has proven)",
+    chips: [
+      ["주어①(S)", "Snow leopards"],
+      ["동사①·현재완료 수동", "have been officially protected since 1975,"],
+      ["대조 접속사", "but"],
+      ["주어②·동명사", "enforcing this law"],
+      ["동사②·2형식", "has proven difficult."],
+    ],
+    structure:
+      `뼈대: <b>Snow leopards(S) have been protected</b>(현재완료 수동) since 1975, but <b>enforcing this law</b>(동명사 S) <b>has proven(V) difficult(C)</b>. "눈표범은 1975년부터 공식적으로 보호받아 왔지만, 이 법을 시행하는 것은 어려운 일로 드러났다."<br><br>` +
+      `① ⭐⭐⭐ <b>have been officially protected since 1975</b> (<b>현재완료 수동 + since 계속</b>) — [have + <b>been</b> + p.p.] = 현재완료 수동. since 1975와 어울려 '1975년부터 지금까지 계속 보호되어 옴'.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('present-perfect','pf-uses')">📐 현재완료 계속(since ~) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('passive-voice','pv-form')">📐 수동태 형태(be + p.p.) 자세히 →</span><br>` +
+      `② ⭐⭐⭐ <b>enforcing this law has proven</b> (<b>동명사 주어 → 단수 has</b>) — 동명사구 <b>enforcing this law</b>('이 법을 시행하는 것')가 주어라 <b>단수 취급</b>, 그래서 have가 아니라 <b>has</b>.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subject-agreement','sv-gerund')">📐 동명사 주어 단수 취급 자세히 →</span><br>` +
+      `③ ⭐⭐⭐ <b>has proven difficult</b> (<b>prove + 형용사 보어 · ~로 판명되다</b>) — 여기 prove는 '증명하다'(타동사)가 아니라 2형식 '<b>~임이 드러나다/판명되다</b>'. 뒤에 부사가 아니라 <b>형용사(difficult)</b>가 보어로 옴.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('linking-become','lb-why-adj')">📐 2형식 동사+형용사 보어 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> '법은 있으나 집행은 어렵다'는 반전 — 이어질 밀렵·갈등 문제의 배경을 깖.<br><br>` +
+      `📝 <b>해석:</b> "눈표범은 1975년부터 공식적으로 보호받아 왔지만, 이 법을 시행하는 것은 어려운 일로 드러났다."`,
+    trans: "눈표범은 1975년부터 공식적으로 보호받아 왔지만, 이 법을 시행하는 것은 어려운 일로 드러났다.",
+  },
+
+  // 지문 6 · 9번째 문장: Many continue to be killed for their fur and body parts, which are worth a fortune on the black market.
+  "6-8": {
+    form: "부정대명사 Many · continue to V(부정사 목적어) · 수동 부정사 to be killed · 계속적 용법 관계대명사 which(콤마) · be worth + 명사(~의 값어치)",
+    tense: "현재(continue / are worth)",
+    chips: [
+      ["주어(S)·부정대명사", "Many"],
+      ["동사(V)", "continue"],
+      ["목적어·수동 to부정사", "to be killed for their fur and body parts,"],
+      ["계속적 용법 관계대명사절", "which are worth a fortune on the black market."],
+    ],
+    structure:
+      `뼈대: <b>Many(S) continue(V) to be killed ~</b>, which are worth a fortune ~. "많은 수가 모피와 신체 부위 때문에 계속 죽임을 당하는데, 이것들은 암시장에서 엄청난 값어치가 나간다."<br><br>` +
+      `① ⭐⭐ <b>Many continue to be killed</b> (<b>continue to V + 수동 부정사</b>) — continue는 to부정사·동명사 둘 다 목적어로 취함(뜻 동일). <b>to be killed</b> = '죽임을 당하다'(수동 부정사), Many(눈표범 다수)가 당하는 대상.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('gerund-vs-infinitive','gi-both')">📐 둘 다 되는 동사(continue 등) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('passive-voice','pv-form')">📐 수동(be + p.p.) 자세히 →</span><br>` +
+      `② ⭐ <b>for their fur and body parts</b> (<b>for + and 병렬</b>) — '모피와 신체 부위를 노려서'. 명사 둘을 and로 연결.<br>` +
+      `③ ⭐⭐⭐ <b>, which are worth a fortune</b> (<b>계속적 용법 관계대명사 which</b>) — 콤마 뒤 which는 앞 명사(fur and body parts)를 <b>보충 설명</b>(= and they). 복수 선행사라 <b>are</b>. be worth + 명사 = '~의 값어치가 있다'.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('relative-nonrestrictive','rn-comma')">📐 콤마 which(계속적 용법) 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 법적 보호에도 밀렵이 계속되는 이유 — 모피·신체 부위가 암시장 고가. 위협 요인 ①.<br><br>` +
+      `📝 <b>해석:</b> "많은 수가 모피와 신체 부위 때문에 계속 죽임을 당하는데, 이것들은 암시장에서 엄청난 값어치가 나간다."`,
+    trans: "많은 수가 모피와 신체 부위 때문에 계속 죽임을 당하는데, 이것들은 암시장에서 엄청난 값어치가 나간다.",
+  },
+
+  // 지문 6 · 10번째 문장: In recent years, though, conflict with local herders has also led to a number of snow leopard deaths.
+  "6-9": {
+    form: "접속부사 though 삽입(그러나) · lead to 현재완료(has led) · also 첨가 · a number of + 복수명사(다수의, = many)",
+    tense: "현재완료(has led · ~로 이어져 옴)",
+    chips: [
+      ["시간 부사구", "In recent years,"],
+      ["접속부사(삽입)", "though,"],
+      ["주어(S)", "conflict with local herders"],
+      ["동사(V)·현재완료", "has also led to"],
+      ["목적어", "a number of snow leopard deaths."],
+    ],
+    structure:
+      `뼈대: In recent years, <b>though</b>, <b>conflict ~(S) has led to(V) a number of deaths</b>. "하지만 최근 몇 년 사이, 지역 목축민과의 갈등 또한 다수의 눈표범 죽음으로 이어져 왔다."<br><br>` +
+      `① ⭐⭐⭐ <b>though,</b> (<b>접속부사 · '그러나'를 문중 삽입</b>) — though가 문장 중간에 콤마로 삽입되면 접속사가 아니라 '하지만'이라는 <b>접속부사</b>(= however). 앞(밀렵)과 대비되는 '또 다른 원인'을 끌어옴.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('conjunctive-adverb','ca-though')">📐 though 삽입(접속부사) 자세히 →</span><br>` +
+      `② ⭐⭐ <b>conflict ... has also led to</b> (<b>lead to + 현재완료 · also 첨가</b>) — lead to = '~로 이어지다/초래하다'(lead-led-led). <b>has led</b> = 현재완료(최근까지 계속). also = 밀렵에 '더해' 갈등도.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('present-perfect','pf-uses')">📐 현재완료 자세히 →</span><br>` +
+      `③ ⭐⭐ <b>a number of snow leopard deaths</b> (<b>a number of + 복수명사 · 다수의</b>) — a number of = '다수의, 많은'(= many), 뒤에 복수명사. (the number of ~ '~의 수'와 구별!)<br>` +
+      `💡 <b>흐름:</b> 위협 요인 ② — 밀렵에 더해 '목축민과의 갈등'이라는 새 원인 도입. 바로 뒤에서 그 이유를 설명.<br><br>` +
+      `📝 <b>해석:</b> "하지만 최근 몇 년 사이, 지역 목축민과의 갈등 또한 다수의 눈표범 죽음으로 이어져 왔다."`,
+    trans: "하지만 최근 몇 년 사이, 지역 목축민과의 갈등 또한 다수의 눈표범 죽음으로 이어져 왔다.",
+  },
+
+  // 지문 6 · 11번째 문장: This is because the big cats kill the herders' animals, and drag the bodies away high up in the mountains to eat.
+  "6-10": {
+    form: "This is because ~(이것은 ~때문이다 · 원인) · 동사 병렬(kill and drag) · 타동사+O+부사(drag ~ away) · 목적 to부정사(to eat)",
+    tense: "단순 현재(is / kill / drag)",
+    chips: [
+      ["주어(S)·동사(V)", "This is"],
+      ["이유(because절)", "because the big cats kill the herders' animals,"],
+      ["동사 병렬·and", "and drag the bodies away high up in the mountains"],
+      ["목적 to부정사", "to eat."],
+    ],
+    structure:
+      `뼈대: <b>This(S) is(V) because the big cats kill ~, and drag ~</b> to eat. "이는 그 큰 고양이들이 목축민의 가축을 죽이고, 먹으려고 사체를 산속 높은 곳으로 끌고 가기 때문이다."<br><br>` +
+      `① ⭐⭐⭐ <b>This is because ~</b> (<b>이것은 ~때문이다 · 원인 제시</b>) — [주어 This + be + because절]로 <b>원인</b>을 말함. 🚨 결과를 말하는 <b>This is why ~</b>('그래서 ~한 것이다')와 구별! because 뒤엔 '원인', why 뒤엔 '결과'.<br>` +
+      `② ⭐⭐ <b>kill ~, and drag ~</b> (<b>동사 병렬</b>) — because절의 주어 the big cats가 공통으로 받는 동사 둘(kill·drag)을 and로 대등 연결.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">📐 and 동사 병렬 자세히 →</span><br>` +
+      `③ ⭐⭐ <b>drag the bodies away</b> (<b>타동사 + 목적어 + 부사</b>) — drag A away = 'A를 끌고 가 버리다'. away는 방향 부사. high up in the mountains(산속 높이)는 장소 부사구.<br>` +
+      `④ ⭐⭐ <b>to eat</b> (<b>목적의 to부정사 · ~하기 위해</b>) — '먹기 위해'. 부사적 용법(목적).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-adverb')">📐 to부정사 부사적 용법(목적) 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 앞 문장(갈등이 죽음을 부른다)의 <b>이유 설명</b> — 눈표범이 가축을 죽여 끌고 가니 목축민이 보복함.<br><br>` +
+      `📝 <b>해석:</b> "이는 그 큰 고양이들이 목축민의 가축을 죽이고, 먹으려고 사체를 산속 높은 곳으로 끌고 가기 때문이다."`,
+    trans: "이는 그 큰 고양이들이 목축민의 가축을 죽이고, 먹으려고 사체를 산속 높은 곳으로 끌고 가기 때문이다.",
+  },
+
+  // 지문 6 · 12번째 문장: As a result of these pressures, the current snow leopard population is estimated at only 4,000 to 7,000, and some fear that the actual number may already have dropped below 3,500.
+  "6-11": {
+    form: "As a result of ~(~의 결과로) · 수동태 be estimated at(~로 추정되다) · and 등위절 + fear that 명사절(목적어) · 조동사+완료부정사 may have dropped(과거 추측)",
+    tense: "현재(is estimated / fear) + 조동사 완료(may have dropped · 과거 추측)",
+    chips: [
+      ["결과 전치사구", "As a result of these pressures,"],
+      ["주어①(S)·동사·수동", "the current snow leopard population is estimated at only 4,000 to 7,000,"],
+      ["등위접속", "and"],
+      ["주어②(S)·동사(V)", "some fear"],
+      ["that 명사절(목적어)", "that the actual number may already have dropped below 3,500."],
+    ],
+    structure:
+      `뼈대: As a result of ~, <b>the population(S) is estimated(V·수동)</b> at ~, and <b>some(S) fear(V) that ~</b>. "이런 압박의 결과로, 현재 눈표범 개체 수는 4,000~7,000마리에 불과한 것으로 추정되며, 실제 수는 이미 3,500 아래로 떨어졌을지도 모른다고 우려하는 이들도 있다."<br><br>` +
+      `① ⭐⭐ <b>As a result of these pressures,</b> (<b>~의 결과로 · 원인→결과</b>) — As a result of + 명사 = '~의 결과로/때문에'. 앞서 언급된 '압박들(밀렵·갈등)'을 받아 결론을 끌어냄.<br>` +
+      `② ⭐⭐⭐ <b>is estimated at ~</b> (<b>수동태 be estimated at · ~로 추정되다</b>) — 개체 수가 '추정되는' 대상이라 수동. 수치 앞엔 전치사 <b>at</b>이 고정으로 붙음(be estimated <b>at</b>).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('passive-voice','pv-form')">📐 수동태 형태(be + p.p.) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('passive-preposition','ps-other')">📐 수동태 뒤 전치사(at 등) 자세히 →</span><br>` +
+      `③ ⭐⭐⭐ <b>some fear that the actual number ~</b> (<b>fear + that 명사절 · 목적어</b>) — fear(걱정하다)의 <b>목적어</b>로 that절이 통째로 옴. 여기 that은 생략 가능(접속사).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('noun-clause-that','nc-object')">📐 that 명사절(목적어) 자세히 →</span><br>` +
+      `④ ⭐⭐⭐ <b>may already have dropped</b> (<b>조동사 may + 완료부정사(have p.p.) · 과거에 대한 추측</b>) — [may + have + 과거분사] = '이미 ~했을지도 모른다'(과거 일을 지금 추측). already가 '이미'를 강조.<br>` +
+      `💡 <b>흐름:</b> 위협들의 <b>결과를 수치로</b> — 개체 수가 매우 적고, 실제론 더 줄었을 수 있다는 우려로 심각성 부각.<br><br>` +
+      `📝 <b>해석:</b> "이런 압박의 결과로, 현재 눈표범 개체 수는 겨우 4,000~7,000마리로 추정되며, 실제 수는 이미 3,500 아래로 떨어졌을지도 모른다고 우려하는 이들도 있다."`,
+    trans: "이런 압박의 결과로, 현재 눈표범 개체 수는 겨우 4,000~7,000마리로 추정되며, 실제 수는 이미 3,500 아래로 떨어졌을지도 모른다고 우려하는 이들도 있다.",
+  },
+
+  // 지문 6 · 13번째 문장: The only way to reverse this trend and bring these cats back from their threatened status, say conservationists, is to make them more valuable alive than dead.
+  "6-12": {
+    form: "주어 The only way + to부정사 형용사적 용법(way 수식, reverse와 bring 병렬) · 삽입 + 전달동사 도치(say conservationists) · 주격보어 to부정사(is to make) · 5형식 make+O+형용사(more valuable) · 비교 more ~ than",
+    tense: "단순 현재(say / is)",
+    chips: [
+      ["주어(S)·형용사적 to부정사", "The only way to reverse this trend and bring these cats back ~,"],
+      ["삽입·전달동사 도치", "say conservationists,"],
+      ["동사(V)", "is"],
+      ["보어(C)·명사적 to부정사", "to make them more valuable alive than dead."],
+    ],
+    structure:
+      `뼈대: <b>The only way to reverse ~ and bring ~(S)</b>, say conservationists, <b>is(V) to make them more valuable(C)</b>. "이 추세를 뒤집고 이 고양이들을 위기 상태에서 되돌릴 유일한 길은, 보존론자들에 따르면, 그들을 죽은 것보다 살아 있는 것이 더 값지게 만드는 것이다."<br><br>` +
+      `① ⭐⭐⭐ <b>The only way to reverse ~ and (to) bring ~</b> (<b>to부정사 형용사적 용법 + 병렬</b>) — to부정사가 앞 명사 <b>way</b>를 꾸밈('~할 길/방법'). reverse와 bring이 and로 <b>병렬</b>(둘 다 to에 걸림).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-adj')">📐 to부정사 형용사적 용법(명사 수식) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">📐 and 병렬(to V 묶기) 자세히 →</span><br>` +
+      `② ⭐⭐⭐ <b>, say conservationists,</b> (<b>삽입 + 전달동사 도치</b>) — '보존론자들이 말하길'을 문장 중간에 삽입. 원래 conservationists say인데 <b>[동사 + 주어]로 도치</b>(인용·전달 삽입구에서 흔함). 긴 주어와 is 사이에 끼어듦.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('quotation-inversion','qi-order')">📐 전달동사 도치·삽입 자세히 →</span><br>` +
+      `③ ⭐⭐⭐ <b>is to make them more valuable</b> (<b>주격보어 to부정사(명사적) + 5형식 make+O+형용사</b>) — be동사 뒤 to부정사가 <b>보어</b>('~하는 것이다'). make them valuable = '그들을 값지게 만들다'(make+목적어+형용사 보어).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-noun')">📐 to부정사 명사적 용법(보어) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('five-pattern','fp-adj')">📐 5형식 형용사 목적격보어 자세히 →</span><br>` +
+      `④ ⭐⭐ <b>more valuable alive than dead</b> (<b>비교급 more ~ than + 서술 형용사</b>) — '죽은 것보다 살아 있는 편이 더 가치 있는'. alive·dead는 주어(them)의 상태를 설명하는 서술 형용사.<br>` +
+      `💡 <b>흐름:</b> 문제(개체 수 급감) 뒤 <b>해법 제시</b> — '살아 있을 때 더 값지게' 만드는 것이 해결책. 이어질 홈스테이·보상 프로그램의 핵심 논리.<br><br>` +
+      `📝 <b>해석:</b> "이 추세를 뒤집고 이 고양이들을 위기 상태에서 되돌릴 유일한 길은, 보존론자들에 따르면, 그들을 죽었을 때보다 살아 있을 때 더 값지게 만드는 것이다."`,
+    trans: "이 추세를 뒤집고 이 고양이들을 위기 상태에서 되돌릴 유일한 길은, 보존론자들에 따르면, 그들을 죽었을 때보다 살아 있을 때 더 값지게 만드는 것이다.",
+  },
+
+  // (소제목 A Fragile Relationship = 배열 index 13 → 카드 없음. 아래 14번째 문장은 index 14 = 키 6-14)
+  // 지문 6 · 14번째 문장: Because farming is difficult in Central Asia's cold, dry landscape, traditional cultures depend mostly on livestock (mainly sheep and goats) to survive in these mountainous regions.
+  "6-14": {
+    form: "이유 부사절 Because 문두 + 주절 · 동명사 주어 farming(단수 is) · depend on(~에 의존하다) · 괄호 삽입 부연 · 목적 to부정사(to survive)",
+    tense: "단순 현재(is / depend)",
+    chips: [
+      ["이유 부사절", "Because farming is difficult in ~ landscape,"],
+      ["주어(S)", "traditional cultures"],
+      ["동사(V)", "depend mostly on livestock"],
+      ["괄호 삽입(부연)", "(mainly sheep and goats)"],
+      ["목적 to부정사", "to survive in these mountainous regions."],
+    ],
+    structure:
+      `뼈대: <b>Because farming is difficult ~</b>(이유), <b>traditional cultures(S) depend(V) on livestock</b> to survive ~. "중앙아시아의 춥고 건조한 땅에서는 농사가 어렵기 때문에, 전통 문화(사회)는 이 산악 지역에서 살아남기 위해 주로 가축(주로 양과 염소)에 의존한다."<br><br>` +
+      `① ⭐⭐ <b>Because farming is difficult</b> (<b>이유 부사절 + 동명사 주어</b>) — Because절이 '~때문에'로 이유를 깖. 그 안의 주어 <b>farming</b>(농사짓는 것)은 동명사라 <b>단수 is</b>.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subject-agreement','sv-gerund')">📐 동명사 주어 단수 취급 자세히 →</span><br>` +
+      `② ⭐⭐ <b>depend mostly on livestock</b> (<b>depend on · ~에 의존하다</b>) — depend는 자동사라 전치사 <b>on</b>과 함께 씀. mostly(주로)가 삽입.<br>` +
+      `③ ⭐⭐ <b>(mainly sheep and goats)</b> (<b>괄호 삽입 · 부연 설명</b>) — 앞 명사 livestock이 구체적으로 무엇인지 괄호로 덧붙임(= 주로 양과 염소).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('punctuation','pn-bracket')">📐 괄호 삽입 자세히 →</span><br>` +
+      `④ ⭐⭐ <b>to survive</b> (<b>목적의 to부정사 · 살아남기 위해</b>) — 부사적 용법(목적).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-adverb')">📐 to부정사 부사적 용법(목적) 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 소제목(불안한 공존) 아래 <b>배경 설명</b> — 농사가 안 되니 가축에 생계를 의존, 그래서 눈표범과 충돌이 생김.<br><br>` +
+      `📝 <b>해석:</b> "중앙아시아의 춥고 건조한 땅에서는 농사가 어렵기 때문에, 전통 사회는 이 산악 지역에서 살아남기 위해 주로 가축(주로 양과 염소)에 의존한다."`,
+    trans: "중앙아시아의 춥고 건조한 땅에서는 농사가 어렵기 때문에, 전통 사회는 이 산악 지역에서 살아남기 위해 주로 가축(주로 양과 염소)에 의존한다.",
+  },
+
+  // 지문 6 · 15번째 문장: At night, when snow leopards hunt, herders' animals are in danger of snow leopard attacks.
+  "6-15": {
+    form: "부사구 At night + 시간 부사절 when 삽입 · 소유격 herders' · be in danger of + 명사(~의 위험에 처하다)",
+    tense: "단순 현재(hunt / are)",
+    chips: [
+      ["부사구", "At night,"],
+      ["시간 부사절(삽입)", "when snow leopards hunt,"],
+      ["주어(S)", "herders' animals"],
+      ["동사(V)·보어", "are in danger of snow leopard attacks."],
+    ],
+    structure:
+      `뼈대: At night, when ~ hunt, <b>herders' animals(S) are in danger of ~(V·보어)</b>. "밤에, 눈표범이 사냥할 때면, 목축민의 가축은 눈표범의 공격 위험에 놓인다."<br><br>` +
+      `① ⭐⭐ <b>At night, when snow leopards hunt,</b> (<b>시간 부사구 + 시간 부사절</b>) — At night(밤에)을 when절(~할 때)이 다시 구체화하며 콤마로 삽입. 둘 다 '언제'를 나타내는 부사 요소.<br>` +
+      `② ⭐⭐ <b>herders' animals</b> (<b>복수 소유격 '</b>) — 복수명사 herders 뒤에 아포스트로피만 붙여 소유격(목축민들의 가축).<br>` +
+      `③ ⭐⭐⭐ <b>are in danger of snow leopard attacks</b> (<b>be in danger of + 명사 · ~의 위험에 처하다</b>) — 'be + in danger of + 명사' 숙어. of 뒤 명사(attacks)가 '무슨 위험인지' 내용을 밝힘.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('of-types','of-content')">📐 of(내용·동격) 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 충돌의 <b>구체화</b> — 야간에 사냥하는 눈표범이 가축을 노리니, 목축민의 재산이 위험. 갈등의 씨앗.<br><br>` +
+      `📝 <b>해석:</b> "밤에, 눈표범이 사냥할 때면, 목축민의 가축은 눈표범의 공격 위험에 놓인다."`,
+    trans: "밤에, 눈표범이 사냥할 때면, 목축민의 가축은 눈표범의 공격 위험에 놓인다.",
+  },
+
+  // 지문 6 · 16번째 문장: If a family loses even a few animals, it can push them into desperate poverty.
+  "6-16": {
+    form: "실현 가능한 조건문 If절(현재) → 주절 can · 강조 even · push A into B(A를 B로 몰아넣다)",
+    tense: "조건 현재(loses) + 주절 can(가능)",
+    chips: [
+      ["조건 부사절", "If a family loses even a few animals,"],
+      ["주어(S)", "it"],
+      ["동사(V)·조동사", "can push"],
+      ["목적어 + 전치사구", "them into desperate poverty."],
+    ],
+    structure:
+      `뼈대: <b>If a family loses ~</b>(조건), <b>it(S) can push(V) them into poverty</b>. "한 가정이 가축 몇 마리만 잃어도, 그것은 그들을 극심한 가난으로 몰아넣을 수 있다."<br><br>` +
+      `① ⭐⭐ <b>If a family loses ~, it can push ~</b> (<b>실현 가능한 조건문 · If절 현재 → 주절 can</b>) — 실제로 일어날 수 있는 조건: <b>If절은 현재시제로 미래를 대신</b>, 주절엔 can. (가정법 아님)<br>` +
+      `② ⭐⭐ <b>even a few animals</b> (<b>강조 even · ~조차/~만 해도</b>) — even이 a few(약간의) 앞에서 '단 몇 마리만 잃어도'라는 뜻을 강조. a few는 긍정(약간은 있는).<br>` +
+      `③ ⭐⭐ <b>push them into desperate poverty</b> (<b>push A into B · A를 B로 몰아넣다</b>) — it(가축을 잃는 상황)이 them(가정)을 가난으로 밀어넣음. into는 '~한 상태로의 변화'.<br>` +
+      `💡 <b>흐름:</b> 피해의 <b>심각성</b> — 가난한 목축민에겐 가축 몇 마리 손실도 치명적. 눈표범을 없애려는 동기를 설명.<br><br>` +
+      `📝 <b>해석:</b> "한 가정이 가축 몇 마리만 잃어도, 그것이 그들을 극심한 가난으로 몰아넣을 수 있다."`,
+    trans: "한 가정이 가축 몇 마리만 잃어도, 그것이 그들을 극심한 가난으로 몰아넣을 수 있다.",
+  },
+
+  // 지문 6 · 17번째 문장: "The wolf comes and kills, eats, and goes somewhere else," said one herder, "but snow leopards are always around. They have killed one or two animals many times... Everybody wanted to finish this leopard."
+  "6-17": {
+    form: "인용문 + 전달동사 도치(said one herder) · 동사 병렬 나열(comes and kills, eats, and goes) · 현재완료 경험(have killed ~ many times) · 구어 finish(끝장내다)",
+    tense: "현재(comes/kills/are) + 현재완료(have killed) + 과거(wanted)",
+    chips: [
+      ["인용 + 전달동사 도치", "... said one herder, ..."],
+      ["동사 병렬(A, B, and C)", "comes and kills, eats, and goes"],
+      ["대조", "but snow leopards are always around"],
+      ["현재완료 경험", "They have killed ~ many times"],
+    ],
+    structure:
+      `뼈대: '늑대는 와서 죽이고, 먹고, 다른 곳으로 간다,'고 <b>said(V) one herder(S)</b>, '하지만 눈표범은 늘 주변에 있다 ~'. "'늑대는 와서 죽이고, 먹고 나면 다른 데로 가 버린다. 하지만 눈표범은 늘 근처에 있다. 녀석들은 여러 번 가축을 한두 마리씩 죽여 왔다... 모두가 이 표범을 끝장내고 싶어 했다.'"<br><br>` +
+      `① ⭐⭐⭐ <b>..., said one herder, ...</b> (<b>인용 + 전달동사 도치</b>) — 인용문 뒤 주어가 명사(one herder)라 [전달동사(said) + 주어] 순으로 <b>도치</b>. 긴 인용 중간에 삽입됨.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('quotation-inversion','qi-order')">📐 인용문 전달동사 도치 자세히 →</span><br>` +
+      `② ⭐⭐⭐ <b>comes and kills, eats, and goes</b> (<b>동사 병렬 나열 · A, B, and C</b>) — 주어 The wolf가 받는 동사들을 콤마와 and로 나열. 마지막 항목 앞 and로 묶음.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-list')">📐 A, B, and C 나열 병렬 자세히 →</span><br>` +
+      `③ ⭐⭐ <b>They have killed ~ many times</b> (<b>현재완료 경험 · ~해 온 적이 여러 번</b>) — have + p.p.로 '여러 번 ~해 왔다'는 반복 경험. many times와 호응.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('present-perfect','pf-uses')">📐 현재완료 경험·계속 자세히 →</span><br>` +
+      `④ ⭐ <b>wanted to finish this leopard</b> (<b>구어 finish · 끝장내다</b>) — 여기 finish는 '끝내다'가 아니라 '없애다/죽이다'라는 구어적 뜻.<br>` +
+      `💡 <b>흐름:</b> 목축민의 <b>생생한 육성</b> — 늑대와 달리 눈표범은 상주하며 반복 피해를 줘, 주민들이 제거를 원하게 됨.<br><br>` +
+      `📝 <b>해석:</b> "'늑대는 와서 죽이고, 먹고 나면 다른 데로 가 버린다. 하지만 눈표범은 늘 근처에 있다. 녀석들은 여러 번 가축을 한두 마리씩 죽여 왔다... 모두가 이 표범을 끝장내고 싶어 했다.'"`,
+    trans: "'늑대는 와서 죽이고, 먹고 나면 다른 데로 가 버린다. 하지만 눈표범은 늘 근처에 있다. 녀석들은 여러 번 가축을 한두 마리씩 죽여 왔다... 모두가 이 표범을 끝장내고 싶어 했다.'",
+  },
+
+  // 지문 6 · 18번째 문장: To address this problem, local religious leaders have called for an end to snow leopard killings, saying that these wild animals have the right to exist peacefully.
+  "6-18": {
+    form: "문두 목적 to부정사(To address) · 현재완료 have called for(요구해 왔다) · an end to(~의 종식) · 분사구문 saying + that 명사절 · the right to exist(형용사적 to부정사)",
+    tense: "현재완료(have called) + 현재(have)",
+    chips: [
+      ["목적 to부정사", "To address this problem,"],
+      ["주어(S)", "local religious leaders"],
+      ["동사(V)·현재완료", "have called for an end to snow leopard killings,"],
+      ["분사구문(부연)", "saying that these wild animals have the right to exist peacefully."],
+    ],
+    structure:
+      `뼈대: <b>To address ~</b>(목적), <b>leaders(S) have called for(V) an end</b> ~, saying that ~. "이 문제를 해결하기 위해, 지역 종교 지도자들은 눈표범 살해의 종식을 촉구해 왔는데, 이 야생동물들도 평화롭게 존재할 권리가 있다고 말한다."<br><br>` +
+      `① ⭐⭐ <b>To address this problem,</b> (<b>문두 목적 to부정사 · ~하기 위해</b>) — 부사적 용법(목적)이 문장 맨 앞에 와 콤마로 끊음.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-adverb')">📐 to부정사 부사적 용법(목적) 자세히 →</span><br>` +
+      `② ⭐⭐ <b>have called for an end to ~</b> (<b>현재완료 + call for + an end to</b>) — call for = 요구/촉구하다, have called = 현재완료(그간 촉구해 옴). an end <b>to</b> ~ = '~의 종식/중단'(to 전치사).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('present-perfect','pf-uses')">📐 현재완료 자세히 →</span><br>` +
+      `③ ⭐⭐⭐ <b>saying that ~</b> (<b>분사구문(동시·부연) + that 명사절</b>) — 주절과 동시에 '~라고 말하면서'. saying의 목적어로 <b>that절</b>이 통째로 옴.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('participle-construction','pc-meaning')">📐 분사구문 의미(동시동작) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('noun-clause-that','nc-object')">📐 that 명사절(목적어) 자세히 →</span><br>` +
+      `④ ⭐⭐ <b>the right to exist peacefully</b> (<b>to부정사 형용사적 용법 · right 수식</b>) — to부정사가 앞 명사 right를 꾸밈('~할 권리').<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-adj')">📐 to부정사 형용사적 용법 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 해결 노력 ① <b>종교·윤리적 설득</b> — 종교 지도자들이 '생명 존중'을 들어 살해 중단을 촉구.<br><br>` +
+      `📝 <b>해석:</b> "이 문제를 해결하기 위해, 지역 종교 지도자들은 눈표범 살해를 끝낼 것을 촉구해 왔는데, 이 야생동물들도 평화롭게 존재할 권리가 있다고 말한다."`,
+    trans: "이 문제를 해결하기 위해, 지역 종교 지도자들은 눈표범 살해를 끝낼 것을 촉구해 왔는데, 이 야생동물들도 평화롭게 존재할 권리가 있다고 말한다.",
+  },
+
+  // 지문 6 · 19번째 문장: They've also tried to convince people that the leopards are quite rare, and thus it is important to protect them.
+  "6-19": {
+    form: "현재완료 have tried + try to V · convince A that ~(A에게 ~라고 설득) · 접속부사 thus(따라서) · 가주어 it + 진주어 to부정사",
+    tense: "현재완료(have tried) + 현재(are / is)",
+    chips: [
+      ["주어·동사·현재완료", "They've also tried"],
+      ["to부정사(목적어)", "to convince people"],
+      ["that 명사절(convince의 직접목적어)", "that the leopards are quite rare,"],
+      ["접속부사 + 가주어 it", "and thus it is important to protect them."],
+    ],
+    structure:
+      `뼈대: <b>They've tried to convince people that ~</b>, and thus <b>it is important to protect them</b>. "그들은 또한 사람들에게 이 표범이 상당히 희귀하다는 것을, 따라서 보호하는 것이 중요하다는 것을 납득시키려 애써 왔다."<br><br>` +
+      `① ⭐⭐ <b>have tried to convince</b> (<b>현재완료 + try to V</b>) — try <b>to V</b> = '~하려고 애쓰다/시도하다'(try ~ing '시험 삼아 해보다'와 구별). have tried = 현재완료(그간 노력해 옴).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('gerund-vs-infinitive','gi-try')">📐 try to V vs try ~ing 자세히 →</span><br>` +
+      `② ⭐⭐⭐ <b>convince people that ~</b> (<b>convince + 사람 + that 명사절</b>) — convince(설득하다)는 뒤에 '사람(people) + that절(설득 내용)'을 취함. that절이 직접목적어.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('noun-clause-that','nc-4th')">📐 that 명사절(사람+that, 4형식형) 자세히 →</span><br>` +
+      `③ ⭐⭐ <b>and thus</b> (<b>접속부사 thus · 따라서</b>) — thus는 '따라서/그러므로'라는 접속부사(접속사 아님). and로 앞뒤 절을 잇고 thus로 '그 결과'를 표시.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('conjunctive-adverb','ca-vs-conjunction')">📐 접속부사 vs 접속사 자세히 →</span><br>` +
+      `④ ⭐⭐⭐ <b>it is important to protect them</b> (<b>가주어 it + 진주어 to부정사</b>) — 주어가 길어 <b>it</b>을 가주어로 앞세우고, 진짜 주어 <b>to protect them</b>을 뒤로 뺌('보호하는 것이 중요하다').<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-formal-it')">📐 가주어 it ~ to V 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 해결 노력 ①의 <b>논리 보강</b> — '희귀하니 보호해야 한다'는 설득까지 더함.<br><br>` +
+      `📝 <b>해석:</b> "그들은 또한 사람들에게 이 표범이 상당히 희귀하며, 따라서 보호하는 것이 중요하다는 것을 납득시키려 애써 왔다."`,
+    trans: "그들은 또한 사람들에게 이 표범이 상당히 희귀하며, 따라서 보호하는 것이 중요하다는 것을 납득시키려 애써 왔다.",
+  },
+
+  // (소제목 The Value of Preservation = 배열 index 20 → 카드 없음. 아래 20번째 문장은 index 21 = 키 6-21)
+  // 지문 6 · 20번째 문장: Financial incentives are also helping to slow snow leopard killings.
+  "6-21": {
+    form: "복수 주어 + 현재진행(are helping) · help to V(= help V) · 타동사 slow(늦추다) · also 첨가",
+    tense: "현재진행(are helping)",
+    chips: [
+      ["주어(S)·복수", "Financial incentives"],
+      ["동사(V)·현재진행", "are also helping"],
+      ["to부정사(목적어)", "to slow snow leopard killings."],
+    ],
+    structure:
+      `뼈대: <b>Financial incentives(S) are also helping(V) to slow ~</b>. "재정적 유인책(장려책)도 눈표범 살해를 줄이는 데 도움이 되고 있다."<br><br>` +
+      `① ⭐⭐ <b>Financial incentives are helping</b> (<b>복수 주어 + 현재진행</b>) — incentives(복수)라 are, '요즘 도움이 되고 있다'는 진행. also = 앞의 윤리적 설득에 '더해'.<br>` +
+      `② ⭐⭐⭐ <b>help to slow</b> (<b>help + (to) 동사원형</b>) — help는 뒤에 <b>to V 또는 원형 V</b> 둘 다 가능(help to slow = help slow). slow는 여기서 '늦추다/줄이다'라는 타동사.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('bare-infinitive','bi-help')">📐 help + (to) 동사원형 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 소제목(보존의 가치)으로 전환 — 해결 노력 ② <b>경제적 유인</b> 도입. 이어 홈스테이·SLE 같은 구체 사례로 전개.<br><br>` +
+      `📝 <b>해석:</b> "재정적 유인책 또한 눈표범 살해를 줄이는 데 도움이 되고 있다."`,
+    trans: "재정적 유인책 또한 눈표범 살해를 줄이는 데 도움이 되고 있다.",
   },
 };
 
