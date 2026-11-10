@@ -7546,6 +7546,262 @@ const ANALYSIS = {
       `📝 <b>해석:</b> "재정적 유인책 또한 눈표범 살해를 줄이는 데 도움이 되고 있다."`,
     trans: "재정적 유인책 또한 눈표범 살해를 줄이는 데 도움이 되고 있다.",
   },
+
+  // 지문 6 · 21번째 문장: The organization Snow Leopard Conservancy India Trust has established Himalayan Homestays, a program that sends visitors to herders' houses.
+  "6-22": {
+    form: "명사+고유명사 동격(무관사) · 현재완료 has established · 콤마 동격(Himalayan Homestays, a program) · 주격 관계대명사 that",
+    tense: "현재완료(has established)",
+    chips: [
+      ["주어(S)·동격", "The organization Snow Leopard Conservancy India Trust"],
+      ["동사(V)·현재완료", "has established"],
+      ["목적어(O)", "Himalayan Homestays,"],
+      ["동격 + 주격 관계절", "a program that sends visitors to herders' houses."],
+    ],
+    structure:
+      `뼈대: <b>The organization ~(S) has established(V) Himalayan Homestays(O)</b>, a program that ~. "그 단체 '눈표범 보존 인도 트러스트'는 방문객을 목동들의 집으로 보내는 프로그램인 '히말라야 홈스테이'를 설립했다."<br><br>` +
+      `① ⭐⭐ <b>The organization Snow Leopard Conservancy India Trust</b> (<b>종류명사 + 고유명사 동격 · 무관사</b>) — '단체(organization)'라는 일반명사 뒤에 그 이름(고유명사)을 바로 붙여 "~라는 단체". 고유명사엔 관사를 안 붙임(= Snow Leopard Conservancy India Trust, the organization 과 같은 동격).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('quotation-inversion','qi-appos')">📐 콤마 동격(A=B) 자세히 →</span><br>` +
+      `② ⭐⭐ <b>has established</b> (<b>현재완료 · 과거의 설립 → 현재 결과</b>) — 과거에 세워 지금도 그 프로그램이 존재·운영됨을 나타냄.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('present-perfect','pf-uses')">📐 현재완료 용법(결과) 자세히 →</span><br>` +
+      `③ ⭐⭐ <b>Himalayan Homestays, a program</b> (<b>콤마 동격</b>) — 콤마로 <b>목적어 = 그 정체</b>를 나란히: "히말라야 홈스테이, (즉) 하나의 프로그램". a program이 Homestays를 재설명.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('quotation-inversion','qi-appos')">📐 콤마 동격(A, B) 자세히 →</span><br>` +
+      `④ ⭐⭐⭐ <b>a program that sends ~</b> (<b>주격 관계대명사 that</b>) — that이 선행사 <b>a program</b>을 받아 뒤 절을 이끎. 뒤는 <b>주어 자리가 빈 불완전한 절</b>(that(=program) sends visitors ~)이라 주격 관계대명사.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('relative-pronoun','rp-incomplete')">📐 관계대명사와 불완전한 절 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 경제적 유인 사례 ① — 인도의 '히말라야 홈스테이' 프로그램을 간판으로 소개. 바로 뒤 문장들에서 요금·효과를 구체화.<br><br>` +
+      `📝 <b>해석:</b> "그 단체 '눈표범 보존 인도 트러스트'는 방문객을 목동들의 집으로 보내는 프로그램인 '히말라야 홈스테이'를 설립했다."`,
+    trans: "그 단체 '눈표범 보존 인도 트러스트'는 방문객을 목동들의 집으로 보내는 프로그램인 '히말라야 홈스테이'를 설립했다.",
+  },
+
+  // 지문 6 · 22번째 문장: For a clean room and bed, meals with the family, and an introduction to their culture, visitors pay about ten U.S. dollars a night.
+  "6-23": {
+    form: "전치사 For(대가) + A, B, and C 병렬(목적어 3개) · 주어+동사(visitors pay) · 근사치 about · 단위의 a(a night = ~당)",
+    tense: "현재(pay)",
+    chips: [
+      ["전치사구(대가)·A,B,and C", "For a clean room and bed, meals with the family, and an introduction to their culture,"],
+      ["주어(S)", "visitors"],
+      ["동사(V)", "pay"],
+      ["목적어(O)·부사", "about ten U.S. dollars a night."],
+    ],
+    structure:
+      `뼈대: <b>For ~</b>(대가), <b>visitors(S) pay(V) about ten U.S. dollars(O)</b> a night. "깨끗한 방과 침대, 가족과의 식사, 그들 문화 소개의 대가로 방문객은 하룻밤에 약 10달러를 낸다."<br><br>` +
+      `① ⭐⭐ <b>For a clean room and bed, meals ~, and an introduction ~</b> (<b>전치사 for '~의 대가로' + A, B, and C 병렬</b>) — for가 '교환·대가'를 뜻하고, 그 목적어인 명사구 셋을 콤마와 and로 대등 나열(방·식사·문화체험).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-list')">📐 A, B, and C 나열 자세히 →</span><br>` +
+      `② ⭐ <b>about ten U.S. dollars</b> (<b>근사치 about · 약 ~</b>) — about은 '약/대략'으로 수량 앞에서 어림수를 표시.<br>` +
+      `③ ⭐⭐ <b>a night</b> (<b>단위의 a · ~당(= per night)</b>) — 여기서 a는 '하나'가 아니라 '~마다/~당'. "하룻밤당 10달러".<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('articles','ar-a')">📐 부정관사 a(~당) 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 홈스테이의 구체 — 숙박·식사·문화체험을 묶어 '하룻밤 10달러'라는 실제 요금을 제시.<br><br>` +
+      `📝 <b>해석:</b> "깨끗한 방과 침대, 가족과의 식사, 그리고 그들 문화에 대한 소개의 대가로, 방문객은 하룻밤에 약 10달러를 낸다."`,
+    trans: "깨끗한 방과 침대, 가족과의 식사, 그리고 그들 문화에 대한 소개의 대가로, 방문객은 하룻밤에 약 10달러를 낸다.",
+  },
+
+  // 지문 6 · 23번째 문장: If guests come once every two weeks through the tourist season, the herders will earn enough income to replace the animals lost to snow leopards.
+  "6-24": {
+    form: "If 조건절(현재시제) + 주절 will(실현 가능 조건문) · every + 기수 + 복수명사(~마다) · enough + 명사 + to V · 과거분사 lost 후치수식 · lose A to B",
+    tense: "조건 현재(come) + 미래 will(will earn)",
+    chips: [
+      ["조건 부사절", "If guests come once every two weeks through the tourist season,"],
+      ["주어(S)", "the herders"],
+      ["동사(V)·미래", "will earn"],
+      ["목적어(O)+to부정사", "enough income to replace the animals lost to snow leopards."],
+    ],
+    structure:
+      `뼈대: <b>If guests come ~</b>(조건), <b>the herders(S) will earn(V) enough income(O)</b> to replace ~. "만약 손님이 관광철 내내 2주마다 한 번씩 온다면, 목동들은 눈표범에게 잃은 가축을 대체할 만큼 충분한 수입을 벌게 된다."<br><br>` +
+      `① ⭐⭐ <b>If guests come ~, the herders will earn ~</b> (<b>실현 가능한 조건문 · If절 현재 → 주절 will</b>) — 일어날 수 있는 일이라 If절은 <b>현재시제(come)</b>로 미래를 대신하고, 주절에 will. (가정법 아님)<br>` +
+      `② ⭐⭐ <b>once every two weeks</b> (<b>every + 기수 + 복수명사 · ~마다</b>) — every two weeks = '2주마다'(= every second week). every 뒤에 '기수+복수명사'를 쓰면 '~ 간격마다'. once = 한 번.<br>` +
+      `③ ⭐⭐⭐ <b>enough income to replace</b> (<b>enough + 명사 + to부정사 · ~할 만큼 충분한</b>) — enough가 명사(income) 앞에서 양을 한정하고, 뒤의 <b>to replace</b>가 '~할 정도로'라는 부사적 to부정사로 enough와 호응("대체할 만큼 충분한 수입").<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-adverb')">📐 to부정사 부사적 용법(정도) 자세히 →</span><br>` +
+      `④ ⭐⭐⭐ <b>the animals lost to snow leopards</b> (<b>과거분사 lost 후치수식 · lose A to B</b>) — the animals (which were) <b>lost</b> 에서 관계대명사+be가 빠지고 과거분사 lost가 뒤에서 수동으로 수식("잃어버린 가축"). lose A to B = B에게 A를 빼앗기다.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('participle-postmod','pp-active-passive')">📐 과거분사 후치수식(수동) 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 홈스테이의 경제 효과 — 관광 수입이 눈표범에게 잃은 가축을 벌충해 주므로, 죽일 이유가 줄어듦.<br><br>` +
+      `📝 <b>해석:</b> "만약 손님이 관광철 내내 2주마다 한 번씩 온다면, 목동들은 눈표범에게 잃은 가축을 대체할 만큼 충분한 수입을 벌게 될 것이다."`,
+    trans: "만약 손님이 관광철 내내 2주마다 한 번씩 온다면, 목동들은 눈표범에게 잃은 가축을 대체할 만큼 충분한 수입을 벌게 될 것이다.",
+  },
+
+  // 지문 6 · 24번째 문장: In addition, the organization helps herders build protective fences that keep out snow leopards.
+  "6-25": {
+    form: "접속부사 In addition(게다가) · help + O + 원형부정사(build) · 주격 관계대명사 that · 구동사 keep out(못 들어오게 막다)",
+    tense: "현재(helps)",
+    chips: [
+      ["접속부사", "In addition,"],
+      ["주어(S)", "the organization"],
+      ["동사(V)", "helps"],
+      ["목적어(O)", "herders"],
+      ["목적격보어(원형)", "build protective fences that keep out snow leopards."],
+    ],
+    structure:
+      `뼈대: <b>the organization(S) helps(V) herders(O) build(원형보어) protective fences</b> that ~. "게다가 그 단체는 목동들이 눈표범을 막아 주는 보호 울타리를 짓도록 돕는다."<br><br>` +
+      `① ⭐⭐ <b>In addition</b> (<b>접속부사 · 게다가</b>) — 앞 지원(수입 보전)에 '하나 더' 보탬을 표시하며 문두에 콤마와 함께 삽입.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('conjunctive-adverb','ca-insert')">📐 접속부사 삽입 자세히 →</span><br>` +
+      `② ⭐⭐⭐ <b>helps herders build</b> (<b>help + 목적어 + (to) 동사원형</b>) — help는 목적격보어로 <b>원형부정사 또는 to부정사</b> 둘 다 가능. 여기선 원형 <b>build</b>("목동들이 ~ 짓도록 돕다").<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('bare-infinitive','bi-help')">📐 help + (to) 동사원형 자세히 →</span><br>` +
+      `③ ⭐⭐⭐ <b>fences that keep out ~</b> (<b>주격 관계대명사 that</b>) — that이 선행사 <b>protective fences</b>를 받고, 뒤는 주어 자리가 빈 불완전한 절(that(=fences) keep out ~)이라 주격.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('relative-pronoun','rp-incomplete')">📐 관계대명사와 불완전한 절 자세히 →</span><br>` +
+      `④ ⭐⭐ <b>keep out snow leopards</b> (<b>구동사 keep out · 못 들어오게 막다</b>) — keep + out이 한 덩어리 타동사구로 '~을 들어오지 못하게 하다'. 울타리가 눈표범을 차단.<br>` +
+      `💡 <b>흐름:</b> 홈스테이 지원 ② — 소득 보전에 더해 물리적 방어(보호 울타리) 지원으로 피해 자체를 줄임.<br><br>` +
+      `📝 <b>해석:</b> "게다가 그 단체는 목동들이 눈표범을 막아 주는 보호 울타리를 짓도록 돕는다."`,
+    trans: "게다가 그 단체는 목동들이 눈표범을 막아 주는 보호 울타리를 짓도록 돕는다.",
+  },
+
+  // 지문 6 · 25번째 문장: It also conducts environmental classes at village schools, and trains the organization's members as nature guides, available for hire.
+  "6-26": {
+    form: "한 주어 + 동사 병렬(conducts ~ and trains ~) · train A as B(~로서 양성) · 주격 관계대명사+be 생략 후 형용사 available 후치수식(콤마)",
+    tense: "현재(conducts / trains)",
+    chips: [
+      ["주어(S)", "It"],
+      ["동사①(V)", "also conducts environmental classes at village schools,"],
+      ["동사②·and 병렬", "and trains the organization's members"],
+      ["as 자격 + 보충", "as nature guides, available for hire."],
+    ],
+    structure:
+      `뼈대: <b>It(S) conducts(V①) ~ classes, and trains(V②) members as nature guides</b>, available ~. "그 단체는 또한 마을 학교에서 환경 수업을 진행하고, 단체 회원들을 고용 가능한 자연 가이드로 양성한다."<br><br>` +
+      `① ⭐⭐⭐ <b>It conducts ~, and trains ~</b> (<b>동사 병렬</b>) — 한 주어 It에 현재동사 두 개 <b>conducts·trains</b>를 and로 대등 연결(둘 다 -s로 수 일치).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">📐 and 동사 병렬 자세히 →</span><br>` +
+      `② ⭐⭐ <b>trains ~ members as nature guides</b> (<b>as · 자격/신분 ~로서</b>) — train A as B = "A를 B로(서) 양성·훈련하다". as가 '~의 자격으로'를 나타냄.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('as-roles','as-role')">📐 자격의 as(~로서) 자세히 →</span><br>` +
+      `③ ⭐⭐ <b>nature guides, available for hire</b> (<b>주격 관계대명사+be 생략 · 형용사 후치수식</b>) — nature guides <b>(who are) available for hire</b>에서 who are가 생략되어 형용사 available이 콤마 뒤에서 guides를 부연("고용할 수 있는"). for hire = 고용/임대용의.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('relative-pronoun','rp-subject-omit')">📐 주격 관계대명사+be 생략 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 홈스테이 지원 ③ — 환경 교육과 '자연 가이드' 일자리까지 만들어, 눈표범이 돈벌이가 되도록 바꿈.<br><br>` +
+      `📝 <b>해석:</b> "그 단체는 또한 마을 학교에서 환경 수업을 진행하고, 단체 회원들을 고용할 수 있는 자연 가이드로 양성한다."`,
+    trans: "그 단체는 또한 마을 학교에서 환경 수업을 진행하고, 단체 회원들을 고용할 수 있는 자연 가이드로 양성한다.",
+  },
+
+  // 지문 6 · 26번째 문장: In exchange, the herders agree not to kill snow leopards.
+  "6-27": {
+    form: "교환 부사구 In exchange(그 대가로) · agree + to부정사(명사적 목적어) · to부정사의 부정(not to V)",
+    tense: "현재(agree)",
+    chips: [
+      ["부사구(교환)", "In exchange,"],
+      ["주어(S)", "the herders"],
+      ["동사(V)", "agree"],
+      ["to부정사(목적어)·부정", "not to kill snow leopards."],
+    ],
+    structure:
+      `뼈대: <b>the herders(S) agree(V) not to kill ~</b>. "그 대가로 목동들은 눈표범을 죽이지 않기로 동의한다."<br><br>` +
+      `① ⭐⭐ <b>In exchange</b> (<b>교환 부사구 · 그 대가로</b>) — 앞의 소득·울타리·일자리 지원에 대한 <b>반대급부</b>를 이끎("받은 만큼 ~한다").<br>` +
+      `② ⭐⭐⭐ <b>agree to kill → agree not to kill</b> (<b>agree + to부정사 · 명사적 목적어</b>) — agree는 뒤에 <b>to V</b>를 목적어로 취해 '~하기로 동의하다'. to kill이 agree의 목적어.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-noun')">📐 to부정사 명사적 용법(목적어) 자세히 →</span><br>` +
+      `③ ⭐⭐ <b>not to kill</b> (<b>to부정사의 부정 · not + to V</b>) — to부정사를 부정할 땐 <b>부정어 not을 to 바로 앞</b>에 둠(don't to kill ❌). "죽이지 않기로".<br>` +
+      `💡 <b>흐름:</b> 홈스테이 거래의 핵심 조건 — 혜택을 받는 대신 '눈표범을 죽이지 않는다'는 약속으로 보존과 생계를 맞바꿈.<br><br>` +
+      `📝 <b>해석:</b> "그 대가로 목동들은 눈표범을 죽이지 않기로 동의한다."`,
+    trans: "그 대가로 목동들은 눈표범을 죽이지 않기로 동의한다.",
+  },
+
+  // 지문 6 · 27번째 문장: In Mongolia, a project called Snow Leopard Enterprises (SLE) helps herder communities earn extra money in exchange for their promise to protect the endangered cat.
+  "6-28": {
+    form: "과거분사 called 후치수식 · help + O + 원형(earn) · in exchange for + 명사 · to부정사 형용사적(promise to protect)",
+    tense: "현재(helps)",
+    chips: [
+      ["장소 부사구", "In Mongolia,"],
+      ["주어(S)+과거분사 수식", "a project called Snow Leopard Enterprises (SLE)"],
+      ["동사(V)", "helps"],
+      ["목적어(O)+원형보어", "herder communities earn extra money"],
+      ["전치사구(교환)", "in exchange for their promise to protect the endangered cat."],
+    ],
+    structure:
+      `뼈대: <b>a project ~(S) helps(V) herder communities(O) earn(원형보어) extra money</b> in exchange for ~. "몽골에서는 '눈표범 기업(SLE)'이라 불리는 프로젝트가, 멸종위기 동물을 보호하겠다는 약속의 대가로 목축 공동체가 부수입을 벌도록 돕는다."<br><br>` +
+      `① ⭐⭐⭐ <b>a project called SLE</b> (<b>과거분사 called 후치수식</b>) — a project <b>(which is) called</b> SLE에서 관계대명사+be가 빠지고 과거분사 called가 뒤에서 수동으로 수식("~라고 불리는 프로젝트").<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('participle-postmod','pp-active-passive')">📐 과거분사 후치수식(수동) 자세히 →</span><br>` +
+      `② ⭐⭐⭐ <b>helps communities earn</b> (<b>help + 목적어 + 원형부정사</b>) — help는 목적격보어로 원형(earn) 또는 to부정사 둘 다 가능. "공동체가 ~ 벌도록 돕다".<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('bare-infinitive','bi-help')">📐 help + (to) 동사원형 자세히 →</span><br>` +
+      `③ ⭐⭐ <b>in exchange for their promise</b> (<b>전치사구 in exchange for · ~의 대가로</b>) — for 뒤 명사(promise)가 교환 대상. "약속하는 대가로".<br>` +
+      `④ ⭐⭐ <b>their promise to protect ~</b> (<b>to부정사 형용사적 용법 · 명사 수식</b>) — to protect가 앞 명사 promise를 꾸며 '보호하겠다는 약속'. promise의 내용을 to부정사가 설명.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-adj')">📐 to부정사 형용사적 용법 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 경제적 유인 사례 ② — 인도 홈스테이와 나란히, 몽골 SLE를 '보호 약속 ↔ 부수입'이라는 같은 틀로 소개.<br><br>` +
+      `📝 <b>해석:</b> "몽골에서는 '눈표범 기업(SLE)'이라 불리는 프로젝트가, 그 멸종위기 동물을 보호하겠다는 약속의 대가로 목축 공동체가 부수입을 벌도록 돕는다."`,
+    trans: "몽골에서는 '눈표범 기업(SLE)'이라 불리는 프로젝트가, 그 멸종위기 동물을 보호하겠다는 약속의 대가로 목축 공동체가 부수입을 벌도록 돕는다.",
+  },
+
+  // 지문 6 · 28번째 문장: Women in Mongolian herder communities make a variety of products—yarn for making clothes, decorative floor rugs, and toys—using the wool from their herds.
+  "6-29": {
+    form: "a variety of + 복수명사(다양한) · 대시(—) 삽입 나열(동격) · A, B, and C 병렬 · 전치사 for + 동명사(making) · 분사구문 수단(using)",
+    tense: "현재(make)",
+    chips: [
+      ["주어(S)", "Women in Mongolian herder communities"],
+      ["동사(V)", "make"],
+      ["목적어(O)", "a variety of products"],
+      ["대시 삽입(동격·나열)", "—yarn for making clothes, decorative floor rugs, and toys—"],
+      ["분사구문(수단)", "using the wool from their herds."],
+    ],
+    structure:
+      `뼈대: <b>Women ~(S) make(V) a variety of products(O)</b> —yarn, rugs, and toys— using ~. "몽골 목축 공동체의 여성들은 자기들 가축의 양털을 이용해 옷 만드는 실, 장식용 바닥 깔개, 장난감 같은 다양한 제품을 만든다."<br><br>` +
+      `① ⭐⭐ <b>a variety of products</b> (<b>a variety of + 복수명사 · 다양한</b>) — "다양한 ~". of 뒤에는 복수명사(products)가 와서 '여러 종류'를 뜻함.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('of-types','of-partitive')">📐 수량·부분의 of 자세히 →</span><br>` +
+      `② ⭐⭐⭐ <b>—yarn ~, decorative floor rugs, and toys—</b> (<b>대시(—) 삽입 · products의 구체 나열·동격 + A, B, and C</b>) — 두 대시 사이가 앞의 products가 구체적으로 무엇인지 펼쳐 보이는 <b>동격·나열</b>. 세 품목을 콤마와 and로 병렬.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('punctuation','pn-dash')">📐 대시(—) 삽입·동격 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-list')">📐 A, B, and C 나열 자세히 →</span><br>` +
+      `③ ⭐⭐ <b>yarn for making clothes</b> (<b>전치사 for + 동명사</b>) — 전치사 for 뒤라서 동사가 <b>동명사(making)</b>로. "옷을 만들기 위한/만드는 데 쓰는 실".<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('gerund-prep','gp-rule')">📐 전치사 + 동명사 자세히 →</span><br>` +
+      `④ ⭐⭐⭐ <b>using the wool ~</b> (<b>분사구문 · 수단 '~을 이용해서'</b>) = by using. 문미 분사구문이 '무엇으로 만드는지' 수단을 덧붙임(주어 Women이 using의 의미상 주어).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('participle-construction','pc-meaning')">📐 분사구문 의미(수단·동시) 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 몽골 SLE의 구체 — 여성들이 양털로 실·깔개·장난감 등 수공예품을 만드는 장면으로, 수입원이 무엇인지 보여줌.<br><br>` +
+      `📝 <b>해석:</b> "몽골 목축 공동체의 여성들은 자기들 가축의 양털을 이용해, 옷 만드는 실·장식용 바닥 깔개·장난감 같은 다양한 제품을 만든다."`,
+    trans: "몽골 목축 공동체의 여성들은 자기들 가축의 양털을 이용해, 옷 만드는 실·장식용 바닥 깔개·장난감 같은 다양한 제품을 만든다.",
+  },
+
+  // 지문 6 · 29번째 문장: SLE buys these items from herding families and sells them abroad.
+  "6-30": {
+    form: "한 주어 + 동사 병렬(buys ~ and sells ~) · buy A from B(B에게서 A를 사다) · 부사 abroad(해외로, 전치사 불필요)",
+    tense: "현재(buys / sells)",
+    chips: [
+      ["주어(S)", "SLE"],
+      ["동사①(V)", "buys these items from herding families"],
+      ["동사②·and 병렬", "and sells them abroad."],
+    ],
+    structure:
+      `뼈대: <b>SLE(S) buys(V①) these items from families, and sells(V②) them abroad</b>. "SLE는 이 물품들을 목축 가정들에서 사서 해외에 판다."<br><br>` +
+      `① ⭐⭐⭐ <b>SLE buys ~ and sells ~</b> (<b>동사 병렬</b>) — 한 주어 SLE에 현재동사 두 개 <b>buys·sells</b>를 and로 대등 연결(SLE 단수 → 둘 다 -s로 수 일치).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">📐 and 동사 병렬 자세히 →</span><br>` +
+      `② ⭐⭐ <b>buys these items from herding families</b> (<b>buy A from B · B에게서 A를 사다</b>) — from이 '출처(~로부터)'를 표시. items = 앞 문장의 수공예품.<br>` +
+      `③ ⭐⭐ <b>sells them abroad</b> (<b>부사 abroad · 해외로/해외에서</b>) — abroad는 그 자체가 부사라 <b>to/in 없이</b> 단독으로 씀(to abroad ❌). them = these items.<br>` +
+      `💡 <b>흐름:</b> SLE의 유통 구조 — 가정에서 물품을 사들여 해외 시장에 판매함으로써 목동들에게 수입을 돌려줌.<br><br>` +
+      `📝 <b>해석:</b> "SLE는 이 물품들을 목축 가정들에게서 사서 해외에 판다."`,
+    trans: "SLE는 이 물품들을 목축 가정들에게서 사서 해외에 판다.",
+  },
+
+  // 지문 6 · 30번째 문장: Herders must agree to protect the snow leopards and to encourage neighbors to do the same.
+  "6-31": {
+    form: "의무 조동사 must · agree + to부정사 · to부정사 병렬(to protect and to encourage) · encourage + O + to V(5형식) · 대동사 do(do the same)",
+    tense: "현재(must agree)",
+    chips: [
+      ["주어(S)", "Herders"],
+      ["동사(V)·조동사", "must agree"],
+      ["to부정사①(목적어)", "to protect the snow leopards"],
+      ["to부정사②·and 병렬", "and to encourage neighbors to do the same."],
+    ],
+    structure:
+      `뼈대: <b>Herders(S) must agree(V) [to protect ~] and [to encourage ~]</b>. "목동들은 눈표범을 보호하고 이웃들에게도 똑같이 하도록 권하기로 동의해야 한다."<br><br>` +
+      `① ⭐⭐ <b>must agree</b> (<b>의무 조동사 must · ~해야 한다</b>) — 참여 조건으로서 강한 의무를 나타냄.<br>` +
+      `② ⭐⭐⭐ <b>agree to protect ~ and to encourage ~</b> (<b>agree + to부정사 · to V 병렬</b>) — agree의 목적어인 to부정사 두 개를 and로 대등 연결(둘 다 <b>to V</b> 형태로 일치: to protect ↔ to encourage).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-noun')">📐 to부정사 명사적 용법(목적어) 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">📐 and 병렬(to V 형태 맞추기) 자세히 →</span><br>` +
+      `③ ⭐⭐⭐ <b>encourage neighbors to do</b> (<b>encourage + 목적어 + to부정사 · 5형식</b>) — encourage A to V = "A가 ~하도록 권하다/장려하다". to do가 목적격보어.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('five-pattern','fp-to')">📐 5형식 to부정사 목적격보어 자세히 →</span><br>` +
+      `④ ⭐⭐ <b>do the same</b> (<b>대동사 do · 앞 행위 대신</b>) — do가 앞의 <b>protect the snow leopards</b>를 대신하는 대동사. do the same = '똑같이(= 눈표범을 보호) 하다'.<br>` +
+      `💡 <b>흐름:</b> SLE 거래의 조건 — 자기만 보호하는 데 그치지 않고 이웃까지 보호에 끌어들이게 해, 보존 효과를 공동체로 넓힘.<br><br>` +
+      `📝 <b>해석:</b> "목동들은 눈표범을 보호하고, 이웃들에게도 똑같이 하도록 권하기로 동의해야 한다."`,
+    trans: "목동들은 눈표범을 보호하고, 이웃들에게도 똑같이 하도록 권하기로 동의해야 한다.",
+  },
+
+  // 지문 6 · 31번째 문장: The arrangement increases herders' incomes by 10 to 15 percent, and elevates the status of the women.
+  "6-32": {
+    form: "한 주어 + 동사 병렬(increases ~ and elevates ~) · 증감의 by + 수치(~만큼) · 범위 10 to 15 · 소유의 of(the status of the women) · 수 일치(단수 주어 → -s)",
+    tense: "현재(increases / elevates)",
+    chips: [
+      ["주어(S)·단수", "The arrangement"],
+      ["동사①(V)", "increases herders' incomes by 10 to 15 percent,"],
+      ["동사②·and 병렬", "and elevates the status of the women."],
+    ],
+    structure:
+      `뼈대: <b>The arrangement(S) increases(V①) incomes by ~, and elevates(V②) the status ~</b>. "이 방식은 목동들의 수입을 10~15% 올려 주고, 여성들의 지위를 높여 준다."<br><br>` +
+      `① ⭐⭐⭐ <b>The arrangement increases ~, and elevates ~</b> (<b>동사 병렬 + 수 일치</b>) — 단수 주어 <b>The arrangement</b>에 현재동사 두 개 <b>increases·elevates</b>를 and로 대등 연결(단수 주어라 둘 다 <b>-s</b>).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">📐 and 동사 병렬 자세히 →</span><br>` +
+      `② ⭐⭐ <b>increases incomes by 10 to 15 percent</b> (<b>증감의 by · ~만큼 + 범위 10 to 15</b>) — 수치가 늘고 주는 '폭/정도'는 전치사 <b>by</b>로 표현("10~15% <b>만큼</b> 증가"). 10 to 15 = 10에서 15까지의 범위.<br>` +
+      `③ ⭐⭐ <b>the status of the women</b> (<b>소유·소속의 of</b>) — of가 '~의'로 소유 관계를 나타냄("여성들의 지위"). elevate the status = 지위를 높이다.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('of-types','of-possess')">📐 소유의 of 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> SLE 거래의 효과 — 눈표범 보호가 단순 보존을 넘어 '소득 증대 + 여성 지위 향상'이라는 사회·경제적 이득으로 이어짐을 강조.<br><br>` +
+      `📝 <b>해석:</b> "이 방식은 목동들의 수입을 10~15% 올려 주고, 여성들의 지위를 높여 준다."`,
+    trans: "이 방식은 목동들의 수입을 10~15% 올려 주고, 여성들의 지위를 높여 준다.",
+  },
 };
 
 /* ---------- 문법 정리 (공부한 내용 채우기) ----------
