@@ -36,11 +36,13 @@
     <div class="flashcard-wrap">
       <div class="flashcard" id="flashcard" onclick="flipCard()">
         <div class="face front">
+          <button class="speak-btn" onclick="speakWord(event)" aria-label="발음 듣기" title="발음 듣기">🔊</button>
           <div class="word" id="fc-word">—</div>
           <div class="pos" id="fc-pos"></div>
           <div class="tap-hint">탭하면 뜻 보기</div>
         </div>
         <div class="face back">
+          <button class="speak-btn" onclick="speakExample(event)" aria-label="예문 발음 듣기" title="예문 발음 듣기">🔊</button>
           <div class="meaning" id="fc-meaning">—</div>
           <div class="example" id="fc-example"></div>
           <div class="tap-hint">탭하면 단어로 돌아가기</div>

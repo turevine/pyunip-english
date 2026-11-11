@@ -66,6 +66,20 @@ function shuffleWords(){
   wIdx=0; renderCard();
 }
 
+// ---- 발음 (브라우저 내장 음성 TTS) ----
+function speak(text, ev){
+  if(ev) ev.stopPropagation();            // 스피커 버튼이 카드를 뒤집지 않게
+  if(!text || !('speechSynthesis' in window)) return;
+  const synth = window.speechSynthesis;
+  synth.cancel();                         // 이전 발화 중단
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = 'en-US';
+  u.rate = 0.9;                           // 살짝 또박또박
+  synth.speak(u);
+}
+function speakWord(ev){ speak(document.getElementById('fc-word').textContent, ev); }
+function speakExample(ev){ speak(document.getElementById('fc-example').textContent, ev); }
+
 // ---- 지문 목록/읽기 ----
 function passageItemHTML(p, onclick){
   const empty = p.sentences.length===0;

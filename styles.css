@@ -61,6 +61,13 @@ h2.section-title{font-size:15px;color:var(--muted);font-weight:600;margin:6px 4p
 .meaning{font-size:24px;font-weight:600;color:var(--good)}
 .example{margin-top:14px;color:var(--muted);font-size:14px;line-height:1.5}
 .tap-hint{position:absolute;bottom:12px;font-size:11px;color:var(--muted);opacity:.7}
+.speak-btn{position:absolute;top:10px;right:12px;width:40px;height:40px;border-radius:50%;
+  border:1px solid var(--line);background:var(--surface-2);font-size:18px;line-height:1;padding:0;
+  display:flex;align-items:center;justify-content:center;cursor:pointer;
+  transition:transform .12s ease,background .12s ease}
+.face.back .speak-btn{background:var(--surface)}
+.speak-btn:hover{background:var(--line)}
+.speak-btn:active{transform:scale(.9)}
 .card-progress{display:flex;justify-content:space-between;align-items:center;margin:16px 4px 0;color:var(--muted);font-size:13px}
 .nav-btns{display:flex;gap:10px;margin-top:14px}
 .nav-btns button{flex:1;padding:14px;border-radius:12px;border:1px solid var(--line);
