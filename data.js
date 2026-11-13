@@ -610,6 +610,10 @@ const WORDS_BY_PASSAGE = {
   { word: "cover",            pos: "v.",   meaning: "포함하다, 아우르다; 덮다; 다루다",  example: "they cover only a small part" },
   { word: "homeland",         pos: "n.",   meaning: "고국, 본거지, 원산지",            example: "the snow leopard's homeland" },
   { word: "a fighting chance", pos: "phr.", meaning: "해볼 만한 가능성, (노력하면 이길) 승산", example: "the snow leopard may have a fighting chance" },
+  { word: "continue to",      pos: "v.",   meaning: "계속 ~하다 (continue to V = continue V-ing, 둘 다 가능)", example: "the organization continues to add more communities" },
+  { word: "may just",         pos: "phr.", meaning: "어쩌면 정말 ~일지도 모른다 (just가 may를 강조·희망적 추측)", example: "the snow leopard may just have a fighting chance" },
+  { word: "protected",        pos: "a.",   meaning: "보호받는, 보호되는 (과거분사→형용사, v. protect)", example: "kills the protected animals" },
+  { word: "do well",          pos: "phr.", meaning: "잘되다, 좋은 성과를 내다, 순조롭다", example: "Projects ~ are doing well." },
   ],
 
   /* ----- 지문 7: Sacred summits ----- */
@@ -683,6 +687,10 @@ const WORDS_BY_PASSAGE = {
   { word: "offering",         pos: "n.",   meaning: "(신에게 바치는) 제물, 봉헌물 (v. offer)", example: "they present their offerings" },
   { word: "present",          pos: "v.",   meaning: "바치다, 주다; 제시하다 (동사 강세 뒤: presént)", example: "they present their offerings" },
   { word: "provide for",      pos: "phr.", meaning: "~을 부양하다, ~에 대비해 공급하다",  example: "asking the volcano to protect and provide for one more season" },
+  { word: "cause",            pos: "v.",   meaning: "~을 일으키다, 초래하다; (n.) 원인", example: "can also cause great destruction" },
+  { word: "best-known",       pos: "a.",   meaning: "가장 잘 알려진 (well-known의 최상급, 복합형용사)", example: "two of the best-known examples" },
+  { word: "opposite ends",    pos: "phr.", meaning: "정반대의 양 끝, 양극단 (at opposite ends of ~의 양 끝에)", example: "at opposite ends of the world" },
+  { word: "the Ring of Fire", pos: "phr.", meaning: "환태평양 화산대(불의 고리) — 태평양을 둘러싼 지진·화산 다발 지대", example: "on the Pacific Ring of Fire" },
   ],
 
   /* ----- 지문 8: Is prediction possible? ----- */
@@ -7801,6 +7809,258 @@ const ANALYSIS = {
       `💡 <b>흐름:</b> SLE 거래의 효과 — 눈표범 보호가 단순 보존을 넘어 '소득 증대 + 여성 지위 향상'이라는 사회·경제적 이득으로 이어짐을 강조.<br><br>` +
       `📝 <b>해석:</b> "이 방식은 목동들의 수입을 10~15% 올려 주고, 여성들의 지위를 높여 준다."`,
     trans: "이 방식은 목동들의 수입을 10~15% 올려 주고, 여성들의 지위를 높여 준다.",
+  },
+
+  // 지문 6 · 32번째 문장: If no one in the community kills the protected animals over the course of a year, the program members are rewarded with a 20 percent bonus in addition to the money they've already made.
+  "6-33": {
+    form: "If 조건절(현재시제) · 부정 주어 no one + 단수동사 kills · 과거분사 전치수식(protected animals) · be rewarded with(~로 보상받다, 수동+with) · in addition to(~에 더하여) · 목적격 관계대명사 생략(the money they've made) · 현재완료(have made)",
+    tense: "현재(조건절 kills / 주절 are rewarded) · 현재완료(have ~ made)",
+    chips: [
+      ["조건절(If)", "If no one in the community kills the protected animals over the course of a year,"],
+      ["주어(S)", "the program members"],
+      ["동사(V)·수동", "are rewarded with a 20 percent bonus"],
+      ["추가(in addition to)", "in addition to the money they've already made."],
+    ],
+    structure:
+      `뼈대: <b>If no one kills ~, the program members(S) are rewarded(V) with a bonus</b>. "1년 동안 아무도 보호 동물을 죽이지 않으면, 프로그램 구성원들은 보너스로 보상받는다."<br><br>` +
+      `① ⭐⭐⭐ <b>If no one ~ kills ~, 주절</b> (<b>조건의 If · 현재시제</b>) — 시간·조건 부사절은 미래 일이라도 <b>현재시제</b>로 씀(will kill ❌ → kills). 부정 주어 <b>no one</b>은 단수 취급이라 동사도 <b>kills</b>.<br>` +
+      `② ⭐⭐ <b>the protected animals</b> (<b>과거분사 전치수식</b>) — protect의 과거분사 <b>protected</b>가 명사 앞에서 형용사처럼 "보호받는 (동물)"으로 수식(수동 의미).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('word-suffix','ws-ed')">📐 -ed 과거분사형 형용사 자세히 →</span><br>` +
+      `③ ⭐⭐⭐ <b>are rewarded with a bonus</b> (<b>be rewarded with · 수동태 + with</b>) — "보상하다(reward)"의 수동. 보상의 '수단·내용'은 전치사 <b>with</b>로 연결("~로 보상받다").<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('passive-preposition','ps-with')">📐 수동태 + with 자세히 →</span><br>` +
+      `④ ⭐⭐ <b>in addition to the money</b> (<b>in addition to + 명사 · ~에 더하여</b>) — 이미 번 돈 '위에 덧붙여' 보너스를 더 준다는 뜻. to는 전치사라 뒤에 명사.<br>` +
+      `⑤ ⭐⭐⭐ <b>the money (which) they've already made</b> (<b>목적격 관계대명사 생략 + 현재완료</b>) — money 뒤에 목적격 관계대명사 <b>which/that 생략</b>. make money=돈을 벌다, 현재완료 <b>'ve made</b>=이미 벌어 놓은(완료·결과).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('relative-pronoun','rp-object-omit')">📐 목적격 관계대명사 생략 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('present-perfect','pf-uses')">📐 현재완료(완료·결과) 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> SLE 거래의 보너스 조건 — 공동체 전체가 1년간 한 마리도 안 죽이면, 기존 수입에 더해 20% 보너스로 '공동 보호'를 보상함.<br><br>` +
+      `📝 <b>해석:</b> "만약 1년 동안 공동체 안에서 아무도 보호 동물을 죽이지 않으면, 프로그램 구성원들은 이미 벌어 놓은 돈에 더해 20퍼센트 보너스를 보상으로 받는다."`,
+    trans: "만약 1년 동안 공동체 안에서 아무도 보호 동물을 죽이지 않으면, 프로그램 구성원들은 이미 벌어 놓은 돈에 더해 20퍼센트 보너스를 보상으로 받는다.",
+  },
+
+  // 지문 6 · 33번째 문장: An independent review in 2006 found no snow leopard killings in areas where SLE operates.
+  "6-34": {
+    form: "found no + 명사(전체 부정, ~이 전혀 없음을 확인) · 관계부사 where(= in which, 장소 areas 수식) · 과거동사 found",
+    tense: "과거(found)",
+    chips: [
+      ["주어(S)", "An independent review in 2006"],
+      ["동사(V)·과거", "found"],
+      ["목적어(O)·전체부정", "no snow leopard killings"],
+      ["장소·관계부사절", "in areas where SLE operates."],
+    ],
+    structure:
+      `뼈대: <b>An independent review(S) found(V) no killings(O)</b>. "2006년의 한 독립 조사는 (SLE 지역에서) 눈표범이 죽은 사례가 전혀 없음을 확인했다."<br><br>` +
+      `① ⭐⭐⭐ <b>found no snow leopard killings</b> (<b>no + 명사 · 전체 부정</b>) — <b>no</b>가 뒤 명사를 통째로 부정("죽임이 하나도 없음"). "못 찾았다"가 아니라 "없다는 사실을 확인했다"는 긍정적 발견.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('partial-negation','pn-total')">📐 no에 의한 전체 부정 자세히 →</span><br>` +
+      `② ⭐⭐⭐ <b>in areas where SLE operates</b> (<b>관계부사 where · = in which</b>) — where가 앞의 장소 명사 <b>areas</b>를 꾸밈("SLE가 활동하는 지역"). where = <b>in which</b>로 바꿔 쓸 수 있음(areas 자리라 전치사 in).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('relative-pronoun','rp-prep')">📐 전치사+관계대명사(= 관계부사 where) 자세히 →</span><br>` +
+      `③ ⭐ <b>An independent review ~ found</b> (<b>과거시제</b>) — 2006년이라는 특정 과거 시점의 조사 결과라 동사도 과거 <b>found</b>.<br>` +
+      `💡 <b>흐름:</b> 프로그램 효과의 '객관적 증거' — 이해관계 없는 독립 조사가 "SLE 지역엔 밀렵 0건"임을 확인해 성과를 뒷받침함.<br><br>` +
+      `📝 <b>해석:</b> "2006년의 한 독립적인 조사는 SLE가 활동하는 지역들에서 눈표범이 죽임당한 사례를 전혀 발견하지 못했다(= 한 건도 없음을 확인했다)."`,
+    trans: "2006년의 한 독립적인 조사는 SLE가 활동하는 지역들에서 눈표범이 죽임당한 사례를 전혀 발견하지 못했다.",
+  },
+
+  // 지문 6 · 34번째 문장: Today, the organization continues to add more communities.
+  "6-35": {
+    form: "부사 Today(오늘날) · continue to V(계속 ~하다, = continue V-ing) · 단수 주어 수 일치(continues) · 비교급 more + 복수명사",
+    tense: "현재(continues)",
+    chips: [
+      ["부사", "Today,"],
+      ["주어(S)·단수", "the organization"],
+      ["동사(V)", "continues to add"],
+      ["목적어(O)", "more communities."],
+    ],
+    structure:
+      `뼈대: <b>the organization(S) continues(V) to add more communities</b>. "오늘날 그 단체는 계속해서 더 많은 공동체를 추가하고 있다."<br><br>` +
+      `① ⭐⭐ <b>Today</b> (<b>부사 · 오늘날/요즘</b>) — 여기선 '오늘 하루'가 아니라 <b>"오늘날, 요즘"</b>이라는 시대적 의미.<br>` +
+      `② ⭐⭐⭐ <b>continues to add</b> (<b>continue + to부정사 · 계속 ~하다</b>) — continue는 <b>to V·V-ing 둘 다</b> 목적어로 받는 동사(continues to add = continues adding, 뜻 같음). 한 덩어리 "계속 추가한다"로 해석.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('gerund-vs-infinitive','gi-both')">📐 to V·V-ing 둘 다 되는 동사 자세히 →</span><br>` +
+      `③ ⭐ <b>the organization continues</b> (<b>단수 주어 수 일치</b>) — 주어가 단수 <b>the organization</b>이라 현재동사에 <b>-s</b>(continues).<br>` +
+      `💡 <b>흐름:</b> 프로그램의 '확장' — 성과에 힘입어 참여 공동체를 계속 늘려 가며 보호 범위를 넓히는 중.<br><br>` +
+      `📝 <b>해석:</b> "오늘날, 그 단체는 더 많은 공동체를 계속 추가하고 있다."`,
+    trans: "오늘날, 그 단체는 더 많은 공동체를 계속 추가하고 있다.",
+  },
+
+  // 지문 6 · 35번째 문장: Projects like the Homestays program in India and SLE's business in Mongolia are doing well.
+  "6-36": {
+    form: "예시의 like(= such as, ~와 같은) · like A and B 나열(예시 2개) · 긴 주어 vs 동사 수 일치(핵심명사 Projects 복수 → are) · 현재진행(are doing well)",
+    tense: "현재진행(are doing)",
+    chips: [
+      ["주어(S)·복수 핵심", "Projects"],
+      ["예시(like A and B)", "like the Homestays program in India and SLE's business in Mongolia"],
+      ["동사(V)·현재진행", "are doing well."],
+    ],
+    structure:
+      `뼈대: <b>Projects (like A and B)(S) are doing well(V)</b>. "인도 홈스테이, 몽골 SLE 사업 같은 프로젝트들은 잘되고 있다."<br><br>` +
+      `① ⭐⭐⭐ <b>Projects like A and B</b> (<b>예시의 like · = such as</b>) — 여기 like는 '마치 ~처럼'이 아니라 명사 뒤에서 <b>"~와 같은(예를 들어)"</b>로 예시를 드는 전치사. such as로 바꿔도 같음.<br>` +
+      `② ⭐⭐ <b>the Homestays program in India and SLE's business in Mongolia</b> (<b>A and B 예시 나열</b>) — like가 묶는 예시 두 개를 <b>and</b>로 대등 연결(인도 홈스테이 / 몽골 SLE 사업).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-list')">📐 and 나열(병렬) 자세히 →</span><br>` +
+      `③ ⭐⭐⭐ <b>Projects ~ are doing well</b> (<b>긴 주어 수 일치 + 현재진행</b>) — 사이 수식어(like ~ Mongolia)에 속지 말 것. 핵심 주어는 복수 <b>Projects</b>라 동사는 <b>are</b>. be doing well = 잘되고 있다(현재진행).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('subject-agreement','sv-modifier')">📐 주어-동사 사이 수식어 함정 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 성공 사례 요약 — 인도·몽골의 대표 프로젝트들을 예로 들어 "이런 방식이 실제로 잘 작동한다"고 정리.<br><br>` +
+      `📝 <b>해석:</b> "인도의 홈스테이 프로그램과 몽골의 SLE 사업 같은 프로젝트들은 잘되고 있다."`,
+    trans: "인도의 홈스테이 프로그램과 몽골의 SLE 사업 같은 프로젝트들은 잘되고 있다.",
+  },
+
+  // 지문 6 · 36번째 문장: Though they cover only a small part of the snow leopard's homeland, they make the leopards more valuable to more people each year.
+  "6-37": {
+    form: "양보 접속사 Though(비록 ~이지만) · cover(면적을 차지하다) · make + O + 형용사 보어(5형식) · each year(해마다)",
+    tense: "현재(cover / make)",
+    chips: [
+      ["양보절(Though)", "Though they cover only a small part of the snow leopard's homeland,"],
+      ["주어(S)", "they"],
+      ["동사(V)", "make"],
+      ["목적어(O)", "the leopards"],
+      ["보어(C)·형용사", "more valuable to more people each year."],
+    ],
+    structure:
+      `뼈대: <b>Though they cover ~(양보), they(S) make(V) the leopards(O) more valuable(C)</b>. "비록 서식지의 작은 일부만 차지하지만, 그것들은 표범을 더 가치 있게 만든다."<br><br>` +
+      `① ⭐⭐⭐ <b>Though they cover ~, 주절</b> (<b>양보 접속사 Though · 비록 ~이지만</b>) — Though + 주어+동사 = "비록 ~하지만"(= Although). 앞(작은 면적=약점) ↔ 뒤(가치 상승=성과)가 대조됨.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('concession','cn-conj')">📐 양보 접속사(though/although) 자세히 →</span><br>` +
+      `② ⭐⭐ <b>cover only a small part of ~</b> (<b>cover · (면적을) 차지하다</b>) — 여기 cover는 '덮다/통하다'가 아니라 "(공간·범위를) <b>차지하다·포괄하다</b>".<br>` +
+      `③ ⭐⭐⭐ <b>make the leopards more valuable</b> (<b>make + O + 형용사 보어 · 5형식</b>) — "O를 …하게 만들다". 목적어 <b>the leopards</b>, 목적격보어로 형용사 <b>more valuable</b>(O=C 관계: 표범이 더 가치있는 상태).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('five-pattern','fp-adj')">📐 5형식 make + 형용사 보어 자세히 →</span><br>` +
+      `④ ⭐ <b>each year</b> (<b>부사구 · 해마다</b>) — each + 단수명사로 "매년, 해가 갈수록"의 반복을 나타냄.<br>` +
+      `💡 <b>흐름:</b> 프로그램의 의의 — 면적은 작아도, 해마다 더 많은 사람에게 표범을 '살려두는 게 이득인 소중한 존재'로 만들어 보호 동기를 넓힘.<br><br>` +
+      `📝 <b>해석:</b> "비록 그것들은 눈표범 서식지의 작은 일부만을 차지하지만, 해마다 더 많은 사람들에게 표범을 더 가치 있게 만든다."`,
+    trans: "비록 그것들은 눈표범 서식지의 작은 일부만을 차지하지만, 해마다 더 많은 사람들에게 표범을 더 가치 있게 만든다.",
+  },
+
+  // 지문 6 · 37번째 문장: If these programs continue to do well, the snow leopard may just have a fighting chance.
+  "6-38": {
+    form: "If 조건절(현재시제) · continue to V(계속 ~하다) · do well(잘되다) · may just(어쩌면 정말 ~일지도, just=강조) · a fighting chance(승산)",
+    tense: "현재(continue) · 추측 조동사(may)",
+    chips: [
+      ["조건절(If)", "If these programs continue to do well,"],
+      ["주어(S)", "the snow leopard"],
+      ["동사(V)·조동사", "may just have"],
+      ["목적어(O)", "a fighting chance."],
+    ],
+    structure:
+      `뼈대: <b>If these programs continue to do well, the snow leopard(S) may just have(V) a fighting chance(O)</b>. "이 프로그램들이 계속 잘되면, 눈표범은 어쩌면 살아남을 가망이 생길지도 모른다."<br><br>` +
+      `① ⭐⭐⭐ <b>If these programs continue to do well</b> (<b>조건의 If · 현재시제</b>) — 조건 부사절은 미래 의미라도 <b>현재시제</b>(continue). continue to do well = 계속 잘되다.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('gerund-vs-infinitive','gi-both')">📐 continue + to V / V-ing 자세히 →</span><br>` +
+      `② ⭐⭐⭐ <b>may just have</b> (<b>추측의 may + 강조 부사 just</b>) — may = "~일지도 모른다". <b>just</b>가 may를 강조해 "<b>어쩌면 정말·그래도</b> ~할지도 모른다"는 희망 섞인 뉘앙스를 더함('단지/방금'이 아님).<br>` +
+      `③ ⭐⭐ <b>a fighting chance</b> (<b>관용구 · 승산, 살아남을 가망</b>) — 직역 '싸우는 기회' → "(어렵지만) <b>해볼 만한 승산·생존 가망</b>".<br>` +
+      `💡 <b>흐름:</b> 글의 희망적 결말 — 이런 프로그램들이 계속 성공하면, 멸종 위기의 눈표범도 살아남을 가능성이 열린다는 마무리.<br><br>` +
+      `📝 <b>해석:</b> "만약 이 프로그램들이 계속 잘된다면, 눈표범은 어쩌면 (멸종을 면하고) 살아남을 가망이 생길지도 모른다."`,
+    trans: "만약 이 프로그램들이 계속 잘된다면, 눈표범은 어쩌면 살아남을 가망이 생길지도 모른다.",
+  },
+
+  /* ===== 지문 7: Sacred summits ===== */
+
+  // 지문 7 · 1번째 문장: Volcanoes are creators and destroyers.
+  "7-0": {
+    form: "2형식 S + be동사 + 명사 보어 · 보어 명사 병렬(creators and destroyers) · 무관사 복수(일반적 진술)",
+    tense: "현재(are)",
+    chips: [
+      ["주어(S)·복수", "Volcanoes"],
+      ["동사(V)·be", "are"],
+      ["보어(C)·명사 병렬", "creators and destroyers."],
+    ],
+    structure:
+      `뼈대: <b>Volcanoes(S) are(V) creators and destroyers(C)</b>. "화산은 창조자이자 파괴자다."<br><br>` +
+      `① ⭐⭐ <b>Volcanoes are creators and destroyers</b> (<b>2형식 S+V+C</b>) — be동사 are가 주어와 보어를 이어 'S = C'(화산 = 창조자·파괴자)를 나타냄. 보어가 명사라 2형식.<br>` +
+      `② ⭐⭐ <b>creators and destroyers</b> (<b>명사 보어 병렬 + 무관사 복수</b>) — 보어 명사 두 개를 and로 대등 연결. 특정 대상이 아닌 '일반적 성질'이라 <b>관사 없이 복수</b>로 씀.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-list')">📐 and 명사 병렬 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('articles','ar-zero')">📐 무관사 복수(일반 진술) 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 글 전체의 핵심 명제 — 화산은 땅을 만드는 '창조'와 파괴라는 양면성을 지닌다는 주제 문장(이후 후지산·포포카테페틀 사례로 전개).<br><br>` +
+      `📝 <b>해석:</b> "화산은 창조자이자 파괴자다."`,
+    trans: "화산은 창조자이자 파괴자다.",
+  },
+
+  // 지문 7 · 2번째 문장: They can shape lands and cultures, but can also cause great destruction and loss of life.
+  "7-1": {
+    form: "조동사 can + 동사원형(가능) · but 대조 병렬(can shape ~ but can also cause ~) · can also(~도 할 수 있다) · 목적어 명사 병렬(lands and cultures / destruction and loss of life)",
+    tense: "현재(can shape / can cause)",
+    chips: [
+      ["주어(S)", "They"],
+      ["동사①(can+원형)", "can shape lands and cultures,"],
+      ["대조(but)·동사②", "but can also cause great destruction and loss of life."],
+    ],
+    structure:
+      `뼈대: <b>They(S) can shape ~, but can also cause ~</b>. "그것들은 땅과 문화를 만들 수도 있지만, 큰 파괴와 인명 손실을 일으킬 수도 있다."<br><br>` +
+      `① ⭐⭐ <b>can shape / can also cause</b> (<b>조동사 can + 동사원형 · 가능</b>) — can은 "~할 수 있다"(능력·가능). 뒤에는 항상 <b>동사원형</b>(shape·cause).<br>` +
+      `② ⭐⭐⭐ <b>can shape ~, but can also cause ~</b> (<b>but 대조 병렬</b>) — 같은 주어 They의 조동사구 두 개를 <b>but</b>으로 대조 연결(창조 ↔ 파괴). 형태도 can+원형으로 일치.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('correlative','cc-parallel')">📐 but 병렬(대조) 자세히 →</span><br>` +
+      `③ ⭐⭐ <b>can also cause</b> (<b>also · 게다가 ~도</b>) — also가 '추가'를 나타내 "~도 (또한) 일으킬 수 있다". 조동사와 본동사 사이에 위치.<br>` +
+      `④ ⭐ <b>lands and cultures / destruction and loss of life</b> (<b>목적어 명사 병렬</b>) — 각 동사의 목적어도 and로 둘씩 묶임.<br>` +
+      `💡 <b>흐름:</b> 1번 문장(창조자·파괴자)을 풀어 설명 — 화산의 '양면성'을 shape(창조) vs cause destruction(파괴)으로 대비.<br><br>` +
+      `📝 <b>해석:</b> "그것들(화산)은 땅과 문화를 형성할 수도 있지만, 큰 파괴와 인명 손실을 일으킬 수도 있다."`,
+    trans: "그것들은 땅과 문화를 형성할 수도 있지만, 큰 파괴와 인명 손실을 일으킬 수도 있다.",
+  },
+
+  // 지문 7 · 3번째 문장: Two of the best-known examples are found at opposite ends of the world, on the Pacific Ring of Fire.
+  "7-2": {
+    form: "부분표현 Two of the + 복수(→ 복수동사 are) · 최상급 복합형용사 best-known · be found(수동 · ~에 있다/발견되다) · 장소 전치사구 동격 보충(at ~, on ~)",
+    tense: "현재(are found)",
+    chips: [
+      ["주어(S)·복수", "Two of the best-known examples"],
+      ["동사(V)·수동", "are found"],
+      ["장소①", "at opposite ends of the world,"],
+      ["장소②(보충)", "on the Pacific Ring of Fire."],
+    ],
+    structure:
+      `뼈대: <b>Two of the best-known examples(S) are found(V) at ~, on ~</b>. "가장 잘 알려진 사례 둘은 세계의 정반대 양 끝, 환태평양 화산대에 있다."<br><br>` +
+      `① ⭐⭐⭐ <b>Two of the best-known examples are</b> (<b>Two of the + 복수 · 수 일치</b>) — "~ 중 둘"이라는 부분표현. 핵심 주어가 <b>Two</b>(복수)라 동사도 복수 <b>are</b>.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('of-types','of-partitive')">📐 부분의 of (Two of the ~) 자세히 →</span><br>` +
+      `② ⭐⭐ <b>the best-known examples</b> (<b>최상급 + 복합형용사(하이픈)</b>) — well-known의 최상급 <b>best-known</b>("가장 잘 알려진"). 두 단어를 하이픈으로 묶어 하나의 형용사로 명사 수식, 앞에 the.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('superlative','su-the')">📐 최상급 the + best 자세히 →</span><br>` +
+      `③ ⭐⭐⭐ <b>are found</b> (<b>be found · 수동태</b>) — "발견되다 → (~에) 있다/위치하다". 능동의 find를 수동(be + p.p.)으로 써서 장소 소재를 나타냄.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('passive-voice','pv-form')">📐 수동태 be + p.p. 자세히 →</span><br>` +
+      `④ ⭐ <b>at opposite ends ~, on the Pacific Ring of Fire</b> (<b>장소 전치사구 + 콤마 보충</b>) — 앞 장소를 콤마 뒤에서 더 구체적으로 짚어 줌(세계 양 끝 = 환태평양 화산대 위).<br>` +
+      `💡 <b>흐름:</b> 주제를 '두 대표 사례'로 좁힘 — 뒤에 이어질 일본 후지산과 멕시코 포포카테페틀을 '환태평양 화산대의 양 끝'으로 예고.<br><br>` +
+      `📝 <b>해석:</b> "가장 잘 알려진 사례 둘은 세계의 정반대 양 끝, 즉 환태평양 화산대(불의 고리) 위에서 발견된다."`,
+    trans: "가장 잘 알려진 사례 둘은 세계의 정반대 양 끝, 즉 환태평양 화산대 위에서 발견된다.",
+  },
+
+  // 지문 7 · 4번째 문장: It's almost sunrise near the summit of Japan's Mount Fuji.
+  "7-4": {
+    form: "비인칭 주어 It(시간·상황) · almost(거의) · of 소유(the summit of ~) · 소유격 Japan's(일본의)",
+    tense: "현재(It's)",
+    chips: [
+      ["비인칭주어(It)", "It's"],
+      ["상황/시간", "almost sunrise"],
+      ["장소", "near the summit of Japan's Mount Fuji."],
+    ],
+    structure:
+      `뼈대: <b>It(비인칭 S)'s almost sunrise near ~</b>. "일본 후지산 정상 부근, 거의 해 뜰 무렵이다."<br><br>` +
+      `① ⭐⭐⭐ <b>It's almost sunrise</b> (<b>비인칭 주어 It · 시간/상황</b>) — 이 It은 '그것'이 아니라 시간·명암·상황을 나타내는 <b>비인칭 주어</b>(해석하지 않음). "(지금은) 거의 일출이다".<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('impersonal-it','it-time')">📐 비인칭 it (시간·상황) 자세히 →</span><br>` +
+      `② ⭐⭐ <b>almost sunrise</b> (<b>부사 almost · 거의</b>) — almost가 sunrise를 수식해 "거의 (해 뜰 무렵)". 아직 해가 완전히 뜨지 않은 직전 상황.<br>` +
+      `③ ⭐⭐ <b>the summit of Japan's Mount Fuji</b> (<b>of 소유 + 's 소유격</b>) — of가 "~의"로 소속을 표시(후지산의 정상). Japan's는 소유격으로 "일본의 (후지산)".<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('of-types','of-possess')">📐 소유의 of 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 첫 사례(후지산) 장면 전환 — 정상에서 맞는 '일출 직전'의 순간으로 독자를 데려가 서사적으로 도입.<br><br>` +
+      `📝 <b>해석:</b> "일본 후지산 정상 부근, 거의 해 뜰 무렵이다."`,
+    trans: "일본 후지산 정상 부근, 거의 해 뜰 무렵이다.",
+  },
+
+  // 지문 7 · 5번째 문장: Exhausted climbers, many of whom have hiked the 3,776 meters through the night to reach this point, stop to watch as the sun begins spreading its golden rays across the mountain.
+  "7-5": {
+    form: "과거분사 전치수식(Exhausted climbers) · 콤마 삽입 계속적 관계절(many of whom ~) · 부분 of + 관계대명사 whom · 현재완료(have hiked) · to부정사 목적(to reach) · stop to V(~하려고 멈추다) · as 시간·동시(~할 때) · begin + 동명사(spreading)",
+    tense: "현재(stop / begins) · 현재완료(have hiked)",
+    chips: [
+      ["주어(S)", "Exhausted climbers,"],
+      ["삽입·관계절", "many of whom have hiked the 3,776 meters through the night to reach this point,"],
+      ["동사(V)", "stop to watch"],
+      ["때(as절)", "as the sun begins spreading its golden rays across the mountain."],
+    ],
+    structure:
+      `뼈대: <b>Exhausted climbers(S), (삽입), stop to watch(V) as ~</b>. 삽입구를 빼면 "지친 등산객들이 멈춰서 바라본다(해가 황금빛을 퍼뜨릴 때)."<br><br>` +
+      `① ⭐⭐⭐ <b>주어 = Exhausted climbers / 동사 = stop</b> (<b>콤마 삽입구 건너뛰기</b>) — 가운데 <b>, many of whom ~ this point,</b>는 주어를 설명하는 삽입. 빼고 읽어야 <b>climbers(S) … stop(V)</b> 연결이 보임(stop의 주어는 point가 아님!).<br>` +
+      `② ⭐⭐ <b>Exhausted climbers</b> (<b>과거분사 전치수식</b>) — exhaust의 과거분사 <b>Exhausted</b>가 명사 앞에서 "기진맥진한 (등산객)"으로 수식(수동·감정 유발 당함).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('word-suffix','ws-ed')">📐 -ed 감정 과거분사 자세히 →</span><br>` +
+      `③ ⭐⭐⭐ <b>many of whom have hiked ~</b> (<b>부분 of + 관계대명사 whom · 계속적 삽입</b>) — whom = climbers. "그들 중 다수는 ~했다"로 앞 명사를 콤마로 보충 설명(계속적 용법). 「수량 + of + 관계대명사」 형태.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('relative-nonrestrictive','rn-clause')">📐 콤마 계속적 관계절 자세히 →</span><br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('relative-pronoun','rp-prep')">📐 전치사 + 관계대명사(of whom) 자세히 →</span><br>` +
+      `④ ⭐⭐ <b>have hiked ~ to reach this point</b> (<b>현재완료 + to부정사 목적</b>) — have hiked = 밤새 걸어 '올라온' 결과(현재완료). <b>to reach</b>는 "~에 도달하<b>려고</b>"(목적의 부사적 to부정사, 수동 아님).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('to-infinitive','ti-adverb')">📐 목적의 to부정사(~하려고) 자세히 →</span><br>` +
+      `⑤ ⭐⭐⭐ <b>stop to watch</b> (<b>stop + to V · ~하려고 멈추다</b>) — stop to V = "(~하기 위해) 멈추다". cf. <b>stop watching</b> = "보던 것을 멈추다"(동명사면 하던 일 중단). 여기선 '멈춰서 바라본다'.<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('gerund-vs-infinitive','gi-stop')">📐 stop to V vs stop V-ing 자세히 →</span><br>` +
+      `⑥ ⭐⭐ <b>as the sun begins spreading ~</b> (<b>as 시간·동시(~할 때) + begin + 동명사</b>) — as = "~할 때, ~하면서"(동시 상황). begin은 to V·V-ing 둘 다 가능, 여기선 <b>spreading</b>(퍼뜨리기 시작).<br>` +
+      `&nbsp;&nbsp;<span class="wikilink" onclick="gotoGrammar('as-roles','as-time')">📐 시간·동시의 as 자세히 →</span><br>` +
+      `💡 <b>흐름:</b> 후지산 일출 장면의 절정 — 밤새 지쳐 오른 등산객들이 해가 산을 금빛으로 물들이는 순간 멈춰 서서 바라보는 서사적 묘사.<br><br>` +
+      `📝 <b>해석:</b> "밤새 3,776미터를 걸어 이 지점에 도달한 등산객이 많은데, 그 지친 등산객들은 해가 산 전체에 황금빛 광선을 퍼뜨리기 시작할 때 멈춰 서서 (그 광경을) 바라본다."`,
+    trans: "밤새 3,776미터를 걸어 이 지점에 도달한 지친 등산객들은, 해가 산 전체에 황금빛 광선을 퍼뜨리기 시작할 때 멈춰 서서 바라본다.",
   },
 };
 
